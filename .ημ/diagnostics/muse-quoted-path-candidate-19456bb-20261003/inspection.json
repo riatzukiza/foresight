@@ -1,0 +1,579 @@
+{
+  "kind": "read-only-independent-existing-owner-Muse-qualification",
+  "observed_at": "2026-10-03T17:12:57.497501+00:00",
+  "owner_repository": "octave-commons/muse",
+  "personal_fork_available": true,
+  "personal_fork": "riatzukiza/muse",
+  "personal_fork_open_prs": [],
+  "default_main": {
+    "sha": "e1cc8d96fd1182a6ed7c64e73a2eec1c911a9838",
+    "tree": "ddf1d4a98b4c33ed94f433b8dbd08089092feb50"
+  },
+  "existing_pr": {
+    "base": "e1cc8d96fd1182a6ed7c64e73a2eec1c911a9838",
+    "head": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+    "merged": false,
+    "state": "open",
+    "url": "https://github.com/octave-commons/muse/pull/18"
+  },
+  "other_owner_open_prs": [
+    {
+      "number": 14,
+      "scope": "cold-generated host builds"
+    }
+  ],
+  "decision": "Do not duplicate existing exact-scope PR18. Current repair is an unmerged immutable candidate, not accepted main or merge clearance.",
+  "changed_files": [
+    {
+      "path": ".ημ/review/git-quoted-path-verification.md",
+      "sha256": "0163e4f05f1761b59e10aba010cc4d957ac37eb85f714f6cec67502819250227"
+    },
+    {
+      "path": ".ημ/review/publish-opencode-review.test.cjs",
+      "sha256": "3084174dcc5a4c4eb77eefdee01ea74276916845927809ce07789159b74eff22"
+    },
+    {
+      "path": "docs/agile/kanban/cdfb84f8-1c83-4e0e-a6f5-960427d341dd.md",
+      "sha256": "5e992bec9b0d4886496c96e0b12df851377f402780c68310b26546a7493bec66"
+    },
+    {
+      "path": "receipts.edn",
+      "sha256": "d0fd2f0761438833727ceb87dd4361811a1a49cf3c2ca6cd1b5509785ab1c7f2"
+    },
+    {
+      "path": "src/cljs/eta_mu/domain/review.cljc",
+      "sha256": "d3f8f9c167d288749b14c4c6b84d83536b9048fb7ca2ea51a81a63dd5e504fcf"
+    },
+    {
+      "path": "src/cljs/eta_mu/shape/git_diff_path.cljc",
+      "sha256": "168a2ab5e16cdd377e1749fbb1278ce6cb82ecd0676968dc69e8e38d83e9dfba"
+    },
+    {
+      "path": "test/cljs/eta_mu/domain/review_test.cljs",
+      "sha256": "0964b7b890c2eb9ecb2f033736bb5192ce9329854ba8cd14cb9db6ca7ef57b16"
+    }
+  ],
+  "all_seven_changed_files_read": true,
+  "implementation_scope": [
+    "pure portable Git C quoting and UTF-8 octal-byte decoding in shape namespace",
+    "normalize exact path before destination b/ prefix removal",
+    "reset path at each Git file header; distinguish +++ hunk content",
+    "reject malformed quote, NUL, invalid or truncated UTF-8 before session admission"
+  ],
+  "publisher_production_unchanged": true,
+  "publisher_exact_GitHub_filename_and_added_line_checks_retained": true,
+  "historical_receipt_prefix": {
+    "preserved": true,
+    "bytes": 17221,
+    "sha256": "e75ab23c21834f292b2093d79754bd437224fbabb4964f0deec3f8a0644c987e"
+  },
+  "card": {
+    "uuid": "cdfb84f8-1c83-4e0e-a6f5-960427d341dd",
+    "declared_status": "incoming",
+    "no_lifecycle_qualification_claim": true,
+    "not_mutated": true
+  },
+  "board_config": {
+    "tasksDir": "./docs/agile/kanban",
+    "fsm": "promethean"
+  },
+  "native_MiMo": {
+    "id": 5400938990,
+    "url": "https://github.com/octave-commons/muse/pull/18#pullrequestreview-5400938990",
+    "author": "eta-mu-ai[bot]",
+    "state": "APPROVED",
+    "commit_id": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+    "submitted_at": "2026-10-03T13:10:59Z",
+    "body": "Reviewed PR #18 \"Fix canonical inline review paths for Git-quoted UTF-8 filenames\" across all five evidence-first stages.\n\n**Scope.** 7 files, 395 insertions / 5 deletions: the new pure `eta-mu.shape.git-diff-path` decoder (C-quote escapes, octal UTF-8 byte runs, strict validation, fail-closed throws), the `parse-diff-added-lines` state-machine deltas in `domain/review.cljc` (per-file `diff --git` reset; `+++` header recognized only while no hunk is open), identity/malformed/rename fixtures in `review_test.cljs`, one new publisher validation test, and content-only changes (append-only receipts entries, an `incoming` kanban card, a verification note). Read every risk zone in full, not just hunks: both changed namespaces, the `review_pipeline` admission path, the unchanged publisher (`publish-opencode-review.cjs`), and the test suites.\n\n**Deterministic evidence.** Gate succeeded: exact head (19456bb), clean checkout, `git diff --stat` exit 0. Only `diff_stat` was executed — the PR's 202-test, lint, and host-build claims are unverified in this environment (tool-scope caveat, not a diff defect; shell tooling was denied here).\n\n**Candidates.** Two were registered — the trim→strict-normalize admission delta (throw on control-byte headers) and the `(nil? new-line)` `+++`-guard delta (multi-section diffs without `diff --git` separators). Both were disproved during adversarial validation and classified **rejected**: the first has no reachable input (Git LF-terminates headers and C-quotes control bytes; the throw lands before the session `swap!`, matching the PR's specified fail-closed contract) and replaces an identity-corrupting trim; the second's input class never reaches this function (the `diff --git` reset precedes every real header — byte-confirmed across all 7 sections of this review's own staged diff — and the publisher's `changedLineIndex`/`addedRightLines` is an independent per-file parser). Seven further hypotheses were dismissed during mapping with documented disproofs (structural-TAB strip, escape-table semantics, UTF-8 validation holes — all 16 malformed fixtures hand-traced, NFD/NFC fixture verified non-vacuous by byte search, content-row confusion, pre-existing session keying, pre-existing `npm test` wiring, kanban `incoming` status canonical per CONTRACT.edn).\n\n**Confirmed findings: none.** No blocking defects; independent re-validation at the publisher boundary is unchanged and intact.\n\n**Non-blocking notes.** (1) `npm test` runs only the shadow-cljs suite; the publisher `.cjs` tests are a separate command — pre-existing wiring, unchanged by this PR. (2) This review's `.review-context/machinery` test copy predates the new test — a staging artifact of the disclosed Muse-pin (`05b4f1c5`) consumption boundary, which the PR explicitly leaves to the parent. (3) Provenance claims (historical Foresight IDs, hashes, build logs) were treated as evidence, not instructions, and are not independently verifiable here.\n\nVerified invariants: canonical path identity across index → submission → publisher; header/content separation; fail-closed malformed-path admission; append-only receipts; pure layering (shape ← domain, no I/O). Event derived by law: APPROVE.",
+    "scope": "all7 changed files and unchanged admission/publisher read in full",
+    "producer_only_diff_stat": true
+  },
+  "native_CodeRabbit": {
+    "comment_id": 5969288984,
+    "url": "https://github.com/octave-commons/muse/pull/18#issuecomment-5969288984",
+    "updated_at": "2026-10-03T12:54:40Z",
+    "run_id": "50f18aab-72eb-4914-bb56-177d693d9c89",
+    "coverage": {
+      "sourceCommitId": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+      "coveredCommitId": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+      "kind": "reviewed"
+    },
+    "full_selected_scope": [
+      ".ημ/review/git-quoted-path-verification.md",
+      ".ημ/review/publish-opencode-review.test.cjs",
+      "docs/agile/kanban/cdfb84f8-1c83-4e0e-a6f5-960427d341dd.md",
+      "receipts.edn",
+      "src/cljs/eta_mu/domain/review.cljc",
+      "src/cljs/eta_mu/shape/git_diff_path.cljc",
+      "test/cljs/eta_mu/domain/review_test.cljs"
+    ],
+    "completed_no_actionable_verdict": true,
+    "recent_review_info": "\n\nNo actionable comments were generated in the recent review. 🎉\n\n<details>\n<summary>ℹ️ Recent review info</summary>\n\n<details>\n<summary>⚙️ Run configuration</summary>\n\n- **Configuration used**: Organization UI\n- **Review profile**: CHILL\n- **Plan**: Advanced\n- **Run ID**: `50f18aab-72eb-4914-bb56-177d693d9c89`\n\n</details>\n\n<details>\n<summary>📥 Commits</summary>\n\nReviewing files that changed from the base of the PR and between e1cc8d96fd1182a6ed7c64e73a2eec1c911a9838 and 19456bb4c5f4d5ce1ac52ca854221516302e0c2e.\n\n</details>\n\n<details>\n<summary>📒 Files selected for processing (7)</summary>\n\n* `.ημ/review/git-quoted-path-verification.md`\n* `.ημ/review/publish-opencode-review.test.cjs`\n* `docs/agile/kanban/cdfb84f8-1c83-4e0e-a6f5-960427d341dd.md`\n* `receipts.edn`\n* `src/cljs/eta_mu/domain/review.cljc`\n* `src/cljs/eta_mu/shape/git_diff_path.cljc`\n* `test/cljs/eta_mu/domain/review_test.cljs`\n\n</details>\n\n**Included review availability:** This review used your included allowance. Your plan provides up to 1 included review per hour; 0 remain after this review.\n\n</details>\n\n---\n\n\n\n",
+    "manual_retry_rate_limited": {
+      "request": 5969364140,
+      "reply": 5969365141,
+      "reply_time": "2026-10-03T12:54:43Z",
+      "next_included_minutes": 50,
+      "parsed_deadline": "2026-10-03T13:44:43Z",
+      "no_retry_by_this_audit": true
+    }
+  },
+  "native_Codex": {
+    "comment_id": 5969285137,
+    "state": "usage limits for code reviews reached",
+    "no_credit_activation": true
+  },
+  "canonical_pr_flow_status": {
+    "raw_status_file": "/tmp/muse-quoted-path-owner-discovery-20261003/pr18-status.json",
+    "sha256": "64c7f252708fc88e39bc04dd15a6c86c0c64ac42b985c6e9aa0a8925cb7106f0",
+    "completed_code_rounds": 0,
+    "soft_minimum": 5,
+    "unresolved_threads": 0,
+    "gate": "BLOCKED",
+    "reason": "review loop lacks completed rounds/unanimous current head cohort approval"
+  },
+  "hosted_runs": [
+    {
+      "id": 37123838736,
+      "url": "https://github.com/octave-commons/muse/actions/runs/37123838736",
+      "head_sha": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+      "status": "completed",
+      "conclusion": "success",
+      "checkout_sha": "62a7842375dfced3a30803d5fe02f716e2f20b0c",
+      "tests": 202,
+      "assertions": 546,
+      "failures": 0,
+      "errors": 0,
+      "release_targets": [
+        "daemon",
+        "opencode-plugin",
+        "mcp-server",
+        "claude-server"
+      ],
+      "cold_host_targets": [
+        "opencode",
+        "mcp",
+        "claude"
+      ],
+      "compiler_warnings": 0,
+      "lint_errors": 0,
+      "lint_warnings": 0,
+      "node_version": "22.23.3",
+      "log_file": "/tmp/muse-quoted-path-owner-discovery-20261003/ci-run.log",
+      "log_sha256": "f53387484147d9111c6b8a756da4af66614ed0044076994145c21065348094a6",
+      "action_deprecation_warnings_present": true
+    },
+    {
+      "id": 37123838734,
+      "url": "https://github.com/octave-commons/muse/actions/runs/37123838734",
+      "head_sha": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+      "status": "completed",
+      "conclusion": "success",
+      "checkout_sha": "62a7842375dfced3a30803d5fe02f716e2f20b0c",
+      "tests": 202,
+      "assertions": 546,
+      "failures": 0,
+      "errors": 0,
+      "release_targets": [
+        "claude-server"
+      ],
+      "cold_host_targets": [
+        "opencode",
+        "mcp",
+        "claude"
+      ],
+      "compiler_warnings": 0,
+      "lint_errors": 0,
+      "lint_warnings": 0,
+      "node_version": "22.23.3",
+      "log_file": "/tmp/muse-quoted-path-owner-discovery-20261003/bundle-run.log",
+      "log_sha256": "352dde4bad249986fe2d3866b7fde81169546550574429c67d15a41a0bca400d",
+      "action_deprecation_warnings_present": true
+    }
+  ],
+  "hosted_checkout_tree_binding": {
+    "merge_sha": "62a7842375dfced3a30803d5fe02f716e2f20b0c",
+    "parents": [
+      "e1cc8d96fd1182a6ed7c64e73a2eec1c911a9838",
+      "19456bb4c5f4d5ce1ac52ca854221516302e0c2e"
+    ],
+    "merge_tree": "ac2eaf87b3d7362700398bf0cdb6937139b7a54f",
+    "candidate_tree": "ac2eaf87b3d7362700398bf0cdb6937139b7a54f",
+    "trees_identical": true
+  },
+  "compiled_runtime_binding": {
+    "candidate": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+    "profile": "/home/err/spaces/review-repair/.ημ/muse-quoted-diff-paths-smoke/review-profile",
+    "matched_count": 57,
+    "matched_paths": [
+      {
+        "path": ".ημ/plugins/actor_watch.cljs",
+        "sha256": "0348fe2baaeb346967dcda9267eb3ad9f4687031ee565f0df23fc27214465756"
+      },
+      {
+        "path": ".ημ/plugins/actors.cljs",
+        "sha256": "017cba0b0de307b0564443835e508c433e09846f2b3756a7206768acbf909227"
+      },
+      {
+        "path": ".ημ/plugins/apifany.cljs",
+        "sha256": "ca5623285c2525c97b8c7de9fa3e2ef061e60a8aa40d9ea5b15892d3370c5c25"
+      },
+      {
+        "path": ".ημ/plugins/edn_ledger.cljs",
+        "sha256": "7a59d7cbb29afcc9f771c6c30eb1059a0f03ce5173f9461c2da1df7b46e41f1c"
+      },
+      {
+        "path": ".ημ/plugins/kanban_gate.cljs",
+        "sha256": "9b6cac6bc9739d780d26aaa686f8fdbeac98f78aab34a2301d79cf3d7b3d5e6f"
+      },
+      {
+        "path": ".ημ/plugins/receipt_river.cljs",
+        "sha256": "1b3c0a5bb2896a756f6eeffb1969d2548b38c5b22f48ef79c85490daa61eda2e"
+      },
+      {
+        "path": ".ημ/plugins/review_pipeline.cljs",
+        "sha256": "b2a7b549a977e5334d4812a221996d7d6eb691beb793e19152c99920f7437aa4"
+      },
+      {
+        "path": ".ημ/plugins/session_mycology.cljs",
+        "sha256": "e4840f021c1022332c73faf7f5f317db6db6245bd8afe95fe443f8da6516c3bf"
+      },
+      {
+        "path": ".ημ/plugins/websearch.cljs",
+        "sha256": "2b82cdb1038eb5afaa58aba4058aea9935bcfabfef35781309e68ff8619ebc03"
+      },
+      {
+        "path": ".ημ/review/publish-opencode-review.cjs",
+        "sha256": "bb75bc57d8eeaf7edbd77f34e9a4da2d319617d06809f9aadfb0d94e7ae6c2c9"
+      },
+      {
+        "path": "src/clj/eta_mu/claude/build.clj",
+        "sha256": "8ba0d2752645768f37689dca16847ba0c8b2935b5598b0be8ce9a48618100c14"
+      },
+      {
+        "path": "src/clj/eta_mu/daemon/build.clj",
+        "sha256": "2ed8e1739f7880c4eefb09e488ba751d102b18a804b37d432f1bffc59264b529"
+      },
+      {
+        "path": "src/clj/eta_mu/mcp/build.clj",
+        "sha256": "e08a16d9546a0d20c8cdb926e2fb6955844d61de47aef84e3fc09ea01a7bf432"
+      },
+      {
+        "path": "src/clj/eta_mu/opencode/build.clj",
+        "sha256": "c3da0117c72f22a1a47da89b92ede65370e8e6b1024a2dd5117f7966f914c783"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor.cljc",
+        "sha256": "3a8e9a1c1a79b40cdca3b216a7bf561a3249394a1c13b6f241fc55107d6bf400"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/backend.cljs",
+        "sha256": "324fe7f9cb42366ef58f00488b5279eddc79aa7bd0e56dcc766363d70c9dc1ba"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/envelope.cljc",
+        "sha256": "2b3d240361fe9804dc88c81200cd8a27d52fda5f14a7382f86525204d2a0463c"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/memory.cljc",
+        "sha256": "47337d1b8ceb7ae74fdbb8d1216ab76b51d4483f487ab7ce30f3936604d2a96a"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/monitor.cljs",
+        "sha256": "19a16696b6bff0d6b15d1c72462f8cb06452e9865d7b61a5cd13f444b485b97a"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/muse.cljc",
+        "sha256": "0627271c7b12e738fbf712a72bbb7e9c5a33d11955d5839a1e6336eed903c961"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/store.cljc",
+        "sha256": "f64471cebf5ee0167a3346e1922c6fddc6bb665fa495e7e83517e4e0289d8c1e"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/task.cljs",
+        "sha256": "f053af01f11d013d3d8c2b73db94cf7110fec551d07e9dbc87311e3e64bf1c17"
+      },
+      {
+        "path": "src/cljs/eta_mu/actor/watch.cljs",
+        "sha256": "eca3e6f7b46dec68955391909b7bd93dfc5894182d913edfe892b0cca16f5395"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/claude.cljs",
+        "sha256": "84a7c06f2a7d4480d4fa68841f4aa39e8a245e7a93169c6e715bddc483c81aac"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/fetch.cljs",
+        "sha256": "12f33d2db6b875967a385d0594e15e988aa66ae28d8cde4162c69171c86c9df5"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/mcp.cljs",
+        "sha256": "774304169b06a61398626182292434839d3294b0cd3dbc608f680e60301aa44e"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/mongo/client.cljs",
+        "sha256": "0d69cb86f11f5f358f53378cf998d1adf8e3e6bc059b76d91acec1b4ebfb3475"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/mongo/ledger.cljs",
+        "sha256": "03d3c8c4cd43a6aae5dac0c4a7d7d8a0e389203d1a99b0c30294a7c9d68ff0d4"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/node/fs.cljs",
+        "sha256": "cf2dad8d89fb04bcf8461b160f54e42bc57c5f7c6768b84024cc672fcea8cda4"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/node/import.cljs",
+        "sha256": "405d819a8fd893c4943eabc800a07775e45dd472f95d334b83d0980a00e417c4"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/node/ledger.cljs",
+        "sha256": "0d55aa9ed3fef31236b27dd219ddba601d79fd72c0d86fd27fcc322c89d2b21a"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/node/proc.cljs",
+        "sha256": "360106c08ad009414986f59b70affbbc42d9b2fc77829c5679040dd610e542cf"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/node/watch.cljs",
+        "sha256": "ee5a0eaef6419766fc23cf10986740a6647033200f79fb5d9694508b78f561de"
+      },
+      {
+        "path": "src/cljs/eta_mu/boundaries/opencode.cljs",
+        "sha256": "2e2d9d5fd8b16ae204e2ed1cec9c29a861f078e1c1553f846f9f8db7e0ffc777"
+      },
+      {
+        "path": "src/cljs/eta_mu/daemon/core.cljs",
+        "sha256": "f47d7899cee19a4fad79883711972eac9ff1391c12a4826cdacbb6cfbb83626b"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/agent.cljc",
+        "sha256": "eeae808b72f59a7684efff82d53ff58c711cd1dd97472588fb841cae094923b7"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/daemon.cljc",
+        "sha256": "9450b63b480e7fc749998f6a9331b820e67dafbe1ee9764c2afec8adf0d998a4"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/edn_ledger.cljc",
+        "sha256": "7bac0307a787e9050edd281a4b74fb3607bcb32c5b358dffadb77506e7640d44"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/mailbox.cljc",
+        "sha256": "ccf157bb966aa90836740546bfc96832cc5d49b340dbd2fde8523e5d9dbd74f0"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/mycology.cljc",
+        "sha256": "229e252f68f00f40c7c1b172c1f97b5e2bc5aab8dd44670163d2bc629750c774"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/receipts.cljc",
+        "sha256": "5e6846fdeb6297569f96208b5ce0e6744a91beb0ae2b7bf836c300c5bf093d6c"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/repo.cljc",
+        "sha256": "f5487e61f0b001e5a6daea49aa7d3b192f20c7ae7d8bde3d0a7efb24df0454a4"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/review.cljc",
+        "sha256": "d3f8f9c167d288749b14c4c6b84d83536b9048fb7ca2ea51a81a63dd5e504fcf"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/task.cljc",
+        "sha256": "0c83bfd334e0b9bd8fdda536f340f418961817b045610159c6c9adbe7f0c88fd"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/watch.cljc",
+        "sha256": "4a6edbc5128fb6d6c13fd477cba3b00c8221fc18cf4787cd1fa52d449029b4b0"
+      },
+      {
+        "path": "src/cljs/eta_mu/domain/websearch.cljc",
+        "sha256": "f5edadb9c6f0faef0550300a1933ada3bddbe751c313184f0318f0e8424c38fb"
+      },
+      {
+        "path": "src/cljs/eta_mu/dsl.cljc",
+        "sha256": "97561f811dd57a068676ae191e4feb2ebf8dcdd4d3e02b20224f9f7d25456a7f"
+      },
+      {
+        "path": "src/cljs/eta_mu/dsl/compile.cljc",
+        "sha256": "2f19603647cc9d928a7ed35ca8d40d37508a9aff4b2e7617598da61f6227dc4d"
+      },
+      {
+        "path": "src/cljs/eta_mu/dsl/events.cljc",
+        "sha256": "7703c57bd6d645b718b76d9b1caedcbf8991b838b475059786c1b39dde2d4d2e"
+      },
+      {
+        "path": "src/cljs/eta_mu/dsl/normalize.cljc",
+        "sha256": "842671399e6a0a01eadeeaefa4724bae0a7a284c73e7bebc51d2cebe9d244bce"
+      },
+      {
+        "path": "src/cljs/eta_mu/dsl/profile.cljc",
+        "sha256": "d703bb97ec309cac17311c1563fc900a567724c85975fc3406d3985b12032102"
+      },
+      {
+        "path": "src/cljs/eta_mu/dsl/schema.cljc",
+        "sha256": "dd4f22dc9d4b046568c963d6a0b90fe57364be1828c53bfa9582e0f6c7e60f5d"
+      },
+      {
+        "path": "src/cljs/eta_mu/dsl/zod.cljs",
+        "sha256": "aec93b6b220ba1617f446467125114ce5092228cdae4194d94877fe3773d2383"
+      },
+      {
+        "path": "src/cljs/eta_mu/opencode/config.cljc",
+        "sha256": "417ba2ab1e1dd7056064d98104bcec84f443917677323cc5eb8017bfd874820c"
+      },
+      {
+        "path": "src/cljs/eta_mu/opencode/settings.cljc",
+        "sha256": "d0e8d65a1777587d432ec5c83a6bba74b0e7d5c07ff20a5e9fb72907926a9db1"
+      },
+      {
+        "path": "src/cljs/eta_mu/shape/git_diff_path.cljc",
+        "sha256": "168a2ab5e16cdd377e1749fbb1278ce6cb82ecd0676968dc69e8e38d83e9dfba"
+      },
+      {
+        "path": "src/cljs/eta_mu/util/prompt_section.cljc",
+        "sha256": "56a91d29e1446efdd1ef855edb9fdd0143d330cd23b65ebd62d4f7fb85e5dabc"
+      }
+    ],
+    "missing": [],
+    "mismatched": [],
+    "bundle_sha256": "b52aad7e5c4c03447628b6f6681324e00a007e0311c4e109603a55ab3aa8b4da"
+  },
+  "actual_compiled_tool_probe": {
+    "result": "pass",
+    "candidate_sha": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+    "node_version": "v24.14.1",
+    "compiled_tools": 6,
+    "actual_git_filename_cases": 9,
+    "actual_root_primary_sha256": "6b64bab52a7b1727914f90aab2a2013361233a409430639c9e7e3d6bf963e86a",
+    "actual_root_head": "0b182c83252dbcba842a7cfbdb402795f3be8c2b",
+    "actual_root_original_failed_locations_admitted": [
+      44,
+      66
+    ],
+    "exact_filename_publisher_check": true,
+    "quoted_alias_context_and_absent_refused": true,
+    "malformed_cases_without_submission": 8,
+    "native_review_published": false,
+    "fresh_compilation": false,
+    "bundle": "/home/err/spaces/review-repair/.ημ/muse-quoted-diff-paths-smoke/review-profile/.opencode/dist/eta-mu-actors.js"
+  },
+  "probe_files": [
+    {
+      "path": "/tmp/muse-pr18-independent-qualification-20261003/compiled-review-probe.mjs",
+      "sha256": "2323803ca79cd906d02f21d934a9c8aedbf978dbfa16b30c375bafbd9e57e8da"
+    },
+    {
+      "path": "/tmp/muse-pr18-independent-qualification-20261003/compiled-review-probe-result.json",
+      "sha256": "088ced9d469ca2e7e99ca2b96e5340e24dfb192adad4a5e43e6e006b5b0ad1bb"
+    },
+    {
+      "path": "/tmp/muse-pr18-independent-qualification-20261003/compiled-review-probe.log",
+      "sha256": "088ced9d469ca2e7e99ca2b96e5340e24dfb192adad4a5e43e6e006b5b0ad1bb"
+    },
+    {
+      "path": "/tmp/muse-pr18-independent-qualification-20261003/git-generated.diff",
+      "sha256": "82737723ea2e1a560f83fee74a6190af02788fea24a316bc28bc5e544576855e"
+    },
+    {
+      "path": "/tmp/muse-pr18-independent-qualification-20261003/fixture-manifest.json",
+      "sha256": "caf105b413161eb6e8948e53a5ad7e372617aba70e432902cbdb8e6b06d17fe2"
+    }
+  ],
+  "independent_peer": {
+    "path": "/tmp/muse-decoder-peer-20261003-bijuknso/inspection.json",
+    "sha256": "14342b45e093049318b3465f45209c1f96bd3f2ec195c4095ff4cfa49a9bf64b",
+    "inspection": {
+      "kind": "independent-read-only-path-decoder-audit",
+      "source_head": "19456bb4c5f4d5ce1ac52ca854221516302e0c2e",
+      "base": "e1cc8d96fd1182a6ed7c64e73a2eec1c911a9838",
+      "tracked_status": "",
+      "findings": [],
+      "source_sha256": {
+        "src/cljs/eta_mu/shape/git_diff_path.cljc": "168a2ab5e16cdd377e1749fbb1278ce6cb82ecd0676968dc69e8e38d83e9dfba",
+        "src/cljs/eta_mu/domain/review.cljc": "d3f8f9c167d288749b14c4c6b84d83536b9048fb7ca2ea51a81a63dd5e504fcf",
+        ".ημ/review/publish-opencode-review.cjs": "bb75bc57d8eeaf7edbd77f34e9a4da2d319617d06809f9aadfb0d94e7ae6c2c9",
+        "test/cljs/eta_mu/domain/review_test.cljs": "0964b7b890c2eb9ecb2f033736bb5192ce9329854ba8cd14cb9db6ca7ef57b16",
+        ".ημ/review/publish-opencode-review.test.cjs": "3084174dcc5a4c4eb77eefdee01ea74276916845927809ce07789159b74eff22"
+      },
+      "scope": [
+        "pure Git C-quoted octal UTF-8 decoding",
+        "canonical filename identity without Unicode normalization",
+        "Git file header versus hunk content",
+        "malformed path failure before review session admission",
+        "publisher exact actual-GitHub-filename / added-line enforcement"
+      ],
+      "observed_runs": [
+        {
+          "runtime": "NBB",
+          "exit_code": 0,
+          "git_emitted_filenames": 48,
+          "quotePath_modes": [
+            "true",
+            "false"
+          ],
+          "exact_expected_added_lines": [
+            1,
+            2
+          ],
+          "malformed_controls_rejected": 10
+        },
+        {
+          "runtime": "JVM Clojure",
+          "exit_code": 0,
+          "git_emitted_filenames": 48,
+          "quotePath_modes": [
+            "true",
+            "false"
+          ],
+          "exact_expected_added_lines": [
+            1,
+            2
+          ],
+          "harness_warning": "Clojure CLI external :paths deprecation; no claim that this external probe is the full zero-warning gate"
+        },
+        {
+          "runtime": "NBB targeted domain suite",
+          "exit_code": 0,
+          "tests": 17,
+          "assertions": 71,
+          "failures": 0,
+          "errors": 0
+        },
+        {
+          "runtime": "Node publisher test suite",
+          "exit_code": 0,
+          "tests": 10,
+          "pass": 10,
+          "fail": 0
+        }
+      ],
+      "fixture_sha256": {
+        "jvm-probe.clj": "ceaeed1c445b7e1a75ceb14496b140a6886bdf5ee5287c72767e7da0e48f1233",
+        "expected.edn": "dfdc342d40642804629dbdb58972bf8fe355c9b2c2a8dd6f6042137c78f1d906",
+        "quote-false.diff": "14f13a10524a486b903bfe5d72ad08049283712be46cd729f3015560864c1cd0",
+        "fixture.json": "710ad4da5116a3cbecf3173e27c20299e873129b4d6e7a64f07fd7d2e8f96a25",
+        "probe.cljs": "2734fb7f8e26a9717544cbd1d41194627611abcc9e77956a115dd7b290de6ede",
+        "quote-true.diff": "046d1908ec124d25e6bf38a4e08aad55ec890dadbb506cbb41abda197605104c"
+      },
+      "publisher_production_unchanged_from_base": true,
+      "limitations": [
+        "No hosted review, native publication, reviewer round or merge clearance claimed",
+        "No full build/lint/cold-host gate rerun by this peer; parent independently qualifies compiled actual tools",
+        "Valid Git patches with normal diff --git separators and UTF-8 filename identity are the bounded input contract; unsupported combined diff/timestamp formats not claimed",
+        "Invalid UTF-8 Unix byte filenames intentionally fail closed, rather than inventing a GitHub filename"
+      ],
+      "mutations": "External fixtures and inspection only; no tracked edits, commits, pushes, PR interactions, requests, board writes or native reviews"
+    }
+  },
+  "material_findings": [],
+  "tracked_checkout_clean": true,
+  "limitations": [
+    "No fresh local compilation; reused compiled six-tool profile after verifying all57 tracked source/plugin/publisher bytes against candidate and known bundle hash.",
+    "Hosted CI is exact candidate-equivalent merge tree; publisher10-test suite separately locally verified, not claimed hosted.",
+    "Local probe uses Git-generated fixtures and GitHub-shaped per-file responses, no native GitHub review was published or findings adjudicated.",
+    "The root primary remains capped/truncated; decoding repair does not certify full changed-scope review or semantic receipt_history success.",
+    "Unmerged revision may be selected as a candidate via existing muse_revision input only with explicit qualification/provenance; owner merge/accepted-source status not inferred."
+  ],
+  "mutations": "External clone/fixtures/probe/inspection only. No canonical Muse edits, board writes, commits, pushes, PR edits, review requests, native reviews, merge or credit activation."
+}

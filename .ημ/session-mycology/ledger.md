@@ -529,3 +529,12 @@
   spore: none
   receipt-refs: 9f77ffccb14ab6ee6837d28eecfad020bc266c8917ee547abb8628e735ea8da3
   note: Independently qualify direct reusable pure APIs as well as protected runtime callers. Bind red probes to the API actually tested. Separate hosted deterministic results, complete scope recovery, native publication and approval. Retain original baseline evidence before citation. Preserve immutable invalid receipt history and unverified billing uncertainty rather than coercing either into acceptance. No new spore.
+- ts: 2026-10-03T17:24:39.113Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Repair persisted frontmatter values and select the qualified owning review-tool candidate
+  p-efficiency: 0.76
+  p-friction: 0.93
+  p-skill-candidate: 0.65
+  spore: none
+  receipt-refs: 1f2682a8ee494c418c3d45a51067285815824119aea3ab1d246f2c253818797d
+  note: Test create, UTF-8 persistence, reopen and subsequent mutation as a composed contract. Preserve red contexts and verify exact candidate bytes after transplant. Prefer an existing owning fix over duplicate implementation, and distinguish reviewed candidate selection from accepted promotion. Cross-check mutable native commit metadata against body, submission time and actual attempt scope. Preserve immutable bad history and external quota/billing blockers truthfully. No new spore.

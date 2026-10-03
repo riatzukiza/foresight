@@ -16,6 +16,8 @@ jobs:
     uses: open-hax/eta-mu/.github/workflows/opencode-code-review.yml@b18764d47c0b8da0b2d31f02d8bdd889323ee65c
     with:
       pr_head_sha: ${{ github.event.pull_request.head.sha }}
+      # Reviewed, independently qualified Muse PR18 candidate; still unmerged.
+      muse_revision: 19456bb4c5f4d5ce1ac52ca854221516302e0c2e
       opencode_version: 1.18.31
       setup_eta_mu_toolchain: false
       evidence_gates_script: |

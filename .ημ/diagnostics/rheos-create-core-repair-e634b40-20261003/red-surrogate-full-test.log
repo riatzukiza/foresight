@@ -1,0 +1,170 @@
+
+> @eta-mu/rheos@0.1.0 test /tmp/rheos-native-findings-e37-20261003.gfectL/checkout
+> shadow-cljs compile test && node dist/test.cjs
+
+shadow-cljs - config: /tmp/rheos-native-findings-e37-20261003.gfectL/checkout/shadow-cljs.edn
+[:test] Compiling ...
+========= Running Tests =======================
+no "source-map-support" (run "npm install source-map-support --save-dev" to get it)
+
+Testing rheos.backend.domain.board-test
+
+Testing rheos.backend.domain.compose-test
+compose-snapshot error: Doesn't support name: 42
+
+Testing rheos.backend.domain.events-test
+
+Testing rheos.backend.domain.task-create-test
+
+Testing rheos.backend.domain.task-edit-test
+
+Testing rheos.backend.domain.transition-test
+
+Testing rheos.backend.infra.agent-tools-test
+rheos: transition rejected: No transition from 'review' to 'in_review'
+{
+  "ok": true,
+  "uuid": "t1",
+  "from": "breakdown",
+  "to": "ready"
+}
+
+Testing rheos.backend.infra.cli-test
+
+Testing rheos.backend.infra.config-card-creation-test
+
+Testing rheos.backend.infra.config-test
+
+Testing rheos.backend.infra.github-issue-preflight-test
+
+Testing rheos.backend.infra.github-issues-test
+
+Testing rheos.backend.infra.store-test
+
+Testing rheos.backend.infra.task-create-conflict-test
+
+Testing rheos.backend.infra.task-create-test
+
+FAIL in (created-titles-survive-load-and-the-next-create) (rheos/backend/infra/task_create_test.cljs:248:15)
+escaped source retains the requested title
+expected: (= title (:title loaded))
+  actual: (not (= "Lone high � end" "Lone high � end"))
+
+FAIL in (created-titles-survive-load-and-the-next-create) (rheos/backend/infra/task_create_test.cljs:248:15)
+escaped source retains the requested title
+expected: (= title (:title loaded))
+  actual: (not (= "Lone low � end" "Lone low � end"))
+
+Testing rheos.backend.infra.task-edit-test
+
+Testing rheos.backend.infra.task-store-test
+
+Testing rheos.backend.infra.task-writeback-test
+
+Testing rheos.backend.infra.transition-test
+
+Testing rheos.backend.infra.view-store-test
+
+Testing rheos.backend.infra.watcher-test
+
+Testing rheos.backend.law.fsm-test
+
+Testing rheos.backend.shape.content-parser-test
+
+Testing rheos.backend.shape.frontmatter-serialization-test
+
+FAIL in (quoted-scalar-encoding-is-portable) (rheos/backend/shape/frontmatter_serialization_test.cljc:10:9)
+expected: (= (str "---\ntitle: " encoded "\n---") (parser/serialize-frontmatter [[:title value]]))
+  actual: (not (= "---\ntitle: \"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029\\ud800\\udc00\\ud83d\\ude00\"\n---" "---\ntitle: \"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029𐀀😀\"\n---"))
+
+FAIL in (quoted-scalar-encoding-is-portable) (rheos/backend/shape/frontmatter_serialization_test.cljc:12:9)
+expected: (= (str "---\nlabels: [" encoded ", \"7\", \"false\", \"\"]\n---") (parser/serialize-frontmatter [[:labels [value 7 false nil]]]))
+  actual: (not (= "---\nlabels: [\"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029\\ud800\\udc00\\ud83d\\ude00\", \"7\", \"false\", \"\"]\n---" "---\nlabels: [\"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029𐀀😀\", \"7\", \"false\", \"\"]\n---"))
+
+Testing rheos.backend.shape.kanban-test
+
+Ran 186 tests containing 1176 assertions.
+4 failures, 0 errors.
+===============================================
+[:test] Build completed. (143 files, 30 compiled, 0 warnings, 3.87s)
+no "source-map-support" (run "npm install source-map-support --save-dev" to get it)
+
+Testing rheos.backend.domain.board-test
+
+Testing rheos.backend.domain.compose-test
+compose-snapshot error: Doesn't support name: 42
+
+Testing rheos.backend.domain.events-test
+
+Testing rheos.backend.domain.task-create-test
+
+Testing rheos.backend.domain.task-edit-test
+
+Testing rheos.backend.domain.transition-test
+
+Testing rheos.backend.infra.agent-tools-test
+rheos: transition rejected: No transition from 'review' to 'in_review'
+{
+  "ok": true,
+  "uuid": "t1",
+  "from": "breakdown",
+  "to": "ready"
+}
+
+Testing rheos.backend.infra.cli-test
+
+Testing rheos.backend.infra.config-card-creation-test
+
+Testing rheos.backend.infra.config-test
+
+Testing rheos.backend.infra.github-issue-preflight-test
+
+Testing rheos.backend.infra.github-issues-test
+
+Testing rheos.backend.infra.store-test
+
+Testing rheos.backend.infra.task-create-conflict-test
+
+Testing rheos.backend.infra.task-create-test
+
+FAIL in (created-titles-survive-load-and-the-next-create) (rheos/backend/infra/task_create_test.cljs:248:15)
+escaped source retains the requested title
+expected: (= title (:title loaded))
+  actual: (not (= "Lone high � end" "Lone high � end"))
+
+FAIL in (created-titles-survive-load-and-the-next-create) (rheos/backend/infra/task_create_test.cljs:248:15)
+escaped source retains the requested title
+expected: (= title (:title loaded))
+  actual: (not (= "Lone low � end" "Lone low � end"))
+
+Testing rheos.backend.infra.task-edit-test
+
+Testing rheos.backend.infra.task-store-test
+
+Testing rheos.backend.infra.task-writeback-test
+
+Testing rheos.backend.infra.transition-test
+
+Testing rheos.backend.infra.view-store-test
+
+Testing rheos.backend.infra.watcher-test
+
+Testing rheos.backend.law.fsm-test
+
+Testing rheos.backend.shape.content-parser-test
+
+Testing rheos.backend.shape.frontmatter-serialization-test
+
+FAIL in (quoted-scalar-encoding-is-portable) (rheos/backend/shape/frontmatter_serialization_test.cljc:10:9)
+expected: (= (str "---\ntitle: " encoded "\n---") (parser/serialize-frontmatter [[:title value]]))
+  actual: (not (= "---\ntitle: \"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029\\ud800\\udc00\\ud83d\\ude00\"\n---" "---\ntitle: \"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029𐀀😀\"\n---"))
+
+FAIL in (quoted-scalar-encoding-is-portable) (rheos/backend/shape/frontmatter_serialization_test.cljc:12:9)
+expected: (= (str "---\nlabels: [" encoded ", \"7\", \"false\", \"\"]\n---") (parser/serialize-frontmatter [[:labels [value 7 false nil]]]))
+  actual: (not (= "---\nlabels: [\"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029\\ud800\\udc00\\ud83d\\ude00\", \"7\", \"false\", \"\"]\n---" "---\nlabels: [\"quote\\\" slash\\\\ LF\\n CR\\r tab\\t \\u0000\\u0001\\u0008\\u000c\\u001f\\u0085\\u2028\\u2029𐀀😀\", \"7\", \"false\", \"\"]\n---"))
+
+Testing rheos.backend.shape.kanban-test
+
+Ran 186 tests containing 1176 assertions.
+4 failures, 0 errors.
+ ELIFECYCLE  Test failed. See above for more details.
