@@ -3,6 +3,7 @@
   (:require [cljs.test :as test :refer [deftest is testing]]
             [clojure.string :as str]
             [foresight.law.project :as law]
+            [foresight.law.dev-origins :as dev-origins]
             [foresight.onboarding :as onboarding]
             [foresight.project :as project]
             [clojure.edn :as edn]
@@ -37,6 +38,33 @@
   (let [result (law/validate-project project/project)]
     (is (:valid? result))
     (is (empty? (:errors result)))))
+
+(deftest dev-origin-map-law
+  (let [modules [{:path "shx" :url "git@github.com:octave-commons/shx.git"}
+                 {:path "opencode" :url "git@github.com:open-hax/opencode.git"}]
+        rows [{:source/path "shx" :org/upstream "octave-commons/shx"
+               :dev/origin "riatzukiza/shx" :network/root "octave-commons/shx"}
+              {:source/path "opencode" :org/upstream "open-hax/opencode"
+               :dev/origin "riatzukiza/mojomast-opencode"
+               :network/root "anomalyco/opencode"}]]
+    (is (:valid? (dev-origins/validate rows modules)))
+    (doseq [[changed expected]
+            [[(pop rows) :dev-origin/missing]
+             [(conj rows (assoc (first rows) :source/path "extra")) :dev-origin/unknown-submodule]
+             [(assoc-in rows [1 :dev/origin] "riatzukiza/shx") :dev-origin/duplicate-fork]
+             [(assoc-in rows [1 :network/root] "octave-commons/shx") :dev-origin/duplicate-network]
+             [(assoc-in rows [1 :org/upstream] "open-hax/missing") :dev-origin/upstream-mismatch]
+             [(assoc-in rows [0 :dev/origin] "open-hax/shx") :dev-origin/personal-owner]]]
+      (is (some #(= expected (:law/id %)) (:errors (dev-origins/validate changed modules)))
+          (str expected)))))
+
+(deftest checked-in-dev-origins-cover-current-submodules
+  (let [rows (edn/read-string (fs/readFileSync "config/dev-origins.edn" "utf8"))
+        result (dev-origins/validate rows (workspace/current-submodules))]
+    (is (:valid? result) (pr-str (:errors result)))
+    (is (= 22 (count rows)))
+    (is (= "riatzukiza/mojomast-opencode"
+           (:dev/origin (first (filter #(= "opencode" (:source/path %)) rows)))))))
 
 (deftest checked-in-gitmodules-match-project-law
   (let [result (law/validate-project project/project (workspace/current-submodules))]
