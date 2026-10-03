@@ -1,0 +1,13 @@
+
+> @eta-mu/rheos@0.1.0 build /tmp/rheos-native-findings-e37-20261003.gfectL/checkout
+> shadow-cljs release server cli github-sync app
+
+shadow-cljs - config: /tmp/rheos-native-findings-e37-20261003.gfectL/checkout/shadow-cljs.edn
+[:server] Compiling ...
+[:server] Build completed. (106 files, 14 compiled, 0 warnings, 8.39s)
+[:cli] Compiling ...
+[:cli] Build completed. (110 files, 15 compiled, 0 warnings, 4.19s)
+[:github-sync] Compiling ...
+[:github-sync] Build completed. (67 files, 4 compiled, 0 warnings, 2.69s)
+[:app] Compiling ...
+[:app] Build completed. (95 files, 0 compiled, 0 warnings, 4.04s)

@@ -1,0 +1,38 @@
+{
+  "schema": "open-hax.review-evidence/v2",
+  "repository": "riatzukiza/rheos",
+  "pull_request": 1,
+  "base_sha": "11811264a308d406cb612aefa1dad40818675e5e",
+  "expected_head_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+  "executed_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+  "completion_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+  "head_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+  "exact_head": true,
+  "clean_checkout": true,
+  "generated_at": "2026-10-03T14:04:26.282Z",
+  "result": "success",
+  "statuses": {
+    "tool_versions": 0,
+    "generated_path_policy": 0,
+    "install": 0,
+    "bootstrap": 0,
+    "lint": 0,
+    "test": 0,
+    "build": 0,
+    "release_outputs": 0,
+    "diff_stat": 0
+  },
+  "attempted": {
+    "tool_versions": true,
+    "generated_path_policy": true,
+    "install": true,
+    "bootstrap": true,
+    "lint": true,
+    "test": true,
+    "build": true,
+    "release_outputs": true,
+    "diff_stat": true
+  },
+  "errors": [],
+  "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+}

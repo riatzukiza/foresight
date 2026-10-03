@@ -1,0 +1,347 @@
+{
+  "schema": "foresight-native-review-terminal-inspection/v1",
+  "observed_at_utc": "2026-10-03T16:53:15.176481+00:00",
+  "pr_url": "https://github.com/riatzukiza/foresight/pull/2",
+  "run_id": 37135388393,
+  "run_url": "https://github.com/riatzukiza/foresight/actions/runs/37135388393",
+  "run_status": "completed",
+  "run_conclusion": "failure",
+  "run_updated_at_utc": "2026-10-03T16:37:48Z",
+  "head_sha": "0b182c83252dbcba842a7cfbdb402795f3be8c2b",
+  "base_sha": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+  "attempt_artifact": {
+    "id": 11279445669,
+    "name": "review-attempt-2-37135388393-1",
+    "created_at": "2026-10-03T16:37:37Z",
+    "size_bytes": 17932,
+    "native_sha256": "a16dae2fe3cf061081018fbb66fac4ea8eeb5a75edd682ebf65393ae0e699a9e",
+    "downloaded_sha256": "a16dae2fe3cf061081018fbb66fac4ea8eeb5a75edd682ebf65393ae0e699a9e",
+    "native_digest_verified": true,
+    "url": "https://api.github.com/repos/riatzukiza/foresight/actions/artifacts/11279445669",
+    "local_archive": "/tmp/foresight-native-review-37135388393-terminal-audit-20261003/artifact11279445669.zip",
+    "local_directory": "/tmp/foresight-native-review-37135388393-terminal-audit-20261003/attempt",
+    "files": [
+      {
+        "name": "model-response-attempt-1.txt",
+        "bytes": 11138,
+        "sha256": "ccd5c3d62b7b2b7b6a1175c2eb9c438270e5004c51cf9860d0a1499f30e3a117"
+      },
+      {
+        "name": "opencode-stderr-attempt-1.log",
+        "bytes": 34424,
+        "sha256": "f75e2a40fd1544910eedfd7fba807bdb57dec3c1015010c284d28104a1eb06d6"
+      },
+      {
+        "name": "recovery.json",
+        "bytes": 353,
+        "sha256": "9ef15e26cbfaa4f40c3e296e247b6c9162aef9961c868b4ae319d07eb4d1fb92"
+      },
+      {
+        "name": "submission.json",
+        "bytes": 7625,
+        "sha256": "d098ad5acf12fd1429b64a0a9a2559524c1ec078a4ce5a168342773f0bf89182"
+      }
+    ]
+  },
+  "jobs": [
+    {
+      "id": 111238761354,
+      "name": "Evidence-first review (eta-mu) / Produce deterministic review evidence",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-03T16:02:31Z",
+      "completed_at": "2026-10-03T16:02:56Z",
+      "url": "https://github.com/riatzukiza/foresight/actions/runs/37135388393/job/111238761354"
+    },
+    {
+      "id": 111238761488,
+      "name": "Evidence-first review (eta-mu) / Compile Muse tools and stage skills",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-03T16:02:31Z",
+      "completed_at": "2026-10-03T16:03:26Z",
+      "url": "https://github.com/riatzukiza/foresight/actions/runs/37135388393/job/111238761488"
+    },
+    {
+      "id": 111238933197,
+      "name": "Evidence-first review (eta-mu) / Review pull request with OpenCode MiMo",
+      "status": "completed",
+      "conclusion": "failure",
+      "started_at": "2026-10-03T16:03:30Z",
+      "completed_at": "2026-10-03T16:37:40Z",
+      "url": "https://github.com/riatzukiza/foresight/actions/runs/37135388393/job/111238933197"
+    },
+    {
+      "id": 111245027831,
+      "name": "Evidence-first review (eta-mu) / OpenCode evidence review gate",
+      "status": "completed",
+      "conclusion": "failure",
+      "started_at": "2026-10-03T16:37:43Z",
+      "completed_at": "2026-10-03T16:37:47Z",
+      "url": "https://github.com/riatzukiza/foresight/actions/runs/37135388393/job/111245027831"
+    }
+  ],
+  "model_job": {
+    "id": 111238933197,
+    "url": "https://github.com/riatzukiza/foresight/actions/runs/37135388393/job/111238933197",
+    "conclusion": "failure",
+    "steps": [
+      {
+        "number": 1,
+        "name": "Set up job",
+        "conclusion": "success"
+      },
+      {
+        "number": 2,
+        "name": "Checkout pull request",
+        "conclusion": "success"
+      },
+      {
+        "number": 3,
+        "name": "Verify exact and clean review checkout",
+        "conclusion": "success"
+      },
+      {
+        "number": 4,
+        "name": "Set up Node 22",
+        "conclusion": "success"
+      },
+      {
+        "number": 5,
+        "name": "Download deterministic evidence",
+        "conclusion": "success"
+      },
+      {
+        "number": 6,
+        "name": "Download Muse tools and global skills",
+        "conclusion": "success"
+      },
+      {
+        "number": 7,
+        "name": "Verify and install the bounded review context",
+        "conclusion": "success"
+      },
+      {
+        "number": 8,
+        "name": "Test deterministic review publisher",
+        "conclusion": "success"
+      },
+      {
+        "number": 9,
+        "name": "Require eta-mu app credentials",
+        "conclusion": "success"
+      },
+      {
+        "number": 10,
+        "name": "Install pinned OpenCode CLI",
+        "conclusion": "success"
+      },
+      {
+        "number": 11,
+        "name": "Capture review start time",
+        "conclusion": "success"
+      },
+      {
+        "number": 12,
+        "name": "Run bounded evidence-first OpenCode review",
+        "conclusion": "success"
+      },
+      {
+        "number": 13,
+        "name": "Validate final review submission",
+        "conclusion": "failure"
+      },
+      {
+        "number": 14,
+        "name": "Upload review attempt artifacts",
+        "conclusion": "success"
+      },
+      {
+        "number": 15,
+        "name": "Verify review remained revision-bound",
+        "conclusion": "success"
+      },
+      {
+        "number": 16,
+        "name": "Create eta-mu GitHub App token for review publication",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 17,
+        "name": "Publish actual GitHub pull request review",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 18,
+        "name": "Send new inline review comments to Discord",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 35,
+        "name": "Post Set up Node 22",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 36,
+        "name": "Post Checkout pull request",
+        "conclusion": "success"
+      },
+      {
+        "number": 37,
+        "name": "Complete job",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "model_execution": {
+    "runner_exit_code": 0,
+    "invocation_state": "completed",
+    "attempts_executed": 1,
+    "submission_state": "present",
+    "proposed_event": "REQUEST_CHANGES",
+    "proposed_comment_count": 2,
+    "proposed_comment_locations": [
+      {
+        "path": "\"b/.\\316\\267\\316\\274/diagnostics/foresight-complete-review-input-20261003/local-qualification.json\"",
+        "line": 44
+      },
+      {
+        "path": "\"b/.\\316\\267\\316\\274/diagnostics/foresight-native-review-ae99a13-20261003/inspection.json\"",
+        "line": 66
+      }
+    ],
+    "finding_summary": [
+      "Receipt-history strict base-prefix failure remains blocking.",
+      "Model separately alleges 11 newly added string manifest/refs envelopes; this count and its proposed remedy are model proposals, not independently established by this inspection."
+    ]
+  },
+  "native_publication": {
+    "final_validation": "failure",
+    "exact_validator_error": "Unhandled error: Error: comments[0] targets \"b/.\\316\\267\\316\\274/diagnostics/foresight-complete-review-input-20261003/local-qualification.json\", but GitHub did not provide a reviewable patch for that changed file.",
+    "app_publication_token": "skipped",
+    "github_review_publication": "skipped",
+    "mimo_review_published": false,
+    "current_head_reviews": [
+      {
+        "id": 5401575490,
+        "author": "riatzukiza",
+        "state": "COMMENTED",
+        "submitted_at": "2026-10-03T16:05:54Z",
+        "body_empty": true,
+        "url": "https://github.com/riatzukiza/foresight/pull/2#pullrequestreview-5401575490"
+      },
+      {
+        "id": 5401577257,
+        "author": "coderabbitai[bot]",
+        "state": "COMMENTED",
+        "submitted_at": "2026-10-03T16:06:20Z",
+        "body_empty": true,
+        "url": "https://github.com/riatzukiza/foresight/pull/2#pullrequestreview-5401577257"
+      },
+      {
+        "id": 5401580185,
+        "author": "riatzukiza",
+        "state": "COMMENTED",
+        "submitted_at": "2026-10-03T16:07:20Z",
+        "body_empty": true,
+        "url": "https://github.com/riatzukiza/foresight/pull/2#pullrequestreview-5401580185"
+      },
+      {
+        "id": 5401582093,
+        "author": "coderabbitai[bot]",
+        "state": "COMMENTED",
+        "submitted_at": "2026-10-03T16:07:51Z",
+        "body_empty": true,
+        "url": "https://github.com/riatzukiza/foresight/pull/2#pullrequestreview-5401582093"
+      }
+    ],
+    "empty_owner_or_CodeRabbit_comments_are_not_mimo_verdicts": true
+  },
+  "supplemental_scope": {
+    "full_bytes": 485444,
+    "full_sha256": "bc0b92a1cce3c08c83a990a146156d0f5e9251cdbe4d6ff46f8193e5ce6dc4e8",
+    "primary_bytes": 300062,
+    "primary_sha256": "6b64bab52a7b1727914f90aab2a2013361233a409430639c9e7e3d6bf963e86a",
+    "full_changed_file_count": 49,
+    "primary_indexed_file_count": 34,
+    "entire_full_scope_proven": false,
+    "actual_read_calls": [
+      "pr-full.diff offset=3704 limit=30 (omitted receipts hunk)",
+      "alpha/src/alpha/law/document.cljc (whole current file)",
+      "alpha/src/alpha/law/artifact.cljc (whole current file)",
+      "alpha/test/alpha/law/document_test.cljc (whole current file)",
+      "alpha/test/alpha/test_runner.clj (whole current file)"
+    ],
+    "additional_current_reads": [
+      ".github/workflows/eta-mu-review.yml",
+      ".github/workflows/alpha-jvm-test.yml",
+      "alpha/deps.edn",
+      "scripts/evidence.clj (selected ranges)",
+      "src/foresight/evidence.cljc (selected ranges)",
+      ".ημ/kanban-events/ledger.edn (selected range and searches)"
+    ],
+    "not_indexed_headers": [
+      "diff --git \"a/.\\316\\267\\316\\274/receipts.edn\" \"b/.\\316\\267\\316\\274/receipts.edn\"",
+      "diff --git \"a/.\\316\\267\\316\\274/session-mycology/ledger.md\" \"b/.\\316\\267\\316\\274/session-mycology/ledger.md\"",
+      "diff --git a/alpha/README.md b/alpha/README.md",
+      "diff --git a/alpha/src/alpha/law/document.cljc b/alpha/src/alpha/law/document.cljc",
+      "diff --git a/alpha/test/alpha/law/document_test.cljc b/alpha/test/alpha/law/document_test.cljc",
+      "diff --git a/alpha/test/alpha/test_runner.clj b/alpha/test/alpha/test_runner.clj",
+      "diff --git a/docs/agile/kanban/admit-source-bearing-document-observations-e6aa52eb.md b/docs/agile/kanban/admit-source-bearing-document-observations-e6aa52eb.md",
+      "diff --git a/docs/agile/kanban/admit-verified-zero-finding-full-reviews-b94fce31.md b/docs/agile/kanban/admit-verified-zero-finding-full-reviews-b94fce31.md",
+      "diff --git a/docs/agile/kanban/design-epiphany-provider-and-review-boundaries-76983190.md b/docs/agile/kanban/design-epiphany-provider-and-review-boundaries-76983190.md",
+      "diff --git a/docs/agile/kanban/expose-rheos-rejected-source-diagnostics-08162f54.md b/docs/agile/kanban/expose-rheos-rejected-source-diagnostics-08162f54.md",
+      "diff --git a/docs/agile/kanban/prepare-document-contracts-and-write-evidence-e7cdf5cf.md b/docs/agile/kanban/prepare-document-contracts-and-write-evidence-e7cdf5cf.md",
+      "diff --git a/docs/agile/kanban/preserve-rheos-metadata-at-real-write-boundary-819717c4.md b/docs/agile/kanban/preserve-rheos-metadata-at-real-write-boundary-819717c4.md",
+      "diff --git a/docs/agile/kanban/restore-standalone-rheos-ci-5eb2ad18.md b/docs/agile/kanban/restore-standalone-rheos-ci-5eb2ad18.md",
+      "diff --git a/docs/agile/kanban/reuse-rheos-cycle-checked-yaml-value-1f0758b2.md b/docs/agile/kanban/reuse-rheos-cycle-checked-yaml-value-1f0758b2.md",
+      "diff --git a/docs/notes/rheos-markdown-content-loop.md b/docs/notes/rheos-markdown-content-loop.md"
+    ],
+    "omitted_inputs_without_demonstrated_content_review": [
+      ".ημ/session-mycology/ledger.md",
+      "alpha/README.md",
+      "docs/agile/kanban cards (only selected status searches demonstrated)",
+      "docs/notes/rheos-markdown-content-loop.md"
+    ],
+    "limits": "Supplemental receipts and current Alpha source were demonstrably recovered. No complete read or substantive content review of the remaining incoming cards, Alpha README, reflection ledger, or content-loop note is demonstrated. Mere availability, file-header discovery and grep of status are not full content coverage. Muse still indexed only the primary 34-file input."
+  },
+  "semantic_evidence": {
+    "artifact_id": 11278397530,
+    "native_archive_sha256": "8df66a8836276a5a733607e11c7cad486e9a44fc5962ae0a23a43bb83312ed8d",
+    "result": "failure",
+    "exact_head": true,
+    "clean_checkout": true,
+    "all_13_attempted": true,
+    "statuses": {
+      "diff_stat": 0,
+      "full_review_input": 0,
+      "workspace_laws": 0,
+      "project_laws": 0,
+      "lineage_laws": 0,
+      "evidence_laws": 0,
+      "evidence_adapter": 0,
+      "project_contract": 0,
+      "catalog_contract": 0,
+      "migration_pack_dependencies": 0,
+      "migration_pack": 0,
+      "receipt_history": 2,
+      "diff_hygiene": 0
+    },
+    "original_12_commands_and_order_preserved": true,
+    "errors": [],
+    "receipt_history_not_waived_or_repaired": true,
+    "inspection_path": "/tmp/foresight-native-review-37135388393-20261003/inspection.json"
+  },
+  "limits": [
+    "This is a read-only external diagnostic; no workflow, receipt, ledger, review request, comment or settlement was changed.",
+    "Model review execution and completed submission are distinct from native GitHub publication; no native MiMo review was emitted.",
+    "The raw Git-quoted Unicode-path compatibility failure remains in the owning Muse index/publisher boundary. This inspection neither changes that behavior nor authorizes path workaround comments.",
+    "Untrusted model proposals to rewrite or reorder receipts do not override the append-only user instruction. Preserve history and obtain the owning admission decision.",
+    "Full supplemental input availability is verified; whole 49-file reviewer consumption is not established."
+  ],
+  "skill_read": {
+    "path": "/home/err/.agents/skills/pr-flow/SKILL.md",
+    "sha256": "4ea42cd472ac9c1531a364fbd16c81589c0abd153bbc850b7381a331bebffab4",
+    "saved_read": "/tmp/foresight-0b182c8-terminal-pr-flow-read-20261003.txt"
+  }
+}

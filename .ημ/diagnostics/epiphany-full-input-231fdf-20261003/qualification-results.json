@@ -1,0 +1,281 @@
+{
+  "qualification": "actual local pinned guard/stage/gate/summary execution; no hosted/native review",
+  "head": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+  "base": "643be698ea0d841dd19385506b272872306e456e",
+  "node_version": "v22.20.0",
+  "positive_success": true,
+  "negative_probes_detected": 4,
+  "canonical_retained_hashes_before": {
+    "docs/kanban/board.json": "40f7b467b4c982d328064c1428a9c0bdfedc8a87328c76a1724beb27c4e13474",
+    "docs/kanban/.events/ledger.edn": "662f1241a945c65be06d74827ff05ba527254e9a81a13ea07ffdc01b186424c5",
+    ".\u03b7\u03bc/receipts.edn": "0a5926d60cc6afcb3b88e6349b1b491c0c4ff1bd017dc73a04e5c53433c6122d",
+    ".\u03b7\u03bc/session-mycology/ledger.md": "8cde4181c5588a3f40dca5d90fb4ce4edce56e13962a7798bf9f5b0c87a6ff82"
+  },
+  "canonical_retained_hashes_after": {
+    "docs/kanban/board.json": "40f7b467b4c982d328064c1428a9c0bdfedc8a87328c76a1724beb27c4e13474",
+    "docs/kanban/.events/ledger.edn": "662f1241a945c65be06d74827ff05ba527254e9a81a13ea07ffdc01b186424c5",
+    ".\u03b7\u03bc/receipts.edn": "0a5926d60cc6afcb3b88e6349b1b491c0c4ff1bd017dc73a04e5c53433c6122d",
+    ".\u03b7\u03bc/session-mycology/ledger.md": "8cde4181c5588a3f40dca5d90fb4ce4edce56e13962a7798bf9f5b0c87a6ff82"
+  },
+  "canonical_tracked_clean": true,
+  "cases": [
+    {
+      "case": "positive",
+      "input_kind": "local exact committed clone with explicitly simulated event",
+      "head": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+      "guard_exit": 0,
+      "guard": {
+        "event_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_commit": "true",
+        "event_head_matches": "true",
+        "exact_head": "true",
+        "clean": "true"
+      },
+      "gate_script_exit": 0,
+      "summary": {
+        "schema": "open-hax.review-evidence/v2",
+        "repository": "riatzukiza/epiphany",
+        "pull_request": 1,
+        "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+        "expected_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "completion_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "exact_head": true,
+        "clean_checkout": true,
+        "generated_at": "2026-10-03T14:19:24.585Z",
+        "result": "success",
+        "statuses": {
+          "diff_stat": 0,
+          "full_review_input": 0
+        },
+        "attempted": {
+          "diff_stat": true,
+          "full_review_input": true
+        },
+        "errors": [],
+        "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+      },
+      "primary_sha256_before_gate": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+      "primary_sha256_after_gate": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+      "full_final_exists": true,
+      "full_partial_exists": false,
+      "full_metadata_exists": true,
+      "native_review_executed": false,
+      "full": {
+        "bytes": 550095,
+        "sha256": "ff38f8d1ccbc55cc9b8b9ea5531fb8eceee2cda75c17a17017f6aa1947f0ee3a",
+        "primary_bytes": 300062,
+        "primary_sha256": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+        "metadata": {
+          "repository": "riatzukiza/epiphany",
+          "pull_request": 1,
+          "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+          "head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+          "command": [
+            "git",
+            "diff",
+            "--find-renames",
+            "643be698ea0d841dd19385506b272872306e456e...231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d"
+          ],
+          "path": ".opencode/review-evidence/pr-full.diff",
+          "bytes": 550095,
+          "sha256": "ff38f8d1ccbc55cc9b8b9ea5531fb8eceee2cda75c17a17017f6aa1947f0ee3a",
+          "primary_path": ".opencode/review-evidence/pr.diff",
+          "primary_bytes": 300062,
+          "primary_sha256": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+          "primary_prefix_limit_bytes": 300000,
+          "primary_truncated": true
+        },
+        "context_pointer_valid": true,
+        "full_equals_raw_git_diff": true
+      }
+    },
+    {
+      "case": "tampered-primary",
+      "input_kind": "local exact committed clone with explicitly simulated event",
+      "head": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+      "guard_exit": 0,
+      "guard": {
+        "event_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_commit": "true",
+        "event_head_matches": "true",
+        "exact_head": "true",
+        "clean": "true"
+      },
+      "gate_script_exit": 0,
+      "summary": {
+        "schema": "open-hax.review-evidence/v2",
+        "repository": "riatzukiza/epiphany",
+        "pull_request": 1,
+        "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+        "expected_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "completion_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "exact_head": true,
+        "clean_checkout": true,
+        "generated_at": "2026-10-03T14:19:24.808Z",
+        "result": "failure",
+        "statuses": {
+          "diff_stat": 0,
+          "full_review_input": 1
+        },
+        "attempted": {
+          "diff_stat": true,
+          "full_review_input": true
+        },
+        "errors": [],
+        "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+      },
+      "primary_sha256_before_gate": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+      "primary_sha256_after_gate": "b5a1b0f8b5df860a963f567c2de3f5908be79464e69c9b00bf7a24b956ac5de9",
+      "full_final_exists": false,
+      "full_partial_exists": true,
+      "full_metadata_exists": false,
+      "native_review_executed": false
+    },
+    {
+      "case": "wrong-head-after-guard",
+      "input_kind": "local exact committed clone with explicitly simulated event",
+      "head": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+      "guard_exit": 0,
+      "guard": {
+        "event_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_commit": "true",
+        "event_head_matches": "true",
+        "exact_head": "true",
+        "clean": "true"
+      },
+      "gate_script_exit": 0,
+      "summary": {
+        "schema": "open-hax.review-evidence/v2",
+        "repository": "riatzukiza/epiphany",
+        "pull_request": 1,
+        "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+        "expected_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "completion_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "exact_head": true,
+        "clean_checkout": true,
+        "generated_at": "2026-10-03T14:19:24.994Z",
+        "result": "failure",
+        "statuses": {
+          "diff_stat": 0,
+          "full_review_input": 1
+        },
+        "attempted": {
+          "diff_stat": true,
+          "full_review_input": true
+        },
+        "errors": [],
+        "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+      },
+      "primary_sha256_before_gate": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+      "primary_sha256_after_gate": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+      "full_final_exists": false,
+      "full_partial_exists": false,
+      "full_metadata_exists": false,
+      "native_review_executed": false
+    },
+    {
+      "case": "diff-generation-failure",
+      "input_kind": "local exact committed clone with explicitly simulated event",
+      "head": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+      "guard_exit": 0,
+      "guard": {
+        "event_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_commit": "true",
+        "event_head_matches": "true",
+        "exact_head": "true",
+        "clean": "true"
+      },
+      "gate_script_exit": 0,
+      "summary": {
+        "schema": "open-hax.review-evidence/v2",
+        "repository": "riatzukiza/epiphany",
+        "pull_request": 1,
+        "base_sha": "0000000000000000000000000000000000000000",
+        "expected_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "completion_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "exact_head": true,
+        "clean_checkout": true,
+        "generated_at": "2026-10-03T14:19:25.192Z",
+        "result": "failure",
+        "statuses": {
+          "diff_stat": 128,
+          "full_review_input": 1
+        },
+        "attempted": {
+          "diff_stat": true,
+          "full_review_input": true
+        },
+        "errors": [],
+        "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+      },
+      "primary_sha256_before_gate": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+      "primary_sha256_after_gate": "3629b6a9eb592da36c321b8b49e26282d165f71446407731028b2d8790c57a57",
+      "full_final_exists": false,
+      "full_partial_exists": true,
+      "full_metadata_exists": false,
+      "native_review_executed": false
+    },
+    {
+      "case": "dirty-checkout-guard",
+      "input_kind": "local exact committed clone with explicitly simulated event",
+      "head": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+      "guard_exit": 1,
+      "guard": {
+        "event_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "expected_commit": "true",
+        "event_head_matches": "true",
+        "exact_head": "true",
+        "clean": "false"
+      },
+      "gate_script_exit": 0,
+      "summary": {
+        "schema": "open-hax.review-evidence/v2",
+        "repository": "riatzukiza/epiphany",
+        "pull_request": 1,
+        "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+        "expected_head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "executed_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "completion_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "head_sha": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+        "exact_head": true,
+        "clean_checkout": false,
+        "generated_at": "2026-10-03T14:19:25.323Z",
+        "result": "failure",
+        "statuses": {
+          "checkout_guard": 1
+        },
+        "attempted": {
+          "checkout_guard": true
+        },
+        "errors": [
+          "checkout was not clean across deterministic execution"
+        ],
+        "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+      },
+      "primary_sha256_before_gate": null,
+      "primary_sha256_after_gate": null,
+      "full_final_exists": false,
+      "full_partial_exists": false,
+      "full_metadata_exists": false,
+      "native_review_executed": false
+    }
+  ]
+}

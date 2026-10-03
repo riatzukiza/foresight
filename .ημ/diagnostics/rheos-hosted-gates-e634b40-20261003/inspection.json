@@ -1,0 +1,196 @@
+{
+  "repository": "riatzukiza/rheos",
+  "scope": "source",
+  "head": "e634b40da8e5da7e1364138e703e052ca4f5b47b",
+  "run_id": 37139221794,
+  "artifact_id": 11279822952,
+  "native_zip_digest": "sha256:bc24c2ab96b3258a5637ad1c4fc6172870001db74afabd71ace05e2d8218f3b5",
+  "zip_digest_verified": true,
+  "expected_executed_completion_event_head_equal": true,
+  "clean_checkout_and_completion": true,
+  "summary_errors": [],
+  "statuses": {
+    "tool_versions": 0,
+    "generated_path_policy": 0,
+    "install": 0,
+    "bootstrap": 0,
+    "lint": 0,
+    "test": 0,
+    "build": 0,
+    "release_outputs": 0,
+    "diff_stat": 0
+  },
+  "attempted": {
+    "tool_versions": true,
+    "generated_path_policy": true,
+    "install": true,
+    "bootstrap": true,
+    "lint": true,
+    "test": true,
+    "build": true,
+    "release_outputs": true,
+    "diff_stat": true
+  },
+  "tools": {
+    "node": "22.23.3",
+    "pnpm": "10.14.0",
+    "java": "21.0.12.1",
+    "clj-kondo": "2025.10.23",
+    "shadow-cljs": "3.5.4",
+    "yaml": "2.9.1"
+  },
+  "install": {
+    "complete_manifest": true,
+    "packages": 221,
+    "no_frozen_lockfile": true,
+    "no_lockfile": true,
+    "node_path_unset": true
+  },
+  "bootstrap": {
+    "protocols_commit": "0ed56aa74a53a1d1e9c2e55ce95451817a7f3a90",
+    "protocols_files": 21,
+    "chat_ui_commit": "86385532b4f8606946555d0ada8e3fb22f35b4c3",
+    "chat_ui_files": 10
+  },
+  "tests": {
+    "executions": 2,
+    "tests_each": 186,
+    "assertions_each": 1176,
+    "failures": 0,
+    "errors": 0,
+    "compiled_files": [
+      "143",
+      "142",
+      "0",
+      "7.96s"
+    ],
+    "compiler_warnings": 0
+  },
+  "builds": [
+    {
+      "target": "server",
+      "files": 106,
+      "compiled": 47,
+      "warnings": 0,
+      "elapsed": "12.27s"
+    },
+    {
+      "target": "cli",
+      "files": 110,
+      "compiled": 50,
+      "warnings": 0,
+      "elapsed": "7.31s"
+    },
+    {
+      "target": "github-sync",
+      "files": 67,
+      "compiled": 19,
+      "warnings": 0,
+      "elapsed": "4.83s"
+    },
+    {
+      "target": "app",
+      "files": 95,
+      "compiled": 49,
+      "warnings": 0,
+      "elapsed": "8.06s"
+    }
+  ],
+  "outputs_test_s_nonempty": [
+    "dist/server.js",
+    "dist/cli.cjs",
+    "dist/github-sync.cjs",
+    "dist/web/js/main.js"
+  ],
+  "lint": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 8,
+    "exact_baseline_info_equality": true
+  },
+  "notices": {
+    "deprecated_glob_count": 1,
+    "optional_source_map_notice_count": 1
+  },
+  "review_input": {
+    "raw_diff_bytes": 118484,
+    "file_count": 29,
+    "below_300000_cap": true,
+    "same_as_local_exact_head_diff": true
+  },
+  "artifact_files": {
+    "review-evidence-1-37139221794-1.zip": {
+      "bytes": 36789,
+      "sha256": "bc24c2ab96b3258a5637ad1c4fc6172870001db74afabd71ace05e2d8218f3b5"
+    },
+    "review-evidence-1-37139221794-1/checkout-status.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "review-evidence-1-37139221794-1/checkout.json": {
+      "bytes": 287,
+      "sha256": "ec33ab729b083786c3cd4bcba15a1547ed3290b9bc07377f0245bb5fda44cb43"
+    },
+    "review-evidence-1-37139221794-1/completion-status.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "review-evidence-1-37139221794-1/deterministic.log": {
+      "bytes": 27616,
+      "sha256": "b58201129e48cd51ab4f9ad0c1af39fe4708f74cb415a2381daf5dc1f08b2d6d"
+    },
+    "review-evidence-1-37139221794-1/pr-context.md": {
+      "bytes": 5736,
+      "sha256": "b1a2e1f7cdd7a79f4d7ca287da3011b18f61718977bf678cc4aff30dc22aeab5"
+    },
+    "review-evidence-1-37139221794-1/pr.diff": {
+      "bytes": 118484,
+      "sha256": "73f678b2bedae2ff315c65f77717bfb1a7c91f671cb188ec118db5c7fcd521b9"
+    },
+    "review-evidence-1-37139221794-1/statuses.env": {
+      "bytes": 114,
+      "sha256": "b9506e7c87881162a6e570f7da31d9e7bf18c7856dbb8a6be2af0d3e7ce0a513"
+    },
+    "review-evidence-1-37139221794-1/summary.json": {
+      "bytes": 1084,
+      "sha256": "34f31904ccf287293878df7388e8d4e8bae8e89f924ac6db9aeb0b4f895ffc56"
+    },
+    "native-gates/bootstrap.log": {
+      "bytes": 569,
+      "sha256": "1b9ea47331748564691d86e2898e79f4bfe39cd32f7ae6284f2ddb1b36cb9ccb"
+    },
+    "native-gates/build.log": {
+      "bytes": 605,
+      "sha256": "4a42cf3ed4f474840067f9817147205b5c641e449a139b9541bf48bcf711f941"
+    },
+    "native-gates/diff_stat.log": {
+      "bytes": 1986,
+      "sha256": "844bf70ab753478cbd0c554904f9a44723100b441734cee1a770db6795bf1e40"
+    },
+    "native-gates/generated_path_policy.log": {
+      "bytes": 442,
+      "sha256": "e3ef24f967cf16d24df6a674425d5f1b2debe42e26b03c985e3b2ccf4a9eba3d"
+    },
+    "native-gates/install.log": {
+      "bytes": 1313,
+      "sha256": "413111348132c5340dce3987d4d1cd915cce2bb6ac76a796e48acd64621c7a16"
+    },
+    "native-gates/lint.log": {
+      "bytes": 1544,
+      "sha256": "8532593ff10766e61d37f3c8cdc2c645ae630efe7b4d65ff141eafc9e856f283"
+    },
+    "native-gates/release_outputs.log": {
+      "bytes": 214,
+      "sha256": "8527ac2fcd590242b0c889e09ff8d2e675591917170baa6052f9494bee1d1a29"
+    },
+    "native-gates/test.log": {
+      "bytes": 20351,
+      "sha256": "947f09a9a3f168993374291a27c8189e350b3c7d7a23eb6dd1fa11a9a7fdaa5c"
+    },
+    "native-gates/tool_versions.log": {
+      "bytes": 379,
+      "sha256": "c7e679ae8595c5c17f6b310cb8eb309255210b03071833e51e314ada299d79ad"
+    }
+  },
+  "qualification_limit": "Deterministic hosted qualification only; native model verdict and workflow aggregate result remain separate."
+}

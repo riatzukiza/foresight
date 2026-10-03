@@ -1,0 +1,226 @@
+{
+  "tier": "derived-from-authenticated-native-run-and-artifact",
+  "observed_at": "2026-10-03T15:44:19.008241+00:00",
+  "repository": "riatzukiza/foresight",
+  "pull_request": 2,
+  "base_sha": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+  "expected_head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+  "current_head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+  "run": {
+    "id": 37130898939,
+    "head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-03T14:47:42Z",
+    "updated_at": "2026-10-03T15:15:23Z",
+    "html_url": "https://github.com/riatzukiza/foresight/actions/runs/37130898939"
+  },
+  "model_job": {
+    "id": 111225793030,
+    "conclusion": "failure",
+    "completed_at": "2026-10-03T15:15:16Z",
+    "bounded_model_step_conclusion": "success",
+    "submission_validation_conclusion": "failure",
+    "native_publication_conclusion": "skipped"
+  },
+  "attempt_artifact": {
+    "id": 11276738992,
+    "bytes": 14784,
+    "sha256": "0c9bb6c93a8a88994102907c8e12235fdd49fc8289b99538d0e028e95f1fe1d0",
+    "digest_verified": true
+  },
+  "recovery": {
+    "schema": "open-hax.review-recovery/v1",
+    "max_attempts": 2,
+    "recovery_reason": null,
+    "attempts": [
+      {
+        "attempt": 1,
+        "exit_code": 0,
+        "invocation_state": "completed",
+        "response_file": "model-response-attempt-1.txt",
+        "stderr_file": "opencode-stderr-attempt-1.log",
+        "submission_state": "present"
+      }
+    ]
+  },
+  "submission": {
+    "schema": "open-hax.github-review/v1",
+    "event": "REQUEST_CHANGES",
+    "summary": "Reviewed PR #2 (`codex/content-document-contracts` → `main`, head `ae99a13`, 36 files / +3522 / −2) across all five evidence stages.\n\n**Deterministic evidence:** `summary.json` records overall `failure` — 11 of 12 gates pass; `receipt_history` exits 2 (\"Receipt River head does not preserve the base bytes as a prefix\") at the exact PR head under the PR's own workflow command (`verify-receipts --base 4927ab7 --at ae99a13`). This is change-associated, not environment noise.\n\n**Confirmed blocking findings:**\n\n1. **(high, state-transition, conf 0.90) — `receipt_history` gate is red at head.** The receipts diff hunk (`@@ -154,4 +154,19 @@`, zero deletions) inserts six added receipts before the base's final record (`dev-origin-map`, old 157 = head 163), so base is no longer a byte prefix of head by construction (`scripts/evidence.clj:1020-1022` throws on exactly this). The PR body discloses the blocker but the gate is unwaived; merge admission stays red until the append ordering reconciles to a true prefix.\n\n2. **(high, contract, conf 0.93) — the PR's own eleven new receipts violate `receipt-envelope?`.** Added receipts at head lines 157–162 and 164–168 carry string `:manifest` and `:refs`; the law (`src/foresight/evidence.cljc:227-229`) requires vectors, and `require-valid-receipt-records!` runs on every post-base record in both `verify-receipts!` and `promotion-ready-at!` — the base-prefix compatibility clause never covers them. Grep confirms base has exactly the eleven historical string-envelope receipts (94–100, 134–137), so the head total is **twenty-two**, not eleven as claimed in the PR body and in the added receipts 171/172. Fixing the prefix alone will surface this second failure; the new receipts (169–172 use vectors) must be rewritten to the valid vector shape and the count claims corrected.\n\n**Non-blocking notes / caveats:**\n- Rejected candidate: \"admission does not check derivedness\" (`document.cljc:107`) — explicitly out of documented scope (docstring + README state admission \"cannot establish that the representation follows from its input\"); intended behavior, not a defect. The source-identity comparison fix and its regression tests audited clean; all `admit-document` branches are covered.\n- Workflow pin bump (`e8eea02`→`b18764d`, `python3 -B`) is sound.\n- Environment limits: katamorph submodule and `.review-context/metadata` absent from this checkout, so local alpha/test execution was not possible; `pr.diff` was truncated at 3746 lines (hunks for all named risk zones were read in full). These are runner caveats, not defects.\n\n**Verdict:** REQUEST_CHANGES — two confirmed blocking findings, both above the publication threshold; both are in the receipts ledger this PR adds and both must be repaired (prefix-safe append order + vector `:manifest`/`:refs` in the eleven new receipts, with the \"eleven invalid\" claim corrected) before merge admission can pass.",
+    "comments": [
+      {
+        "path": "\"b/.\\316\\267\\316\\274/receipts.edn\"",
+        "line": 160,
+        "side": "RIGHT",
+        "severity": "high",
+        "blocking": true,
+        "body": "Impact: deterministic summary.json records result \"failure\" with receipt_history exit 2 at head ae99a13. Evidence: six added receipts (head 157-162) land before context record dev-origin-map; scripts/evidence.clj appended-receipt-records! throws when base bytes are not a prefix of head bytes. Corrective direction: restore base as exact byte prefix and re-run verify-receipts."
+      },
+      {
+        "path": "\"b/.\\316\\267\\316\\274/receipts.edn\"",
+        "line": 164,
+        "side": "RIGHT",
+        "severity": "high",
+        "blocking": true,
+        "body": "Impact: receipt-envelope? (src/foresight/evidence.cljc lines 227-229) requires (vector? (:manifest receipt)) and (vector? (:refs receipt)); scripts/evidence.clj require-valid-receipt-records! (lines 226-234) throws \"Immutable ledger contains invalid receipt envelopes\" over every record in the suffix appended after base, and both verify-receipts! (line 1051) and promotion-ready-at! (lines 262-264) apply it to appended records. Evidence: the added receipt on this line (head 164) carries :manifest \".eta-mu/receipts.edn,...\" and :refs \"fork-main:4927ab7...;...\" as strings; the same string/string shape appears on added lines 157-162 and 165-168 (eleven added receipts total), while later added receipts at head 169-172 correctly use vectors. This also falsifies the count stated in the PR body and in the added receipts at head 171/172 (\"eleven historical/immutable invalid string-manifest/ref receipts remain\"): the eleven pre-existing invalid envelopes (base lines 94-100, 134-137) are joined by these eleven newly appended ones, so head holds twenty-two invalid envelopes, and the new eleven are neither historical nor grandfathered (only bytes at the base prefix receive historical compatibility). Smallest corrective direction: rewrite :manifest/:refs of the eleven added receipts to vectors before merge (they are branch-local, not yet immutable base history), and correct the disclosed invalid-count claims."
+      }
+    ]
+  },
+  "publication": {
+    "native_review_id": null,
+    "native_current_head_mimo_reviews": [],
+    "error_lines": [
+      "Evidence-first review (eta-mu) / Review pull request with OpenCode MiMo\tUNKNOWN STEP\t2026-10-03T15:15:13.8942964Z ##[error]Unhandled error: Error: comments[0] targets \"b/.\\316\\267\\316\\274/receipts.edn\", but GitHub did not provide a reviewable patch for that changed file."
+    ],
+    "interpretation": "Machine-written submission exists and proposes REQUEST_CHANGES. Final validator rejected its Git-quoted path because GitHub does not expose that filename; native publication was skipped. This is not a published GitHub review."
+  },
+  "scope": {
+    "primary_diff_bytes": 300062,
+    "primary_diff_sha256": "bbddd46624084f8a7c0fe4c05bd6161e8e31a842309658dd2f6d2b1d1de6b350",
+    "primary_diff_lines": 3746,
+    "truncation_notice": "[eta-mu review] diff truncated at 300000 bytes (was 307381).",
+    "changed_document": "docs/notes/rheos-markdown-content-loop.md",
+    "current_document_lines": 196,
+    "current_document_sha256": "ac94bdf36b56d02986cd601b92f57834cdf71566deda11933c1251aad0dc3daa",
+    "last_complete_document_line": 153,
+    "partial_document_line": 154,
+    "partial_line_text": "1. **Content and presentation:**",
+    "full_line_text": "1. **Content and presentation:** documentation, designs, findings, research, reports and compatible external data become readable document objects through declared assembly and rendering. Storage is one provider concern.",
+    "omitted_range": "rest of line154 through line196",
+    "literal_read_calls": [
+      {
+        "stderr_line": 5,
+        "call": "→ Read .opencode/review-evidence/summary.json"
+      },
+      {
+        "stderr_line": 7,
+        "call": "→ Read .opencode/review-evidence/deterministic.log"
+      },
+      {
+        "stderr_line": 12,
+        "call": "→ Read .opencode/review-evidence/pr.diff [limit=23]"
+      },
+      {
+        "stderr_line": 13,
+        "call": "→ Read .opencode/review-evidence/pr.diff [offset=2173, limit=230]"
+      },
+      {
+        "stderr_line": 14,
+        "call": "→ Read .opencode/review-evidence/pr.diff [limit=310, offset=2393]"
+      },
+      {
+        "stderr_line": 20,
+        "call": "→ Read alpha/src/alpha/law/artifact.cljc"
+      },
+      {
+        "stderr_line": 23,
+        "call": "→ Read alpha/src/alpha/law/markdown/schema.cljc"
+      },
+      {
+        "stderr_line": 24,
+        "call": "→ Read alpha/src/alpha/law/markdown/facet.cljc"
+      },
+      {
+        "stderr_line": 27,
+        "call": "→ Read alpha/deps.edn"
+      },
+      {
+        "stderr_line": 28,
+        "call": "→ Read alpha/README.md"
+      },
+      {
+        "stderr_line": 34,
+        "call": "→ Read .github/workflows/alpha-jvm-test.yml"
+      },
+      {
+        "stderr_line": 38,
+        "call": "→ Read .ημ/receipts.edn [offset=150]"
+      },
+      {
+        "stderr_line": 39,
+        "call": "→ Read src/foresight/evidence.cljc [offset=195, limit=90]"
+      },
+      {
+        "stderr_line": 42,
+        "call": "→ Read scripts/evidence.clj [limit=80, offset=195]"
+      },
+      {
+        "stderr_line": 43,
+        "call": "→ Read scripts/evidence.clj [limit=85, offset=995]"
+      },
+      {
+        "stderr_line": 44,
+        "call": "→ Read .opencode/review-evidence/pr.diff [limit=25, offset=2245]"
+      }
+    ],
+    "literal_document_read_found": false,
+    "full_diff_supplement_read_found": false,
+    "reviewer_scope_statement": "pr.diff was truncated at 3746 lines (hunks for all named risk zones were read in full)",
+    "interpretation": "Native transcript does not establish retrieval/review of the omitted document range; named risk-zone coverage is not complete changed-scope coverage. Auditor fetched exact-head document only to locate cutoff; this is not reviewer recovery."
+  },
+  "deterministic_evidence": {
+    "exact_head": true,
+    "clean_checkout": true,
+    "result": "failure",
+    "receipt_history": 2,
+    "other_gate_count": 11,
+    "other_gate_exit_statuses": 0,
+    "interpretation": "Producer upload succeeded while semantic receipt_history remained failed."
+  },
+  "files": {
+    "run.json": {
+      "bytes": 14451,
+      "sha256": "99b86689ad66c4e01aaeaa4b90457c53cc0bc4b35bbcb382f9e56ca8ba21e319"
+    },
+    "jobs.json": {
+      "bytes": 19609,
+      "sha256": "fdd006ccd07b5ecd6d2b47f221733dd3e340f60ab81200b407fa9075094f57cd"
+    },
+    "artifacts.json": {
+      "bytes": 2712,
+      "sha256": "2257cb27fd8caeab83148ae5dfc66b703a268f2729a885fee262865840fe74b8"
+    },
+    "native-reviews.json": {
+      "bytes": 51034,
+      "sha256": "a2671d7d770767a0cb476be41d6d84cf83aea2dcf4af43cf26ef179c1ba22d4a"
+    },
+    "canonical-status.txt": {
+      "bytes": 691,
+      "sha256": "aa2045ee1c9c8e406df6019b92a79d3597fa2f52297405414e32c424827d689a"
+    },
+    "review-attempt.zip": {
+      "bytes": 14784,
+      "sha256": "0c9bb6c93a8a88994102907c8e12235fdd49fc8289b99538d0e028e95f1fe1d0"
+    },
+    "attempt/model-response-attempt-1.txt": {
+      "bytes": 7436,
+      "sha256": "5cede865708bdc2ccf02fd0d220402db93aade4a1ab8e8afe793c311f30eee5c"
+    },
+    "attempt/opencode-stderr-attempt-1.log": {
+      "bytes": 37421,
+      "sha256": "a7e1d95e6fb4645d6dbd00c6db741a9a299efcf6c76ee271742746f8569d50da"
+    },
+    "attempt/recovery.json": {
+      "bytes": 353,
+      "sha256": "9ef15e26cbfaa4f40c3e296e247b6c9162aef9961c868b4ae319d07eb4d1fb92"
+    },
+    "attempt/submission.json": {
+      "bytes": 5238,
+      "sha256": "537b6b3f22fa799f3a9d3cd3e0b301badf5a660f714631bcdae8ab63de699fc7"
+    },
+    "model-job-failed-log.txt": {
+      "bytes": 272780,
+      "sha256": "9368a1ecebce1f5f8c73bcc40384f5bdd7d74e63db177e22fd2d99f06e1a896f"
+    },
+    "literal-read-calls.json": {
+      "bytes": 1595,
+      "sha256": "124ca3df69af5276b6ba69e4a020507d397c744ef1d28313691fc31d5414990e"
+    }
+  },
+  "limits": [
+    "No rerun, reviewer request, publication, repository/workflow change, or board mutation by this auditor.",
+    "Unpublished model recommendations to rewrite receipts are not adopted or authorization to alter immutable history.",
+    "No native review ID, approval, or completed full-review round is supplied by this failed attempt."
+  ]
+}

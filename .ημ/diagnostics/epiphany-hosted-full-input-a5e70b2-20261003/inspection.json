@@ -1,0 +1,238 @@
+{
+  "tier": "derived-from-retained-native-hosted-artifact",
+  "runId": 37129718053,
+  "runUrl": "https://github.com/riatzukiza/epiphany/actions/runs/37129718053",
+  "head": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+  "base": "643be698ea0d841dd19385506b272872306e456e",
+  "artifactId": 11276457224,
+  "artifactDigestVerified": true,
+  "summary": {
+    "schema": "open-hax.review-evidence/v2",
+    "repository": "riatzukiza/epiphany",
+    "pull_request": 1,
+    "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+    "expected_head_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+    "executed_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+    "completion_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+    "head_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+    "exact_head": true,
+    "clean_checkout": true,
+    "generated_at": "2026-10-03T14:28:43.451Z",
+    "result": "success",
+    "statuses": {
+      "diff_stat": 0,
+      "full_review_input": 0
+    },
+    "attempted": {
+      "diff_stat": true,
+      "full_review_input": true
+    },
+    "errors": [],
+    "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+  },
+  "fullInputMetadata": {
+    "repository": "riatzukiza/epiphany",
+    "pull_request": 1,
+    "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+    "head_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+    "command": [
+      "git",
+      "diff",
+      "--find-renames",
+      "643be698ea0d841dd19385506b272872306e456e...a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28"
+    ],
+    "path": ".opencode/review-evidence/pr-full.diff",
+    "bytes": 554325,
+    "sha256": "6231429994fe5e61910c8b4eb3a8f03f9a915404fef2c459ccbb299fa2239e7b",
+    "primary_path": ".opencode/review-evidence/pr.diff",
+    "primary_bytes": 300062,
+    "primary_sha256": "c05865fdf425805afd6c8995d7d677699ec69403cdbc0c1aae788e8c4da5de22",
+    "primary_prefix_limit_bytes": 300000,
+    "primary_truncated": true
+  },
+  "actualFullBytes": 554325,
+  "actualFullSha256": "6231429994fe5e61910c8b4eb3a8f03f9a915404fef2c459ccbb299fa2239e7b",
+  "actualPrimaryBytes": 300062,
+  "actualPrimarySha256": "c05865fdf425805afd6c8995d7d677699ec69403cdbc0c1aae788e8c4da5de22",
+  "primaryPrefixMatchesFull": true,
+  "primarySuffix": "\n[eta-mu review] diff truncated at 300000 bytes (was 554325).\n",
+  "fullChangedFileCount": 10,
+  "primaryChangedFileCount": 8,
+  "fullHeaders": [
+    "a/.github/workflows/eta-mu-review.yml b/.github/workflows/eta-mu-review.yml",
+    "a/.gitignore b/.gitignore",
+    "\"a/.\\316\\267\\316\\274/receipts.edn\" \"b/.\\316\\267\\316\\274/receipts.edn\"",
+    "\"a/.\\316\\267\\316\\274/session-mycology/ledger.md\" \"b/.\\316\\267\\316\\274/session-mycology/ledger.md\"",
+    "a/docs/designs/rheos-content-provider-boundary.md b/docs/designs/rheos-content-provider-boundary.md",
+    "a/docs/kanban/.events/ledger.edn b/docs/kanban/.events/ledger.edn",
+    "a/docs/kanban/AGENTS.md b/docs/kanban/AGENTS.md",
+    "a/docs/kanban/board.json b/docs/kanban/board.json",
+    "a/docs/kanban/chores/plan-rheos-provider-boundary-review-7648b7b5.md b/docs/kanban/chores/plan-rheos-provider-boundary-review-7648b7b5.md",
+    "a/docs/research/rheos-source-preservation-qualification-finding.md b/docs/research/rheos-source-preservation-qualification-finding.md"
+  ],
+  "primaryHeaders": [
+    "a/.github/workflows/eta-mu-review.yml b/.github/workflows/eta-mu-review.yml",
+    "a/.gitignore b/.gitignore",
+    "\"a/.\\316\\267\\316\\274/receipts.edn\" \"b/.\\316\\267\\316\\274/receipts.edn\"",
+    "\"a/.\\316\\267\\316\\274/session-mycology/ledger.md\" \"b/.\\316\\267\\316\\274/session-mycology/ledger.md\"",
+    "a/docs/designs/rheos-content-provider-boundary.md b/docs/designs/rheos-content-provider-boundary.md",
+    "a/docs/kanban/.events/ledger.edn b/docs/kanban/.events/ledger.edn",
+    "a/docs/kanban/AGENTS.md b/docs/kanban/AGENTS.md",
+    "a/docs/kanban/board.json b/docs/kanban/board.json"
+  ],
+  "modelJob": {
+    "id": 111222369726,
+    "status": "in_progress",
+    "conclusion": null,
+    "started_at": "2026-10-03T14:29:24Z",
+    "url": "https://github.com/riatzukiza/epiphany/actions/runs/37129718053/job/111222369726",
+    "unfinishedSteps": [
+      {
+        "name": "Run bounded evidence-first OpenCode review",
+        "status": "in_progress",
+        "started_at": "2026-10-03T14:29:49Z"
+      },
+      {
+        "name": "Validate final review submission",
+        "status": "pending",
+        "started_at": null
+      },
+      {
+        "name": "Upload review attempt artifacts",
+        "status": "pending",
+        "started_at": null
+      },
+      {
+        "name": "Verify review remained revision-bound",
+        "status": "pending",
+        "started_at": null
+      },
+      {
+        "name": "Create eta-mu GitHub App token for review publication",
+        "status": "pending",
+        "started_at": null
+      },
+      {
+        "name": "Publish actual GitHub pull request review",
+        "status": "pending",
+        "started_at": null
+      },
+      {
+        "name": "Send new inline review comments to Discord",
+        "status": "pending",
+        "started_at": null
+      },
+      {
+        "name": "Post Set up Node 22",
+        "status": "pending",
+        "started_at": null
+      },
+      {
+        "name": "Post Checkout pull request",
+        "status": "pending",
+        "started_at": null
+      }
+    ]
+  },
+  "availableArtifacts": [
+    {
+      "id": 11276457224,
+      "name": "review-evidence-1-37129718053-1"
+    },
+    {
+      "id": 11275774221,
+      "name": "review-context-37129718053-1"
+    }
+  ],
+  "nativeCurrentHeadReviewsAtInitialSnapshot": [
+    {
+      "body": "",
+      "commit_id": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+      "html_url": "https://github.com/riatzukiza/epiphany/pull/1#pullrequestreview-5401234580",
+      "id": 5401234580,
+      "state": "COMMENTED",
+      "submitted_at": "2026-10-03T14:30:31Z",
+      "user": "riatzukiza"
+    }
+  ],
+  "files": {
+    "artifact/checkout-status.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "artifact/checkout.json": {
+      "bytes": 287,
+      "sha256": "e7607c1608db8c2f91b7d3a8185e613da1b4ed7657ed76a6d1887d5d6b3999ac"
+    },
+    "artifact/completion-status.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "artifact/deterministic.log": {
+      "bytes": 896,
+      "sha256": "2eb2987089888f27edb0b1809759b6a6ad92c730ae6344a29b769e3af9f37af3"
+    },
+    "artifact/pr-context.md": {
+      "bytes": 4478,
+      "sha256": "f13f3b3947ff3311eecf2df988d8977c5d9a8c66a3c7e254a0433590d2e9ab08"
+    },
+    "artifact/pr-full.diff": {
+      "bytes": 554325,
+      "sha256": "6231429994fe5e61910c8b4eb3a8f03f9a915404fef2c459ccbb299fa2239e7b"
+    },
+    "artifact/pr-full.json": {
+      "bytes": 724,
+      "sha256": "5564c5acb2ca22dc8610e31b45e125591e6c563e71d7aa4f395b20268ca243c3"
+    },
+    "artifact/pr-full.sha256": {
+      "bytes": 79,
+      "sha256": "470dee7bc220d1f56135dc93319671dd414e66827cfcb9934f9c9f2697d666b4"
+    },
+    "artifact/pr.diff": {
+      "bytes": 300062,
+      "sha256": "c05865fdf425805afd6c8995d7d677699ec69403cdbc0c1aae788e8c4da5de22"
+    },
+    "artifact/statuses.env": {
+      "bytes": 32,
+      "sha256": "42f9cd1e0cda213fadb81ef6cc2fd79ee14f5bdad3d8d63c1948f4d9e9386322"
+    },
+    "artifact/summary.json": {
+      "bytes": 790,
+      "sha256": "a74f51ac8bfe9317f06cc13e5c3b4d7597104c89484012bdceafc10c66c94798"
+    },
+    "artifact-metadata.json": {
+      "bytes": 728,
+      "sha256": "f5997becee6beab8206efc0a4da2fd8cf07dd2088aab5dcc31cbf17388cbad50"
+    },
+    "artifacts-followup.json": {
+      "bytes": 1487,
+      "sha256": "204cf7b1b15ba65d2bac7a5e0002420483542fc5d41b2f886d7d44e3cebe8c01"
+    },
+    "current-native-reviews-initial.json": {
+      "bytes": 251,
+      "sha256": "4447ba49cea1e6b286ed1f65a44f7f9d841878a5586dc8744df3d75b935a25b3"
+    },
+    "jobs-followup.json": {
+      "bytes": 11590,
+      "sha256": "8c6ed5f936fcad6254909a53fc2f454e19df155877de01e7a96df361b4540e16"
+    },
+    "review-evidence.zip": {
+      "bytes": 256669,
+      "sha256": "29fadc5990c74c75c2b173c90a838517e062d20df3784392b953c7cab4836f2f"
+    },
+    "run-followup.json": {
+      "bytes": 12755,
+      "sha256": "687f810058250cfc0d88041f440dad462fddf392787722cdd535f87dd3bd8971"
+    },
+    "run-initial.json": {
+      "bytes": 12755,
+      "sha256": "687f810058250cfc0d88041f440dad462fddf392787722cdd535f87dd3bd8971"
+    }
+  },
+  "inspection": "PASS: deterministic complete-input availability; review consumption pending",
+  "limits": [
+    "No attempt/submission/transcript artifact exists at the bounded follow-up snapshot.",
+    "No completed current-head MiMo review or evidence of supplemental-diff consumption; positive staging is not full-review credit.",
+    "Primary diff is truncated during board.json deletion and omits final card/research document diffs."
+  ]
+}

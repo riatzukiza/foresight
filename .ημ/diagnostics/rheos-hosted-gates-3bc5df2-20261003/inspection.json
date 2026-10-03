@@ -1,0 +1,172 @@
+{
+  "tier": "derived-from-retained-native-hosted-artifact",
+  "runId": 37128289422,
+  "runUrl": "https://github.com/riatzukiza/rheos/actions/runs/37128289422",
+  "head": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+  "base": "11811264a308d406cb612aefa1dad40818675e5e",
+  "deterministicJobId": 111218018067,
+  "deterministicJobUrl": "https://github.com/riatzukiza/rheos/actions/runs/37128289422/job/111218018067",
+  "jobCompletedAt": "2026-10-03T14:04:29Z",
+  "artifactId": 11276335238,
+  "artifactName": "review-evidence-1-37128289422-1",
+  "artifactZipSha256": "65f746221a3ae96dd9033c436fc1a5d3e1074fa178bd5910572c2dfa9beda592",
+  "githubDigestMatches": true,
+  "semanticSummary": {
+    "schema": "open-hax.review-evidence/v2",
+    "repository": "riatzukiza/rheos",
+    "pull_request": 1,
+    "base_sha": "11811264a308d406cb612aefa1dad40818675e5e",
+    "expected_head_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+    "executed_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+    "completion_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+    "head_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+    "exact_head": true,
+    "clean_checkout": true,
+    "generated_at": "2026-10-03T14:04:26.282Z",
+    "result": "success",
+    "statuses": {
+      "tool_versions": 0,
+      "generated_path_policy": 0,
+      "install": 0,
+      "bootstrap": 0,
+      "lint": 0,
+      "test": 0,
+      "build": 0,
+      "release_outputs": 0,
+      "diff_stat": 0
+    },
+    "attempted": {
+      "tool_versions": true,
+      "generated_path_policy": true,
+      "install": true,
+      "bootstrap": true,
+      "lint": true,
+      "test": true,
+      "build": true,
+      "release_outputs": true,
+      "diff_stat": true
+    },
+    "errors": [],
+    "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+  },
+  "checkoutGuard": {
+    "event_head_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+    "expected_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+    "executed_sha": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+    "expected_commit": true,
+    "event_head_matches": true,
+    "exact_head": true,
+    "clean": true
+  },
+  "versions": {
+    "node": "22.23.3",
+    "pnpm": "10.14.0",
+    "java": "Temurin-21.0.12.1+1-LTS",
+    "clj-kondo": "2025.10.23"
+  },
+  "testRuns": [
+    {
+      "tests": 177,
+      "assertions": 1029,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "tests": 177,
+      "assertions": 1029,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "compilerSummaries": [
+    "[:test] Build completed. (139 files, 138 compiled, 0 warnings, 7.57s)",
+    "[:server] Build completed. (104 files, 45 compiled, 0 warnings, 12.26s)",
+    "[:cli] Build completed. (108 files, 48 compiled, 0 warnings, 6.83s)",
+    "[:github-sync] Build completed. (65 files, 17 compiled, 0 warnings, 4.27s)",
+    "[:app] Build completed. (95 files, 49 compiled, 0 warnings, 6.79s)"
+  ],
+  "lintSummary": [
+    "linting took 561ms, errors: 0, warnings: 0"
+  ],
+  "lintInfoCount": 9,
+  "sourceTrees": {
+    "deps/protocols/src": {
+      "pin": "0ed56aa74a53a1d1e9c2e55ce95451817a7f3a90",
+      "loggedFileCount": 21
+    },
+    "deps/chat-ui/src": {
+      "pin": "86385532b4f8606946555d0ada8e3fb22f35b4c3",
+      "loggedFileCount": 10
+    }
+  },
+  "releaseOutputQualification": {
+    "gateExit": 0,
+    "command": "test -s for each expected output",
+    "paths": [
+      "dist/server.js",
+      "dist/cli.cjs",
+      "dist/github-sync.cjs",
+      "dist/web/js/main.js"
+    ],
+    "limit": "Built binaries and their hashes were not uploaded; nonempty outputs are established by the recorded successful hosted gate."
+  },
+  "warnings": [
+    "\u2009WARN\u2009 1 deprecated subdependencies found: glob@11.1.0"
+  ],
+  "files": {
+    "artifact/checkout-status.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "artifact/checkout.json": {
+      "bytes": 287,
+      "sha256": "71d7735d92d3b027ece298d1a146dc8305745420e367bb576e14fcf21478c5e1"
+    },
+    "artifact/completion-status.txt": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "artifact/deterministic.log": {
+      "bytes": 26782,
+      "sha256": "1d17498fe61ea582e1dc02da871e0703bfc441c6558c235cf9d613afd63efcbe"
+    },
+    "artifact/pr-context.md": {
+      "bytes": 3613,
+      "sha256": "4968c5ac8c2e1688035ec28b4abff7557ab68771a2ed803e991e1ea656d5edbb"
+    },
+    "artifact/pr.diff": {
+      "bytes": 86032,
+      "sha256": "20ce391d6d108bc1a35d15006ca3c1fa5887af3ebb67029b61ae9bd0bbea8ee4"
+    },
+    "artifact/statuses.env": {
+      "bytes": 114,
+      "sha256": "b9506e7c87881162a6e570f7da31d9e7bf18c7856dbb8a6be2af0d3e7ce0a513"
+    },
+    "artifact/summary.json": {
+      "bytes": 1084,
+      "sha256": "17c5a7fe67b011cc7563f64a2c9482ab5be2a8a9d80b5b237a480c59a0bb289f"
+    },
+    "artifact-metadata.json": {
+      "bytes": 716,
+      "sha256": "97d5fce9ee1a507c0d5fb80573bc2d45c4cf57c07c371caa83402b697232504a"
+    },
+    "deterministic-job.json": {
+      "bytes": 4479,
+      "sha256": "9717666ee070aecfda126c49b913da58273aceaf43de451c88edf9637bc7f59f"
+    },
+    "review-evidence.zip": {
+      "bytes": 29145,
+      "sha256": "65f746221a3ae96dd9033c436fc1a5d3e1074fa178bd5910572c2dfa9beda592"
+    },
+    "run-metadata.json": {
+      "bytes": 12463,
+      "sha256": "465728c60e6143cf0feee7e007e67df128f04bd19a6f2dd91d7aaa15aeccae7d"
+    }
+  },
+  "limits": [
+    "Deterministic hosted validation is complete; model review and final workflow gate were pending at the retained run snapshot.",
+    "No native review approval or overall workflow/merge-gate pass claim.",
+    "Unlocked complete-manifest installation; no frozen installation or committed lockfile qualification."
+  ],
+  "inspection": "PASS"
+}

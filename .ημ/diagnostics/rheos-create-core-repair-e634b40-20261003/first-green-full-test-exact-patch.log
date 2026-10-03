@@ -1,0 +1,133 @@
+
+> @eta-mu/rheos@0.1.0 test /tmp/rheos-native-findings-e37-20261003.gfectL/checkout
+> shadow-cljs compile test && node dist/test.cjs
+
+shadow-cljs - config: /tmp/rheos-native-findings-e37-20261003.gfectL/checkout/shadow-cljs.edn
+[:test] Compiling ...
+========= Running Tests =======================
+no "source-map-support" (run "npm install source-map-support --save-dev" to get it)
+
+Testing rheos.backend.domain.board-test
+
+Testing rheos.backend.domain.compose-test
+compose-snapshot error: Doesn't support name: 42
+
+Testing rheos.backend.domain.events-test
+
+Testing rheos.backend.domain.task-create-test
+
+Testing rheos.backend.domain.task-edit-test
+
+Testing rheos.backend.domain.transition-test
+
+Testing rheos.backend.infra.agent-tools-test
+rheos: transition rejected: No transition from 'review' to 'in_review'
+{
+  "ok": true,
+  "uuid": "t1",
+  "from": "breakdown",
+  "to": "ready"
+}
+
+Testing rheos.backend.infra.cli-test
+
+Testing rheos.backend.infra.config-card-creation-test
+
+Testing rheos.backend.infra.config-test
+
+Testing rheos.backend.infra.github-issue-preflight-test
+
+Testing rheos.backend.infra.github-issues-test
+
+Testing rheos.backend.infra.store-test
+
+Testing rheos.backend.infra.task-create-conflict-test
+
+Testing rheos.backend.infra.task-create-test
+
+Testing rheos.backend.infra.task-edit-test
+
+Testing rheos.backend.infra.task-store-test
+
+Testing rheos.backend.infra.task-writeback-test
+
+Testing rheos.backend.infra.transition-test
+
+Testing rheos.backend.infra.view-store-test
+
+Testing rheos.backend.infra.watcher-test
+
+Testing rheos.backend.law.fsm-test
+
+Testing rheos.backend.shape.content-parser-test
+
+Testing rheos.backend.shape.frontmatter-serialization-test
+
+Testing rheos.backend.shape.kanban-test
+
+Ran 186 tests containing 1158 assertions.
+0 failures, 0 errors.
+===============================================
+[:test] Build completed. (143 files, 3 compiled, 0 warnings, 3.29s)
+no "source-map-support" (run "npm install source-map-support --save-dev" to get it)
+
+Testing rheos.backend.domain.board-test
+
+Testing rheos.backend.domain.compose-test
+compose-snapshot error: Doesn't support name: 42
+
+Testing rheos.backend.domain.events-test
+
+Testing rheos.backend.domain.task-create-test
+
+Testing rheos.backend.domain.task-edit-test
+
+Testing rheos.backend.domain.transition-test
+
+Testing rheos.backend.infra.agent-tools-test
+rheos: transition rejected: No transition from 'review' to 'in_review'
+{
+  "ok": true,
+  "uuid": "t1",
+  "from": "breakdown",
+  "to": "ready"
+}
+
+Testing rheos.backend.infra.cli-test
+
+Testing rheos.backend.infra.config-card-creation-test
+
+Testing rheos.backend.infra.config-test
+
+Testing rheos.backend.infra.github-issue-preflight-test
+
+Testing rheos.backend.infra.github-issues-test
+
+Testing rheos.backend.infra.store-test
+
+Testing rheos.backend.infra.task-create-conflict-test
+
+Testing rheos.backend.infra.task-create-test
+
+Testing rheos.backend.infra.task-edit-test
+
+Testing rheos.backend.infra.task-store-test
+
+Testing rheos.backend.infra.task-writeback-test
+
+Testing rheos.backend.infra.transition-test
+
+Testing rheos.backend.infra.view-store-test
+
+Testing rheos.backend.infra.watcher-test
+
+Testing rheos.backend.law.fsm-test
+
+Testing rheos.backend.shape.content-parser-test
+
+Testing rheos.backend.shape.frontmatter-serialization-test
+
+Testing rheos.backend.shape.kanban-test
+
+Ran 186 tests containing 1158 assertions.
+0 failures, 0 errors.

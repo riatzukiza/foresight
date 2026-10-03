@@ -1,0 +1,24 @@
+{
+  "schema": "open-hax.review-evidence/v2",
+  "repository": "riatzukiza/epiphany",
+  "pull_request": 1,
+  "base_sha": "643be698ea0d841dd19385506b272872306e456e",
+  "expected_head_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+  "executed_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+  "completion_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+  "head_sha": "a5e70b20f11c9b2f3c7aad552a46bc51fbe06a28",
+  "exact_head": true,
+  "clean_checkout": true,
+  "generated_at": "2026-10-03T14:28:43.451Z",
+  "result": "success",
+  "statuses": {
+    "diff_stat": 0,
+    "full_review_input": 0
+  },
+  "attempted": {
+    "diff_stat": true,
+    "full_review_input": true
+  },
+  "errors": [],
+  "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+}

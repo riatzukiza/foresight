@@ -1,0 +1,190 @@
+{
+  "invalid_records": [
+    {
+      "line": 94,
+      "raw_line_sha256": "82918fd7492abda0f07cc05633796480c918e08112553c939f1cf079f46e8801",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 95,
+      "raw_line_sha256": "673aeb168999a646cb755b0951f09239e06db8b7e733136057533a363e115318",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 96,
+      "raw_line_sha256": "39150ddd96aba258ad65cda6e46e8c924dceeba04a4cd20fd548533d60d4ff2f",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 97,
+      "raw_line_sha256": "e3945a14e2b050a6968b7bc62476fb08df440f444f1ca64e85d10c858751a22a",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 98,
+      "raw_line_sha256": "051d92b92433c7f492762437c909cee6b3eb0cfc78e723fb22116678d12ec4dc",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 99,
+      "raw_line_sha256": "b19e78e9f6a274b31d5f04738204aa981e2992a1c764b24f2b27c04e9a9de9b9",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 100,
+      "raw_line_sha256": "d37ee082eff2961ba595948dfe51b24ef3d826b017ea201d691f091ace7d4e1c",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 134,
+      "raw_line_sha256": "817b5b46bc03588712ead5964d254d8889964309b5722c3e9707a27d38a860ff",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 135,
+      "raw_line_sha256": "cd7b7b6f981368d076342f31773fe81fbef797bbf9a6d2ce23d9b0760438c295",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 136,
+      "raw_line_sha256": "84e6490c87a927a2d5282d4984912fdc5005c6ec588769fca6ffaaab8f657b66",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 137,
+      "raw_line_sha256": "db1bf2585b5f90ad3f6b3c4e919d6198da178299776d6a9a70432adfd781f8de",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": true
+    },
+    {
+      "line": 157,
+      "raw_line_sha256": "81338d812261be5f046ede730d08972a4622233bb919cd18883f1b21a1f22f21",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 158,
+      "raw_line_sha256": "15047a1ad6d924903cb37ac14d7d46eb7929609371da144bbe9bd6bb8694fef0",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 159,
+      "raw_line_sha256": "bf807476e697b2260f56a9f42c561155786d6686a95bcbfd14ca18041608ba7e",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 160,
+      "raw_line_sha256": "b2ae226f79ae440a47011b5884f7ae3fdb9f7e1fccebaf362ddde52e6b1b5172",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 161,
+      "raw_line_sha256": "b23bd37b97213cf1c4b95f3e4a6046244b9519a289091258c17c058fb50bf9c4",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 162,
+      "raw_line_sha256": "31cea5ed5770bb838e9e44a185d5b040b1ff297f8fa7bedfbbf531eca9ed13b3",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 164,
+      "raw_line_sha256": "a0020933bd59e76a5dc25b78090128243e8e947e21ce452631ca190047cddde1",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 165,
+      "raw_line_sha256": "6b031fedee3cd143c2e7993afb0c95de4185053c2e186bfa2d36e5163ba3dd22",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 166,
+      "raw_line_sha256": "c2ad306dc7ab584c51c905ac50d9430ff65845be9da4ab98c6a5484f3d97c413",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 167,
+      "raw_line_sha256": "34bcd2da4c490029d6ea9e0f6f1416932fb9d66ddfa870039fe771cbde03d336",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    },
+    {
+      "line": 168,
+      "raw_line_sha256": "6a69bfa2fa5659fa3c6f2c8d05c25e5053d47f461e8f10a50200a07964b5f026",
+      "envelope_valid": false,
+      "manifest_type": "string",
+      "refs_type": "string",
+      "identical_in_base": false
+    }
+  ],
+  "law": "foresight.evidence/receipt-envelope?",
+  "invalid_not_in_base_count": 11,
+  "head_ledger_sha256": "9e36ac471c8870546299b95cc0fe60300ae084f38c3399b96983829d415ba754",
+  "base_ledger_sha256": "ef1bf4df9dc92ef8903cc8291da87aaa41088c0cfb9ce980fc476ec4b4199aa5",
+  "base_invalid_count": 11,
+  "historical_ledgers_unchanged": true,
+  "scope": "Read-only invocation of existing law; does not amend, grandfather, coerce or admit receipts. Distinct strict-prefix failure remains separate.",
+  "head_invalid_count": 22,
+  "head_sha": "0b182c83252dbcba842a7cfbdb402795f3be8c2b",
+  "base_sha": "4927ab7d439ac7e1093c574096a2d5a6d6241391"
+}

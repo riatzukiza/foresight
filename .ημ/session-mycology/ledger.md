@@ -448,3 +448,93 @@
   spore: none
   receipt-refs: 2026-09-03T00:17:49.293972342Z
   note: Reusable lessons: deployment hooks should distinguish durable acceptance from asynchronous completion; model output remains untrusted until a required-first server-bound tool validates and persists it; CLJS native await can accidentally await a Promise-valued argument before a timeout wrapper exists, so lifecycle races belong behind a non-async Promise boundary. No spore was created because the cross-repository pattern should stabilize through another deployment before promotion.
+- ts: 2026-10-03T06:56:27.245379331Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Prepare Rheos document boundaries and source-preservation PRs on personal forks
+  p-efficiency: 0.84
+  p-friction: 0.52
+  p-skill-candidate: 0.42
+  spore: none
+  receipt-refs: rheos-content-provider-prs
+  note: Late skill selection requires truthful candidate/planning separation rather than invented ready or red history. Focused real file write/read evidence is stronger than helper-only success but does not qualify transports or ledger durability. Accepted volatile claims need retained sufficient evidence even when live content is ephemeral. Existing review/account and boundary lessons cover this turn; no new spore.
+- ts: 2026-10-03T07:23:28.027132808Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Publish and qualify content-review preparation through pr-flow
+  p-efficiency: 0.82
+  p-friction: 0.62
+  p-skill-candidate: 0.48
+  spore: none
+  receipt-refs: rheos-content-provider-prs
+  note: Independent tag probes caught native warnings that error-only validation missed; red-before-green examples qualify invalid replacement refusal at real disk boundary. Existing pinned dependency bootstrap resolved initially unqualified full tests. Qualify prospective readiness without manufacturing chronology. Exact-head zero-comment CodeRabbit walkthrough is distinct from current strict gate's formal review-body requirement. Existing boundary/review/tool-preflight lessons cover this turn; no new spore.
+- ts: 2026-10-03T07:59:32.441426430Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Resume fork PR review settlement and distinguish incremental completion from formal gate evidence
+  p-efficiency: 0.75
+  p-friction: 0.35
+  p-skill-candidate: 0.2
+  spore: none
+  receipt-refs: rheos-content-provider-prs
+  note: Read current review bodies and emitted CI errors before inferring a blocker. Paid incremental review can complete after included quota is exhausted; exact-head formal coverage remains a separate law. Defer low-value optimization with a real intake card; no spore incubated.
+- ts: 2026-10-03T08:10:56.536711505Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Integrate moving fork base and preserve append-only histories
+  p-efficiency: 0.65
+  p-friction: 0.5
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: rheos-content-provider-prs
+  note: Inspect current base and mergeability when PR CI disappears. Resolve append-only conflicts with byte-prefix checks, never sort historical events. Always select the personalfork explicitly before pushing; accidentalbranch cleanup requires recorded user approval. Existing conflict skill is sufficient; no spore.
+- ts: 2026-10-03T11:26:52.795032398Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Continue personal-fork reviews and expose model runner failure
+  p-efficiency: 0.57
+  p-friction: 0.81
+  p-skill-candidate: 0.25
+  spore: none
+  receipt-refs: rheos-review-runner-and-yaml-repair
+  note: Use current canonical policy after live updates; credential detection, invocation, retained diagnostics and published reviews are separate evidence. Reuse a verified value at the private adapter boundary; do not inflate qualification to clean manifest or browser builds. No spore created.
+- ts: 2026-10-03T12:19:30.576880216Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Repair native review access, label normalization and comment rendering
+  p-efficiency: 0.62
+  p-friction: 0.84
+  p-skill-candidate: 0.35
+  spore: none
+  receipt-refs: rheos-final-label-renderer-and-review-bootstrap
+  note: Preserve completed native review evidence separately from invitation, running jobs and scoped settlement. Fix authoritative renderer via real Markdown outputs; use typed receipt envelopes validated before append. Preserve malformed historical records until reviewed correction law exists. Existing SSH authenticated authorized workflow pushes; no scope expansion or new spore.
+- ts: 2026-10-03T13:35:56.462940690Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Publish bounded Rheos review repairs and exact-head complete-manifest qualification
+  p-efficiency: 0.72
+  p-friction: 0.91
+  p-skill-candidate: 0.64
+  spore: none
+  receipt-refs: d135928285a166a1045c014650d30f7b82af08f90883dd80b896da31137bd2ff
+  note: Retain actual red-green and fresh declared-manifest evidence; native publication and receipt admission failures remain distinct from model inspection or local test success. Keep unresolved policy and quota blockers explicit; no new spore.
+- ts: 2026-10-03T14:46:47.586Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Qualify native review prerequisites and repair projection policy and note rendering
+  p-efficiency: 0.70
+  p-friction: 0.92
+  p-skill-candidate: 0.65
+  spore: none
+  receipt-refs: cc979347b049760bb9cf216ac1f7f9c14eab3e382903c92471845c911312f5db
+  note: Treat semantic gate summaries, model scope, published native review and approval as distinct evidence. Preserve primary bounds and native identities; repair confirmed policy conflicts explicitly. Verify new low-severity architecture findings and actual cycles rather than inheriting stale all-existing lint prose. Historical malformed receipts remain immutable pending reviewed correction/admission. No new spore.
+- ts: 2026-10-03T16:01:35.379Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Repair portable source boundaries and qualify actual review input
+  p-efficiency: 0.74
+  p-friction: 0.94
+  p-skill-candidate: 0.65
+  spore: none
+  receipt-refs: 9f77ffccb14ab6ee6837d28eecfad020bc266c8917ee547abb8628e735ea8da3
+  note: Independently qualify direct reusable pure APIs as well as protected runtime callers. Bind red probes to the API actually tested. Separate hosted deterministic results, complete scope recovery, native publication and approval. Retain original baseline evidence before citation. Preserve immutable invalid receipt history and unverified billing uncertainty rather than coercing either into acceptance. No new spore.
+- ts: 2026-10-03T17:24:39.113Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Repair persisted frontmatter values and select the qualified owning review-tool candidate
+  p-efficiency: 0.76
+  p-friction: 0.93
+  p-skill-candidate: 0.65
+  spore: none
+  receipt-refs: 1f2682a8ee494c418c3d45a51067285815824119aea3ab1d246f2c253818797d
+  note: Test create, UTF-8 persistence, reopen and subsequent mutation as a composed contract. Preserve red contexts and verify exact candidate bytes after transplant. Prefer an existing owning fix over duplicate implementation, and distinguish reviewed candidate selection from accepted promotion. Cross-check mutable native commit metadata against body, submission time and actual attempt scope. Preserve immutable bad history and external quota/billing blockers truthfully. No new spore.

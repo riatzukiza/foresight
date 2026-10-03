@@ -1,0 +1,148 @@
+{
+  "fixture": "/tmp/rheos-ci-release-baseline-20261003-m1we0wwj",
+  "checkout": "/tmp/rheos-ci-release-baseline-20261003-m1we0wwj/checkout",
+  "head": "4c2ade84ae58fc0d3b86019fb2266fc58efa0c3c",
+  "sourceWorktree": "/tmp/rheos-standalone-ci-20261003",
+  "cleanStart": true,
+  "nodePathAbsent": true,
+  "versions": {
+    "node": {
+      "exit": 0,
+      "output": "v24.14.1"
+    },
+    "pnpm": {
+      "exit": 0,
+      "output": "10.15.0"
+    },
+    "java": {
+      "exit": 0,
+      "output": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)"
+    },
+    "clj-kondo": {
+      "exit": 0,
+      "output": "clj-kondo v2025.07.28"
+    }
+  },
+  "sha256Before": {
+    "package.json": "f935ed6e665fa20abd1a92513829d7d4506262191cf8bb7bc236fe75feeb9e25",
+    "shadow-cljs.edn": "362bfaf9bf1d5ea4ff4be7388ef50a9f1bdf860821de215785c85cb2b8640611",
+    "scripts/bootstrap-source-deps.sh": "06cf9c5cba68011132cd4cfa411f798adb115a6c1a14ea624d6c912ed80e6ead",
+    "docs/ci/standalone-ci-plan.md": "1cba59664d62b28bbed58a56b096e83ff23770f9b8fab78fad282a3cc3cffb48"
+  },
+  "steps": [
+    {
+      "name": "install",
+      "command": [
+        "pnpm",
+        "install",
+        "--no-frozen-lockfile"
+      ],
+      "startedAt": "2026-10-03T12:56:05.884808+00:00",
+      "exit": 0,
+      "elapsedSeconds": 5.03,
+      "log": "/tmp/rheos-ci-release-baseline-20261003-m1we0wwj/install.log",
+      "logSha256": "b127d6fbeaad0690aa2cfba177dd9c5730daf35a42612ea1ec1e271632a22d4a"
+    },
+    {
+      "name": "bootstrap",
+      "command": [
+        "bash",
+        "scripts/bootstrap-source-deps.sh"
+      ],
+      "startedAt": "2026-10-03T12:56:10.918351+00:00",
+      "exit": 0,
+      "elapsedSeconds": 6.92,
+      "log": "/tmp/rheos-ci-release-baseline-20261003-m1we0wwj/bootstrap.log",
+      "logSha256": "127fa00c0468255a3db6d6759663f79d15ae231cb8b0ca5e0732a7e36593b3c1"
+    },
+    {
+      "name": "build",
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "startedAt": "2026-10-03T12:56:17.838803+00:00",
+      "exit": 0,
+      "elapsedSeconds": 41.2,
+      "log": "/tmp/rheos-ci-release-baseline-20261003-m1we0wwj/build.log",
+      "logSha256": "e3016116c2d20f8a76f25151264c270c3bb993a3a6f74983502abb292617211b"
+    }
+  ],
+  "resolvedVersions": {
+    "@fastify/cors": "11.3.0",
+    "@fastify/static": "8.3.0",
+    "@modelcontextprotocol/sdk": "1.32.0",
+    "chokidar": "4.0.3",
+    "fastify": "5.12.5",
+    "yaml": "2.9.1",
+    "@open-hax/protocols": "0.1.0",
+    "@open-hax/uxx-helix": "0.1.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "dompurify": "3.4.16",
+    "helix": "0.3.1",
+    "marked": "18.0.14",
+    "process": "0.11.10",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "scheduler": "0.23.2",
+    "shadow-cljs": "3.5.4",
+    "ws": "8.22.0"
+  },
+  "sourceTrees": {
+    "deps/protocols/src": {
+      "exists": true,
+      "files": 21,
+      "sha256": "4994d49c261819be4b66f07a15cc2bbb6e79f9a4fe7e484a664282825e3d5fb0"
+    },
+    "deps/chat-ui/src": {
+      "exists": true,
+      "files": 10,
+      "sha256": "56d774efdba65aec893652490b1d3da9aeb3ca7a9a9ed35882cf83028b202f5a"
+    }
+  },
+  "sha256After": {
+    "package.json": "f935ed6e665fa20abd1a92513829d7d4506262191cf8bb7bc236fe75feeb9e25",
+    "shadow-cljs.edn": "362bfaf9bf1d5ea4ff4be7388ef50a9f1bdf860821de215785c85cb2b8640611",
+    "scripts/bootstrap-source-deps.sh": "06cf9c5cba68011132cd4cfa411f798adb115a6c1a14ea624d6c912ed80e6ead",
+    "docs/ci/standalone-ci-plan.md": "1cba59664d62b28bbed58a56b096e83ff23770f9b8fab78fad282a3cc3cffb48"
+  },
+  "trackedFilesUnchanged": true,
+  "lockfileSha256": "3ae3ec5444dfb31a89a691f06103e53af5375867a79304365cbe3bc63c471219",
+  "releaseOutputs": {
+    "dist/server.js": {
+      "bytes": 2041162,
+      "sha256": "9bbe1d10ca67384e12e1308a4f45376574cf24222c159df8bcffe2de144775a8"
+    },
+    "dist/cli.cjs": {
+      "bytes": 2129217,
+      "sha256": "8cb60686432e19653457be3bed99cd3cccab0777c479b5bcb41c6802d5904f3b"
+    },
+    "dist/github-sync.cjs": {
+      "bytes": 1613831,
+      "sha256": "a44f2321b7b6ca0dc7be4af769c04c94b0a816eedd79cc3236b21d3d02d3ad89"
+    },
+    "dist/web/js/main.js": {
+      "bytes": 562354,
+      "sha256": "fcf0cfad9ebef4816522ef3f40fd36fc29c9890d515a5ee163ef3b95558c3071"
+    }
+  },
+  "sourcePins": {
+    "protocols": "0ed56aa74a53a1d1e9c2e55ce95451817a7f3a90",
+    "chat-ui": "86385532b4f8606946555d0ada8e3fb22f35b4c3"
+  },
+  "compilerSummaries": [
+    "[:server] Build completed. (104 files, 45 compiled, 0 warnings, 12.42s)",
+    "[:cli] Build completed. (108 files, 48 compiled, 0 warnings, 5.82s)",
+    "[:github-sync] Build completed. (64 files, 16 compiled, 0 warnings, 4.37s)",
+    "[:app] Build completed. (95 files, 49 compiled, 0 warnings, 9.11s)"
+  ],
+  "installWarnings": [
+    "\u2009WARN\u2009 1 deprecated subdependencies found: glob@11.1.0"
+  ],
+  "limits": [
+    "Fresh local baseline, not hosted standalone CI qualification.",
+    "No frozen install, tests, lint, CLI help or runtime interaction attempted.",
+    "No tracked lockfile/source/workflow introduced or modified.",
+    "No prior planning-review ordering claim; results are for next resubmission."
+  ]
+}

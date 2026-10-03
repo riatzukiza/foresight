@@ -1,0 +1,13 @@
+
+> @eta-mu/rheos@0.1.0 build /tmp/rheos-source-green-complete-20261003-pk9_97z9/checkout
+> shadow-cljs release server cli github-sync app
+
+shadow-cljs - config: /tmp/rheos-source-green-complete-20261003-pk9_97z9/checkout/shadow-cljs.edn
+[:server] Compiling ...
+[:server] Build completed. (104 files, 45 compiled, 0 warnings, 11.64s)
+[:cli] Compiling ...
+[:cli] Build completed. (108 files, 48 compiled, 0 warnings, 5.60s)
+[:github-sync] Compiling ...
+[:github-sync] Build completed. (65 files, 17 compiled, 0 warnings, 4.53s)
+[:app] Compiling ...
+[:app] Build completed. (95 files, 49 compiled, 0 warnings, 7.68s)
