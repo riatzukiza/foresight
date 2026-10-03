@@ -1,0 +1,51 @@
+{
+  "verified_head": "231fdf18cd5c34ae0bb1efc1d808d6c7f3edfd0d",
+  "parent": "24f97e65cc444c0f8c29f3be85e58315a62b8b92",
+  "base": "643be698ea0d841dd19385506b272872306e456e",
+  "commit_changed_paths": [
+    "M\t.github/workflows/eta-mu-review.yml",
+    "M\t.gitignore",
+    "M\tdocs/kanban/AGENTS.md",
+    "D\tdocs/kanban/board.json"
+  ],
+  "tracked_status": "",
+  "workflow": {
+    "path": ".github/workflows/eta-mu-review.yml",
+    "committed_sha256": "4a7b37fae893792654544656becd7c101f088b197a453a44cf2c950e5967457c",
+    "working_equals_commit": true,
+    "gate_sha256": "e19e470013cc995f8adcd648d8ebb150b088e899e8bce794a10b121d16f5f0d7",
+    "proposal_sha256": "e19e470013cc995f8adcd648d8ebb150b088e899e8bce794a10b121d16f5f0d7",
+    "comparison": "committed version stages .partial then renames only after exact primary validation, and advertises descriptive limitations rather than context instructions"
+  },
+  "board": {
+    "exists": true,
+    "bytes": 478348,
+    "sha256": "40f7b467b4c982d328064c1428a9c0bdfedc8a87328c76a1724beb27c4e13474",
+    "git_blob": "486f06ea342b645d3609c084e76e39a71c91c011",
+    "tracked": false,
+    "ignore_proof": ".gitignore:15:/docs/kanban/board.json\tdocs/kanban/board.json",
+    "ignored_status": "!! docs/kanban/board.json",
+    "equals_parent_blob": true,
+    "equals_base_blob": true
+  },
+  "ledgers": {
+    "docs/kanban/.events/ledger.edn": {
+      "bytes": 263174,
+      "sha256": "662f1241a945c65be06d74827ff05ba527254e9a81a13ea07ffdc01b186424c5",
+      "parent_equals_head": true,
+      "working_equals_head": true
+    },
+    ".ημ/receipts.edn": {
+      "bytes": 16192,
+      "sha256": "0a5926d60cc6afcb3b88e6349b1b491c0c4ff1bd017dc73a04e5c53433c6122d",
+      "parent_equals_head": true,
+      "working_equals_head": true
+    },
+    ".ημ/session-mycology/ledger.md": {
+      "bytes": 2757,
+      "sha256": "8cde4181c5588a3f40dca5d90fb4ce4edce56e13962a7798bf9f5b0c87a6ff82",
+      "parent_equals_head": true,
+      "working_equals_head": true
+    }
+  }
+}

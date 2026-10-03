@@ -511,3 +511,12 @@
   spore: none
   receipt-refs: d135928285a166a1045c014650d30f7b82af08f90883dd80b896da31137bd2ff
   note: Retain actual red-green and fresh declared-manifest evidence; native publication and receipt admission failures remain distinct from model inspection or local test success. Keep unresolved policy and quota blockers explicit; no new spore.
+- ts: 2026-10-03T14:46:47.586Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Qualify native review prerequisites and repair projection policy and note rendering
+  p-efficiency: 0.70
+  p-friction: 0.92
+  p-skill-candidate: 0.65
+  spore: none
+  receipt-refs: cc979347b049760bb9cf216ac1f7f9c14eab3e382903c92471845c911312f5db
+  note: Treat semantic gate summaries, model scope, published native review and approval as distinct evidence. Preserve primary bounds and native identities; repair confirmed policy conflicts explicitly. Verify new low-severity architecture findings and actual cycles rather than inheriting stale all-existing lint prose. Historical malformed receipts remain immutable pending reviewed correction/admission. No new spore.

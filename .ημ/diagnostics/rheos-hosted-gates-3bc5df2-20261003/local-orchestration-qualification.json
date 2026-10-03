@@ -1,0 +1,336 @@
+{
+  "fixture": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta",
+  "head": "77510d8a14c89e53124e468a70b5be386c54a477",
+  "base": "11811264a308d406cb612aefa1dad40818675e5e",
+  "pinnedWorkflow": {
+    "path": "/tmp/eta-mu-mimo-workflow-b187-20261003.yml",
+    "sha256": "fb758e69986484028c68fe6f5b6b178d384ec1156feae33699cba19828e89588",
+    "revision": "b18764d47c0b8da0b2d31f02d8bdd889323ee65c"
+  },
+  "proposal": {
+    "path": "/tmp/rheos-source-native-caller-gates-proposal-20261003.yml",
+    "sha256": "d855f7ccb9d37f3b2f22c3b7054a1d80ff70993edcb947765ff3c341f9b87411"
+  },
+  "extractedExactScripts": {
+    "checkout-guard.sh": {
+      "path": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/checkout-guard.sh",
+      "sha256": "50363cb2a1b452d6ebe301b874d66a91d3bfb42edef04710dfaae5069b6fd153"
+    },
+    "gate-commands.sh": {
+      "path": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/gate-commands.sh",
+      "sha256": "c804bee8535efcb50a6c8ff1c6d20b20b7e9bd1cfdc30fb2599b32a4743839b5"
+    },
+    "summarize.sh": {
+      "path": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/summarize.sh",
+      "sha256": "79715eab7367ca7cd35571830a9ad1a38d029620618fb77e5ac390089dcbfbc0"
+    }
+  },
+  "faultProbes": [
+    {
+      "fault": "tool",
+      "label": "Injected orchestration probe; substitutes do not establish backend behavior.",
+      "gateStepExit": 0,
+      "summaryResult": "failure",
+      "statuses": {
+        "tool_versions": 41,
+        "generated_path_policy": 0,
+        "install": 125,
+        "bootstrap": 125,
+        "lint": 125,
+        "test": 125,
+        "build": 125,
+        "release_outputs": 125,
+        "diff_stat": 0
+      },
+      "expectedSkips": [
+        "install",
+        "bootstrap",
+        "lint",
+        "test",
+        "build",
+        "release_outputs"
+      ],
+      "exactHead": true,
+      "clean": true,
+      "log": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-tool/checkout/.opencode/review-evidence/deterministic.log",
+      "summary": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-tool/summary.json"
+    },
+    {
+      "fault": "install",
+      "label": "Injected orchestration probe; substitutes do not establish backend behavior.",
+      "gateStepExit": 0,
+      "summaryResult": "failure",
+      "statuses": {
+        "tool_versions": 0,
+        "generated_path_policy": 0,
+        "install": 42,
+        "bootstrap": 125,
+        "lint": 125,
+        "test": 125,
+        "build": 125,
+        "release_outputs": 125,
+        "diff_stat": 0
+      },
+      "expectedSkips": [
+        "bootstrap",
+        "lint",
+        "test",
+        "build",
+        "release_outputs"
+      ],
+      "exactHead": true,
+      "clean": true,
+      "log": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-install/checkout/.opencode/review-evidence/deterministic.log",
+      "summary": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-install/summary.json"
+    },
+    {
+      "fault": "bootstrap",
+      "label": "Injected orchestration probe; substitutes do not establish backend behavior.",
+      "gateStepExit": 0,
+      "summaryResult": "failure",
+      "statuses": {
+        "tool_versions": 0,
+        "generated_path_policy": 0,
+        "install": 0,
+        "bootstrap": 45,
+        "lint": 125,
+        "test": 125,
+        "build": 125,
+        "release_outputs": 125,
+        "diff_stat": 0
+      },
+      "expectedSkips": [
+        "lint",
+        "test",
+        "build",
+        "release_outputs"
+      ],
+      "exactHead": true,
+      "clean": true,
+      "log": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-bootstrap/checkout/.opencode/review-evidence/deterministic.log",
+      "summary": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-bootstrap/summary.json"
+    },
+    {
+      "fault": "test",
+      "label": "Injected orchestration probe; substitutes do not establish backend behavior.",
+      "gateStepExit": 0,
+      "summaryResult": "failure",
+      "statuses": {
+        "tool_versions": 0,
+        "generated_path_policy": 0,
+        "install": 0,
+        "bootstrap": 0,
+        "lint": 0,
+        "test": 43,
+        "build": 0,
+        "release_outputs": 0,
+        "diff_stat": 0
+      },
+      "expectedSkips": [],
+      "exactHead": true,
+      "clean": true,
+      "log": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-test/checkout/.opencode/review-evidence/deterministic.log",
+      "summary": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-test/summary.json"
+    },
+    {
+      "fault": "build",
+      "label": "Injected orchestration probe; substitutes do not establish backend behavior.",
+      "gateStepExit": 0,
+      "summaryResult": "failure",
+      "statuses": {
+        "tool_versions": 0,
+        "generated_path_policy": 0,
+        "install": 0,
+        "bootstrap": 0,
+        "lint": 0,
+        "test": 0,
+        "build": 44,
+        "release_outputs": 125,
+        "diff_stat": 0
+      },
+      "expectedSkips": [
+        "release_outputs"
+      ],
+      "exactHead": true,
+      "clean": true,
+      "log": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-build/checkout/.opencode/review-evidence/deterministic.log",
+      "summary": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/probe-build/summary.json"
+    }
+  ],
+  "limits": [
+    "Local toolchain, not execution of GitHub Actions setup or a hosted check.",
+    "No frozen installation or reviewed/committed lockfile qualification.",
+    "Fault probes use explicitly labelled command substitutes; they are orchestration evidence, not backend test passes."
+  ],
+  "realCheckout": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/real/checkout",
+  "realCleanStartGuard": {
+    "event_head_sha": "77510d8a14c89e53124e468a70b5be386c54a477",
+    "expected_sha": "77510d8a14c89e53124e468a70b5be386c54a477",
+    "executed_sha": "77510d8a14c89e53124e468a70b5be386c54a477",
+    "expected_commit": "true",
+    "event_head_matches": "true",
+    "exact_head": "true",
+    "clean": "true"
+  },
+  "realTrackedBefore": "?? .opencode/review-evidence/checkout-status.txt\n?? .opencode/review-evidence/checkout.json\n",
+  "versions": {
+    "node": {
+      "command": [
+        "node",
+        "--version"
+      ],
+      "exit": 0,
+      "elapsedSeconds": 0.007,
+      "output": "v24.14.1\n"
+    },
+    "pnpm": {
+      "command": [
+        "pnpm",
+        "--version"
+      ],
+      "exit": 0,
+      "elapsedSeconds": 0.238,
+      "output": "10.15.0\n"
+    },
+    "java": {
+      "command": [
+        "java",
+        "-version"
+      ],
+      "exit": 0,
+      "elapsedSeconds": 0.032,
+      "output": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)\n"
+    },
+    "clj-kondo": {
+      "command": [
+        "clj-kondo",
+        "--version"
+      ],
+      "exit": 0,
+      "elapsedSeconds": 0.004,
+      "output": "clj-kondo v2025.07.28\n"
+    }
+  },
+  "realGateStep": {
+    "command": [
+      "/usr/bin/bash",
+      "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/gate-commands.sh"
+    ],
+    "exit": 0,
+    "elapsedSeconds": 67.563
+  },
+  "realSummary": {
+    "schema": "open-hax.review-evidence/v2",
+    "repository": "riatzukiza/rheos",
+    "pull_request": 1,
+    "base_sha": "11811264a308d406cb612aefa1dad40818675e5e",
+    "expected_head_sha": "77510d8a14c89e53124e468a70b5be386c54a477",
+    "executed_sha": "77510d8a14c89e53124e468a70b5be386c54a477",
+    "completion_sha": "77510d8a14c89e53124e468a70b5be386c54a477",
+    "head_sha": "77510d8a14c89e53124e468a70b5be386c54a477",
+    "exact_head": true,
+    "clean_checkout": true,
+    "generated_at": "2026-10-03T13:59:04.324Z",
+    "result": "success",
+    "statuses": {
+      "tool_versions": 0,
+      "generated_path_policy": 0,
+      "install": 0,
+      "bootstrap": 0,
+      "lint": 0,
+      "test": 0,
+      "build": 0,
+      "release_outputs": 0,
+      "diff_stat": 0
+    },
+    "attempted": {
+      "tool_versions": true,
+      "generated_path_policy": true,
+      "install": true,
+      "bootstrap": true,
+      "lint": true,
+      "test": true,
+      "build": true,
+      "release_outputs": true,
+      "diff_stat": true
+    },
+    "errors": [],
+    "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+  },
+  "realStatuses": {
+    "tool_versions": 0,
+    "generated_path_policy": 0,
+    "install": 0,
+    "bootstrap": 0,
+    "lint": 0,
+    "test": 0,
+    "build": 0,
+    "release_outputs": 0,
+    "diff_stat": 0
+  },
+  "realTrackedDiff": "",
+  "realCompletionStatus": "\n",
+  "realLockfileExists": false,
+  "realDeterministicLog": {
+    "path": "/tmp/rheos-native-caller-qualification-20261003-c3hm_sta/real/checkout/.opencode/review-evidence/deterministic.log",
+    "sha256": "7eef110bb8b67401bc65c1e5650f44bb9de666a74b1b0e96867ad200d803303d"
+  },
+  "realTestRuns": [
+    {
+      "tests": 177,
+      "assertions": 1029,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "tests": 177,
+      "assertions": 1029,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "realCompilerSummaries": [
+    "[:test] Build completed. (139 files, 138 compiled, 0 warnings, 8.33s)",
+    "[:server] Build completed. (104 files, 45 compiled, 0 warnings, 13.90s)",
+    "[:cli] Build completed. (108 files, 48 compiled, 0 warnings, 6.21s)",
+    "[:github-sync] Build completed. (65 files, 17 compiled, 0 warnings, 4.77s)",
+    "[:app] Build completed. (95 files, 49 compiled, 0 warnings, 8.17s)"
+  ],
+  "realLintSummary": [
+    "linting took 894ms, errors: 0, warnings: 0"
+  ],
+  "realOutputs": {
+    "dist/server.js": {
+      "bytes": 2043329,
+      "sha256": "8c90e1e6cda42ef2ebaa316dc86e643c6d4d23604a2e4abf1ffd3454fabee071"
+    },
+    "dist/cli.cjs": {
+      "bytes": 2131391,
+      "sha256": "150bf392f8ce18a0d08045e845f7f477f0463ffa9092388b8cfb00028b42fc63"
+    },
+    "dist/github-sync.cjs": {
+      "bytes": 1617565,
+      "sha256": "f3f1dd80de9fc374f8ebd188ab587fb27e57191efb2e5269c87c31e98eb1623c"
+    },
+    "dist/web/js/main.js": {
+      "bytes": 562354,
+      "sha256": "a42b09dc37a64f569cfa69a6a036889f0805fa5596f02ca9eb43d5f83863c1bc"
+    }
+  },
+  "sourceTrees": {
+    "deps/protocols/src": 21,
+    "deps/chat-ui/src": 10
+  },
+  "cleanGuardProbes": {
+    "trackedChange": {
+      "result": "failure",
+      "status": " M package.json\n"
+    },
+    "unexpectedUntracked": {
+      "result": "failure",
+      "status": "?? unexpected-review-input.txt\n"
+    },
+    "recovery": "success"
+  },
+  "qualification": "PASS"
+}

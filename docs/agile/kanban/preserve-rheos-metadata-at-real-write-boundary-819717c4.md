@@ -3,11 +3,11 @@ category: "content"
 labels: "rheos, markdown, preservation, write-boundary, regression"
 parent: "e7cdf5cf-423e-49fc-aca8-6ed6055f1cd5"
 type: "story"
-write-id: "1791034366280-0.vvqm6tk4kxlb3w7snpf"
+write-id: "1791038591938-0.wtl8zlbkfpir4uh5mc1"
 points: "5"
 title: "Preserve unrelated Rheos metadata and body through real writes"
 priority: "P1"
-status: "review"
+status: "in_progress"
 epic: "e7cdf5cf-423e-49fc-aca8-6ed6055f1cd5"
 uuid: "819717c4-735b-4dd5-b5b7-ba860d3942f9"
 ---
@@ -113,5 +113,11 @@ FINAL BOUNDED REPAIRS: numeric-label red e680dd9 reproduced six failures in37tes
 REVIEW RESUMPTION: native full review5400841626 on source86cabb8 identifies two bounded first-five source-load defects: unterminated frontmatter is misclassified as raw Markdown, and composition drops the configured card-projection when passing onlytasks-dir. Confirm both againstcurrentcode; red/green repairs stay within source parsing/loader criteria and do not expand into CMS/provider/broad diagnostic behavior. Existing receipt/root admission blockers and configured-review quota remain open.
 
 QUALIFIED CURRENT REPAIRS: source head77510d8a14c89e53124e468a70b5be386c54a477 is published. Red f364ec25 and f4de6b3a reproduced unterminated-frontmatter/projection and complex-header/title-shape defects; green c69da36b and77510d8 repair existing parser/composition, preserve the original YAML header on comment append, and reject present nonstring titles through a portable .cljc law before projection/write. Fresh exact-head complete-manifest checkout with no preexisting dependencies or NODE_PATH passed177tests1029assertions, zero-error/warning lint and all four release targets with zero compiler warnings; tracked source/config/test hashes stayed unchanged. Actual released CLI and JVM law probes separately pass targeted refusal/preservation/recovery cases. General body serialization remains lossy; frozen install, hosted package CI and runtime transport integration remain unqualified. Native reviewed findings are replied/settled at actual commits; fresh native approvals, root receipt admission, Muse review publication and Codex quota remain outstanding. Move this bounded implementation back through testing to review, not done.
+
+NATIVE REVIEW GATE RESUMPTION: CodeRabbit fullreview5401052281 at775 confirms the new caller overrides deterministic validation with diff_stat only. Local source green does not establish hosted gate qualification. Resume bounded correction of the existing native-review prerequisite: enable pinned upstream toolchain, record actual install/bootstrap/test/lint/all-release exits, preserve prerequisites/failure visibility and exact-head tracked-clean guard, and exclude only anchored untracked build outputs within the ephemeral checkout. No standalone frozen-lockfile workflow, readiness grant, hosting or board engine changes. Current source177/1029 qualification remains historical until changed-caller hosted checks actually run.
+
+HOSTED NATIVE VALIDATION REPAIR QUALIFIED: caller3bc5df2d591a6976a627fe20c806310ebfaf92da is published and actualrun37128289422/artifact11276335238 reports semantic success, all9gatesattempted0, expected/executed/completion3bc and cleantrue. ActualNode22.23.3/pnpm10.14/TemurinJava21.0.12.1/kondo2025.10.23 installwithoutNODE_PATHorlockfile, pinned21protocols/10chat-sourcefiles, tests177/1029, lint0errors0warnings, all4release0compilerwarnings and nonemptyoutputs pass. Parent inspected actualsummary; archiveZIPmatchesGitHubdigest. Exactpinnedhelper localfault probes separately reject tool/install/bootstrap/test/build failures and preserve tracked/unexpectedfile clean refusal. SourceCodeRabbitP1 nowfixedwithactualhostedevidence. MiMo/finalreviewpending, prior775approvalhistorical; unlockedvalidationdoesnotqualifyfrozenstandaloneCI. Returnboundedstorythrough testingto review, notdone.
+
+CURRENT REVIEW RESUMPTION: native MiMo review5401245276 on3bc confirms the new shape.content-parser dependency on extern.yaml violates the declared construction-order boundary; nine lint infos include this one new finding and eight unchanged infos. Hosted177tests1029assertions/all4releases remain valid evidence for3bc but do not settle architectural placement. Resume a bounded pure-decision/YAML-adapter composition repair without weakening the lint policy or duplicating board semantics. Separately verify the reviewer cyclic-set question before promoting it to a defect. New code will need fresh full-suite, lint, release and native review qualification; no done/acceptance claim.
 
 ---

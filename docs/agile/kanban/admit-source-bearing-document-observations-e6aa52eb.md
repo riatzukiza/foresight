@@ -3,7 +3,7 @@ category: "content"
 labels: "alpha, content, portability, contracts"
 parent: "e7cdf5cf-423e-49fc-aca8-6ed6055f1cd5"
 type: "story"
-write-id: "1791024407627-0.5zppu69kx4xs1x2338z"
+write-id: "1791036123584-0.9xsow90qt4vq1h7h2rv"
 points: "3"
 title: "Admit portable source-bearing document observations in Alpha"
 priority: "P1"
@@ -88,4 +88,7 @@ generic CMS DSL would exceed this three-point contract slice.
 Full current-head CodeRabbit review c8340b2 found P1 source-context equality compares entire open Ref maps. Verify extensions on either side remain unchanged while declared ref/type, ref/id, ref/revision identity must agree. Review finding: https://github.com/riatzukiza/foresight/pull/2#discussion_r4172818377. Begin bounded prospective red/green repair; earlier 26/89 and5/31 results do not qualify this new regression case.
 
 P1 repair qualified: red a3bf533 reproduced12 expected JVM failures; green a68012d60ba3d7815eaff9f4b18dfd34c51d0ead passes JVM27tests107assertions, compiled CLJS6tests49assertions, lintzero errors/warnings. Four unilateral extension cases preserve full maps; type/id/revisionvalue/presence differences still reject. Card resumption ready to todo to in_progress was recorded after red; no earlier in-progress claim. Proceed prospectively to review, not done or accepted runtime integration.
+
+RENDERING REVIEW REPAIR: current CodeRabbit review5401094221 confirms the prior closing divider renders the P1 repair note as a Setext heading. Append this actual canonical engine comment with the repaired separator behavior; preserve the original repair note and prior event bytes. Actual declared Marked rendering must keep the original note as a paragraph with thematic-break separators. This cosmetic correction changes no Alpha law, qualification count, status or acceptance disposition.
+
 ---
