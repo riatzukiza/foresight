@@ -94,8 +94,11 @@ evidence and why a candidate was rejected.
 - Require successful current CodeRabbit status explicitly indicating review
   completion. Pending, skipped, failed, rate-limited, absent or unknown status
   cannot admit a summary, even if an older completion section remains visible.
-- Bind that successful status to the exact head and correlated full-review
-  request: its completion timestamp must follow the request's effective time.
+- Require independently verifiable provider evidence linking that successful
+  status to the summary's Run ID, exact head and correlated full-review request.
+  Its completion timestamp must follow the request's effective time; head and
+  timestamp matches alone are insufficient. If the provider exposes no evidence
+  establishing the same run, fail closed and report missing correlation.
   Reject a newer pending same-head request even when an old successful status
   and an unrelated edit of the mutable summary remain visible. Retain explicit
   bot full-review-finished corroboration when the provider exposes it.
@@ -103,6 +106,10 @@ evidence and why a candidate was rejected.
   retains a global automatic-review pause banner or exhausted included-allowance
   footer. Bound the match to the actual recent run and current completion status;
   Foresight and Epiphany above exhibit this distinction.
+- CLI output reports an admitted candidate's preserved provenance and each
+  rejected candidate's specific refusal reason. Missing run correlation must be
+  distinguishable from pending, skipped, stale and malformed evidence; an
+  unexplained generic pass or failure does not meet the outcome.
 - Add only the proven head to CodeRabbit's reviewed-head set. All applicable CI,
   thread settlement, body-response and additional-reviewer requirements still
   determine whether the merge gate passes.
@@ -111,8 +118,11 @@ evidence and why a candidate was rejected.
 
 Retain sanitized fixtures from all three observed summaries and matching
 requests/status data, with retrieval time and IDs, before those mutable comments
-change. Demonstrate the current compatibility failure with those fixtures,
-then qualify the corrected adapter and pure acceptance function.
+change. Treat them as observed candidate evidence, not automatically positive
+fixtures: admit them only if the provider's run-level status correlation can be
+established independently. Demonstrate the current compatibility failure, then
+qualify the corrected adapter and pure acceptance function without weakening
+that correlation requirement to accommodate these examples.
 
 Exercise negative cases for stale head; changed base with unchanged head;
 incremental previous-head-to-current-head range; mismatched coverage SHAs or
@@ -123,11 +133,15 @@ edited after completion. Also reject pending, skipped, rate-limited, failed,
 absent and unknown current status with otherwise valid summary data.
 Include an old successful current-head status plus an unrelated summary edit
 after a newer same-head request that is still pending; that combination must
-not become a completed full review.
+not become a completed full review. Include a fresh successful status from a
+different Run ID on the same head after the request; mismatched or absent
+run-level correlation must still refuse the older summary.
 
-Exercise the positive retained-pause-banner and exhausted-included-allowance
-cases with actual completed paid full reviews. Integrate acceptance with the
-unchanged merge gate and prove that failing CI, unsettled or contested threads,
+Verify rendered CLI reporting for both an admitted candidate's provenance and
+rejected candidates' specific refusal reasons. Exercise the positive
+retained-pause-banner and exhausted-included-allowance cases with actual
+completed paid full reviews whose run-level status linkage is independently
+verified. Integrate acceptance with the unchanged merge gate and prove that failing CI, unsettled or contested threads,
 unanswered body findings, truncated collection and uncovered additional required
 reviewers remain blockers. Run the canonical shipped law tests and relevant
 adapter fixtures at the implementation revision; the observed baseline was
@@ -142,7 +156,9 @@ Unknown formats must remain visible as missing evidence, rather than becoming
 passes through permissive matching. A stale recent-review section may coexist
 with a new pending request or a global pause banner. Correlating bounded content,
 exact revisions, effective timestamps and current status prevents those cases
-from silently becoming full coverage.
+from silently becoming full coverage. If available provider APIs do not expose
+provable run-level correlation, this path stays blocked; record an upstream
+evidence gap instead of accepting chronological coincidence.
 
 The initial five-point estimate covers this one evidence adapter and adversarial
 qualification. If publishing the untracked skill baseline requires broader
