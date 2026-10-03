@@ -77,6 +77,26 @@
     (is (= markdown-document (:document result)))
     (is (= markdown-value (get-in result [:document :document/value])))))
 
+(deftest source-extensions-do-not-change-declared-identity
+  (doseq [[observation supplied-document] [[markdown-observation markdown-document]
+                                         [api-observation api-document]]
+          extended-side [:observation :document]]
+    (testing (str "portable metadata only on " extended-side
+                  ", revision present: "
+                  (contains? (:observation/source observation) :ref/revision))
+      (let [extension {:adapter/context {:display-title "Design"
+                                        :source-labels ["review" "docs"]}}
+            extended-observation (if (= :observation extended-side)
+                                   (update observation :observation/source merge extension)
+                                   observation)
+            extended-document (if (= :document extended-side)
+                                (update supplied-document :document/source merge extension)
+                                supplied-document)
+            result (document/admit-document registry extended-observation extended-document)]
+        (is (:ok result))
+        (is (= extended-observation (:observation result)))
+        (is (= extended-document (:document result)))))))
+
 (deftest volatile-partial-api-data-needs-no-file-fields-or-revision
   (let [result (document/admit-document registry api-observation api-document)]
     (is (:ok result))
@@ -130,12 +150,21 @@
       (is (= :context (:stage result)))
       (is (= :alpha/document-selected-observation-matches
              (-> result :errors first :law/id)))))
-  (testing "another entity or revision is a different source context"
-    (doseq [source [(assoc (:document/source markdown-document) :ref/id "another-file")
-                    (assoc (:document/source markdown-document) :ref/revision "working-content-2")]]
+  (testing "source type, entity, revision value and revision presence define context"
+    (doseq [source [(assoc (:document/source markdown-document) :ref/type :github/query)
+                    (assoc (:document/source markdown-document) :ref/id "another-file")
+                    (assoc (:document/source markdown-document) :ref/revision "working-content-2")
+                    (dissoc (:document/source markdown-document) :ref/revision)]]
       (let [result (document/admit-document
                     registry markdown-observation
                     (assoc markdown-document :document/source source))]
         (is (= :context (:stage result)))
         (is (= :alpha/document-observed-source-matches
-               (-> result :errors first :law/id)))))))
+               (-> result :errors first :law/id))))))
+  (testing "a revision added to only one unversioned source changes context"
+    (let [result (document/admit-document
+                  registry (assoc-in api-observation [:observation/source :ref/revision] "query-2")
+                  api-document)]
+      (is (= :context (:stage result)))
+      (is (= :alpha/document-observed-source-matches
+             (-> result :errors first :law/id))))))
