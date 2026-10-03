@@ -3,11 +3,11 @@ category: "content"
 labels: "rheos, markdown, preservation, write-boundary, regression"
 parent: "e7cdf5cf-423e-49fc-aca8-6ed6055f1cd5"
 type: "story"
-write-id: "1791038591938-0.wtl8zlbkfpir4uh5mc1"
+write-id: "1791042636988-0.xpok9rgcq140rb8il"
 points: "5"
 title: "Preserve unrelated Rheos metadata and body through real writes"
 priority: "P1"
-status: "in_progress"
+status: "review"
 epic: "e7cdf5cf-423e-49fc-aca8-6ed6055f1cd5"
 uuid: "819717c4-735b-4dd5-b5b7-ba860d3942f9"
 ---
@@ -119,5 +119,7 @@ NATIVE REVIEW GATE RESUMPTION: CodeRabbit fullreview5401052281 at775 confirms th
 HOSTED NATIVE VALIDATION REPAIR QUALIFIED: caller3bc5df2d591a6976a627fe20c806310ebfaf92da is published and actualrun37128289422/artifact11276335238 reports semantic success, all9gatesattempted0, expected/executed/completion3bc and cleantrue. ActualNode22.23.3/pnpm10.14/TemurinJava21.0.12.1/kondo2025.10.23 installwithoutNODE_PATHorlockfile, pinned21protocols/10chat-sourcefiles, tests177/1029, lint0errors0warnings, all4release0compilerwarnings and nonemptyoutputs pass. Parent inspected actualsummary; archiveZIPmatchesGitHubdigest. Exactpinnedhelper localfault probes separately reject tool/install/bootstrap/test/build failures and preserve tracked/unexpectedfile clean refusal. SourceCodeRabbitP1 nowfixedwithactualhostedevidence. MiMo/finalreviewpending, prior775approvalhistorical; unlockedvalidationdoesnotqualifyfrozenstandaloneCI. Returnboundedstorythrough testingto review, notdone.
 
 CURRENT REVIEW RESUMPTION: native MiMo review5401245276 on3bc confirms the new shape.content-parser dependency on extern.yaml violates the declared construction-order boundary; nine lint infos include this one new finding and eight unchanged infos. Hosted177tests1029assertions/all4releases remain valid evidence for3bc but do not settle architectural placement. Resume a bounded pure-decision/YAML-adapter composition repair without weakening the lint policy or duplicating board semantics. Separately verify the reviewer cyclic-set question before promoting it to a defect. New code will need fresh full-suite, lint, release and native review qualification; no done/acceptance claim.
+
+Published source repair e37dd504da144c35148965e129438cb9c3c1b8e8 after cycle red27b39e9. Pure source framing/range patching and task-edit plans now use .cljc; YAML native conversion remains at extern/infra. A later independent peer found direct pure key admission bypass in the initial split; checked-updates now supplies the single admission law, with separate JVM/NBB red and green probes. Scalar-title edits verify decoded old value, raw requested new value, one event and written write-id. Final prepared local suite181tests1075assertions twice, four builds and lint0errors0warnings8unchangedinfos pass. Exact hosted run37134206738/artifact11277816398 independently reports clean head e37, all9 attempted gates0/errors empty, complete declared unlocked install and pinned source bootstrap. Native Map/Set cycle refusal includes valid ordered-map self-cycle and shared acyclic aliases. Fresh CodeRabbit request5970719523 and native MiMo execution remain separate review evidence; no completion, approval, frozen-CI or runtime transport claim.
 
 ---

@@ -1,0 +1,113 @@
+{
+  "qualified_against_prior_head": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+  "caller_sha256": "4f08d390822060c0ff0bdd18536b163e534ac8f606fe40b3268fd942ad1b7413",
+  "original_caller_sha256": "95b6123ac9765616b9741d5a8b984974b4383020f38dd1f82564b60246405368",
+  "all_original_bytes_restored_by_removing_only_supplement_block": true,
+  "qualification": {
+    "checkout": "/tmp/foresight-full-input-qualification-20261003-lgk2__ii/checkout",
+    "workflow_pin": "b18764d47c0b8da0b2d31f02d8bdd889323ee65c",
+    "base": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+    "head": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+    "canonical_original_workflow_untouched": true,
+    "node": "v24.14.1",
+    "python": "Python 3.12.3",
+    "git": "git version 2.43.0",
+    "guard_exit": 0,
+    "stage_exit": 0,
+    "gates_exit": 0,
+    "summary_exit": 0,
+    "positive": {
+      "schema": "open-hax.review-evidence/v2",
+      "repository": "riatzukiza/foresight",
+      "pull_request": 2,
+      "base_sha": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+      "expected_head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "executed_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "completion_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "exact_head": true,
+      "clean_checkout": true,
+      "generated_at": "2026-10-03T15:07:30.989Z",
+      "result": "failure",
+      "statuses": {
+        "diff_stat": 0,
+        "full_review_input": 0,
+        "workspace_laws": 0,
+        "project_laws": 0,
+        "lineage_laws": 0,
+        "evidence_laws": 0,
+        "evidence_adapter": 0,
+        "project_contract": 0,
+        "catalog_contract": 0,
+        "migration_pack_dependencies": 0,
+        "migration_pack": 0,
+        "receipt_history": 2,
+        "diff_hygiene": 0
+      },
+      "attempted": {
+        "diff_stat": true,
+        "full_review_input": true,
+        "workspace_laws": true,
+        "project_laws": true,
+        "lineage_laws": true,
+        "evidence_laws": true,
+        "evidence_adapter": true,
+        "project_contract": true,
+        "catalog_contract": true,
+        "migration_pack_dependencies": true,
+        "migration_pack": true,
+        "receipt_history": true,
+        "diff_hygiene": true
+      },
+      "errors": [],
+      "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+    },
+    "positive_full_input_metadata": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": 2,
+      "base_sha": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+      "head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "command": [
+        "git",
+        "diff",
+        "--find-renames",
+        "4927ab7d439ac7e1093c574096a2d5a6d6241391...ae99a1303e033dc0379802ef0dc64169c66a2a7f"
+      ],
+      "path": ".opencode/review-evidence/pr-full.diff",
+      "bytes": 307381,
+      "sha256": "4900f5e13770274e77269a2a634d77b75ff3c79411be175dbb8c3439fa9a4c46",
+      "primary_path": ".opencode/review-evidence/pr.diff",
+      "primary_bytes": 300062,
+      "primary_sha256": "bbddd46624084f8a7c0fe4c05bd6161e8e31a842309658dd2f6d2b1d1de6b350",
+      "primary_prefix_limit_bytes": 300000,
+      "primary_truncated": true
+    },
+    "tamper": {
+      "schema": "open-hax.review-evidence/v2",
+      "repository": "riatzukiza/foresight",
+      "pull_request": 2,
+      "base_sha": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+      "expected_head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "executed_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "completion_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "head_sha": "ae99a1303e033dc0379802ef0dc64169c66a2a7f",
+      "exact_head": true,
+      "clean_checkout": true,
+      "generated_at": "2026-10-03T15:09:04.634Z",
+      "result": "failure",
+      "statuses": {
+        "full_review_input": 1,
+        "receipt_history": 2
+      },
+      "attempted": {
+        "full_review_input": true,
+        "receipt_history": true
+      },
+      "errors": [],
+      "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+    },
+    "tamper_test": "First primary diff byte altered: full_review_input rejected the exact primary/full prefix binding, published no full diff/metadata.",
+    "qualification_scope": "External exact ae99 checkout, pinned b187 helper execution and caller proposal; no hosted model or full-indexed-review proof; local Node version differs from hosted Node22."
+  },
+  "reason": "Native37130898939 completed model execution but did not establish recovery of the truncated document note. Supplement preserves bounded primary and all original gates; receipt_history remains failure2, not waived."
+}

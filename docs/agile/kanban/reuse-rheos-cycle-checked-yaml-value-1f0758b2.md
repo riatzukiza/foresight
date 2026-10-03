@@ -20,13 +20,27 @@ The [source helper](https://github.com/riatzukiza/rheos/blob/04220846166dad35995
 converts a YAML Document and checks the resulting graph for cycles. The
 [read path](https://github.com/riatzukiza/rheos/blob/04220846166dad35995f091945a7a6f1a2a4087f/src/rheos/backend/extern/yaml.cljs#L113)
 immediately converts the same unchanged Document again with identical options.
-Both calls are synchronous, with no intervening mutation or callback. No cycle
-check bypass or other correctness failure was demonstrated.
+Both calls were synchronous, with no intervening mutation or callback. That
+initial reuse review demonstrated no cycle-check bypass. Later source review
+reproduced a separate native ordered-map cycle guard gap; the preservation
+story records its focused red tests and guard repair. Reuse qualification must
+include that repaired refusal behavior.
 
-This is standalone initial intake, not a child of the eleven-point preparation
-epic and not ready or accepted implementation work. The Rheos fork has issues
-disabled, so the follow-up lives on the authoritative Foresight board without
-changing repository settings.
+This began as standalone intake, not a child of the eleven-point preparation
+epic. The bounded reuse was implemented in
+[Rheos 93783d7](https://github.com/riatzukiza/rheos/commit/93783d75b0e0752ffa7da6d4d76ca24c4f75047b)
+and remains present at
+[source 3bc5df2](https://github.com/riatzukiza/rheos/blob/3bc5df2d591a6976a627fe20c806310ebfaf92da/src/rheos/backend/extern/yaml.cljs#L99):
+the private extern helper performs one native Document conversion and
+`read-frontmatter` reuses that checked value. The
+[preservation story](preserve-rheos-metadata-at-real-write-boundary-819717c4.md)
+records the implementation and its existing regression qualification. This card
+remains incoming for explicit source-range and named-fixture qualification with
+exact commands, revision and independent review disposition. No latency or
+memory benchmark is required unless a measured improvement is claimed; no
+readiness or broader preservation-story completion is asserted. The Rheos fork
+has issues disabled, so the follow-up remains on the authoritative Foresight
+board without changing repository settings.
 
 ## Outcome
 
@@ -68,8 +82,11 @@ and refusal behavior. No measured latency or memory improvement is claimed yet.
 
 Inspect the real read path at a pinned revision, qualify it with existing focused
 fixtures and the repository's declared full gates, and record exact commands,
-revisions and review dispositions. Add a new test only if a newly exposed
-behavior needs coverage. Use Rheos for board reads and future transitions.
+revisions and review dispositions. Identify the exact named fixtures and
+source-range parity results for this card; the preservation story's broad green
+counts do not alone establish that remaining qualification. Add a new test only
+if a newly exposed behavior needs coverage. Use Rheos for board reads and future
+transitions.
 
 ## Risks
 

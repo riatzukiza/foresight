@@ -59,6 +59,11 @@ board status or become mutation targets.
   results. Diagnostics identify the inspected source context and failure class.
 - No refused source receives invented board identity/state or becomes eligible
   for transition, comment or frontmatter mutation.
+- Diagnostic reads may return valid cards alongside refusal evidence. Every
+  mutating Rheos command requires a complete, trusted board load before any
+  board file or event write. If any projected source is refused, or the snapshot
+  is unavailable or untrusted, refuse mutations to every card on that board,
+  including otherwise valid targets, until a complete load succeeds.
 - One supported read consumer exposes the refusals, with failure outcomes
   visible rather than only hidden in server logs.
 - Read/write support for valid flow-root mappings is decided explicitly;
@@ -68,11 +73,16 @@ board status or become mutation targets.
 
 ## Verification
 
-Reproduce the loader's current filter behavior at a pinned revision. Exercise
-real files and the selected existing read consumer after the repair. Verify
-diagnostic shape, valid-task parity, unchanged source bytes and mutation refusal.
-Attach exact revisions, commands and independent review dispositions. Use Rheos
-for all board operations; Foresight records coordination only.
+Use the historical filtered-source behavior as reproduction context and pin
+the current complete-load refusal baseline before adding diagnostic reads.
+Exercise real files and the selected existing read consumer. Verify
+diagnostic shape, valid-task parity and unchanged source bytes. Attempt every
+mutating Rheos command on the partial/refused board, including a valid target,
+and verify refusal before any board file or event write; repeat with an
+unavailable or untrusted snapshot and after a complete-load recovery. Attach
+exact revisions, commands and independent review dispositions. Use the owning
+Rheos operations and fixtures, without an alternate board parser or validator;
+Foresight records coordination only.
 
 ## Risks
 

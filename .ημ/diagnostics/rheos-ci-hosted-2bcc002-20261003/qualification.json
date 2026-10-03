@@ -1,0 +1,147 @@
+{
+  "scope": "exact-head hosted deterministic qualification; native model execution remains separate",
+  "evidence": {
+    "inspection.json": {
+      "sha256": "9d99493e96b868c4433a1caf11409204a841a04a185244fbb1a83a77166ef1bb",
+      "bytes": 4111,
+      "json": {
+        "run": 37134259539,
+        "artifact_id": 11277684836,
+        "zip_digest": "10a57ee964b95140450308f6d3220c446d7fa5bc088ce839d9a742cc779cc925",
+        "verified_against_native_digest": true,
+        "semantic_summary": {
+          "schema": "open-hax.review-evidence/v2",
+          "repository": "riatzukiza/rheos",
+          "pull_request": 2,
+          "base_sha": "e37dd504da144c35148965e129438cb9c3c1b8e8",
+          "expected_head_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+          "executed_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+          "completion_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+          "head_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+          "exact_head": true,
+          "clean_checkout": true,
+          "generated_at": "2026-10-03T15:45:59.562Z",
+          "result": "success",
+          "statuses": {
+            "tool_versions": 0,
+            "generated_path_policy": 0,
+            "install": 0,
+            "bootstrap": 0,
+            "lint": 0,
+            "test": 0,
+            "build": 0,
+            "release_outputs": 0,
+            "diff_stat": 0
+          },
+          "attempted": {
+            "tool_versions": true,
+            "generated_path_policy": true,
+            "install": true,
+            "bootstrap": true,
+            "lint": true,
+            "test": true,
+            "build": true,
+            "release_outputs": true,
+            "diff_stat": true
+          },
+          "errors": [],
+          "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+        },
+        "primary_diff_bytes": 14458,
+        "primary_diff_sha256": "ab0eaf4e958f85e433ed17024fdb451cceeb0d2894b9d8c12041d247382f0540",
+        "primary_diff_headers": [
+          "diff --git a/docs/ci/standalone-ci-plan.md b/docs/ci/standalone-ci-plan.md"
+        ],
+        "primary_diff_truncated": false,
+        "qualification_log_lines": [
+          "v22.23.3",
+          "10.14.0",
+          "clj-kondo v2025.10.23",
+          "command: bash -euo pipefail -c $'\\n  # Checkout-local, untracked generated inputs/output only. Tracked\\n  # changes still fail the reusable workflow completion guard.\\n  exclude_path=\"$(git rev-parse --git-path info/exclude)\"\\n  mkdir -p \"$(dirname \"$exclude_path\")\"\\n  printf \"%s\\\\n\" /node_modules/ /deps/protocols/src/ /deps/chat-ui/src/ \\\\\\n    /.shadow-cljs/ /.clj-kondo/.cache/ /dist/ >> \"$exclude_path\"\\n'",
+          "+ @modelcontextprotocol/sdk 1.32.0",
+          "+ @open-hax/protocols 0.1.0",
+          "Done in 6.2s using pnpm v10.14.0",
+          "command: env -u NODE_PATH bash -euo pipefail -c $'\\n      bash scripts/bootstrap-source-deps.sh\\n      for source_dir in deps/protocols/src deps/chat-ui/src; do\\n        test -d \"$source_dir\"\\n        test -n \"$(find \"$source_dir\" -type f -print -quit)\"\\n      done\\n    '",
+          "  protocols/src: 21 files",
+          "Fetching Chat UI source from open-hax/chat-ui@86385532b4f8606946555d0ada8e3fb22f35b4c3...",
+          "  chat-ui/src: 10 files",
+          "linting took 1022ms, errors: 0, warnings: 0",
+          "Retrieving org/ring-clojure/ring-core-protocols/1.15.3/ring-core-protocols-1.15.3.pom from https://repo.clojars.org/",
+          "Retrieving org/ring-clojure/ring-websocket-protocols/1.15.3/ring-websocket-protocols-1.15.3.pom from https://repo.clojars.org/",
+          "Retrieving org/ring-clojure/ring-core-protocols/1.15.3/ring-core-protocols-1.15.3.jar from https://repo.clojars.org/",
+          "Retrieving org/ring-clojure/ring-websocket-protocols/1.15.3/ring-websocket-protocols-1.15.3.jar from https://repo.clojars.org/",
+          "0 failures, 0 errors.",
+          "[:test] Build completed. (142 files, 141 compiled, 0 warnings, 13.91s)",
+          "0 failures, 0 errors.",
+          "[:server] Build completed. (106 files, 47 compiled, 0 warnings, 19.86s)",
+          "[:cli] Build completed. (110 files, 50 compiled, 0 warnings, 10.28s)",
+          "[:github-sync] Build completed. (67 files, 19 compiled, 0 warnings, 6.00s)",
+          "[:app] Build completed. (95 files, 49 compiled, 0 warnings, 9.91s)"
+        ],
+        "current_review_binding_anomaly": {
+          "id": 5401178867,
+          "submitted_at": "2026-10-03T14:14:45Z",
+          "rest_commit_id": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+          "body_reviewed_head": "51976cb",
+          "body_tests": "177/1029",
+          "scope": "Historical record; current run model was still pending at collection, not fresh current-run review."
+        }
+      }
+    },
+    "artifact/summary.json": {
+      "sha256": "7b38973a4a013ddd9524be4bb7347a4303f7ce65449dd0412937753f2e5fe1fd",
+      "bytes": 1084,
+      "json": {
+        "schema": "open-hax.review-evidence/v2",
+        "repository": "riatzukiza/rheos",
+        "pull_request": 2,
+        "base_sha": "e37dd504da144c35148965e129438cb9c3c1b8e8",
+        "expected_head_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+        "executed_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+        "completion_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+        "head_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+        "exact_head": true,
+        "clean_checkout": true,
+        "generated_at": "2026-10-03T15:45:59.562Z",
+        "result": "success",
+        "statuses": {
+          "tool_versions": 0,
+          "generated_path_policy": 0,
+          "install": 0,
+          "bootstrap": 0,
+          "lint": 0,
+          "test": 0,
+          "build": 0,
+          "release_outputs": 0,
+          "diff_stat": 0
+        },
+        "attempted": {
+          "tool_versions": true,
+          "generated_path_policy": true,
+          "install": true,
+          "bootstrap": true,
+          "lint": true,
+          "test": true,
+          "build": true,
+          "release_outputs": true,
+          "diff_stat": true
+        },
+        "errors": [],
+        "interpretation": "Exit 125 means the gate was skipped because a required prerequisite failed."
+      }
+    },
+    "artifact/checkout.json": {
+      "sha256": "54727a9023c83115b8a2f175e46103af7ee8d372dff8c2e6e39ed4b9e6aac35c",
+      "bytes": 287,
+      "json": {
+        "event_head_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+        "expected_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+        "executed_sha": "2bcc002bff87890a3b607700d323444f1e1f3caf",
+        "expected_commit": true,
+        "event_head_matches": true,
+        "exact_head": true,
+        "clean": true
+      }
+    }
+  }
+}

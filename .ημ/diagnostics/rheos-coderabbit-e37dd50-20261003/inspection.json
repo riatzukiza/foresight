@@ -1,0 +1,128 @@
+{
+  "tier": "derived-from-authenticated-native-github-records",
+  "observed_at": "2026-10-03T15:55:14.206676+00:00",
+  "repository": "riatzukiza/rheos",
+  "pull_request": 1,
+  "base_sha": "11811264a308d406cb612aefa1dad40818675e5e",
+  "head_sha": "e37dd504da144c35148965e129438cb9c3c1b8e8",
+  "head_unchanged": true,
+  "request": {
+    "id": 5970719523,
+    "body": "@coderabbitai full review\n\nReview the implementation against the card's laws and acceptance criteria. Label each finding P0-P3. During the first five rounds we prefer verified fixes of every priority. An outright rejection requires detailed reasoning and independent agreement by another agent besides CodeRabbit.\n\n<!-- pr-flow-stage:code --> <!-- pr-flow-round:1 --> <!-- pr-flow-review:e37dd504da144c35148965e129438cb9c3c1b8e8 --> <!-- pr-flow-reviewer:coderabbit -->",
+    "created_at": "2026-10-03T15:45:44Z",
+    "updated_at": "2026-10-03T15:45:44Z",
+    "html_url": "https://github.com/riatzukiza/rheos/pull/1#issuecomment-5970719523"
+  },
+  "completion_reply": {
+    "id": 5970720784,
+    "author": "coderabbitai[bot]",
+    "created_at": "2026-10-03T15:45:52Z",
+    "updated_at": "2026-10-03T15:52:22Z",
+    "html_url": "https://github.com/riatzukiza/rheos/pull/1#issuecomment-5970720784",
+    "body": "<!-- This is an auto-generated reply by CodeRabbit -->\n<!-- CodeRabbit review command invocation: v2:4fd36a582de2bd55a2f36fb5f96e6a61b195cdfdbcacea478b50537b26b6ccae -->\n<details>\n<summary>✅ Action performed</summary>\n\nFull review finished.\n\n</details>"
+  },
+  "summary": {
+    "id": 5966686355,
+    "author": "coderabbitai[bot]",
+    "updated_at": "2026-10-03T15:52:17Z",
+    "html_url": "https://github.com/riatzukiza/rheos/pull/1#issuecomment-5966686355",
+    "run_id": "b79337b0-3649-4b84-ae8e-654b41a333a0",
+    "scope": "full/default-base 11811264a308d406cb612aefa1dad40818675e5e to e37dd504da144c35148965e129438cb9c3c1b8e8",
+    "selected_files": 27,
+    "no_actionable_comments_statement": "No actionable comments were generated in the recent review. 🎉",
+    "coverage": {
+      "sourceCommitId": "e37dd504da144c35148965e129438cb9c3c1b8e8",
+      "coveredCommitId": "e37dd504da144c35148965e129438cb9c3c1b8e8",
+      "kind": "reviewed"
+    },
+    "risk_section": "<!-- final_review_risk_start -->\n**Merge Risk:** _⚪ Minimal_ · up to `e37dd`\n<!-- final_review_risk_coverage:{\"sourceCommitId\":\"e37dd504da144c35148965e129438cb9c3c1b8e8\",\"coveredCommitId\":\"e37dd504da144c35148965e129438cb9c3c1b8e8\",\"kind\":\"reviewed\"} -->\n\nNo actionable merge-blocking issue remains from the reviewed changes; normal qualification is still appropriate before merging.\n<!-- final_review_risk_end -->"
+  },
+  "coderabbit_status": {
+    "id": 55518002600,
+    "state": "success",
+    "description": "Review completed",
+    "context": "CodeRabbit",
+    "created_at": "2026-10-03T15:52:20Z",
+    "updated_at": "2026-10-03T15:52:20Z"
+  },
+  "finding_disposition": {
+    "new_inline_findings": [],
+    "new_review_body_findings": [],
+    "recent_inline_acknowledgment": [
+      {
+        "id": 4173811490,
+        "review_id": 5401529798,
+        "author": "coderabbitai[bot]",
+        "commit_id": "3bc5df2d591a6976a627fe20c806310ebfaf92da",
+        "path": "test/rheos/backend/infra/task_edit_test.cljs",
+        "line": null,
+        "original_line": 124,
+        "created_at": "2026-10-03T15:52:44Z",
+        "updated_at": "2026-10-03T15:52:44Z",
+        "html_url": "https://github.com/riatzukiza/rheos/pull/1#discussion_r4173811490",
+        "body": "`@riatzukiza`, the supplied test covers all six event assertions for each scalar-title update, including unchanged `7`, `false`, and `nil` event values. This addresses the finding.\n\nThe reported qualification results remain separate from broader runtime-transport qualification.\n\n✅ Review thread resolved.\n\n_You are interacting with an AI system._\n\n<!-- This is an auto-generated reply by CodeRabbit -->"
+      }
+    ],
+    "acknowledgment_interpretation": "comment4173811490 / empty review5401529798 is a reply on historical title-event test finding, not a second completed full review or new finding.",
+    "full_review_evidence_channel": "native no-findings issue completion, not fabricated GitHub APPROVED record"
+  },
+  "quota": {
+    "native_footer": "**Included review availability:** This review used your included allowance. 0 included reviews remain after this review. Your included PR review attempts over the past 7 days set your current allowance at 3 reviews per hour.",
+    "remaining_included_reviews": 0,
+    "current_allowance_per_hour": 3,
+    "parsed_cooldown_deadline": null,
+    "rate_limit_reply": null,
+    "interpretation": "Completed request was accepted. Footer allowance is not a parsed future retry deadline; no next request made."
+  },
+  "files": {
+    "pull.json": {
+      "bytes": 22739,
+      "sha256": "c501463b93a50ac2b8f2c746e19d78a61021dc19f8680c8c6e1bf9f26db4d196"
+    },
+    "request.json": {
+      "bytes": 2374,
+      "sha256": "2a8a740ca3882724b85efb23402c50b56654d41226245460c187af14e53cb89c"
+    },
+    "reviews.json": {
+      "bytes": 83391,
+      "sha256": "000bd0835c409d46ccab0ad7d9cb748d09fff5b77133aa6ccb6d74f624fe9dea"
+    },
+    "comments-since-request.json": {
+      "bytes": 23361,
+      "sha256": "75b201877c77664e4cab91bfeec071c8dc4d68bcce9e16ad6d5b16b2a028b58b"
+    },
+    "canonical-status.txt": {
+      "bytes": 616,
+      "sha256": "05b09f84bd72d5b6f2ed4854dd32ef3576145e57b738067dff01d1f43c2d68f7"
+    },
+    "inline-comments.json": {
+      "bytes": 223434,
+      "sha256": "020d0994180f8000761e976ee43b11accc7bc1ab5cde33256017c634adb13976"
+    },
+    "review-body-followup.json": {
+      "bytes": 88990,
+      "sha256": "a5c5aee27dc3c74341fd8c6c93fa89826e98ecba4df43a21845bf239b08f280e"
+    },
+    "issue-comments-followup.json": {
+      "bytes": 24072,
+      "sha256": "f0724b3b6057d15848eee129a52c061a523028c792a4d2e005e18515b77aeaea"
+    },
+    "findings-snapshot.json": {
+      "bytes": 2833,
+      "sha256": "d5ed23d59c34575345401651fc121d388b928f63c478e6e886072783ad060c1d"
+    },
+    "statuses-completed.json": {
+      "bytes": 5314,
+      "sha256": "bc677e196d75d26efdc36b0fe4cc1dbf5bf4f36167d43b7c386950c8c0346ef3"
+    },
+    "pull-completed.json": {
+      "bytes": 22739,
+      "sha256": "58f6c1cb166949f02639af4294fc59c8f82b7f608273f697fe4c0dbffd42d7df"
+    }
+  },
+  "limits": [
+    "Initial canonical-status.txt was captured while the review was completing, reported pending and changed evidence, and is historical preparation rather than the final completion snapshot.",
+    "Parent owns MiMo and whole-PR gate; this inspection establishes CodeRabbit completion only.",
+    "No request, reply, settlement, mutation, or test run by this auditor."
+  ]
+}

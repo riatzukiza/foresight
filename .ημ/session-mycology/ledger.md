@@ -520,3 +520,12 @@
   spore: none
   receipt-refs: cc979347b049760bb9cf216ac1f7f9c14eab3e382903c92471845c911312f5db
   note: Treat semantic gate summaries, model scope, published native review and approval as distinct evidence. Preserve primary bounds and native identities; repair confirmed policy conflicts explicitly. Verify new low-severity architecture findings and actual cycles rather than inheriting stale all-existing lint prose. Historical malformed receipts remain immutable pending reviewed correction/admission. No new spore.
+- ts: 2026-10-03T16:01:35.379Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Repair portable source boundaries and qualify actual review input
+  p-efficiency: 0.74
+  p-friction: 0.94
+  p-skill-candidate: 0.65
+  spore: none
+  receipt-refs: 9f77ffccb14ab6ee6837d28eecfad020bc266c8917ee547abb8628e735ea8da3
+  note: Independently qualify direct reusable pure APIs as well as protected runtime callers. Bind red probes to the API actually tested. Separate hosted deterministic results, complete scope recovery, native publication and approval. Retain original baseline evidence before citation. Preserve immutable invalid receipt history and unverified billing uncertainty rather than coercing either into acceptance. No new spore.

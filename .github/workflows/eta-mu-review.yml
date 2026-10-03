@@ -20,6 +20,74 @@ jobs:
       setup_eta_mu_toolchain: false
       evidence_gates_script: |
         run_gate diff_stat git diff --stat "${PR_BASE_SHA}...HEAD"
+        stage_full_review_input() (
+          set -euo pipefail
+          REVIEW_EVIDENCE_DIR="$evidence_dir" node <<'NODE'
+        const fs = require('node:fs');
+        const path = require('node:path');
+        const cp = require('node:child_process');
+        const crypto = require('node:crypto');
+        const base = process.env.PR_BASE_SHA;
+        const head = process.env.PR_HEAD_SHA;
+        const dir = process.env.REVIEW_EVIDENCE_DIR;
+        const sha = value => crypto.createHash('sha256').update(value).digest('hex');
+        if (!/^[0-9a-f]{40}$/.test(base || '') || !/^[0-9a-f]{40}$/.test(head || '')) {
+          throw new Error('Full review input requires immutable event base/head SHAs');
+        }
+        if (cp.execFileSync('git', ['rev-parse', 'HEAD'], {encoding:'utf8'}).trim() !== head) {
+          throw new Error('Full review input checkout does not match the PR head');
+        }
+        const fullPath = path.join(dir, 'pr-full.diff');
+        const partialPath = path.join(dir, 'pr-full.diff.partial');
+        function stageDiff(revisions) {
+          const fd = fs.openSync(partialPath, 'w');
+          try {
+            cp.execFileSync('git', ['diff', '--find-renames', ...revisions],
+              {stdio: ['ignore', fd, 'pipe']});
+          } finally { fs.closeSync(fd); }
+        }
+        let revisions = [`${base}...${head}`];
+        stageDiff(revisions);
+        if (fs.statSync(partialPath).size === 0) {
+          revisions = [base, head];
+          stageDiff(revisions);
+        }
+        const full = fs.readFileSync(partialPath);
+        const primary = fs.readFileSync(path.join(dir, 'pr.diff'));
+        const truncated = full.length > 300000;
+        const expectedPrimary = truncated
+          ? Buffer.concat([full.subarray(0, 300000), Buffer.from(
+              `\n[eta-mu review] diff truncated at 300000 bytes (was ${full.length}).\n`)])
+          : full;
+        if (!primary.equals(expectedPrimary)) {
+          throw new Error('Primary staged diff does not match the complete diff and declared truncation');
+        }
+        fs.renameSync(partialPath, fullPath);
+        const metadata = {
+          repository: process.env.GITHUB_REPOSITORY,
+          pull_request: Number(process.env.PR_NUMBER),
+          base_sha: base, head_sha: head,
+          command: ['git', 'diff', '--find-renames', ...revisions],
+          path: '.opencode/review-evidence/pr-full.diff',
+          bytes: full.length, sha256: sha(full),
+          primary_path: '.opencode/review-evidence/pr.diff',
+          primary_bytes: primary.length, primary_sha256: sha(primary),
+          primary_prefix_limit_bytes: 300000, primary_truncated: truncated,
+        };
+        fs.writeFileSync(path.join(dir, 'pr-full.json'), JSON.stringify(metadata, null, 2) + '\n');
+        fs.writeFileSync(path.join(dir, 'pr-full.sha256'), `${metadata.sha256}  pr-full.diff\n`);
+        fs.appendFileSync(path.join(dir, 'pr-context.md'),
+          `\n## Supplementary complete Git diff\n` +
+          `Supplementary source files: .opencode/review-evidence/pr-full.json and pr-full.diff. ` +
+          `The full diff is ${metadata.bytes} bytes with SHA256 ${metadata.sha256}, ` +
+          `bound to base ${base} and head ${head}. ` +
+          `The primary diff remains bounded; primary_truncated=${truncated}. ` +
+          `Availability is not review completion or evidence of reviewer consumption. ` +
+          `Pinned review_begin still indexes only pr.diff; omitted/deletion-only inline locations may be unavailable. ` +
+          `This artifact supplies readable input, not automatic full indexed review or abstention.\n`);
+        NODE
+        )
+        run_gate full_review_input stage_full_review_input
         run_gate workspace_laws npx --yes nbb@1.4.207 -cp scripts:test test/workspace_test.cljs
         run_gate project_laws npx --yes nbb@1.4.207 -cp src:scripts:test test/project_test.cljs
         run_gate lineage_laws npx --yes nbb@1.4.207 -cp src:test test/lineage_test.cljs
