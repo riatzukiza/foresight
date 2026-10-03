@@ -475,3 +475,12 @@
   spore: none
   receipt-refs: rheos-content-provider-prs
   note: Read current review bodies and emitted CI errors before inferring a blocker. Paid incremental review can complete after included quota is exhausted; exact-head formal coverage remains a separate law. Defer low-value optimization with a real intake card; no spore incubated.
+- ts: 2026-10-03T08:10:56.536711505Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Integrate moving fork base and preserve append-only histories
+  p-efficiency: 0.65
+  p-friction: 0.5
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: rheos-content-provider-prs
+  note: Inspect current base and mergeability when PR CI disappears. Resolve append-only conflicts with byte-prefix checks, never sort historical events. Always select the personalfork explicitly before pushing; accidentalbranch cleanup requires recorded user approval. Existing conflict skill is sufficient; no spore.
