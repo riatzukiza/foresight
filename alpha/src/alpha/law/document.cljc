@@ -65,7 +65,10 @@
            :expected (:observation/id observation)
            :actual (:document/observation-id document)})
 
-    (not= (:observation/source observation) (:document/source document))
+    (not= (select-keys (:observation/source observation)
+                       [:ref/type :ref/id :ref/revision])
+          (select-keys (:document/source document)
+                       [:ref/type :ref/id :ref/revision]))
     (conj {:law/id :alpha/document-observed-source-matches
            :path [:document/source]
            :expected (:observation/source observation)

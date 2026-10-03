@@ -50,6 +50,10 @@ UUID, or workflow status.
 - `admit-document` checks both shapes, matching observation/source context, and
   both declared schema boundaries through Katamorph. It returns the supplied
   maps unchanged; it does not parse, transform or store them.
+  Source identity consists of `:ref/type`, `:ref/id`, and the optional
+  `:ref/revision`. Portable extension metadata on either open source `Ref` does
+  not change that identity and remains in the returned supplied maps. A revision
+  present on only one source is a context mismatch.
 
 The tests qualify a source-owned Markdown map and an ephemeral, partial GitHub
 query map without file fields or an immutable revision. Capability declarations
