@@ -3,7 +3,7 @@ category: "content"
 labels: "rheos, markdown, preservation, write-boundary, regression"
 parent: "e7cdf5cf-423e-49fc-aca8-6ed6055f1cd5"
 type: "story"
-write-id: "1791015728813-0.f4dh5t9l0yp1iqm43bx"
+write-id: "1791026762321-0.0qdqzx8fqe8e8h1y94r"
 points: "5"
 title: "Preserve unrelated Rheos metadata and body through real writes"
 priority: "P1"
@@ -96,3 +96,9 @@ serialization remains outside this repair. File writes and event recording
 remain separate failure boundaries requiring later qualification. If the repair
 requires a broader authoring model or exceeds five points, split that additional
 work rather than expanding this card into the whole content loop.
+
+---
+Fresh canonical pr-flow first-five policy requires fixing the verified P3 duplicate YAML conversion rather than retaining the earlier performance deferral. Resume the already implemented source-preservation story for bounded canonical extern reuse of its checked value; preserve alias/cycle/tag refusals and source writes, qualify existing regressions and append evidence. The separate intake performance card remains incoming; no retroactive readiness or measured improvement is claimed. Root coordinates ordinary stack integration and current-head reviews.
+
+REVIEW REPAIR: Rheos 93783d75b0e0752ffa7da6d4d76ca24c4f75047b reuses the once-validated native YAML value inside its private extern adapter, removing the second toJS conversion while preserving cycle/tag checks and Clojure semantic boundaries. Existing focused compiled suite passes 27 tests/140 assertions; full backend suite 166/858; lint zero errors/warnings, nine existing informational findings; compiler zero warnings. This uses the external backend/tool prefix and does not qualify the clean complete manifest/browser/all release targets. Prior P3 deferral is superseded by the actual fix under the current first-five-round policy. Loader visibility remains an open review finding; no broader story completion claimed.
+---

@@ -484,3 +484,12 @@
   spore: none
   receipt-refs: rheos-content-provider-prs
   note: Inspect current base and mergeability when PR CI disappears. Resolve append-only conflicts with byte-prefix checks, never sort historical events. Always select the personalfork explicitly before pushing; accidentalbranch cleanup requires recorded user approval. Existing conflict skill is sufficient; no spore.
+- ts: 2026-10-03T11:26:52.795032398Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Continue personal-fork reviews and expose model runner failure
+  p-efficiency: 0.57
+  p-friction: 0.81
+  p-skill-candidate: 0.25
+  spore: none
+  receipt-refs: rheos-review-runner-and-yaml-repair
+  note: Use current canonical policy after live updates; credential detection, invocation, retained diagnostics and published reviews are separate evidence. Reuse a verified value at the private adapter boundary; do not inflate qualification to clean manifest or browser builds. No spore created.
