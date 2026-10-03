@@ -493,3 +493,12 @@
   spore: none
   receipt-refs: rheos-review-runner-and-yaml-repair
   note: Use current canonical policy after live updates; credential detection, invocation, retained diagnostics and published reviews are separate evidence. Reuse a verified value at the private adapter boundary; do not inflate qualification to clean manifest or browser builds. No spore created.
+- ts: 2026-10-03T12:19:30.576880216Z
+  session: /home/err/.codex/worktrees/rheos-content-contracts/foresight
+  task: Repair native review access, label normalization and comment rendering
+  p-efficiency: 0.62
+  p-friction: 0.84
+  p-skill-candidate: 0.35
+  spore: none
+  receipt-refs: rheos-final-label-renderer-and-review-bootstrap
+  note: Preserve completed native review evidence separately from invitation, running jobs and scoped settlement. Fix authoritative renderer via real Markdown outputs; use typed receipt envelopes validated before append. Preserve malformed historical records until reviewed correction law exists. Existing SSH authenticated authorized workflow pushes; no scope expansion or new spore.

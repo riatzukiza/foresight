@@ -3,7 +3,7 @@ category: "content"
 labels: "rheos, markdown, preservation, write-boundary, regression"
 parent: "e7cdf5cf-423e-49fc-aca8-6ed6055f1cd5"
 type: "story"
-write-id: "1791027720794-0.m1g152irubirrhhw63a"
+write-id: "1791029652812-0.fiur2kghkfw4aocqei9"
 points: "5"
 title: "Preserve unrelated Rheos metadata and body through real writes"
 priority: "P1"
@@ -105,4 +105,9 @@ REVIEW REPAIR: Rheos 93783d75b0e0752ffa7da6d4d76ca24c4f75047b reuses the once-va
 REVIEW RESUMPTION: The remaining source-loader finding is confirmed: a malformed projected card is currently logged and omitted, admitting a successful partial board. Resume a bounded fail-closed repair in existing loader/composition paths: retain refusal path/cause, preserve valid-load shapes and intentional noncard filtering, let existing read surfaces report the failure, and verify real files plus repaired-source recovery. Availability consequence is explicit: one refused projected card rejects that load. No fabricated frontmatter, new diagnostics surface or broader document engine is planned.
 
 QUALIFIED REVIEW REPAIR: red97e0aef5907749ad09456a6eac2b4c19dc2cef67 exposed29 failures/0errors in19tests75assertions; greenfc338625b204b5372e9a1cc3aa61b2ddc5e78315 retains source path/diagnostic/cause and propagates only refused errors through composition. Focused46/215 and full backend169/900 pass; lint zero errors/warnings and CLI release zero compiler warnings. Actual released CLI read-board, snapshot and read-task refuse bad source with exit3, empty stdout and path/reason; syntax/permission repairs restore successful reads. Original bytes unchanged, unrelated fallback/discovery filters retained. One refused candidate now rejects that load. Parent independently inspected code/tests; no material issue. External runtime/bootstrap qualification does not establish clean complete-manifest or browser/all-release behavior.
+
+NEW BODY FINDING: CodeRabbit review5400526798 item907f4c9011758ebe5328c26e identifies numeric YAML label items passed to str/trim. Current fail-closed loader reports that normalization error, but valid numeric label metadata should normalize to strings. Resume bounded actual-file red/green with the exact suggested stringify-before-trim change, retaining nil/blank filtering, deduplication/order and valid-load shapes. Reviewer bootstrap setup is separately an operator prerequisite for completing these reviews, not standalone package CI implementation.
+
+FINAL BOUNDED REPAIRS: numeric-label red e680dd9 reproduced six failures in37tests204assertions; exact suggested green74410c1 stringifies before trim, preserves blanks/dedup/order/labels-over-tags and passes full170/916. Renderer red23d9202 records two actual Marked heading failures while parser compatibility tests pass; greendc8189373a152edcd682779bffbbf02e1f3224de inserts one blank line before the existing closing delimiter. Full171tests921assertions passes, lint/compiler zero errors/warnings. Actual released CLI first/second comment appends and canonical rereads preserve section text/status/priority, render paragraphs and thematic breaks, and retain distinct write IDs plus prior ledger bytes. Parent independently reviewed both minimal code changes, regressions and actual evidence. General comment serialization remains lossy; no broad preservation or clean complete-manifest/browser/all-release qualification asserted. Head86cabb862bb460fc7d6d099dd231246d9299727c also installs the independently checked native reviewer caller and existing App configuration, an operational review prerequisite; this does not implement standalone package CI.
+
 ---
