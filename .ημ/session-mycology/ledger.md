@@ -530,3 +530,12 @@
   spore: none
   receipt-refs: CC1.01-pinned-bootstrap
   note: Assess derived plans against original committed facts, and verify runner exit status with a forced failure before adding hosted gates. Independent review caught both before publication; no spore warranted.
+- ts: 2026-10-06T16:42:51.225101864Z
+  session: /home/err/.codex/worktrees/foresight4-cr-fixture-20261006
+  task: Discriminate child revision mapping in bootstrap test fixture
+  p-efficiency: 0.93
+  p-friction: 0.18
+  p-skill-candidate: 0.3
+  spore: none
+  receipt-refs: review5431650098
+  note: Uniform input values can hide wrong-key mapping despite extensive guards. Use distinct values and independent path-map expectations; mutation passed old suite and failed strengthened suite. Preserve genuinely invalid negative facts after fixture diversification. No new spore.

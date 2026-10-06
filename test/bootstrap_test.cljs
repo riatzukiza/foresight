@@ -9,13 +9,16 @@
 (def child-sha (apply str (repeat 40 "b")))
 (def other-sha (apply str (repeat 40 "c")))
 
+(defn child-revision [path]
+  (if (= ".agents" path) other-sha child-sha))
+
 (def input
   {:bootstrap/root-revision root-sha
    :bootstrap/project project/project
    :bootstrap/manifest (project/gitmodule-declarations)
    :bootstrap/gitlinks
    (mapv (fn [source] {:path (:source/path source) :mode "160000"
-                      :revision child-sha})
+                      :revision (child-revision (:source/path source))})
          (project/submodule-sources))})
 
 (def required-gates #{:project-law :workspace-law})
@@ -26,7 +29,7 @@
    :bootstrap/children
    (mapv (fn [source]
            (assoc (select-keys source [:source/id :source/path :source/repository])
-                  :source/revision child-sha
+                  :source/revision (child-revision (:source/path source))
                   :source/actionable? (boolean (:source/actionable? source))
                   :source/consolidation? (boolean (:source/consolidation? source))))
          (sort-by :source/path (project/submodule-sources)))})
@@ -60,7 +63,10 @@
     (is (= 23 (count children)))
     (is (= (set (map :source/path (project/submodule-sources)))
            (set (map :source/path children))))
-    (is (every? #(= child-sha (:source/revision %)) children))
+    (is (= #{child-sha other-sha}
+           (set (map :revision (:bootstrap/gitlinks input)))))
+    (is (= (into {} (map (juxt :path :revision) (:bootstrap/gitlinks input)))
+           (into {} (map (juxt :source/path :source/revision) children))))
     (is (false? (:source/actionable? agents)))
     (is (true? (:source/consolidation? agents)))
     (is (not-any? #{"eta" "clobber"} (map :source/path children)))
@@ -127,7 +133,7 @@
             [[:root (assoc observed :bootstrap/root-revision other-sha)]
              [:absent (update observed :bootstrap/checkouts subvec 1)]
              [:uninitialized (assoc-in observed [:bootstrap/checkouts 0 :checkout/initialized?] false)]
-             [:wrong-head (assoc-in observed [:bootstrap/checkouts 0 :source/revision] other-sha)]
+             [:wrong-head (assoc-in observed [:bootstrap/checkouts 0 :source/revision] root-sha)]
              [:failed-fetch (assoc-in observed [:bootstrap/checkouts 0 :checkout/fetch] :failed)]
              [:stale-child (assoc-in observed [:bootstrap/checkouts 0 :bootstrap/root-revision] other-sha)]
              [:duplicate-child (update observed :bootstrap/checkouts conj

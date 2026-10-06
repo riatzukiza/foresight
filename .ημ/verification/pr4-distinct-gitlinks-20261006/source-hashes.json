@@ -1,0 +1,5 @@
+{
+  "src/foresight/bootstrap.cljc": "9502a67f9e5ff2317d2020a36d962cfd41659a57420f6f6ef32b273339a8cef5",
+  "src/foresight/law/bootstrap.cljc": "61a34ff3bd2e55a7c5e32ca0240d62741de653dfa4941e59a6c7fb3aa6b20273",
+  ".\u03b7\u03bc/kanban-events/ledger.edn": "52eab33d5bb46634d0c160e901806630aa07dc6bf9b01025cb2028dbe7651cd7"
+}

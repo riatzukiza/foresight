@@ -1,0 +1,15 @@
+{
+  "uniform-mutant-before.log": "f83ead11d743a615c68ebbd7b68ffc3ea7c3e6f1d99d0eb2502bdbcb9db02f4b",
+  "baseline.log": "f83ead11d743a615c68ebbd7b68ffc3ea7c3e6f1d99d0eb2502bdbcb9db02f4b",
+  "source-hashes.json": "25206e2b1a458286c0964072f7145cec5acbe83149472648650e6f5952155197",
+  "README.md": "7497bb8e57e0052f041a9c175262037bbe6543eb2ba683531017bdaf784e39b6",
+  "project-green.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "baseline.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "uniform-mutant-before.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "native-review5431650098.json": "e020bce463abe9f6c1894cd69c6e91fb2e6ba9590c9f606869c599227582731e",
+  "uniform-mutant-after.exit": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+  "uniform-mutant-after.log": "ce35db3d9bc5200ada82ba9d7e2d73c9ee747523b225b6ccbf6bb0b5b239389c",
+  "project-green.log": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672",
+  "bootstrap-green.log": "ba0ad6ecbff675b0f98af27cabbf7df6edf90af1ca060a11de73920b8068040a",
+  "bootstrap-green.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+}
