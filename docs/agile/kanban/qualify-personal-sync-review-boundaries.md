@@ -33,6 +33,11 @@ development diffs while the other lanes remain independently reviewable.
 - Assess every recovered-input request against `clobber/PROVENANCE.md`, root
   inventory-only execution law, the archived source and the extraction owner.
   Request an independent assessment rather than treating provenance as assent.
+- Catalog the four newly confirmed recovered-note/sample defects in root-owned
+  provenance without rewriting their source: RPC field disagreement, immediate
+  result/synchronous-throw handling, literal environment placeholders and missing
+  extracted reference definitions. Preserve the correct `.pm2.cljs` dispatch
+  distinction; only the `.pm2.clj` compound suffix misses its evaluation branch.
 - Correct README's execution-refusal sentence to include `clobber`, and append
   the later immutable caller revision to the migration acceptance history without
   assigning PR121's historical results to that later revision.
@@ -57,7 +62,9 @@ branch and dependent PR heads are unchanged by this planning input.
 - Each of the 17 native findings has a specific verified disposition; concerns
   still lacking admissible corroboration remain open and explicitly blocked.
 - Root documentation matches the actual execution refusal and immutable caller
-  pin, while prior revision-specific observations remain preserved.
+  pin, while prior revision-specific observations remain preserved. The October3
+  restoration paragraph remains historically true; add the later functional
+  repair observation rather than correcting that historical event.
 - Recovered source/design records retain inspectable provenance; any proposed
   change of preservation policy is explicitly reviewed rather than inferred from
   a synchronization review or from the mere existence of a defect.

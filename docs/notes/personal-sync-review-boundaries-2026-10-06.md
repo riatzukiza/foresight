@@ -64,3 +64,50 @@ canonical authenticated native Bot rejection channel. Missing corroboration,
 incomplete review rounds or reviewer capacity remain visible blockers. No
 runtime, generated artifact, credential, protected setting, board state or
 historical receipt is changed by this observation.
+
+## Completed local independent assessment
+
+Independent agent `/root/child_prs` inspected all 17 native comments at exact
+head `96a6dca24cb7a14b041bdd6e3e7922c568238da9`, native CodeRabbit review
+`5429716586`, and MiMo review `5429818808`. This section is a coordinator's
+record of local agent evidence. It is not a native Bot response or an automated
+rejection settlement.
+
+The agent independently agrees that modifying/deleting/rebuilding the 15
+reviewed recovered payloads in this synchronization PR would conflict with the
+whole-recovery and inventory-only contract. The defects are real legacy issues,
+not fixes or accepted production behavior. Checking
+`git diff -w --ignore-blank-lines fcf53352345ddb64a0a5dd49eab6390ce7f19e81..96a6dca24cb7a14b041bdd6e3e7922c568238da9 -- clobber ':(exclude)clobber/PROVENANCE.md'`
+produces an empty diff; the coordinator independently repeated that check.
+
+Four comments identify defects not explicitly cataloged in current provenance:
+4196366274 (RPC result fields), 4196366286 (immediate handler results/throws),
+4196366308 (literal environment placeholders), and 4196366336 (missing numeric
+reference definitions). Additions to root-owned provenance can record those
+without changing the recovered payload or inventing unknown link targets.
+
+The remaining recovered defects are already explicitly recorded in provenance:
+generated exports, absent package tests, compiled evaluator, eager profile
+registration, environment lookup, nested CLI keypaths, failed subprocess/import
+handling, extension dispatch, removal identities/shadowing, duplicate app names,
+and environment selection during export. They remain unimplemented extraction
+work; no `Handled` or fixed disposition is inferred.
+
+Comment4196366452 overstates its `.pm2.cljs` claim. The archived `.cljs`
+extension branch already selects the evaluator; `.pm2.clj` falls through and
+the `.pm2.edn` comparison is unreachable. Alias stripping is a separate
+evaluation defect. Preserve this distinction in any future native proposal.
+
+The agent confirms the README omission as a valid bounded root documentation
+fix. For caller history, the October3 statement and PR121 attribution are true:
+receipt191 at `2026-10-04T15:00:20.947Z` explicitly records the later functional
+complete-input repair to caller `45ec644c2d15ed511e9bc1e797d1b4073b63dbfc`
+with Muse `0b9a91492c8355e6933dc2164d35668cb76d9e60`. A concise additive
+October4 paragraph is reasonable; rewriting the October3 event or transferring
+PR121 evidence would be incorrect. MiMo's earlier approval also discusses the
+historical distinction, but predates any finding-specific proposal and supplies
+no required rejection markers.
+
+All 17 threads remain open. Canonical settlement still needs supported native
+finding-specific corroboration with proposal/agreement/final chronology for any
+rejection, or a verified implementation for fixes. No recovered code was run.
