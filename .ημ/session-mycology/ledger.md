@@ -530,3 +530,12 @@
   spore: none
   receipt-refs: foresight-pr128-review-repair
   note: CommonMark backslash breaks preserve rendering while satisfying git diff hygiene; install absent verification dependencies only in a unique venv. No spore warranted.
+- ts: 2026-10-06T14:08:36.179261320Z
+  session: /home/err/.codex/worktrees/foresight-fork-pr128-20261006
+  task: Personal fork development handoff of origin PR128
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T14:08:34.106391+00:00
+  note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
