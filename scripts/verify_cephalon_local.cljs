@@ -44,7 +44,7 @@
     let runs;
     try{
       await db.connect();
-      runs=await db.db('knoxx').collection('knoxx_runs').find({'settings.agentSpec.contractId':'ussyverse_social_creative'},{projection:{run_id:1,status:1,created_at:1,error:1,'settings.agentSpec.contractId':1,'settings.agentSpec.eventType':1,'settings.agentSpec.scheduleId':1,'tool_receipts.tool_name':1,'tool_receipts.status':1}}).sort({created_at:-1}).limit(8).toArray();
+      runs=await db.db('knoxx').collection('knoxx_runs').find({'settings.agentSpec.contractId':'ussyverse_social_creative','settings.agentSpec.eventType':'schedule/ussyverse-social-creative','settings.agentSpec.scheduleId':'creative'},{projection:{run_id:1,status:1,created_at:1,error:1,'settings.agentSpec.contractId':1,'settings.agentSpec.eventType':1,'settings.agentSpec.scheduleId':1,'tool_receipts.tool_name':1,'tool_receipts.status':1}}).sort({created_at:-1}).limit(8).toArray();
     }finally{await db.close()}
     const p=await fetch('https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=open-hax.bsky.social&limit=3',{signal:AbortSignal.timeout(10000)});
     const feed=p.ok?await p.json():{};
@@ -95,7 +95,10 @@
                            (<= 0 age 2400000)))
                     (:runs observed))
               "a persisted maker completed from the native schedule within the last40minutes")
-      (check! (some #(= "*/15 * * * *" (:rule %)) (:schedules observed)) "native Knoxx schedule retains the 15-minute creative cadence")
+      (check! (some #(and (= "ussyverse-social/creative" (:id %))
+                         (= "*/15 * * * *" (:rule %)))
+                    (:schedules observed))
+              "native Knoxx schedule retains the 15-minute creative cadence")
       (check! (some #(and (:enabled %) (some #{"creative-request" "cephalon/creative-request"} (:events %)))
                     (:triggers observed)) "non-clock creative-request event is bound to an enabled trigger")
       (check! (= head-tools #{"discord.send" "discord.read" "discord.react" "agents.spawn"})

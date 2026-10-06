@@ -27,7 +27,17 @@ inspected through the same user/agent interfaces.
 - Head admission: `25e3a688-09b5-4e9a-8765-9b13944b1a01` (3 points).
 - Creative cycles: `25e3a688-09b5-4e9a-8765-9b13944b1a02` (5 points).
 - Triggers and publication: `25e3a688-09b5-4e9a-8765-9b13944b1a03` (3 points).
-- Recovery and deployment: `25e3a688-09b5-4e9a-8765-9b13944b1a04` (5 points).
+- Owner and job recovery: `25e3a688-09b5-4e9a-8765-9b13944b1a04`
+  (proposed 8 points; existing 5 remains unadmitted metadata).
+- Lifecycle health and cloud placement: `25e3a688-09b5-4e9a-8765-9b13944b1a05`
+  (proposed 5 points).
+
+The independent local-agent sprint assessment proposes **24 points** overall:
+3 + 5 + 3 + 8 + 5. A 21-point alternative retains recovery at 5 only if reusable
+fencing/reconciliation is demonstrated. The original epic frontmatter's 16
+points is preserved as initial metadata, not the accepted sum for the split.
+Native Rheos point/relationship authoring must be available before operational
+updates and readiness; no alternate board writer or validated estimate is claimed.
 
 ## Non-goals
 
@@ -38,8 +48,9 @@ Live Discord voice/STT and Codex chat dispatch are independent capabilities.
 ## Acceptance criteria
 
 1. A blocked maker does not block head admission or abort on user conversation.
-2. Three unattended clock cycles save inspectable artifacts; at least two
-   creative media are represented. Every failed cycle reports its real reason.
+2. Three unattended clock cycles each save validated inspectable artifacts or
+   an explicit failed outcome. Successful cycles represent at least two creative
+   media in their saved artifacts; every failed cycle reports its real reason.
 3. A configured non-clock event produces work through the same bounded path.
 4. A real Bluesky publication and Discord share have native IDs/receipts.
    Publication is deduplicated and governed by explicit frequency policy.

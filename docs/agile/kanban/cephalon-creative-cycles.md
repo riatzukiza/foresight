@@ -26,8 +26,15 @@ Executable agent/trigger resources, an explicit cadence and deadline, one
 outstanding cycle per maker, existing worker delegation, output validation and
 addressable result/receipt data at the existing persistence boundaries.
 
-This story implements the cycle deadline, attempt cap and backoff specified in
-the recovery story, together with the publication admission/reconciliation
+This story implements a ten-minute deadline **per attempt**, at most three
+attempts per cycle identity, and one-minute then five-minute backoffs. The whole
+cycle's execution/backoff budget is at most 36 minutes from first admission,
+including retries, backoffs and later admission delays; each attempt is also
+bounded by the remaining cycle budget. Later clock ticks coalesce or are refused
+while its maker reservation is held. Budget expiry does not establish terminal
+ownership: unresolved work remains quarantined until verified termination or
+fencing prevents both artifact persistence and publication. The recovery story
+supplies these same limits, together with the publication admission/reconciliation
 contracts specified in the publication story, before its cycles can pass AC3.
 Those later stories verify outlet adapters and restart/placement behavior; their
 ordering does not postpone the limits needed by this cycle runtime.
@@ -62,6 +69,9 @@ style, or claim every generated piece must be published.
 Failing state/output laws, native-tool boundary tests and backend gates. Run
 three bounded real cycles, inspect files and persisted receipts, document model
 and served revision. Missing providers are failures, not synthetic successes.
+Advance a controlled clock through attempt deadlines and both backoffs; verify
+the three-attempt and 36-minute budgets, coalesced ticks and retained quarantine
+when the old attempt or delegate remains able to persist or publish.
 
 ## Risks
 

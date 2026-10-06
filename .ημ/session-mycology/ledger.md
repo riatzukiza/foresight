@@ -626,3 +626,19 @@
 - Scores: efficiency0.80, friction0.30, skill-candidate0.35.
 - Lesson: verify real process parsing and named diagnostic failure outcomes; distinguish the captured environment boundary from real engine tests and deployment qualification. Preserve initial fixture/precondition failures in evidence.
 - No spore incubated or promoted.
+
+## 2026-10-06 — cephalon-personal-head-qualification-20261006T2300
+
+- Evidence: receipt `cephalon-personal-head-qualification-20261006T2300`; native current-head CI/review and explanatory comment IDs in that receipt.
+- Scores: efficiency0.78, friction0.25, skill-candidate0.30.
+- Lesson: refresh every current-state paragraph in native PR descriptions, distinguish reviewer runner execution from separate hosted functional CI, and verify dependency metadata with actual installed schemas while keeping live deployment unverified. Required-check read failures were resolved using the already authorized keyring environment, not by changing the classifier.
+- Missing direct branch tests remain explicit coverage observations; a full native review is pending independently of its trigger acknowledgment. No synthetic approval, policy waiver or status-only push.
+- No spore incubated or promoted. Existing canonical PR/receipt skills already own these lessons.
+
+## 2026-10-06 — cephalon-personal-complete-review-fixes
+
+- Evidence: receipt `cephalon-personal-complete-review-fixes`; native review5435625417, six thread IDs and both body finding IDs.
+- Scores: efficiency0.80, friction0.35, skill-candidate0.40.
+- Lesson: query the intended run class before a bounded limit, bind cadence to the same native resource identity, and normalize cross-realm fixture objects at the interop edge. Preserve false-positive and false-negative red evidence before repair.
+- Planning: separate restart/fencing acceptance from lifecycle/cloud readiness, keep independently proposed estimates distinct from unadmitted native metadata, and reconcile agent remote claims against fresh authenticated evidence.
+- No spore incubated or promoted. Existing canonical skills own the reusable protocol.
