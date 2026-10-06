@@ -1,0 +1,1 @@
+{:fractional-number false, :nan false, :above-safe false, :one-and-one-dot-zero-identical true, :runtime :nbb, :safe-positive true, :safe-negative true, :predicate "accepted merged18 portable-integer?", :full-cljs-suite-claimed false, :integral-number true, :positive-infinity false}

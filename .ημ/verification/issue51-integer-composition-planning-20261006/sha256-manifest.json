@@ -1,0 +1,20 @@
+{
+  "accepted-predicate-bb.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "accepted-predicate-bb.out": "d52ce029fff324f3692a3888cfbc5bd3aa103d8062fbd724a6fcfcf1e150a19e",
+  "accepted-predicate-nbb.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "accepted-predicate-nbb.out": "c00d0b92b58d7698a8235ed343ac853344875baa0ae8ae7aa1883bf6404e1b03",
+  "katamorph-main-condition.cljc": "613577d4f901658db77bc3d30998e0b13a4397130f2366cf1c6b34457d8f22f0",
+  "katamorph-merged18-condition.cljc": "613577d4f901658db77bc3d30998e0b13a4397130f2366cf1c6b34457d8f22f0",
+  "katamorph-pinned-condition.cljc": "838b1ba478b475a08648501847418f91b1043a45e42439cb54ca843bdf90cdcc",
+  "katamorph-pinned-to-merged18-compare.json": "2c8eb9a624f3617e158f4f794cf2f5b93a319d877dcd5d8ee04c37292e9a0bdc",
+  "katamorph-pr18-files.json": "915120924accb84a62aa88f5355fe0203b88fc40b0dbda78e08e2f118bec3db1",
+  "katamorph-pr18-native.json": "3ad1eeda342cb86aabf086ca864e2f55814f5447bd5e8c202e6703680839ac4e",
+  "origin-issue51.json": "829661bd6f313924cbc9704e522f4c9fa1e19d2ec1e97b1fb03298a541059857",
+  "origin-issue53.json": "3a84269231b6f1ff1e1ab3f14aed857197f6be4e8f0f9f7a63332eb6c8e0344f",
+  "origin-main-ref.json": "1d117bb462c682f4f455104d496326478d5baeb621b759f19a4c8840aa5ca87c",
+  "personal-main-ref.json": "70f3073440971c2fb96da4f207627aecbb299528a1ff4c9d15de85b65f4173c2",
+  "personal-pr2.json": "a4ece508ba34b639d3d5146a7572032a92d6bbb23b7cde56e2954b54b33a3b2e",
+  "rheos-read-task.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "rheos-read-task.out": "aa68e8632ea841261978314903e3b0c7c00e76cbbbbbbdd24d8388d0f3d07519",
+  "scope-proof.json": "07b036a40f1dde1a361eb2518b9d29541f50dbad2b259b564c35a4a6f7987132"
+}
