@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+- ts: 2026-10-06T20:20:51Z
+  origin: issue57-producer-attestation-planning
+  p-efficiency: 0.86
+  p-friction: 0.22
+  p-skill-candidate: 0.43
+  spore: none
+  receipt-refs: issue57-producer-attestation-planning
+  note: Canonical native section reads prove an EOF BODY append preserves historical comments and complete original card bytes. A missing ownership inventory is uncertainty, not an assignment or a claim of no foreign work. Keep independently authorized trust decisions explicit rather than inventing a mechanism during planning.

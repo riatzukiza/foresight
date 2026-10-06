@@ -1,0 +1,295 @@
+[
+  {
+    "label": "sync-current",
+    "command": [
+      "gh",
+      "api",
+      "repos/riatzukiza/foresight/git/ref/heads/sync/origin-fcfc2d17f28640203066ddfe0a22f87db7372a32"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:18:33.307205+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "sync-current.stdout.b64",
+      "bytes": 501,
+      "sha256": "08f5267d2ff56c095d6f62cc9abeeb4d8a2cd8c8e81a32988cb3258a48656014"
+    },
+    "stderr": {
+      "capture": "sync-current.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "issue57-comments",
+    "command": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/open-hax/foresight/issues/57/comments"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:18:33.284725+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "issue57-comments.stdout.b64",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    "stderr": {
+      "capture": "issue57-comments.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "issue57",
+    "command": [
+      "gh",
+      "api",
+      "repos/open-hax/foresight/issues/57"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:18:33.289651+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "issue57.stdout.b64",
+      "bytes": 6061,
+      "sha256": "3ff3f6f5a605bb0ae76be8b9c67cb49a0f41b86c22f1296365ead7ca641a5653"
+    },
+    "stderr": {
+      "capture": "issue57.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "origin-open-prs",
+    "command": [
+      "gh",
+      "pr",
+      "list",
+      "--repo",
+      "open-hax/foresight",
+      "--state",
+      "open",
+      "--limit",
+      "100",
+      "--json",
+      "number,title,body,headRefOid,url"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:18:33.290657+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "origin-open-prs.stdout.b64",
+      "bytes": 56445,
+      "sha256": "41383084cfb8160cc23c421249f045d7bbfa1076b3e17c5c40f140728cbac965"
+    },
+    "stderr": {
+      "capture": "origin-open-prs.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "native-card-before",
+    "command": [
+      "env",
+      "-u",
+      "KANBAN_CONFIG",
+      "XDG_CACHE_HOME=/tmp/foresight-issue57-plan-20261006-570evz3m/cache",
+      "TMPDIR=/tmp/foresight-issue57-plan-20261006-570evz3m/tmp",
+      "node",
+      "/tmp/rheos-edn-upstream-gap-20261006/artifact/rheos-ef3c4abf/cli.cjs",
+      "read-task",
+      "f66c6539-d719-48ae-8284-18fd989b31ef",
+      "--config",
+      "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree/openhax.kanban.edn"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:18:33.312458+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "native-card-before.stdout.b64",
+      "bytes": 1398,
+      "sha256": "3b013f888657792d42a330ad32a4a9a8da374680d14e55ea26b5fee4fda3798f"
+    },
+    "stderr": {
+      "capture": "native-card-before.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal-open-prs",
+    "command": [
+      "gh",
+      "pr",
+      "list",
+      "--repo",
+      "riatzukiza/foresight",
+      "--state",
+      "open",
+      "--limit",
+      "100",
+      "--json",
+      "number,title,body,headRefOid,url"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:18:33.309483+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal-open-prs.stdout.b64",
+      "bytes": 55612,
+      "sha256": "1d7fc7b4be46cec8167d81a4a1ac721dd204550eecc1ca5d95c027f761ef4f88"
+    },
+    "stderr": {
+      "capture": "personal-open-prs.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "native-card-after",
+    "command": [
+      "env",
+      "-u",
+      "KANBAN_CONFIG",
+      "XDG_CACHE_HOME=/tmp/foresight-issue57-plan-20261006-570evz3m/cache",
+      "TMPDIR=/tmp/foresight-issue57-plan-20261006-570evz3m/tmp",
+      "node",
+      "/tmp/rheos-edn-upstream-gap-20261006/artifact/rheos-ef3c4abf/cli.cjs",
+      "read-task",
+      "f66c6539-d719-48ae-8284-18fd989b31ef",
+      "--config",
+      "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree/openhax.kanban.edn"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:19:47.433113+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "native-card-after.stdout.b64",
+      "bytes": 11132,
+      "sha256": "4164e11b12e960b3b4e012fa5c18d3bd003236835fb5457b8ea9db794f8a8f99"
+    },
+    "stderr": {
+      "capture": "native-card-after.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "issue59",
+    "command": [
+      "gh",
+      "api",
+      "repos/open-hax/foresight/issues/59"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:20:01.818405+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "issue59.stdout.b64",
+      "bytes": 5765,
+      "sha256": "433313ebbdd8a049d7fe32421ba00791951917a75ec785439166bcb6e97856c0"
+    },
+    "stderr": {
+      "capture": "issue59.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "accepted-boundary",
+    "command": [
+      "cat",
+      "src/foresight/evidence.cljc",
+      "scripts/evidence.clj",
+      "docs/notes/promethean-review-and-promotion.md",
+      "docs/notes/design/promethean-pr-process.edn"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:20:02.348895+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "accepted-boundary.stdout.b64",
+      "bytes": 79010,
+      "sha256": "0d2bb4743e4a14dde021695b2300fa26d3f38ac2724614395428cd4629e7ad69"
+    },
+    "stderr": {
+      "capture": "accepted-boundary.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "root-receipt-consumer",
+    "command": [
+      "nbb",
+      "-cp",
+      "scripts:src",
+      "-e",
+      "(require '[evidence :as e] '[\"fs\" :as fs]) (let [base (fs/readFileSync \"/tmp/foresight-issue57-plan-20261006-570evz3m/base-receipts.edn\") head (fs/readFileSync \".\u03b7\u03bc/receipts.edn\") rows (e/appended-receipt-records! base head)] (println (pr-str {:immutable-base-prefix true :base-records (count (e/read-receipt-records! (.toString base \"utf8\"))) :owned-appended (e/require-valid-receipt-records! rows)})))"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:21:09.835766+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "root-receipt-consumer.stdout.b64",
+      "bytes": 119,
+      "sha256": "119b3c7cce0de11dbe4ffc91af9ce60085914866863852295073e154ee204239"
+    },
+    "stderr": {
+      "capture": "root-receipt-consumer.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "diff-hygiene",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:21:10.322859+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "diff-hygiene.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "capture": "diff-hygiene.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "candidate-diff",
+    "command": [
+      "git",
+      "diff",
+      "--",
+      "docs/agile/kanban/authenticate-promotion-evidence-989b31ef.md",
+      ".\u03b7\u03bc/receipts.edn",
+      ".\u03b7\u03bc/session-mycology/ledger.md"
+    ],
+    "cwd": "/tmp/foresight-issue57-plan-20261006-570evz3m/worktree",
+    "at": "2026-10-06T20:21:10.451632+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "candidate-diff.stdout.b64",
+      "bytes": 17822,
+      "sha256": "eb78412b8a451afc40f235f0fcdeb313335aac6630569326bd0f6b26f75b6bc3"
+    },
+    "stderr": {
+      "capture": "candidate-diff.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]
