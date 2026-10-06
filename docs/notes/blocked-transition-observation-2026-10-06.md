@@ -2,6 +2,11 @@
 
 Canonical upstream issue: [open-hax/rheos#4](https://github.com/open-hax/rheos/issues/4).
 
+These reproductions bind the original origin checkout at `fcfc2d1`, before the
+personal-fork synchronization candidate. That candidate preserves the fork-only
+`config/dev-origins.edn`; its presence there does not change the historical
+refusals below or prove Codex selection integration.
+
 Foresight's authorized backlog sweep cannot record an observed dependency blocker through the canonical Promethean FSM without first pretending that the card has entered another lifecycle stage.
 
 Observed on October 6, 2026 in an isolated checkout of `open-hax/foresight` at `fcfc2d1` with `fsm: promethean`:
