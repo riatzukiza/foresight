@@ -539,3 +539,12 @@
   spore: none
   receipt-refs: 2026-10-06T14:08:34.106391+00:00
   note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
+- ts: 2026-10-06T21:32:37.837040Z
+  session: /tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree
+  task: PR7 explicit snippet completion reporter
+  p-efficiency: 0.85
+  p-friction: 0.25
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T21:32:37.837040Z
+  note: Reproduce the claimed process impact before describing a regression. run-tests returns nil and the explicit guard is ineffective, but both actual NBB versions already reject failing assertions. The accepted completion reporter expresses the intended contract directly; native findings and local reproduction remain distinct evidence.

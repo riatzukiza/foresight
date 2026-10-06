@@ -1,5 +1,5 @@
 (ns knoxx-extraction-snippets
-  (:require [cljs.test :refer [deftest is run-tests]]
+  (:require [cljs.test :as test :refer [deftest is run-tests]]
             [cljs.reader :as edn]
             [clojure.string :as str]
             [nbb.core :refer [await]]
@@ -107,5 +107,7 @@
     (is (= (:id obs) (:ref (first (:from inference)))))
     (is (= #{:kind :ref} (set (keys (first (:from inference))))))))
 
-(let [result (run-tests 'knoxx-extraction-snippets)]
-  (when (pos? (+ (:fail result) (:error result))) (js/process.exit 1)))
+(defmethod test/report [::test/default :end-run-tests] [summary]
+  (set! (.-exitCode js/process) (if (test/successful? summary) 0 1)))
+
+(run-tests 'knoxx-extraction-snippets)
