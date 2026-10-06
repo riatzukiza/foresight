@@ -530,3 +530,12 @@
   spore: none
   receipt-refs: foresight-pr118-canonical-review
   note: Actual canonical Clio admission passed while standalone fixture suite exposed stale donor routing and invalid UUID assumptions. Keep runtime wiring/fixture issue132 distinct from immutable archaeology records and record both truthfully.
+- ts: 2026-10-06T14:08:34.593724328Z
+  session: /home/err/.codex/worktrees/foresight-fork-pr118-20261006
+  task: Personal fork development handoff of origin PR118
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T14:08:34.106391+00:00
+  note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
