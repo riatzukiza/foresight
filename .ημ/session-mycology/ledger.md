@@ -521,3 +521,21 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:08:47.162522233Z
+  session: /home/err/.codex/worktrees/foresight-pr128-20261006
+  task: Repair PR128 Markdown diff hygiene in isolated worktree
+  p-efficiency: 0.9
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: foresight-pr128-review-repair
+  note: CommonMark backslash breaks preserve rendering while satisfying git diff hygiene; install absent verification dependencies only in a unique venv. No spore warranted.
+- ts: 2026-10-06T14:08:36.179261320Z
+  session: /home/err/.codex/worktrees/foresight-fork-pr128-20261006
+  task: Personal fork development handoff of origin PR128
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T14:08:34.106391+00:00
+  note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
