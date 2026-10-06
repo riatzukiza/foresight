@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:52:54.432088463Z
+  session: /home/err/.codex/worktrees/foresight-pr117-20261006
+  task: Refresh PR117 and verify canonical snapshot admission
+  p-efficiency: 0.9
+  p-friction: 0.1
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: foresight-pr117-canonical-review
+  note: Reused the canonical verification method with independent per-PR inputs and preserved all six immutable records. Shared fixture gap remains issue132; old-head approval must not carry across a caller refresh.
