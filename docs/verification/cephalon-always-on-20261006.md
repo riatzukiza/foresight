@@ -55,9 +55,19 @@ cover explicit selection, wrong image, missing/empty/non-vector file lists,
 hash drift, a mixed feed, three text-only posts, an empty valid feed, and an
 unavailable or malformed feed. Importing the diagnostic performs no inspection.
 The former image-window behavior reproduced the failure before correction;
-the successor passes7tests/26assertions. The hosted deterministic workflow now
+the initial successor passed7tests/26assertions. The hosted deterministic workflow now
 runs these fixtures as `cephalon_diagnostic`; a local pass is preparation,
 not evidence that a newly pushed hosted job has completed.
+
+Personal MiMo review5435201058 assessed all18diff pages on efdc61c and
+approved that historical head. Its coverage observation led to five additional
+negative runtime snapshots: a stale schedule-origin run, an extra head tool,
+a missing maker tool, a disabled creative trigger, and an absent synthesis
+script. Each fixture requires the specific failed check and exactly one
+failure, with exit1. The expanded suite passes8tests/46assertions; lint is0/0.
+Its first draft had an unmatched closing bracket and failed parsing/lint before
+running tests; that fixture error was corrected before verification or push.
+No deployed API, process, card state or creative maker was mutated by these tests.
 
 Rheos's native `content` read preserves the creative card's scalar dependency
 UUID, epic, parent and incoming metadata. That read does not validate dependency

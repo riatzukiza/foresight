@@ -619,3 +619,10 @@
 - Lesson: place both base and head in the paid personal scope, authenticate/configure existing native publisher credentials, and preserve dynamic native quota rather than infer it from the plan name. A transient processing summary can remove its plan field on completion; archive the actual decisive review channel and full response hash.
 - Planning correction: destination-specific existing access policy must deny external writes; Bluesky and Discord each require a negative no-write law. Card frontmatter stays byte-identical; tests belong to the reviewed future red phase.
 - No spore incubated or promoted. Existing canonical pr-flow already carries account-scoped quota and exact-head review lessons.
+
+## 2026-10-06 — cephalon-personal-diagnostic-failure-coverage
+
+- Evidence: receipt `cephalon-personal-diagnostic-failure-coverage`; native review/finding IDs above.
+- Scores: efficiency0.80, friction0.30, skill-candidate0.35.
+- Lesson: verify real process parsing and named diagnostic failure outcomes; distinguish the captured environment boundary from real engine tests and deployment qualification. Preserve initial fixture/precondition failures in evidence.
+- No spore incubated or promoted.

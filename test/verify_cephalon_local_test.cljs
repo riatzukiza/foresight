@@ -1,6 +1,7 @@
 (ns verify-cephalon-local-test
   "Exercise diagnostic admission and exit behavior without a deployment or APIs."
   (:require [cljs.test :as test :refer [deftest is testing]]
+            [clojure.string :as str]
             [verify-cephalon-local :as diagnostic]
             ["node:crypto" :as crypto]
             ["node:fs" :as fs]
@@ -107,6 +108,25 @@
 (deftest malformed-publication-feed-remains-failure
   (let [result (inspect manifest (assoc observed :publications nil))]
     (is (= 1 (:exit result)))))
+
+(deftest runtime-evidence-failures-return-nonzero
+  (doseq [[runtime description]
+          [[(assoc-in observed [:runs 0 :created_at]
+                      (.toISOString (js/Date. (- (.now js/Date) (* 41 60 1000)))))
+            "a persisted maker completed from the native schedule within the last40minutes"]
+           [(update observed :headTools conj "bash")
+            "head exposes only four conversation/delegation tools"]
+           [(update observed :makerTools #(vec (remove #{"music.generate"} %)))
+            "maker exposes native creation and publication tools"]
+           [(assoc-in observed [:triggers 0 :enabled] false)
+            "non-clock creative-request event is bound to an enabled trigger"]
+           [(assoc observed :synthesisScript false)
+            "the actual image contains the native music engine"]]]
+    (testing description
+      (let [result (inspect manifest runtime)]
+        (is (= 1 (:exit result)))
+        (is (str/includes? (:output result) (str "FAIL " description)))
+        (is (str/includes? (:output result) "Failures: 1"))))))
 
 (defmethod test/report [::test/default :end-run-tests] [summary]
   (when (pos? (+ (:fail summary) (:error summary)))
