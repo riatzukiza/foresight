@@ -35,8 +35,11 @@ transport, or treat a localhost artifact URL as publicly accessible.
 
 1. A manually dispatched arbitrary creative-request event follows the same
    maker path as the clock, with no overlap or conversation cancellation.
-2. Publication occurs only after artifact validation and records account,
-   artifact identity, native URI/message ID and attempt outcome.
+2. Publication occurs only after artifact validation and the existing access
+   policy permits that artifact for the selected Bluesky or Discord destination.
+   An artifact denied for that destination causes no external write. Accepted
+   publication records account, artifact identity, native URI/message ID and
+   attempt outcome. Reuse existing labels and policy; no new access-label API.
 3. Replaying the same accepted event does not duplicate its publication.
    Ambiguous external completion is reconciled before retrying.
 4. The configured initial policy permits at most one Bluesky creation post per
@@ -51,7 +54,9 @@ transport, or treat a localhost artifact URL as publicly accessible.
 
 ## Verification
 
-Red replay/frequency/unknown-outcome laws; adapter failure tests; backend gates.
+Red replay/frequency/unknown-outcome and destination-access laws; negative tests
+for both Bluesky and Discord adapters prove that denied artifacts cause no
+external write; adapter failure tests; backend gates.
 Human script defaults to dry-run and requires explicit publication mode against
 the intended identity, then verifies native records and cleans up owned fixtures.
 

@@ -611,3 +611,11 @@
   spore: none
   receipt-refs: cephalon-personal-review-native-rheos-evidence
   note: A schema can accept incoming metadata because the loader discards it. Probe the existing native engine and retain the exact bundle identity, inputs and write limits; a successful content read or pre-write gate is not relationship validation or actual board admission. Record the existing upstream gap without duplicating its parser or silently normalizing data.
+
+## 2026-10-06 — personal review scope and destination privacy
+
+- Friction: 3/5. Account-scoped PR targets and inherited empty publisher configuration delayed native review; personal Essentials still reported an adjusted one-review/hour allowance.
+- Evidence: receipt `cephalon-personal-review-subscription-and-privacy`; native review5435159871/finding4200965630 and response-byte hashes; fresh Codex/Kimi quota replies.
+- Lesson: place both base and head in the paid personal scope, authenticate/configure existing native publisher credentials, and preserve dynamic native quota rather than infer it from the plan name. A transient processing summary can remove its plan field on completion; archive the actual decisive review channel and full response hash.
+- Planning correction: destination-specific existing access policy must deny external writes; Bluesky and Discord each require a negative no-write law. Card frontmatter stays byte-identical; tests belong to the reviewed future red phase.
+- No spore incubated or promoted. Existing canonical pr-flow already carries account-scoped quota and exact-head review lessons.

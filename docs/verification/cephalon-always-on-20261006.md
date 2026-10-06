@@ -292,9 +292,39 @@ before review readiness. No main update, force push, release, staging admission,
 live deployment or maker interruption occurred. Included CodeRabbit plan/quota
 must be read from the actual personal native response; org cooldowns do not
 establish personal availability, and no on-demand credits are enabled.
-The personal Knoxx secret-name inventory is empty: availability of its native
-MiMo publisher credentials is not assumed. Organization infrastructure remains
-the separately qualified release/deployment destination.
+At initial migration the personal Knoxx secret-name inventory was empty. Its
+first native MiMo attempt failed that actual publisher precondition; the existing
+operator-owned App identity and active personal installation were authenticated
+before configuring encrypted review credentials and retrying the failed attempt.
+The inherited Kimi workflow received its existing named Coding credential after
+the initial model-unavailable failure. Its retry reached the provider and failed
+on the account's weekly quota at22:15:19UTC; that response grants no review or
+approval and does not authorize extra usage. These availability changes grant no
+review completion or approval. The existing backend/frontend CI was manually dispatched
+on the immutable personal head because its automatic PR trigger only targets
+`main`. Organization infrastructure remains the separately qualified
+release/deployment destination.
+
+Both native personal CodeRabbit responses report **Plan: Essentials**.
+[Foresight review5435159871](https://github.com/riatzukiza/foresight/pull/22#pullrequestreview-5435159871)
+completed at22:17:15UTC on efdc61c, selecting14files and posting one actionable
+publication privacy finding. Its native footer says the included allowance was
+used, zero reviews remain, and the current adjusted allowance is one review/hour.
+The personal plan therefore does not prove a fixed five-review hourly allowance.
+Knoxx's native summary6026248743 was still processing10files at22:07:20UTC.
+Exact response bytes and SHA256s are retained under
+`.ημ/review-evidence/cephalon-personal-forks/` and referenced by the receipt ledger.
+Account selection and file selection alone do not supply complete substantive
+scope, an approval or a completed cohort round. No on-demand credits were enabled.
+The original org development PRs are closed as superseded, with native evidence
+and replacement links preserved.
+
+The publication story now explicitly requires the existing access policy to
+permit each artifact for its selected Bluesky or Discord destination. Denial
+must cause no external write, and separate negative tests for both adapters are
+part of its planned red phase. This fixes native finding4200965630 as a planning
+criterion; those runtime guarantees and tests have not yet been implemented.
+Card identity, frontmatter and incoming state are unchanged.
 
 ### Planning review snapshot at20:12UTC
 
@@ -313,7 +343,7 @@ implemented guarantees. CodeRabbit's quota reply6024485582 at20:06:27UTC gives
 and pending-request evidence first. Codex reports account quota.
 Neither condition supplies approval. Cards have not been moved to ready.
 
-### Subsequent planning evidence and complete-input gap
+### Historical org planning evidence and complete-input gap
 
 The timestamped cycle-count correction at33b8ff0 resolves MiMo's later P3
 finding from review5434397188, with native explanations4200530092 and6025642304.
@@ -339,11 +369,12 @@ retained under `.ημ/review-evidence/foresight-pr136/` and in the receipt ledge
 A fresh canonical CLI still reports CodeRabbit eligible despite that admission.
 [Upstream issue24](https://github.com/riatzukiza/.agents/issues/24) tracks the
 decisive-scope parser gap; no local classifier or policy waiver is introduced.
-The planning PR remains unqualified. Included allowance was0remaining at
-one review/hour. Conservatively inspect after22:23UTC, refresh actual native
-cooldown and pending evidence, and request a full latest-head review of every
-changed input, explicitly including receipts and retained evidence, only when
-admissible. Another clarification or passing CI cannot repair omitted scope.
+That org planning head remained unqualified. Included allowance was0remaining at
+one review/hour, with a conservative22:23UTC retry boundary recorded before
+the personal migration. This is historical cooldown evidence for the closed
+org PR, not a request instruction for the replacement personal PR. A new full
+review must assess every changed input, including receipts and retained evidence.
+Another clarification or passing CI cannot repair omitted scope.
 The latest Codex invitation received account quota in6025648426; it grants
 neither approval nor round credit. Root has no configured native Kimi workflow.
 
