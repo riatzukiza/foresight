@@ -530,3 +530,12 @@
   spore: none
   receipt-refs: foresight-pr123-review-repair
   note: Read the actual failing hosted step before fixing gates: remote reviewer UnknownError differs from deterministic evidence failure. Reuse reviewed current main contract, keep shared services stopped and Python dependencies isolated; no spore warranted.
+- ts: 2026-10-06T14:08:35.709800904Z
+  session: /home/err/.codex/worktrees/foresight-fork-pr123-20261006
+  task: Personal fork development handoff of origin PR123
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T14:08:34.106391+00:00
+  note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
