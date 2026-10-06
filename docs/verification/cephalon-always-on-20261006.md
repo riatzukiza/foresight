@@ -6,7 +6,8 @@ OpenHax is running as the local Knoxx creative agent and Discord-facing head.
 The operator authorized continuous creation and publication to the configured
 Bluesky account and home Discord channels. Real lyrics, artwork and music have
 been created and delivered. Strong isolation, publication admission and recovery
-guarantees are still planned work in [Foresight PR136](https://github.com/open-hax/foresight/pull/136).
+guarantees are still planned work in the personal development
+[Foresight PR22](https://github.com/riatzukiza/foresight/pull/22).
 This report records observed behavior, not completion of that epic.
 
 The deployment is `/home/err/.local/share/promethean/services/knoxx-social-local`.
@@ -66,6 +67,22 @@ provisional: its7criteria exercise the existing admission/runner/tool boundaries
 while the5-point cycle and recovery stories additionally cover durable terminal
 ownership and deployment/reconciliation. Criterion count alone is not a workload
 measure; no ready-state capacity or implementation duration is asserted.
+
+An independent read-only inspection subsequently resolved the scalar-input
+question against installed eta-mu1.1.1 / Rheos0.1.0. The native task loader drops
+dependency metadata before task-schema validation and transition gates.
+Using immutable33b8ff0card bytes, native pre-write schema, transition and gate
+functions allowed all three scalar-bearing cards for `incoming → accepted`;
+the task projection contained no dependency field. A native WIP control still
+refused `todo → in_progress` at50tasks. These are executed pre-write checks,
+not actual admission, dependency-edge validation or predecessor enforcement.
+Changing a scalar to a vector would not supply the missing graph behavior.
+The installed CLI bundle SHA256 is
+`fba8bef53a9dbc159136de56f5a3c174af33b0d309ae0a26fce440467b50590c`.
+Upstream [Rheos issue3](https://github.com/open-hax/rheos/issues/3) already
+tracks relationship retention/authoring and graph admission; its separate
+personal planning PR4 remains a prerequisite proposal, not an installed fix.
+No second parser, validator or board writer was introduced.
 
 Observed preparation gates: root workspace tests passed (24 tests, 120 assertions),
 `clj-kondo --lint scripts test` passed with zero warnings or errors, and
@@ -254,6 +271,30 @@ and uses a bounded24-message context. The maker retains creation, publication
 and delegation tools. Conversation does not explicitly cancel or reset it.
 
 ## Review and continuation
+
+### Personal development review routing
+
+The operator explicitly corrected PR placement: development reviews belong
+inside the `riatzukiza` forks so CodeRabbit uses that account's subscription.
+The replacement targets are
+[Foresight PR22](https://github.com/riatzukiza/foresight/pull/22) and
+[Knoxx PR3](https://github.com/riatzukiza/knoxx/pull/3), stacked on the existing
+personal synchronization candidates PR3 and PR1 respectively. Both base and
+head repositories are personal. The original org PR136/386 remain review
+provenance, with native finding and scope evidence preserved; their approvals
+and completed rounds do not qualify the new personal PRs.
+
+Ordinary merges retain both histories, the exact personal sync-base ledger
+prefixes and the owned source suffixes in original order. Each development
+branch tracks its personal remote. Personal Knoxx's inherited eager
+`auto-merge.yml` workflow was disabled and read back as `disabled_manually`
+before review readiness. No main update, force push, release, staging admission,
+live deployment or maker interruption occurred. Included CodeRabbit plan/quota
+must be read from the actual personal native response; org cooldowns do not
+establish personal availability, and no on-demand credits are enabled.
+The personal Knoxx secret-name inventory is empty: availability of its native
+MiMo publisher credentials is not assumed. Organization infrastructure remains
+the separately qualified release/deployment destination.
 
 ### Planning review snapshot at20:12UTC
 

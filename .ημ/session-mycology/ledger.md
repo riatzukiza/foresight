@@ -601,3 +601,13 @@
   spore: none
   receipt-refs: cephalon-personal-fork-review-migration
   note: Review subscriptions belong to the PR base repository owner. A branch in a personal fork targeting the org still reviews under org scope; use an in-personal-fork PR, preserve parent synchronization and native evidence, and qualify release/deployment separately.
+
+- ts: 2026-10-06T22:05:37.094173Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Distinguish native pre-write tolerance from dependency-edge enforcement
+  p-efficiency: 0.90
+  p-friction: 0.22
+  p-skill-candidate: 0.24
+  spore: none
+  receipt-refs: cephalon-personal-review-native-rheos-evidence
+  note: A schema can accept incoming metadata because the loader discards it. Probe the existing native engine and retain the exact bundle identity, inputs and write limits; a successful content read or pre-write gate is not relationship validation or actual board admission. Record the existing upstream gap without duplicating its parser or silently normalizing data.
