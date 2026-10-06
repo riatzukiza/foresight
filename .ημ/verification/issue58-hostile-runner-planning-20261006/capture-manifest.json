@@ -1,0 +1,86 @@
+[
+  {
+    "path": ".\u03b7\u03bc/verification/issue58-hostile-runner-planning-20261006/issue58.stderr.b64.json",
+    "sha256": "279b809c232fb23ebbfa0b2f4b43b01277e02a5965684390666dbfc28c74a856",
+    "decoded_size": 0,
+    "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command": [
+      "gh",
+      "issue",
+      "view",
+      "58",
+      "-R",
+      "open-hax/foresight",
+      "--json",
+      "title,body,comments,state,url,labels,assignees"
+    ]
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/issue58-hostile-runner-planning-20261006/issue58.stdout.b64.json",
+    "sha256": "b375273b44a0f2d92a07d6c99def08253e2ff74035f902b54e27656c69841e29",
+    "decoded_size": 3864,
+    "decoded_sha256": "8ab76fe24f8f937bffa32c1a0a61b4fa5103c623fa1ac8d1cfc4f8f3730d8208",
+    "command": [
+      "gh",
+      "issue",
+      "view",
+      "58",
+      "-R",
+      "open-hax/foresight",
+      "--json",
+      "title,body,comments,state,url,labels,assignees"
+    ]
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/issue58-hostile-runner-planning-20261006/rheos-read-task-refined.stderr.b64.json",
+    "sha256": "59cef8e1691d260641d71e31ec0cfb35e29155b94e0deb54824c62e2331dad51",
+    "decoded_size": 0,
+    "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command": [
+      "node",
+      "/home/err/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/dist-cli/index.cjs",
+      "kanban",
+      "read-task",
+      "c9cfd94c-4c18-4469-acf4-d79fbe44f659"
+    ]
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/issue58-hostile-runner-planning-20261006/rheos-read-task-refined.stdout.b64.json",
+    "sha256": "f83d6d208ce8d2672b39730abd5a535667e38f8456dceced80ca959bc78718b1",
+    "decoded_size": 6775,
+    "decoded_sha256": "609e4d62be4dafae6de23931852b5b387e0b154ce8985553c06e2b2320ca18bd",
+    "command": [
+      "node",
+      "/home/err/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/dist-cli/index.cjs",
+      "kanban",
+      "read-task",
+      "c9cfd94c-4c18-4469-acf4-d79fbe44f659"
+    ]
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/issue58-hostile-runner-planning-20261006/rheos-read-task.stderr.b64.json",
+    "sha256": "e18aad6c39ac9826a975282cccb0b4dac33083f53992034dcc3421205f230903",
+    "decoded_size": 0,
+    "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command": [
+      "node",
+      "/home/err/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/dist-cli/index.cjs",
+      "kanban",
+      "read-task",
+      "c9cfd94c-4c18-4469-acf4-d79fbe44f659"
+    ]
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/issue58-hostile-runner-planning-20261006/rheos-read-task.stdout.b64.json",
+    "sha256": "0d6517ce42b5f6e19013f5be225c853346e3ec89670b81319e4b03cc69050c5a",
+    "decoded_size": 1494,
+    "decoded_sha256": "1687ead7223ad21b97d8090bbe546ee87f5983cdbc25ee0ba575a22011c4cf45",
+    "command": [
+      "node",
+      "/home/err/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/dist-cli/index.cjs",
+      "kanban",
+      "read-task",
+      "c9cfd94c-4c18-4469-acf4-d79fbe44f659"
+    ]
+  }
+]

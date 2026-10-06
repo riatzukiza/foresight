@@ -521,3 +521,17 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+
+## 2026-10-06 — issue58 planning refinement
+
+- Efficiency:0.82; friction:0.28; skill candidate:0.25.
+- Kept the recorded ready→todo history authoritative while requiring fresh
+  qualification for the expanded hostile-runner design.
+- Inspected the owning runner and pinned provider instead of treating a fresh
+  same-user worktree or clean endpoints as containment proof.
+- Preserved the complete original card prefix; native Rheos readback proves the
+  appended section is body content and original metadata/comments survive.
+- Retained capture bytes in bounded base64 chunks and derived manifest counts.
+- Evidence: `.ημ/verification/issue58-hostile-runner-planning-20261006/`;
+  issue58 and comment5464548446; own planning receipt. No spore promoted.

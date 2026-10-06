@@ -1,0 +1,19 @@
+{
+  "command": [
+    "gh",
+    "issue",
+    "view",
+    "58",
+    "-R",
+    "open-hax/foresight",
+    "--json",
+    "title,body,comments,state,url,labels,assignees"
+  ],
+  "cwd": "/home/err/.codex/parallel-goal/child-prs-20261006/foresight58-hostile-runner-plan-20261006/worktree",
+  "exit": 0,
+  "captured_at": "2026-10-06T18:36:06.511607+00:00",
+  "encoding": "base64",
+  "decoded_size": 0,
+  "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data_chunks": []
+}

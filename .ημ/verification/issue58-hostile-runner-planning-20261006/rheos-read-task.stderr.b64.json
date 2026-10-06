@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "/home/err/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/dist-cli/index.cjs",
+    "kanban",
+    "read-task",
+    "c9cfd94c-4c18-4469-acf4-d79fbe44f659"
+  ],
+  "cwd": "/home/err/.codex/parallel-goal/child-prs-20261006/foresight58-hostile-runner-plan-20261006/worktree",
+  "exit": 0,
+  "captured_at": "2026-10-06T18:36:09.537794+00:00",
+  "encoding": "base64",
+  "decoded_size": 0,
+  "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data_chunks": []
+}
