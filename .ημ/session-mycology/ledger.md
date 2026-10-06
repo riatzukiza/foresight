@@ -530,3 +530,12 @@
   spore: none
   receipt-refs: foresight-pr119-clean-docs-repair
   note: Canonical helper scalar envelope defect required fresh reconstruction, preserving unpublished originals. Direct schema-valid append avoids shared configuration edits; upstream issue tracks helper gap. Executable document checks verify mechanics without promoting historical sketches.
+- ts: 2026-10-06T14:08:35.114183910Z
+  session: /home/err/.codex/worktrees/foresight-fork-pr119-20261006
+  task: Personal fork development handoff of origin PR119
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T14:08:34.106391+00:00
+  note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
