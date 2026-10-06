@@ -1,0 +1,555 @@
+[
+  {
+    "label": "personal7-comments",
+    "command": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/riatzukiza/foresight/issues/7/comments"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:23:26.400533+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-comments.stdout.b64",
+      "bytes": 22972,
+      "sha256": "fb14b7317dcfc6e9725eebb6f4ebe14c57ecc03aced7ef8d321eccf50d427e69"
+    },
+    "stderr": {
+      "capture": "personal7-comments.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal7-inlines",
+    "command": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/riatzukiza/foresight/pulls/7/comments"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:23:26.384212+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-inlines.stdout.b64",
+      "bytes": 10878,
+      "sha256": "e52c380fb2455d758301f900f6f2f8bca855957fb232ece2a257caf668bc084c"
+    },
+    "stderr": {
+      "capture": "personal7-inlines.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal7-reviews",
+    "command": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/riatzukiza/foresight/pulls/7/reviews"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:23:26.365349+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-reviews.stdout.b64",
+      "bytes": 4535,
+      "sha256": "37973f7e9517175341d3b2cf7e03a2fc303035e1f84ed2c3e82ebfa8b82a878c"
+    },
+    "stderr": {
+      "capture": "personal7-reviews.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal7-canonical",
+    "command": [
+      "nbb",
+      "-cp",
+      "/home/err/.agents/skills/pr-flow/scripts",
+      "/home/err/.agents/skills/pr-flow/scripts/pr.cljs",
+      "status",
+      "riatzukiza/foresight",
+      "7"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:23:26.386120+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-canonical.stdout.b64",
+      "bytes": 602,
+      "sha256": "1f0e5e9a1e7698287a3b28be1428310fee2441a3fb2462c7f61eb11b01bbacdd"
+    },
+    "stderr": {
+      "capture": "personal7-canonical.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal7-threads",
+    "command": [
+      "nbb",
+      "-cp",
+      "/home/err/.agents/skills/pr-flow/scripts",
+      "/home/err/.agents/skills/pr-flow/scripts/pr.cljs",
+      "threads",
+      "riatzukiza/foresight",
+      "7",
+      "--all"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:26:20.673934+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-threads.stdout.b64",
+      "bytes": 314,
+      "sha256": "3d856da153b8dc2b320610ffb1e6cd674690b2c7cc000a48d576b30b942f2d84"
+    },
+    "stderr": {
+      "capture": "personal7-threads.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal7-current-gh",
+    "command": [
+      "gh",
+      "pr",
+      "view",
+      "7",
+      "--repo",
+      "riatzukiza/foresight",
+      "--json",
+      "headRefOid,baseRefOid,headRefName,baseRefName,labels,autoMergeRequest,isDraft,state,url,body"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:26:51.290041+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-current-gh.stdout.b64",
+      "bytes": 2950,
+      "sha256": "a3c271e90e95b69e6575cf29383f3d408fbb81694cd0120ecfa98f09cbe11ac0"
+    },
+    "stderr": {
+      "capture": "personal7-current-gh.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "actual-nbb-version",
+    "command": [
+      "nbb",
+      "--version"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:27:17.149066+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "actual-nbb-version.stdout.b64",
+      "bytes": 13,
+      "sha256": "38b95fbb6e11ca118066fc0b51518a91ec5548e61c9ce31d86d15f9fb2195500"
+    },
+    "stderr": {
+      "capture": "actual-nbb-version.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "actual-runner-await-return",
+    "command": [
+      "nbb",
+      "-e",
+      "(require (quote [cljs.test :as test]) (quote [nbb.core :refer [await]])) (test/deftest exit-reproduction (test/is false \"private hostile fixture with await required\")) (let [result (test/run-tests (quote user))] (println :returned-summary result :guard-would-exit (pos? (+ (:fail result) (:error result)))) (when (pos? (+ (:fail result) (:error result))) (js/process.exit 1)))"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:27:17.597599+00:00",
+    "exit": 1,
+    "stdout": {
+      "capture": "actual-runner-await-return.stdout.b64",
+      "bytes": 229,
+      "sha256": "fd2fd7313510e038315709cc627aa442d197522b55c5a72d57fa293ff3c41f83"
+    },
+    "stderr": {
+      "capture": "actual-runner-await-return.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "pinned-runner-await-return",
+    "command": [
+      "/home/err/.codex/parallel-goal/personal-root-20261006/pr116-admission-runtime/node-runtime/node_modules/.bin/nbb",
+      "-e",
+      "(require (quote [cljs.test :as test]) (quote [nbb.core :refer [await]])) (test/deftest exit-reproduction (test/is false \"private hostile fixture with await required\")) (let [result (test/run-tests (quote user))] (println :returned-summary result :guard-would-exit (pos? (+ (:fail result) (:error result)))) (when (pos? (+ (:fail result) (:error result))) (js/process.exit 1)))"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:27:26.803023+00:00",
+    "exit": 1,
+    "stdout": {
+      "capture": "pinned-runner-await-return.stdout.b64",
+      "bytes": 229,
+      "sha256": "fd2fd7313510e038315709cc627aa442d197522b55c5a72d57fa293ff3c41f83"
+    },
+    "stderr": {
+      "capture": "pinned-runner-await-return.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "source-pattern-and-caller",
+    "command": [
+      "git",
+      "-C",
+      "/tmp/foresight-issue59-plan-20261006-48vlkj1v/worktree",
+      "show",
+      "ae8acbf9f709871513c95368a7d0f776d5470cdb:.github/workflows/eta-mu-review.yml",
+      "fcfc2d17f28640203066ddfe0a22f87db7372a32:test/project_test.cljs"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:27:26.881345+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "source-pattern-and-caller.stdout.b64",
+      "bytes": 9260,
+      "sha256": "8d02a777af4e83fa0139d4b415fbf9a9455072eb8cceea44a5dd3b8d0d798811"
+    },
+    "stderr": {
+      "capture": "source-pattern-and-caller.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "pinned-nbb-version",
+    "command": [
+      "/home/err/.codex/parallel-goal/personal-root-20261006/pr116-admission-runtime/node-runtime/node_modules/.bin/nbb",
+      "--version"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:27:27.010885+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "pinned-nbb-version.stdout.b64",
+      "bytes": 13,
+      "sha256": "09dbc6fe4fb949f518d7f2edc5b50740f50a4995626023c7c42ac75ad0adf09a"
+    },
+    "stderr": {
+      "capture": "pinned-nbb-version.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal7-target-instructions",
+    "command": [
+      "git",
+      "-C",
+      "/home/err/.codex/worktrees/foresight-fork-pr119-20261006",
+      "ls-files",
+      "*AGENTS.md"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:28:21.064386+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-target-instructions.stdout.b64",
+      "bytes": 63,
+      "sha256": "b3ab8f5f6c71b1e8061a6fff1f0220d90f172189e7826a1aeead75ea6a5ed1c2"
+    },
+    "stderr": {
+      "capture": "personal7-target-instructions.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "personal7-agents",
+    "command": [
+      "cat",
+      "/home/err/.codex/worktrees/foresight-fork-pr119-20261006/AGENTS.md"
+    ],
+    "cwd": "/tmp/foresight-fresh-action-intake-20261006-3odstt0g",
+    "at": "2026-10-06T21:28:21.058836+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "personal7-agents.stdout.b64",
+      "bytes": 12713,
+      "sha256": "06fc1530851d3d78894159430846a3aecb99d968bf9c5c8094157bd4b377a7b8"
+    },
+    "stderr": {
+      "capture": "personal7-agents.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "old-suite-ci",
+    "command": [
+      "env",
+      "XDG_CACHE_HOME=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache",
+      "TMPDIR=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/tmp",
+      "/home/err/.codex/parallel-goal/personal-root-20261006/pr116-admission-runtime/node-runtime/node_modules/.bin/nbb",
+      "docs/verification/knoxx_extraction_snippets.cljs"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:30:22.356580+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "old-suite-ci.stdout.b64",
+      "bytes": 96,
+      "sha256": "d387d9e200c3b194c383177540daf82a1de19a90704db26ed7b3fb462506f90c"
+    },
+    "stderr": {
+      "capture": "old-suite-ci.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "old-hostile-suite-ci",
+    "command": [
+      "env",
+      "XDG_CACHE_HOME=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache",
+      "TMPDIR=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/tmp",
+      "/home/err/.codex/parallel-goal/personal-root-20261006/pr116-admission-runtime/node-runtime/node_modules/.bin/nbb",
+      "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/old-hostile.cljs"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:30:23.728053+00:00",
+    "exit": 1,
+    "stdout": {
+      "capture": "old-hostile-suite-ci.stdout.b64",
+      "bytes": 298,
+      "sha256": "3f9564120c7e7fa1ded71730a2061a906b4531839094ec4c30c888ddd42425be"
+    },
+    "stderr": {
+      "capture": "old-hostile-suite-ci.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "new-suite-ci",
+    "command": [
+      "env",
+      "XDG_CACHE_HOME=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache",
+      "TMPDIR=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/tmp",
+      "/home/err/.codex/parallel-goal/personal-root-20261006/pr116-admission-runtime/node-runtime/node_modules/.bin/nbb",
+      "docs/verification/knoxx_extraction_snippets.cljs"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:31:17.431204+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "new-suite-ci.stdout.b64",
+      "bytes": 96,
+      "sha256": "d387d9e200c3b194c383177540daf82a1de19a90704db26ed7b3fb462506f90c"
+    },
+    "stderr": {
+      "capture": "new-suite-ci.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "new-suite-installed",
+    "command": [
+      "env",
+      "XDG_CACHE_HOME=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache",
+      "TMPDIR=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/tmp",
+      "nbb",
+      "docs/verification/knoxx_extraction_snippets.cljs"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:31:18.998677+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "new-suite-installed.stdout.b64",
+      "bytes": 96,
+      "sha256": "d387d9e200c3b194c383177540daf82a1de19a90704db26ed7b3fb462506f90c"
+    },
+    "stderr": {
+      "capture": "new-suite-installed.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "new-hostile-suite-ci",
+    "command": [
+      "env",
+      "XDG_CACHE_HOME=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache",
+      "TMPDIR=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/tmp",
+      "/home/err/.codex/parallel-goal/personal-root-20261006/pr116-admission-runtime/node-runtime/node_modules/.bin/nbb",
+      "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/new-hostile.cljs"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:31:19.062370+00:00",
+    "exit": 1,
+    "stdout": {
+      "capture": "new-hostile-suite-ci.stdout.b64",
+      "bytes": 298,
+      "sha256": "1d86cf58cfab1cde24759ccc35972da489824b522424705c3e5e28b02119d53e"
+    },
+    "stderr": {
+      "capture": "new-hostile-suite-ci.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "new-hostile-suite-installed",
+    "command": [
+      "env",
+      "XDG_CACHE_HOME=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache",
+      "TMPDIR=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/tmp",
+      "nbb",
+      "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/new-hostile.cljs"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:31:20.390058+00:00",
+    "exit": 1,
+    "stdout": {
+      "capture": "new-hostile-suite-installed.stdout.b64",
+      "bytes": 298,
+      "sha256": "1d86cf58cfab1cde24759ccc35972da489824b522424705c3e5e28b02119d53e"
+    },
+    "stderr": {
+      "capture": "new-hostile-suite-installed.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "target-lint",
+    "command": [
+      "env",
+      "XDG_CACHE_HOME=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache",
+      "TMPDIR=/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/tmp",
+      "clj-kondo",
+      "--cache-dir",
+      "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/cache/kondo",
+      "--lint",
+      "docs/verification/knoxx_extraction_snippets.cljs"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:31:40.161278+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "target-lint.stdout.b64",
+      "bytes": 42,
+      "sha256": "f2555a65e2b52fe6ed0dc3b5fd7487ffd41aeb4ea496b1ba8f3771b4b356082d"
+    },
+    "stderr": {
+      "capture": "target-lint.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "diff-hygiene",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:31:40.416649+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "diff-hygiene.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "capture": "diff-hygiene.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "own-receipt-preparation",
+    "command": [
+      "/home/err/.codex/parallel-goal/personal-root-20261006/pr116-admission-runtime/node-runtime/node_modules/.bin/nbb",
+      "-cp",
+      "scripts:src",
+      "-e",
+      "(require (quote [evidence :as e]) (quote [\"fs\" :as fs]) (quote [\"child_process\" :as cp])) (let [base (.execFileSync cp \"git\" #js [\"show\" \"ae8acbf9f709871513c95368a7d0f776d5470cdb:.\u03b7\u03bc/receipts.edn\"]) current (.readFileSync fs \".\u03b7\u03bc/receipts.edn\") rows (e/appended-receipt-records! base current)] (prn (e/require-valid-receipt-records! rows)))"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:32:38.105094+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "own-receipt-preparation.stdout.b64",
+      "bytes": 53,
+      "sha256": "22cbb8f9c4bc4bba5b66cd065230252dc8314a5f765e09d8690909f76be712ab"
+    },
+    "stderr": {
+      "capture": "own-receipt-preparation.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "frozen-original-source",
+    "command": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "/home/err/.codex/worktrees/foresight-fork-pr119-20261006",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:33:06.361501+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "frozen-original-source.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "capture": "frozen-original-source.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "final-remote-head",
+    "command": [
+      "gh",
+      "pr",
+      "view",
+      "7",
+      "--repo",
+      "riatzukiza/foresight",
+      "--json",
+      "headRefOid,headRefName,baseRefOid,baseRefName,state,labels,autoMergeRequest,isDraft"
+    ],
+    "cwd": "/tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree",
+    "at": "2026-10-06T21:33:06.942877+00:00",
+    "exit": 0,
+    "stdout": {
+      "capture": "final-remote-head.stdout.b64",
+      "bytes": 470,
+      "sha256": "7dd0505ff8e631f85f41f9eacc9e697602f1e781a31874fec25c833a6a5e49be"
+    },
+    "stderr": {
+      "capture": "final-remote-head.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

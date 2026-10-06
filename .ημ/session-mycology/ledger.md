@@ -521,3 +521,30 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:36:01.495901562Z
+  session: /home/err/.codex/worktrees/foresight-pr119-clean-20261006
+  task: Repair PR119 extraction with clean valid evidence
+  p-efficiency: 0.65
+  p-friction: 0.45
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: foresight-pr119-clean-docs-repair
+  note: Canonical helper scalar envelope defect required fresh reconstruction, preserving unpublished originals. Direct schema-valid append avoids shared configuration edits; upstream issue tracks helper gap. Executable document checks verify mechanics without promoting historical sketches.
+- ts: 2026-10-06T14:08:35.114183910Z
+  session: /home/err/.codex/worktrees/foresight-fork-pr119-20261006
+  task: Personal fork development handoff of origin PR119
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T14:08:34.106391+00:00
+  note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
+- ts: 2026-10-06T21:32:37.837040Z
+  session: /tmp/foresight-pr7-reporter-repair-20261006-g3so9hyb/worktree
+  task: PR7 explicit snippet completion reporter
+  p-efficiency: 0.85
+  p-friction: 0.25
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T21:32:37.837040Z
+  note: Reproduce the claimed process impact before describing a regression. run-tests returns nil and the explicit guard is ineffective, but both actual NBB versions already reject failing assertions. The accepted completion reporter expresses the intended contract directly; native findings and local reproduction remain distinct evidence.
