@@ -1,0 +1,11 @@
+{
+  "head": "cb04d46483f100cfe8a306202cc2cdec5b8ec46c",
+  "paths": {
+    ".\u03b7\u03bc/archaeology/ledgers/dcadf215-7b96-4bad-a11a-a5f5067546b9/actions.edn": "169dacff34574eb675ed3aa94f3d42425a7202ec088a593310732260684ac204",
+    ".\u03b7\u03bc/archaeology/ledgers/dcadf215-7b96-4bad-a11a-a5f5067546b9/evidence.edn": "8f8e1e33515c69b17c1a71c6b819e8c1f066e7314aed0fa16267301fedac4177",
+    ".\u03b7\u03bc/archaeology/ledgers/dcadf215-7b96-4bad-a11a-a5f5067546b9/findings.edn": "2cc67ad166093dccc423d3696fc5f0113c135b1e4eb7882c1528cde7a0ddb4a3",
+    ".\u03b7\u03bc/archaeology/ledgers/dcadf215-7b96-4bad-a11a-a5f5067546b9/relations.edn": "1b50fa5878e77c069048547b5ffb126f92aae075306602d8ad5c5a87b0d95954",
+    ".\u03b7\u03bc/archaeology/ledgers/dcadf215-7b96-4bad-a11a-a5f5067546b9/run.edn": "513344b0f5cc7ec77bb388a27a3fe228c5a4b30f162f6c58484445f92b92ab0f",
+    ".\u03b7\u03bc/archaeology/resources/dcadf215-7b96-4bad-a11a-a5f5067546b9.edn": "6f2921ba642bc165578c0254f8f43b2222666ab5a9b85dd138fcd5d6246fbdda"
+  }
+}

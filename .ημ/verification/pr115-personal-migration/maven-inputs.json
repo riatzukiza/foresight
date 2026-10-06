@@ -1,0 +1,42 @@
+[
+  {
+    "input": "/home/err/.m2/repository/metosin/malli/0.16.4/malli-0.16.4.jar",
+    "sha256": "f76900a6bdbe138aefd2b9110be245b7ef299c067b89732207f8ab788aa9a77e",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/malli"
+  },
+  {
+    "input": "/home/err/.m2/repository/fipp/fipp/0.6.26/fipp-0.6.26.jar",
+    "sha256": "f7cb696cce55afd74c838d5441419c7e5f6d491af185a8e563dfa79796857283",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/fipp"
+  },
+  {
+    "input": "/home/err/.m2/repository/mvxcvi/arrangement/2.1.0/arrangement-2.1.0.jar",
+    "sha256": "f37251385d220df8951e68d5255abb5197adbcbd8fc6b3d3fca872a2339f39c8",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/arrangement"
+  },
+  {
+    "input": "/home/err/.m2/repository/borkdude/dynaload/0.3.5/dynaload-0.3.5.jar",
+    "sha256": "0887c0cdb9afcecd7c496ea258a32e43aa72e766f3f0632e1bd0f5245ca8c24c",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/dynaload"
+  },
+  {
+    "input": "/home/err/.m2/repository/borkdude/edamame/1.6.42/edamame-1.6.42.jar",
+    "sha256": "3ab2fbdb0c3606b0dc4a70c8b5a7e3c5790faae92f0984f1a303bd9b2329f6dd",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/edamame"
+  },
+  {
+    "input": "/home/err/.m2/repository/org/clojure/tools.reader/1.5.2/tools.reader-1.5.2.jar",
+    "sha256": "cb96ed0efdf0b8bc362632cb74067ef225f6b03f3f478c8ba44182f6a17a37b6",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/tools.reader"
+  },
+  {
+    "input": "/home/err/.m2/repository/funcool/promesa/11.0.678/promesa-11.0.678.jar",
+    "sha256": "ead72b0e61ca32b58c0e7c01ff1d50bb526765f5877c67cae390ddd5b8452ef2",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/promesa"
+  },
+  {
+    "input": "/home/err/.m2/repository/org/clojure/test.check/1.1.1/test.check-1.1.1.jar",
+    "sha256": "945118163b2c355a5fab96c9ebd01287152555bb2e9641f5cd9ed07fe4bc5078",
+    "extracted": "/tmp/foresight-pr115-canonical-admission-xei_uimv/maven-source/test.check"
+  }
+]

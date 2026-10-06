@@ -1,0 +1,2 @@
+:nbb-version 1.4.207 :mode target :root /home/err/.codex/worktrees/foresight-fork-pr118-20261006 :run dcadf215-7b96-4bad-a11a-a5f5067546b9
+{:run 1, :findings 3, :actions 1, :evidence 5, :relations 8}

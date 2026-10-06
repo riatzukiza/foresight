@@ -1,0 +1,29 @@
+{
+  "reason": "Captured runtime stack traces contain trailing whitespace that fails the complete PR diff hygiene gate. Raw observation bytes remain in private evidence and Git ancestors; lossless encoded copies preserve them exactly in the reviewable candidate. No diagnostic or source history was trimmed.",
+  "logs": [
+    {
+      "original_path": ".\u03b7\u03bc/verification/pr135-shared-runtime/original-pr117/target-detailed.log",
+      "encoded_path": ".\u03b7\u03bc/verification/pr135-shared-runtime/original-pr117/target-detailed.log.b64",
+      "raw_sha256": "54e0f4c604c831ee7188f8407bd09773333608a3bd2d4639ca11fa404447b9d9",
+      "raw_byte_count": 2164,
+      "encoding": "base64",
+      "decode_equals_original": true
+    },
+    {
+      "original_path": ".\u03b7\u03bc/verification/pr135-shared-runtime/original-pr117/union-detailed.log",
+      "encoded_path": ".\u03b7\u03bc/verification/pr135-shared-runtime/original-pr117/union-detailed.log.b64",
+      "raw_sha256": "d8523d5d3b9d72d8fcc075c122a5141361f180f814e86af5cde9de773bae12b4",
+      "raw_byte_count": 2149,
+      "encoding": "base64",
+      "decode_equals_original": true
+    },
+    {
+      "original_path": ".\u03b7\u03bc/verification/pr135-shared-runtime/original-pr118/union-detailed.log",
+      "encoded_path": ".\u03b7\u03bc/verification/pr135-shared-runtime/original-pr118/union-detailed.log.b64",
+      "raw_sha256": "1f5005fb077f9c0030e494ef1b8d16f1a644f289e4eab4ef46cab1650af74f33",
+      "raw_byte_count": 2149,
+      "encoding": "base64",
+      "decode_equals_original": true
+    }
+  ]
+}
