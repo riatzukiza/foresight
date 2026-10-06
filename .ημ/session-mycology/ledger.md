@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:09:30.129701359Z
+  session: /home/err/.codex/worktrees/issue81-project-guide/foresight
+  task: Foresight issue81 model-derived agent routing
+  p-efficiency: 0.85
+  p-friction: 0.2
+  p-skill-candidate: 0.15
+  spore: none
+  receipt-refs: open-hax/foresight#81
+  note: A routing documentation projection can remain coupled to a static-table test. Verify the existing project routing suite and preserve assertions against the semantic guide instead; independent worktree, no shared board mutation.
