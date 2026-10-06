@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:36:01.495901562Z
+  session: /home/err/.codex/worktrees/foresight-pr119-clean-20261006
+  task: Repair PR119 extraction with clean valid evidence
+  p-efficiency: 0.65
+  p-friction: 0.45
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: foresight-pr119-clean-docs-repair
+  note: Canonical helper scalar envelope defect required fresh reconstruction, preserving unpublished originals. Direct schema-valid append avoids shared configuration edits; upstream issue tracks helper gap. Executable document checks verify mechanics without promoting historical sketches.
