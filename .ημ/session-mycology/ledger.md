@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:48:04.263344742Z
+  session: /home/err/.codex/worktrees/foresight-issue132-plan-20261006
+  task: Plan issue132 archaeology route and fixture repair
+  p-efficiency: 0.9
+  p-friction: 0.15
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: foresight-issue132-planning
+  note: Existing blocked migration cards do not authorize bypassing ready-state review. A small incoming story preserves exact red evidence and leaves runtime/law ownership intact.
