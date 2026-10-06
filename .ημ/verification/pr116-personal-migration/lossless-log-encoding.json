@@ -1,0 +1,13 @@
+{
+  "reason": "Captured runtime stack traces contain trailing whitespace that fails the complete PR diff hygiene gate. Raw observation bytes remain in private evidence and Git ancestors; lossless encoded copies preserve them exactly in the reviewable candidate. No diagnostic or source history was trimmed.",
+  "logs": [
+    {
+      "original_path": ".\u03b7\u03bc/verification/pr116-personal-migration/ci-pinned-admission.log",
+      "encoded_path": ".\u03b7\u03bc/verification/pr116-personal-migration/ci-pinned-admission.log.b64",
+      "raw_sha256": "8ec399e6ef7532292a849b99ce08c6634e0295a26431a8a119995a323f4aefda",
+      "raw_byte_count": 3032,
+      "encoding": "base64",
+      "decode_equals_original": true
+    }
+  ]
+}
