@@ -540,3 +540,13 @@
   spore: none
   receipt-refs: riatzukiza/.agents#19, riatzukiza/.agents#20
   note: A distinct worktree does not confine helpers that climb past Git files. Preserve observed bytes and uncertainty, repair canonical discovery with real worktree fixtures, and keep direct owned append evidence until qualification. Existing upstream bug plans cover this lesson; no duplicate spore or same-session promotion.
+
+- ts: 2026-10-06T14:22:36Z
+  session: /home/err/.codex/parallel-goal/personal-root-20261006/pr130-operational-gaps
+  task: personal-fork-portfolio-handoff
+  p-efficiency: 0.84
+  p-friction: 0.72
+  p-skill-candidate: 0.62
+  spore: none
+  receipt-refs: personal-fork-portfolio-handoff, open-hax/foresight#134, open-hax/proxx#454
+  note: Verify fork networks and divergent accepted work before rerouting; stable review heads need aggregate operational receipts, not repeated evidence-only pushes. Actual credential presence differs by fork and is narrower than publication; native fair usage differs from nominalplan limits. Existing canonical plans and issues cover the recurring friction; no duplicate spore/promotion.
