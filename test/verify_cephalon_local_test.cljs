@@ -92,8 +92,8 @@
   (testing "mixed media proves a sampled image observation"
     (let [result (inspect manifest observed)]
       (is (= 0 (:exit result)))
-      (is (= [["docker" ["inspect" "--format" "{{.Image}}" diagnostic/container]]
-              ["docker" ["exec" "-i" diagnostic/container "node"]]]
+      (is (= [["docker" ["inspect" "--format" "{{.Image}}" "knoxx-social-local-backend-1"]]
+              ["docker" ["exec" "-i" "knoxx-social-local-backend-1" "node"]]]
              (:commands result)))))
   (testing "a bounded feed window cannot require image frequency"
     (doseq [publications [[{:uri "at://fixture/music-1" :images 0}
