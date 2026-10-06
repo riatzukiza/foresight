@@ -1,0 +1,184 @@
+{
+  "base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "card": "c9cfd94c-4c18-4469-acf4-d79fbe44f659",
+  "native_read_task_status": "todo",
+  "native_frontmatter_original_sections_equal": true,
+  "native_added_section_type": "body",
+  "protected": {
+    "docs/agile/kanban/isolate-exact-commit-evidence-execution-be44f659.md": {
+      "base_size": 1033,
+      "base_sha256": "dd651e661f296c136bc10a79ed0b2e38f3b1d19db25117fb09a699e56cc637ee",
+      "current_size": 6177,
+      "current_sha256": "d40dae02540dcf7c61e4369d40a69650bc168fc33945286d15b431cf13f54f46",
+      "mode": "complete-original-byte-prefix",
+      "passes": true
+    },
+    ".\u03b7\u03bc/kanban-events/ledger.edn": {
+      "base_size": 145352,
+      "base_sha256": "17ac05adc453d1e0238e4b864b19577af012abc56e583af3692ce4cfefaa0c12",
+      "current_size": 145352,
+      "current_sha256": "17ac05adc453d1e0238e4b864b19577af012abc56e583af3692ce4cfefaa0c12",
+      "mode": "byte-identical",
+      "passes": true
+    },
+    ".\u03b7\u03bc/receipts.edn": {
+      "base_size": 311209,
+      "base_sha256": "cebde833fe64b27144a9de0007e942bde0ea1cc5d2b90fa64619066cd1b14e33",
+      "current_size": 312569,
+      "current_sha256": "288cf5f084ab1375b83990ca3ec00547804bcfe440d35fbfc94c30df6401e254",
+      "mode": "complete-original-byte-prefix",
+      "passes": true
+    },
+    ".\u03b7\u03bc/session-mycology/ledger.md": {
+      "base_size": 29871,
+      "base_sha256": "2d45b0a2e846aec2193ddd0b731e6ff62704a5fb2929ed24a898902e0a13bf52",
+      "current_size": 30633,
+      "current_sha256": "463f865b692837a155b1ff937d361dff93b36c62512477aeb8367fbbc28dbe56",
+      "mode": "complete-original-byte-prefix",
+      "passes": true
+    },
+    "AGENTS.md": {
+      "base_size": 12713,
+      "base_sha256": "06fc1530851d3d78894159430846a3aecb99d968bf9c5c8094157bd4b377a7b8",
+      "current_size": 12713,
+      "current_sha256": "06fc1530851d3d78894159430846a3aecb99d968bf9c5c8094157bd4b377a7b8",
+      "mode": "byte-identical",
+      "passes": true
+    },
+    "docs/agile/AGENTS.md": {
+      "base_size": 1216,
+      "base_sha256": "a58b72f8532c860898def8a902a56ed467879a76303880cea94eb3fa81fe644f",
+      "current_size": 1216,
+      "current_sha256": "a58b72f8532c860898def8a902a56ed467879a76303880cea94eb3fa81fe644f",
+      "mode": "byte-identical",
+      "passes": true
+    },
+    "openhax.kanban.edn": {
+      "base_size": 53,
+      "base_sha256": "d0c04722963d540448c6b60c8e0d6d14e7129cf747a2b057f0ed63612b262d86",
+      "current_size": 53,
+      "current_sha256": "d0c04722963d540448c6b60c8e0d6d14e7129cf747a2b057f0ed63612b262d86",
+      "mode": "byte-identical",
+      "passes": true
+    },
+    "openhax.kanban.json": {
+      "base_size": 63,
+      "base_sha256": "1bc6c217180601964638c8ea0647a7c2f3c4e72bdc05cf6412b39ddfb2f5c1e6",
+      "current_size": 63,
+      "current_sha256": "1bc6c217180601964638c8ea0647a7c2f3c4e72bdc05cf6412b39ddfb2f5c1e6",
+      "mode": "byte-identical",
+      "passes": true
+    },
+    ".github/workflows/eta-mu-review.yml": {
+      "base_size": 2350,
+      "base_sha256": "56efa32c6946151b9117a659b29cc2a289c7db57969881574020e9d19da3ea11",
+      "current_size": 2350,
+      "current_sha256": "56efa32c6946151b9117a659b29cc2a289c7db57969881574020e9d19da3ea11",
+      "mode": "byte-identical",
+      "passes": true
+    }
+  },
+  "inventory": {
+    "count_derived": 17,
+    "raw_sha256": "dc10e8a963d9ebaa43b8f35eab9a35103a35470f5d44639a0d70c39a252ab76c",
+    "raw_retention": "Independent private audit, not portable published artifact",
+    "reference_match_prs": [],
+    "prs": [
+      {
+        "number": 18,
+        "head": "a92b94bf8fa00dc3765cb9be55fa178391f11198",
+        "title": "plan(alpha): reconcile integer ownership and composition evidence"
+      },
+      {
+        "number": 17,
+        "head": "8b214dfdcfde96ba91a59cf5048230f7e4efac21",
+        "title": "plan: bound issue77 to a canonical coordinator-session profile"
+      },
+      {
+        "number": 16,
+        "head": "c8f938336afaf1c48d44047d6f9d0f7f6f7d0dbc",
+        "title": "archaeology: preserve cache-fill run with current reader blocker"
+      },
+      {
+        "number": 15,
+        "head": "c3ac827031e1efee019cfbacc972d7e4a1e917ba",
+        "title": "archaeology: preserve current-binding run with current reader blocker"
+      },
+      {
+        "number": 14,
+        "head": "fbea44eb4740cad704fb66ae0bb11fec043cbb7d",
+        "title": "plan: qualify synchronization review boundaries and dependent candidates"
+      },
+      {
+        "number": 13,
+        "head": "403024e981a9c2c23776ac8999d023a7845bb02d",
+        "title": "plan: consume canonical blocker, isolation and personal review admission fixes"
+      },
+      {
+        "number": 12,
+        "head": "8110eb803aeb45416245172e4157bdb9cb7d0f5d",
+        "title": "plan: refresh trusted review rollout discovery after parent merge"
+      },
+      {
+        "number": 11,
+        "head": "a8710485f919395b3c903ac8076c1369ec921084",
+        "title": "plan: repair archaeology dependency routing and UUID fixtures"
+      },
+      {
+        "number": 10,
+        "head": "9ee0f2da02a7918273a51e459cc7305fd9c9a0ff",
+        "title": "docs: route agents through the generated project guide"
+      },
+      {
+        "number": 9,
+        "head": "91a02f8547cda726bea30c288e4df5aa1db899b2",
+        "title": "plan: express the cognitive substrate as reviewed user stories"
+      },
+      {
+        "number": 8,
+        "head": "b67331f83704c67a3edd7a0f610ebb01caf6e117",
+        "title": "feat: supervise the local Axxium and Knoxx identity stack"
+      },
+      {
+        "number": 7,
+        "head": "ae8acbf9f709871513c95368a7d0f776d5470cdb",
+        "title": "docs: preserve and repair the Knoxx documentation extraction"
+      },
+      {
+        "number": 6,
+        "head": "cb04d46483f100cfe8a306202cc2cdec5b8ec46c",
+        "title": "archaeology: verify revision-cut evidence on personal fork"
+      },
+      {
+        "number": 5,
+        "head": "9b2e845cafd2d6a9881f4872a008270b96f2c30d",
+        "title": "archaeology: verify content-aligned snapshot evidence on personal fork"
+      },
+      {
+        "number": 4,
+        "head": "cc5dd3550b3bac2ef98bd576fadc5fe6f7f330e2",
+        "title": "feat: plan and assess pinned direct-child bootstrap facts"
+      },
+      {
+        "number": 3,
+        "head": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+        "title": "sync: preserve development origins while adopting accepted origin main"
+      },
+      {
+        "number": 2,
+        "head": "0fdeb010174de5169984b9c841ab0d32f10d7147",
+        "title": "feat(alpha): prepare source-bearing document admission and content review"
+      }
+    ]
+  },
+  "pinned_provider": {
+    "revision": "45ec644c2d15ed511e9bc1e797d1b4073b63dbfc",
+    "path": ".github/workflows/opencode-code-review.yml",
+    "raw_sha256": "469c9ee25a6947d30f929d3267f383416cd26ea6956d14ba532519e31fa3b742",
+    "finding": "Static review and credentialed publication occur in same job; no current strong boundary qualification claimed.",
+    "no_eager_merge_step_found_by_static_search": true
+  },
+  "capture_wrapper_count_derived": 6,
+  "ownclone_object_alternates": false,
+  "scope": "Planning-only; no implementation or operational status changes; no foreign scopes mutated"
+}
