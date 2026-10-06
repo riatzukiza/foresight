@@ -511,3 +511,13 @@
   spore: none
   receipt-refs: foresight-pr127-current-main-integration
   note: A cached pull base can lag the actual branch tip. Fetch the live ref and inspect mergeability even after review convergence passes; preserve full main ledger prefixes and exact branch-only bytes, then obtain fresh successor evidence. Use a pinned canonical main skill snapshot when the global checkout contains unrelated work.
+
+- ts: 2026-10-06T13:59:45Z
+  session: /home/err/.codex/parallel-goal/personal-root-20261006/sync-foresight
+  task: personal-fork-synchronization
+  p-efficiency: 0.84
+  p-friction: 0.40
+  p-skill-candidate: 0.48
+  spore: none
+  receipt-refs: personal-fork-synchronization
+  note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
