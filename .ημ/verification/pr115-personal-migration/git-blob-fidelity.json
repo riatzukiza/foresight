@@ -1,7 +1,7 @@
 {
   "observed_head": "ecedfec59791d7c4deaf9ab9a922968c5e167511",
   "source_head": "cd5681da302b966846bbf59b29dd2fccc1bac8aa",
-  "correction": "The retained source-fidelity.json candidate_blob field contains a SHA-256 content digest, not a Git blob ID. This additional proof distinguishes both digest formats without changing the retained observation.",
+  "correction": "The retained source-fidelity-initial-observation.json candidate_blob field contains a SHA-256 digest. The active source-fidelity.json has been regenerated with actual Git blob IDs; this supplementary proof distinguishes both formats.",
   "artifacts": [
     {
       "path": ".\u03b7\u03bc/archaeology/ledgers/03f0493a-6162-4112-8d84-89b8cb1d4451/actions.edn",

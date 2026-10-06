@@ -16,6 +16,6 @@ Clio is pinned to `788cdd3434615a7932b924e68520dbf7f88408c2`, Katamorph to `3bd4
 
 Current CI qualification and fresh native review remain blocked. Reviews, approvals and runtime passes on the original PR do not transfer to this personal-fork head. Final integration is a qualified release/deploy PR into origin.
 
-Digest clarification: the retained initial `source-fidelity.json` field named `candidate_blob` contains a SHA-256 digest. `git-blob-fidelity.json` records the actual source and candidate Git blob IDs separately and confirms equality for all six artifacts. The original observation is retained; no archaeology artifact changed.
+Digest clarification: `source-fidelity-initial-observation.json` preserves the original report whose `candidate_blob` field was mislabeled. The active `source-fidelity.json` now records the actual Git blob IDs, separately from its SHA-256 content digest; `git-blob-fidelity.json` independently confirms all six source/candidate Git IDs match. No archaeology artifact changed.
 
 Raw log preservation: stack traces containing trailing whitespace are published as `.log.b64` with raw-byte SHA-256 hashes in `lossless-log-encoding.json`. Decode with a standard Base64 decoder to recover the exact original bytes. Original raw logs remain in their private observation directory and earlier Git ancestors. The complete PR diff hygiene check initially failed; the earlier working-tree-only check missed untracked captured files. This is a publication-format correction, not a successful admission claim.
