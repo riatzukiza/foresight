@@ -1,0 +1,30 @@
+{
+  "uuid": "3f2c935b-7a8e-4324-9a5a-9181ae23b7a1",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "alpha, portability, recovery",
+    "parent": "760f7f1e-a086-4e0a-82a5-71d2a761073d",
+    "type": "task",
+    "write-id": "1788047361964-0.vcipzpxesiudj9wq50",
+    "title": "Converge Alpha portable envelopes",
+    "priority": "P1",
+    "status": "blocked",
+    "uuid": "3f2c935b-7a8e-4324-9a5a-9181ae23b7a1",
+    "created_at": "2026-08-29T23:48:34.494Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Converge Alpha portable envelopes\n\nCanonical implementation acceptance and immutable source heads live in\n[Foresight issue #51](https://github.com/open-hax/foresight/issues/51).\nThis card projects that recovery lane into Rheos; it does not weaken the issue's\nrevision-bound JVM/CLJS evidence or upstream-ownership requirements.\n\n## Exit\n\nMerge one current-main implementation with exact Foresight and Katamorph\nrevisions, registered cross-host laws, Receipt River evidence, and independent\nreview. Until Katamorph's portable-integer ownership is merged, the lane is\nblocked rather than silently forked in Alpha."
+    },
+    {
+      "type": "comment",
+      "content": "Projected from Foresight #51. Blocked until a reviewed merged Katamorph revision settles PortableInteger ownership; do not copy or pin an invisible grammar."
+    },
+    {
+      "type": "body",
+      "content": "## Current dependency evidence (October 6, 2026)\n\nThe dated blocker above is retained as history. [Katamorph PR18](https://github.com/open-hax/katamorph/pull/18)\nmerged on August 30 at `7a754b751eb2ea5ff8ecba42986b04e35a0537c1`.\nIts `katamorph.schema.condition/PortableInteger` is accepted upstream;\ncurrent Katamorph main contains that merge. The Foresight gitlink remains\n`3bd4cf26e68dc88fbe67f831baa4bc389e3363e7`, whose source does not expose\n`PortableInteger`. Upstream merge availability resolves the old missing-ownership\npremise; it does not qualify a new root pin or admit this card to implementation.\n\n## Unresolved owner decision\n\nIssue #51's original requirement that doubles fail remains unchanged. The\nmerged upstream `portable-integer?` accepts finite integral JVM `Double` values,\nincluding `1.0`, while JavaScript uses one numeric representation for `1` and\n`1.0`. A shared name alone does not establish identical identity semantics.\nAn explicit owner-authorized decision must reconcile Alpha identity admission\nwith this accepted boundary before code or a dependency update. Distinguish\nportable payload numbers from Alpha identity values; do not silently weaken\nissue #51, copy the upstream grammar, or create another portability kernel.\n\n## Composition qualification criteria\n\n- Preserve issue #51's complete acceptance criteria and original source heads\n  #19, #21 and #22 as immutable evidence. Record the owner decision and any\n  proposed contract interpretation separately; no retrospective relabeling.\n- Select a visible merged Katamorph revision and record both exact root and\n  child revisions. The old pin to PR18 merge spans 66 commits and 33 changed\n  files, including action/workflow/provider-binding and sandbox/license changes;\n  qualify that complete dependency transition rather than calling it an\n  integer-only repin. A later revision requires its own complete comparison.\n- Specify the outcomes for safe-integer extrema and adjacent failures, integral\n  and fractional doubles, non-finite numbers, ratios, big decimals, host objects,\n  and nested payloads on JVM and CLJS. Preserve the distinction between input\n  representation and semantic value; unavailable host evidence stays visible.\n- Consume the accepted upstream value/integer authorities under the recorded\n  decision and preserve `:alpha/id` registration, recursive portable maps and\n  open-record envelopes. Downstream Event, Markdown, Mermaid and Reaction lanes\n  consume one authority rather than fork it.\n- Verify exact-head full Alpha JVM and Node CLJS suites plus the two-reader\n  lexical smoke, retained baseline behavior, and current root laws before an\n  integration claim. Evaluate the separate source-bearing document consumer in\n  personal PR2 at its own exact revision without changing that PR or reusing\n  its review evidence. An incompatible consumer requires an owned follow-up.\n- Native planning qualification and a lawful Rheos readiness transition precede\n  implementation. This refinement does not change frontmatter, blocked status,\n  points, events, dependencies, gitlinks, source or operational authority.\n\n## Verification evidence\n\n[The composition note](../../notes/alpha-integer-composition-qualification.md)\nrecords the exact source comparison, numeric-boundary conflict and remaining\nqualification. Raw native metadata, upstream source and focused predicate\nobservations are retained under\n`.ημ/verification/issue51-integer-composition-planning-20261006/`.\nThese observations are planning evidence, not the required full JVM/CLJS suites,\nan accepted owner decision, a native approval, or board readiness."
+    }
+  ],
+  "source-path": "/home/err/.codex/worktrees/foresight-issue51-integer-plan-20261006/docs/agile/kanban/converge-alpha-portable-envelopes-ae23b7a1.md"
+}

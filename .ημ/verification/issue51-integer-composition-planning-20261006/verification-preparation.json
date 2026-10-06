@@ -1,0 +1,48 @@
+{
+  "receipt-prefix-preparation": {
+    "argv": [
+      "nbb",
+      "-cp",
+      "src:scripts",
+      "scripts/evidence.clj",
+      "verify-receipts",
+      "--base",
+      "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+      "--at",
+      "775efa4f4606db71b2dbe44453925f0d3fcca1e6"
+    ],
+    "exit": 0
+  },
+  "project-validation": {
+    "argv": [
+      "nbb",
+      "scripts/project.clj",
+      "validate"
+    ],
+    "exit": 0
+  },
+  "diff-hygiene": {
+    "argv": [
+      "git",
+      "diff",
+      "4927ab7d439ac7e1093c574096a2d5a6d6241391..775efa4f4606db71b2dbe44453925f0d3fcca1e6",
+      "--check"
+    ],
+    "exit": 0
+  },
+  "bb-version": {
+    "argv": [
+      "bb",
+      "--version"
+    ],
+    "exit": 0
+  },
+  "nbb-version": {
+    "argv": [
+      "nbb",
+      "--version"
+    ],
+    "exit": 0
+  },
+  "origin-and-personal-card-byte-identical": true
+}

@@ -1,0 +1,1 @@
+PASS #:ledger{:path ".ημ/receipts.edn", :total-receipts 158, :revision "775efa4f4606db71b2dbe44453925f0d3fcca1e6", :legacy-evidence-receipts 2, :appended-receipts 1, :evidence-receipts 3, :base-revision "4927ab7d439ac7e1093c574096a2d5a6d6241391", :sha256 "21770636a16aef81273dc18f1966f0cf27920b87f771321b6949e72426b8101a", :appended-evidence-receipts 0}

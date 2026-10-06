@@ -1,0 +1,1 @@
+{:nan false, :above-safe false, :ratio false, :integral-double true, :runtime :babashka, :safe-positive true, :fractional-double false, :safe-negative true, :predicate "accepted merged18 portable-integer?", :positive-infinity false, :big-decimal false, :full-jvm-suite-claimed false}

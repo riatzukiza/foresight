@@ -1,0 +1,16 @@
+{
+  "base": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+  "original-card-complete-byte-prefix-preserved": true,
+  "frontmatter-status-identity-points-unchanged": true,
+  "complete-event-ledger-byte-identical": true,
+  "gitlink-unchanged": "3bd4cf26e68dc88fbe67f831baa4bc389e3363e7",
+  "upstream-transition-commits": 66,
+  "upstream-transition-files": 33,
+  "actual-rheos-status": "blocked",
+  "jvm-full-suite-claimed": false,
+  "cljs-full-suite-claimed": false,
+  "owner-decision": "unresolved",
+  "implementation-or-repin": false,
+  "personal2-active-chat-owner": "not-established; separate existing OPEN consumer scope preserved",
+  "receipt-base-sha256": "ef1bf4df9dc92ef8903cc8291da87aaa41088c0cfb9ce980fc476ec4b4199aa5"
+}

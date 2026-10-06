@@ -448,3 +448,21 @@
   spore: none
   receipt-refs: 2026-09-03T00:17:49.293972342Z
   note: Reusable lessons: deployment hooks should distinguish durable acceptance from asynchronous completion; model output remains untrusted until a required-first server-bound tool validates and persists it; CLJS native await can accidentally await a Promise-valued argument before a timeout wrapper exists, so lifecycle races belong behind a non-async Promise boundary. No spore was created because the cross-repository pattern should stabilize through another deployment before promotion.
+- ts: 2026-10-06T17:42:13.144883406Z
+  session: /home/err/.codex/worktrees/foresight-issue51-integer-plan-20261006
+  task: Issue51 integer composition planning refinement
+  p-efficiency: 0.92
+  p-friction: 0.18
+  p-skill-candidate: 0.2
+  spore: none
+  receipt-refs: issue51 katamorph18 4927ab7d439ac7e1093c574096a2d5a6d6241391
+  note: Actual merged upstream resolved missingownership premise but admitted integralDouble conflicts with Alpha doubles-fail requirement; full66commit33file transition and separate consumerqualification remain. Preserve originalcard/bodyprefix/state/events and record unresolvedownerdecision. No source/repin or readiness claim.
+- ts: 2026-10-06T17:43:09.938102490Z
+  session: /home/err/.codex/worktrees/foresight-issue51-integer-plan-20261006
+  task: Issue51 planning verification handoff
+  p-efficiency: 0.95
+  p-friction: 0.08
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: 775efa4f4606db71b2dbe44453925f0d3fcca1e6 issue51
+  note: Canonical rootprefix consumer158records1append passed; projectdecl and base-headhygiene passed. Originalblockedcard identicalpersonal/originmain; preserveallmetadata/events. Focusedupstream probes are not fullcrosshostsuite orownerdecision. Candidate awaitsrootpeer; publicationnotissued.
