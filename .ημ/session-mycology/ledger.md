@@ -521,3 +521,13 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+- ts: 2026-10-06T13:49:07Z
+  session: /home/err/.codex/worktrees/pr112-review-rollout/foresight
+  task: pr112-planning-refresh
+  p-efficiency: 0.90
+  p-friction: 0.25
+  p-skill-candidate: 0.32
+  spore: none
+  receipt-refs: open-hax/foresight#112
+  note: Verify parent merge and current base before resurrecting a skipped draft. Preserve dated snapshots as observations; current caller restoration is separate from child policy acceptance. No spore warranted.
