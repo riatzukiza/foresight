@@ -530,3 +530,12 @@
   spore: none
   receipt-refs: foresight-pr117-canonical-review
   note: Reused the canonical verification method with independent per-PR inputs and preserved all six immutable records. Shared fixture gap remains issue132; old-head approval must not carry across a caller refresh.
+- ts: 2026-10-06T14:08:34.132166230Z
+  session: /home/err/.codex/worktrees/foresight-fork-pr117-20261006
+  task: Personal fork development handoff of origin PR117
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2026-10-06T14:08:34.106391+00:00
+  note: Separate worktree and ordinary history-preserving merge kept scope exact; fresh review evidence must bind new fork head.
