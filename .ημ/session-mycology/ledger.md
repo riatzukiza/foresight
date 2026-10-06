@@ -521,3 +521,83 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+- ts: 2026-10-06T19:03:00Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Recover the continuously creative OpenHax cephalon with native delivery evidence
+  p-efficiency: 0.72
+  p-friction: 0.62
+  p-skill-candidate: 0.57
+  spore: none
+  receipt-refs: cephalon-always-on-local-activation
+  note: Preserve deployed image, contract snapshot and local overlays as distinct identities. A successfully written WAV can coexist with a failed tool result; inspect the retained project and actual child-process return shape before retrying. Contract reload rearms the current clock, so stop editing prompts while observing unattended cadence. Shared concurrency and prompt-only publication guidance do not prove reserved lanes or rate admission.
+
+- ts: 2026-10-06T19:57:37.040392+00:00
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Verify actual delegation and clock continuation, including failed prompt-order evidence
+  p-efficiency: 0.7
+  p-friction: 0.68
+  p-skill-candidate: 0.6
+  spore: none
+  receipt-refs: cephalon-delegation-and-three-clock-cycles
+  note: A configured internal URL is not usable delegation until native header identity and permissions are verified. Model instructions can batch an acknowledgment with spawn and invent an unsupported child shape; only receipts and the actual admitted contract establish ordering and ownership. Preserve failed probes beside successful ones. Required author walkthroughs can collide with strict all-thread settlement; attach evidence to the existing canonical issue, never impersonate another writer or waive the gate.
+
+- ts: 2026-10-06T20:20:27.844988+00:00
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Observe the fourth native creative cycle and eligible source review retry
+  p-efficiency: 0.9
+  p-friction: 0.12
+  p-skill-candidate: 0.08
+  spore: none
+  receipt-refs: cephalon-runtime-heartbeat-20261006T2012
+  note: Verify the actual attachment and outlet embed independently. A valid duration and delivered WAV improve the prior outcome without proving quality admission; keep clipping measurements and optional tool failures visible. Bind cooldown to the native comment update time and re-request only after it expires. Requests and historical approvals do not qualify a successor head.
+
+- ts: 2026-10-06T20:47:27.696083Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Harden contract-manifest diagnostic before runtime observation
+  p-efficiency: 0.86
+  p-friction: 0.24
+  p-skill-candidate: 0.18
+  spore: none
+  receipt-refs: cephalon-pr136-manifest-observation-hardening
+  note: Empty collections can make evidence predicates pass vacuously. Reproduce against prior source with temporary process-boundary fixtures; stop at the integrity boundary before runtime queries. Native Rheos reads preserve authored scalar metadata without proving admission, and an unsupported setter is not permission to implement a second board writer. Keep ordinary successful ticks quiet and preserve current review heads until a real finding requires a change.
+
+- ts: 2026-10-06T21:16:34.454074Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Settle a stale operational cycle count without routine-progress churn
+  p-efficiency: 0.94
+  p-friction: 0.12
+  p-skill-candidate: 0.11
+  spore: none
+  receipt-refs: cephalon-pr136-timestamped-cycle-count
+  note: Scope operational counts to their actual observation timestamp so later autonomous work does not silently contradict earlier report prose. Treat delayed older-head reviews as actionable findings without transferring approval. Provider rate limits can fail a required evidence wrapper while exact-head deterministic gates pass; preserve each result and retry only through its actual native surface.
+
+- ts: 2026-10-06T21:37:17.935751Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Verify native review scope after a completed no-actionable verdict
+  p-efficiency: 0.88
+  p-friction: 0.28
+  p-skill-candidate: 0.36
+  spore: none
+  receipt-refs: cephalon-pr136-native-complete-input-gap
+  note: A provider can select a file and then explicitly skip its new content. Preserve the later authenticated clarification, source IDs and response-byte hashes; commit binding and completed checks do not repair omitted input. File the parser gap upstream instead of trusting its older positive verdict or adding a local override. Retain observation-only artifacts without repeatedly invalidating active review heads.
+
+- ts: 2026-10-06T21:49:40.762185Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Separate bounded publication observations from runtime health and retain diagnostic regressions
+  p-efficiency: 0.92
+  p-friction: 0.18
+  p-skill-candidate: 0.21
+  spore: none
+  receipt-refs: cephalon-pr136-sampled-publication-diagnostic
+  note: A valid feed sample can omit a media type without proving a failed producer. Keep API/schema failure mandatory and missing sampled content explicit; use repeatable command-boundary fixtures for the previous vacuous manifest and false sampling failures. Commit the held native evidence bundle with substantive fixes instead of status-only head churn.
+
+- ts: 2026-10-06T21:59:44.619814Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: Route active cephalon development reviews to personal forks
+  p-efficiency: 0.91
+  p-friction: 0.26
+  p-skill-candidate: 0.20
+  spore: none
+  receipt-refs: cephalon-personal-fork-review-migration
+  note: Review subscriptions belong to the PR base repository owner. A branch in a personal fork targeting the org still reviews under org scope; use an in-personal-fork PR, preserve parent synchronization and native evidence, and qualify release/deployment separately.
