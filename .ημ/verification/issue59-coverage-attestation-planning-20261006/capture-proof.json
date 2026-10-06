@@ -1,0 +1,6 @@
+{
+  "commands": 15,
+  "streams": 30,
+  "strict_base64_size_SHA256_all_PASS": true,
+  "all_commands_exit0": true
+}
