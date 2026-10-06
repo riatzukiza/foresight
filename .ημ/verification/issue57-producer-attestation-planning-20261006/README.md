@@ -1,0 +1,17 @@
+# Issue 57 producer-attestation planning preparation
+
+Local-only candidate; no remote branch/PR/comment/request, assignment or board transition.
+
+Base: personal fork synchronization candidate `96a6dca24cb7a14b041bdd6e3e7922c568238da9`, freshly verified native ref. This is an unmerged reviewed synchronization candidate, not a claim of qualified personal main. Issue 57 is OPEN with no assignees and no comments at capture time. Origin 17/personal 18 open PR bodies had no exact issue57 URL, task UUID, or named outcome match; external ownership remains unresolved. Missing app inventory is not absence evidence. Any future publication needs a fresh overlap/dedup check and root peer authorization.
+
+Only product-document change: existing task `f66c6539-d719-48ae-8284-18fd989b31ef` BODY append. Complete original Markdown bytes, frontmatter, original BODY and comment remain unchanged. All original issue acceptance bullets copied verbatim and retained. Provisional 3/5/5 breakdown creates no admitted card, points/status/dependency changes or ownership assignment. Selected trust mechanism is explicitly unresolved. Candidate keys/configuration never become trusted policy. Issue59 coverage integration and issue58 hostile execution remain separate.
+
+Accepted boundaries read at base: `src/foresight/evidence.cljc` pure `promotion-evidence-consistent?` docstring explicitly authenticates elsewhere; `scripts/evidence.clj` revision-bound reader and current fail-closed coverage guard; root promotion prose/EDN requires independently pinned authority and excludes privileged candidate execution. No source/pin/workflow/config changes.
+
+Native before/after card reads use immutable canonical Rheos source-built CLI from `ef3c4abf1ea75199486f693e9470df3fec88dd49`: 2,114,115 bytes, SHA256 `33efe2e97202abe7df28b65fb20fbabb78fd910049ed60f301d112a895c7633b`. Its independently built artifact/provenance was previously verified; this task checks actual artifact bytes and clean source again. No alternate board parser/validator, transition or gate operation. Native JSON comparison is output comparison, not a board implementation. Read success is not lifecycle or planning qualification.
+
+All raw public/native stdout/stderr are preserved as base64 with exact byte sizes/hashes and commands in `capture-manifest.json`. `preservation-proof.json` records all baseline other paths byte-exact, complete original card prefix, native original sections/frontmatter, configs/engine events and receipt/reflection prefixes. The actual checkout root consumer validates the one appended receipt using immutable base bytes. Historical receipts are preserved under exact-prefix compatibility; no whole-history current-schema admission is claimed.
+
+Verification is meaningful documentary preparation: actual canonical readback, every original acceptance bullet preserved, accepted reader/trust-boundary inspection, all protected bytes unchanged, lossless captures, root receipt consumer and diff hygiene. No implementation tests, hosted approval, authenticated producer integration, readiness or review-round credit are claimed.
+
+Observed completed results: 12 native/read/diff/consumer commands, 24 lossless wrapper streams, all exits 0; wrapper bytes/hashes/sizes PASS. Actual root consumer returned `{:immutable-base-prefix true, :base-records 199, :owned-appended #:receipt{:total 1, :evidence 0, :legacy-evidence 0}}`. The base 199 receipts remain byte-exact, and only the one current appended envelope is claimed current-schema-valid.
