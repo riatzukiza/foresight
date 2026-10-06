@@ -15,3 +15,5 @@ Clio is pinned to `788cdd3434615a7932b924e68520dbf7f88408c2`, Katamorph to `3bd4
 [Foresight135](https://github.com/open-hax/foresight/issues/135) owns reconciliation of legacy EDN admission and prevention at the responsible writer boundary. This candidate does not rewrite event identity, normalize old records, weaken readers, pin an obsolete runtime, or implement a second ledger engine. The incoming planning card is authored in the PR115 replacement; it must receive planning review and Rheos-ready admission before implementation.
 
 Current CI qualification and fresh native review remain blocked. Reviews, approvals and runtime passes on the original PR do not transfer to this personal-fork head. Final integration is a qualified release/deploy PR into origin.
+
+Digest clarification: the retained initial `source-fidelity.json` field named `candidate_blob` contains a SHA-256 digest. `git-blob-fidelity.json` records the actual source and candidate Git blob IDs separately and confirms equality for all six artifacts. The original observation is retained; no archaeology artifact changed.

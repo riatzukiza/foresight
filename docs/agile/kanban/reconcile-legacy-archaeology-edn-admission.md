@@ -3,7 +3,7 @@ uuid: 43b4f065-5971-4bf0-bc38-7cd470436088
 title: Reconcile legacy archaeology EDN admission without rewriting history
 status: incoming
 priority: P1
-story_points: 3
+points: 3
 parent: 0d73c22a-b018-4b8c-92fe-560127f53294
 labels: archaeology,clio,planning,integrity
 ---
