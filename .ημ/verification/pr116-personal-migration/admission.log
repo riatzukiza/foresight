@@ -1,0 +1,1 @@
+{:result :pass, :resources 29, :historical-revisions 2, :run "2fd1f2d9-97e0-44e8-9494-98e1c63c08f6", :parents ["261aa432-7eb8-47d8-b3da-e098eac4509e"], :continuity [{:event/id "261aa432-7eb8-47d8-b3da-e098eac4509e", :action/id :seed/continue-knoxx-shape-inventory, :relation :continues}], :findings 3, :evidence 4}

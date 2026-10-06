@@ -1,0 +1,49 @@
+{
+  "source_pr": "https://github.com/open-hax/foresight/pull/116",
+  "source_head": "87281597088c7cfefda1135efa63b6abdece8fea",
+  "synchronization_base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "artifacts": [
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2fd1f2d9-97e0-44e8-9494-98e1c63c08f6/actions.edn",
+      "sha256": "faf3eb8c4ec0c92924e977e1b241ccc01af56cc30ca92f4253fc3cad110e050c",
+      "original_blob": "bbf753fa1b1448cdc2027178855150a566d58ee3",
+      "candidate_blob": "faf3eb8c4ec0c92924e977e1b241ccc01af56cc30ca92f4253fc3cad110e050c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2fd1f2d9-97e0-44e8-9494-98e1c63c08f6/evidence.edn",
+      "sha256": "3ed1485378d583ad855150cbcb91ac5e150fc3bfe45ea68340526ded60dd938b",
+      "original_blob": "a4b762788a8856a7aede3df719e9076d659c433c",
+      "candidate_blob": "3ed1485378d583ad855150cbcb91ac5e150fc3bfe45ea68340526ded60dd938b",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2fd1f2d9-97e0-44e8-9494-98e1c63c08f6/findings.edn",
+      "sha256": "7c7fa72bb69bb966294ee7aa58d60047e134a3a1cb2c4dc8dcb0770c57958993",
+      "original_blob": "8f3e260f5603e0f83146981f8d4e996c4c21b6ce",
+      "candidate_blob": "7c7fa72bb69bb966294ee7aa58d60047e134a3a1cb2c4dc8dcb0770c57958993",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2fd1f2d9-97e0-44e8-9494-98e1c63c08f6/relations.edn",
+      "sha256": "17babd82734276e11498219a8c907262e6a1c8e47e5aaefcc3140ed54516a8b4",
+      "original_blob": "406a9c621bc89ee84a79182fe5f87efc5e70f337",
+      "candidate_blob": "17babd82734276e11498219a8c907262e6a1c8e47e5aaefcc3140ed54516a8b4",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2fd1f2d9-97e0-44e8-9494-98e1c63c08f6/run.edn",
+      "sha256": "2c22ab2a81c717478e9f8172b302190a4b9aca2623136776ce098ad509eadbe7",
+      "original_blob": "7364bddfb8b78a2144a9c82c588ed758de3cfe68",
+      "candidate_blob": "2c22ab2a81c717478e9f8172b302190a4b9aca2623136776ce098ad509eadbe7",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/2fd1f2d9-97e0-44e8-9494-98e1c63c08f6.edn",
+      "sha256": "b4be4f1cd580d89f42fda8285c88aba2a6854e9d9f2185df3d64972b5d0a0d4c",
+      "original_blob": "d93fe889b02b15ab74c1ec477cfc3d858d893ba2",
+      "candidate_blob": "b4be4f1cd580d89f42fda8285c88aba2a6854e9d9f2185df3d64972b5d0a0d4c",
+      "source_bytes_unchanged": true
+    }
+  ]
+}
