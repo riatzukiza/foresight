@@ -1,0 +1,18 @@
+{
+  "ts": "2026-10-06T14:59:39.193042+00:00",
+  "head": "5017d26b8063e8218128cedd10f2094b7f7e4e49",
+  "source_six_artifact_sha256_unchanged": true,
+  "root_status": "clean",
+  "old_runtime_package_and_lock_hashes_unchanged": true,
+  "ci_runtime": "1.4.207",
+  "ci_runtime_directory": "/tmp/foresight-pr115-canonical-admission-xei_uimv/runtime-ci-1.4.207",
+  "target_read_exit": 1,
+  "union_read_exit": 1,
+  "resources": 29,
+  "schema_revisions": 2,
+  "ledger_reads": 145,
+  "readable": 127,
+  "failed": 18,
+  "failure": "numeric-leading relation keyword names rejected by canonical EDN reader",
+  "old_runtime_admission": "PASS under private NBB1.3.204; not current CI qualification"
+}

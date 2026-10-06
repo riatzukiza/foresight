@@ -521,3 +521,13 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+- ts: 2026-10-06T15:07:45Z
+  session: /home/err/.codex/parallel-goal/personal-root-20261006/pr115-current-binding
+  task: personal-fork-pr115-archaeology-preservation
+  p-efficiency: 0.75
+  p-friction: 0.68
+  p-skill-candidate: 0.50
+  spore: none
+  receipt-refs: personal-fork-pr115-archaeology-preservation
+  note: Pin verification to the actual CI reader. Preserve both historical success and current failure without rewriting immutable inputs; trace producer/codec ownership and keep a single shared blocker. Existing contracts already require this, so no duplicate spore.
