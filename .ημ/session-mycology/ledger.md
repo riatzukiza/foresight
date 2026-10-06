@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+- ts: 2026-10-06T20:39:35Z
+  origin: issue59-coverage-attestation-planning
+  p-efficiency: 0.87
+  p-friction: 0.18
+  p-skill-candidate: 0.44
+  spore: none
+  receipt-refs: issue59-coverage-attestation-planning
+  note: Keep test-coverage metrics, native review coverage, actual admitted inputs and authenticated producer proof distinct. Native before/after section reads permit an append-only BODY while preserving historical COMMENT-only cards. Adjacent plans do not satisfy the full integration outcome; no duplicate lifecycle or verification authority is needed.

@@ -1,0 +1,2656 @@
+{
+  "base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "all_original_card_bytes_prefix": true,
+  "native_frontmatter_unchanged": true,
+  "original_native_COMMENT_unchanged": true,
+  "native_one_added_BODY": true,
+  "all7_original_acceptance_bullets_verbatim": true,
+  "unchanged_old_blob_count": 505,
+  "unchanged_old_blobs": [
+    {
+      "path": ".clj-kondo/config.edn",
+      "mode": "100644",
+      "sha256": "becb2f99af14a3ac509d5c8894c76716196ce127c7484f02a80025f41122f972"
+    },
+    {
+      "path": ".github/workflows/alpha-jvm-test.yml",
+      "mode": "100644",
+      "sha256": "8903412c0f582ac103c572932b46a8ec7a0420bac6d15fadeb6c9db4b1bcc343"
+    },
+    {
+      "path": ".github/workflows/chat-work-runtime.yml",
+      "mode": "100644",
+      "sha256": "bb35faff12f719f977ee4a6434b92ac1e6103d4c34cda80cb661766dab58f37e"
+    },
+    {
+      "path": ".github/workflows/eta-mu-review.yml",
+      "mode": "100644",
+      "sha256": "56efa32c6946151b9117a659b29cc2a289c7db57969881574020e9d19da3ea11"
+    },
+    {
+      "path": ".github/workflows/repository-census.yml",
+      "mode": "100644",
+      "sha256": "e51d905f4a83eb59bda25648483f5cd6d963a61bca7b31c988b37dc21605715e"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "sha256": "479ed30b9beac41d8bf3e1118a05b6f04750b4192e8fd0c9d6b826d6960d236b"
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "sha256": "05b297cc7daf4a90c29e3d97bc176ffc02813403f601da069867009a2c704360"
+    },
+    {
+      "path": ".jscpd.json",
+      "mode": "100644",
+      "sha256": "91e7b58b74d0f0affb71465671b64ecc2d55b06b2e591141e0cd80231c8b0795"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/README.md",
+      "mode": "100644",
+      "sha256": "8fffdb827aedb4c13cc5d473bb93bfe276af2b7c11a4ee248bb57b8d09354cd9"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/catalog.edn",
+      "mode": "100644",
+      "sha256": "1ee6e05d21d43a33acf669795d2e34b7e0e3e6cd2c985fb9440722bf522b3818"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/08b2369a-5889-48e9-ade7-6081f97f348e/actions.edn",
+      "mode": "100644",
+      "sha256": "5d5b628aef0535506c3acb0c6fdad8efc71230566ee5778fd4454deb7b4bb320"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/08b2369a-5889-48e9-ade7-6081f97f348e/evidence.edn",
+      "mode": "100644",
+      "sha256": "c1afd3ab7132ff1c239814f774e63ceb48db3423828e007cb82f2b3a64a9f9ca"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/08b2369a-5889-48e9-ade7-6081f97f348e/findings.edn",
+      "mode": "100644",
+      "sha256": "649d3ed6262a020178fcee7bb9b911eb468b05495fd34f8e8411ee6cd7bddd6f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/08b2369a-5889-48e9-ade7-6081f97f348e/relations.edn",
+      "mode": "100644",
+      "sha256": "758780468767e8a7bf65dfacf0178c9df660a7438dfec2a32c36e4205b0d6a79"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/08b2369a-5889-48e9-ade7-6081f97f348e/run.edn",
+      "mode": "100644",
+      "sha256": "75afa0cfe1c5e4932a37515818df51093ff97bbc56c59335932e93271adbdf30"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2302720f-6aae-405f-b0c9-520bcf34ae41/actions.edn",
+      "mode": "100644",
+      "sha256": "b2b61be2f11d37ea6991ee10a36a84076a5cd87f46ee9b457e07a3b9b5b99b9e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2302720f-6aae-405f-b0c9-520bcf34ae41/evidence.edn",
+      "mode": "100644",
+      "sha256": "2a5e25429c9f7756b97f6c2d5b2a2d739ebdba2527d52f3b6bcce72b8c3f2c6c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2302720f-6aae-405f-b0c9-520bcf34ae41/findings.edn",
+      "mode": "100644",
+      "sha256": "3ee7ac158c4c9a4d53d9ec498b40927d6c7543c404aaf7f951bfdfd646da058e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2302720f-6aae-405f-b0c9-520bcf34ae41/relations.edn",
+      "mode": "100644",
+      "sha256": "db6d1bd0e8e20da8e0dd848485f00abf20c3e90b8c899f1d1bcc5aec0b381033"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2302720f-6aae-405f-b0c9-520bcf34ae41/run.edn",
+      "mode": "100644",
+      "sha256": "51521b0b431566293ae944289285ad8337ada3b1df93920a49295377308dabff"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/261aa432-7eb8-47d8-b3da-e098eac4509e/actions.edn",
+      "mode": "100644",
+      "sha256": "b7d4f6722f6a290009d0163b1c33a44dc7c50dca48ede8823038a53bef93cfce"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/261aa432-7eb8-47d8-b3da-e098eac4509e/evidence.edn",
+      "mode": "100644",
+      "sha256": "e570fc2c2f39fe5324e760e791f2e88a0aec9777c79cd5908a6a590941465943"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/261aa432-7eb8-47d8-b3da-e098eac4509e/findings.edn",
+      "mode": "100644",
+      "sha256": "6b20290473eca63e89fcf7ede88cda9640306d20061aab54c4d9ae913ae8104c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/261aa432-7eb8-47d8-b3da-e098eac4509e/relations.edn",
+      "mode": "100644",
+      "sha256": "9ef51e3a4d2189f5a53db0d32d21bd93fda5856c006f195614049cef59e37c16"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/261aa432-7eb8-47d8-b3da-e098eac4509e/run.edn",
+      "mode": "100644",
+      "sha256": "6813d786f30bf6017762f0b78e86c169036773a511d9e4d0725c4f7ca191f5a1"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2ab86fb4-5e36-403d-9358-8dafe4eb2b32/actions.edn",
+      "mode": "100644",
+      "sha256": "61f1b70a2b885158dfd00c5660090b93b5bfab089fecd04fe2d9e2085ef9c9c6"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2ab86fb4-5e36-403d-9358-8dafe4eb2b32/evidence.edn",
+      "mode": "100644",
+      "sha256": "f726c2f24acab009000f4ef7af434908d47710427ec8d0b7dd0de4e1009eff10"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2ab86fb4-5e36-403d-9358-8dafe4eb2b32/findings.edn",
+      "mode": "100644",
+      "sha256": "d1a940a6083334821e96d3f0820d850a408690434e834237d8d78e7c3c397e9a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2ab86fb4-5e36-403d-9358-8dafe4eb2b32/relations.edn",
+      "mode": "100644",
+      "sha256": "f5590288eedf02c14af29cbf59bc98f5a685d32264fdd63bfe1da1e141ea51b4"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/2ab86fb4-5e36-403d-9358-8dafe4eb2b32/run.edn",
+      "mode": "100644",
+      "sha256": "a1b77c72a2c77dff2955bc16413ee0fb85a5bcf468d9589c5346c024c8fa4c99"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/32e0bd69-cf1a-4e16-94e1-136861ee92d4/actions.edn",
+      "mode": "100644",
+      "sha256": "8bef5632f86e87b56c0ed53e879a630a146481ead6aa1279596e98c0e5ef0b84"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/32e0bd69-cf1a-4e16-94e1-136861ee92d4/evidence.edn",
+      "mode": "100644",
+      "sha256": "d6552adab10c8b8705f6cb387ccfcd608dcd99cf91adede1848c40aed411b557"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/32e0bd69-cf1a-4e16-94e1-136861ee92d4/findings.edn",
+      "mode": "100644",
+      "sha256": "18729406aa49b7d08ad2a02509444a765920497f565868d699a629853bd1c6ea"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/32e0bd69-cf1a-4e16-94e1-136861ee92d4/relations.edn",
+      "mode": "100644",
+      "sha256": "60a69f0ad850146ec97d2f61a1b709b49ca2dab2c3efe4b0f86d6b42ee3ba527"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/32e0bd69-cf1a-4e16-94e1-136861ee92d4/run.edn",
+      "mode": "100644",
+      "sha256": "a12f7a994c72cd9b7e67ea15df63a41e6a767bb600c094ae0f8eb0429c38c172"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/366ba6e8-d943-486c-921f-a2b30e926ed6/actions.edn",
+      "mode": "100644",
+      "sha256": "37b350076bdcae39e026a7afca050a43b0eca89c93c2820ca7aadcf331c24982"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/366ba6e8-d943-486c-921f-a2b30e926ed6/evidence.edn",
+      "mode": "100644",
+      "sha256": "a1f98590287248ab234954f5a89cbe082bccd68dfa721138a4083d4313e2026c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/366ba6e8-d943-486c-921f-a2b30e926ed6/findings.edn",
+      "mode": "100644",
+      "sha256": "b5fb3648876d3e65fc31ba70414dce256acfb5e7a6c7b857e23c1ff5d78960ef"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/366ba6e8-d943-486c-921f-a2b30e926ed6/relations.edn",
+      "mode": "100644",
+      "sha256": "8e913bd5ba726f62f58969ddbe8f064451e21bd6299ae21ccdcd5045b9a85a1f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/366ba6e8-d943-486c-921f-a2b30e926ed6/run.edn",
+      "mode": "100644",
+      "sha256": "7c8c425845908f60afcce36ee3cf92758fd391b1815661697c49217930fbf050"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/4571709a-0033-48d1-9011-0c8d16fd59fc/actions.edn",
+      "mode": "100644",
+      "sha256": "96db5e484db1eae2dd0f534f61a8c8fd521660c43a86a3941adfb068e83dccb7"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/4571709a-0033-48d1-9011-0c8d16fd59fc/evidence.edn",
+      "mode": "100644",
+      "sha256": "e269dc7615b3901e4e64950f175e133b4c2cafac1c0854150d8aafb6d1b6cb3e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/4571709a-0033-48d1-9011-0c8d16fd59fc/findings.edn",
+      "mode": "100644",
+      "sha256": "8c4501e1da8ab757f2ab76daba1875e888fe3e3a0694d158a622f19c1708c459"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/4571709a-0033-48d1-9011-0c8d16fd59fc/relations.edn",
+      "mode": "100644",
+      "sha256": "8505c7b42a535e7ae9895ff3963f62ba9c1043708d4cf8639e8528526779e81c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/4571709a-0033-48d1-9011-0c8d16fd59fc/run.edn",
+      "mode": "100644",
+      "sha256": "1f1a9d173774f2d13ea33f5af876fe10265779da925f3189245d4aad91c02dfe"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/52178aa6-f10a-4e89-9cde-afb8c02cb3aa/actions.edn",
+      "mode": "100644",
+      "sha256": "92fa6b761c3ed869c0764429c5e871ef94676a695169537fea8509bc0001f8ea"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/52178aa6-f10a-4e89-9cde-afb8c02cb3aa/evidence.edn",
+      "mode": "100644",
+      "sha256": "ea4fb454823c5f3cd9f9f9659a4b7218a313753be6d5b6f654cfd6ec6de6da6e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/52178aa6-f10a-4e89-9cde-afb8c02cb3aa/findings.edn",
+      "mode": "100644",
+      "sha256": "25ebd0d40665983293d18d5b9caf0ba52c982d7a9258a2195cbc678b525dc03e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/52178aa6-f10a-4e89-9cde-afb8c02cb3aa/relations.edn",
+      "mode": "100644",
+      "sha256": "0c7573d8cd9e048c45b13917ffbbe78350a62786613e3a19feb79fadc7ee7d58"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/52178aa6-f10a-4e89-9cde-afb8c02cb3aa/run.edn",
+      "mode": "100644",
+      "sha256": "d79cac2991d15687b0bb7d1044339387914c1b16989875237af3bf239a838235"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/562817df-4676-4d8f-b502-8f62ce9de2cd/actions.edn",
+      "mode": "100644",
+      "sha256": "8a6fbf5c0e078d4442a3ec52f70b66da4d32d800c3f2c05c06fdfca57db0fd85"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/562817df-4676-4d8f-b502-8f62ce9de2cd/evidence.edn",
+      "mode": "100644",
+      "sha256": "8cb8146b317accd2415b04a215d0c622eb46a61a33504ed18f8df8389d8befa0"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/562817df-4676-4d8f-b502-8f62ce9de2cd/findings.edn",
+      "mode": "100644",
+      "sha256": "de9c92e62bbe61c139aaf5047e99d7c0c5f4eb9ad3851e3b6d6050e0c63851ba"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/562817df-4676-4d8f-b502-8f62ce9de2cd/relations.edn",
+      "mode": "100644",
+      "sha256": "ddbd4b7dca53ea1f7c34e4adad151df71763e2d13c0ad3157ddbe2e2307fd2aa"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/562817df-4676-4d8f-b502-8f62ce9de2cd/run.edn",
+      "mode": "100644",
+      "sha256": "3d530d0ddb80b76d2e5101de8f5fcab44957adb312f486c7cb991cd1a67fb7cf"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/6bf6bb43-dcc4-40d4-8414-4c89a3402e6f/actions.edn",
+      "mode": "100644",
+      "sha256": "c56016bf805f0478cbd09284e592298b84b14873cf7750124f3b26fcf95b70fb"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/6bf6bb43-dcc4-40d4-8414-4c89a3402e6f/evidence.edn",
+      "mode": "100644",
+      "sha256": "1b8218b880b36c5a6ddbe2e145eeea9eeff5e7c44bf8c5b4060b267e35950211"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/6bf6bb43-dcc4-40d4-8414-4c89a3402e6f/findings.edn",
+      "mode": "100644",
+      "sha256": "30e939e8ce0883e77fae1cd9481a7aa6a307d9472d8dc5254025f98d8572846d"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/6bf6bb43-dcc4-40d4-8414-4c89a3402e6f/relations.edn",
+      "mode": "100644",
+      "sha256": "d95b069562870e1b19d5d537df1cf55e0965f16511b56491ca45d2b660221c8f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/6bf6bb43-dcc4-40d4-8414-4c89a3402e6f/run.edn",
+      "mode": "100644",
+      "sha256": "6c3775589e85f45715267f187530b336f56e4dab37f07bc7888b3bf2dde58136"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/777b4ce0-c8f6-4e70-943f-27935c7ae3ec/actions.edn",
+      "mode": "100644",
+      "sha256": "39e80682e97cdbe5dc986eefc6593ae5a3a7edf57da8b74246f8fc26e3563f5c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/777b4ce0-c8f6-4e70-943f-27935c7ae3ec/evidence.edn",
+      "mode": "100644",
+      "sha256": "64801da14d23160ae2d76f36d39513c17289fc337ef116aa9f6c58382545b1f8"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/777b4ce0-c8f6-4e70-943f-27935c7ae3ec/findings.edn",
+      "mode": "100644",
+      "sha256": "3ffb3c137d2cde6162056259df6019546ecd7fb8baa17180a8fd938a3d6a0f56"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/777b4ce0-c8f6-4e70-943f-27935c7ae3ec/relations.edn",
+      "mode": "100644",
+      "sha256": "eae90f625a9264093bbda0ca47603357c7e0e250c64fac0ef1e60f2f2cd51fff"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/777b4ce0-c8f6-4e70-943f-27935c7ae3ec/run.edn",
+      "mode": "100644",
+      "sha256": "cb2804d780344a3bb7494eaee5c5fa484f38d8ac1210f53fc92c85b1e68a5a9a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7e538f44-5ece-4da7-8c25-40bfee006a17/actions.edn",
+      "mode": "100644",
+      "sha256": "61ae40e6964aaed1ac7fd0ee48dd601072d029409f5488493fcc2ac89be62cb1"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7e538f44-5ece-4da7-8c25-40bfee006a17/evidence.edn",
+      "mode": "100644",
+      "sha256": "00eaa1c70ce1a02ab4e5670ad610f0401b433ed92b33819da8e7bbc0a6bd3f3b"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7e538f44-5ece-4da7-8c25-40bfee006a17/findings.edn",
+      "mode": "100644",
+      "sha256": "c38972bf85d1f9870d6b91dcc77dc421485afe6f975b19c997f455476db70028"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7e538f44-5ece-4da7-8c25-40bfee006a17/relations.edn",
+      "mode": "100644",
+      "sha256": "63419928301d4efc76213a515b6994ffa186d9bbd262c680ceccc63be202b6df"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7e538f44-5ece-4da7-8c25-40bfee006a17/run.edn",
+      "mode": "100644",
+      "sha256": "53332131c813c2fe649eae30183b8eb5743f7b34b50e5fb31ab4df513435bf9f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7eb79274-9336-4767-8660-7d5c674fe0eb/actions.edn",
+      "mode": "100644",
+      "sha256": "8ff42349a11c598358eb108c30a727e0348709489308afb73036ca0973d9483f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7eb79274-9336-4767-8660-7d5c674fe0eb/evidence.edn",
+      "mode": "100644",
+      "sha256": "7816f7b279f81cf3f817e86e07d1477c27bee4e2d644bb8daab31458dd661750"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7eb79274-9336-4767-8660-7d5c674fe0eb/findings.edn",
+      "mode": "100644",
+      "sha256": "66dc823ea9e287bd825f5b3340a67d1208d065f041aa467a5b32797dd4971647"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7eb79274-9336-4767-8660-7d5c674fe0eb/relations.edn",
+      "mode": "100644",
+      "sha256": "af076dc38a1916915930af6e3728f9c6607fee9029e83e0ef2e977e2938f1b9d"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/7eb79274-9336-4767-8660-7d5c674fe0eb/run.edn",
+      "mode": "100644",
+      "sha256": "b37cdbe2a4a9ec23d5a65a1e0fd5a8739f666fa08ce1d7eae33cf607a53c85ff"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/8d6481f6-215a-4380-a1e7-18b654ffb56f/actions.edn",
+      "mode": "100644",
+      "sha256": "fa113729ca0434037a44d18d8bda22649804f39091ed221fe553784a2b98ad7f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/8d6481f6-215a-4380-a1e7-18b654ffb56f/evidence.edn",
+      "mode": "100644",
+      "sha256": "48d143c91b2cc2de631974feee9d9614a41d9fa7036631a3120e5b4b4a208572"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/8d6481f6-215a-4380-a1e7-18b654ffb56f/findings.edn",
+      "mode": "100644",
+      "sha256": "e1382d1eac63bf5bb0a8c926becf47cdb35653d27c000ce0b7de7b706d9c35be"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/8d6481f6-215a-4380-a1e7-18b654ffb56f/relations.edn",
+      "mode": "100644",
+      "sha256": "08d209b0fb3d0f6591694737cdc7d560bc7c91e2b0cceb77817f6cc1e20d0487"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/8d6481f6-215a-4380-a1e7-18b654ffb56f/run.edn",
+      "mode": "100644",
+      "sha256": "bf0e7627524d83bc26d256b12d4b9b8624f74e757039ad2bf4a2b549dc226037"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/93841148-b8a6-40b9-b2a8-2fa86c9dd86b/actions.edn",
+      "mode": "100644",
+      "sha256": "f86ffb419377f4af84171aea27b9fe7483f43167b9ee2e3680ee920ec971cd08"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/93841148-b8a6-40b9-b2a8-2fa86c9dd86b/evidence.edn",
+      "mode": "100644",
+      "sha256": "3e67d8e0f3ae2eb39176ca0c0f125fbe508551de5a61b9e088a709c46e67f177"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/93841148-b8a6-40b9-b2a8-2fa86c9dd86b/findings.edn",
+      "mode": "100644",
+      "sha256": "2081c56917f769ba7b8952ec2526f74ea2b9658eefe2ba4a0a19738254f15d40"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/93841148-b8a6-40b9-b2a8-2fa86c9dd86b/relations.edn",
+      "mode": "100644",
+      "sha256": "bb41a729fec52b00e6b306735aa10a38d01399deaa9437de8d67fd000709281f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/93841148-b8a6-40b9-b2a8-2fa86c9dd86b/run.edn",
+      "mode": "100644",
+      "sha256": "46bf201fa3baf260894aa2194bd4fc6e06810fa53cf5145d19f2af186682e558"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/97bb851c-197d-4a07-a3b9-2db1a63e2168/actions.edn",
+      "mode": "100644",
+      "sha256": "d330f344ead5ccfe6204ead689a07d22f188dc8981c316bf0f32cbc7560c87d1"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/97bb851c-197d-4a07-a3b9-2db1a63e2168/evidence.edn",
+      "mode": "100644",
+      "sha256": "f4eb919fc07f9252fdfd6af3eb18b4ade60cc4cbcf47a9ee78192d533f685085"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/97bb851c-197d-4a07-a3b9-2db1a63e2168/findings.edn",
+      "mode": "100644",
+      "sha256": "22b4b46dc2d9cbfefb2fcae70f118d562b3a7ebc7fbc275d506a3d1c28285a00"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/97bb851c-197d-4a07-a3b9-2db1a63e2168/relations.edn",
+      "mode": "100644",
+      "sha256": "fbb54f8c690621c0b910773104422fdec68a55881ffe72f37267edddb3970628"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/97bb851c-197d-4a07-a3b9-2db1a63e2168/run.edn",
+      "mode": "100644",
+      "sha256": "f5be7d717615cb41ebeae0e1cedfe828ee90c5cd9bc3519f69dc225fc4ad26d6"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/998ad954-816a-4c76-bbae-d40da4b533d9/actions.edn",
+      "mode": "100644",
+      "sha256": "340dc447a4188d45006c4f94812bd73518390540118f85fbabb1eb855ab90bc9"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/998ad954-816a-4c76-bbae-d40da4b533d9/evidence.edn",
+      "mode": "100644",
+      "sha256": "95c4155a2b94066bcdea5bcaf2807f0d91bda8777f52b1968547a31a784d9797"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/998ad954-816a-4c76-bbae-d40da4b533d9/findings.edn",
+      "mode": "100644",
+      "sha256": "6e02da333e5f2dcd512d99c6af04ad0243bb38acd11de5dc59c3b531ad003519"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/998ad954-816a-4c76-bbae-d40da4b533d9/relations.edn",
+      "mode": "100644",
+      "sha256": "11b5c7ba82f4c614776f84ced4b190dc3439d1d40b4f9ec415fdf493870c7059"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/998ad954-816a-4c76-bbae-d40da4b533d9/run.edn",
+      "mode": "100644",
+      "sha256": "542ad3456791d467545227dc3330e64f1f3a7af39903e8a2d8ab73c042c2e10a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9e89abc9-0587-4530-85e2-34b5f80742bb/actions.edn",
+      "mode": "100644",
+      "sha256": "a8a4d35c8b40c1bfc805a26592f35ae71351c8defe60568851a145a2b37b52bd"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9e89abc9-0587-4530-85e2-34b5f80742bb/evidence.edn",
+      "mode": "100644",
+      "sha256": "cc31a3d44c3270dec68dbf4f33f7da4e9fe55284e3f352524cbea6b3db0e792f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9e89abc9-0587-4530-85e2-34b5f80742bb/findings.edn",
+      "mode": "100644",
+      "sha256": "94f95014c78923d40ca6b32c2a3131f8d7cf8c815923822cebce82e7154f6c66"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9e89abc9-0587-4530-85e2-34b5f80742bb/relations.edn",
+      "mode": "100644",
+      "sha256": "9436e5ef050b292b7e568c3ce29c335a87cbabb8db5ae567cc39635e085ea790"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9e89abc9-0587-4530-85e2-34b5f80742bb/run.edn",
+      "mode": "100644",
+      "sha256": "b2ecf87beb44a22a9e2e066481725267793a53a704e8a4ecbab0dc3d29818198"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9f4346f8-01ff-4b09-a357-94257d644bb1/actions.edn",
+      "mode": "100644",
+      "sha256": "fa506fbeaa9f828ee0d784109bc061a26f99e1f72df971196bd962a27e80a420"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9f4346f8-01ff-4b09-a357-94257d644bb1/evidence.edn",
+      "mode": "100644",
+      "sha256": "5a3d1793510fec312090f9951bd6d1aa4b17841a4ce17ce23ec3e5cded63e644"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9f4346f8-01ff-4b09-a357-94257d644bb1/findings.edn",
+      "mode": "100644",
+      "sha256": "9c9bcf295e3c3f493b7ee17d220a96e583cbab21c137a049da896ca345e0127d"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9f4346f8-01ff-4b09-a357-94257d644bb1/relations.edn",
+      "mode": "100644",
+      "sha256": "b053ba883501d1ccc22024bf7a40636bf7754884785dee2afe3eff34dafbfbd3"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/9f4346f8-01ff-4b09-a357-94257d644bb1/run.edn",
+      "mode": "100644",
+      "sha256": "6803e2bd0fc09eba371f2d5146e75ed81b4e20b46c22fafc99f7b0f9b2228a49"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/a36c7aed-cf49-4fbf-a94e-826d672bd45a/actions.edn",
+      "mode": "100644",
+      "sha256": "f9d6f2965dcb83553d584241051970fc5240cd96c977d54d860d178026b9132a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/a36c7aed-cf49-4fbf-a94e-826d672bd45a/evidence.edn",
+      "mode": "100644",
+      "sha256": "ffd26e4d75cdd892f4d5c39a867895e288936559a14078f58abb6618ef295bd1"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/a36c7aed-cf49-4fbf-a94e-826d672bd45a/findings.edn",
+      "mode": "100644",
+      "sha256": "36887ab31efe4250f9b1ea2e1ef2e61051463e21fb8a2bcdb2cb6ffa32cbeeb3"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/a36c7aed-cf49-4fbf-a94e-826d672bd45a/relations.edn",
+      "mode": "100644",
+      "sha256": "e75151089efe7fefd9a29fee8fa00e727dee2fd30a9aaaffba8ee3effbe5a8f8"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/a36c7aed-cf49-4fbf-a94e-826d672bd45a/run.edn",
+      "mode": "100644",
+      "sha256": "302cd2a5f5b5c1575e09a44b643d660abefffcc42fe8614294a05d5eb054f125"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/ad2a7cf9-1bec-4757-9288-c1a5f0582b5e/actions.edn",
+      "mode": "100644",
+      "sha256": "6fdcd0ffe13e362da865bc804f32d163d1a003a7893ff602da5763cd038e7f48"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/ad2a7cf9-1bec-4757-9288-c1a5f0582b5e/evidence.edn",
+      "mode": "100644",
+      "sha256": "7b60a4367ea2bbecd8f1784121ee800d82056a28ad616654ae00c52d9a3a2bb4"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/ad2a7cf9-1bec-4757-9288-c1a5f0582b5e/findings.edn",
+      "mode": "100644",
+      "sha256": "1ba2719ff640cedcc5d50fb7b37a9fa6cbdb8a793364d25b6c14b973832b1c80"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/ad2a7cf9-1bec-4757-9288-c1a5f0582b5e/relations.edn",
+      "mode": "100644",
+      "sha256": "c9aee128b0282e3819d446c03c455fa868d7abc92ddd72b914368a026c0ff5b2"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/ad2a7cf9-1bec-4757-9288-c1a5f0582b5e/run.edn",
+      "mode": "100644",
+      "sha256": "008499d90fbf6e8387e88cd5154431095efa19b04d4e6da28f5c446e590ffd2e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/bb1b1e37-26d9-4061-a971-a1b610485dfd/actions.edn",
+      "mode": "100644",
+      "sha256": "d0e401a1163264127c5356ca6756f75f8ed79c269bf90d1549f68e912e9caf7a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/bb1b1e37-26d9-4061-a971-a1b610485dfd/evidence.edn",
+      "mode": "100644",
+      "sha256": "97a91484a76244ea0e1ff4da34b111799b55710c573bdf961502a233936d6cc9"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/bb1b1e37-26d9-4061-a971-a1b610485dfd/findings.edn",
+      "mode": "100644",
+      "sha256": "a4e93083af8b82ea8f0f4de51b8d301fa6406b2482c562ba98cd097dcc8f4030"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/bb1b1e37-26d9-4061-a971-a1b610485dfd/relations.edn",
+      "mode": "100644",
+      "sha256": "7cdec57c04484a090979057d2c1f4622b49b9856c9608ae44eb514de013dc9ed"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/bb1b1e37-26d9-4061-a971-a1b610485dfd/run.edn",
+      "mode": "100644",
+      "sha256": "ada82052407d4b0961509d971eee2cb61eb3f93292dc83e2e373e3b504edb441"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/c718014f-e917-4f56-874a-3cb73ab9ee19/actions.edn",
+      "mode": "100644",
+      "sha256": "c5b126a1b12ac414eb070221b11ceade09f80157be4aeab52676107f40b29278"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/c718014f-e917-4f56-874a-3cb73ab9ee19/evidence.edn",
+      "mode": "100644",
+      "sha256": "90783e10f731b6840646d42dee69b08c235b86cd86e1cf4587bcd459a989a8c0"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/c718014f-e917-4f56-874a-3cb73ab9ee19/findings.edn",
+      "mode": "100644",
+      "sha256": "1cf8fae9f140b680e3b278452226ae05ac5e007d023b4b3e5d6865d552e04f30"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/c718014f-e917-4f56-874a-3cb73ab9ee19/relations.edn",
+      "mode": "100644",
+      "sha256": "364dc27a948626f6cf1e8d3a638e51d99a4c8af3b688aad7cd6c3112ce41d9c9"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/c718014f-e917-4f56-874a-3cb73ab9ee19/run.edn",
+      "mode": "100644",
+      "sha256": "7fd28af6ff5a1208234ac6b62875857f6566fd38c3c7d238872e003662a87ec1"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d10bf150-1910-4a5a-b59a-89c681e91763/actions.edn",
+      "mode": "100644",
+      "sha256": "0490d55305bae35a2fa851736065019fedcebd6b4342939a966b518a04c4385f"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d10bf150-1910-4a5a-b59a-89c681e91763/evidence.edn",
+      "mode": "100644",
+      "sha256": "c81ce041283cecdb87f9deeffa6971d818a9d975359f1dc22a46789495691779"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d10bf150-1910-4a5a-b59a-89c681e91763/findings.edn",
+      "mode": "100644",
+      "sha256": "45dce1a862a8ea27051f459415e7b473f5569fc1d7846ba8e431ec369dc28840"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d10bf150-1910-4a5a-b59a-89c681e91763/relations.edn",
+      "mode": "100644",
+      "sha256": "38ae6eb38696c10429c8409c65d035947307dd344a62b2d1be73c98237a06cf2"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d10bf150-1910-4a5a-b59a-89c681e91763/run.edn",
+      "mode": "100644",
+      "sha256": "097de6f19372be5934454441a53a78f11bc55399d49dfdce5aa924157bc13f97"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d4d66778-2f16-4f1b-8475-f432f412ad2b/actions.edn",
+      "mode": "100644",
+      "sha256": "1f21e432a9fda75f8a7e07252a98c3d07a668e0bda845a43d26cd9abf593d747"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d4d66778-2f16-4f1b-8475-f432f412ad2b/evidence.edn",
+      "mode": "100644",
+      "sha256": "e4c2c7b6790d5e2d352ed83d55ccc4cc01db0b1416678d63937fc898ac5eee96"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d4d66778-2f16-4f1b-8475-f432f412ad2b/findings.edn",
+      "mode": "100644",
+      "sha256": "041938cc8469e136daee57f2d71150f650dc5ae1f158a07a98408b07c2a4240a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d4d66778-2f16-4f1b-8475-f432f412ad2b/relations.edn",
+      "mode": "100644",
+      "sha256": "f45dad3e46cc7083e21547e28064db5db35c1eecf542a78ba3a522d933718c7e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/d4d66778-2f16-4f1b-8475-f432f412ad2b/run.edn",
+      "mode": "100644",
+      "sha256": "7ce16ca928b2624cdf167c4a711debfaa0edff30e8721baeabc9b73e63e23476"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/e7c3fc5d-e697-4926-a752-823c7b0437b7/actions.edn",
+      "mode": "100644",
+      "sha256": "3541460f4494c18bcc419e3bea7236e95d22b6eb871985f45335501e24f4667c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/e7c3fc5d-e697-4926-a752-823c7b0437b7/evidence.edn",
+      "mode": "100644",
+      "sha256": "624256b39dbf599b0309035cd2e6e0d8ee31381acd2ba9bc6c2431dca542b6b0"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/e7c3fc5d-e697-4926-a752-823c7b0437b7/findings.edn",
+      "mode": "100644",
+      "sha256": "3f57028e2a24e4fa082e7aea196c9e1bd46c19afed55daec4512f8fdbdc552df"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/e7c3fc5d-e697-4926-a752-823c7b0437b7/relations.edn",
+      "mode": "100644",
+      "sha256": "2552a08715ce66d3df1bd23a4d1e9bd8a0d55ad5ab49c5a3319657c1db6dcd89"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/e7c3fc5d-e697-4926-a752-823c7b0437b7/run.edn",
+      "mode": "100644",
+      "sha256": "28f319f68fdb1ec053d3fd685f13509f01307d1391538ab585fc234588e7b34c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/f49b2fa0-2e8f-42c7-9147-9ea36456da8a/actions.edn",
+      "mode": "100644",
+      "sha256": "6b8292322026fc564ac76aa5253b2ebe545795f8c3e3f00996856773a03b7b2b"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/f49b2fa0-2e8f-42c7-9147-9ea36456da8a/evidence.edn",
+      "mode": "100644",
+      "sha256": "ec363149b51e65d3ba20aac36f1cdaadd5b8d98e217a3cb3e9ac747d766d49ee"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/f49b2fa0-2e8f-42c7-9147-9ea36456da8a/findings.edn",
+      "mode": "100644",
+      "sha256": "276c65b35c9598d52830e2649c15dea9df06795aa468a3d2a3cb14f97ccd886e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/f49b2fa0-2e8f-42c7-9147-9ea36456da8a/relations.edn",
+      "mode": "100644",
+      "sha256": "86172d0c34840d964d907e0a920956f590deb98cca3c79d92ce1f9fe9b6508c9"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/f49b2fa0-2e8f-42c7-9147-9ea36456da8a/run.edn",
+      "mode": "100644",
+      "sha256": "25ab68f4230ad45c2c1ab1f5252b09172d67623ceff0cec70bc0a046671dd668"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/fa5c14d5-c1dd-4779-a3f2-d0189d168caa/actions.edn",
+      "mode": "100644",
+      "sha256": "254a874321ca1576850986e77e4e83c2a0579ad092b81cba06a5aef4cc22a76b"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/fa5c14d5-c1dd-4779-a3f2-d0189d168caa/evidence.edn",
+      "mode": "100644",
+      "sha256": "73939f562b073044399efcd4609def5104d78e4d7e68c5f83fc6d173ce4e515e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/fa5c14d5-c1dd-4779-a3f2-d0189d168caa/findings.edn",
+      "mode": "100644",
+      "sha256": "796976a8f8cdc25cf32db6953332b87d5a5a6ba3e2ffb5a1ff9071d4c9c39da2"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/fa5c14d5-c1dd-4779-a3f2-d0189d168caa/relations.edn",
+      "mode": "100644",
+      "sha256": "1f5dc1c65b5c9a9061ba67500ed9909081f70eb3b6b59d6672d611583427a2a4"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/ledgers/fa5c14d5-c1dd-4779-a3f2-d0189d168caa/run.edn",
+      "mode": "100644",
+      "sha256": "5515fb2e87dc8c7ae9471d3645bb9b6b6d567820f65f888136d46a383f796a4c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/08b2369a-5889-48e9-ade7-6081f97f348e.edn",
+      "mode": "100644",
+      "sha256": "d635bb16de69f8141c779f87375a073b032cadabca7001fe3c6a0747b361e519"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/2302720f-6aae-405f-b0c9-520bcf34ae41.edn",
+      "mode": "100644",
+      "sha256": "2f1db9068a97afb23e10a2f36458815d295ec38f8654f4afae37c9af10715a14"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/261aa432-7eb8-47d8-b3da-e098eac4509e.edn",
+      "mode": "100644",
+      "sha256": "cae00854470465e442589f3f87e46929955bf2f8b5fb39ee1453bfb48c97c795"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/2ab86fb4-5e36-403d-9358-8dafe4eb2b32.edn",
+      "mode": "100644",
+      "sha256": "1566de21763d9f470cdc3dcfd88ea544c5d6838a0fa3de8446fe7ddc6e627db8"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/32e0bd69-cf1a-4e16-94e1-136861ee92d4.edn",
+      "mode": "100644",
+      "sha256": "3878bd7395a7393744ef645dd382079e8eae6e4c8b4f82184a041bc4f6eb6226"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/366ba6e8-d943-486c-921f-a2b30e926ed6.edn",
+      "mode": "100644",
+      "sha256": "778cca41c7939212fc60d99d5c1296aa9a8cdf4967dd53da3575d0e519879bb7"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/4571709a-0033-48d1-9011-0c8d16fd59fc.edn",
+      "mode": "100644",
+      "sha256": "5572f5ec8b03d81938a661833eb22991baa7316d7299ac6715cad9c6d4965dfd"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/52178aa6-f10a-4e89-9cde-afb8c02cb3aa.edn",
+      "mode": "100644",
+      "sha256": "4dbe37639539528741b2fa9f6c3621a60de90a3d8fdd18b56e58210de813e79c"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/562817df-4676-4d8f-b502-8f62ce9de2cd.edn",
+      "mode": "100644",
+      "sha256": "cec0063499ac77e46bea373f580873b1ba8f0b45dec2bf29b8576aee6e9bedf4"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/6bf6bb43-dcc4-40d4-8414-4c89a3402e6f.edn",
+      "mode": "100644",
+      "sha256": "029d3272043eafae37c4926894abdd893a130ede2383e434e9073da527038857"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/777b4ce0-c8f6-4e70-943f-27935c7ae3ec.edn",
+      "mode": "100644",
+      "sha256": "708ce108855677ecdc007d8ef319f5849fa5891cfd112c1ca48dbdf0ba56fc65"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/7e538f44-5ece-4da7-8c25-40bfee006a17.edn",
+      "mode": "100644",
+      "sha256": "3512ef2cb6631b5b164e23b9f06022430567ec17321cb58149fd4717e849a646"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/7eb79274-9336-4767-8660-7d5c674fe0eb.edn",
+      "mode": "100644",
+      "sha256": "198b73b0ca1d8b864b0845d01cc5030cf3593ca59ea0ead28bf525d4b97a270a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/8d6481f6-215a-4380-a1e7-18b654ffb56f.edn",
+      "mode": "100644",
+      "sha256": "c792da8997c68d6c63b937896a5021276b6e144154273b7613b7eda981644d03"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/93841148-b8a6-40b9-b2a8-2fa86c9dd86b.edn",
+      "mode": "100644",
+      "sha256": "28721e0e8b5cf351297ebda2880cc86b8dcfa4af19787e01ab578eb5bcdfa9a0"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/97bb851c-197d-4a07-a3b9-2db1a63e2168.edn",
+      "mode": "100644",
+      "sha256": "e7092a8232283aee3d2129d700ad8a86da5994d2aefccd18a2b5441ec168039b"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/998ad954-816a-4c76-bbae-d40da4b533d9.edn",
+      "mode": "100644",
+      "sha256": "36d5e97671224291e6dad6057bb2f9fc11b7d9582ad6bbcbde9edb6d664387f2"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/9e89abc9-0587-4530-85e2-34b5f80742bb.edn",
+      "mode": "100644",
+      "sha256": "7533a44f46a8a0ece967d909707cb0fd7d7373d066c1d7d3ca06ddf293467046"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/9f4346f8-01ff-4b09-a357-94257d644bb1.edn",
+      "mode": "100644",
+      "sha256": "b1f969352e3d025fb4f5c5d0d876ca7298f326b8e6cd9f624e275d41489349d3"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/a36c7aed-cf49-4fbf-a94e-826d672bd45a.edn",
+      "mode": "100644",
+      "sha256": "31b8eb57ea5ef70351a584bacbdf78598206a3f00750a9fa9bdc2d4f99f4f12e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/ad2a7cf9-1bec-4757-9288-c1a5f0582b5e.edn",
+      "mode": "100644",
+      "sha256": "319dbeffacfab3d4e34dd2cf96435c8a27d9c418bbab6b6b83ed6077e98da0d2"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/bb1b1e37-26d9-4061-a971-a1b610485dfd.edn",
+      "mode": "100644",
+      "sha256": "c66e3a6e83b508081da43229c64db481c538b6dd83ca23ad812c19bbabc2f8bc"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/c718014f-e917-4f56-874a-3cb73ab9ee19.edn",
+      "mode": "100644",
+      "sha256": "dd6fbc411f74b2f07f2bb80992f97d37024d876da079b76f4367a325b4caeaef"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/d10bf150-1910-4a5a-b59a-89c681e91763.edn",
+      "mode": "100644",
+      "sha256": "bb962ce08be44d74a5ee37e91b6a3adbb98cb7253bbe9a80e70234926c6d0cb6"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/d4d66778-2f16-4f1b-8475-f432f412ad2b.edn",
+      "mode": "100644",
+      "sha256": "0736a7883c90f6c577cc31c9bd168f74b41e3eeec3bcc9e3e5cc2b53a5ac1a56"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/e7c3fc5d-e697-4926-a752-823c7b0437b7.edn",
+      "mode": "100644",
+      "sha256": "6309466eba42281b3f8092afc0a5466971bd8f787d4766e032313b0c8481d08b"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/f49b2fa0-2e8f-42c7-9147-9ea36456da8a.edn",
+      "mode": "100644",
+      "sha256": "09e6664417c1075d2b741f523ef5c543a68d7c10b882e2bda426059e0a08127a"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/resources/fa5c14d5-c1dd-4779-a3f2-d0189d168caa.edn",
+      "mode": "100644",
+      "sha256": "8f97165f46c52a4d884cce3fb452194cc9441762dc6a40b309c9f60175fa0352"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/schemas/8eb19ab0e4b70e205a84a627fd3e15c3ba79c0fd8c792d37e72f3c79511e0bf9.edn",
+      "mode": "100644",
+      "sha256": "6ad0a5dd331baccb8acb940289e5c9ceaea87d2d02c8acfa5be408b83fc00bb4"
+    },
+    {
+      "path": ".\u03b7\u03bc/archaeology/schemas/b91af160cb06543c10a8feafed4ae767cee20bd62e2e767d624d63065eee76f5.edn",
+      "mode": "100644",
+      "sha256": "bafcf5605b9fabfa294ab2c319b656478016469d0507703302c5d74ae8bdf9c4"
+    },
+    {
+      "path": ".\u03b7\u03bc/archive/pr127-receipt-schema-52e3a747/README.md",
+      "mode": "100644",
+      "sha256": "56eb178b788a1889512eadfaefdecf46108b66dbe481fc3b261da58ae3806c64"
+    },
+    {
+      "path": ".\u03b7\u03bc/archive/pr127-receipt-schema-52e3a747/helper-emitted-receipts.edn",
+      "mode": "100644",
+      "sha256": "f457b1c98e6e9420e77b7549d5368dcdd92afe275e5aebf46d32ba81021e834e"
+    },
+    {
+      "path": ".\u03b7\u03bc/archive/pr96-c551e986/planning-archive-receipt.edn",
+      "mode": "100644",
+      "sha256": "40a811fcb1415bc28dd94391690fd270ce80b47eb2f125bdec74aae91c3ad033"
+    },
+    {
+      "path": ".\u03b7\u03bc/archive/pr96-c551e986/root-receipts.edn",
+      "mode": "100644",
+      "sha256": "a9a0f48df3aaf53cec1a0d34f7551e77850577cb9d6a8c38543363643b3fffed"
+    },
+    {
+      "path": ".\u03b7\u03bc/kanban-events/ledger.edn",
+      "mode": "100644",
+      "sha256": "17ac05adc453d1e0238e4b864b19577af012abc56e583af3692ce4cfefaa0c12"
+    },
+    {
+      "path": ".\u03b7\u03bc/session-mycology/spores/20260813-084748-rheos-board-compat-ledger.md",
+      "mode": "100644",
+      "sha256": "347d03faf84a0f9db61baeeb70614ddab8b3776b2c7eb67d97e021d118dea187"
+    },
+    {
+      "path": ".\u03b7\u03bc/session-mycology/spores/20260831-132131-local-service-secret-safe-bootstrap.md",
+      "mode": "100644",
+      "sha256": "0dc0bd6210d27003a761eaea0248f1ae8361ab4f0bb7a98cd77fda722a393300"
+    },
+    {
+      "path": ".\u03b7\u03bc/\u03a0_LAST.md",
+      "mode": "100644",
+      "sha256": "bce648da5379a64ee98c4812e50b4e415759a32c3ce990a1146fe6bdd642c5f7"
+    },
+    {
+      "path": ".\u03b7\u03bc/\u03a0_STATE.sexp",
+      "mode": "100644",
+      "sha256": "de541ad8b9d4fb99181aadc23fadc1bb8fa3fdc5dee23a700720af3d311fd6b1"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "sha256": "06fc1530851d3d78894159430846a3aecb99d968bf9c5c8094157bd4b377a7b8"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "sha256": "372cafc019eb913cc23c0255d0323f7ccb7946e54f06f6ae466133ed9d021a3b"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "sha256": "ccbfcf70e761b2d9c99987559c31cdbc7acbcc557dfcbd75de526c1ed4cefc81"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "sha256": "67af1c4b631e09413a72105f61b1757dd7cf3fcc4d618f9733d5d6b0640beae1"
+    },
+    {
+      "path": "alpha/README.md",
+      "mode": "100644",
+      "sha256": "5d8578b70be7f68659fdc2478ed234939f1f7bc244049f1120e922245cf6c82b"
+    },
+    {
+      "path": "alpha/deps.edn",
+      "mode": "100644",
+      "sha256": "95c98c5ad8e1b74f178c595debafff9f2b58486391ce52adc0969edebf3c6a63"
+    },
+    {
+      "path": "alpha/src/alpha/law/artifact.cljc",
+      "mode": "100644",
+      "sha256": "81c6d8009fa65da8cf8462fd1d0c6aa76359eaa5aa2c265e5b401180389e9078"
+    },
+    {
+      "path": "alpha/src/alpha/law/markdown/facet.cljc",
+      "mode": "100644",
+      "sha256": "75a619b36abb98ec177e66d73aacc05e351ccf848f7f4ccb8d445cfe0ff77f36"
+    },
+    {
+      "path": "alpha/src/alpha/law/markdown/profile.cljc",
+      "mode": "100644",
+      "sha256": "efc9637b133863f94b9541ee1e006601bebc17d161a899216e2732ecf4479fab"
+    },
+    {
+      "path": "alpha/src/alpha/law/markdown/schema.cljc",
+      "mode": "100644",
+      "sha256": "eff88a125aa1c34cf509f512320707dc64e8eea560791650ab7fe85eef1f7b31"
+    },
+    {
+      "path": "alpha/src/alpha/law/reaction.cljc",
+      "mode": "100644",
+      "sha256": "cb84ea478985279f28ca5a2eb160d5cbfcdee7ccbb6844211ec253db7eb8c0a0"
+    },
+    {
+      "path": "alpha/test/alpha/law/artifact_test.cljc",
+      "mode": "100644",
+      "sha256": "00b272356c6929a4efc20d9a0b3fc5bfbad927feed0f8889471105c11d850fff"
+    },
+    {
+      "path": "alpha/test/alpha/law/markdown/facet_test.cljc",
+      "mode": "100644",
+      "sha256": "eea44f1e9e7ba1e982f344d04d8165d5c7f0e875aabfc5a22cf21f1bc4342a66"
+    },
+    {
+      "path": "alpha/test/alpha/law/markdown/profile_test.cljc",
+      "mode": "100644",
+      "sha256": "68d51c33ce67e7e3117b8260742766c8da16720ddd01995e96529f8a0dd174e9"
+    },
+    {
+      "path": "alpha/test/alpha/law/markdown_document_test.cljc",
+      "mode": "100644",
+      "sha256": "740df521602875c6c98af25c2906dd725d8b32330c222549df4bb8de9e58a364"
+    },
+    {
+      "path": "alpha/test/alpha/law/reaction_test.cljc",
+      "mode": "100644",
+      "sha256": "67b6e166cfa2085e059bb64194fc318176ea08f5de1ef3f602007ee05b0a34d4"
+    },
+    {
+      "path": "alpha/test/alpha/test_runner.clj",
+      "mode": "100644",
+      "sha256": "6d21c063c77678fee5afd6fea6dff6c9bd3a91e90e9a765bc2177ac963bb5cca"
+    },
+    {
+      "path": "archaeology/deps.edn",
+      "mode": "100644",
+      "sha256": "1e18aed58f3abe711aad400588bf947c5f50a5a438c75ad9af9ef86af5a4a5cf"
+    },
+    {
+      "path": "archaeology/src/foresight/archaeology/domain.cljc",
+      "mode": "100644",
+      "sha256": "5413688fcae46e8beefa811377d534449c151179b966bffee07cad1898a01b62"
+    },
+    {
+      "path": "archaeology/src/foresight/archaeology/infra.cljc",
+      "mode": "100644",
+      "sha256": "618069fd3034c5b8637a6d20347c5b6ebf341fd5f64408465b276adbd0f90ed9"
+    },
+    {
+      "path": "archaeology/src/foresight/archaeology/law.cljc",
+      "mode": "100644",
+      "sha256": "135893ec42a240a7bc7c1f5c17e76cffcf3d1439a03dd8f3cd811b30f2b93695"
+    },
+    {
+      "path": "archaeology/src/foresight/archaeology/shape.cljc",
+      "mode": "100644",
+      "sha256": "05ca0c26cdeb2ffd3ad032ad6bae5b8da80a4d7ff7052563a17bb5131374a5c1"
+    },
+    {
+      "path": "archaeology/test/foresight/archaeology/domain_test.cljc",
+      "mode": "100644",
+      "sha256": "5f045209b1b34be162907175243cb6842acbba3cea5ea22c8d90cd354c9f11f9"
+    },
+    {
+      "path": "archaeology/test/foresight/archaeology/test_runner.clj",
+      "mode": "100644",
+      "sha256": "e5d06fcec6dacd9eb46f6a3da9ffe11ad30b600797fb3107c06c2a509930c0d5"
+    },
+    {
+      "path": "clobber/.gitignore",
+      "mode": "100644",
+      "sha256": "1e44995a0e6c30358ae989c25f973370bff88494dcd634ae3c77dea3fb67e8c2"
+    },
+    {
+      "path": "clobber/AGENTS.md",
+      "mode": "100644",
+      "sha256": "56fafba6c93e0359c2d408cdc3062ea4d25e5d5a11625047781047eb67b1431d"
+    },
+    {
+      "path": "clobber/PROVENANCE.md",
+      "mode": "100644",
+      "sha256": "fcde0456ef40d7df08986292319304311bbe1b6f57307d3f6cd356511e3cde50"
+    },
+    {
+      "path": "clobber/bin/clobber",
+      "mode": "100755",
+      "sha256": "810ad19841482a1a2ebcced9029224467284652b7f91ab93b39322a244165119"
+    },
+    {
+      "path": "clobber/bin/pm2-clj",
+      "mode": "100755",
+      "sha256": "cc11c519c82b95acac8efcf55370261577e26df6b3b8d9837329755cdfb78c5a"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-cli.md",
+      "mode": "100644",
+      "sha256": "0e5787250f4babb5fbbe4a3f8966a26d1a3b97ae966821b11371262242042d31"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-compose-helpers.md",
+      "mode": "100644",
+      "sha256": "1417494d4fd2c9f7bf4487595355d901ce223c8d4bdb5d1ccfc1b61c2b0f1bf5"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-compose.md",
+      "mode": "100644",
+      "sha256": "ebf336f01f7881b5d644d8ab47db6b13b6f9f1aa19445f33dfc8d95cfc846e38"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-eval.md",
+      "mode": "100644",
+      "sha256": "95609ca9385362369311c6ae3bec760075925d927075aef8d6e1d4f2e73b8038"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-extensions.md",
+      "mode": "100644",
+      "sha256": "68ba59d57f39fef4a996f045868a699219e6aaa02223c5a8246521667792dccd"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-internal-core.md",
+      "mode": "100644",
+      "sha256": "895ab4e79e91c13ed9d79a56bc22277c1484d9bdada67be9d52b04e56da447d6"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-mixins.md",
+      "mode": "100644",
+      "sha256": "9afa09f94b02efd9864d570f8b9a72044041ce5ce06ae1d1d7331bab63504192"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-prototypes-mixins.md",
+      "mode": "100644",
+      "sha256": "1c19105ba302c11e0d120ef9e17419fb952030fcb618cd35d20e16a8a1ba9665"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-render.md",
+      "mode": "100644",
+      "sha256": "6ce503cd6448ac0c80ac87dae34724c4e5e2d4675c691feb4f4c0a1c02368685"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-sci-eval.md",
+      "mode": "100644",
+      "sha256": "3e45981b609050e101736ecdefe345e25f271cabab6856e5c66f3c4c859080d5"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-services.md",
+      "mode": "100644",
+      "sha256": "85464908f2a6f6e76959a2599c7ba36afe3c321832d63d226f2ce8594b938355"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-sugar.md",
+      "mode": "100644",
+      "sha256": "79b5a31e9fafd1680c9f057f497cf26ad52d3c6827bb432ba98ac87c5161f200"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-v1.md",
+      "mode": "100644",
+      "sha256": "2f46eb9b7eff69b20358239771c95cfde8bf425c31f209a05a605d7406fbc4d9"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-v15.md",
+      "mode": "100644",
+      "sha256": "f6896de76cc565ddb26bf09a1acdec7b3e1da21951fd393de1771ce73eaf5207"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-v2-prototypes.md",
+      "mode": "100644",
+      "sha256": "275a05184953590ef6dc1863f6ea66d134103f15f92e252557b369518976fd77"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-dsl-v3.md",
+      "mode": "100644",
+      "sha256": "e95367d10a868fd3c88cf4fdb1c6305571bd21b44d0ebdc1782ee0598b85b98d"
+    },
+    {
+      "path": "clobber/docs/notes/infrastructure/pm2-clj-implementation-summary.md",
+      "mode": "100644",
+      "sha256": "11ea57dc31c3dd25c836aefcba856f1ea7bce3324240ef8fffa3e0a10d29cba8"
+    },
+    {
+      "path": "clobber/docs/notes/pm2/pm2-clj-dsl-v1.md",
+      "mode": "100644",
+      "sha256": "d872fda23601730de8c7296a7f73dbf8ce713593d81f0e6ed081dde932521d6a"
+    },
+    {
+      "path": "clobber/docs/notes/pm2/pm2-clj-dsl-v3-mixins.md",
+      "mode": "100644",
+      "sha256": "f6896de76cc565ddb26bf09a1acdec7b3e1da21951fd393de1771ce73eaf5207"
+    },
+    {
+      "path": "clobber/ecosystem.config.cjs",
+      "mode": "100644",
+      "sha256": "567633759d7d33c4763204f32e7e9dead71dcc5bcd7fbbf1e5af30be74fbc0a6"
+    },
+    {
+      "path": "clobber/ecosystems/base.pm2.clj",
+      "mode": "100644",
+      "sha256": "f77adca5673fff9f2401bc646b96e3a2d9b80ea29ea0bce8636ddf3aafc7b5cc"
+    },
+    {
+      "path": "clobber/ecosystems/base.pm2.edn",
+      "mode": "100644",
+      "sha256": "327163a1b9b055188a0b1423b77c951361bec69f25f0169d61ffbce282b41444"
+    },
+    {
+      "path": "clobber/ecosystems/services/api.pm2.clj",
+      "mode": "100644",
+      "sha256": "124693ed58aac939f6123eb329553a9083e0709c7844bc8918f3584e89af2944"
+    },
+    {
+      "path": "clobber/ecosystems/services/worker.pm2.clj",
+      "mode": "100644",
+      "sha256": "a6e4e5f6d834a68c2d82ea302c1a6f14f863d4902b6664f2ab1315c7454479c3"
+    },
+    {
+      "path": "clobber/ecosystems/stacks/agent-profiles.pm2.edn",
+      "mode": "100644",
+      "sha256": "48c66921f172e12462134dfe6ba1f5a85914d336444b53ade7639fb2ff38f968"
+    },
+    {
+      "path": "clobber/ecosystems/stacks/all.pm2.clj",
+      "mode": "100644",
+      "sha256": "0c2917cf6a6ee66fdb195b2e5683dce6ff83934d5972c9d42ca2463614213ed3"
+    },
+    {
+      "path": "clobber/ecosystems/stacks/all.pm2.edn",
+      "mode": "100644",
+      "sha256": "10ebdafc6bc1c59bbf36681e2f5e90b76332754913f2e4addf073f938d33281f"
+    },
+    {
+      "path": "clobber/ecosystems/stacks/combined.duck.pm2.edn",
+      "mode": "100644",
+      "sha256": "feb20bd0b534c449d5fd2c874d2e500dbff4bec1a01f46d8e686496f33cd0a0a"
+    },
+    {
+      "path": "clobber/ecosystems/stacks/combined.open-skull.pm2.edn",
+      "mode": "100644",
+      "sha256": "49969ec243744d1e71e47e785b36ee16e7ab7c1f1035249002c6760d0ea40568"
+    },
+    {
+      "path": "clobber/ecosystems/stacks/combined.pm2.edn",
+      "mode": "100644",
+      "sha256": "3eb557a7306bddf72c972efad600816f1c615740850e92923f8df2134768bae3"
+    },
+    {
+      "path": "clobber/package-lock.json",
+      "mode": "100644",
+      "sha256": "19fa3ff71970f52ab562d996495865ed790654d3ac88db55c9074fdec08f245a"
+    },
+    {
+      "path": "clobber/package.json",
+      "mode": "100644",
+      "sha256": "66c2887a553ac3eaf659b2a306d60b708ab8542a0f1fc70aaba0c23628f7aa1b"
+    },
+    {
+      "path": "clobber/pm2/complex-test.cljs",
+      "mode": "100644",
+      "sha256": "a4296eec24fcfb83bb8b9239622fc686e4000576e40cabd1d848c9a4318c72e4"
+    },
+    {
+      "path": "clobber/pm2/ecosystem.config.cljs",
+      "mode": "100644",
+      "sha256": "31c7c7553000151693165bd5131474462acf5e5059060229cd30fc32d217c877"
+    },
+    {
+      "path": "clobber/pm2/simple-test.cljs",
+      "mode": "100644",
+      "sha256": "ce6b4477a806157608c77309679e97910c760526782f3cce3d747f987b13401c"
+    },
+    {
+      "path": "clobber/pm2/simple-test2.cljs",
+      "mode": "100644",
+      "sha256": "b6d1b4fc7609b8dc00813311539a958251d1302823cf448db83a45796c1fbb4c"
+    },
+    {
+      "path": "clobber/shadow-cljs.edn",
+      "mode": "100644",
+      "sha256": "832f31bc16e0c9b0b85831f037b1ca7cd008a9b1fa1d8cbae011fbac612588b3"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-cli.md",
+      "mode": "100644",
+      "sha256": "1a8baf2925b2697879da6da9b0ddb58d9dfadbed3013e13de3dcae962f8de282"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-compose-helpers.md",
+      "mode": "100644",
+      "sha256": "62b677b750e3465dc72cfc780a4442ff862195301958f6b0b9ba6ab1098f8abc"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-compose.md",
+      "mode": "100644",
+      "sha256": "f12e22d3a8166a3b932ef4235a0ff54463107bb859409c419d6c48caad9a2a7e"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-eval.md",
+      "mode": "100644",
+      "sha256": "a79367cd83d331e6b239507ff57993ca960fa1e00690d54cf848ab57701eaeff"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-extensions.md",
+      "mode": "100644",
+      "sha256": "68181516b6237f43be77cab383289896c7950e3e225b2de10471c40e865cf8f9"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-internal-core.md",
+      "mode": "100644",
+      "sha256": "0a1d7c71d943faf346575b995d490a09e3c400077a56e8802ec3f208fe05c78b"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-mixins.md",
+      "mode": "100644",
+      "sha256": "6d48fac7da940f63070a019e13da7b135d123ead79b5a6768ad296dfe9bfe3ef"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-prototypes-mixins.md",
+      "mode": "100644",
+      "sha256": "cf955a7f12a030e6ba5df4682f094db75496965dd03957496674c3efc56bf383"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-render.md",
+      "mode": "100644",
+      "sha256": "3eb91b1a6edc1067a6bf02d6453f7eade9d20bfd221d7c692f0c2804c8549a9c"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-sci-eval.md",
+      "mode": "100644",
+      "sha256": "8c9f9b7f9bfcc83f840131a31e664cf55c286dddac90e898e8256f7c043c6895"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-services.md",
+      "mode": "100644",
+      "sha256": "38d43f5e4daa4982646c84502707b03a9e057a9b9bd934373156e3e1ba109f8b"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-sugar.md",
+      "mode": "100644",
+      "sha256": "333f9b2e215dab64031b76ffa924ae435c6b987377f5857f697ebe4726601af7"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-v1.md",
+      "mode": "100644",
+      "sha256": "3006facd5d197da192580d5a2b8fa36eb155c53d1a0e3e115bb148a8cef85087"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-v15.md",
+      "mode": "100644",
+      "sha256": "d15ebe9153aa892bec6ff5d2b716e402c54755ff3d632b32278f7ebb5754ebd6"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-v2-prototypes.md",
+      "mode": "100644",
+      "sha256": "dbcac983c5761d445942cd4157d4839b63c3885d9f9e1e0ef5815ade9c09f162"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-dsl-v3.md",
+      "mode": "100644",
+      "sha256": "5be24a6803cffd82fc511feae7dace2fd7d764dd3132fbbe6be7aa7b516c385a"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/infrastructure--pm2-clj-implementation-summary.md",
+      "mode": "100644",
+      "sha256": "2d379142736c7815b646a9ec8a413aa51f3a8a7c28448ef634646b26228e1010"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/pm2--pm2-clj-dsl-v1.md",
+      "mode": "100644",
+      "sha256": "370e626bc92a69dbc93af4aa325137103c501896c128d18215776bcd7a43b063"
+    },
+    {
+      "path": "clobber/spec/notes-extracted/pm2--pm2-clj-dsl-v3-mixins.md",
+      "mode": "100644",
+      "sha256": "8a9f5ef068376c8164339b4617c49ec670b78f3ad4cffb79087e88eceefa3147"
+    },
+    {
+      "path": "clobber/src/clobber/cli.cljs",
+      "mode": "100644",
+      "sha256": "640174d8aa2e2aa33e47332bcae9c1a59334897bcb1bde5118f1f50943470b4f"
+    },
+    {
+      "path": "clobber/src/clobber/dsl.cljs",
+      "mode": "100644",
+      "sha256": "766d1d9b78f45a10d4d5ef1637f99321366e2e2c5f262509a864d891fbbdf929"
+    },
+    {
+      "path": "clobber/src/clobber/macro.cljs",
+      "mode": "100644",
+      "sha256": "ca511c29afd53d8227938ec7c96b7222b7882d427a6fe736ac88267f420ce4b7"
+    },
+    {
+      "path": "clobber/src/pm2_clj/cli.cljs",
+      "mode": "100644",
+      "sha256": "298e85535e487c90cb20895c742e1de12714be57e63adaaeca996abb308d7cc3"
+    },
+    {
+      "path": "clobber/src/pm2_clj/dsl.cljs",
+      "mode": "100644",
+      "sha256": "7a06bd6f8c2ec0ccbcdf0e855a2c5a2b4b60b556072a258661048517761db932"
+    },
+    {
+      "path": "clobber/src/pm2_clj/eval.cljs",
+      "mode": "100644",
+      "sha256": "6c09c4aae0791fb05c3f699d1e275410237313f1da97fad908189ca6f9c64dc2"
+    },
+    {
+      "path": "clobber/src/pm2_clj/internal.cljs",
+      "mode": "100644",
+      "sha256": "da098971b9bcd8dec47665dec8103ec7a275a5affbbedabcc2d3a52bd43257fa"
+    },
+    {
+      "path": "clobber/src/pm2_clj/merge.cljs",
+      "mode": "100644",
+      "sha256": "0a530b85babcdaf064512378cfb7a6c0aaad23afcbd547d47e68d3c4040f538b"
+    },
+    {
+      "path": "clobber/src/pm2_clj/merge.cljs.bak",
+      "mode": "100644",
+      "sha256": "67454106dcfcf8641a5c3badd5b5de76885489e09a4f318ccc86dcf323abcd8d"
+    },
+    {
+      "path": "clobber/src/pm2_clj/pm2.cljs",
+      "mode": "100644",
+      "sha256": "ddfcf7bb97d1b8b3ccdb70075592bad7c8882c32958757284f7c964ef69651ff"
+    },
+    {
+      "path": "clobber/src/pm2_clj/runtime.cljs",
+      "mode": "100644",
+      "sha256": "40937f93b09738c7af682d210dfd82fabc2911dbaf57cc602b6015358f7be569"
+    },
+    {
+      "path": "clobber/src/pm2_clj/util.cljs",
+      "mode": "100644",
+      "sha256": "cfae6f8654949da51e9b360db22f40b8b08fdf003c138949c223cae4a4417c46"
+    },
+    {
+      "path": "clobber/test-ecosystem.cljs",
+      "mode": "100644",
+      "sha256": "4312c50f16a758c89db87289f21924625ad71225fc2212f8b6a9815ef05d7698"
+    },
+    {
+      "path": "config/dev-origins.edn",
+      "mode": "100644",
+      "sha256": "d2ad56130f4dad224c154f5987643792c9db48b3704078549b787c73fdf3dfa1"
+    },
+    {
+      "path": "config/quality-gates.edn",
+      "mode": "100644",
+      "sha256": "764e9f1a93dfb137e3fdfeba7807593e1b29be873631a15eb0f15dc198b30ba3"
+    },
+    {
+      "path": "docs/agile/AGENTS.md",
+      "mode": "100644",
+      "sha256": "a58b72f8532c860898def8a902a56ed467879a76303880cea94eb3fa81fe644f"
+    },
+    {
+      "path": "docs/agile/kanban/.events",
+      "mode": "120000",
+      "sha256": "62f084ea55756476172ea82637d90fed3b996987668ac352e2ceceaeb7fe07ab"
+    },
+    {
+      "path": "docs/agile/kanban/330aa63f-f697-5bd6-9fc0-3f19fbea2be4.md",
+      "mode": "100644",
+      "sha256": "20b9a6dcc0de8534e808a3b8e356801dea5b7c604daeed1face19b67e5857954"
+    },
+    {
+      "path": "docs/agile/kanban/5f19dd78-9ee5-4c3f-97a8-930f76994447.md",
+      "mode": "100644",
+      "sha256": "bfc0e4b922b5ab270fc466140d10a5e1b313f0567d2c69bbb365de956465d9d4"
+    },
+    {
+      "path": "docs/agile/kanban/760f7f1e-a086-4e0a-82a5-71d2a761073d.md",
+      "mode": "100644",
+      "sha256": "4ba4da2c1f1340abddf29e97094bc89ce4833348fbb30b407cae854805ac68d8"
+    },
+    {
+      "path": "docs/agile/kanban/98371a85-76ed-46e4-9fef-b733b630c799.md",
+      "mode": "100644",
+      "sha256": "1240891c187961c37c7c82c7138a674dc1ff70e713828ecc87a3b607cb503c42"
+    },
+    {
+      "path": "docs/agile/kanban/a32d2994-3a80-46c3-bc52-5815f3cf51ab.md",
+      "mode": "100644",
+      "sha256": "5434e32b80a7be4f7bc540bacc107c2daecb2a6a48402b9db86aa834378ce527"
+    },
+    {
+      "path": "docs/agile/kanban/add-a-promote-stage-to-pr-flow-romotion.md",
+      "mode": "100644",
+      "sha256": "713a6ef2f1babab1576dca76b1c039be4f564933945300cff22ed73c6dc0589a"
+    },
+    {
+      "path": "docs/agile/kanban/admit-sol-episode-events-through-clio-2c5ad649.md",
+      "mode": "100644",
+      "sha256": "bf9492e02ddc94729cbff691c8efc0eec17250124caf21600672c63108e57717"
+    },
+    {
+      "path": "docs/agile/kanban/authenticate-promotion-evidence-989b31ef.md",
+      "mode": "100644",
+      "sha256": "e30730693271de4a0918f95ee3c8143ec5d38acd849895199cc57feaacc2a4f5"
+    },
+    {
+      "path": "docs/agile/kanban/b0bb29f3-56d5-5c7c-9a1e-f4a1989e952f.md",
+      "mode": "100644",
+      "sha256": "647472064d3ee0c4dc5fe4d259665a9223bf499fb2a6a8235ee3f135253fd39d"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-01-codex-cloud-bootstrap-contract.md",
+      "mode": "100644",
+      "sha256": "ff27772f85c94bf5b365e8ec706fadc2203eed3a892b0acc2c65f813f484081c"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-02-cloud-safe-submodule-transport.md",
+      "mode": "100644",
+      "sha256": "47db0e04af3d454faba53e51e69a3e0b71685330d743707a6b98f3056e4f8024"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-03-idempotent-direct-child-hydration.md",
+      "mode": "100644",
+      "sha256": "8b931349eaa37e6f870152f44310072e7d47e69680beb92561b2241a9139063b"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-04-toolchain-and-root-validation.md",
+      "mode": "100644",
+      "sha256": "48c59b0729ebdcc842b7d90e73243f1d467349d5edabd9857b874a6630e6c2ef"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-05-fresh-root-only-cloud-acceptance.md",
+      "mode": "100644",
+      "sha256": "06a3eb99d56214eec51d6d586764864b08367c5ec6241edee322083930377ebf"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-01-separate-source-hydration-from-repository-access.md",
+      "mode": "100644",
+      "sha256": "d04f88cf950061f55820a4426334e3f8a0feec8174a306612047f764c8b95c50"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-02-project-dev-origin-map-into-codex-selection.md",
+      "mode": "100644",
+      "sha256": "bfa3763b04ee73b05bd2a1cd9c098fec88801be8ed41ef386d50756214b53ee7"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-03-configure-child-remotes-for-active-policy.md",
+      "mode": "100644",
+      "sha256": "630b900b03974715a366157460ac5926bf1bd174994da9369862198860576474"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-04-codex-cloud-access-acceptance-matrix.md",
+      "mode": "100644",
+      "sha256": "2bd81c4d291490a87cf2c10d166e6e3c57714b2e4053f9033aa1ccc0fac9b045"
+    },
+    {
+      "path": "docs/agile/kanban/codify-revision-bound-layered-evidence-gates.md",
+      "mode": "100644",
+      "sha256": "b141eae3492fb3ed2506987788d1bc39e59412c869d3a5ac6ed9fd7576f11b21"
+    },
+    {
+      "path": "docs/agile/kanban/configure-review-and-merge-protection-on-every-fork-ew-setup.md",
+      "mode": "100644",
+      "sha256": "a3006cf79f1292f770fda76e18ae2c353cf836fc1bb6fcca2042b695a28af51c"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-event-laws-6b44f2f4.md",
+      "mode": "100644",
+      "sha256": "11b41458ce39b97fb5cc2da9045215ed298a3f47e6235edbbe1219152954baf3"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-markdown-resolution-57b63011.md",
+      "mode": "100644",
+      "sha256": "6306360c32da3cba8c0676e4f84b330756cba9e2194342c0d8a530b553cc9d0a"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-mermaid-graph-laws-c3a5e4b3.md",
+      "mode": "100644",
+      "sha256": "42437597c8a620c75d80708702cbe9e5bbb3395a38fb0218ee069a4d52eee14d"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-portable-envelopes-ae23b7a1.md",
+      "mode": "100644",
+      "sha256": "6d7b8f35cea3bf0ee64875aeb36ab6214f77def8763398ac379f2e4df0c43ddd"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-reaction-planning-1d0d272c.md",
+      "mode": "100644",
+      "sha256": "ff5ea4bb7fb2ff2bf3943a863f4a131a5ba9eea3313aefdb96329a0e18edbd1a"
+    },
+    {
+      "path": "docs/agile/kanban/coordinate-eta-mu-github-evidence-agent.md",
+      "mode": "100644",
+      "sha256": "5240c510bf7605d8b0fcaedee100199490c7f6c14fdfc5f745bd96859c4994ed"
+    },
+    {
+      "path": "docs/agile/kanban/create-the-riatzukiza-dev-forks-ev-forks.md",
+      "mode": "100644",
+      "sha256": "82986b4c18ec4b8a0eacdd53e85082a9bc9312e17499091957848f5fea1c5ed1"
+    },
+    {
+      "path": "docs/agile/kanban/cut-sol-session-ledgers-over-to-clio-96c99928.md",
+      "mode": "100644",
+      "sha256": "878d099794cf86a1e8ce655f314698ab1bbfa714ff561c4ce0bf6cc065b21c9a"
+    },
+    {
+      "path": "docs/agile/kanban/ddebd3d4-7a75-5657-8ab9-cd606406f998.md",
+      "mode": "100644",
+      "sha256": "09f38ead3579eb67f1b1fcc7a4c579953e09445910d219c8b8412796c4d20d7c"
+    },
+    {
+      "path": "docs/agile/kanban/detect-fork-org-drift-ft-check.md",
+      "mode": "100644",
+      "sha256": "400c2385c12de96de1c14976bf648f6ef7ac7a394c36accc47e48acc972dd3d8"
+    },
+    {
+      "path": "docs/agile/kanban/e1-01-migration-surface-manifest.md",
+      "mode": "100644",
+      "sha256": "ac2f515927d3e36c0fe80cde5360de405fd0b1062615cf6008b6f6b37fa06ef7"
+    },
+    {
+      "path": "docs/agile/kanban/e1-02-faithful-clean-copies.md",
+      "mode": "100644",
+      "sha256": "12a253193a46c99363b2876e50014f57316c799d9e60f68285621b7b85cbb887"
+    },
+    {
+      "path": "docs/agile/kanban/e1-03-bootstrap-dependency-resolution.md",
+      "mode": "100644",
+      "sha256": "01654d81e903b82e86dcc1ab211341c3034c180dd2457f4dc1aea5c3bb52f08b"
+    },
+    {
+      "path": "docs/agile/kanban/e1-04-independent-git-history.md",
+      "mode": "100644",
+      "sha256": "26a873efb8d53a1f72c31566090a28e169181d0428cee4f4db4c23f6a59f2b4f"
+    },
+    {
+      "path": "docs/agile/kanban/e1-05-foresight-discovers-children.md",
+      "mode": "100644",
+      "sha256": "a388c55d0f85358827022b24f5c2d8c4e94286f8ee31341ac075ecb1032abc39"
+    },
+    {
+      "path": "docs/agile/kanban/e1-06-transplant-edges-one-at-a-time.md",
+      "mode": "100644",
+      "sha256": "767dfb3263c1349c1d2767f0597bcfc6fa073ae543e7385207686375a078432f"
+    },
+    {
+      "path": "docs/agile/kanban/e1-07-remaining-eta-mu-consumers.md",
+      "mode": "100644",
+      "sha256": "0d6e2577c4caf76adab3f1647d14ab791aa331eb00695303ea081c130a549c4f"
+    },
+    {
+      "path": "docs/agile/kanban/e1-08-osmos-ingestion-service.md",
+      "mode": "100644",
+      "sha256": "63b5015f77a82948bb9b066bd467143e4b22bc026e1ddcbf4c1d837a0872f90a"
+    },
+    {
+      "path": "docs/agile/kanban/e1-09-honest-quality-gates.md",
+      "mode": "100644",
+      "sha256": "4e274922aeeac58aa528da28b32046af768d8bfa1ce7372446af442e5b3d172a"
+    },
+    {
+      "path": "docs/agile/kanban/e1-10-reviewer-start-window-protection.md",
+      "mode": "100644",
+      "sha256": "fb32dd02beb07bc302719f5903ae51ee05074eec0c9c3b5d5a6443fb4b4a355d"
+    },
+    {
+      "path": "docs/agile/kanban/e1-11-donor-retirement-after-cutover.md",
+      "mode": "100644",
+      "sha256": "fcba3393dc66c29338be753aa4e6e233735edbca75d42f43225ebc598bbc44ca"
+    },
+    {
+      "path": "docs/agile/kanban/e1-12-migration-documentation.md",
+      "mode": "100644",
+      "sha256": "f4aebba1d4a96e868bb8ea481502d6986cb2f0c7388d0a2275abae230e556c5d"
+    },
+    {
+      "path": "docs/agile/kanban/ed7a709b-43e6-4270-9cb7-2cad9d89b4d0.md",
+      "mode": "100644",
+      "sha256": "8d56de8e45ee2e54c1803f44301229fc350cb961875665ee5b0e960323f316f8"
+    },
+    {
+      "path": "docs/agile/kanban/epic-codex-cloud-repository-access-and-fork-auth.md",
+      "mode": "100644",
+      "sha256": "c925dbe61f934f56574e532c9a2f0e5be18fe0dde39d8fe750587756e3a11a50"
+    },
+    {
+      "path": "docs/agile/kanban/epic-codex-cloud-self-hydrating-foresight-workspace.md",
+      "mode": "100644",
+      "sha256": "d3ff67b8eefdf6b30d22a300c05e09707f7210d025d9dda84da97aa9183eabe6"
+    },
+    {
+      "path": "docs/agile/kanban/epic-develop-on-riatzukiza-forks-orgs-receive-promotions-and-run-ops--origins.md",
+      "mode": "100644",
+      "sha256": "3b5bfd88c47fba62a77db7618f5ee475e5e4ec93f93fbaf9f6d5243ae7459f7b"
+    },
+    {
+      "path": "docs/agile/kanban/establish-the-pinned-repository-census-94175066.md",
+      "mode": "100644",
+      "sha256": "168c5a0111ee060ecbbc30553745e6da56d40097ce2faa4f138c430443b16c6b"
+    },
+    {
+      "path": "docs/agile/kanban/isolate-exact-commit-evidence-execution-be44f659.md",
+      "mode": "100644",
+      "sha256": "dd651e661f296c136bc10a79ed0b2e38f3b1d19db25117fb09a699e56cc637ee"
+    },
+    {
+      "path": "docs/agile/kanban/make-org-repositories-promotion-only-and-document-the-split-ops-only.md",
+      "mode": "100644",
+      "sha256": "cb3587553ccdd6c43031f7f846da7a1edb895144b517615a4ac96424e6bea8a1"
+    },
+    {
+      "path": "docs/agile/kanban/point-foresight-s-submodules-and-local-checkouts-at-the-forks-to-forks.md",
+      "mode": "100644",
+      "sha256": "e9062e8a3e73dc8950d39823fba83fa654197f1a063e6a946b30abc82750d319"
+    },
+    {
+      "path": "docs/agile/kanban/prove-content-generation-layout-publishing-and-review-independently.md",
+      "mode": "100644",
+      "sha256": "0c8d1288aa45b56e7dca8b048ba0f033eb0e83b8e13cde60a7c487a16a56989a"
+    },
+    {
+      "path": "docs/agile/kanban/prove-translation-generation-and-sme-review-independently.md",
+      "mode": "100644",
+      "sha256": "9c4e98b8b5f49f4197749e9708d6db13b0d6e362ce851fc3b4cb7435a6ae517f"
+    },
+    {
+      "path": "docs/agile/kanban/reconcile-the-opening-pull-request-portfolio.md",
+      "mode": "100644",
+      "sha256": "fdee3ef9ecfa150b92635787b347d4c9296684bfe7e1ca00afc45e54ea434111"
+    },
+    {
+      "path": "docs/agile/kanban/record-digitalocean-deployment-acceptance-86af1ffc.md",
+      "mode": "100644",
+      "sha256": "fd2b8191e2e725cd4bb16ffad6295fc083dba63fb3fae7f6b8b495b00a127d56"
+    },
+    {
+      "path": "docs/agile/kanban/record-the-fork-org-map-as-validated-data-igin-map.md",
+      "mode": "100644",
+      "sha256": "38d31e56d838632744175f127b4d85620fed1b1a6e748f6b2400a015336fbd35"
+    },
+    {
+      "path": "docs/agile/kanban/recover-inaccessible-census-revisions-3c4226e3.md",
+      "mode": "100644",
+      "sha256": "0d7eeb529fb81d29f3b49e2da5bb61da5f8712045c7a1d31bc5bff48eea7c993"
+    },
+    {
+      "path": "docs/agile/kanban/replace-sol-legacy-ledger-dependency-with-clio.md",
+      "mode": "100644",
+      "sha256": "6b6dd49fc64e1a757b8f1ce46070303fcaf28b9326fe68e6468289f9c6c68422"
+    },
+    {
+      "path": "docs/agile/kanban/restore-reproducible-sol-node-22-runtime-prerequisites-dd91f6b6.md",
+      "mode": "100644",
+      "sha256": "a552dbab9a4374331a80e08c5be9087fc142b30d24136a97fac6096bca5d2749"
+    },
+    {
+      "path": "docs/agile/kanban/run-the-foresight-root-gate-on-every-pull-request-te-in-ci.md",
+      "mode": "100644",
+      "sha256": "7ffb1ed70ffe7cd28ff1fb91a21f2f9a2a41a0bbd76f497b1dab41aa0c637d0f"
+    },
+    {
+      "path": "docs/architecture/new-actor-census-2026-09-06.md",
+      "mode": "100644",
+      "sha256": "1e81d957dd0a9c6607837ed6a82d89b68b669c14cde54ece3f34aa885c2bf1e2"
+    },
+    {
+      "path": "docs/architecture/self-documentation.md",
+      "mode": "100644",
+      "sha256": "60aad261e9c37c8fa9a0a06a236e37d2608fb96931c977d1d4e5206bc6cb5cc2"
+    },
+    {
+      "path": "docs/architecture/workflows/README.md",
+      "mode": "100644",
+      "sha256": "c092cd621ba1fa834ec4c8afce3d39401b155d684cc6e7113776a5a41f825b3b"
+    },
+    {
+      "path": "docs/architecture/workflows/alpha-eta-mu-pi.mmd",
+      "mode": "100644",
+      "sha256": "46595528c78fbb928683d217b66d6f0bbc5eb2349aa878b5078191ddeeb6a124"
+    },
+    {
+      "path": "docs/architecture/workflows/alpha-reaction-selection.mmd",
+      "mode": "100644",
+      "sha256": "903374595c3f767497a76a31aefaf053a9aef38828d6fb48e7702e540b826ff0"
+    },
+    {
+      "path": "docs/architecture/workflows/artifact-reactive-flow.mmd",
+      "mode": "100644",
+      "sha256": "3908cf8d30db4af4155a17c32a8455a4adab6a70b5c27f666e79d14178950ce9"
+    },
+    {
+      "path": "docs/architecture/workflows/epiphany-document-flow.mmd",
+      "mode": "100644",
+      "sha256": "d2bfd980e35beba84d3ad46a826d9620fca3e9796e15e1bf2a35f9c26d4d5d13"
+    },
+    {
+      "path": "docs/architecture/workflows/markdown-profile-facets.mmd",
+      "mode": "100644",
+      "sha256": "920edb69bb0299cdaa84fa144ab75e516db4599818bcd69667bc97ad3878129a"
+    },
+    {
+      "path": "docs/lineage/promethean.md",
+      "mode": "100644",
+      "sha256": "01212a97c5462b1adf8e1e47fd2829b26bdab4739b4b0c6f5038473fd2d1a306"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/README.md",
+      "mode": "100644",
+      "sha256": "827647532167708dcfd6b9a071248a8ce132ae37985f3933969941c787429b8f"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/SHA256SUMS",
+      "mode": "100644",
+      "sha256": "2505cd18f79ef501e5301b4a8dfbe5016cfce70e5c72d0722eaf21bfaa8c37cf"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/acceptance.md",
+      "mode": "100644",
+      "sha256": "7d7b6dfa12cebec29326eb220bce6e94902a73338b5b9ad9fa740836da45230f"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/build_data.py",
+      "mode": "100644",
+      "sha256": "f757342a4fd7a46c030cbb28a4852d4e3879db8cb3cfac0071d0fd9fc7416ce7"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/checks/check.log",
+      "mode": "100644",
+      "sha256": "3e38c5de951bf9e497e8280882dba8062c858909cb58ed57a03b41ab7b8f3bea"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/checks/check_pack.py",
+      "mode": "100644",
+      "sha256": "bf7fa97f43c7b3a5e6587fbd708f3b1bd30384532a8a4ce4c7fb384b8d91a9d0"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/checks/initial-check.log",
+      "mode": "100644",
+      "sha256": "d8969e0bdad0f03b6da22edafb198c2907706c55402894470e2f6910395b04ad"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/checks/validation-report.json",
+      "mode": "100644",
+      "sha256": "fcfa3b832000d90b46683272107a7bf4bad6efd3ebc606aa2d03dadc6d60d2af"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/child-gate-evidence.md",
+      "mode": "100644",
+      "sha256": "96176446733733c7d7a94e88288d93198c7e865bab381d1491f422c1de9504b1"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/classification/README.md",
+      "mode": "100644",
+      "sha256": "29dcc2e466b2b1005ccadd37d449296d6793425eeefb00dbbea52aaa23275174"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/classification/build_contract.py",
+      "mode": "100644",
+      "sha256": "c727e8d002692e69d5c199a43d2b3b1aef0f10193bb919bf7ed550f92cb24ad4"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/classification/document-labels.schema.json",
+      "mode": "100644",
+      "sha256": "fc8a3fe21ee832e4a25b27deb444721301cb8b06a8bb1ab361575b94079966e2"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/classification/example-document.md",
+      "mode": "100644",
+      "sha256": "301ae9f1da8eeb3e2684831634ff64717d8ce57a5b69090421a134be88ab514d"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/classification/example-input.json",
+      "mode": "100644",
+      "sha256": "a7f9acb796a4f2d9bd275f0cd785633b447e7474dd3379541e087fe440963cd4"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/classification/example-output.json",
+      "mode": "100644",
+      "sha256": "855e2434e92dfab3ed00ba90fb97c4099df76c373122b2b7631e74d1e5800ede"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/classification/system-prompt.txt",
+      "mode": "100644",
+      "sha256": "2ee21b507486e9c20be049414ab4dc9b9d46e7e75598110e0b297c6a66d3fb67"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/closure-manifest.md",
+      "mode": "100644",
+      "sha256": "5032a2fcbc0a0838fd2486c2ba754b38878cd72444c0a16ba563aff4ffc34848"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/data/registration.json",
+      "mode": "100644",
+      "sha256": "36d318c1ce272227b2a92e16f6b96214d08b8158efe7d462a8ce280cee77cfde"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/data/relationships.json",
+      "mode": "100644",
+      "sha256": "04ae24a6e703d1d6620dfc72d9460e39c9341b5e9dcf9bbe252a390542fb57b2"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/data/relationships.nd.edn",
+      "mode": "100644",
+      "sha256": "7fb4c4b1028cdc78b48901df33283c1d8581833b56455b0fff6af93bb44bbc58"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/data/revisions.json",
+      "mode": "100644",
+      "sha256": "0c1ee4afe08de63aa1c8866c8af7e312b5d6e43744760dc5a184557439d6de60"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/data/sources.json",
+      "mode": "100644",
+      "sha256": "0ccb86e242909d8894c70d3439dfe7b37a85924de02eafa89c525c3fb0a969a0"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/data/unresolved.json",
+      "mode": "100644",
+      "sha256": "302e55ddcd1b7f6c44a4884be6892e9975063afefce3c4f0f2542c5d4aa0829e"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/dependency-analysis.md",
+      "mode": "100644",
+      "sha256": "715b664303dca6e83d96fd516b22d42d92f95cc9019c72fdf3b51c05ceb32575"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/donor-retirement-blockers.md",
+      "mode": "100644",
+      "sha256": "4a49db62e321309badabf4b5454e4be2ba01d8f907b7dee908e12f85da0a1713"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/edge-disposition.md",
+      "mode": "100644",
+      "sha256": "bba2de563cc2d92a0e4760b9406abb10900f32d30630584e32e77f2006338237"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/epic-01-operation-eta-mu-breakdown.md",
+      "mode": "100644",
+      "sha256": "4d7441bb28238a4403878b4046763f1780df5393ae9f895d6c66bb171cdcc0f4"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/epic-02-rheos-document-corpus.md",
+      "mode": "100644",
+      "sha256": "7798264d4df79d45da573c119526eb0cb251c74d8f272e0549016e07b9fca934"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/01-observed-package-dependencies.dot",
+      "mode": "100644",
+      "sha256": "77754d84d5e3fca85ba55a97c393be6a3d25c87f8e4bd00ab13ab5ca049a90f6"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/01-observed-package-dependencies.mmd",
+      "mode": "100644",
+      "sha256": "f28f76911dba4a32d4073778626e39d02ea8b64656ff19e21e20880b0ad16952"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/01-observed-package-dependencies.png",
+      "mode": "100644",
+      "sha256": "4bb43d3c07d7ca43bc4c9604b7249aa1dc51f5c77a20a6e7f316dcaaa3281241"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/01-observed-package-dependencies.svg",
+      "mode": "100644",
+      "sha256": "480110a7ab3c1ea6742a789f89ab58ea4e54ee080a366a6fe31da3f86933c820"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/02-runtime-and-contract-relationships.dot",
+      "mode": "100644",
+      "sha256": "c70209115601d2c10f6e4371f669540814116a2c8f9480da358b014634cafdce"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/02-runtime-and-contract-relationships.mmd",
+      "mode": "100644",
+      "sha256": "866ccc09dd9672293e6155a414a86a76a8ea3a6516e8aad15a02cddd601004b2"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/02-runtime-and-contract-relationships.png",
+      "mode": "100644",
+      "sha256": "290435467832a4e2cfc52cb43299d1e52156d238b63db261993b64776e956c01"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/02-runtime-and-contract-relationships.svg",
+      "mode": "100644",
+      "sha256": "4a8f53ff2cc1697e714d2c9104414913d8747903c3ec6db97481876c5e3a17b4"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/03-proposed-migration-stages.mmd",
+      "mode": "100644",
+      "sha256": "144cb34baaae6194611c4f86470ea25c0a8d1ebcfb0386cc641ac2e84294090d"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/04-proposed-document-architecture.mmd",
+      "mode": "100644",
+      "sha256": "76375bf9074e777165653ae051657c7f6c1eba84cb54feefd1cee740630dff3f"
+    },
+    {
+      "path": "docs/migrations/eta-mu-breakdown/graphs/05-proposed-document-lifecycle.mmd",
+      "mode": "100644",
+      "sha256": "7f23f1a7a70893e379cb3aa938a32c6189e5aef01795fcc05444dabe42a0cd47"
+    },
+    {
+      "path": "docs/notes/alpha-package-first-laws-foresight-pr-2.md",
+      "mode": "100644",
+      "sha256": "a3d1395167a735d84caf5c3fde77cc7f17511cb8a9b557374e69a5173a6ccc3f"
+    },
+    {
+      "path": "docs/notes/alpha-portability-requires-executable-evidence.md",
+      "mode": "100644",
+      "sha256": "412beee8baaee71dc609f75a14153965150d48b5a514cb0e52eb380191601d9c"
+    },
+    {
+      "path": "docs/notes/board-split-and-publication-epic-review-triage.md",
+      "mode": "100644",
+      "sha256": "780f9b74250e012b97ef220c4d7aab2d2e9a95271644fdea3d8c5f7fc7bcb538"
+    },
+    {
+      "path": "docs/notes/design/axxium-event-fabric.md",
+      "mode": "100644",
+      "sha256": "54754cbc9b2ba5d219a9cc086608ac7f36f8e610ad5efa5d4f645f93952bbaee"
+    },
+    {
+      "path": "docs/notes/design/eta-mu-github-evidence-workflow.edn",
+      "mode": "100644",
+      "sha256": "4435cfc44f19a52afda12f33633de70726d1cd72cd557830a57d13438c3e2569"
+    },
+    {
+      "path": "docs/notes/design/eta-mu-github-evidence-workflow.md",
+      "mode": "100644",
+      "sha256": "bb1ec1c5e2b46d1a3264bc5667fa6504d9ac2ffba78baa4bc241c51a39325cae"
+    },
+    {
+      "path": "docs/notes/design/promethean-pr-process.edn",
+      "mode": "100644",
+      "sha256": "35cbc8c554017c0a7b86b230a65e1f6d7e3bd0d367da1ec7a79ec80c56b980b6"
+    },
+    {
+      "path": "docs/notes/edn-contracts-mcp-angular-client-decision.md",
+      "mode": "100644",
+      "sha256": "c5bcfce278258cb3a5c3ff6873429b10e3191934ead1c987b9f8cfe4a3fca044"
+    },
+    {
+      "path": "docs/notes/evidence-first-review-law-crucible-triage.md",
+      "mode": "100644",
+      "sha256": "520976a2d7b3aaa3e7c1880007b35f053dc75a93e7a99679a5a5bc9e2afb0f13"
+    },
+    {
+      "path": "docs/notes/foresight-pivot-naming-alpha-eta-mu-pi-clio.md",
+      "mode": "100644",
+      "sha256": "82e274642e89443abd00106bc4253273dab07a2afc12bd9da937fc04915dc55e"
+    },
+    {
+      "path": "docs/notes/four-independent-capabilities-repository-translation-review-rendering.md",
+      "mode": "100644",
+      "sha256": "931f7489c22d00afb6fdcc9c33a9a951052343472b933950cef84e83db8d620a"
+    },
+    {
+      "path": "docs/notes/generalizing-rheos-artifact-event-reaction.md",
+      "mode": "100644",
+      "sha256": "89299a78dabdb289ae1ac4168ba854b5d5e6bc1ba0b3934365f02c917ae68152"
+    },
+    {
+      "path": "docs/notes/hiccup-vs-helix-rendering-representation.md",
+      "mode": "100644",
+      "sha256": "3034898d5f35af8d81def564f1464e880fb42a18022b8b3f3adf3c075272ce66"
+    },
+    {
+      "path": "docs/notes/mu-studio-archaeology-calliope-knoxx-epiphany.md",
+      "mode": "100644",
+      "sha256": "d906c1cddd7ef1d20d81dbb38aa19fc7d215ccaac1b3b7786f13898104280e03"
+    },
+    {
+      "path": "docs/notes/naming-operation-categories-repository-transduction-evaluation-representation.md",
+      "mode": "100644",
+      "sha256": "d2c6d4e5e6ff13e66084f56da69e23bfc141f22040af03e70aec83bdaf3229e4"
+    },
+    {
+      "path": "docs/notes/open-pr-portfolio-2026-08-29.md",
+      "mode": "100644",
+      "sha256": "2e1d38dbbb1a29f8657a2eafd5fff1440a8d017a023c2fd6fea5b81527549880"
+    },
+    {
+      "path": "docs/notes/operation-contracts-beneath-workflowstep.md",
+      "mode": "100644",
+      "sha256": "d227a45d26ebbe96fbda7a65ecad7dc4e514befee6d7a88186f201588d3dcbfd"
+    },
+    {
+      "path": "docs/notes/portfolio-terminal-state-audit-2026-08-29.md",
+      "mode": "100644",
+      "sha256": "2aeb7421a9fedf94a6fb596332aa919e2987309d4fddd11243f33cfcdc860e6a"
+    },
+    {
+      "path": "docs/notes/project-law-promotion-status-triage.md",
+      "mode": "100644",
+      "sha256": "60dd6f1f155c6c9f8d0c435e0b97b38489b91082938afa5dced19e24367770e1"
+    },
+    {
+      "path": "docs/notes/promethean-review-and-promotion.md",
+      "mode": "100644",
+      "sha256": "40710408f89a80b13ae199b783a7e0e161a8c3dc6cdf028cd239b7205d9dc636"
+    },
+    {
+      "path": "docs/notes/purifying-katamorph-schema-to-cljc.md",
+      "mode": "100644",
+      "sha256": "c642097f7c7371f51b8ca756344fba513f66d60b910f64db5fb709286d7d3509"
+    },
+    {
+      "path": "docs/notes/revision-bound-review-evidence-triage.md",
+      "mode": "100644",
+      "sha256": "7c6ceeb34a0bbe4b5c958698d148701244cdc7ce53343ad79b7a4be499c62868"
+    },
+    {
+      "path": "docs/notes/sol-clio-prerequisite-investigation.md",
+      "mode": "100644",
+      "sha256": "eec408960642a7f8bb209005d019da58f62dd976177371fcc5cd45e11d8e3abf"
+    },
+    {
+      "path": "docs/notes/the-muse-process-is-the-product.md",
+      "mode": "100644",
+      "sha256": "77c33c89d1a50da16d69e66ba74c7aff4f987431339aaba827bec4503d4373e5"
+    },
+    {
+      "path": "docs/notes/typed-dataflow-step-in-action-contracts.md",
+      "mode": "100644",
+      "sha256": "39607a2b6f3d1ff992feaa200179840af43487c1d01990f438c94ac1ad8fd89d"
+    },
+    {
+      "path": "docs/notes/workstream-alpha-katamorph-workflow-stack.md",
+      "mode": "100644",
+      "sha256": "a5b6bd26266491cff3494c04f53de7d8e60621abe85a19a3740b50d32bf3c103"
+    },
+    {
+      "path": "docs/notes/workstream-knoxx-mcp-auth-dev-deployment.md",
+      "mode": "100644",
+      "sha256": "5654c16673b845a961c4c3bcd6550c184e37127ef5625dfa00b32a313cba571d"
+    },
+    {
+      "path": "docs/notes/workstream-knoxx-publication-evaluation-reconciliation.md",
+      "mode": "100644",
+      "sha256": "11f797f86e792d531e8bdb314f5f4a2903f22e468d2d1d690a4b657f938755d3"
+    },
+    {
+      "path": "docs/notes/workstream-portable-sandbox-review-infra.md",
+      "mode": "100644",
+      "sha256": "fd30eab5cc350739d29e6fc82865c545b0d297086bb9ad9c4da8035876f8a821"
+    },
+    {
+      "path": "docs/research/epiphany-repository-census-ingestion.md",
+      "mode": "100644",
+      "sha256": "b2879cb60dcbb90bd0e0610e1135497fea54c3707c8d7e018730a5dd064b451b"
+    },
+    {
+      "path": "docs/research/interpreter-corpus-drive-boundary.md",
+      "mode": "100644",
+      "sha256": "d724709f263206289e665870ef9e6cd645cd038f150f9e8d11c399a847db866b"
+    },
+    {
+      "path": "docs/research/repository-census-current-pinned-closure.md",
+      "mode": "100644",
+      "sha256": "98a8db4f8ad484782a5599fd92981d50465bcbc7726bc9f679a14f277af63d64"
+    },
+    {
+      "path": "docs/research/repository-census-known-frontier.json",
+      "mode": "100644",
+      "sha256": "077090ed57ee8f3bce4a901e166b1d186c729e3e1d57cc3e537e99d20990a267"
+    },
+    {
+      "path": "docs/specs/inflight-completion-and-knoxx-lift.md",
+      "mode": "100644",
+      "sha256": "d312a7fa82056bfc0c55ea59733d1243df10cb844675a1ef9ebc6f09857055a4"
+    },
+    {
+      "path": "docs/specs/knoxx-knowledge-worker-event-chain.md",
+      "mode": "100644",
+      "sha256": "5470f20a82182824cc7f4d75f2786906ab7449c754cacde31e893030d95d27d3"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/README.md",
+      "mode": "100644",
+      "sha256": "ea5d4174b643b43c51007005d2e3a150463cca58daed247d519af825223b0efe"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/compiled-probe.log",
+      "mode": "100644",
+      "sha256": "bc94ed9984661ff17b69e8c85b2a659f3eaffc870d7a4612137a44610c2e8287"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/deps.edn",
+      "mode": "100644",
+      "sha256": "fb55be0363734eb7a3064a97b4e8957897e86a1118d067c0391d74600c204649"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/esm-runtime.log",
+      "mode": "100644",
+      "sha256": "f79b36a0a40f234426b65e1c242e8ec63065d7a0cd7e761fadc9ea724157eb8a"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/frozen-install.log",
+      "mode": "100644",
+      "sha256": "47c5a7b4f7f8fd053e4ab7d103d1d264f4764112cb48470be9ba49f83a3f02b2"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/lock-resolution.log",
+      "mode": "100644",
+      "sha256": "b125771fda8addd462adfe7f7b03299feb35e28badbb2d16ae8589e371216f8f"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/original-proof.json",
+      "mode": "100644",
+      "sha256": "5ec5896739549920fb2d860691a8294c699cdbf4edc9a69ee98368eee56eaa82"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/package-lock.json",
+      "mode": "100644",
+      "sha256": "51ac6cab08de73cb0f4d80027aa159dce1051b38bdca2a9616e5b8a2f68b024f"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/package.json",
+      "mode": "100644",
+      "sha256": "f4d2e14a75aff62a0246d75eebf89b93c63f6d8cf2721ad6837ae6891369787f"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/shadow-cljs.edn",
+      "mode": "100644",
+      "sha256": "cb902ea986b7664feba1a3b561c7850cb21bf8395e969c8e23576085d4c1fb9a"
+    },
+    {
+      "path": "docs/verification/sol-clio-probe/test/probe_test.cljs",
+      "mode": "100644",
+      "sha256": "c398186d0cf6bbe341b67824f769fe31c31181b98dd134dd3217f1c4b7752c8f"
+    },
+    {
+      "path": "eta/.clj-kondo/imports/babashka/fs/config.edn",
+      "mode": "100644",
+      "sha256": "bb9605abdcb83246d268ca0d72a8e03cd4db000818b6411adaa13f723caa854a"
+    },
+    {
+      "path": "eta/.clj-kondo/imports/http-kit/http-kit/config.edn",
+      "mode": "100644",
+      "sha256": "51fa0dfdc9d64d756d618984b1bc95243880379481638fb69677d67ba9de526f"
+    },
+    {
+      "path": "eta/.clj-kondo/imports/http-kit/http-kit/httpkit/with_channel.clj",
+      "mode": "100644",
+      "sha256": "aecfac4df1496a67291cf129cc548536246cb904540a449a0e4b2e8f27aceddd"
+    },
+    {
+      "path": "eta/.clj-kondo/imports/rewrite-clj/rewrite-clj/config.edn",
+      "mode": "100644",
+      "sha256": "9ad24d29701957b934f64a85d52363b28c8b4bf023d8988d037e8c524b272a0c"
+    },
+    {
+      "path": "eta/.clj-kondo/imports/taoensso/encore/config.edn",
+      "mode": "100644",
+      "sha256": "7dbb1dae03f7d19437718758c66c4abce6f0253618318105920e1f0b362886fb"
+    },
+    {
+      "path": "eta/.clj-kondo/imports/taoensso/encore/taoensso/encore_hooks.clj",
+      "mode": "100644",
+      "sha256": "ee16bb45f7077fd6beceef7746eead13cca5656c2ad00cc0b62572c82cc7c00f"
+    },
+    {
+      "path": "eta/.eta-mu",
+      "mode": "120000",
+      "sha256": "379ed8a4b23477b35cacc90d48d113079662bfda27af29b9451b57783461cf3a"
+    },
+    {
+      "path": "eta/.gitignore",
+      "mode": "100644",
+      "sha256": "8b38e61569de6187ec03214b97386be70e289720a428b9d211f068c30c74c950"
+    },
+    {
+      "path": "eta/.lsp/.cache/db.transit.json",
+      "mode": "100644",
+      "sha256": "0fbb4d715a823c18cd29dc41ce9b0eddb323ed09fe1570724c29345ed46e8361"
+    },
+    {
+      "path": "eta/.\u03b7\u03bc/PRINCIPLE.edn",
+      "mode": "100644",
+      "sha256": "7205cb7c9ae95ee60d10e0cf8e4148c19c2f5afdd13f3bf86c21343f10cdab31"
+    },
+    {
+      "path": "eta/AGENTS.md",
+      "mode": "100644",
+      "sha256": "604227fd35f1606caebd2fa1f909ef26af91c19d75a141eae581d89d61fb319d"
+    },
+    {
+      "path": "eta/CLAUDE.md",
+      "mode": "100644",
+      "sha256": "384708414e5926738f6346da00e115338c37446fcc5cadb11c5fb1b5f6a6dade"
+    },
+    {
+      "path": "eta/README.md",
+      "mode": "100644",
+      "sha256": "38913f01c5f4f8dec92c5ecaa830a2cabfd77c337305551074d13bb62ae6372a"
+    },
+    {
+      "path": "eta/bb.edn",
+      "mode": "100644",
+      "sha256": "ef0b3022a8d81c2f50c285bc2ac74952eedb91c2e81697a04c80e8b6b7f7c97e"
+    },
+    {
+      "path": "eta/deps.edn",
+      "mode": "100644",
+      "sha256": "a82eb582c9c6a9b243c649f91a1b916a01b75110cb8b8a9495aa384450c73e2d"
+    },
+    {
+      "path": "eta/dev/dev.clj",
+      "mode": "100644",
+      "sha256": "18d1f18382f1696e10a10985e44f8d4db060c27ccfa5ac2bfeee3043e1c7eca8"
+    },
+    {
+      "path": "eta/resources/system-prompt.md",
+      "mode": "100644",
+      "sha256": "ef9e10f8f987519945697cbbbad103f9f23e256501b05098cbd830fbbc7abcfc"
+    },
+    {
+      "path": "eta/run.sh",
+      "mode": "100755",
+      "sha256": "bb2f826d98dff744f9cc61fa14c01a3e6a9ddbc44a25dfb15c19aa21c37907ae"
+    },
+    {
+      "path": "eta/src/eta/agent.clj",
+      "mode": "100644",
+      "sha256": "77f531178d5581a8e91875f77c24e9c23b9d5cc4eeffe4b9358a4c9917fbbf8a"
+    },
+    {
+      "path": "eta/src/eta/core.clj",
+      "mode": "100644",
+      "sha256": "bf0f47645552fbf7d6bf85a35cf1e67110b82d335ca8cbd568160ea1e03abff8"
+    },
+    {
+      "path": "eta/src/eta/provider.clj",
+      "mode": "100644",
+      "sha256": "cd50884ac57b62c906865b33352a4353c5e50471876bc29e60aa07fb2a03f60c"
+    },
+    {
+      "path": "eta/src/eta/tools.clj",
+      "mode": "100644",
+      "sha256": "127d37a69de7a8188092a2137e78a10bbe2bf62bda63e5ccfc38378e06e1e4a7"
+    },
+    {
+      "path": "eta/src/eta/tui.clj",
+      "mode": "100644",
+      "sha256": "318b1a614e84873f92dacf786669944ba83bdccbaeaf8dbbb524d7560df856e0"
+    },
+    {
+      "path": "nbb.edn",
+      "mode": "100644",
+      "sha256": "1c037f5c402f45853439d29168a0d76f8f622a173d882d3b7beaaad6ba8ce343"
+    },
+    {
+      "path": "openhax.kanban.edn",
+      "mode": "100644",
+      "sha256": "d0c04722963d540448c6b60c8e0d6d14e7129cf747a2b057f0ed63612b262d86"
+    },
+    {
+      "path": "openhax.kanban.json",
+      "mode": "100644",
+      "sha256": "1bc6c217180601964638c8ea0647a7c2f3c4e72bdc05cf6412b39ddfb2f5c1e6"
+    },
+    {
+      "path": "scripts/evidence.clj",
+      "mode": "100644",
+      "sha256": "745ba5dd58f5a2c991e5b65933a6f3134f5ab64e5eecbd5731c13e9f3d8f1f69"
+    },
+    {
+      "path": "scripts/project.clj",
+      "mode": "100644",
+      "sha256": "bbe2bcec6b0791470690f44e52f9ad0b2f3f529bc3c29832a72e633593a702fe"
+    },
+    {
+      "path": "scripts/reference/repository-census/args.mjs",
+      "mode": "100644",
+      "sha256": "781eb33440cf2784c5431e3dc5c136ecb9c8c96e8b9cff2973c418a8fa154b57"
+    },
+    {
+      "path": "scripts/reference/repository-census/census.mjs",
+      "mode": "100644",
+      "sha256": "1985938098f8e5509714840a88f8c530a9d4453c39d59d929e6cc3ab02a06a19"
+    },
+    {
+      "path": "scripts/reference/repository-census/edn.mjs",
+      "mode": "100644",
+      "sha256": "8161f3358498e29495d3122ac4bc1d3f64c7e3a8b4ec5d062d0042ecd6807d10"
+    },
+    {
+      "path": "scripts/reference/repository-census/github.mjs",
+      "mode": "100644",
+      "sha256": "15b3544a6673d58d6ab1680d25b5389b3a8dafa0a1e2ae53de343e145ed6d73c"
+    },
+    {
+      "path": "scripts/reference/repository-census/gitmodules.mjs",
+      "mode": "100644",
+      "sha256": "5d597f3eb281c2c1eeda875845b36c5f18e1920d2ccd29d1c95943eee8006046"
+    },
+    {
+      "path": "scripts/reference/repository-census/main.mjs",
+      "mode": "100644",
+      "sha256": "01e292342ae8786e4e714d05b0827966a01192f35f319df6d3fd8ffba23a1845"
+    },
+    {
+      "path": "scripts/reference/repository-census/output.mjs",
+      "mode": "100644",
+      "sha256": "54d86fd91da6e2eb293cf042efb8b8f63dc13e82f4cd7e36701eb4ba8bc922fc"
+    },
+    {
+      "path": "scripts/workspace.clj",
+      "mode": "100644",
+      "sha256": "bbfdbd713044df6770728dfa3702470de6625dd605af2ae193bd983ec2d29782"
+    },
+    {
+      "path": "src/foresight/evidence.cljc",
+      "mode": "100644",
+      "sha256": "64342fff5dad854148c741c7b00840f50441e1be7090943173b00a92eea16313"
+    },
+    {
+      "path": "src/foresight/law/dev_origins.cljc",
+      "mode": "100644",
+      "sha256": "f620307448fb5b745b1de218d5a9bc3f0ac4e0accd362f7e78727c038063aa6d"
+    },
+    {
+      "path": "src/foresight/law/lineage.cljc",
+      "mode": "100644",
+      "sha256": "e2f7d55b8ac053fca7cf0ff81838d867c8960c7ac3bbd7523c752eba4653d14c"
+    },
+    {
+      "path": "src/foresight/law/project.cljc",
+      "mode": "100644",
+      "sha256": "75db5cd9fd59fa04f954b4e860f4b926e4408d96c67246f78b286fa461931481"
+    },
+    {
+      "path": "src/foresight/lineage.cljc",
+      "mode": "100644",
+      "sha256": "a6012c8ca36840c7aa818df936aebf48c63b0403b2dd121d5f1dc5d0bbdb7068"
+    },
+    {
+      "path": "src/foresight/onboarding.cljc",
+      "mode": "100644",
+      "sha256": "2f0c2996a91dbd5b4f1498cbe835eceb4bedb836528adfedcb70b656a77abad0"
+    },
+    {
+      "path": "src/foresight/project.cljc",
+      "mode": "100644",
+      "sha256": "3603a902652d05c480540cf129ea5c93d674fd3df7ec6a438f9e5bbe2bed9727"
+    },
+    {
+      "path": "test/evidence_cli_test.cljs",
+      "mode": "100644",
+      "sha256": "d2b1b75a151cedc1192c01cdb68bf3ae5d8f2dd8d7d5a4e46bfdc3f6e221230b"
+    },
+    {
+      "path": "test/evidence_test.cljs",
+      "mode": "100644",
+      "sha256": "12b3cf9be4eeb00392ca71230247ef8d85a68c3efec6f5b997eae30734c72f10"
+    },
+    {
+      "path": "test/lineage_test.cljs",
+      "mode": "100644",
+      "sha256": "88344254c4330545897a1d29752f5fa50895a8012bd810b2fe37133245e15d3a"
+    },
+    {
+      "path": "test/project_test.cljs",
+      "mode": "100644",
+      "sha256": "c01b98d50894115f202b5513640e0bbc2ce1d55549b360d4dfe31e829f21df17"
+    },
+    {
+      "path": "test/reference/repository-census.test.mjs",
+      "mode": "100644",
+      "sha256": "9571c1c20425d103b986fe0c60337ad028458cfc45debb40d8e667fca0618e8b"
+    },
+    {
+      "path": "test/workspace_test.cljs",
+      "mode": "100644",
+      "sha256": "45078912fe7d2b6b0df82a50aac0c9e38f49c3b4bd9a0ca1a32629d0b09f89f3"
+    },
+    {
+      "path": "tools/chat-work-runtime/LICENSE",
+      "mode": "100644",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "tools/chat-work-runtime/README.bundle.md",
+      "mode": "100644",
+      "sha256": "feaa9c9383cfba5a0dc6f47f5da0687dbdc8206e1c25c6844ab90eafe2f5455a"
+    },
+    {
+      "path": "tools/chat-work-runtime/README.md",
+      "mode": "100644",
+      "sha256": "fa880a053dd2fc0b0b69dd8a23ee4381ab4dc74ae8cca4c73fc1448fdc1b766f"
+    },
+    {
+      "path": "tools/chat-work-runtime/THIRD_PARTY_NOTICES.md",
+      "mode": "100644",
+      "sha256": "1de43c0b17fda78cbc698e9503f4437d5fe5864614c7422a573d8e9d667f5270"
+    },
+    {
+      "path": "tools/chat-work-runtime/build.sh",
+      "mode": "100755",
+      "sha256": "493ff431bac42aba49c4f6421e3d46c5f2e2fbdb5733321c7d9d8f3010a29987"
+    },
+    {
+      "path": "tools/chat-work-runtime/licenses/EPL-1.0.txt",
+      "mode": "100644",
+      "sha256": "cc07bd2bd6ba843a9a2865ed891d5a3b5835a64bab6fa90945403ee53965d46f"
+    },
+    {
+      "path": "tools/chat-work-runtime/licenses/jscpd-MIT.txt",
+      "mode": "100644",
+      "sha256": "5e6e0182b05c6b9a1d2a120dc788717267b30e4aa1c52658912ce99418a33ce7"
+    },
+    {
+      "path": "tools/chat-work-runtime/licenses/rewrite-clj-MIT.txt",
+      "mode": "100644",
+      "sha256": "2af6e1b3dea429bf4fe2a33fb1c26c811bc160cf2b9272e7020c4dd0886e221c"
+    },
+    {
+      "path": "tools/chat-work-runtime/package-lock.json",
+      "mode": "100644",
+      "sha256": "2a215542d85c697fd0f20eb16a99c261820eb92e93b00e1d89bdd7c95d86391c"
+    },
+    {
+      "path": "tools/chat-work-runtime/package.json",
+      "mode": "100644",
+      "sha256": "22ae33dee5107aea8528e64dee824eae8be996d8cda7ec1cde253d0ded846961"
+    },
+    {
+      "path": "tools/chat-work-runtime/versions.env",
+      "mode": "100644",
+      "sha256": "5f480e14861eb049482e688fc5f90658b08a115432beaf705d110931a9443441"
+    }
+  ],
+  "gitlink_count": 23,
+  "gitlinks": [
+    {
+      "path": ".agents",
+      "oid": "00a05c8f6ba68ff30a98266879310464e966748b"
+    },
+    {
+      "path": "Truth",
+      "oid": "8ade66a3553bdd89696aebf4fc4628a6fe66e5ae"
+    },
+    {
+      "path": "axxium",
+      "oid": "2439d4d6b8e546cda276f09f5c96db59226ecad6"
+    },
+    {
+      "path": "bitch-tracker",
+      "oid": "2751fa62b164c739cdb1ef86adc6aa1a9ff1fb90"
+    },
+    {
+      "path": "calliope",
+      "oid": "2655ae6eddbd20ac400a8e1ff99914c56d81b835"
+    },
+    {
+      "path": "chat-ui",
+      "oid": "86385532b4f8606946555d0ada8e3fb22f35b4c3"
+    },
+    {
+      "path": "clio",
+      "oid": "788cdd3434615a7932b924e68520dbf7f88408c2"
+    },
+    {
+      "path": "epiphany",
+      "oid": "ca3fd843b30ef8fd9ca2881aeb9758e58dac6b66"
+    },
+    {
+      "path": "eta-mu",
+      "oid": "0ed56aa74a53a1d1e9c2e55ce95451817a7f3a90"
+    },
+    {
+      "path": "kanban-orchestrator",
+      "oid": "8e16609dd191bdd2e9a3c0320ce4238b5cd83467"
+    },
+    {
+      "path": "katamorph",
+      "oid": "3bd4cf26e68dc88fbe67f831baa4bc389e3363e7"
+    },
+    {
+      "path": "knoxx",
+      "oid": "fb08a10a8aa32a594cc97ae11b820113de4cf386"
+    },
+    {
+      "path": "muse",
+      "oid": "b4bdb0a7d019bb33c71aba1bd8daec5933e7ebde"
+    },
+    {
+      "path": "opencode",
+      "oid": "cc4b45612974f735ddec46009ede07729511fba4"
+    },
+    {
+      "path": "osmos",
+      "oid": "0c33018e27f861536822086afcdab666a60add44"
+    },
+    {
+      "path": "proxx",
+      "oid": "abbbc8b1ad80738233593e17e751203db785c9e2"
+    },
+    {
+      "path": "receipt-river",
+      "oid": "7c7c62343fea0241ac545e37f14e57ab344bfa30"
+    },
+    {
+      "path": "rheos",
+      "oid": "11811264a308d406cb612aefa1dad40818675e5e"
+    },
+    {
+      "path": "services",
+      "oid": "d361c7837ba369f5c22c9a3f9d827e74605b6c7d"
+    },
+    {
+      "path": "session-mycology",
+      "oid": "30339f9aa3df83ef8c335d4544307272abfbb131"
+    },
+    {
+      "path": "shx",
+      "oid": "6cd0ce366c66ac50dfa3ec55bdd8e55eb021bcaa"
+    },
+    {
+      "path": "sol",
+      "oid": "1276955c86ff46936cd1ce7d81fbc790f7068e1e"
+    },
+    {
+      "path": "uxx",
+      "oid": "97e67a7a758c080450a200e8e6e1ada614eabc6d"
+    }
+  ],
+  "prefixes": [
+    {
+      "path": ".\u03b7\u03bc/receipts.edn",
+      "base_bytes": 311209,
+      "base_sha256": "cebde833fe64b27144a9de0007e942bde0ea1cc5d2b90fa64619066cd1b14e33",
+      "append_bytes": 1669
+    },
+    {
+      "path": ".\u03b7\u03bc/session-mycology/ledger.md",
+      "base_bytes": 29871,
+      "base_sha256": "2d45b0a2e846aec2193ddd0b731e6ff62704a5fb2929ed24a898902e0a13bf52",
+      "append_bytes": 565
+    },
+    {
+      "path": "docs/agile/kanban/bind-coverage-promotion-to-immutable-report-evidence.md",
+      "base_bytes": 900,
+      "base_sha256": "4724f1f86bd1a99cb827c360da6342dd2e59ca0d44da2f1d48181029d3340db5",
+      "append_bytes": 13082
+    }
+  ],
+  "rheos_artifact_sha256": "33efe2e97202abe7df28b65fb20fbabb78fd910049ed60f301d112a895c7633b",
+  "rheos_artifact_bytes": 2114115,
+  "external_ownership": "unresolved",
+  "actual_conflicting_open_scope": "none observed in limited inventory; not absence of external work",
+  "no_remote_or_state_mutations": true
+}
