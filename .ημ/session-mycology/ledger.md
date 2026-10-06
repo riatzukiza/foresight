@@ -521,3 +521,13 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+- ts: 2026-10-06T14:35:47Z
+  session: /home/err/.codex/parallel-goal/personal-root-20261006/sync-review-boundaries
+  task: personal-sync-review-boundaries
+  p-efficiency: 0.81
+  p-friction: 0.68
+  p-skill-candidate: 0.43
+  spore: none
+  receipt-refs: personal-sync-review-boundaries, riatzukiza/foresight#3
+  note: A source-preserving synchronization can expose already cataloged recovery defects. Verify preservation authority individually and preserve distinction between local assessment and native rejection corroboration; shared-base advancement changes dependent tested candidates even with stable heads. Existing contracts cover the lesson; no duplicate spore or promotion.
