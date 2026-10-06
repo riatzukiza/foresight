@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:12:30.799244045Z
+  session: /home/err/.codex/worktrees/foresight-pr123-20261006
+  task: Refresh PR123 reviewed workflow caller in isolated worktree
+  p-efficiency: 0.86
+  p-friction: 0.24
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: foresight-pr123-review-repair
+  note: Read the actual failing hosted step before fixing gates: remote reviewer UnknownError differs from deterministic evidence failure. Reuse reviewed current main contract, keep shared services stopped and Python dependencies isolated; no spore warranted.
