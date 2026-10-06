@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-06T13:44:23.437460112Z
+  session: /home/err/.codex/worktrees/foresight-pr118-20261006
+  task: Refresh PR118 and verify canonical revision-cut admission
+  p-efficiency: 0.75
+  p-friction: 0.35
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: foresight-pr118-canonical-review
+  note: Actual canonical Clio admission passed while standalone fixture suite exposed stale donor routing and invalid UUID assumptions. Keep runtime wiring/fixture issue132 distinct from immutable archaeology records and record both truthfully.
