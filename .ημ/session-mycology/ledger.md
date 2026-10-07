@@ -525,3 +525,12 @@
 ## 2026-10-07 — Census native hold evidence
 
 Scores: efficiency 0.70; friction 0.62; skill-candidate 0.45. Preserve native append content according to the actual API grouping, rather than asserting immutable whole aggregate sections. One accepted comment and one rejected transition are distinct facts; GitHub blocked label does not imply native blocked status. Existing Rheos4 owns the missing edge. Receipt: persistent-census-review-hold-20261007. No spore/promotion.
+- ts: 2026-10-07T03:31:00.412426775Z
+  session: foresight24-canonical-mycology-correction-20261007
+  task: Correct census native hold reflection as a separately listed canonical record
+  p-efficiency: 0.70
+  p-friction: 0.62
+  p-skill-candidate: 0.45
+  spore: none
+  receipt-refs: persistent-census-review-hold-20261007,foresight24-canonical-mycology-correction-20261007
+  note: Append-only correction of the unstructured census reflection at c289aaf111756becd5e9b2384dfbccb3f65c17e0, lines 525-527, verified MiMo4202326917. Historical heading/prose remains unchanged and remains absorbed in the preceding reader chunk; this current structured record restates it without backdating. Preserve native append content according to actual API grouping rather than asserting immutable whole aggregate sections. One accepted comment and one rejected transition are distinct facts; a GitHub blocked label does not imply native blocked status. Existing Rheos issue4 owns the missing edge. No spore/promotion, board write, settlement, review request or approval.

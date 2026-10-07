@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/home/err/.local/share/pnpm/nbb",
+    "-cp",
+    "/home/err/.agents/skills/pr-flow/scripts",
+    "/home/err/.agents/skills/pr-flow/scripts/pr.cljs",
+    "status",
+    "riatzukiza/foresight",
+    "24"
+  ],
+  "exit": 0,
+  "at": "2026-10-07T03:29:47.382923+00:00"
+}

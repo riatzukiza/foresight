@@ -1,0 +1,16 @@
+{
+  "nativeOriginalCapture": "/home/err/.codex/parallel-goal/routing-continuity-ytmrkx0c/.\u03b7\u03bc/verification/foresight24-inline-comments.stdout.b64",
+  "nativeDecodedSha256": "1a82d30240b5549046e784aa3237ccb6a9976beaa16b421a233adb2810d48621",
+  "nativeDecodedBytes": 3780,
+  "thread": "PRRT_kwDOU4VJMM6punQj",
+  "finding": {
+    "id": 4202326917,
+    "path": ".\u03b7\u03bc/session-mycology/ledger.md",
+    "line": 525,
+    "commit_id": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+    "original_commit_id": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+    "pull_request_review_id": 5436786557,
+    "body": "Impact: `sm-list.bb` parses the ledger by splitting on `(?m)^- ts:`; this entry matches no boundary, so it is silently absorbed into the preceding 2026-10-06 entry's chunk and is never listed as its own reflection. Any future `- ts:`-keyed consumption (the skill's own `sm-log.bb` template, spore-review tooling, human tailing by entry) has the same blind spot. Evidence: the mounted session-mycology skill defines the entry template starting with `- ts:` plus `p-efficiency:`/`p-friction:`/`p-skill-candidate:` fields; all ~40 existing entries in this file begin with `- ts:`; the new entry (lines 525-527) is the only one that does not, and it renames the score keys to prose (`efficiency 0.70; friction 0.62; skill-candidate 0.45`), omitting the field lines (`session`, `task`, `spore`, `receipt-refs`) the template calls for. Smallest corrective direction: rewrite the appended entry in the standard `- ts:` field format (the same content fits), keeping the append-only position.",
+    "author": "eta-mu-ai[bot]"
+  }
+}
