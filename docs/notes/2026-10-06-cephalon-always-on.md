@@ -50,11 +50,11 @@ product outcome, not a request for a single generated greeting.
 
 ## Proposed delivery and limits
 
-Epic `25e3a688-09b5-4e9a-8765-9b13944b1a00` tracks four reviewable slices:
+Epic `25e3a688-09b5-4e9a-8765-9b13944b1a00` tracks five reviewable slices:
 independent head admission; recurring artifact production; event-driven
-publication; and durable operation/recovery. Keep the current consumer useful
-while reviewing the stronger source guarantees. Label deployment overlays and
-measured behavior separately from merged source guarantees.
+publication; durable operation/recovery; and lifecycle/cloud placement. Keep the
+current consumer useful while reviewing the stronger source guarantees. Label
+deployment overlays and measured behavior separately from merged source guarantees.
 
 "Immediate" means prompt admission with no waiting behind a maker, followed by
 a measured response target. Provider latency and outages remain observable;

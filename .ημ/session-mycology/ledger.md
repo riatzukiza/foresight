@@ -642,3 +642,17 @@
 - Lesson: query the intended run class before a bounded limit, bind cadence to the same native resource identity, and normalize cross-realm fixture objects at the interop edge. Preserve false-positive and false-negative red evidence before repair.
 - Planning: separate restart/fencing acceptance from lifecycle/cloud readiness, keep independently proposed estimates distinct from unadmitted native metadata, and reconcile agent remote claims against fresh authenticated evidence.
 - No spore incubated or promoted. Existing canonical skills own the reusable protocol.
+
+## 2026-10-07 — cephalon-personal-head-qualification-20261007T0001
+
+- Evidence: receipt `cephalon-personal-head-qualification-20261007T0001`.
+- Scores: efficiency0.90, friction0.10, skill-candidate0.12.
+- Lesson: Current functional CI and provider approval are separate native channels; no routine clock success should cause a review-head change.
+- No spore incubated or promoted; existing canonical skills already own the reusable protocol. Observation-only append retained for the next concrete owned commit.
+
+## 2026-10-07 — cephalon-personal-five-slice-note
+
+- Evidence: receipt `cephalon-personal-five-slice-note`, native MiMo review5435977186/comment4201688511.
+- Scores: efficiency0.91, friction0.10, skill-candidate0.15.
+- Lesson: when review splits a story, reconcile the operator synthesis with the actual slices; keep provisional estimates and incoming board metadata separate.
+- No spore incubated or promoted. Existing skills own the protocol.
