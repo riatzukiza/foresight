@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "node",
+    "/home/err/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/node_modules/@eta-mu/rheos/dist/cli.cjs",
+    "read-task",
+    "a1d0645d-49a6-4e8d-b744-4e1a94175066",
+    "--config",
+    "/home/err/.codex/parallel-goal/census-review-hold-20261007-b309c54199/worktree/openhax.kanban.json"
+  ],
+  "at": "2026-10-07T01:43:50.833777+00:00",
+  "exit": 0,
+  "stdout": {
+    "path": "native-card-before.stdout.b64",
+    "bytes": 2034,
+    "sha256": "9a5ae34aad75d49b37ac504c864973f52e1ed7881372b7921a2209e4eadab4c3"
+  },
+  "stderr": {
+    "path": "native-card-before.stderr.b64",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

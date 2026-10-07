@@ -1,0 +1,19 @@
+{
+  "source_head": "e838f2cc97f16e0815f1e7859d79a66f2c22e28a",
+  "ledger_bytes": 316505,
+  "ledger_sha256": "e5c5d1db636d347c0280d459660a33e4706967597c1b4f09b2d6a2fe1fc17efe",
+  "rows": [
+    {
+      "line": 201,
+      "bytes_with_LF": 1588,
+      "sha256_with_LF": "397e922bb782347a14a492832577c50fe325f108288d560801f5b9d4df5f19f4",
+      "sha256_EDN_without_LF": "1d3980784dd50cc6044c03fb5a09cc089532cee98935b6082056b8fdf5492581"
+    },
+    {
+      "line": 202,
+      "bytes_with_LF": 2040,
+      "sha256_with_LF": "5d427a5673f30c774cd36891271ed99111d7c3a9555a135bdaf03b8a41fc5bb5",
+      "sha256_EDN_without_LF": "54979fa3def1aa7198bc27e4b549a07e206ec64328b6fc9eca669915e6801933"
+    }
+  ]
+}

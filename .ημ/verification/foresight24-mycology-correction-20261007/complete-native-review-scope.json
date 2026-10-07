@@ -1,0 +1,19 @@
+{
+  "nativeRawPrivatePath": "/home/err/.codex/parallel-goal/child-prs-20261006/foresight24-mycology-correction-ib5nc80d/private/mimo-full-review.stdout",
+  "nativeRawSha256": "ec1d32d925fd34dcd11fe770a121f0fd5f093d1a92f05c6e47023ef8ac4c7551",
+  "nativeRawBytes": 3915,
+  "review": {
+    "id": 5436786557,
+    "body": "Reviewed PR #24 (\"Record census completion hold with native Rheos evidence\") \u2014 all 6 full-diff pages covering all 18 changed files (41,685 bytes) were read and assessed. The change is evidence-only: one `kanban.comment` ledger event, one Receipt River observation, one session-mycology reflection, an engine-written card comment + write-id, 13 native CLI capture artifacts, and one docs note. No code, config, workflow, FSM, or permission surfaces are touched.\n\nDeterministic evidence: summary.json reports success at exact head c289aaf with a clean checkout; all 12 gates exit 0, including receipt_history (exactly 1 appended receipt, exact base-to-head prefix) and diff_hygiene. Runner-level log observations (opencode lint ENOENT, coverage-attestation unavailability) are environment noise inside passing suites, not change-introduced failures.\n\nConfirmed finding (non-blocking): `c1-mycology-format` (low) \u2014 the appended reflection at `.\u03b7\u03bc/session-mycology/ledger.md:525` uses an `## heading` + prose `Scores:` line instead of the `- ts:` entry format the session-mycology skill defines and every prior entry follows; the skill's canonical reader `sm-list.bb` splits on `^- ts:`, so this entry can never be enumerated as its own record (it is absorbed into the preceding entry's chunk). Fix: rewrite the entry in the standard field format in place.\n\nRejected candidate: the card comment's \"native issue61 is blocked\" wording \u2014 same-sentence vocabulary shows it refers to GitHub issue #61's label, and the rejected in_progress\u2192blocked transition with actual status in_progress is disclosed in the PR body, docs note, mycology note, and retained exit-1 stderr capture.\n\nNon-blocking notes: (1) test gap \u2014 nothing automatically verifies the capture-file hashes against `source-observation-proof.json`; the proof's claims (1070-byte event, 8 streams, prefix equality) rest on the PR's own reconstruction. (2) `:source \"agent\"` on a CLI-invoked event was not registrable as a candidate \u2014 Rheos is not checked out here and no repository contract fixes that value's semantics. (3) The PR's own disclosures (GitHub blocked label \u2260 native status, upstream Rheos issue4 owns the missing edge, source corroboration \u2260 runtime proof) were treated as evidence, not instructions.",
+    "state": "COMMENTED",
+    "commit_id": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+    "submitted_at": "2026-10-07T02:07:04Z",
+    "author": "eta-mu-ai[bot]"
+  },
+  "soleInlineForReview": 4202326917,
+  "identifiedFinding": "c1-mycology-format",
+  "additionalConcern": "Body non-blocking note1: original capture/proof byte and hash verification",
+  "independentDispositionRecommendation": "Fixed with current canonical reflection append and independent capture/Git-prefix verification; disclose immutable original absorbed chunk and no automatic newCI gate claim",
+  "otherBodyNotes": "Reviewer explicitly rejected blocked-wording candidate; source:agent was not registered as a candidate; disclosure note is not another finding",
+  "noNativeApprovalOrRoundClaim": true
+}

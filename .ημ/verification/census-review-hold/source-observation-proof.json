@@ -1,0 +1,18 @@
+{
+  "base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "body-exact": true,
+  "prior-comment-content-exact-prefix": true,
+  "new-comment-exact-appended": true,
+  "native-comment-grouping": "one combined adjacent comment section, preserved original plus two LF plus submission",
+  "frontmatter-only-native-write-id-changed": true,
+  "actual-status": "in_progress",
+  "blocked-transition-exit": 1,
+  "ledger-prefix-exact": true,
+  "ledger-added-events": 1,
+  "ledger-added-bytes": 1070,
+  "strict-streams": 8,
+  "installed-cli-sha256": "fba8bef53a9dbc159136de56f5a3c174af33b0d309ae0a26fce440467b50590c",
+  "Rheos-owned-gap": "https://github.com/open-hax/rheos/issues/4",
+  "qualification": "operational hold evidence only; no status success, review approval, reproduced source defect, completion or merge qualification",
+  "owned-checker-correction": "Initial assertion wrongly required the whole prior comment section to remain equal after append; failed before proof/note/receipt writes. Corrected to exact prefix plus exact native append; no second native write."
+}

@@ -1,0 +1,23 @@
+{
+  "name": "dual-contract-preappend",
+  "argv": [
+    "/home/err/.volta/tools/image/node/24.21.0/bin/node",
+    "/home/err/.codex/parallel-goal/knoxx161-implementation-20261007-7wwt_9h6/worktree/backend/node_modules/nbb/cli.js",
+    "-cp",
+    "/home/err/.codex/parallel-goal/child-prs-20261006/foresight24-receipt-adjudication-m6gzfaf8/receipt-owner/src/cljs:/home/err/.codex/parallel-goal/census-review-hold-20261007-b309c54199/worktree/src",
+    "/home/err/.codex/parallel-goal/child-prs-20261006/foresight24-receipt-adjudication-m6gzfaf8/adjudicate.cljs",
+    "/home/err/.codex/parallel-goal/child-prs-20261006/foresight24-receipt-adjudication-m6gzfaf8/private/refused-rows.edn",
+    "/home/err/.codex/parallel-goal/child-prs-20261006/foresight24-receipt-adjudication-m6gzfaf8/refused-row-identities.json",
+    "/home/err/.codex/parallel-goal/child-prs-20261006/foresight24-receipt-adjudication-m6gzfaf8/private/new-receipts.edn"
+  ],
+  "exit": 0,
+  "at": "2026-10-07T03:49:39.569150+00:00",
+  "stdout": {
+    "bytes": 484,
+    "sha256": "f85648a9275437fd17b996a10e15a35bfe2b53f843d2098ab57c9e9079193ae4"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

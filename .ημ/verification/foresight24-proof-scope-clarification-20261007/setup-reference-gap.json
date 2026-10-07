@@ -1,0 +1,5 @@
+{
+  "observed_failure": "First worktree add exit128 invalid reference d7; ordinary bare clone excludes refs/audit from donor, so d7 was not transferred",
+  "correction": "Own fetch exact d7 into new owned branch; original audit source refs unchanged",
+  "scope": "Simple preparation error, no source or parallel interference"
+}

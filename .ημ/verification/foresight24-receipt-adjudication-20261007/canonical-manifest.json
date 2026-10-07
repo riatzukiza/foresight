@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "timeout",
+    "35s",
+    "nbb",
+    "-cp",
+    "/home/err/.agents/skills/pr-flow/scripts",
+    "/home/err/.agents/skills/pr-flow/scripts/pr.cljs",
+    "status",
+    "riatzukiza/foresight",
+    "24"
+  ],
+  "exit": 0,
+  "at": "2026-10-07T03:48:50.376986+00:00",
+  "stdout": {
+    "bytes": 598,
+    "sha256": "3aafe35144bdec6e47410aa89d0c40a65a1f65e51d4b8b81865841a29cb86476"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

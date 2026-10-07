@@ -1,0 +1,46 @@
+{
+  "base": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+  "otherInheritedEntriesExact": 543,
+  "appendOnlyPrefixes": [
+    {
+      "path": ".\u03b7\u03bc/receipts.edn",
+      "baseBytes": 312877,
+      "baseSha256": "1fa0b680e71e069e48934cf9284a113422100ba575b6b2747d8295f93372deec",
+      "appendBytes": 1588
+    },
+    {
+      "path": ".\u03b7\u03bc/session-mycology/ledger.md",
+      "baseBytes": 30344,
+      "baseSha256": "a5068c76a22c6151f8db4db4e170b83b7b98a9e5e22c3208f84cad16c0a0c2fb",
+      "appendBytes": 1053
+    }
+  ],
+  "allowedChangedPaths": [
+    ".\u03b7\u03bc/receipts.edn",
+    ".\u03b7\u03bc/session-mycology/ledger.md",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/README.md",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-first.stderr.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-first.stdout.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-status-manifest.json",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-tool-source-provenance.json",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-writer-reader-manifest.json",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/capture-manifest.json",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.json",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.stderr.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.stdout.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/reader-writer-proof.json",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-after.stderr.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-after.stdout.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-before.stderr.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-before.stdout.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-log-canonical-append.stderr.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-log-canonical-append.stdout.b64",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/verified-native-finding.json",
+    ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/precommit-preservation-proof.json"
+  ],
+  "strictCapturedStreams": 10,
+  "noCodeCardEventsConfigChanges": true,
+  "sourceCorrectionOnlyCurrentStructuredAppend": true,
+  "priorMalformedHistoricalChunkUnchanged": true,
+  "unpublished": true
+}

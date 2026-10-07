@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-07T03:30:16.226665+00:00",
+  "native": {
+    "autoMergeRequest": null,
+    "baseRefOid": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "headRefName": "codex/census-review-hold",
+    "headRefOid": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+    "isDraft": false,
+    "labels": [
+      {
+        "id": "LA_kwDOU4VJMM8AAAAC7R4qUQ",
+        "name": "blocked",
+        "description": "Concrete dependency or operational availability blocker; not a Rheos status projection",
+        "color": "B60205"
+      }
+    ],
+    "state": "OPEN"
+  },
+  "canonicalReaderBefore": {
+    "argv": [
+      "/usr/bin/bwrap",
+      "--ro-bind",
+      "/",
+      "/",
+      "--dev",
+      "/dev",
+      "--proc",
+      "/proc",
+      "--bind",
+      "/home/err/.codex/parallel-goal/child-prs-20261006/foresight24-mycology-correction-ib5nc80d/tmp",
+      "/tmp",
+      "--unshare-net",
+      "--die-with-parent",
+      "--chdir",
+      "/home/err/.codex/parallel-goal/census-review-hold-20261007-b309c54199/worktree",
+      "/usr/local/bin/bb",
+      "--config",
+      "/dev/null",
+      "/home/err/.agents/skills/session-mycology/scripts/sm-list.bb",
+      "--ledger-only",
+      "--limit",
+      "1"
+    ],
+    "exit": 0
+  }
+}

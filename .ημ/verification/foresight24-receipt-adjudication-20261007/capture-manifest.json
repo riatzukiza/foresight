@@ -1,0 +1,26 @@
+[
+  {
+    "path": "canonical-first.stdout.b64",
+    "bytes": 598,
+    "sha256": "3aafe35144bdec6e47410aa89d0c40a65a1f65e51d4b8b81865841a29cb86476",
+    "encoding": "unwrapped RFC4648 base64 plus exactly one terminal LF"
+  },
+  {
+    "path": "canonical-first.stderr.b64",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "encoding": "unwrapped RFC4648 base64 plus exactly one terminal LF"
+  },
+  {
+    "path": "dual-contract-preappend.stdout.b64",
+    "bytes": 484,
+    "sha256": "f85648a9275437fd17b996a10e15a35bfe2b53f843d2098ab57c9e9079193ae4",
+    "encoding": "unwrapped RFC4648 base64 plus exactly one terminal LF"
+  },
+  {
+    "path": "dual-contract-preappend.stderr.b64",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "encoding": "unwrapped RFC4648 base64 plus exactly one terminal LF"
+  }
+]

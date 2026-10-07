@@ -1,0 +1,138 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "headRefOid": "d7ad3f18cd968fa064bd08dc70babc9dfdf529cc",
+        "baseRefOid": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+        "reviewThreads": {
+          "pageInfo": {
+            "hasNextPage": false,
+            "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0wN1QwNDoxMToxOFrOqcCqJQ=="
+          },
+          "nodes": [
+            {
+              "id": "PRRT_kwDOU4VJMM6punQj",
+              "isResolved": true,
+              "isOutdated": false,
+              "path": ".\u03b7\u03bc/session-mycology/ledger.md",
+              "line": 525,
+              "originalLine": 525,
+              "comments": {
+                "pageInfo": {
+                  "hasNextPage": false,
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0wN1QwMzo0MjozOFrO-oIqlg=="
+                },
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOU4VJMM76emuF",
+                    "databaseId": 4202326917,
+                    "body": "Impact: `sm-list.bb` parses the ledger by splitting on `(?m)^- ts:`; this entry matches no boundary, so it is silently absorbed into the preceding 2026-10-06 entry's chunk and is never listed as its own reflection. Any future `- ts:`-keyed consumption (the skill's own `sm-log.bb` template, spore-review tooling, human tailing by entry) has the same blind spot. Evidence: the mounted session-mycology skill defines the entry template starting with `- ts:` plus `p-efficiency:`/`p-friction:`/`p-skill-candidate:` fields; all ~40 existing entries in this file begin with `- ts:`; the new entry (lines 525-527) is the only one that does not, and it renames the score keys to prose (`efficiency 0.70; friction 0.62; skill-candidate 0.45`), omitting the field lines (`session`, `task`, `spore`, `receipt-refs`) the template calls for. Smallest corrective direction: rewrite the appended entry in the standard `- ts:` field format (the same content fits), keeping the append-only position.",
+                    "createdAt": "2026-10-07T02:07:04Z",
+                    "updatedAt": "2026-10-07T02:07:04Z",
+                    "authorAssociation": "NONE",
+                    "author": {
+                      "login": "eta-mu-ai",
+                      "__typename": "Bot"
+                    }
+                  },
+                  {
+                    "id": "PRRC_kwDOU4VJMM76giqW",
+                    "databaseId": 4202834582,
+                    "body": "Fixed in e838f2cc97f16e0815f1e7859d79a66f2c22e28a: actual upstream sm-log.bb appends a standard current reflection with task/session/three p-fields and provenance, and actual sm-list.bb --ledger-only --limit 1 now lists it separately. The original 30,344-byte reflection prefix stays exact; the new entry is 1,053 bytes. .\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/reader-writer-proof.json and lossless before/writer/after captures verify portable reader behavior. The original malformed prose remains immutable historical context, with no retroactive parsing repair or live event-schema claim. The complete review body is also addressed by independent-original-capture-proof.json: all eight original streams match their four size/SHA capture contracts and exact published blobs, and event history preserves the accepted-base prefix plus its 1,070-byte append. Actual immutable receipt consumer passes 202 forms/two new rows; all other inherited source/card/config/event identities remain unchanged. No new CI gate, historical runtime replay, approval or completed cohort is claimed.",
+                    "createdAt": "2026-10-07T03:42:38Z",
+                    "updatedAt": "2026-10-07T03:42:38Z",
+                    "authorAssociation": "OWNER",
+                    "author": {
+                      "login": "riatzukiza",
+                      "__typename": "User"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "PRRT_kwDOU4VJMM6pv4vE",
+              "isResolved": false,
+              "isOutdated": false,
+              "path": ".\u03b7\u03bc/session-mycology/ledger.md",
+              "line": 525,
+              "originalLine": 525,
+              "comments": {
+                "pageInfo": {
+                  "hasNextPage": false,
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0wN1QwNDowMDoyNVrO-oN1jA=="
+                },
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOU4VJMM76gpIf",
+                    "databaseId": 4202861087,
+                    "body": "Impact: every prior entry in this ledger (and the session-mycology skill template) uses the `- ts:` field format; sm-list.bb enumerates records by that boundary, so this new block never appears as a reflection of its own and pollutes the preceding entry's chunk with foreign prose, while the same Scores/note text exists twice in the file (lines 527 and 536). Evidence: full file read shows 525-527 as the only non-`- ts:` entry; the PR's own sm-list-before capture decodes to the heading absorbed after the 2026-10-06 note, sm-list-after decodes to only the structured record listed, and the native MiMo inline finding 4202326917 (embedded in this diff) independently identifies the same defect at this line. Smallest corrective direction: since the structured record at 528-536 already carries the content, drop the unparseable 525-527 block from the PR (the branch is unmerged, so no published history is rewritten) or, if append-only discipline forbids that, leave the disclosure as-is and accept the low-severity residue.",
+                    "createdAt": "2026-10-07T03:48:16Z",
+                    "updatedAt": "2026-10-07T03:48:17Z",
+                    "authorAssociation": "NONE",
+                    "author": {
+                      "login": "eta-mu-ai",
+                      "__typename": "Bot"
+                    }
+                  },
+                  {
+                    "id": "PRRC_kwDOU4VJMM76g3WM",
+                    "databaseId": 4202919308,
+                    "body": "Rejection proposal for d7ad3f18cd968fa064bd08dc70babc9dfdf529cc:\nFinding: PRRT_kwDOU4VJMM6pv4vE comment4202861087\nReason: The user-provided ledger discipline and canonical append writers require preserving historical records. The malformed three-line prose is already committed and published in the PR predecessor; its bytes are provenance. Deleting it conflicts with that append-only requirement. A standard current reflection was appended through unmodified sm-log.bb and is separately enumerable through sm-list.bb. This is a proposal to retain explicitly disclosed historical residue, not claim it was retroactively repaired or waive a remaining finding.\nEvidence: .\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/reader-writer-proof.json and exact before/after capture hashes; the 30,344-byte predecessor ledger is an exact prefix with 1,053 canonical bytes appended. Root independent canonical reader output matched the frozen owner capture byte-for-byte. The present receipt-only successor leaves the reflection bytes unchanged. Original findings4202326917 and writer4202834582 preserve correction and limitations; the current opening explicitly offers retaining disclosure when append-only discipline forbids deletion. Rows201/202 remain refused by current Receipt River for missing repo; separately scoped adjudications203/204 now pass, with no blanket history validation.\nThis thread remains open pending an authenticated independent non-opener assessment. No rejected settlement, resolution, approval or completed review round is claimed.",
+                    "createdAt": "2026-10-07T04:00:25Z",
+                    "updatedAt": "2026-10-07T04:00:25Z",
+                    "authorAssociation": "OWNER",
+                    "author": {
+                      "login": "riatzukiza",
+                      "__typename": "User"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "PRRT_kwDOU4VJMM6pwKol",
+              "isResolved": false,
+              "isOutdated": false,
+              "path": ".\u03b7\u03bc/session-mycology/ledger.md",
+              "line": 525,
+              "originalLine": 525,
+              "comments": {
+                "pageInfo": {
+                  "hasNextPage": false,
+                  "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0wN1QwNToyMjowOVrO-oo5GQ=="
+                },
+                "nodes": [
+                  {
+                    "id": "PRRC_kwDOU4VJMM76hFEt",
+                    "databaseId": 4202975533,
+                    "body": "Impact: the session-mycology contract (SKILL.md entry template starting `- ts:` with session/task/p-scores/spore/receipt-refs/note fields) is violated by one entry while all 61 prior entries conform; sm-list.bb:45 splits on `^- ts:`, so lines 524-527 ride inside the 2026-10-06 personal-fork entry's chunk and the census heading is never its own record. The PR's own captured sm-list-before.stdout.b64 demonstrates the absorption empirically. Evidence: both the malformed entry and its structured restatement (line 528+) are additions vs merge base 96a6dca (base ended at line 523), so the 'immutable history' rationale does not apply to the merge result \u2014 the fix (single standard-format entry) was fully available in this PR; a native reviewer confirmed the same finding at earlier head c289aaf (verified-native-finding.json, inline 4202326917) recommending an in-place standard-format entry; the PR chose append-correction, which makes census content enumerable but leaves the malformed entry and the pollution of the preceding entry's chunk in the merged file. Smallest corrective direction: before merge, replace lines 524-527 with nothing and keep only the conforming `- ts:` entry (or fold the Scores prose into that entry's note), restoring per-entry parseability of both affected records.",
+                    "createdAt": "2026-10-07T04:11:18Z",
+                    "updatedAt": "2026-10-07T04:11:19Z",
+                    "authorAssociation": "NONE",
+                    "author": {
+                      "login": "eta-mu-ai",
+                      "__typename": "Bot"
+                    }
+                  },
+                  {
+                    "id": "PRRC_kwDOU4VJMM76ijkZ",
+                    "databaseId": 4203362585,
+                    "body": "Rejection proposal for d7ad3f18cd968fa064bd08dc70babc9dfdf529cc:\nFinding: PRRT_kwDOU4VJMM6pwKol comment4202975533\nReason: I acknowledge the observed defect: the old unstructured prose is absorbed by the preceding reader chunk, and both the prose and standard correction are additions relative to the PR merge base. Those facts do not retroactively make already published ledger bytes unrecorded. The user-provided ledger discipline requires append-only preservation; this lane consequently preserved the published predecessor and appended a conforming reflection through the canonical writer. Deleting lines524-527 would remove that recorded predecessor history even in an ordinary new Git commit. This proposes retaining the explicitly disclosed malformed residue, not calling the earlier chunk restored or treating it as a valid standalone reflection.\nEvidence: At exact d7ad3f18cd968fa064bd08dc70babc9dfdf529cc, the reflection file is unchanged from the published canonical-correction predecessor; .\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/reader-writer-proof.json binds the 30,344-byte predecessor prefix and1,053-byte standard append. Actual unmodified sm-log.bb/sm-list.bb writer/reader captures establish current enumeration and disclose the original absorption. Native original4202326917 and writer4202834582 record that correction, while the current receipt-adjudication successor preserves all original reflected bytes. I am not disputing the line523 merge-base boundary, not silently repairing historical provenance, and not transferring an agreement from the separate PRRT_kwDOU4VJMM6pv4vE finding or a general passing review.\nThis proposal remains open for an authenticated independent non-opener assessment of the finding, contract and counterargument. No Rejected settlement, thread resolution, native approval, completed review round or merge qualification is claimed. Native provider quota/reset holds remain; no repeated provider request is made.",
+                    "createdAt": "2026-10-07T05:22:09Z",
+                    "updatedAt": "2026-10-07T05:22:09Z",
+                    "authorAssociation": "OWNER",
+                    "author": {
+                      "login": "riatzukiza",
+                      "__typename": "User"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

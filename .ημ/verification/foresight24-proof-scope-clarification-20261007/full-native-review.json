@@ -1,0 +1,40 @@
+{
+  "id": 5437540306,
+  "node_id": "PRR_kwDOU4VJMM8AAAABRBpH0g",
+  "user": {
+    "login": "eta-mu-ai[bot]",
+    "id": 270021952,
+    "node_id": "BOT_kgDOEBg1QA",
+    "avatar_url": "[URL query structurally withheld]",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D",
+    "html_url": "https://github.com/apps/eta-mu-ai",
+    "followers_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "body": "Reviewed PR #24 (\"Record census completion hold with native Rheos evidence\") \u2014 an evidence-only change: one `kanban.comment` ledger event, five receipt rows, one session-mycology reflection pair, 43 capture/proof artifacts, one card comment + engine write-id, one docs note; no code, config, workflow, FSM-law, or permission changes. All 14 full-diff pages read and assessed; stage evidence recorded in order.\n\nDeterministic evidence: summary.json success at exact head d7ad3f18 with clean checkout; all 12 gates exit 0 (workspace/project/lineage/evidence laws, contracts, migration pack, receipt_history with 5 appended receipts over exact base\u2192head prefix, diff_hygiene). The `opencode lint`/`jscpd` ENOENT lines sit inside the passing workspace suite \u2014 environment tooling absence, not change-introduced.\n\nConfirmed finding (non-blocking): **c1-mycology-format-head (low, contract)** \u2014 `.\u03b7\u03bc/session-mycology/ledger.md:525` adds a `## heading` + `Scores:` prose entry that violates the session-mycology entry contract (SKILL.md `- ts:` template; `sm-list.bb` splits on `(?m)^- ts:`, both verified directly; 61/61 prior entries conform). The PR's own sm-list-before capture demonstrates the absorption: the census prose rides inside the unrelated 2026-10-06 personal-fork entry's chunk, and the malformed entry is never enumerable as its own record. Both the malformed entry and its conforming restatement are additions vs merge base, so a single standard-format entry was available in this PR; the chosen append-correction leaves the malformed entry and the chunk pollution in the merged file. Smallest fix: drop lines 524\u2013527 and keep the conforming record. Prior native reviewer confirmed the same issue at earlier head.\n\nNeeds-human (non-blocking): **c2-precommit-proof-scope** \u2014 `precommit-preservation-proof.json` states receipts.edn `appendBytes 1588` + a 21-path `allowedChangedPaths` from base c289aaf, but the head appends four receipt rows (201\u2013204) and the adjudication directory; the numbers are true of the capture moment but not of the shipping head, and the uncited, untimestamped artifact's intended scope cannot be settled in-scope.\n\nRejected candidates: `:source \"agent\"` vs sibling `\"cli\"` (no in-repo consumer or owner contract; Rheos not checked out) and the card's \"native issue61 is blocked\" wording (GitHub-label subject with cited checkable comment; card status in_progress and the rejected transition fully disclosed; same candidate previously rejected by native review).\n\nNon-blocking notes: no automated gate binds the capture-hash/proof claims to file contents (test gap, summary only); external-state counts in the docs note (PR60 thread counts, issue61 label) are author claims outside runner evidence and are not contradicted here; PR disclosures (label \u2260 Rheos status, upstream Rheos issue4 owns the missing edge, no approval/completion claim) were treated as evidence, not instructions. Append-only prefixes, the Rheos-ownership card law (docs/agile/AGENTS.md), and the nine-key receipt envelope all hold; one confirmed non-blocking finding \u2192 COMMENT.",
+  "state": "COMMENTED",
+  "html_url": "https://github.com/riatzukiza/foresight/pull/24#pullrequestreview-5437540306",
+  "pull_request_url": "https://api.github.com/repos/riatzukiza/foresight/pulls/24",
+  "author_association": "NONE",
+  "_links": {
+    "html": {
+      "href": "https://github.com/riatzukiza/foresight/pull/24#pullrequestreview-5437540306"
+    },
+    "pull_request": {
+      "href": "https://api.github.com/repos/riatzukiza/foresight/pulls/24"
+    }
+  },
+  "submitted_at": "2026-10-07T04:11:18Z",
+  "commit_id": "d7ad3f18cd968fa064bd08dc70babc9dfdf529cc"
+}

@@ -1,0 +1,24 @@
+{
+  "base": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+  "historicalLedgerBytes": 30344,
+  "historicalLedgerSha256": "a5068c76a22c6151f8db4db4e170b83b7b98a9e5e22c3208f84cad16c0a0c2fb",
+  "appendBytes": 1053,
+  "historicalPrefixExact": true,
+  "canonicalWriterAppendedToExactOwnedLedger": true,
+  "beforeMeaningfulReaderAbsorbedHistoricalHeading": true,
+  "afterMeaningfulReaderListsStructuredCorrectionSeparately": true,
+  "originalMalformedEntryRemainsAbsorbedHistoricalChunk": true,
+  "noLiveEventOrOperationalStateChange": true,
+  "writerSandbox": "Read-only host with owned worktree and private tmp writable; no network",
+  "requiredFields": [
+    "ts",
+    "session",
+    "task",
+    "p-efficiency",
+    "p-friction",
+    "p-skill-candidate",
+    "spore",
+    "receipt-refs",
+    "note"
+  ]
+}

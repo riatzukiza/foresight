@@ -1,0 +1,273 @@
+{
+  "node_source": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+  "nbb_source": "/home/err/.codex/parallel-goal/knoxx161-implementation-20261007-7wwt_9h6/worktree/backend/node_modules/.pnpm/nbb@1.4.207/node_modules/nbb",
+  "files": [
+    {
+      "path": "bin/node",
+      "bytes": 123183528,
+      "sha256": "b1cbec894e45a5814b6ab756e1e14f8a76516273197e67e0412b57c1e10d0d9f"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/index.d.ts",
+      "bytes": 754,
+      "sha256": "946a2f0f21b8b76613aa7fc83dac4ec074525b188488df8872d5686398bc4ffa"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/index.d.ts.map",
+      "bytes": 192,
+      "sha256": "a57172c8afe87febe6a1558b7ea766eb7d7aa03c9ed75f41596b8e8d105bbfdb"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/index.js",
+      "bytes": 1362,
+      "sha256": "2264946bc18b04fd021fd28c4315b38bb5344b7df24164d2a339658108180ac8"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/errors.d.ts",
+      "bytes": 1327,
+      "sha256": "776822840bbbaa052460038966ecd0816fe0fdb6f2e8030398f82dcea69debae"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/errors.d.ts.map",
+      "bytes": 734,
+      "sha256": "7e92cae70c4b9fc409fcbd9bdf1321c619ecacad82172278b1739ed5cf92f211"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/errors.js",
+      "bytes": 13538,
+      "sha256": "1d34bbdf963b8b99a14efdab5079c40af5479a696cfcfe94af91e122721adefa"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/get-format.d.ts",
+      "bytes": 395,
+      "sha256": "8ddf61ba026247504df78dda31efb8e91ea0640f0a10d2beae2c957c0a9797a0"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/get-format.d.ts.map",
+      "bytes": 317,
+      "sha256": "a8157400c58f3db309da645fbcf9ff420de914ba4bef045c65fbbbf7e9331ea1"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/get-format.js",
+      "bytes": 3521,
+      "sha256": "ffc08fd48638244f1b308db9e697d3a545a66848c16f82938ab9b088335c4263"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/package-json-reader.d.ts",
+      "bytes": 960,
+      "sha256": "0a87b891ce3621ae4d33cef7de2d5ea491b29b8cb64dd721177ffc7baa4fefbe"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/package-json-reader.d.ts.map",
+      "bytes": 545,
+      "sha256": "12a3af486c2bce87e432fdef83e0842b52a33e2bcd1738232d0bf37c21d4cd72"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/package-json-reader.js",
+      "bytes": 4435,
+      "sha256": "b7d3a5c669b8afe7308248cdba652c792518297f04335b696edcd4a3136c359a"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/resolve.d.ts",
+      "bytes": 1028,
+      "sha256": "ffce3278d6a3e1e328a1018933bb977fda839f41d6d54a3f60ffd055322ff985"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/resolve.d.ts.map",
+      "bytes": 401,
+      "sha256": "b215a72344bbf7f70477aa5b1e1082781c7f60c14099f69f64a28010fd79e41f"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/resolve.js",
+      "bytes": 34732,
+      "sha256": "61ceeeea76b473d43caf62aaab4ef28110e4f8f3ce055cbcb8f78ad406cafa83"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/utils.d.ts",
+      "bytes": 183,
+      "sha256": "01d8f3f73abc55b06b46d37a5fbc4b974667d543994c1e1a95a35d4d5d2b4b71"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/utils.d.ts.map",
+      "bytes": 172,
+      "sha256": "9fbf8b6dcc15ec8fb4b39b5692cb06355944b58cc146e6a8cc9dca76e9abf74e"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/lib/utils.js",
+      "bytes": 1188,
+      "sha256": "c6d4cde552dfb9b1deb2574ee11899a3fc3fe684bc32fbb85483f01bb22e4177"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/license",
+      "bytes": 3493,
+      "sha256": "8770a1a4b69ee722636643e81340ce4a8f0b8415b1c568487edc9062338bfcc7"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/package.json",
+      "bytes": 2237,
+      "sha256": "41e75cac3cc4460b5e442cd4ab60907ba24a01b8a081c3fd8a84371b8f76d39b"
+    },
+    {
+      "path": "node_modules/import-meta-resolve/readme.md",
+      "bytes": 7682,
+      "sha256": "932cae2095aaf3d9f9774d592ec6659f6b2b1ab7c4837a21f9ad05c1f34532ff"
+    },
+    {
+      "path": "node_modules/nbb/LICENSE",
+      "bytes": 11514,
+      "sha256": "cc07bd2bd6ba843a9a2865ed891d5a3b5835a64bab6fa90945403ee53965d46f"
+    },
+    {
+      "path": "node_modules/nbb/README.md",
+      "bytes": 22597,
+      "sha256": "f3484b804300a192a56a196afc45fd62439a8e3b70a0def2530e13ea5d2f858c"
+    },
+    {
+      "path": "node_modules/nbb/cli.js",
+      "bytes": 49,
+      "sha256": "ba3b676b3c283a90a4c703bb7101916a6a997ed1296a8196c23a947d72945474"
+    },
+    {
+      "path": "node_modules/nbb/img/ink.gif",
+      "bytes": 31312,
+      "sha256": "475b8d41db31952f77751f5407ad52ec8a73607f4cde8351370a0b561a47bbca"
+    },
+    {
+      "path": "node_modules/nbb/index.mjs",
+      "bytes": 35,
+      "sha256": "f14b34a61da1ff7e9efeb8aa6f0b7d44ebaed4e49ef03371fd68f9beb45f736c"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_api.js",
+      "bytes": 9105,
+      "sha256": "ea263e54ba5c8eddbb1e4640e8c90df637ff54b8a8aaedfc28a01ee05ff4f239"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_bundler.js",
+      "bytes": 6788,
+      "sha256": "8c168fcf2895e972f2ca857b5c6bb0790622a0650a9c68d86dcdcc82de1c8852"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_cljs_bean.js",
+      "bytes": 26241,
+      "sha256": "e30866f940c649d25fd84e07c72f1c0c5f11278bf04231f472c33fb31fa06b1d"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_core.js",
+      "bytes": 1276629,
+      "sha256": "e2e09724c5fe08a111a2aad86e5f8ba000816d2fcedb74b5443e903f55605112"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_data.js",
+      "bytes": 4164,
+      "sha256": "8bcc12cf8c59891018f4fb2f8a3e6d24d3e7d0b1372072497dcfe54b93eaeef3"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_deps.js",
+      "bytes": 1651,
+      "sha256": "6b08af52ca691fa3fc31fb37f0c4cb646573075f8220740c39dec7d780347833"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_goog_crypt.js",
+      "bytes": 2723,
+      "sha256": "d282e961a9c9007c85d6b42b4bfd59f85f946e0b02ca66a3c64cab6e7f7d9173"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_goog_string.js",
+      "bytes": 1657,
+      "sha256": "b0460d0ef34a408456c9329e0474662255abecd818ecfd42c1aa80584e397244"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_impl_main.js",
+      "bytes": 544,
+      "sha256": "b668810d74f7ae9aecd6dc0491c74f61e149834ba8bdfecd64a346b07ce1db8b"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_js_interop.js",
+      "bytes": 34075,
+      "sha256": "4c5a856c5b38817f62cc6a1f860deb76a344dc6276ff87d6d28cc10b8f99dd7c"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_main.js",
+      "bytes": 5251,
+      "sha256": "5cf64d0ed10595cc2f2df4267a406f248a8a0a8ecee42884a4af9af7ca402c1d"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_math.js",
+      "bytes": 52825,
+      "sha256": "5c6357baae98f0ad4e6b4e9b2a2d67cad391446996c5d6fe07b9f388f17dfe2f"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_nrepl_server.js",
+      "bytes": 14452,
+      "sha256": "a8e6e5838f8d9773d9ea3783d602821fc2262e6918f9083cd7c75cb0a6175acd"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_pprint.js",
+      "bytes": 122095,
+      "sha256": "5e471566d47bfacd5f17be3211322eb60c36befef8f7c5391dd3a34b21f585c1"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_promesa.js",
+      "bytes": 74556,
+      "sha256": "5481cbdb5e3721d4411906db027f99c1a49d23969da178a63bad02fd368ca2cc"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_reagent.js",
+      "bytes": 57996,
+      "sha256": "de0ff78586093b304489658475dd30025edb90e08378c20a3c48ea3231fb2db0"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_reagent_dom_server.js",
+      "bytes": 1954,
+      "sha256": "dec66e914367ad54caaa8ecb20ec4fb0f78e2ea001b57b334d62ab3dd546fcec"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_repl.js",
+      "bytes": 6649,
+      "sha256": "70b240753ac4bf91d6a7a30043e8494948a8e5aa1e0eb4d436f7e314a92002a1"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_spec.js",
+      "bytes": 155867,
+      "sha256": "8fc758f3c6ad7d49cf8bbd1c78eb06376c094d280a573571c688948ba3e51e72"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_test.js",
+      "bytes": 167275,
+      "sha256": "7f2538e5e3b5de965a4b91ea246759a60a691d9f00b4dcaa92dfb30e0d2341b2"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_tools_cli.js",
+      "bytes": 23474,
+      "sha256": "9dfc36f89c88cabea8119f754d1fb89e40b8bded4d61841597301582fbb7bbf1"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_transit.js",
+      "bytes": 45931,
+      "sha256": "c6a8e29fc93274cb43175b6660d3e40a12e1a1a64d73cb497e45d454b2180226"
+    },
+    {
+      "path": "node_modules/nbb/lib/nbb_zip.js",
+      "bytes": 23105,
+      "sha256": "6c947bddbc2cbd99468c3512b2e102c31a743392418240b79c91ee6ae8fefab3"
+    },
+    {
+      "path": "node_modules/nbb/nbbun.js",
+      "bytes": 735,
+      "sha256": "ad948e71c8019b06d882399fc98f90331c6cc79c39e81862912c4450f0edee39"
+    },
+    {
+      "path": "node_modules/nbb/package.json",
+      "bytes": 641,
+      "sha256": "563be8e8b1adf4decf7ea8fb7c4e20a55a655cafd7817f5a69d85aeb77a89ae5"
+    },
+    {
+      "path": "bin/bb",
+      "bytes": 67319080,
+      "sha256": "83fd506a848f11dd0839fb36604c180e4436e5faf0814a2f643537ed22f6835a"
+    }
+  ],
+  "private_copies": true,
+  "bb_source": "/usr/local/bin/bb"
+}

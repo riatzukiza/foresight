@@ -3,7 +3,7 @@ category: "kanban"
 labels: "research, evidence, inventory"
 parent: "760f7f1e-a086-4e0a-82a5-71d2a761073d"
 type: "task"
-write-id: "1788050190884-0.og0f5f03ly8oz5hwnm4"
+write-id: "1791337431411-0.h2s7ttocwzsgj5lyxig"
 title: "Establish the pinned repository census"
 priority: "P1"
 status: "in_progress"
@@ -36,4 +36,6 @@ identity, continuation, consolidation, or retirement.
 
 ---
 Canonical GitHub projection: issue #61 (https://github.com/open-hax/foresight/issues/61). Active implementation and evidence lane: PR #60 (https://github.com/open-hax/foresight/pull/60).
+
+Current completion hold: native issue61 is blocked. PR60 is merged at native head9c5dbf28173309862736cb28270e6883684fa140; fresh canonical status reports unresolved review findings, unanswered body items and one failing deterministic/required check. Current-main reproduction and truthful disposition remain to be verified; this does not assert every historical finding still reproduces or reinterpret its merge under later policy. All original census exit criteria and issue64 recovery boundary remain unchanged. Native issue comment6029044211 records exact scope/evidence. This move records the hold only, not testing, approval, completion or implementation.
 ---

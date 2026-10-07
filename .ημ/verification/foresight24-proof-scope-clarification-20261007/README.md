@@ -1,0 +1,19 @@
+# F24 historical proof scope clarification
+
+This source successor addresses only c2-precommit-proof-scope in full native review5437540306 at preservation baseline d7ad3f18cd968fa064bd08dc70babc9dfdf529cc. It appends the explicit scope paragraph to the earlier README and adds a separate provenance record. All 33 prior changed paths are retained: 30 retain exact blob identities, while the receipt ledger, reflection ledger and earlier README preserve their original byte prefixes beneath intentional appends. Across the preservation baseline, the other 573 inherited tree entries and all 23 Gitlinks remain exact; card and event state is unchanged. No census implementation or board operation occurs.
+
+The baseline counts33/8573/fourrecords and historical66a counts21/1588 are immutable source comparisons againstc289. The future full-tip proof separately covers this new successor; no self-referential current-head count is asserted here. Generation time remains unknown. Native command times and Git commit time are labeled independently.
+
+The retained full review and all native threads keep the historical reflection findings and proposals inspectable. A generic Codex passing verdict is separate from scoped independent agreement; no whole-body Fixed claim, rejection settlement or approval transfer occurs. Current required review/convergence and parent qualification holds remain.
+
+At preparation the existing PR is OPEN/non-draft/blocked/autooff. Root publication must first verify DRAFT safety; exact reusable45ec jobs gate on draft=false, with aggregate draft result inapplicable rather than qualified. No readiness/source/GitHub mutation is performed by this correction lane.
+
+Runtime executables for future local checks are privately copied Node22.20.0 and NBB1.4.207/import-meta-resolve. Receipt River15source hashes are retained; native execution consumes its transitive API namespaces, not all15. The root owning consumer and separate Receipt River suffix checks are distinct. Historical missing-repo refusals remain visible. No tests are invented to mirror prose, and no original mandatory backend gate is claimed to have run.
+
+Native preparation capture JSON may contain structurally withheld URL queries; the capture manifest distinguishes raw from retained byte hashes. Base64 containers are unwrapped without terminal LF. The initial ordinary bare clone did not copy auditrefs and first worktree add failed before source checkout; exact owned d7 fetch corrected that preparation assumption. No foreign source or ref was altered.
+
+## Writer discovery correction
+
+During this preparation the initial mechanical capture wrapper forced its audit-root working directory. The canonical portable reflection writer consequently appended the intended reflection to `/home/err/.codex/.ημ/session-mycology/ledger.md`. The observed entry starts at byte offset 0, ends at 564, and has SHA256 `1c47e8720e1cb600d66a8202def62edc74ec3f8a7fedbd241f211addb7d53298`; the observed file extent is 564 bytes. The file's state before that operation was not captured, so neither prior-prefix preservation nor absence of global effect is asserted. That actual global append has been preserved without deletion, rewrite or compensating global write. Its exact entry and the mistaken writer capture are archived here.
+
+The corrected invocation uses an explicit owned worktree subprocess cwd. The actual canonical `find-project-root` API returned this candidate worktree before the writer ran. The writer then appended to this candidate's reflection ledger inside a network-disabled sandbox with the host root read-only and only its owned worktree, cache and temporary paths writable. The native output confirms the owned destination. This corrects a preparation wrapper error; no causal interference with another agent has been observed. It does not qualify any review finding or alter board state.

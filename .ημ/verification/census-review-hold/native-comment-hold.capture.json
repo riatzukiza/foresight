@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "node",
+    "/home/err/.volta/tools/image/packages/eta-mu/lib/node_modules/eta-mu/node_modules/@eta-mu/rheos/dist/cli.cjs",
+    "add-comment",
+    "a1d0645d-49a6-4e8d-b744-4e1a94175066",
+    "--text",
+    "Current completion hold: native issue61 is blocked. PR60 is merged at native head9c5dbf28173309862736cb28270e6883684fa140; fresh canonical status reports unresolved review findings, unanswered body items and one failing deterministic/required check. Current-main reproduction and truthful disposition remain to be verified; this does not assert every historical finding still reproduces or reinterpret its merge under later policy. All original census exit criteria and issue64 recovery boundary remain unchanged. Native issue comment6029044211 records exact scope/evidence. This move records the hold only, not testing, approval, completion or implementation.",
+    "--config",
+    "/home/err/.codex/parallel-goal/census-review-hold-20261007-b309c54199/worktree/openhax.kanban.json"
+  ],
+  "at": "2026-10-07T01:43:51.439144+00:00",
+  "exit": 0,
+  "stdout": {
+    "path": "native-comment-hold.stdout.b64",
+    "bytes": 744,
+    "sha256": "3ebf4ce6064ea5058a4fda3f980832908d1ce85160cf325ea98ae7d8132d7d71"
+  },
+  "stderr": {
+    "path": "native-comment-hold.stderr.b64",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

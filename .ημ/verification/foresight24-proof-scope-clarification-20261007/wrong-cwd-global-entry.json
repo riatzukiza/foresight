@@ -1,0 +1,11 @@
+{
+  "actual_destination": "/home/err/.codex/.\u03b7\u03bc/session-mycology/ledger.md",
+  "observed_entry_offset": 0,
+  "observed_entry_end_offset": 564,
+  "observed_entry_bytes": 564,
+  "observed_entry_sha256": "1c47e8720e1cb600d66a8202def62edc74ec3f8a7fedbd241f211addb7d53298",
+  "observed_file_extent_bytes": 564,
+  "prior_prefix_before_operation": "not observed; no prefix-preservation assertion",
+  "no_global_rollback_or_compensation": true,
+  "source_destination_unchanged_by_this_wrong_invocation": true
+}
