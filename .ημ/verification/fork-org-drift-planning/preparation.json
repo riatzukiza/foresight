@@ -1,0 +1,17 @@
+{
+  "path": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+  "worktree": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+  "source_git": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/source.git",
+  "branch": "codex/fork-org-drift-planning",
+  "personal_repo": "riatzukiza/foresight",
+  "personal_main": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+  "sync_PR": 3,
+  "sync_branch": "sync/origin-fcfc2d17f28640203066ddfe0a22f87db7372a32",
+  "sync_head": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "sync_base": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+  "origin_accepted": "fcfc2d17f28640203066ddfe0a22f87db7372a32",
+  "original_card": "docs/agile/kanban/detect-fork-org-drift-ft-check.md",
+  "native_state": "Incoming/P2/2 unchanged; no qualification",
+  "parent_qualification": "PR3 pending/unqualified and unmerged; intentional stack route only, no adoption of sibling feature changes",
+  "complete_source_entries": 531
+}

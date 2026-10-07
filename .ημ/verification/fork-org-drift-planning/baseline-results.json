@@ -1,0 +1,103 @@
+[
+  {
+    "name": "unchanged-project-validate",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/nbb/cli.js",
+      "scripts/project.clj",
+      "validate"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.243670+00:00",
+    "ended": "2026-10-07T06:22:52.975387+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/unchanged-project-validate.stdout.b64",
+      "bytes": 103,
+      "sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2"
+    },
+    "stderr": {
+      "path": "captures/unchanged-project-validate.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "unchanged-project-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/project_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.243877+00:00",
+    "ended": "2026-10-07T06:22:53.064174+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/unchanged-project-suite.stdout.b64",
+      "bytes": 85,
+      "sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672"
+    },
+    "stderr": {
+      "path": "captures/unchanged-project-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "unchanged-workspace-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/workspace_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.244278+00:00",
+    "ended": "2026-10-07T06:22:53.064703+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/unchanged-workspace-suite.stdout.b64",
+      "bytes": 428,
+      "sha256": "45e785c28e5e537bf012de7d489d8568aa14c263a8c4940906ee6c0dbf225a8d"
+    },
+    "stderr": {
+      "path": "captures/unchanged-workspace-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "unchanged-root-lint",
+    "argv": [
+      "/usr/local/bin/clj-kondo",
+      "--lint",
+      "scripts",
+      "test",
+      "src",
+      "--cache-dir",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/cache/kondo"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.244565+00:00",
+    "ended": "2026-10-07T06:22:53.139661+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/unchanged-root-lint.stdout.b64",
+      "bytes": 43,
+      "sha256": "e9b818e42e4e05b476098327dc21a94e58ce4978e1179bf57b440ea216e55aca"
+    },
+    "stderr": {
+      "path": "captures/unchanged-root-lint.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "name": "current-pin-project-validate",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/current-nbb/node_modules/nbb/cli.js",
+      "scripts/project.clj",
+      "validate"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.266384+00:00",
+    "ended": "2026-10-07T06:26:51.060351+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-pin-project-validate.stdout.b64",
+      "bytes": 103,
+      "sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2"
+    },
+    "stderr": {
+      "path": "captures/current-pin-project-validate.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "current-pin-project-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/current-nbb/node_modules/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/project_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.269342+00:00",
+    "ended": "2026-10-07T06:26:51.263104+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-pin-project-suite.stdout.b64",
+      "bytes": 85,
+      "sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672"
+    },
+    "stderr": {
+      "path": "captures/current-pin-project-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "current-pin-workspace-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/current-nbb/node_modules/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/workspace_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.270384+00:00",
+    "ended": "2026-10-07T06:26:51.265865+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-pin-workspace-suite.stdout.b64",
+      "bytes": 428,
+      "sha256": "45e785c28e5e537bf012de7d489d8568aa14c263a8c4940906ee6c0dbf225a8d"
+    },
+    "stderr": {
+      "path": "captures/current-pin-workspace-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "current-pin-root-lint",
+    "argv": [
+      "/usr/local/bin/clj-kondo",
+      "--lint",
+      "scripts",
+      "test",
+      "src",
+      "--cache-dir",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/cache/kondo"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.275418+00:00",
+    "ended": "2026-10-07T06:26:51.268521+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-pin-root-lint.stdout.b64",
+      "bytes": 44,
+      "sha256": "f7271b318925087d2b7eee0bfe2cf13c4acc28f8534331e4f7d29d2d6b6c1a7c"
+    },
+    "stderr": {
+      "path": "captures/current-pin-root-lint.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

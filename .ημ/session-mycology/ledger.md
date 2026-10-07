@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-07T06:28:18.951566709Z
+  session: /home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree
+  task: Full existing fork-org-drift five-criterion planning refinement
+  p-efficiency: 0.8
+  p-friction: 0.3
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: fork-org-drift-planning decision; base96a
+  note: Kept complete post-sync M and receipt-X owner seams; old NBB profile retained, actual current pin checks and native EDN input visibility passed; future software and integration unqualified. No spore/live event or board transition.

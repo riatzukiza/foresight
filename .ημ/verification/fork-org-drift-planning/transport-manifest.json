@@ -1,0 +1,984 @@
+[
+  {
+    "name": "canonical-FIRST-sync3",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/nbb/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/pr-flow/scripts",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/pr-flow/scripts/pr.cljs",
+      "status",
+      "riatzukiza/foresight",
+      "3"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:15.244540+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/canonical-FIRST-sync3.stdout.b64",
+      "bytes": 644,
+      "sha256": "3544589a9ba902e915dea6d19829dc86d3f8fdac391e5ce35f08735f862a5f09",
+      "original_native_bytes": 644,
+      "original_native_sha256": "3544589a9ba902e915dea6d19829dc86d3f8fdac391e5ce35f08735f862a5f09"
+    },
+    "stderr": {
+      "path": "captures/current-owned/canonical-FIRST-sync3.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "fresh-personal-fork",
+    "argv": [
+      "gh",
+      "api",
+      "repos/riatzukiza/foresight"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:16.014486+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/fresh-personal-fork.stdout.b64",
+      "bytes": 13715,
+      "sha256": "abe7faf7bb7138085d453b2a6ca9991db9b5a8502097f2441e1d2cb826641426",
+      "original_native_bytes": 16289,
+      "original_native_sha256": "a4f12791d43bcf2d71d47263c2f3981c4a351065adde8d46bc901d1fcb676883"
+    },
+    "stderr": {
+      "path": "captures/current-owned/fresh-personal-fork.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "fresh-personal-main",
+    "argv": [
+      "gh",
+      "api",
+      "repos/riatzukiza/foresight/commits/main"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:17.049461+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/fresh-personal-main.stdout.b64",
+      "bytes": 69914,
+      "sha256": "53bb0f4b543905ee424ce1cfb8a76663e1e3b85b09169c25f048a53ee6b8e93c",
+      "original_native_bytes": 70946,
+      "original_native_sha256": "7caef3bd85fd1a35069202c456159f70e6c2d2d8dff30030213069d571c48370"
+    },
+    "stderr": {
+      "path": "captures/current-owned/fresh-personal-main.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "fresh-origin-main",
+    "argv": [
+      "gh",
+      "api",
+      "repos/open-hax/foresight/commits/main"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:17.763633+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/fresh-origin-main.stdout.b64",
+      "bytes": 89247,
+      "sha256": "69a75769ff3b2eecab8c2f33f255ab1e0fac9d7997a83fdad64b976adf4b69c7",
+      "original_native_bytes": 90548,
+      "original_native_sha256": "b9cd3371b976ea8b349c54f40a0ef4000347d5d226ed03a57d7ae215af055b04"
+    },
+    "stderr": {
+      "path": "captures/current-owned/fresh-origin-main.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "fresh-sync3",
+    "argv": [
+      "gh",
+      "api",
+      "repos/riatzukiza/foresight/pulls/3"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:18.840254+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/fresh-sync3.stdout.b64",
+      "bytes": 17130,
+      "sha256": "50152070ac83b958e934e4a0e17ec1bf418ab715a0eb99a1a761037c7c955e8e",
+      "original_native_bytes": 19005,
+      "original_native_sha256": "57ea1d542536fdbfc8f001944e9e54e1d85a67ef8de2e7d68610d3123e7e85a6"
+    },
+    "stderr": {
+      "path": "captures/current-owned/fresh-sync3.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "fresh-all-personal-PRs",
+    "argv": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/riatzukiza/foresight/pulls?state=open&per_page=100"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:19.932337+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/fresh-all-personal-PRs.stdout.b64",
+      "bytes": 438418,
+      "sha256": "5bdf461774679a9cbd6518301942f9f124270e14d494d313c124790f0d4546c2",
+      "original_native_bytes": 449587,
+      "original_native_sha256": "153e7e4cf9f9d1b10f66933213665cfd14acfebb449903184f9c4e17c18bbe67"
+    },
+    "stderr": {
+      "path": "captures/current-owned/fresh-all-personal-PRs.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "new-complete-independent-clone",
+    "argv": [
+      "git",
+      "clone",
+      "--bare",
+      "--no-local",
+      "--no-hardlinks",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/source.git",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/source.git"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:21.083511+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/new-complete-independent-clone.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "captures/current-owned/new-complete-independent-clone.stderr.b64",
+      "bytes": 123,
+      "sha256": "8d5adda042eb702f1adfd865c916c6878ab5e79f2e39a20103c0e97108874d28",
+      "original_native_bytes": 123,
+      "original_native_sha256": "8d5adda042eb702f1adfd865c916c6878ab5e79f2e39a20103c0e97108874d28"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "fresh-personal-base-fetch",
+    "argv": [
+      "git",
+      "--git-dir=/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/source.git",
+      "fetch",
+      "https://github.com/riatzukiza/foresight.git",
+      "refs/heads/sync/origin-fcfc2d17f28640203066ddfe0a22f87db7372a32"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:21.533213+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/fresh-personal-base-fetch.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "captures/current-owned/fresh-personal-base-fetch.stderr.b64",
+      "bytes": 133,
+      "sha256": "7efbd0081c4541685afe7b85d2939ddcb39f9addfd6dbc1b6fd44bf580d4cedc",
+      "original_native_bytes": 133,
+      "original_native_sha256": "7efbd0081c4541685afe7b85d2939ddcb39f9addfd6dbc1b6fd44bf580d4cedc"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "new-dedicated-planning-worktree",
+    "argv": [
+      "git",
+      "--git-dir=/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/source.git",
+      "worktree",
+      "add",
+      "-b",
+      "codex/fork-org-drift-planning",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+      "96a6dca24cb7a14b041bdd6e3e7922c568238da9"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:21.906868+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/new-dedicated-planning-worktree.stdout.b64",
+      "bytes": 84,
+      "sha256": "c27aef91fd691e9e26cb654bddebd5325e0187597161853e30b321730ce2f575",
+      "original_native_bytes": 84,
+      "original_native_sha256": "c27aef91fd691e9e26cb654bddebd5325e0187597161853e30b321730ce2f575"
+    },
+    "stderr": {
+      "path": "captures/current-owned/new-dedicated-planning-worktree.stderr.b64",
+      "bytes": 64,
+      "sha256": "cdc764de76548494ec574083aad0f2ab1cbcd332332f76254723270583d64671",
+      "original_native_bytes": 64,
+      "original_native_sha256": "cdc764de76548494ec574083aad0f2ab1cbcd332332f76254723270583d64671"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "full-object-connectivity",
+    "argv": [
+      "git",
+      "fsck",
+      "--full",
+      "--no-reflogs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:22.323868+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/full-object-connectivity.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "captures/current-owned/full-object-connectivity.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "complete-reachable-objects",
+    "argv": [
+      "git",
+      "rev-list",
+      "--objects",
+      "--all",
+      "--missing=print"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:22.447930+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/complete-reachable-objects.stdout.b64",
+      "bytes": 253199,
+      "sha256": "76f62f4b99e39e98c5b930a6b234c0f73b8604641c99c6db13d701e037d26be2",
+      "original_native_bytes": 253199,
+      "original_native_sha256": "76f62f4b99e39e98c5b930a6b234c0f73b8604641c99c6db13d701e037d26be2"
+    },
+    "stderr": {
+      "path": "captures/current-owned/complete-reachable-objects.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "origin-accepted-ancestor",
+    "argv": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "fcfc2d17f28640203066ddfe0a22f87db7372a32",
+      "96a6dca24cb7a14b041bdd6e3e7922c568238da9"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:16:22.459427+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/origin-accepted-ancestor.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "path": "captures/current-owned/origin-accepted-ancestor.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "unchanged-project-validate",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/nbb/cli.js",
+      "scripts/project.clj",
+      "validate"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.243670+00:00",
+    "ended": "2026-10-07T06:22:52.975387+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/unchanged-project-validate.stdout.b64",
+      "bytes": 103,
+      "sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2"
+    },
+    "stderr": {
+      "path": "captures/current-owned/unchanged-project-validate.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "unchanged-project-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/project_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.243877+00:00",
+    "ended": "2026-10-07T06:22:53.064174+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/unchanged-project-suite.stdout.b64",
+      "bytes": 85,
+      "sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672"
+    },
+    "stderr": {
+      "path": "captures/current-owned/unchanged-project-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "unchanged-workspace-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/workspace_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.244278+00:00",
+    "ended": "2026-10-07T06:22:53.064703+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/unchanged-workspace-suite.stdout.b64",
+      "bytes": 428,
+      "sha256": "45e785c28e5e537bf012de7d489d8568aa14c263a8c4940906ee6c0dbf225a8d"
+    },
+    "stderr": {
+      "path": "captures/current-owned/unchanged-workspace-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "unchanged-root-lint",
+    "argv": [
+      "/usr/local/bin/clj-kondo",
+      "--lint",
+      "scripts",
+      "test",
+      "src",
+      "--cache-dir",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/cache/kondo"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:22:52.244565+00:00",
+    "ended": "2026-10-07T06:22:53.139661+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/unchanged-root-lint.stdout.b64",
+      "bytes": 43,
+      "sha256": "e9b818e42e4e05b476098327dc21a94e58ce4978e1179bf57b440ea216e55aca"
+    },
+    "stderr": {
+      "path": "captures/current-owned/unchanged-root-lint.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "current-pin-project-validate",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/current-nbb/node_modules/nbb/cli.js",
+      "scripts/project.clj",
+      "validate"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.266384+00:00",
+    "ended": "2026-10-07T06:26:51.060351+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/current-pin-project-validate.stdout.b64",
+      "bytes": 103,
+      "sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2"
+    },
+    "stderr": {
+      "path": "captures/current-owned/current-pin-project-validate.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "current-pin-project-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/current-nbb/node_modules/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/project_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.269342+00:00",
+    "ended": "2026-10-07T06:26:51.263104+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/current-pin-project-suite.stdout.b64",
+      "bytes": 85,
+      "sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672"
+    },
+    "stderr": {
+      "path": "captures/current-owned/current-pin-project-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "current-pin-workspace-suite",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/current-nbb/node_modules/nbb/cli.js",
+      "-cp",
+      "scripts:test",
+      "test/workspace_test.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.270384+00:00",
+    "ended": "2026-10-07T06:26:51.265865+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/current-pin-workspace-suite.stdout.b64",
+      "bytes": 428,
+      "sha256": "45e785c28e5e537bf012de7d489d8568aa14c263a8c4940906ee6c0dbf225a8d"
+    },
+    "stderr": {
+      "path": "captures/current-owned/current-pin-workspace-suite.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "current-pin-root-lint",
+    "argv": [
+      "/usr/local/bin/clj-kondo",
+      "--lint",
+      "scripts",
+      "test",
+      "src",
+      "--cache-dir",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/cache/kondo"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "started": "2026-10-07T06:26:49.275418+00:00",
+    "ended": "2026-10-07T06:26:51.268521+00:00",
+    "exit": 0,
+    "scope": "Unchanged existing root baseline only; no drift software or operational integration tested",
+    "stdout": {
+      "path": "captures/current-owned/current-pin-root-lint.stdout.b64",
+      "bytes": 44,
+      "sha256": "f7271b318925087d2b7eee0bfe2cf13c4acc28f8534331e4f7d29d2d6b6c1a7c"
+    },
+    "stderr": {
+      "path": "captures/current-owned/current-pin-root-lint.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "native-before-drift",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/rheos-cli.cjs",
+      "read-task",
+      "fork-org-drift-check",
+      "--config",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-before/openhax.kanban.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-before",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:27:12.690624+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/native-before-drift.stdout.b64",
+      "bytes": 2363,
+      "sha256": "a92a04ef145c0b567b3773558fb1fa11bc21ddb7ee6695c7f68c6969b6dc38b2",
+      "original_native_bytes": 2363,
+      "original_native_sha256": "a92a04ef145c0b567b3773558fb1fa11bc21ddb7ee6695c7f68c6969b6dc38b2"
+    },
+    "stderr": {
+      "path": "captures/current-owned/native-before-drift.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "native-before-map",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/rheos-cli.cjs",
+      "read-task",
+      "dev-origin-map",
+      "--config",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-before/openhax.kanban.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-before",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:27:13.360830+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/native-before-map.stdout.b64",
+      "bytes": 2497,
+      "sha256": "f562a6ff1def27b0af14cb8e0944234ac2490c984da9af03856d5d02b320cd78",
+      "original_native_bytes": 2497,
+      "original_native_sha256": "f562a6ff1def27b0af14cb8e0944234ac2490c984da9af03856d5d02b320cd78"
+    },
+    "stderr": {
+      "path": "captures/current-owned/native-before-map.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "native-after-drift",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/rheos-cli.cjs",
+      "read-task",
+      "fork-org-drift-check",
+      "--config",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-after/openhax.kanban.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-after",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:27:14.077866+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/native-after-drift.stdout.b64",
+      "bytes": 9351,
+      "sha256": "d3e18c5b34623985f3e50e1cceffd07fcc3845f88da4fead349109d60ab87387",
+      "original_native_bytes": 9351,
+      "original_native_sha256": "d3e18c5b34623985f3e50e1cceffd07fcc3845f88da4fead349109d60ab87387"
+    },
+    "stderr": {
+      "path": "captures/current-owned/native-after-drift.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "native-after-map",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/rheos-cli.cjs",
+      "read-task",
+      "dev-origin-map",
+      "--config",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-after/openhax.kanban.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/fixture-after",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:27:14.750229+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/native-after-map.stdout.b64",
+      "bytes": 2496,
+      "sha256": "557ffd346ec5f19fe9b03b5679717809f49fd33151b737a3c29e3da10b06e83e",
+      "original_native_bytes": 2496,
+      "original_native_sha256": "557ffd346ec5f19fe9b03b5679717809f49fd33151b737a3c29e3da10b06e83e"
+    },
+    "stderr": {
+      "path": "captures/current-owned/native-after-map.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "owning-receipt-before-append",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/current-nbb/node_modules/nbb/cli.js",
+      "-cp",
+      "src:/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/receipt-river/src/cljs",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/append-own-receipt.cljs"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:28:18.922879+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/owning-receipt-before-append.stdout.b64",
+      "bytes": 257,
+      "sha256": "55a83f4d123a2c0c28c52d4affb6583c671307196a244605bf7307bd540cd371",
+      "original_native_bytes": 257,
+      "original_native_sha256": "55a83f4d123a2c0c28c52d4affb6583c671307196a244605bf7307bd540cd371"
+    },
+    "stderr": {
+      "path": "captures/current-owned/owning-receipt-before-append.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "portable-reflection-append",
+    "argv": [
+      "/usr/local/bin/bb",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/mycology/sm-log.bb",
+      "--task",
+      "Full existing fork-org-drift five-criterion planning refinement",
+      "--efficiency",
+      "0.8",
+      "--friction",
+      "0.3",
+      "--candidate",
+      "0.0",
+      "--receipt-refs",
+      "fork-org-drift-planning decision; base96a",
+      "--note",
+      "Kept complete post-sync M and receipt-X owner seams; old NBB profile retained, actual current pin checks and native EDN input visibility passed; future software and integration unqualified. No spore/live event or board transition."
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:28:18.955443+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/portable-reflection-append.stdout.b64",
+      "bytes": 132,
+      "sha256": "3e0a4d7ac7efa05f169159b3763f9b77c2ba862cf886f7efc58288e8ddaf2898",
+      "original_native_bytes": 132,
+      "original_native_sha256": "3e0a4d7ac7efa05f169159b3763f9b77c2ba862cf886f7efc58288e8ddaf2898"
+    },
+    "stderr": {
+      "path": "captures/current-owned/portable-reflection-append.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "portable-reflection-read",
+    "argv": [
+      "/usr/local/bin/bb",
+      "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/runtime/mycology/sm-list.bb",
+      "--ledger-only",
+      "--limit",
+      "1"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:28:18.975814+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/current-owned/portable-reflection-read.stdout.b64",
+      "bytes": 607,
+      "sha256": "2efd4f5a281bc5e403eeb1b1c090ebf01accaa1f4200ecc3a599e5cab9fc2773",
+      "original_native_bytes": 607,
+      "original_native_sha256": "2efd4f5a281bc5e403eeb1b1c090ebf01accaa1f4200ecc3a599e5cab9fc2773"
+    },
+    "stderr": {
+      "path": "captures/current-owned/portable-reflection-read.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "current-owned"
+  },
+  {
+    "name": "native-fulltask-fork-org-drift-check",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/runtime/rheos-cli.cjs",
+      "read-task",
+      "fork-org-drift-check",
+      "--config",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/fixture/openhax.kanban.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/fixture",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:07:48.837107+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/prior-native-intake/native-fulltask-fork-org-drift-check.stdout.b64",
+      "bytes": 2359,
+      "sha256": "4b1b76972df444ca240a07de9c3a65d85460552057fde57380cb5cfc6ba663d1",
+      "original_native_bytes": 2359,
+      "original_native_sha256": "4b1b76972df444ca240a07de9c3a65d85460552057fde57380cb5cfc6ba663d1"
+    },
+    "stderr": {
+      "path": "captures/prior-native-intake/native-fulltask-fork-org-drift-check.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "prior-native-intake"
+  },
+  {
+    "name": "canonical-first-original-fork-plan122",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/runtime/nbb/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/runtime/pr-flow/scripts",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/runtime/pr-flow/scripts/pr.cljs",
+      "status",
+      "open-hax/foresight",
+      "122"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:08:54.308798+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/prior-native-intake/canonical-first-original-fork-plan122.stdout.b64",
+      "bytes": 534,
+      "sha256": "14dddc19cc58c3887a9cdf32b12f28e6c58147dedeb165aa83db57cd5c885b87",
+      "original_native_bytes": 534,
+      "original_native_sha256": "14dddc19cc58c3887a9cdf32b12f28e6c58147dedeb165aa83db57cd5c885b87"
+    },
+    "stderr": {
+      "path": "captures/prior-native-intake/canonical-first-original-fork-plan122.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "prior-native-intake"
+  },
+  {
+    "name": "original-fork-plan122-body",
+    "argv": [
+      "gh",
+      "api",
+      "repos/open-hax/foresight/pulls/122"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:08:55.041790+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/prior-native-intake/original-fork-plan122-body.stdout.b64",
+      "bytes": 17226,
+      "sha256": "b55793758636f66c29c6e9e1889caadabfcabd0ba2d42d3b398f75dd1ae0e45c",
+      "original_native_bytes": 19065,
+      "original_native_sha256": "cc1f2f0af26875d1b19219e647169a4c4d81904d077caa4931541894b35d18d2"
+    },
+    "stderr": {
+      "path": "captures/prior-native-intake/original-fork-plan122-body.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "prior-native-intake"
+  },
+  {
+    "name": "original-fork-plan122-reviews",
+    "argv": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/open-hax/foresight/pulls/122/reviews?per_page=100"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:08:55.849369+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/prior-native-intake/original-fork-plan122-reviews.stdout.b64",
+      "bytes": 95144,
+      "sha256": "6310b210463b704575245b0657c29b4117454453c344434c11daf955fbee730b",
+      "original_native_bytes": 96820,
+      "original_native_sha256": "2be0d066ce56695895949ae344883e30295669e5871695639ef02a38e11bb86f"
+    },
+    "stderr": {
+      "path": "captures/prior-native-intake/original-fork-plan122-reviews.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "prior-native-intake"
+  },
+  {
+    "name": "original-fork-plan122-comments",
+    "argv": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/open-hax/foresight/issues/122/comments?per_page=100"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:08:56.348609+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/prior-native-intake/original-fork-plan122-comments.stdout.b64",
+      "bytes": 80469,
+      "sha256": "e149bc2d3f1ba559de19179d242c019360410274c07a3f8020a120ba34601809",
+      "original_native_bytes": 79568,
+      "original_native_sha256": "19719569657cd0bb0d3d79e34ef5b62ca76def132ed1fcfd517bb291e13d0a7b"
+    },
+    "stderr": {
+      "path": "captures/prior-native-intake/original-fork-plan122-comments.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "prior-native-intake"
+  },
+  {
+    "name": "original-fork-plan122-files",
+    "argv": [
+      "gh",
+      "api",
+      "--paginate",
+      "--slurp",
+      "repos/open-hax/foresight/pulls/122/files?per_page=100"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:08:56.977698+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/prior-native-intake/original-fork-plan122-files.stdout.b64",
+      "bytes": 102616,
+      "sha256": "adffb77db1446b93971348fa22861ff7a1e95a3da3e3c4f3b5812f769115faa2",
+      "original_native_bytes": 103856,
+      "original_native_sha256": "54b29053e6403639655a8cecd4005994c3c5b2b84d8accc696387f56cab918f8"
+    },
+    "stderr": {
+      "path": "captures/prior-native-intake/original-fork-plan122-files.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "prior-native-intake"
+  },
+  {
+    "name": "canonical-all-native-original122-threads",
+    "argv": [
+      "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/runtime/nbb/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/runtime/pr-flow/scripts",
+      "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f/runtime/pr-flow/scripts/pr.cljs",
+      "threads",
+      "open-hax/foresight",
+      "122",
+      "--all"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/Foresight-native-board-ea1495635f",
+    "exit": 0,
+    "captured_at": "2026-10-07T06:13:16.079282+00:00",
+    "structural_string_redaction_before_persistence": true,
+    "stdout": {
+      "path": "captures/prior-native-intake/canonical-all-native-original122-threads.stdout.b64",
+      "bytes": 9899,
+      "sha256": "7b6c2bcfb1eef95213731a1853344c288f3389fe86cdadb10bf56774a604c164",
+      "original_native_bytes": 9899,
+      "original_native_sha256": "7b6c2bcfb1eef95213731a1853344c288f3389fe86cdadb10bf56774a604c164"
+    },
+    "stderr": {
+      "path": "captures/prior-native-intake/canonical-all-native-original122-threads.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_native_bytes": 0,
+      "original_native_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture_context": "prior-native-intake"
+  }
+]
