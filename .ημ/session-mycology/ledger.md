@@ -539,3 +539,12 @@
   spore: none
   receipt-refs: review5431650098
   note: Uniform input values can hide wrong-key mapping despite extensive guards. Use distinct values and independent path-map expectations; mutation passed old suite and failed strengthened suite. Preserve genuinely invalid negative facts after fixture diversification. No new spore.
+- ts: 2026-10-07T17:09:46.949356341Z
+  session: /home/err/.codex/parallel-goal/foresight4-log-review-override-_5t8odwo/worktree
+  task: Configure exact CodeRabbit default-log override preserving whole PR4 scope
+  p-efficiency: 0.8
+  p-friction: 0.2
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: PR4-exact-log-default-override;cc5dd3550b3bac2ef98bd576fadc5fe6f7f330e2
+  note: Use documented exact default override rather than a broad allowlist or local matcher. YAML/schema validation establishes configuration only; current native coverage and omitted-input admission remain distinct holds. Preserve owned donor import failure and exact personal retrieval.
