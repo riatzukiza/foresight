@@ -1,0 +1,169 @@
+{
+  "base": "9af4f5ef068a9845845b0641aae04f3757978da2",
+  "native_review": 5438715070,
+  "native_root": 4203977719,
+  "thread": "PRRT_kwDOU4VJMM6pyneZ",
+  "item": "cr-comment:v1:41c5d20c2edd96252942d601",
+  "references": [
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-project-validate",
+      "stream": "stdout",
+      "old_path": "captures/unchanged-project-validate.stdout.b64",
+      "corrected_path": "captures/current-owned/unchanged-project-validate.stdout.b64",
+      "decoded_bytes": 103,
+      "decoded_sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-project-validate",
+      "stream": "stderr",
+      "old_path": "captures/unchanged-project-validate.stderr.b64",
+      "corrected_path": "captures/current-owned/unchanged-project-validate.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-project-suite",
+      "stream": "stdout",
+      "old_path": "captures/unchanged-project-suite.stdout.b64",
+      "corrected_path": "captures/current-owned/unchanged-project-suite.stdout.b64",
+      "decoded_bytes": 85,
+      "decoded_sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-project-suite",
+      "stream": "stderr",
+      "old_path": "captures/unchanged-project-suite.stderr.b64",
+      "corrected_path": "captures/current-owned/unchanged-project-suite.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-workspace-suite",
+      "stream": "stdout",
+      "old_path": "captures/unchanged-workspace-suite.stdout.b64",
+      "corrected_path": "captures/current-owned/unchanged-workspace-suite.stdout.b64",
+      "decoded_bytes": 428,
+      "decoded_sha256": "45e785c28e5e537bf012de7d489d8568aa14c263a8c4940906ee6c0dbf225a8d",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-workspace-suite",
+      "stream": "stderr",
+      "old_path": "captures/unchanged-workspace-suite.stderr.b64",
+      "corrected_path": "captures/current-owned/unchanged-workspace-suite.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-root-lint",
+      "stream": "stdout",
+      "old_path": "captures/unchanged-root-lint.stdout.b64",
+      "corrected_path": "captures/current-owned/unchanged-root-lint.stdout.b64",
+      "decoded_bytes": 43,
+      "decoded_sha256": "e9b818e42e4e05b476098327dc21a94e58ce4978e1179bf57b440ea216e55aca",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/baseline-results.json",
+      "command": "unchanged-root-lint",
+      "stream": "stderr",
+      "old_path": "captures/unchanged-root-lint.stderr.b64",
+      "corrected_path": "captures/current-owned/unchanged-root-lint.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-project-validate",
+      "stream": "stdout",
+      "old_path": "captures/current-pin-project-validate.stdout.b64",
+      "corrected_path": "captures/current-owned/current-pin-project-validate.stdout.b64",
+      "decoded_bytes": 103,
+      "decoded_sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-project-validate",
+      "stream": "stderr",
+      "old_path": "captures/current-pin-project-validate.stderr.b64",
+      "corrected_path": "captures/current-owned/current-pin-project-validate.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-project-suite",
+      "stream": "stdout",
+      "old_path": "captures/current-pin-project-suite.stdout.b64",
+      "corrected_path": "captures/current-owned/current-pin-project-suite.stdout.b64",
+      "decoded_bytes": 85,
+      "decoded_sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-project-suite",
+      "stream": "stderr",
+      "old_path": "captures/current-pin-project-suite.stderr.b64",
+      "corrected_path": "captures/current-owned/current-pin-project-suite.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-workspace-suite",
+      "stream": "stdout",
+      "old_path": "captures/current-pin-workspace-suite.stdout.b64",
+      "corrected_path": "captures/current-owned/current-pin-workspace-suite.stdout.b64",
+      "decoded_bytes": 428,
+      "decoded_sha256": "45e785c28e5e537bf012de7d489d8568aa14c263a8c4940906ee6c0dbf225a8d",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-workspace-suite",
+      "stream": "stderr",
+      "old_path": "captures/current-pin-workspace-suite.stderr.b64",
+      "corrected_path": "captures/current-owned/current-pin-workspace-suite.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-root-lint",
+      "stream": "stdout",
+      "old_path": "captures/current-pin-root-lint.stdout.b64",
+      "corrected_path": "captures/current-owned/current-pin-root-lint.stdout.b64",
+      "decoded_bytes": 44,
+      "decoded_sha256": "f7271b318925087d2b7eee0bfe2cf13c4acc28f8534331e4f7d29d2d6b6c1a7c",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/fork-org-drift-planning/current-pin-baseline-results.json",
+      "command": "current-pin-root-lint",
+      "stream": "stderr",
+      "old_path": "captures/current-pin-root-lint.stderr.b64",
+      "corrected_path": "captures/current-owned/current-pin-root-lint.stderr.b64",
+      "decoded_bytes": 0,
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_container_style": "canonical_base64_plus_one_terminal_LF"
+    }
+  ]
+}

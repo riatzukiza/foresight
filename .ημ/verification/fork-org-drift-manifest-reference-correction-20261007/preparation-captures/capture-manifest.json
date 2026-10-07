@@ -1,0 +1,245 @@
+[
+  {
+    "label": "new-complete-independent-store",
+    "argv": [
+      "timeout",
+      "60",
+      "git",
+      "clone",
+      "--bare",
+      "--no-hardlinks",
+      "--no-local",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/source.git",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/source.git"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8",
+    "exit": 0,
+    "at": "2026-10-07T07:16:27.787419+00:00",
+    "stdout": {
+      "path": "audit/new-complete-independent-store.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/new-complete-independent-store.stderr.b64",
+      "bytes": 113,
+      "sha256": "c4b65cf9192b0aa9e23c713f57a3f74f4a12918c0b005a15a6c00f8854b764f5",
+      "raw_bytes": 113,
+      "raw_sha256": "c4b65cf9192b0aa9e23c713f57a3f74f4a12918c0b005a15a6c00f8854b764f5",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "exact-owned-source-fetch",
+    "argv": [
+      "timeout",
+      "60",
+      "git",
+      "--git-dir=/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/source.git",
+      "fetch",
+      "https://github.com/riatzukiza/foresight.git",
+      "codex/fork-org-drift-planning:refs/heads/codex/foresight25-capture-reference-repair"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8",
+    "exit": 0,
+    "at": "2026-10-07T07:16:28.629347+00:00",
+    "stdout": {
+      "path": "audit/exact-owned-source-fetch.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/exact-owned-source-fetch.stderr.b64",
+      "bytes": 142,
+      "sha256": "7cb340e24660c54ea80ced441f001697665bd5ec933731d60e1652d6a72ba714",
+      "raw_bytes": 142,
+      "raw_sha256": "7cb340e24660c54ea80ced441f001697665bd5ec933731d60e1652d6a72ba714",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "canonical-repair-status-first",
+    "argv": [
+      "timeout",
+      "60",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/runtime/bin/node",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/runtime/node_modules/nbb/cli.js",
+      "-cp",
+      "/home/err/.agents/skills/pr-flow/scripts",
+      "/home/err/.agents/skills/pr-flow/scripts/pr.cljs",
+      "status",
+      "riatzukiza/foresight",
+      "25"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree",
+    "exit": 0,
+    "at": "2026-10-07T07:18:20.799206+00:00",
+    "stdout": {
+      "path": "audit/canonical-repair-status-first.stdout.b64",
+      "bytes": 623,
+      "sha256": "eeb50a0ad6362c7445fe7ff91614c3dd64b262e6dafd0039f24540c28744f732",
+      "raw_bytes": 623,
+      "raw_sha256": "eeb50a0ad6362c7445fe7ff91614c3dd64b262e6dafd0039f24540c28744f732",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/canonical-repair-status-first.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-repair-guard",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-u",
+      "GH_TOKEN",
+      "-u",
+      "GITHUB_TOKEN",
+      "gh",
+      "pr",
+      "view",
+      "25",
+      "--repo",
+      "riatzukiza/foresight",
+      "--json",
+      "headRefOid,baseRefOid,headRefName,baseRefName,isDraft,state,autoMergeRequest,labels"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree",
+    "exit": 0,
+    "at": "2026-10-07T07:18:21.333061+00:00",
+    "stdout": {
+      "path": "audit/native-repair-guard.stdout.b64",
+      "bytes": 466,
+      "sha256": "a3fa4df56b60b8a512fe188c2e073208ed9daf0106831ac13fa5653d16a883f2",
+      "raw_bytes": 466,
+      "raw_sha256": "a3fa4df56b60b8a512fe188c2e073208ed9daf0106831ac13fa5653d16a883f2",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-repair-guard.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-repair-project-discovery",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "HOME=/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/userhome",
+      "XDG_CACHE_HOME=/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/cache",
+      "TMPDIR=/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/tmp",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/runtime/bin/bb",
+      "--config",
+      "/dev/null",
+      "-e",
+      "(load-file \"/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/runtime/canonical-session-mycology/common.bb\") (prn (session-mycology.common/find-project-root))"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree",
+    "exit": 0,
+    "at": "2026-10-07T07:20:22.537473+00:00",
+    "stdout": {
+      "path": "audit/native-repair-project-discovery.stdout.b64",
+      "bytes": 79,
+      "sha256": "81eb26f66aa6f2fa2175c410ee1d9dacf01c89c6316e017961b754ed9e5dd86a",
+      "raw_bytes": 79,
+      "raw_sha256": "81eb26f66aa6f2fa2175c410ee1d9dacf01c89c6316e017961b754ed9e5dd86a",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-repair-project-discovery.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-repair-reflection",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "HOME=/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/userhome",
+      "XDG_CACHE_HOME=/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/cache",
+      "TMPDIR=/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/tmp",
+      "bwrap",
+      "--ro-bind",
+      "/",
+      "/",
+      "--dev",
+      "/dev",
+      "--proc",
+      "/proc",
+      "--bind",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree",
+      "--bind",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/tmp",
+      "/tmp",
+      "--bind",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/cache",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/cache",
+      "--unshare-net",
+      "--die-with-parent",
+      "--chdir",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/runtime/bin/bb",
+      "--config",
+      "/dev/null",
+      "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/runtime/canonical-session-mycology/sm-log.bb",
+      "--task",
+      "Correct PR25 baseline manifest capture references",
+      "--efficiency",
+      "0.93",
+      "--friction",
+      "0.08",
+      "--candidate",
+      "0.0",
+      "--receipt-refs",
+      ".\u03b7\u03bc/receipts.edn",
+      "--note",
+      "Exact16path-only correction resolves both manifests to existing current-owned captures while preserving all5originalcriteria and historical command/time/result/hash fields. All68source streams verify canonical base64 plus terminalLF; my initial noLF check refused and is retained without normalization. Canonical discovery verified owned cwd before sandboxed writer; no native settlement, reviewer request, board state or source qualification claim."
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree",
+    "exit": 0,
+    "at": "2026-10-07T07:20:22.727098+00:00",
+    "stdout": {
+      "path": "audit/native-repair-reflection.stdout.b64",
+      "bytes": 122,
+      "sha256": "ff6a1bbd754355b2c2a943e24639c411a0be0d7f2e4b0efb1de1dc2694564b24",
+      "raw_bytes": 122,
+      "raw_sha256": "ff6a1bbd754355b2c2a943e24639c411a0be0d7f2e4b0efb1de1dc2694564b24",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-repair-reflection.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  }
+]
