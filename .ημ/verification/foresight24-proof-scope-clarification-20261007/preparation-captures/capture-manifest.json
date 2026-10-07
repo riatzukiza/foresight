@@ -1,0 +1,112 @@
+[
+  {
+    "label": "own-fetch-baseline",
+    "argv": [
+      "timeout",
+      "30",
+      "git",
+      "--git-dir=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/source.git",
+      "fetch",
+      "/home/err/.codex/parallel-goal/foresight23-24-native-followthrough-a3s_wlrx/source.git",
+      "d7ad3f18cd968fa064bd08dc70babc9dfdf529cc:refs/heads/codex/foresight24-proof-snapshot-scope"
+    ],
+    "exit": 0,
+    "at": "2026-10-07T06:43:05.591515+00:00",
+    "stdout": {
+      "path": "audit/own-fetch-baseline.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/own-fetch-baseline.stderr.b64",
+      "bytes": 192,
+      "sha256": "48767a00573fe30465d4237ce3ff5b50dcd8440d0bcc83061fde6fe099f893ac",
+      "raw_bytes": 192,
+      "raw_sha256": "48767a00573fe30465d4237ce3ff5b50dcd8440d0bcc83061fde6fe099f893ac",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-f24-preparation-guard",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-u",
+      "GH_TOKEN",
+      "-u",
+      "GITHUB_TOKEN",
+      "gh",
+      "pr",
+      "view",
+      "24",
+      "--repo",
+      "riatzukiza/foresight",
+      "--json",
+      "number,headRefOid,baseRefOid,headRefName,baseRefName,state,isDraft,autoMergeRequest,labels"
+    ],
+    "exit": 0,
+    "at": "2026-10-07T06:44:27.450641+00:00",
+    "stdout": {
+      "path": "audit/native-f24-preparation-guard.stdout.b64",
+      "bytes": 474,
+      "sha256": "31348cca9b2b3a6d3b1735db0b3f275ef843349f8d0ba73a31831745c0505e87",
+      "raw_bytes": 474,
+      "raw_sha256": "31348cca9b2b3a6d3b1735db0b3f275ef843349f8d0ba73a31831745c0505e87",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-f24-preparation-guard.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "pinned-reusable-source",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-u",
+      "GH_TOKEN",
+      "-u",
+      "GITHUB_TOKEN",
+      "gh",
+      "api",
+      "repos/open-hax/eta-mu/contents/.github/workflows/opencode-code-review.yml?ref=45ec644c2d15ed511e9bc1e797d1b4073b63dbfc"
+    ],
+    "exit": 0,
+    "at": "2026-10-07T06:44:28.034516+00:00",
+    "stdout": {
+      "path": "audit/pinned-reusable-source.stdout.b64",
+      "bytes": 109968,
+      "sha256": "0b59e3d5f371fa45cdafa74e613e21e63fb017c7f5d160e0e652a529c34b57a2",
+      "raw_bytes": 110155,
+      "raw_sha256": "3ebbbff2f45482a5babce37526fe0bf9db255901675a836b7947da642b1185d0",
+      "structurally_withheld_urls": [
+        {
+          "host": "api.github.com",
+          "query_withheld": true
+        },
+        {
+          "host": "api.github.com",
+          "query_withheld": true
+        }
+      ]
+    },
+    "stderr": {
+      "path": "audit/pinned-reusable-source.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  }
+]

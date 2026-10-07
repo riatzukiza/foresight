@@ -1,0 +1,32 @@
+{
+  "preparation_native_state": {
+    "autoMergeRequest": null,
+    "baseRefName": "sync/origin-fcfc2d17f28640203066ddfe0a22f87db7372a32",
+    "baseRefOid": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "headRefName": "codex/census-review-hold",
+    "headRefOid": "d7ad3f18cd968fa064bd08dc70babc9dfdf529cc",
+    "isDraft": false,
+    "labels": [
+      {
+        "id": "LA_kwDOU4VJMM8AAAAC7R4qUQ",
+        "name": "blocked",
+        "description": "Concrete dependency or operational availability blocker; not a Rheos status projection",
+        "color": "B60205"
+      }
+    ],
+    "number": 24,
+    "state": "OPEN"
+  },
+  "caller": ".github/workflows/eta-mu-review.yml",
+  "callee_ref": "open-hax/eta-mu/.github/workflows/opencode-code-review.yml@45ec644c2d15ed511e9bc1e797d1b4073b63dbfc",
+  "callee_sha256": "469c9ee25a6947d30f929d3267f383416cd26ea6956d14ba532519e31fa3b742",
+  "source_guard_lines": {
+    "deterministic": 80,
+    "context": 572,
+    "review": 881,
+    "aggregate_inapplicable": 1426
+  },
+  "required_root_publication_prerequisite": "Convert existing PR24 to draft and verify current head/blocked/autooff before publishing this peer-checked correction. Root owns the operation.",
+  "draft_inapplicable_guard_is_not_qualification": true,
+  "candidate_readiness_mutation": false
+}

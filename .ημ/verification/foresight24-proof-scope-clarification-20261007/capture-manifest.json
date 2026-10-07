@@ -1,0 +1,341 @@
+[
+  {
+    "label": "own-fetch-baseline",
+    "argv": [
+      "timeout",
+      "30",
+      "git",
+      "--git-dir=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/source.git",
+      "fetch",
+      "/home/err/.codex/parallel-goal/foresight23-24-native-followthrough-a3s_wlrx/source.git",
+      "d7ad3f18cd968fa064bd08dc70babc9dfdf529cc:refs/heads/codex/foresight24-proof-snapshot-scope"
+    ],
+    "exit": 0,
+    "at": "2026-10-07T06:43:05.591515+00:00",
+    "stdout": {
+      "path": "audit/own-fetch-baseline.stdout.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/own-fetch-baseline.stderr.b64",
+      "bytes": 192,
+      "sha256": "48767a00573fe30465d4237ce3ff5b50dcd8440d0bcc83061fde6fe099f893ac",
+      "raw_bytes": 192,
+      "raw_sha256": "48767a00573fe30465d4237ce3ff5b50dcd8440d0bcc83061fde6fe099f893ac",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-f24-preparation-guard",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-u",
+      "GH_TOKEN",
+      "-u",
+      "GITHUB_TOKEN",
+      "gh",
+      "pr",
+      "view",
+      "24",
+      "--repo",
+      "riatzukiza/foresight",
+      "--json",
+      "number,headRefOid,baseRefOid,headRefName,baseRefName,state,isDraft,autoMergeRequest,labels"
+    ],
+    "exit": 0,
+    "at": "2026-10-07T06:44:27.450641+00:00",
+    "stdout": {
+      "path": "audit/native-f24-preparation-guard.stdout.b64",
+      "bytes": 474,
+      "sha256": "31348cca9b2b3a6d3b1735db0b3f275ef843349f8d0ba73a31831745c0505e87",
+      "raw_bytes": 474,
+      "raw_sha256": "31348cca9b2b3a6d3b1735db0b3f275ef843349f8d0ba73a31831745c0505e87",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-f24-preparation-guard.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "pinned-reusable-source",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-u",
+      "GH_TOKEN",
+      "-u",
+      "GITHUB_TOKEN",
+      "gh",
+      "api",
+      "repos/open-hax/eta-mu/contents/.github/workflows/opencode-code-review.yml?ref=45ec644c2d15ed511e9bc1e797d1b4073b63dbfc"
+    ],
+    "exit": 0,
+    "at": "2026-10-07T06:44:28.034516+00:00",
+    "stdout": {
+      "path": "audit/pinned-reusable-source.stdout.b64",
+      "bytes": 109968,
+      "sha256": "0b59e3d5f371fa45cdafa74e613e21e63fb017c7f5d160e0e652a529c34b57a2",
+      "raw_bytes": 110155,
+      "raw_sha256": "3ebbbff2f45482a5babce37526fe0bf9db255901675a836b7947da642b1185d0",
+      "structurally_withheld_urls": [
+        {
+          "host": "api.github.com",
+          "query_withheld": true
+        },
+        {
+          "host": "api.github.com",
+          "query_withheld": true
+        }
+      ]
+    },
+    "stderr": {
+      "path": "audit/pinned-reusable-source.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-portable-reflection",
+    "argv": [
+      "timeout",
+      "20",
+      "env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/userhome",
+      "XDG_CACHE_HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/cache",
+      "TMPDIR=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/tmp",
+      "/usr/local/bin/bb",
+      "--config",
+      "/dev/null",
+      "/home/err/.agents/skills/session-mycology/scripts/sm-log.bb",
+      "--task",
+      "Clarify historical F24 precommit proof scope",
+      "--efficiency",
+      "0.93",
+      "--friction",
+      "0.10",
+      "--candidate",
+      "false",
+      "--receipt-refs",
+      ".\u03b7\u03bc/receipts.edn",
+      "--note",
+      "Preserve original proof/receipt/reflection bytes. Bind historical21paths1588bytes to66a; d7 baseline33paths8573bytes is distinct. Generation clock is unknown. Native c1 rejection/body hold and code cohort0 remain unresolved; no source approval or board operation."
+    ],
+    "exit": 0,
+    "at": "2026-10-07T06:47:24.735214+00:00",
+    "stdout": {
+      "path": "audit/native-portable-reflection.stdout.b64",
+      "bytes": 62,
+      "sha256": "fd0ec9010980faa92f7fb72fa47160537abf510e0a3a140218c7ed1101375303",
+      "raw_bytes": 62,
+      "raw_sha256": "fd0ec9010980faa92f7fb72fa47160537abf510e0a3a140218c7ed1101375303",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-portable-reflection.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-project-discovery-correct-cwd",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/userhome",
+      "XDG_CACHE_HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/cache",
+      "TMPDIR=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/tmp",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/bin/bb",
+      "--config",
+      "/dev/null",
+      "-e",
+      "(load-file \"/home/err/.agents/skills/session-mycology/scripts/common.bb\") (prn (session-mycology.common/find-project-root))"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree",
+    "exit": 0,
+    "at": "2026-10-07T06:52:28.559879+00:00",
+    "stdout": {
+      "path": "audit/native-project-discovery-correct-cwd.stdout.b64",
+      "bytes": 86,
+      "sha256": "078d6b3d60bf933d24d0769e7e722168b81a0028c89af2cc7949848afaec4b5e",
+      "raw_bytes": 86,
+      "raw_sha256": "078d6b3d60bf933d24d0769e7e722168b81a0028c89af2cc7949848afaec4b5e",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-project-discovery-correct-cwd.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "native-portable-reflection-correct-cwd",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-i",
+      "PATH=/usr/bin:/bin",
+      "HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/userhome",
+      "XDG_CACHE_HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/cache",
+      "TMPDIR=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/tmp",
+      "bwrap",
+      "--ro-bind",
+      "/",
+      "/",
+      "--dev",
+      "/dev",
+      "--proc",
+      "/proc",
+      "--bind",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/tmp",
+      "/tmp",
+      "--bind",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree",
+      "--bind",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/cache",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/cache",
+      "--unshare-net",
+      "--die-with-parent",
+      "--chdir",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/bin/bb",
+      "--config",
+      "/dev/null",
+      "/home/err/.agents/skills/session-mycology/scripts/sm-log.bb",
+      "--task",
+      "Clarify historical F24 precommit proof scope and correct writer cwd",
+      "--efficiency",
+      "0.75",
+      "--friction",
+      "0.42",
+      "--candidate",
+      "0.0",
+      "--receipt-refs",
+      ".\u03b7\u03bc/receipts.edn",
+      "--note",
+      "Historical proof scope remains distinct from current head. My first capture wrapper forced the audit-root cwd and the canonical writer appended 564 bytes to /home/err/.codex/.\u03b7\u03bc/session-mycology/ledger.md; exact entry SHA1c47e8720e1cb600d66a8202def62edc74ec3f8a7fedbd241f211addb7d53298 is retained without global rollback or prior-prefix claim. Canonical discovery now verified this owned worktree and host read-only sandbox guards the correct append. No review settlement, board transition or qualification claim."
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree",
+    "exit": 0,
+    "at": "2026-10-07T06:52:43.252393+00:00",
+    "stdout": {
+      "path": "audit/native-portable-reflection-correct-cwd.stdout.b64",
+      "bytes": 129,
+      "sha256": "a7c38b413cf6820b5775517539834355b4eff11bfed2e42ec234b45fb4011b04",
+      "raw_bytes": 129,
+      "raw_sha256": "a7c38b413cf6820b5775517539834355b4eff11bfed2e42ec234b45fb4011b04",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/native-portable-reflection-correct-cwd.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "receipt-owner-baseline",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-i",
+      "PATH=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/bin:/usr/bin:/bin",
+      "HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/userhome",
+      "XDG_CACHE_HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/cache",
+      "TMPDIR=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/tmp",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/bin/node",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/node_modules/nbb/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/receipt-owner/src/cljs",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/.final-proof/validate_receipts.cljs",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/.final-proof/baseline-receipts.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree",
+    "exit": 1,
+    "at": "2026-10-07T06:54:04.438060+00:00",
+    "stdout": {
+      "path": "audit/receipt-owner-baseline.stdout.b64",
+      "bytes": 19217,
+      "sha256": "460a3fd69ed9336d488a4e6260a1b42a18c7a8532737ffdabd36ab618f14e9af",
+      "raw_bytes": 19217,
+      "raw_sha256": "460a3fd69ed9336d488a4e6260a1b42a18c7a8532737ffdabd36ab618f14e9af",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/receipt-owner-baseline.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  },
+  {
+    "label": "receipt-owner-precommit",
+    "argv": [
+      "timeout",
+      "30",
+      "env",
+      "-i",
+      "PATH=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/bin:/usr/bin:/bin",
+      "HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/userhome",
+      "XDG_CACHE_HOME=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/cache",
+      "TMPDIR=/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/tmp",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/bin/node",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/node_modules/nbb/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/runtime/receipt-owner/src/cljs",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/.final-proof/validate_receipts.cljs",
+      "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/.final-proof/precommit-receipts.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree",
+    "exit": 1,
+    "at": "2026-10-07T06:54:04.871672+00:00",
+    "stdout": {
+      "path": "audit/receipt-owner-precommit.stdout.b64",
+      "bytes": 19369,
+      "sha256": "8b00941e98fc360ba2a325b2f8540ab16faf0e5a69a9d1f8efa7bd089218f40d",
+      "raw_bytes": 19369,
+      "raw_sha256": "8b00941e98fc360ba2a325b2f8540ab16faf0e5a69a9d1f8efa7bd089218f40d",
+      "structurally_withheld_urls": []
+    },
+    "stderr": {
+      "path": "audit/receipt-owner-precommit.stderr.b64",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "structurally_withheld_urls": []
+    }
+  }
+]

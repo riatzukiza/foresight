@@ -534,3 +534,12 @@ Scores: efficiency 0.70; friction 0.62; skill-candidate 0.45. Preserve native ap
   spore: none
   receipt-refs: persistent-census-review-hold-20261007,foresight24-canonical-mycology-correction-20261007
   note: Append-only correction of the unstructured census reflection at c289aaf111756becd5e9b2384dfbccb3f65c17e0, lines 525-527, verified MiMo4202326917. Historical heading/prose remains unchanged and remains absorbed in the preceding reader chunk; this current structured record restates it without backdating. Preserve native append content according to actual API grouping rather than asserting immutable whole aggregate sections. One accepted comment and one rejected transition are distinct facts; a GitHub blocked label does not imply native blocked status. Existing Rheos issue4 owns the missing edge. No spore/promotion, board write, settlement, review request or approval.
+- ts: 2026-10-07T06:52:43.249973826Z
+  session: /home/err/.codex/parallel-goal/foresight24-proof-scope-correction-qm27mmky/worktree
+  task: Clarify historical F24 precommit proof scope and correct writer cwd
+  p-efficiency: 0.75
+  p-friction: 0.42
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: .ημ/receipts.edn
+  note: Historical proof scope remains distinct from current head. My first capture wrapper forced the audit-root cwd and the canonical writer appended 564 bytes to /home/err/.codex/.ημ/session-mycology/ledger.md; exact entry SHA1c47e8720e1cb600d66a8202def62edc74ec3f8a7fedbd241f211addb7d53298 is retained without global rollback or prior-prefix claim. Canonical discovery now verified this owned worktree and host read-only sandbox guards the correct append. No review settlement, board transition or qualification claim.

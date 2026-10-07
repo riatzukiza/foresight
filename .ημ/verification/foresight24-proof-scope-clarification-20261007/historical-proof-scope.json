@@ -1,0 +1,122 @@
+{
+  "scope": "Historical precommit artifact scope clarification; no replacement of original proof or full candidate admission",
+  "native_finding": {
+    "review_id": 5437540306,
+    "body_label": "c2-precommit-proof-scope",
+    "reviewed_head": "d7ad3f18cd968fa064bd08dc70babc9dfdf529cc",
+    "author": "eta-mu-ai[bot]"
+  },
+  "original_artifact": {
+    "path": ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/precommit-preservation-proof.json",
+    "sha256": "06040c89991b8bf471ddbb33f7202a14d7ea096edc94a4d3bf7da8dba5b7b974",
+    "bytes": 2805,
+    "base_commit": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+    "generation_timestamp": null,
+    "generation_timestamp_status": "unknown; absent from original artifact",
+    "introducing_commit": "66a4bc2c014716b8e006f844dd61511df20f1fcf",
+    "introducing_commit_timestamp": "2026-10-06T22:32:24-05:00",
+    "unchanged_at_preservation_baseline": true
+  },
+  "historical_snapshot": {
+    "commit": "66a4bc2c014716b8e006f844dd61511df20f1fcf",
+    "changed_paths_against_declared_base": [
+      ".\u03b7\u03bc/receipts.edn",
+      ".\u03b7\u03bc/session-mycology/ledger.md",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/README.md",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-first.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-first.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-status-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-tool-source-provenance.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-writer-reader-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/capture-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/precommit-preservation-proof.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/reader-writer-proof.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-after.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-after.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-before.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-before.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-log-canonical-append.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-log-canonical-append.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/verified-native-finding.json"
+    ],
+    "changed_path_count": 21,
+    "receipt_base_bytes": 312877,
+    "receipt_head_bytes": 314465,
+    "receipt_append_bytes": 1588,
+    "declared_path_set_exact": true
+  },
+  "preservation_baseline_snapshot": {
+    "commit": "d7ad3f18cd968fa064bd08dc70babc9dfdf529cc",
+    "changed_paths_against_declared_base": [
+      ".\u03b7\u03bc/receipts.edn",
+      ".\u03b7\u03bc/session-mycology/ledger.md",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/README.md",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-first.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-first.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-status-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-tool-source-provenance.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-writer-reader-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/capture-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/complete-native-review-scope.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/independent-original-capture-proof.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/precommit-preservation-proof.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/reader-writer-proof.json",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-after.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-after.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-before.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-list-before.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-log-canonical-append.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/sm-log-canonical-append.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/verified-native-finding.json",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/README.md",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/canonical-first.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/canonical-first.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/canonical-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/capture-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/dual-contract-preappend.stderr.b64",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/dual-contract-preappend.stdout.b64",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/owner-source-provenance.json",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/preappend-manifest.json",
+      ".\u03b7\u03bc/verification/foresight24-receipt-adjudication-20261007/refused-row-identities.json"
+    ],
+    "changed_path_count": 33,
+    "receipt_base_bytes": 312877,
+    "receipt_head_bytes": 321450,
+    "receipt_append_bytes": 8573,
+    "appended_records": 4,
+    "receipt_prefix_exact": true,
+    "not_claimed_to_be_this_successor_fulltip": true
+  },
+  "underlying_observation_times": {
+    "canonical_status": {
+      "source": ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-status-manifest.json",
+      "at": "2026-10-07T03:29:47.382923+00:00"
+    },
+    "native_head_guard": {
+      "source": ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/native-head-guard.json",
+      "at": "2026-10-07T03:30:16.226665+00:00"
+    },
+    "native_writer": {
+      "source": ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-writer-reader-manifest.json",
+      "at": "2026-10-07T03:31:00.422793+00:00"
+    },
+    "after_reader": {
+      "source": ".\u03b7\u03bc/verification/foresight24-mycology-correction-20261007/canonical-writer-reader-manifest.json",
+      "at": "2026-10-07T03:31:00.474200+00:00"
+    }
+  },
+  "limitations": [
+    "Observation timestamps and introducing-commit timestamps do not establish proof-generation time.",
+    "Original count/path claims belong to historical snapshot66a, not baseline shippingd7 or this new successor.",
+    "Byte/record counts establish source identity and scope, not broader Receipt River historical admission.",
+    "Rows201/202 remain byte-exact and refused by current Receipt River; no historical receipt normalization.",
+    "Reflection residue finding and independent scoped agreement obligations remain unresolved.",
+    "No whole review-body Fixed disposition, approval, completed cohort, board-state change or merge qualification."
+  ]
+}
