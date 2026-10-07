@@ -784,6 +784,46 @@
                        :current current :historical historical
                        :base-text base-text :base base :commit! commit!)))))))
 
+(deftest receipt-verification-admits-bound-envelope-view-with-original-bytes
+  (with-historical-ledger-fixture true
+    (fn [{:keys [base base-text current commit!]}]
+      (let [original (assoc current
+                            :kind :decision
+                            :origin "bound-envelope-target"
+                            :manifest "exact, manifest contents"
+                            :refs "exact, reference contents"
+                            :dod ["first requirement" " second requirement "]
+                            :pi :cephalon/character-memory)
+            original-line (str (pr-str original) "\n")
+            source-text (str base-text original-line)
+            source (commit! source-text)
+            correction (assoc current
+                              :kind :correction
+                              :origin "bound-envelope-correction"
+                              :correction/entries
+                              [{:receipt/line 2
+                                :receipt/origin (:origin original)
+                                :receipt/source-revision source
+                                :receipt/source-sha256
+                                (cli/sha256 (js/Buffer.from original-line "utf8"))
+                                :envelope/corrected-fields
+                                {:manifest ["exact, manifest contents"]
+                                 :refs ["exact, reference contents"]
+                                 :dod "first requirement;  second requirement "
+                                 :pi "cephalon/character-memory"}}])
+            head-text (str source-text (pr-str correction) "\n")
+            head (commit! head-text)
+            outcome (try
+                      {:exit (cli/verify-receipts! {:base base :at head})}
+                      (catch :default error
+                        {:error (.-message error)}))]
+        (is (not (law/receipt-envelope? original)))
+        (is (law/receipt-envelope? correction))
+        (is (str/starts-with? head-text source-text)
+            "The source's original physical ledger bytes stay unchanged")
+        (is (= {:exit 0} outcome)
+            "An exact ancestor/line/origin/including-LF hash correction should admit the documentary view")))))
+
 (deftest receipt-verification-trusts-exact-historical-prefix-only
   (doseq [terminal-newline? [true false]]
     (with-historical-ledger-fixture terminal-newline?

@@ -1,11 +1,12 @@
 ---
 uuid: "707901cb-e498-4ce3-aa1c-245202ced648"
 title: "Support bound envelope corrections in immutable receipt verification"
-status: incoming
-priority: P1
-points: 3
+status: "in_progress"
+priority: "P1"
+points: "3"
 labels: "evidence, receipts, compatibility, laws"
 created_at: "2026-10-07"
+write-id: "1791413899606-0.sayxzmk0izr8z47rum"
 ---
 
 # Support bound envelope corrections in immutable receipt verification
