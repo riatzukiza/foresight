@@ -1,0 +1,84 @@
+{
+  "verifiedAtSourceHead": "66a4bc2c014716b8e006f844dd61511df20f1fcf",
+  "originalPublishedHead": "c289aaf111756becd5e9b2384dfbccb3f65c17e0",
+  "captureMetadataContract": "Four original capture manifests bind eight actual decoded streams by exact size and SHA256",
+  "sourceObservationProofScope": "Summary has byte/count/prefix claims, not capture hashes; hash authority resides in four capture manifests",
+  "streams": [
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-card-after.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-card-after.stdout.b64",
+      "decodedBytes": 2698,
+      "sha256": "17007a85649c936cf772c8db2ea03bd440e6a8b5d222f3dbfa6eb94083553320",
+      "unchangedSincePublishedHead": true
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-card-after.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-card-after.stderr.b64",
+      "decodedBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchangedSincePublishedHead": true
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-card-before.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-card-before.stdout.b64",
+      "decodedBytes": 2034,
+      "sha256": "9a5ae34aad75d49b37ac504c864973f52e1ed7881372b7921a2209e4eadab4c3",
+      "unchangedSincePublishedHead": true
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-card-before.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-card-before.stderr.b64",
+      "decodedBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchangedSincePublishedHead": true
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-comment-hold.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-comment-hold.stdout.b64",
+      "decodedBytes": 744,
+      "sha256": "3ebf4ce6064ea5058a4fda3f980832908d1ce85160cf325ea98ae7d8132d7d71",
+      "unchangedSincePublishedHead": true
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-comment-hold.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-comment-hold.stderr.b64",
+      "decodedBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchangedSincePublishedHead": true
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-status-blocked.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-status-blocked.stdout.b64",
+      "decodedBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchangedSincePublishedHead": true
+    },
+    {
+      "manifest": ".\u03b7\u03bc/verification/census-review-hold/native-status-blocked.capture.json",
+      "stream": ".\u03b7\u03bc/verification/census-review-hold/native-status-blocked.stderr.b64",
+      "decodedBytes": 1182,
+      "sha256": "0b144e848fa12ba6311e9acee99e1a8f68cac7fc88dee6dcd62bc294e3afc3d3",
+      "unchangedSincePublishedHead": true
+    }
+  ],
+  "eightDeclaredStreamsActual": 8,
+  "eventLedgerBase": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "eventLedgerExactPrefix": true,
+  "eventLedgerBaseBytes": 145352,
+  "eventLedgerBaseSha256": "17ac05adc453d1e0238e4b864b19577af012abc56e583af3692ce4cfefaa0c12",
+  "eventLedgerAppendBytes": 1070,
+  "eventLedgerAppendSha256": "e14e68fde31ab3174e7be95c6b31366f22563f0f27befc139cf967b66466c86f",
+  "appendLFBoundedRecordCount": 1,
+  "noEDNParserOrBoardSemanticReimplementation": true,
+  "unchangedLedgerSinceOriginalPublishedHead": true,
+  "nativeObservedBodyUnchanged": true,
+  "nativeObservedCommentExactAppend": true,
+  "nativeObservedFrontmatterOnlyWriteIdChanged": [
+    "write-id"
+  ],
+  "nativeObservedStatus": "in_progress",
+  "nativeBlockedProcessExit": 1,
+  "actualUpstreamObservedRejectionRetained": true,
+  "ownPreparationCorrection": "Initial rejection-substring assertion omitted literal quotes around stage names and failed before proof writes; corrected to the exact native message without repeating a native operation",
+  "verificationLimit": "Independent bounded capture/Git-byte verification; no newCI gate, historical runtime replay, Rheos compiled qualification or retroactive repair"
+}
