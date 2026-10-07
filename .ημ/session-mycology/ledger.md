@@ -869,3 +869,9 @@
 - Separate3point standalone incoming card starts at1069 with no malformed appends imported; prospective fixtures cover exact binding, narrow fields, original-byte retention and all3consumers.
 - Keep strict ordinary envelopes and evidence truth; a documentary correction is not result/approval promotion. Native planning and Rheos Ready precede RED.
 - No spore incubated/promoted or runtime/board mutation; full physical character goal remains active.
+
+## 2026-10-07T22:44:11.512112+00:00 — clarify bounded envelope planning
+
+- Receipt `cephalon-bound-envelope-reader-clarified-20261007T2244`; efficiency 0.78, friction 0.22, skill-candidate 0.15.
+- Read-only independent review identified two genuine P2 ambiguities: exact DoD text conversion and per-consumer ancestry anchors. Clarified both before native planning review.
+- Preserve prior provenance and strict ordinary law; no implementation, behavioral tests, native Ready or provider approval claimed. No spore incubated/promoted.

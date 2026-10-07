@@ -59,12 +59,19 @@ facts and failed historical observations remain inspectable.
 - Initially permit only the four corrected envelope fields here: `manifest`,
   `refs`, `dod` and `pi`. Exact string-to-singleton-vector wrapping preserves
   manifest/refs contents, including commas; namespace-preserving keyword text
-  supplies Pi; explicitly qualify the supplied vector-DoD text interpretation.
+  supplies Pi (namespace/name without the leading colon). For DoD, permit only
+  a nonempty vector of nonblank strings joined in original order with the exact
+  separator `; `, preserving each element's contents. The supplied replacement
+  must equal that result; other element types or transformations are refused.
   No automatic coercion of arbitrary malformed records or semantic fields.
 - Extend the existing NBB adapter's immutable blob/line machinery to verify full
   source commit, same-repository ancestry, original line ordinal/origin and
   SHA256 over exact original UTF-8 line bytes including the final LF. Retain all
-  existing UTF-8, newline, immutable-source and base-prefix refusals.
+  existing UTF-8, newline, immutable-source and base-prefix refusals. The source
+  must be an ancestor of the exact `--at` commit for immutable verification and
+  promotion. For a held working-ledger extension, the anchor is its captured
+  committed HEAD; a source descending from that HEAD is refused until committed
+  ancestry actually includes it. Recheck that anchor before any gate execution.
 - Apply that single admission decision in `verify-receipts!`,
   `promotion-ready-at!` and held-ledger validation. Keep current CLI/workflow
   command surfaces and separate raw receipt totals from corrected views.
@@ -93,6 +100,8 @@ the character loop as part of this prerequisite.
    original line/origin/hash, with the existing including-LF hash convention.
    Missing/unavailable/foreign/non-ancestor sources and wrong line/origin/hash
    fail closed. Source verification stays at the outer Git adapter boundary.
+   Fixtures cover a source descending from the base but ancestral to `--at`,
+   the same source refused by an older held HEAD, and a changed captured HEAD.
 3. Malformed correction entries, forward/self targets, duplicate or conflicting
    target interpretations, unsupported fields and arbitrary replacement values
    are refused explicitly; no order-dependent last-wins behavior. The permitted
