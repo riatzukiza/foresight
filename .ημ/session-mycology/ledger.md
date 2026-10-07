@@ -521,3 +521,13 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+
+## F66 lineage-admission planning reflection
+
+- Origin: root/issues, independent persistent worktree on exact personal sync96a.
+- Efficiency 0.82; friction 0.28; skill-candidate 0.20.
+- Lesson: branch names describe intent; fetched full SHAs control source authority. Preserve failed guards and explicit coordinator correction.
+- Better path: keep full issue criteria visible, identify child seams without promoting them, and qualify Incoming plans before code.
+- Evidence: .ημ/verification/F66-lineage-admission-planning; appended F66 decision receipt.
+- No spore/global distribution or provider contact.

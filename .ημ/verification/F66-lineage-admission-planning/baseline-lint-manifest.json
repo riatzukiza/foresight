@@ -1,0 +1,23 @@
+{
+  "tool": "/usr/local/bin/clj-kondo",
+  "scope": "existing unchanged scripts/test mandatory lint only; no implementation suite",
+  "command": [
+    "/usr/local/bin/clj-kondo",
+    "--cache",
+    "false",
+    "--lint",
+    "scripts",
+    "test"
+  ],
+  "exit": 0,
+  "stdout": {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/baseline-lint.stdout.b64",
+    "size": 43,
+    "sha256": "9a3bccdb19cae83d5c68e83b198a8170b7e6257fa3173d98b1446ea188694931"
+  },
+  "stderr": {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/baseline-lint.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

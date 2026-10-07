@@ -1,0 +1,110 @@
+{
+  "cli-sha256": "fba8bef53a9dbc159136de56f5a3c174af33b0d309ae0a26fce440467b50590c",
+  "cli-package": "installed eta-mu1.1.1 bundled @eta-mu/rheos0.1.0",
+  "surface": "unchanged published JSON config compatibility read; canonical EDN feature parity not claimed",
+  "records": [
+    {
+      "name": "native-epic",
+      "command": [
+        "node",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/installed-rheos/dist/cli.cjs",
+        "read-task",
+        "593ec22f-7390-4663-9800-77f64a450783",
+        "--config",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture/openhax.kanban.json"
+      ],
+      "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture",
+      "exit": 0,
+      "stdout": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-epic.stdout.b64",
+        "size": 4496,
+        "sha256": "968eb9e7f09db8beef772119aa606e08c5f40cdebe9214cdd9017b00c8aa11e2"
+      },
+      "stderr": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-epic.stderr.b64",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed-status": "incoming",
+      "observed-points": "8"
+    },
+    {
+      "name": "native-contracts",
+      "command": [
+        "node",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/installed-rheos/dist/cli.cjs",
+        "read-task",
+        "4ce826b1-74aa-40da-827b-17af91722431",
+        "--config",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture/openhax.kanban.json"
+      ],
+      "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture",
+      "exit": 0,
+      "stdout": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-contracts.stdout.b64",
+        "size": 4118,
+        "sha256": "3e8124a10f36d4d2d4423a355c53325759b5e1889e985d554f3f819b077fd1f8"
+      },
+      "stderr": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-contracts.stderr.b64",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed-status": "incoming",
+      "observed-points": "3"
+    },
+    {
+      "name": "native-admission",
+      "command": [
+        "node",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/installed-rheos/dist/cli.cjs",
+        "read-task",
+        "16edcfc1-b65c-441e-b527-ef50dc5c290a",
+        "--config",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture/openhax.kanban.json"
+      ],
+      "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture",
+      "exit": 0,
+      "stdout": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-admission.stdout.b64",
+        "size": 4251,
+        "sha256": "281d14fae81fa97bdbb2be7e930a7a48117d46e14b42e81d43ae7c04e5e4ee45"
+      },
+      "stderr": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-admission.stderr.b64",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed-status": "incoming",
+      "observed-points": "3"
+    },
+    {
+      "name": "native-proof",
+      "command": [
+        "node",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/installed-rheos/dist/cli.cjs",
+        "read-task",
+        "abc9f258-4328-4a15-8a91-5c74c6687300",
+        "--config",
+        "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture/openhax.kanban.json"
+      ],
+      "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/board-fixture",
+      "exit": 0,
+      "stdout": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-proof.stdout.b64",
+        "size": 4323,
+        "sha256": "81c68d86486c9bdcd09cdbb3ea190473a980c47ab5c02f635b623a0fd5b3c00e"
+      },
+      "stderr": {
+        "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-proof.stderr.b64",
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "observed-status": "incoming",
+      "observed-points": "2"
+    }
+  ],
+  "original-files-exact": true,
+  "created-files": [],
+  "no-transition-or-admission": true
+}
