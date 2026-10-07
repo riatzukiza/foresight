@@ -991,3 +991,11 @@
 - Evidence discipline: all36copied owned files matched originals; design prefix, card311byte frontmatter and committed receipt/reflection prefixes match. Old native approvals/quotas/readbacks remain historical, not this head's qualification.
 - Receipt correction: user directs append or contextual attribution, original bytes stay immutable; no rewrite approval is pending. Native reader's old per-map limit remains disclosed.
 - Better path: source-proven behavioral fixtures before adapter changes; native Rheos readiness before RED; scope before causal influence and deliberate idempotent feedback. No spore incubated or promoted.
+
+## 2026-10-07T22:09:45.368Z — append-only envelope correction
+
+- Receipt: `cephalon-append-only-envelope-correction-20261007T2211`; efficiency 0.55, friction 0.48, skill-candidate 0.20.
+- Actual failure: the immutable Foresight gate rejected11preserved appends for string/vector/keyword envelope types, including my latest record. Native source requires string DoD/Pi and vector manifest/refs.
+- Correction: append exact line/revision/hash-bound corrected fields and validate the new map with the owning `receipt-envelope?` before writing; preserve every original byte.
+- Limits: the current reader does not fold corrections, so the whole-ledger required gate remains failed. Do not relabel that failure as a pass or ask to rewrite history again.
+- Better path: read actual project envelope before each producer append; preserve repo-context attribution and reviewed owning-reader boundaries. No spore incubated or promoted.
