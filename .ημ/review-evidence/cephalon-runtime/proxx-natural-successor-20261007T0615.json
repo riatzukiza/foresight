@@ -1,0 +1,110 @@
+{
+  "record_kind": "observed_command_output_transcription",
+  "observed_at": "2026-10-07T06:16:10.145000+00:00",
+  "scope": "Whitelisted native Mongo/active API, actual saved files and independent public Bluesky GET after supported Proxx stream-bootstrap configuration maintenance. Not raw REST bytes or a reviewer approval.",
+  "predecessor_evidence": {
+    "path": ".ημ/review-evidence/cephalon-runtime/proxx-stream-timeout-20261007T0547.json",
+    "sha256": "fa3b98c0576a53e35efa0dad01cb479f80bbf4cd51c7c0c2e37a2a6295ef7001"
+  },
+  "native_run": {
+    "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791353245271-1791353245299",
+    "created_at": "2026-10-07T06:07:25.313Z",
+    "updated_at": "2026-10-07T06:14:52.161Z",
+    "status": "completed",
+    "error": null,
+    "total_time_ms": 446848,
+    "answer_length": 2235,
+    "answer_contains_all_upstream_attempts_failed": false,
+    "tool_receipts": [
+      {
+        "tool_name": "bash",
+        "status": "completed"
+      },
+      {
+        "tool_name": "bash",
+        "status": "completed"
+      },
+      {
+        "tool_name": "write",
+        "status": "completed"
+      },
+      {
+        "tool_name": "bash",
+        "status": "completed"
+      },
+      {
+        "tool_name": "bash",
+        "status": "completed"
+      },
+      {
+        "tool_name": "bluesky_publish",
+        "status": "completed"
+      },
+      {
+        "tool_name": "discord_send",
+        "status": "completed"
+      },
+      {
+        "tool_name": "write",
+        "status": "completed"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "/state/workspace/Graphics/cephalon/20261007T230000Z/cover.svg",
+      "bytes": 1938,
+      "sha256": "0230ea5817016123b6b071c9c4676085024da82f070e71b87691607ea862c47d"
+    },
+    {
+      "path": "/state/workspace/Graphics/cephalon/20261007T230000Z/cover.png",
+      "bytes": 59572,
+      "sha256": "9c88c282116ae47bf429ed556124afc519573f714f9c0dab463bb7457723f928",
+      "png_signature_valid": true,
+      "width": 800,
+      "height": 800
+    },
+    {
+      "path": "/state/workspace/Graphics/cephalon/20261007T230000Z/receipt.json",
+      "bytes": 402,
+      "sha256": "2d5abe0ae6ec66a0e73adfb5778afdf6b1223ae3ae2620683d4426ab1f2daff9"
+    }
+  ],
+  "public_bluesky": {
+    "http_status": 200,
+    "uri": "at://did:plc:gr6spgvkvxjirlmvjdie575b/app.bsky.feed.post/3mxbc2scpie2p",
+    "url": "https://bsky.app/profile/open-hax.bsky.social/post/3mxbc2scpie2p",
+    "created_at": "2026-10-07T06:12:55.088Z",
+    "indexed_at": "2026-10-07T06:12:55.772Z",
+    "images": 1,
+    "image_mime_type": "image/png",
+    "image_size": 59572,
+    "image_alt": "",
+    "blob_cid": "bafkreie4rdbieelk4r57ikpnkvqsjl6fdflt64kptqg2wrr3w5cxoi7zfa",
+    "decoded_cid_sha256_matches_saved_png": true
+  },
+  "discord": {
+    "native_tool_status": "completed",
+    "native_message_id": "1557274627988783104",
+    "channel_id": "1494137016303095828",
+    "independent_get_performed": false
+  },
+  "diagnostic": {
+    "pass": 12,
+    "warn": 7,
+    "fail": 0,
+    "active_runs": [],
+    "contract_files": 240,
+    "served_image_id": "sha256:ce0123ef17bade99603ea6ea19967c99c62869118d1cf52c057ab6a72500bf14",
+    "served_image_ref": "knoxx-backend:social-local-2644fc6-creative",
+    "local_image_and_contract_hashes_stable": true
+  },
+  "limits": [
+    "No manual maker invocation, publication replay, local Knoxx restart, model or contract change.",
+    "One natural visual cycle recovered; no general availability, future latency, terminal delegate fencing, musical quality or independent Discord delivery guarantee.",
+    "Empty public image alt confirms nonempty-alt admission remains unenforced.",
+    "Artifact directory timestamp 20261007T230000Z differs from actual admission/publication UTC; retain actual native timestamps and paths.",
+    "Six previous transport-error answers remain persisted completed/error-null; source lifecycle bug remains unfixed.",
+    "Initial active API follow-up used incorrect port3000 and returned TypeError; corrected port8000 read succeeded."
+  ]
+}

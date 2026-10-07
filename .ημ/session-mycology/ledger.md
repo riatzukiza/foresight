@@ -684,3 +684,110 @@
 - Scores: efficiency0.94, friction0.08, skill-candidate0.28.
 - Lesson: a completion criterion that permits failed outcomes needs a successful-output floor; provider shape checks must happen before mapping so a diagnostic can name the failure and preserve remaining observations. Execute the actual adapter script in negative fixtures.
 - No spore incubated or promoted; native board state remains incoming.
+
+## 2026-10-07 — cephalon-personal-root-qualified-observation-20261007T0131
+
+- Evidence: same-named receipt; native MiMo5436851464 and explanation6029687541.
+- Scores: efficiency0.91, friction0.13, skill-candidate0.20.
+- Lesson: refresh the entire PR description after a measured successor, preserve reviewer captured-body limits, and keep native approvals separate from convergence and live guarantees.
+- No spore incubated or promoted; observation appends await the next concrete owned change.
+
+## 2026-10-07 — cephalon-native-timeout-and-successor-clock-20261007T0247
+
+- Evidence: same-named receipt; native failed02:37 run and next02:52 active admission.
+- Scores: efficiency0.91, friction0.14, skill-candidate0.19.
+- Lesson: publication tool success and overall maker success are separate outcomes; retain a later timeout and avoid retrying externally visible effects. A following clock admission is not evidence of old-effect fencing.
+- No spore incubated or promoted; owned observation appends await next concrete change.
+
+## 2026-10-07 — cephalon-personal-root-current-full-review-20261007T0247
+
+- Evidence: same-named receipt; native request6029985176, trigger6029986399 and processing6026248096.
+- Scores: efficiency0.91, friction0.13, skill-candidate0.18.
+- Lesson: use NUL-delimited Git filenames in complete-input review briefs, and record the actual current native request/trigger/head pair after a conservative allowance wait. File selection and acknowledgments remain separate from substantive review completion.
+- No spore incubated or promoted; preserve observations until next concrete owned commit.
+
+## 2026-10-07T03:26:16.527061+00:00 — cephalon-personal-root-completed-review-20261007T0317
+
+- p-efficiency: 0.84; p-friction: 0.20; p-skill-candidate: 0.12.
+- Evidence: matching Receipt River origin above; current root no-findings completion is eligible native evidence, distinct from cohort convergence and formal GitHub approval.
+- Lesson: finish and archive the existing request before considering another; preserve quota and informational-thread blockers without review-head churn. One redundant TLS reply read failed before mutation; later raw archive and whole native body readback succeeded.
+- State: owned observation suffix only; runtime, incoming cards and reviewed remote heads unchanged. No spore incubated or promoted.
+
+## 2026-10-07T06:18:01.335308+00:00 — cephalon-proxx-stream-bootstrap-repair-20261007T0547
+
+- p-efficiency: 0.65; p-friction: 0.42; p-skill-candidate: 0.50.
+- Evidence: same-named Receipt River decision; native operational comment6032098124, preserved failure/repair and natural-successor transcriptions with complete SHA256s.
+- Lesson: persisted completed/error-null can hide a provider transport-error answer. Compare actual stream/nonstream requests and native provider-attempt deadlines before changing model or source; verify a natural successor with saved hashes and independent publication evidence. A generic recent-completion diagnostic does not prove successful creation.
+- Better path: follow minimal tool receipts with a whitelisted answer/error read early, preserve failed rows, use existing supported configuration and record observed idle bounds. Public image alt and generated timestamp still need enforced admission.
+- State: one recovered visual cycle; source gates and lifecycle/quality/owner/cloud guarantees remain open. Supported Proxx config maintenance was completed; no local maker/PM2/consumer/board change, source deployment, observation-only push or spore incubation/promotion.
+
+## 2026-10-07T06:23:12.894563+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0619
+
+- p-efficiency: 0.90; p-friction: 0.06; p-skill-candidate: 0.10.
+- Evidence: same-named Receipt River observation; supported timeout/image/config retained and next natural clock admitted without intervention.
+- Lesson: read answer/error alongside minimal receipts; preserve historical false completion while keeping a newly admitted pending run distinct from terminal artifact/delivery success. Recheck canonical exact-head gates without repeating completed reviews or maintenance.
+- State: routine unchanged/pending follow-up only. No spore incubated/promoted; preserve appends for next concrete owned change.
+
+## 2026-10-07T06:52:56.696899+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0649
+
+- p-efficiency: 0.92; p-friction: 0.05; p-skill-candidate: 0.09.
+- Evidence: same-named Receipt River observation; two later native terminal runs retain nontransport answers and actual tool statuses after supported repair.
+- Lesson: ordinary successful runtime observations do not erase failed optional tools or substitute for independent artifact/delivery/quality and publication admission. A query before the next expected tick cannot establish missed cadence. Preserve unchanged review blockers without duplicate invitations or maintenance.
+- State: routine read-only follow-up and owned append only; no spore incubated/promoted or status-only push.
+
+## 2026-10-07T07:22:15.984363+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0719
+
+- p-efficiency: 0.93; p-friction: 0.05; p-skill-candidate: 0.08.
+- Evidence: same-named Receipt River observation; recent natural terminal runs retain nontransport answers while failed music tool receipts remain explicit.
+- Lesson: a text-only bounded publication sample changes warning count without proving frequency failure; native terminal rows and nontransport answers remain distinct from independently verified artifact/delivery/quality. Avoid unchanged-head review or runtime-maintenance churn.
+- State: routine read-only audit and owned append only; no spore incubated/promoted or status-only push.
+
+## 2026-10-07T07:55:14.351068+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0749
+
+- p-efficiency: 0.93; p-friction: 0.05; p-skill-candidate: 0.08.
+- Evidence: same-named Receipt River observation; unchanged exact personal gates and retained supported repair, two later nontransport terminal answers and one active native maker.
+- Lesson: keep persisted empty receipts and an active turn event distinct from terminal ownership; ordinary publication receipts and text-only samples cannot establish independent artifact quality or frequency admission.
+- State: routine read-only audit and owned append only; no spore incubated/promoted or status-only push.
+
+## 2026-10-07T08:22:19.400424+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0819
+
+- p-efficiency: 0.92; p-friction: 0.06; p-skill-candidate: 0.08.
+- Evidence: same-named Receipt River observation; native terminal answers, exact gates and sanitized SVG conversion failure retained.
+- Lesson: a completed overall maker can contain failed creation attempts; inspect actual native error before assigning a cause, and keep subsequent tool completion separate from independently verified artifact repair or quality.
+- State: routine read-only audit and append only; no spore incubated/promoted or status-only push.
+
+## 2026-10-07T08:51:59.301522+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0849
+
+- p-efficiency: 0.93; p-friction: 0.05; p-skill-candidate: 0.08.
+- Evidence: same-named Receipt River observation; nontransport native terminal answers and unchanged canonical gates, actual upstream pull listing.
+- Lesson: an upstream change scoped to another repository supplies no local settlement or identity exception; native creation receipts remain distinct from independently verified quality and ownership.
+- State: routine read-only audit and owned append only; no spore incubated/promoted or status-only push.
+
+## 2026-10-07T09:21:52.880682+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0919
+
+- p-efficiency: 0.93; p-friction: 0.05; p-skill-candidate: 0.08.
+- Evidence: same-named receipt; native nontransport terminal answers and unchanged canonical gates.
+- Lesson: an unchanged historical quota response supplies no new availability evidence; keep normal maker receipts separate from delivery, quality and terminal ownership proof.
+- State: routine audit and append only; no spore incubated/promoted or status-only push.
+
+## 2026-10-07T09:52:20.527793+00:00 — cephalon-personal-post-repair-readonly-follow-up-20261007T0949
+
+- p-efficiency: 0.93; p-friction: 0.05; p-skill-candidate: 0.08.
+- Evidence: same-named receipt; current canonical gates, retained timeout setting and ordinary nontransport native outcomes.
+- Lesson: successful tool statuses and nontransport answers support continued work observations without proving artistic admission, delivery or terminal fencing; retain historical failed attempts separately.
+- State: routine audit and append only; no spore incubated/promoted or status-only push.
+
+## 2026-10-07T12:02:15.402716+00:00 — cephalon-character-memory-intent-recovery-20261007
+
+- p-efficiency: 0.83; p-friction: 0.44; p-skill-candidate: 0.60.
+- Evidence: same-named Receipt River catalog, recovered design note and selected native-memory observation transcript SHA256 6fb79c301d73f2515e86107ae657d784a78db246b366ce0af5c3d729e81803f1.
+- Lesson: a vocabulary match between donor designs, counters, graph storage and query metadata does not establish causal continuity. Trace actual permissions, hydration, principal, corpus, transport and outcome attribution before proposing a rewrite. A diagnostic graph query can mutate reinforcement even while vector search is read-only.
+- Better path: recover the authoritative design corrections, separate evidence from approximations, and compare the automatic and direct paths with the same principal and corpus before assigning the empty-hit cause.
+- State: concrete local design/evidence handoff; no source or runtime changes, no spore incubated/promoted, no observation-only head churn.
+
+## 2026-10-07T12:27:35.276147+00:00 — cephalon-character-planning-and-authority-20261007
+
+- p-efficiency: 0.88; p-friction: 0.28; p-skill-candidate: 0.55.
+- Evidence: same-named receipt, native snapshot and served-source visibility execution in event-memory-authority.json.
+- Lesson: a server-admitted event-policy token authenticates resource policy without supplying organization or memory permissions; do not infer those grants from actor/role labels. Preserve the whole feedback model in planning and verify scope before graph traversal/feedback.
+- State: incoming manual Markdown and retained evidence; no board admission, source/runtime/social mutation, or spore incubated/promoted.

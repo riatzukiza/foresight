@@ -63,3 +63,11 @@ reply. "Always-on" means supervised recurring work with bounded retries and
 recovery, not unlimited generation or uncontrolled publication.
 
 License: GPL-3.0-or-later.
+
+## October 7 character and memory steering
+
+The operator's next requirement is a creative character whose outside encounters,
+graph memory, changing mood, relationships, and lasting traits influence his work.
+The [recovered intent and drift map](2026-10-07-cephalon-character-memory-graph.md)
+links the original Eidolon/Fork Tales sources to current code and selected live
+evidence. It is a proposed delivery shape, not deployed character-loop evidence.

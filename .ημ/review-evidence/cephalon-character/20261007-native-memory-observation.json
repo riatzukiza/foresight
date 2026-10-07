@@ -1,0 +1,439 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "epistemic_tier": "observed selected output; derived conclusions separately qualified",
+  "recorded_at": "2026-10-07T12:00:35.694095+00:00",
+  "origin": "cephalon-character-memory-intent-recovery-20261007",
+  "raw_response": false,
+  "provider_approval": false,
+  "method": {
+    "runtime": "docker exec of existing knoxx-social-local-backend-1; read-only Mongo projections/counts and POST /api/memory/search",
+    "sensitive_fields": "No credentials, full settings, query text, answers, document contents or memory identifiers copied into this transcript",
+    "native_run_filter": {
+      "settings.agentSpec.contractId": "ussyverse_social_creative",
+      "settings.agentSpec.eventType": "schedule/ussyverse-social-creative"
+    },
+    "native_run_projection": "run_id, created_at, status, resources.memoryHydration mode/hit count/elapsedMs; receipt tool names",
+    "graph_query_executed": false,
+    "graph_query_omission_reason": "Existing graph-memory route reinforces edges and by default persists trails; a diagnostic call would change feedback state"
+  },
+  "deployment": {
+    "path": "/home/err/.local/share/promethean/services/knoxx-social-local",
+    "container": "knoxx-social-local-backend-1",
+    "served_image_tag": "knoxx-backend:social-local-2644fc6-creative",
+    "served_image_id": "sha256:ce0123ef17bade99603ea6ea19967c99c62869118d1cf52c057ab6a72500bf14",
+    "openplanner_client_mode": "mongo",
+    "graph_rest_origin": "http://host.docker.internal:11436",
+    "openplanner_api_key_configured": true
+  },
+  "diagnostic": {
+    "command": "nbb scripts/verify_cephalon_local.cljs --only knoxx",
+    "workdir": "/home/err/.codex/worktrees/cephalon-planning/foresight",
+    "passed": 12,
+    "warnings": 7,
+    "failed": 0,
+    "contract_hashes_verified": 240,
+    "sampled_active": [],
+    "limits": "A timed observation, not reservation/fencing or deep quality proof. Native music failures remain visible."
+  },
+  "creative_contract": {
+    "passive_memory": {
+      "enabled": true,
+      "mode": "triggered",
+      "k": 6
+    },
+    "tool_allowed": [
+      "read",
+      "write",
+      "bash",
+      "music.generate",
+      "image.generate",
+      "audio.waveform",
+      "audio.spectrogram",
+      "voice.tts",
+      "bluesky.profile",
+      "bluesky.publish",
+      "bluesky.author.feed",
+      "discord.send",
+      "agents.spawn"
+    ],
+    "limits": "Publication can contain replies. Bash can read public inputs; receipt names alone do not prove no outside input. Sticky session continuity may remain."
+  },
+  "responsive_head": {
+    "passive_memory_enabled": false,
+    "memory_graph_feed_tools_denied": true,
+    "limits": "Keep acknowledgment bounded; a future shared character snapshot can arrive outside its critical path."
+  },
+  "native_runs": [
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791373045302-1791373045330",
+      "created_at": "2026-10-07T11:37:25.338Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 791
+      },
+      "receipt_tool_names": [
+        "bash",
+        "bash",
+        "write",
+        "write",
+        "music_generate",
+        "bash",
+        "music_generate",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791372145239-1791372145268",
+      "created_at": "2026-10-07T11:22:25.276Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 923
+      },
+      "receipt_tool_names": [
+        "bash",
+        "bash",
+        "write",
+        "bash",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791371245412-1791371245442",
+      "created_at": "2026-10-07T11:07:25.449Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 954
+      },
+      "receipt_tool_names": [
+        "bash",
+        "write",
+        "write",
+        "bash",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791370345574-1791370345627",
+      "created_at": "2026-10-07T10:52:25.640Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 1066
+      },
+      "receipt_tool_names": [
+        "bash",
+        "write",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791369445379-1791369445399",
+      "created_at": "2026-10-07T10:37:25.408Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 870
+      },
+      "receipt_tool_names": [
+        "bash",
+        "write",
+        "write",
+        "bash",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791368545382-1791368545411",
+      "created_at": "2026-10-07T10:22:25.417Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 1447
+      },
+      "receipt_tool_names": [
+        "bash",
+        "bash",
+        "bash",
+        "write",
+        "bash",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791367645312-1791367645337",
+      "created_at": "2026-10-07T10:07:25.352Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 864
+      },
+      "receipt_tool_names": [
+        "bash",
+        "write",
+        "write",
+        "bash",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791366745650-1791366745720",
+      "created_at": "2026-10-07T09:52:25.751Z",
+      "persisted_status": "completed",
+      "hydration": {
+        "mode": "triggered",
+        "hit_count": 0,
+        "elapsed_ms": 1348
+      },
+      "receipt_tool_names": [
+        "bash",
+        "bash",
+        "write",
+        "bash",
+        "bash",
+        "bluesky_publish",
+        "discord_send",
+        "write"
+      ]
+    }
+  ],
+  "collection_counts": {
+    "observed_at": "2026-10-07T11:47:22.090Z",
+    "database": "knoxx",
+    "selection": "Collection names matching event/vector/graph/document; not a complete schema inventory",
+    "counts": {
+      "event_chunks": 3017,
+      "graph_edges": 12838,
+      "graph_semantic_field_cells": 0,
+      "graph_cluster_memberships": 0,
+      "graph_semantic_edges": 0,
+      "events": 9950,
+      "vector_partitions": 1,
+      "graph_daimoi_trails": 0,
+      "graph_edge_claims": 0,
+      "graph_layout_overrides": 0,
+      "graph_label_nodes": 1,
+      "semantic_graph_runs": 0,
+      "knoxx_audit_events": 1,
+      "event_chunks__qwen3-embedding-0-6b__d1024__4d1a4607dc": 3017,
+      "compacted_vectors": 0,
+      "graph_view_nodes": 0,
+      "graph_node_embeddings": 6544,
+      "graph_semantic_force_samples": 0
+    }
+  },
+  "scope_metadata_observation": {
+    "events": [
+      {
+        "source": "openplanner-derive",
+        "project": "knoxx-session",
+        "count": 5244
+      },
+      {
+        "source": "knoxx",
+        "project": "knoxx-session",
+        "count": 4706
+      }
+    ],
+    "event_chunks": [
+      {
+        "source": "knoxx",
+        "project": "knoxx-session",
+        "count": 3017
+      }
+    ],
+    "graph_node_embeddings": [
+      {
+        "project": "knoxx-session",
+        "count": 6544
+      }
+    ],
+    "latest_hydration_query_chars": 1960,
+    "latest_query_contains_creative_or_art_or_music": true,
+    "latest_query_contains_history_trigger": true
+  },
+  "memory_api_comparisons": [
+    {
+      "observed_at": "2026-10-07T11:48:54.124Z",
+      "endpoint": "POST /api/memory/search",
+      "query": "OpenHax artwork music",
+      "k": 3,
+      "http_status": 200,
+      "ok": true,
+      "mode": "vector",
+      "hit_count": 3,
+      "error_code": null
+    },
+    {
+      "observed_at": "2026-10-07T11:49:43.426Z",
+      "endpoint": "POST /api/memory/search",
+      "query_source": "Exact persisted resources.memoryHydration.query from run 1791373045302-1791373045330; text not retained",
+      "k": 6,
+      "http_status": 200,
+      "ok": true,
+      "mode": "vector",
+      "hit_count": 6,
+      "openplanner_client_mode": "mongo"
+    }
+  ],
+  "derived_findings": [
+    {
+      "claim": "Inspected automatic hydration supplied zero memories in eight runs; explicit graph/social discovery tools were not used in their receipts",
+      "confidence": 0.99
+    },
+    {
+      "claim": "The store is populated and retrievable under the diagnostic API context",
+      "confidence": 0.99
+    },
+    {
+      "claim": "Automatic hydration scope, filters, query handling or index timing need a controlled same-principal, same-corpus comparison",
+      "confidence": 0.95,
+      "causal_bug_proven": false
+    }
+  ],
+  "limitations": [
+    "Queries were later than the original maker hydration and used a diagnostic API principal; corpus and authorization were not held fixed.",
+    "No graph recall, physical field evolution, separate mood persistence, slow trait evolution, independent Discord delivery or art-quality admission was verified.",
+    "Existing source and design fragments are donors at their recorded revisions; no full historical model or deployed graph conformance is inferred from names.",
+    "No maker/review/provider invocation, runtime restart, contract update, social action or board-state mutation was performed."
+  ],
+  "local_repository_bindings": {
+    "planning": {
+      "path": "/home/err/.codex/worktrees/cephalon-planning/foresight",
+      "local_head": "22b4c1225818b0a8204728a09599bc3e5750ee1b"
+    },
+    "music_hotfix": {
+      "path": "/home/err/spaces/cephalon-music-fix/knoxx",
+      "local_head": "366e72ab68c8afae708d3f6d5546faee808ebc07"
+    },
+    "knoxx_inspected": {
+      "path": "/home/err/spaces/foresight/knoxx",
+      "local_head": "40221a69f7fff675b46614d9ab318b4ef52f3786"
+    },
+    "openplanner_inspected": {
+      "path": "/home/err/spaces/foresight/openplanner",
+      "local_head": "582efb7ebbdc542650fd239bfc5f2de076316c53"
+    },
+    "fork_tales_inspected": {
+      "path": "/home/err/devel/orgs/octave-commons/fork_tales",
+      "local_head": "f4c43d7b9c832a54bc5d224cb4d5d2497c04423b"
+    },
+    "promethean_inspected": {
+      "path": "/home/err/devel/orgs/octave-commons/promethean",
+      "local_head": "2c878b6a565f5ac8cc09bf503a6dec5ad3efc00f"
+    }
+  },
+  "source_file_manifest": [
+    {
+      "path": "/home/err/devel/orgs/octave-commons/promethean/docs/design/fields/eidolon-fields.md",
+      "bytes": 4484,
+      "sha256": "7a18fb02069ac30bcdda70a133307a8ddd240be3c38bd6190163b25a0684f0a1"
+    },
+    {
+      "path": "/home/err/devel/orgs/octave-commons/promethean/docs/design/nooi.md",
+      "bytes": 4401,
+      "sha256": "858de5852cdb35093e804e01d5ca37c0d840668948cd46b82dc84d53e2d2329b"
+    },
+    {
+      "path": "/home/err/devel/orgs/octave-commons/promethean/docs/hacks/notes/ducks-attractor-states.md",
+      "bytes": 8102,
+      "sha256": "317a4b068f377681fd267a398c30605a95568cdbc9e7bb3a2d0585a97052deea"
+    },
+    {
+      "path": "/home/err/devel/orgs/octave-commons/fork_tales/docs/notes/system_design/2026-02-20-design-hole-responses-field-and-collisions.md",
+      "bytes": 6834,
+      "sha256": "c4ef760eb2b1cd050a95391a0b36675c2971e351d17d3559dd97e962373185fc"
+    },
+    {
+      "path": "/home/err/devel/orgs/octave-commons/fork_tales/part64/code/world_web/daimoi_probabilistic.py",
+      "bytes": 219160,
+      "sha256": "be5da8022cfa15498c46db3b4fa95f1193f7e7d4bf7ec80b84c83201061009b2"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-mvp-spec.md",
+      "bytes": 8348,
+      "sha256": "29e8e68a1cfa040d785c2cc3e34783a5c932b0e7a9d2ee29d30531b7f0d35474"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-eidolon-field-concept.md",
+      "bytes": 8146,
+      "sha256": "05162b4f9d5e8dc032f003531c9800effc059bac82b1d77bf0deb4ba55cf0eae"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-daimoi-v01.md",
+      "bytes": 8642,
+      "sha256": "89a915b982e8309494cb4947c7122b75dc68c10c2e0af03ba68c7a7c6eec4c14"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-ts/docs/event-native-engagement-spec.md",
+      "bytes": 11157,
+      "sha256": "36c75560cff913140b9e2dd93abcefe7a20227cabefb22ada1c6e3c1bfbceeae"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/src/promethean/tools/self.cljs",
+      "bytes": 6010,
+      "sha256": "84972819afff594088e3b4012c5274e25bc43a3c76094f3d1d27eff1c41c9f6a"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-ts/src/mind/eidolon-field.ts",
+      "bytes": 2446,
+      "sha256": "696fad55769af13533c36126cc053e1e069db2955c2b5014514dff69144cdfe4"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-ts/src/mind/local-mind-graph.ts",
+      "bytes": 5890,
+      "sha256": "984997b8a1646facf81bb3a2d36a4b96701cd352c16c9e2338bdfc2f42ffec2b"
+    },
+    {
+      "path": "/home/err/spaces/foresight/knoxx/backend/src/cljs/knoxx/backend/infra/agent/hydration.cljs",
+      "bytes": 13448,
+      "sha256": "a267946973a02e29f6c91ea7c23ea579870cc12ae471624655742914677a5f92"
+    },
+    {
+      "path": "/home/err/spaces/foresight/knoxx/backend/src/cljs/knoxx/backend/infra/openplanner/memory.cljs",
+      "bytes": 39413,
+      "sha256": "a3978c0088182c1f5cf9555e9ed1317e4eabff60c4fa4d0f7b9b61658e635de5"
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/src/routes/v1/graph.ts",
+      "bytes": 202632,
+      "sha256": "217a99b3b89d8a952b1d988c8054df7af34e38a3c7b9da777f668e62ad03d2e2"
+    },
+    {
+      "path": "/home/err/spaces/foresight/knoxx/backend/src/cljs/knoxx/backend/domain/bluesky/bluesky.cljs",
+      "bytes": 44203,
+      "sha256": "ce9f12b88f4d369f68d0e79d6a65fa22b4ac6de857f9cc1e20c33139a50bb8b0"
+    }
+  ],
+  "design_note": "docs/notes/2026-10-07-cephalon-character-memory-graph.md"
+}
