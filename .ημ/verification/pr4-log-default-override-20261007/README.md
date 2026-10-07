@@ -23,8 +23,8 @@ head's approvals and scoped repair acknowledgements do not qualify the new
 head. The separate `.agents` issue24 defense against admitting explicit omitted
 input remains unresolved by this vendor configuration change.
 
-No billing, paid mode, review-gate, auto-review, workflow, trust identity,
-board state, reviewer request or deployment setting is changed. The observed
+No explicit billing, paid-mode, review-gate, auto-review, workflow, trust-identity,
+board-state, reviewer-request or deployment setting is edited. The observed
 PR was Ready, blocked and automatic-merge off at the native preflight. This
 local source preparation changes no native state. Root alone may publish after
 independent peer and fresh source/native guards, and must serialize any automatic
@@ -43,3 +43,15 @@ new independently owned complete store. No previous source or audit was edited.
 No bootstrap/runtime tests are rerun for this configuration-only product edit.
 Actual immutable root receipt admission and current Receipt River suffix checks
 are recorded outside the source after commit with their separate scopes.
+
+## Effective-configuration limitation
+
+The fetched official schema declares `inheritance` default false and describes
+upward inheritance as conditional. Creating repository YAML can therefore alter
+effective settings inherited from repository or organization UI even though this
+file contains no explicit non-path settings. No current effective UI configuration
+was inspected. The minimal override does not prove unchanged effective auto-review
+behavior, and no `inheritance` setting is added speculatively. Root must retain
+that uncertainty and verify effective configuration plus complete native input
+coverage before qualification. This paragraph clarifies the source-edit scope;
+the earlier ordinary configuration commit remains inspectable in Git history.
