@@ -1,0 +1,87 @@
+{
+  "evidence_kind": "selected committed local-source observation; derived conformance questions, not runtime execution or reviewed selection",
+  "observed_at": "2026-10-07T13:18:32.062580+00:00",
+  "repository_path": "/home/err/devel/orgs/octave-commons/fork_tales",
+  "revision": "f4c43d7b9c832a54bc5d224cb4d5d2497c04423b",
+  "files": [
+    {
+      "path": "/home/err/devel/orgs/octave-commons/fork_tales/part64/code/world_web/nooi.py",
+      "bytes": 8419,
+      "sha256": "204d86943660ceb4c81415b62776e37b30534d0ff2268ff49c43ab44bc236c1c",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/devel/orgs/octave-commons/fork_tales/part64/code/world_web/daimoi_probabilistic.py",
+      "bytes": 219160,
+      "sha256": "be5da8022cfa15498c46db3b4fa95f1193f7e7d4bf7ec80b84c83201061009b2",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/devel/orgs/octave-commons/fork_tales/docs/notes/system_design/2026-02-20-design-hole-responses-field-and-collisions.md",
+      "bytes": 6834,
+      "sha256": "c4ef760eb2b1cd050a95391a0b36675c2971e351d17d3559dd97e962373185fc",
+      "matches_committed_head": true
+    }
+  ],
+  "observations": [
+    {
+      "path": "part64/code/world_web/nooi.py",
+      "lines": [
+        20,
+        30
+      ],
+      "fact": "NooiField allocates eight dense cols*rows*2 arrays; defaults64x64. The later design proposes a sparse vector field."
+    },
+    {
+      "path": "part64/code/world_web/nooi.py",
+      "lines": [
+        33,
+        70
+      ],
+      "fact": "Decay uses layer_base^(dt*60) and zeroes abs(value)<1e-6. Deposit normalizes velocity direction then applies weights*0.15, discarding speed amplitude."
+    },
+    {
+      "path": "part64/code/world_web/daimoi_probabilistic.py",
+      "lines": [
+        2431,
+        2432
+      ],
+      "fact": "Emission initializes both owner and origin_presence_id to the emitting presence."
+    },
+    {
+      "path": "part64/code/world_web/daimoi_probabilistic.py",
+      "lines": [
+        4881,
+        4889
+      ],
+      "fact": "Deflection at another presence changes owner, increments handoffs and selects a target based on the new owner."
+    },
+    {
+      "path": "part64/code/world_web/daimoi_probabilistic.py",
+      "lines": [
+        5161,
+        5176
+      ],
+      "fact": "Projection retains a separate origin_presence_id; owner_presence_id comes from the current mutable owner."
+    },
+    {
+      "path": "docs/notes/system_design/2026-02-20-design-hole-responses-field-and-collisions.md",
+      "lines": [
+        57,
+        75
+      ],
+      "fact": "The later design requires immutable owner once emitted; exact key semantics must be resolved rather than treating mutable owner and retained origin as equivalent."
+    }
+  ],
+  "derived_selection_requirements": [
+    "Specify whether emitted-owner identity is authoritative origin, mutable runtime owner or a new explicitly bound identity; satisfy immutable attribution and forbid ownership-based authority transfer.",
+    "Specify sparse storage and velocity amplitude semantics against the desired design; copying the dense direction-only deposit is not automatically equivalent.",
+    "Bind timestep units, actual elapsed time, bounded substeps, finite-value behavior, threshold/rounding and replay tolerance. Donor constants are observed values, not accepted character numeric parameters."
+  ],
+  "limits": [
+    "No Fork Tales runtime, physics test or kernel conformance experiment executed.",
+    "This selected source audit does not assert that all Fork Tales paths use this dense field or that origin attribution is lost.",
+    "No kernel owner/numeric contract selected, no shared-law promotion or solver implementation, no source/runtime/board/social mutation.",
+    "The current planning head remains9043e5702c91c374bf8aa7cca4481a461e61db24; this new uncommitted evidence is not assessed by its live reviewer."
+  ]
+}

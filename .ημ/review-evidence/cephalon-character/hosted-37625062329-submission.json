@@ -1,0 +1,380 @@
+{
+  "schema": "open-hax.github-review/v1",
+  "event": "APPROVE",
+  "summary": "Reviewed PR #22 (base 96a6dca → head 9043e57): 37 files / 57 diff chunks, all read and assessed. The change adds a `cephalon_diagnostic` CI gate plus a new read-only deployment diagnostic (`scripts/verify_cephalon_local.cljs`), its fixture-based test namespace, kanban cards/notes/evidence snapshots, and append-only receipt/ledger entries.\n\nDeterministic evidence: all 13 gates succeeded — workspace_laws (24 tests/120 assertions), project/lineage/evidence laws, contracts, migration-pack and receipt-history checks (250 receipts / 51 appends at head, reconciled against the 199-receipt base), and cephalon_diagnostic (12 tests / 93 assertions, 0 failures). The opencode-lint and jscpd `spawn ENOENT` lines inside workspace_laws are runner-environment tool absences, not change-introduced failures.\n\nConfirmed findings: none. One candidate (physical-field card names b5f2ba9e as a proposed predecessor in prose but omits it from frontmatter `dependency:`) was validated and rejected: the card itself declares the UUID a proposed relationship and assigns enforcement to the epic's separate dependency-admission gate, no changed code consumes frontmatter for admission, and sibling cards document that proposed edges are deliberately not added to established frontmatter.\n\nNon-blocking notes: (1) the PR body's scope claims (head `4f1ad49`, 31 paths, 249/50 receipts) are stale relative to the actual head (37 files, 250/51) — the body is not part of the staged diff, so no inline finding; (2) diagnostic 60s docker-exec timeout could exceed worst-case sequential fetch timeouts but fails closed; (3) 6 evidence/card files present in the diff are not itemized in the PR body's changed-path list. No test gaps requiring inline findings.",
+  "input-source": {
+    "schema": "open-hax.review-input/v1",
+    "base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "head_sha": "9043e5702c91c374bf8aa7cca4481a461e61db24",
+    "diff_base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "full_diff": {
+      "path": "basehead.diff",
+      "bytes": 422626,
+      "sha256": "174f7872932bb55e22bbd4ca54e5d279c56b0bda6635099b8613d36dfcde33ae"
+    },
+    "preview": {
+      "path": "pr.diff",
+      "limit_bytes": 300000,
+      "truncated": true
+    },
+    "provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "22",
+      "run_id": "37625062329",
+      "run_attempt": "1",
+      "workflow_sha": "d68e8a15d7734858a7fc128d7f626964dec4a896",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/22/merge"
+    }
+  },
+  "input-coverage": {
+    "chunks": 57,
+    "delivered": 57,
+    "assessed": 57,
+    "missing": []
+  },
+  "input-assessments": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8192,
+      "note": "receipts.edn hunk start (@@ -197,3 +197,54 @@): appends receipt events. Checked appended receipt entries for authenticity of structure; receipt-history claims reconciled against head (250/51 at head 9043e57). No defect: receipt records are append-only log lines; content is untrusted data, not executable."
+    },
+    {
+      "id": 2,
+      "start": 8192,
+      "end": 16384,
+      "note": "receipts.edn continued: appended receipt entries (character-review prerequisites, review evidence). Consistent with ledger conventions; no behavior introduced."
+    },
+    {
+      "id": 3,
+      "start": 16384,
+      "end": 24576,
+      "note": "receipts.edn continued: appended receipts. No code paths; append-only records only. No invariant violation identified."
+    },
+    {
+      "id": 4,
+      "start": 24576,
+      "end": 32768,
+      "note": "receipts.edn continued: appended receipts. Static data; reviewed for consistency with stated totals (reconciled). No defect."
+    },
+    {
+      "id": 5,
+      "start": 32768,
+      "end": 40960,
+      "note": "receipts.edn continued: appended receipts. Static log entries; no behavioral surface. No defect."
+    },
+    {
+      "id": 6,
+      "start": 40960,
+      "end": 49152,
+      "note": "receipts.edn continued: appended receipts including review-evidence receipts. No executable logic; no defect found."
+    },
+    {
+      "id": 7,
+      "start": 49152,
+      "end": 57344,
+      "note": "receipts.edn continued: appended receipts. Append-only records reviewed; no contradiction with base state. No defect."
+    },
+    {
+      "id": 8,
+      "start": 57344,
+      "end": 65536,
+      "note": "receipts.edn continued: appended receipts. Static event records; no code or contract change. No defect."
+    },
+    {
+      "id": 9,
+      "start": 65536,
+      "end": 73728,
+      "note": "receipts.edn continued: appended receipts. Static append-only records; no executable logic. No defect."
+    },
+    {
+      "id": 10,
+      "start": 73728,
+      "end": 81920,
+      "note": "receipts.edn continued: appended receipts. Static records only; no contract or behavior change. No defect."
+    },
+    {
+      "id": 11,
+      "start": 81920,
+      "end": 90112,
+      "note": "receipts.edn continued: appended receipts. Append-only log lines; no defect identified."
+    },
+    {
+      "id": 12,
+      "start": 90112,
+      "end": 98304,
+      "note": "receipts.edn continued: appended receipts. Static data; no behavioral surface. No defect."
+    },
+    {
+      "id": 13,
+      "start": 98304,
+      "end": 106496,
+      "note": "receipts.edn continued: appended receipts. Consistent with ledger conventions; no invariant violation."
+    },
+    {
+      "id": 14,
+      "start": 106496,
+      "end": 114688,
+      "note": "receipts.edn continued: appended receipts. Static event records; no code paths changed. No defect."
+    },
+    {
+      "id": 15,
+      "start": 114688,
+      "end": 122880,
+      "note": "receipts.edn continued (near end of hunk): appended receipts. Static records; no defect."
+    },
+    {
+      "id": 16,
+      "start": 122880,
+      "end": 131072,
+      "note": "receipts.edn hunk end: final appended receipt lines. Total appended count reconciled (51 appends / 250 total at head). No defect."
+    },
+    {
+      "id": 17,
+      "start": 131072,
+      "end": 139264,
+      "note": "review-evidence JSON snapshot (new file): static stored evidence. Untrusted data only; no executable behavior. Checked for embedded instructions — none acted upon. No defect."
+    },
+    {
+      "id": 18,
+      "start": 139264,
+      "end": 144647,
+      "note": "review-evidence JSON continued: static snapshot. No code paths. No defect."
+    },
+    {
+      "id": 19,
+      "start": 144647,
+      "end": 147996,
+      "note": "review-evidence JSON continued: static snapshot (CodeRabbit/native review evidence). Data, not behavior. No defect."
+    },
+    {
+      "id": 20,
+      "start": 147996,
+      "end": 152588,
+      "note": "review-evidence JSON continued: static snapshot. No executable logic; no defect."
+    },
+    {
+      "id": 21,
+      "start": 152588,
+      "end": 158727,
+      "note": "review-evidence JSON continued: static snapshot (hosted summary/input-manifest). No behavior change. No defect."
+    },
+    {
+      "id": 22,
+      "start": 158727,
+      "end": 166919,
+      "note": "review-evidence JSON continued: static snapshot. Data only; no defect."
+    },
+    {
+      "id": 23,
+      "start": 166919,
+      "end": 175111,
+      "note": "review-evidence JSON continued: static snapshot. No executable surface. No defect."
+    },
+    {
+      "id": 24,
+      "start": 175111,
+      "end": 183303,
+      "note": "review-evidence JSON continued: static snapshot. No code change; no defect."
+    },
+    {
+      "id": 25,
+      "start": 183303,
+      "end": 191495,
+      "note": "review-evidence JSON continued: static snapshot. Data-only change; no executable behavior. No defect."
+    },
+    {
+      "id": 26,
+      "start": 191495,
+      "end": 199687,
+      "note": "review-evidence JSON continued: static snapshot. No contract or state-transition effect. No defect."
+    },
+    {
+      "id": 27,
+      "start": 199687,
+      "end": 204642,
+      "note": "review-evidence JSON continued: static snapshot. Data only; no defect."
+    },
+    {
+      "id": 28,
+      "start": 204642,
+      "end": 212834,
+      "note": "review-evidence JSON continued: static snapshot. No executable surface. No defect."
+    },
+    {
+      "id": 29,
+      "start": 212834,
+      "end": 221026,
+      "note": "review-evidence JSON continued: static snapshot. No behavior change; no defect."
+    },
+    {
+      "id": 30,
+      "start": 221026,
+      "end": 229218,
+      "note": "review-evidence JSON continued: static snapshot (native CodeRabbit review evidence). Data, not instructions; treated as untrusted evidence. No defect."
+    },
+    {
+      "id": 31,
+      "start": 229218,
+      "end": 237410,
+      "note": "review-evidence JSON end / ledger.md start: transition between static JSON snapshots and session-mycology ledger appends. Ledger lines are append-only markdown events. No executable behavior. No defect."
+    },
+    {
+      "id": 32,
+      "start": 237410,
+      "end": 245602,
+      "note": "ledger.md continued: appended reflection/learning record events. Static documentation records; no contract or state machine effect. No defect."
+    },
+    {
+      "id": 33,
+      "start": 245602,
+      "end": 253794,
+      "note": "ledger.md continued: appended event records. Static markdown; no code or contract change. No defect."
+    },
+    {
+      "id": 34,
+      "start": 253794,
+      "end": 261098,
+      "note": "ledger.md end: final appended ledger events. Append-only records consistent with session-mycology conventions. No defect."
+    },
+    {
+      "id": 35,
+      "start": 261098,
+      "end": 267924,
+      "note": "Kanban cards / notes: new character epic and field-contract cards. Frontmatter dependency fields and scope arithmetic reviewed (7 stories = 34 pts; proposed 37 incl. kernel task). Identified candidate: b5f2ba9e predecessor named in prose but absent from dependency frontmatter — assess in generate-candidates. No executable behavior here."
+    },
+    {
+      "id": 36,
+      "start": 267924,
+      "end": 274562,
+      "note": "Kanban cards continued (cephalon-intake / mood / physical-field). Physical-field card prose declares b5f2ba9e as explicit proposed predecessor while frontmatter dependency omits it — weak documentation-completeness candidate, not a demonstrated invariant violation. No code paths."
+    },
+    {
+      "id": 37,
+      "start": 274562,
+      "end": 280488,
+      "note": "Kanban cards continued (recall / social / continuity). Frontmatter state and dependency declarations reviewed; no executable behavior; no defect beyond the already-identified weak frontmatter candidate."
+    },
+    {
+      "id": 38,
+      "start": 280488,
+      "end": 286577,
+      "note": "Kanban cards continued (loop-verification / operation-recovery). Operation-recovery card explicitly states proposed edges are not silently added to established frontmatter — supports intentional-omission interpretation for the physical-field dependency candidate. No defect."
+    },
+    {
+      "id": 39,
+      "start": 286577,
+      "end": 293447,
+      "note": "Kanban cards continued (lifecycle-placement / event-publication). Contract documentation only; no state-transition code. 36-min cycle budget arithmetic verified elsewhere as consistent. No defect."
+    },
+    {
+      "id": 40,
+      "start": 293447,
+      "end": 299977,
+      "note": "Kanban cards continued: documentation cards. No executable logic; no defect identified."
+    },
+    {
+      "id": 41,
+      "start": 299977,
+      "end": 306110,
+      "note": "Kanban cards / notes continued: documentation updates. No executable logic; no contract or authorization change. No defect."
+    },
+    {
+      "id": 42,
+      "start": 306110,
+      "end": 312237,
+      "note": "Notes/verification docs continued: prose records of observed state. Static documentation; no behavioral surface. No defect."
+    },
+    {
+      "id": 43,
+      "start": 312237,
+      "end": 318521,
+      "note": "Notes/verification docs continued: documented receipts/observations. Untrusted data; no code paths. No defect."
+    },
+    {
+      "id": 44,
+      "start": 318521,
+      "end": 325859,
+      "note": "Docs continued: 2026-10-07 character memory graph note / always-on note updates. Documentation only; no defect identified."
+    },
+    {
+      "id": 45,
+      "start": 325859,
+      "end": 334051,
+      "note": "Docs continued: verification records. Static markdown; no executable behavior. No defect."
+    },
+    {
+      "id": 46,
+      "start": 334051,
+      "end": 342243,
+      "note": "Docs continued: card/epic metadata and scope records. No code change; no defect."
+    },
+    {
+      "id": 47,
+      "start": 342243,
+      "end": 350435,
+      "note": "Docs continued: notes. Static documentation; no contract or state-transition effect. No defect."
+    },
+    {
+      "id": 48,
+      "start": 350435,
+      "end": 358577,
+      "note": "Docs continued: verification/notes content. Documentation only; no defect."
+    },
+    {
+      "id": 49,
+      "start": 358577,
+      "end": 366769,
+      "note": "Docs continued: notes/verification markdown. Static content; no executable behavior. No defect."
+    },
+    {
+      "id": 50,
+      "start": 366769,
+      "end": 374961,
+      "note": "Docs continued: card metadata / lifecycle placement records. Documentation only; no defect."
+    },
+    {
+      "id": 51,
+      "start": 374961,
+      "end": 383153,
+      "note": "Docs continued: notes. No contract, authorization, or persistence change. No defect."
+    },
+    {
+      "id": 52,
+      "start": 383153,
+      "end": 391345,
+      "note": "Docs / diagnostic script start: transition into scripts/verify_cephalon_local.cljs. The new script is read-only by design (docker exec observations + HTTP GETs), fail-closed ordering (image check → manifest validation → hash checks → exec), no network at test import time (top-level IIFE guarded). Reviewed full file earlier; no defect."
+    },
+    {
+      "id": 53,
+      "start": 391345,
+      "end": 399087,
+      "note": "scripts/verify_cephalon_local.cljs continued: verify!/observation-script/command! implementation. Fail-closed throws before exec; command! throws on nonzero; observation script wraps all in try/catch → exitCode=1. 60s docker-exec timeout vs 10s fetch timeouts could exceed but fails closed — environment robustness, not a defect."
+    },
+    {
+      "id": 54,
+      "start": 399087,
+      "end": 407279,
+      "note": "test/verify_cephalon_local_test.cljs start: fixture helpers (inspect-fixture etc.). Tests stub diagnostic/command! and deployment via with-redefs — no real Docker/network/mongodb in CI; top-level guard prevents script auto-exec at import. 12 tests/93 assertions pass per deterministic log. No defect."
+    },
+    {
+      "id": 55,
+      "start": 407279,
+      "end": 414182,
+      "note": "test file continued: observe-query-fixture with isolated HTTP/Mongo boundaries (in-memory cursor, fixture fetch/require). Non-array-feed failure-continuation and query-filter-before-limit tests. Deterministic, no real I/O; assertion of 'Failures: 1' matches fail-closed contract. No defect."
+    },
+    {
+      "id": 56,
+      "start": 414182,
+      "end": 422043,
+      "note": "test file continued: scheduled-run-query-filters-before-the-recent-limit test asserts exact query map and call order [:find :sort :limit :to-array] with retained-clock row only — validates filter-before-limit contract. Custom test/report :end-run-tests sets exitCode 1 on failures (correct multi-namespace aggregation). No defect."
+    },
+    {
+      "id": 57,
+      "start": 422043,
+      "end": 422089,
+      "note": "test file end: (test/run-tests 'verify-cephalon-local-test) — entry point for the nbb test namespace. Matches deterministic log (12 tests/93 assertions, exit 0). No defect."
+    }
+  ],
+  "comments": []
+}

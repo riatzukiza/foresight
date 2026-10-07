@@ -369,6 +369,25 @@ is preserved; a lawful native re-estimate remains separate from content review.
 These corrections establish reviewable prerequisites, not their delivery,
 readiness or implementation.
 
+### Subsequent planning-review corrections
+
+Full review `5444150628` on `9043e5702c91c374bf8aa7cca4481a461e61db24`
+identified three verified description/relationship omissions. The selected
+memory transcript now distinguishes the retained short diagnostic query from
+the omitted persisted hydration query; its measured observations are unchanged.
+The operational report labels the earlier seven-warning inspection and the
+later eight-warning inspection separately, retaining both counts.
+
+The still-incoming physical-field planning input now includes the proposed
+kernel-selection UUID in its `dependency` array as well as its prose.
+`docs/agile/AGENTS.md` explicitly permits manually authored UUID relationships
+and initial incoming metadata. This correction uses that planning-input rule;
+it does not admit the card, change its status or estimate, invent a Rheos event,
+or claim the installed engine enforces the proposed order. The earlier decision
+to preserve every relationship byte left this new prerequisite unrecorded in
+the structured input. Operational admission remains the separate upstream
+Rheos prerequisite.
+
 ### Stored principal follow-up
 
 A read-only, whitelisted native directory projection at `2026-10-07T12:48:36.670Z`

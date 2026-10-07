@@ -7,7 +7,7 @@
   "provider_approval": false,
   "method": {
     "runtime": "docker exec of existing knoxx-social-local-backend-1; read-only Mongo projections/counts and POST /api/memory/search",
-    "sensitive_fields": "No credentials, full settings, query text, answers, document contents or memory identifiers copied into this transcript",
+    "sensitive_fields": "No credentials, full settings, persisted hydration query text, answers, document contents or memory identifiers copied into this transcript. The short diagnostic query in memory_api_comparisons is retained.",
     "native_run_filter": {
       "settings.agentSpec.contractId": "ussyverse_social_creative",
       "settings.agentSpec.eventType": "schedule/ussyverse-social-creative"

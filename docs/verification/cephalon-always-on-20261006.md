@@ -27,9 +27,12 @@ It does not invoke an agent,
 publish, mutate contracts or transition cards. Earlier captured output is
 `/home/err/.local/share/promethean/services/knoxx-social-local/verification-cephalon.txt`.
 An unavailable dependency or changed image remains a failure.
-The latest inspection has **12 passing checks, seven explicit operational
-warnings, and zero failures**. Warnings are preserved; this is an inspection
-result, not admission of the planned guarantees.
+An earlier retained inspection has **12 passing checks, seven explicit
+operational warnings, and zero failures**. The later inspection recorded in
+this report has **12 passing checks, eight warnings, and zero failures**:
+its bounded public-feed sample contains no image and adds one warning.
+These are dated observations; warnings are preserved, and neither result
+admits the planned guarantees.
 
 MiMo reviews 5434041449 and 5434223876 identified a nonblocking manifest edge:
 an absent or empty `files` declaration could pass the prior hash check vacuously.

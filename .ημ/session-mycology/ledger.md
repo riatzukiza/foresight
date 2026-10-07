@@ -799,3 +799,65 @@
 - Lesson: name delivery owners and executable native prerequisites before treating graph links as admission controls; identity resolution cannot manufacture missing memory permissions. Preserve raw review and complete-input evidence while distinguishing a truncated preview and a still-running model assessment.
 - Better path: inventory actual paths first, consume existing scoped identity seams, let the live review complete, and group verified planning fixes before the next ordinary push.
 - State: full character scope and concrete prerequisite fixes retained; current hosted review remains live, native readiness/source implementation not achieved, automation's preexisting PAUSED state preserved. No spore incubated or promoted.
+
+## 2026-10-07T13:08:44.624610+00:00 — cephalon-character-9043-published-review-handoff-20261007T1307
+
+- p-efficiency: 0.89; p-friction: 0.22; p-skill-candidate: 0.54.
+- Evidence: same-named push-truth receipt, native thread settlements/explanation6038500856 and exact-head review artifacts.
+- Lesson: byte counts and UTF-16 ranges differ for Unicode evidence; compare the independently bound full-input hash before calling a prose unit mismatch omitted scope. A completed old-head approval remains historical after concrete fixes are pushed.
+- Better path: let the bounded real attempt finish, preserve its submission, group confirmed fixes, then bind the new review and native readiness gates to the current head.
+- State: pushed9043 planning fixes and settled13threads; current MiMo job live, cohort convergence/readiness and whole implementation incomplete. Existing paused automation binding preserved. No spore incubated/promoted or observation-only push.
+
+## 2026-10-07T13:19:57.198618+00:00 — cephalon-character-9043-gates-and-donor-audit-20261007T1318
+
+- p-efficiency: 0.92; p-friction: 0.08; p-skill-candidate: 0.42.
+- Evidence: same-named receipt, actual9043 hosted artifact and committed donor conformance audit.
+- Lesson: reconcile semantic identity and storage/numeric differences before claiming a donor implements its later design; a retained origin and mutable effective owner need explicit authority semantics. Full Git input binding and deterministic gates do not imply completed model review.
+- State: new owned evidence and append only, current remote review verified live; no head advancement, implementation admission, runtime change or spore.
+
+## 2026-10-07T13:27:04.370500+00:00 — cephalon-character-9043-mimo-completed-20261007T1326
+
+- p-efficiency: 0.93; p-friction: 0.08; p-skill-candidate: 0.36.
+- Evidence: same-named receipt, actual review5442867699 and before/after complete-input artifacts.
+- Lesson: a push-time captured description can be stale while the independently verified Git input is complete; answer the native observations with actual readbacks and preserve both timestamps. Completed current-head approval remains distinct from cohort convergence and native readiness.
+- State: current MiMo completed/approved, explanation/body/prompt readbacks verified; no Git head advancement or source/runtime admission. Existing paused automation remains paused. No spore.
+
+## 2026-10-07T13:44:41.216464+00:00 — cephalon-character-openplanner-kernel-audit-20261007T1344
+
+- p-efficiency: 0.89; p-friction: 0.16; p-skill-candidate: 0.43.
+- Evidence: same-named receipt, selected committed OpenPlanner source map and actual isolated step observations/probe.
+- Lesson: force geometry, semantic samples and retrieval trails are different state surfaces; demonstrate causal coupling before crediting shared names. Per-step damping and positive dt clamping alter elapsed-time semantics even with fixed substep horizon.
+- Better path: bind existing numeric primitives and target revisions, probe concrete boundary risks, then review one owning kernel contract before admitted implementation.
+- State: preparation evidence retained without advancing reviewed9043; no donor/runtime/board/source implementation or spore.
+
+## 2026-10-07T13:52:11.422575+00:00 — cephalon-character-9043-coderabbit-included-limit-20261007T1351
+
+- p-efficiency: 0.90; p-friction: 0.19; p-skill-candidate: 0.30.
+- Evidence: same-named receipt, exact native request6039298033 and rate-limitreply6039301226/rawsummary snapshots.
+- Lesson: prior review completion plus a rolling-hour estimate does not establish renewed provider allowance. Bind the actual updated native retry notice; a successful check or removed summary banner supplies no model approval.
+- State: full scope and owned evidence retained, actual paid-usage-free refusal recorded; current MiMo approval remains distinct from convergence. Saved automation PAUSED, goal active/incomplete; no source/runtime/board admission, head churn or spore.
+
+## 2026-10-07T14:03:30.367182+00:00 — cephalon-character-goal-blocked-handoff-20261007T1402
+
+- p-efficiency: 0.94; p-friction: 0.07; p-skill-candidate: 0.20.
+- Evidence: same-named receipt, actual goal status tool result and three-turn canonical/native audit.
+- Lesson: distinguish a terminal quota refusal, a live review, and a calendar estimate. A repeated external gate can justify a blocked goal while preserving its whole objective, owned evidence, native maker scheduler and separate automation activation. Different wrapper and engine hashes do not establish a changed admission engine.
+- State: administrative blocked handoff only; no further implementation, source/runtime/board change, review request, observation-only push or spore. Saved automation remains PAUSED.
+
+## 2026-10-07T14:51:18.260144+00:00 — cephalon-canonical-available-cohort-correction-20261007
+
+- p-efficiency: 0.88; p-friction: 0.56; p-skill-candidate: 0.58.
+- Evidence: canonical installation receipt, native main4b4f48d, byte-equal40-file pack and updated native quota/cohort statuses.
+- Lesson: refresh the canonical installed skill and its executable laws before carrying an old policy conclusion into a resumed workflow. Optional quota state and actual review approval are distinct; an available-agent cohort can converge without inventing credit for unavailable providers. Preserve native mandatory checks and findings.
+- Better path: fetch reviewed main, compare live pack, retain scoped backups, install the whole coherent pack, run shipped laws/policy/CLI, then rehydrate current native status. Durable prompts should point to current canonical policy and mark older conclusions historical.
+- State: canonical merged-source adoption and corrected handoff; CLI suite and current eligible CodeRabbit review still running at this timestamp. No policy invention, local Rheos workaround, source/runtime mutation, observation-only push or spore.
+
+## 2026-10-07T15:12:47.335805+00:00 — planning evidence and proposed predecessor correction
+
+- Origin: `cephalon-character-three-planning-corrections-20261007`.
+- Scores: efficiency 0.83; friction 0.36; skill candidate 0.18.
+- Evidence: native CodeRabbit review5444150628 and threads4208414914/4208414926/4208414931; measured JSON equality, native Rheos content, unchanged21proofs and prior ledger prefixes, diagnostic12PASS7WARN0FAIL.
+- Lesson: distinguish an incoming manually authored relationship proposal from an operational Rheos mutation. Blanket preservation of new planning metadata can hide a required predecessor; preserve status, estimates, native events and admission authority while completing the proposal.
+- Correction: retained short diagnostic query is accurately described, historical7/8WARN snapshots separately labeled, kernel-selection UUID recorded in proposed dependency input. Original transcript bytes/hash remain in Git9043; only descriptive metadata changed.
+- Limits: native content read is not graph admission, current completed receipt rows are not output quality, and current7WARN does not erase an earlier8WARN. Full loop remains active; current approvals must be re-qualified after successor push.
+- No spore incubated or promoted; no maker/clock/PM2/owner/runtime/social changes.
