@@ -37,6 +37,8 @@ change creative and social choices. Replay can recover the character.
 - Scoped graph recall: `a1e9d6af-0233-4dcb-9677-5c76fa9a2701` (5 points).
 - Outside encounter intake: `6eb77110-8cf4-44d5-a242-f495d25d6aaf` (3 points).
 - Physical graph/field coupling: `ff3e628b-cd5c-4a89-a397-42cc88dbde70` (8 points).
+- Kernel ownership and numeric contract: `b5f2ba9e-8d67-4c73-9919-e275983aca87`
+  (3 points), a proposed predecessor of physical graph/field coupling.
 - Independent mood and attention: `4cac8ac8-1a9f-441d-ac87-aa09f874eb57` (5 points).
 - Lasting character and relationships: `b3da01be-aed8-4d61-88c4-82a62fc5cf1f`
   (5 points).
@@ -44,10 +46,32 @@ change creative and social choices. Replay can recover the character.
 - Complete loop and deployment proof: `5ea872c3-1db4-47c5-a63d-d49f99f79497`
   (3 points).
 
-These are provisional estimates totaling 34, subject to independent planning
-review and native Rheos admission. Initial incoming Markdown is supported input;
+The seven original delivery estimates total 34; the separately reviewable
+kernel-selection prerequisite adds 3, for a proposed total of 37. The recorded
+epic frontmatter estimate stays 34 until Rheos can lawfully apply a reviewed
+re-estimate. Neither number is an admitted estimate. Initial incoming Markdown is supported input;
 it is not a transition receipt or proof that the installed dependency engine
 enforces these edges. The existing always-on epic remains independently gated.
+
+### Owned dependency-admission prerequisite
+
+The implementation owner is `open-hax/rheos` / `@eta-mu/rheos`, with the existing
+[upstream dependency gap](https://github.com/open-hax/rheos/issues/3) and
+[personal planning PR](https://github.com/riatzukiza/rheos/pull/4) as its tracked
+delivery surface. The current Foresight coordinator owns consuming the reviewed
+release and retaining native verification here. The PR is open; it is not an
+installed enforcement fix. Its present scope is relationship authoring. The
+owning upstream plan must explicitly cover loader retention and transition
+enforcement as well; authoring support alone cannot complete this prerequisite.
+
+Before any character implementation is admitted, retain the reviewed upstream
+revision, installed package/bundle identity and native positive/negative gate
+receipts. The installed loader must preserve the proposed dependency UUIDs;
+native admission must refuse a missing, unfinished or cyclic predecessor and
+admit the corresponding completed-predecessor case. Until those observations
+pass, every UUID relationship here is a proposal, not an ordering control, and
+implementation admission remains blocked. No repository-local loader, validator
+or transition substitute may satisfy this prerequisite.
 
 ## Non-goals
 
@@ -58,8 +82,11 @@ No automatic shared-law promotion from donor names. No paid review overages.
 
 ## Acceptance criteria
 
-1. Every child has its recorded positive and adversarial evidence, and native
-   Rheos enforces the reviewed predecessor edges before implementation admission.
+1. Every child has its recorded positive and adversarial evidence. Track
+   dependency retention and enforcement as the separately owned Rheos prerequisite
+   above; its owner and native gate verification must be recorded before these
+   UUIDs become implementation ordering controls. Until then they are proposed
+   relationships.
 2. A changing outside encounter is admitted once, linked to its author/topic,
    changes field/mood/attention, affects traced recall and a resulting choice,
    and receives its observed outcome back into memory.

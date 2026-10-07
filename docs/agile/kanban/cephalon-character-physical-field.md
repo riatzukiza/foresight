@@ -28,8 +28,14 @@ Its state and causal trace survive restart and reproduce under replay.
 Recover portable pure laws from the actual Fork Tales implementation and later
 corrections, establish their mapping to OpenPlanner's graph/field seams, and
 consume them from Knoxx. OpenPlanner owns its existing graph persistence/query
-surface; Knoxx owns product integration. Planning review must name the owning
-kernel/library and numeric representation before code admission. Use `.cljc`
+surface; Knoxx owns product integration. The explicit proposed predecessor
+[`b5f2ba9e-8d67-4c73-9919-e275983aca87`](cephalon-character-field-contract.md)
+selects the owning kernel/library and numeric representation in a reviewed
+decision before this solver or replay work is admitted. The Foresight coordinator
+owns that selection handoff; the decision must name the actual kernel owner.
+Its UUID is a proposed relationship until the epic's upstream Rheos prerequisite
+is delivered and verified. Existing frontmatter is not a claim of installed
+ordering enforcement. Use `.cljc`
 where practical and keep runtime-specific adapters outward. No automatic
 promotion into Foresight common law or parallel Python effect runtime.
 
@@ -65,6 +71,10 @@ copy the entire experimental runtime with its infrastructure.
    refused explicitly; restart reproduces the same state/revision.
 8. Reinforcement is attributed to outcomes; repeated retrieval alone cannot
    establish useful recall. Permission checks apply to traversal and feedback.
+9. The selected kernel owner, namespace/package, numeric representation, units,
+   timestep rule, seed semantics and replay tolerance are revision-bound inputs
+   to the solver and its tests. An unresolved selection or a solver/replay
+   configuration that differs from the reviewed decision blocks admission.
 
 ## Verification
 
@@ -72,6 +82,9 @@ Red portable law/property tests exercise actual coupling and replay, followed
 by owning graph adapter tests and the Knoxx context seam. Retain source commits,
 hashes, seeds, timestep schedules and traces. Run both host representations if
 the selected kernel crosses runtimes; declare numeric tolerance before results.
+Read the predecessor's accepted decision through native Rheos and bind its
+revision into solver/replay evidence. The epic's separate dependency-admission
+gate must pass first; a Markdown reference alone cannot enforce readiness.
 
 ## Risks
 

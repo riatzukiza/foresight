@@ -791,3 +791,11 @@
 - Evidence: same-named receipt, native snapshot and served-source visibility execution in event-memory-authority.json.
 - Lesson: a server-admitted event-policy token authenticates resource policy without supplying organization or memory permissions; do not infer those grants from actor/role labels. Preserve the whole feedback model in planning and verify scope before graph traversal/feedback.
 - State: incoming manual Markdown and retained evidence; no board admission, source/runtime/social mutation, or spore incubated/promoted.
+
+## 2026-10-07T12:51:26.084540+00:00 — cephalon-character-review-prerequisites-20261007T1250
+
+- p-efficiency: 0.87; p-friction: 0.30; p-skill-candidate: 0.56.
+- Evidence: same-named Receipt River decision, actual CodeRabbit review 5442414707, hosted exact-head artifact summary and stored actor authority projection.
+- Lesson: name delivery owners and executable native prerequisites before treating graph links as admission controls; identity resolution cannot manufacture missing memory permissions. Preserve raw review and complete-input evidence while distinguishing a truncated preview and a still-running model assessment.
+- Better path: inventory actual paths first, consume existing scoped identity seams, let the live review complete, and group verified planning fixes before the next ordinary push.
+- State: full character scope and concrete prerequisite fixes retained; current hosted review remains live, native readiness/source implementation not achieved, automation's preexisting PAUSED state preserved. No spore incubated or promoted.

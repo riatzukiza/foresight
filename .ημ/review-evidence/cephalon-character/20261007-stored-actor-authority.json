@@ -1,0 +1,35 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "raw_response": false,
+  "provider_approval": false,
+  "native_observation": {
+    "observed_at": "2026-10-07T12:48:36.670Z",
+    "actor": "discord_automation",
+    "candidate_count": 1,
+    "limit": 20,
+    "candidates": [
+      {
+        "stored_actor": "discord_automation",
+        "membership_status": "active",
+        "org_slug": "open-hax",
+        "org_status": "active",
+        "user_status": "active",
+        "role_slugs": [
+          "discord-user"
+        ],
+        "permission_count": 0,
+        "memory_cross_session": false,
+        "system_admin": false
+      }
+    ],
+    "projection": "membership/org/user status and role/permission flags only; no secrets/emails/credentials"
+  },
+  "method": "Read-only Mongo find/findOne projections through the existing backend container; bounded actor lookup and role/permission joins; no production resolver or write invoked.",
+  "conclusion": {
+    "tier": "derived",
+    "claim": "Stored identity resolution can supply owner scope but the observed stored roles do not supply a cross-session grant. Authorization changes require explicit reviewed scope.",
+    "confidence": 0.99,
+    "limits": "Timed directory snapshot; does not replay original vector candidates, prove all recall paths, grant permissions or measure index freshness."
+  },
+  "mutations": "No source/runtime/contract/role/member/permission/credential/social/owner/PM2/cloud/board change."
+}

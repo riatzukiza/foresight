@@ -349,3 +349,40 @@ query as an operator failure with no verification credit. The repair must resolv
 the actual trusted actor scope, enforce privacy before traversal/feedback and
 demonstrate final graph context inclusion; setting context to nil/admin would
 preserve a different end state.
+
+## Planning-review prerequisite correction
+
+CodeRabbit completed full review `5442414707` on `4f1ad49d0cb9990e5a3b8b4374ab193ce9b477c7`
+and raised two verified planning findings: dependency admission had no delivery
+owner, and the physical-field kernel/numeric selection had no explicit task.
+The epic now tracks the existing upstream Rheos gap and personal PR as the
+separately owned admission prerequisite, with an installed identity and native
+positive/negative verification requirement. Proposed UUIDs remain proposals
+until that gate works.
+
+The [kernel/numeric selection task](../agile/kanban/cephalon-character-field-contract.md)
+adds an explicit proposed predecessor to solver/replay work. The coordinator
+owns publishing the selection; its reviewed decision must name the actual owning
+kernel and numeric contract. It adds 3 provisional planning points to the seven
+original delivery stories' 34, for a proposed total of 37. Existing frontmatter
+is preserved; a lawful native re-estimate remains separate from content review.
+These corrections establish reviewable prerequisites, not their delivery,
+readiness or implementation.
+
+### Stored principal follow-up
+
+A read-only, whitelisted native directory projection at `2026-10-07T12:48:36.670Z`
+found one active `discord_automation` membership, in active `open-hax`, with an
+active user and role `discord-user`. Its joined stored permission count was zero;
+it had no `agent.memory.cross_session` grant and no system-admin role. The query
+read only directory status and role/permission flags, not credentials or emails.
+The retained transcript is
+[stored-actor-authority](../../.ημ/review-evidence/cephalon-character/20261007-stored-actor-authority.json).
+
+Resolving this stored principal can restore organization/owner scope, but cannot
+invent cross-session access to the legacy corpus. The first repair must verify
+which owned/shared memories that principal may use, preserve foreign/private
+denials, and make any missing grant a separately reviewed authorization change.
+The candidate source already separates stored actor binding from display
+fallback and has an actor-membership resolver that refuses ambiguous matches;
+that is an existing integration seam, not a live repair or permission grant.
