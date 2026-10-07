@@ -1,0 +1,31 @@
+{
+  "canonical_agents_head": "0e1101c8d76cca92d6a4321f0e880624bf5e0d14",
+  "scripts": [
+    {
+      "path": "/home/err/.agents/skills/session-mycology/scripts/sm-list.bb",
+      "sha256": "662a050fe180bc9c5a1c6afa2167f6fd5c867fce7617bf6ce6fdde54cbbad09e",
+      "copied_sha256": "662a050fe180bc9c5a1c6afa2167f6fd5c867fce7617bf6ce6fdde54cbbad09e"
+    },
+    {
+      "path": "/home/err/.agents/skills/session-mycology/scripts/sm-init.bb",
+      "sha256": "4dbcddb09feebc5bf007b5f9effcd140ca8c39f5227782229576d224b19d3792",
+      "copied_sha256": "4dbcddb09feebc5bf007b5f9effcd140ca8c39f5227782229576d224b19d3792"
+    },
+    {
+      "path": "/home/err/.agents/skills/session-mycology/scripts/common.bb",
+      "sha256": "6bca98ecaad22eb897f3ecffcf4334055b2c542cb1064b95e0e55770c055546c",
+      "copied_sha256": "6bca98ecaad22eb897f3ecffcf4334055b2c542cb1064b95e0e55770c055546c"
+    },
+    {
+      "path": "/home/err/.agents/skills/session-mycology/scripts/sm-spore.bb",
+      "sha256": "adf2a4258d2ed5830d20ddfc2955b01e1072302ca2878b9b4f55ae2f0e833493",
+      "copied_sha256": "adf2a4258d2ed5830d20ddfc2955b01e1072302ca2878b9b4f55ae2f0e833493"
+    },
+    {
+      "path": "/home/err/.agents/skills/session-mycology/scripts/sm-log.bb",
+      "sha256": "e9e5b2d788ee57a2b0fed2dea54ff577586e904eeb4ec5bdd6f5eea57341aaf5",
+      "copied_sha256": "e9e5b2d788ee57a2b0fed2dea54ff577586e904eeb4ec5bdd6f5eea57341aaf5"
+    }
+  ],
+  "bb_executable": "/usr/local/bin/bb"
+}

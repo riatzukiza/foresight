@@ -531,3 +531,12 @@
 - Better path: keep full issue criteria visible, identify child seams without promoting them, and qualify Incoming plans before code.
 - Evidence: .ημ/verification/F66-lineage-admission-planning; appended F66 decision receipt.
 - No spore/global distribution or provider contact.
+- ts: 2026-10-07T03:31:42.391415997Z
+  session: root/issues-F66-reflection-correction
+  task: F66 lineage planning reflection: canonical-format correction for finding 4202376980
+  p-efficiency: 0.82
+  p-friction: 0.28
+  p-skill-candidate: 0.20
+  spore: none
+  receipt-refs: 02b3c793a45719a6f2c322b480fad2d386e7064d6600bc891808c0f89e75c922
+  note: Append-only canonical successor for the F66 reflection at 9bfcfe37e6e8ba58512fe3e000a0f71d4db83bef. The original heading/prose is retained byte-exact as history; all eight planning acceptance criteria, provisional tiers, owner decisions and admission holds remain unchanged. This portable Markdown entry supplies the reader boundary and p-fields; no live reflection event, schema validation, board transition, review approval or spore promotion is claimed.

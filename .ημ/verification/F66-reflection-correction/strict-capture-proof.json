@@ -1,0 +1,102 @@
+{
+  "count": 16,
+  "all_exact": true,
+  "streams": [
+    {
+      "path": "canonical-status-first.stdout.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    },
+    {
+      "path": "canonical-status-first.stderr.b64",
+      "size": 158,
+      "sha256": "86d7ca20a49d8c3d4eb8f7387e068b82315e44745867274bd3ad25aef7401c66",
+      "strict": true
+    },
+    {
+      "path": "native-current-head.stdout.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    },
+    {
+      "path": "native-current-head.stderr.b64",
+      "size": 157,
+      "sha256": "69f5519080eaf4c3a8900ff6c94fe8295d61829c17161fb23806005b55bc84b9",
+      "strict": true
+    },
+    {
+      "path": "canonical-status-complete-pack.stdout.b64",
+      "size": 602,
+      "sha256": "6ae4b00cc6d6a1cfc853d61db4ab48b0f0213df464cdb01a2b7c24480f37011e",
+      "strict": true
+    },
+    {
+      "path": "canonical-status-complete-pack.stderr.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    },
+    {
+      "path": "native-current-head-visible-config.stdout.b64",
+      "size": 199,
+      "sha256": "672fd4c0810804dedee688f100d0b31ab796feb06fd640577aacd26c7b70cf12",
+      "strict": true
+    },
+    {
+      "path": "native-current-head-visible-config.stderr.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    },
+    {
+      "path": "canonical-reader-before.stdout.b64",
+      "size": 1249,
+      "sha256": "33d50853738b1047ed0a5fc06d0e8528d0ea0c017057e15184c3a1eee374ee19",
+      "strict": true
+    },
+    {
+      "path": "canonical-reader-before.stderr.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    },
+    {
+      "path": "canonical-writer-correction.stdout.b64",
+      "size": 133,
+      "sha256": "238b606c99e9effd7c26d0399159bddc84c17fd66b137dca16ca5d7e8aff216c",
+      "strict": true
+    },
+    {
+      "path": "canonical-writer-correction.stderr.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    },
+    {
+      "path": "canonical-reader-after.stdout.b64",
+      "size": 830,
+      "sha256": "04bdb5246cc0c7bf196d1773c1d5904f1985ce138e1f74bc19476a48cd7c9752",
+      "strict": true
+    },
+    {
+      "path": "canonical-reader-after.stderr.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    },
+    {
+      "path": "correction-root-owning-receipt-api.stdout.b64",
+      "size": 155,
+      "sha256": "9070cfd3a8d98dc9ec80701ba8a7a847516d7ff157177713ffe6a8058b33e8aa",
+      "strict": true
+    },
+    {
+      "path": "correction-root-owning-receipt-api.stderr.b64",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "strict": true
+    }
+  ]
+}
