@@ -861,3 +861,50 @@
 - Correction: retained short diagnostic query is accurately described, historical7/8WARN snapshots separately labeled, kernel-selection UUID recorded in proposed dependency input. Original transcript bytes/hash remain in Git9043; only descriptive metadata changed.
 - Limits: native content read is not graph admission, current completed receipt rows are not output quality, and current7WARN does not erase an earlier8WARN. Full loop remains active; current approvals must be re-qualified after successor push.
 - No spore incubated or promoted; no maker/clock/PM2/owner/runtime/social changes.
+
+## 2026-10-07T15:24:33.114787+00:00 — published correction and native PR-head lag
+
+- Origin: `cephalon-character-correction-published-native-head-lag-20261007`.
+- Scores: efficiency0.76; friction0.58; skillcandidate0.14.
+- Evidence: committed1069 immutable259/60PASS; actual fourthpushACK and gitremote1069 versus REST/GraphQL/nativecanonical old9043. All21priorproofs and source366owneduncommittedhashes remain exact. Savedpausedheartbeat readback49733bytes/SHA478541b3138ac2fb491de6ca1dfe5497080b4523cd4dded78eb26b217b7d51d3.
+- Lesson: a successful gitpush and a delayed PR metadata projection are different observations. Bind qualification to converged fresh heads, preserve the successful push, and let the guard refuse premature settlement rather than repeating an already published head.
+- Limits: three source planning findings remain open natively despite their published fixes; no1069approval/currentchecks/readiness/deployment claimed. Threeactualserverpushfailures are not a quota refusal.
+- No spore incubated/promoted; this observation append waits for the next concrete change. Full character goal remains active; nativecreativeclock and actualpausedheartbeat activation remain independent.
+
+## 2026-10-07T15:43:01.080052+00:00 — graph memory boundary observation
+
+- Origin: `cephalon-character-graph-memory-boundary-observation-20261007`.
+- Scores: efficiency 0.82; friction 0.24; skill candidate 0.23.
+- Evidence: unchanged committed OpenPlanner07085d6 callback and native seed helper execution; four isolated scenarios and retained full stdout.
+- Lesson: a trail-disable flag is not a pure-read guarantee; scope must govern causal inputs and every feedback write before a character consumes graph recall. Count attempted writes separately from persistence success.
+- Better path: qualify the upstream source/visibility/feedback contract, then consume it through trusted Knoxx actor scope and graph inclusion tests after lawful readiness.
+- Limits: callback fixture omits HTTP/auth/tenant plugins and uses synthetic visibility expectations; no deployed exposure, live feedback, physical solver, new law or completed loop is claimed. No spore incubated or promoted.
+
+## 2026-10-07T16:01:56.030044+00:00 — native PR synchronization and available-cohort proof
+
+- Origin: `cephalon-character-native-pr-refresh-and-quota-20261007T1550`.
+- Scores: efficiency0.86; friction0.47; skillcandidate0.12.
+- Evidence: one supported author close/reopen and complete native before/after body/thread binding; canonical three Fixed settlements and CodeRabbit actual verification; exact-head quota/request; current hosted13gate artifact/full input hash.
+- Lesson: Git refs and PR metadata can diverge. One bounded supported refresh restored this observed projection; it is not a universal repair guarantee. Fresh authenticated quota changes availability without supplying review credit. Current full review remains a separate live attempt.
+- Better path: fetch and compare native/local/ref heads, preserve whole body/conversation identities, restore OPEN even if maintenance fails, then use the current canonical cohort laws and native complete-input review evidence.
+- Limits: artifact staging and successful deterministic execution do not prove full model assessment, graph admission, deployed physical recall, artifact quality or terminal ownership. Saved heartbeat remains PAUSED; native maker clock independent. No spore incubated or promoted.
+
+## 2026-10-07T16:28:12.298805+00:00 — completed native review and current planning convergence
+
+- Origin: `cephalon-character-completed-mimo-planning-pass-20261007T1625`.
+- Scores: efficiency0.89; friction0.25; skillcandidate0.12.
+- Evidence: actual native APPROVED5445044799, completedSUCCESS37647239158, full82chunk input/submission proof, current stable canonical gatePASS and exact native body/saved prompt readback.
+- Lesson: availability, review credit and convergence are independent observations. Native quota can remove an optional unavailable participant while a real complete exact-head approving review qualifies the available cohort. A transient evidence-change guard must re-evaluate; it is not permission to ignore snapshot consistency.
+- Better path: adopt the coherent reviewed canonical pack, verify native full-input completion and deterministic gates, settle body observations, then preserve the qualified result in a fresh durable handoff. Do not continue claiming a completed review is pending.
+- Limits: planning approval does not deliver dependency enforcement or admit character implementation. Existing upstream Rheos ownership remains separate; coordination draft awaits actual human authorization. Graph physics, independent mood, recall, relationships and deployed full loop remain required.
+- State: full goal ACTIVE; saved heartbeat PAUSED/native maker clock independent. No source/runtime/board/maker mutation, paid usage, observation-only push or spore incubated/promoted.
+
+## 2026-10-07T16:47:30.013718+00:00 — physical kernel owner and numeric proposal
+
+- Origin: `cephalon-character-physical-kernel-selection-proposal-20261007`.
+- Scores: efficiency0.85; friction0.29; skillcandidate0.21.
+- Evidence: native standalone3af/current OpenPlanner070/ForkTalesf4 source map; concrete owner/numeric proposal; all15actual blob hashes and29prior owned file bytes preserved.
+- Lesson: a duplicate package in a graph monorepo and a standalone library are distinct ownership candidates. Inspect actual standalone source and native revision before selecting a home; historical roadmap prose can disappear from a newer tree and cannot establish current transfer authority.
+- Correction: proposal gives one library computation authority, portable pure boundary and actual physical contacts in recall, with explicit time/friction/seed/sparsefield/immutableowner/conservation rules. The existing layout/query mechanics remain donors and fail to prove a character field merely by sharing names.
+- Limits: this is independent planning input; owner acknowledgement, license/calibration/collision decisions, native Rheos readiness and actual solver RED/GREEN remain required. Full actor/mood/social loop stays ACTIVE. No state transition or deployed mechanics claimed.
+- No spore incubated/promoted; no other chat message or active maker interruption.

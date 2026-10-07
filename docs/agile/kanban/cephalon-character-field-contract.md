@@ -80,3 +80,17 @@ a reviewed owning-repository delivery plan. Three points is a planning estimate;
 implementation cost remains in the separately reviewed solver story.
 
 License: GPL-3.0-or-later.
+
+## Concrete selection proposal for review
+
+The [owner and numeric contract proposal](../../notes/2026-10-07-cephalon-field-kernel-selection.md)
+selects the existing standalone `octave-commons/eros-eris-field` library as the
+proposed physical computation owner, with OpenPlanner storage/query and Knoxx
+character adapters. It binds actual source revisions, binary64 Node authority,
+fixed-step/residual time, sparse velocity fields, immutable emitted ownership,
+physical contacts in recall and exact discrete replay outcomes.
+
+This is planning input. Owning-repository acknowledgement, reviewed calibration
+and collision/license decisions, native Rheos readiness and RED/GREEN remain
+required. Status, UUID, relationships and the provisional 3-point estimate are
+unchanged; no board event or accepted owner handoff is claimed.
