@@ -1,0 +1,9 @@
+{
+  "event_head_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "expected_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "executed_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "expected_commit": true,
+  "event_head_matches": true,
+  "exact_head": true,
+  "clean": true
+}

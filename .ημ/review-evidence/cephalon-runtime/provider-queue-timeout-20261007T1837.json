@@ -1,0 +1,125 @@
+{
+  "recordKind": "whitelisted native runtime/Docker command field observations; not raw REST or review approval",
+  "epistemicTier": "observed",
+  "recordedAt": "2026-10-07T18:54:24.891337+00:00",
+  "runtimeAnswerMetadata": {
+    "observedAt": "2026-10-07T18:46:55.967Z",
+    "readOnly": true,
+    "runs": [
+      {
+        "runId": "trigger-ussyverse-social_creative-cron-creative-evt_1791398245535-1791398245581",
+        "status": "completed",
+        "createdAt": "2026-10-07T18:37:25.600Z",
+        "updatedAt": "2026-10-07T18:41:48.729Z",
+        "persistedErrorPresent": false,
+        "answerType": "string",
+        "answerChars": 96,
+        "receiptCount": 2,
+        "failedToolNames": [],
+        "actualAnswer": "Provider stream aborted by request queue timeoutProvider stream aborted by request queue timeout",
+        "observedProviderQueueFailure": true,
+        "literal502OrAllUpstreamFailurePattern": false
+      },
+      {
+        "runId": "trigger-ussyverse-social_creative-cron-creative-evt_1791397345417-1791397345431",
+        "status": "completed",
+        "createdAt": "2026-10-07T18:22:25.437Z",
+        "updatedAt": "2026-10-07T18:24:52.829Z",
+        "persistedErrorPresent": false,
+        "answerType": "string",
+        "answerChars": 2221,
+        "literalTransportFailure": false,
+        "receiptCount": 9,
+        "failedToolNames": []
+      },
+      {
+        "runId": "trigger-ussyverse-social_creative-cron-creative-evt_1791396445258-1791396445280",
+        "status": "completed",
+        "createdAt": "2026-10-07T18:07:25.290Z",
+        "updatedAt": "2026-10-07T18:09:52.700Z",
+        "persistedErrorPresent": false,
+        "answerType": "string",
+        "answerChars": 2233,
+        "literalTransportFailure": false,
+        "receiptCount": 8,
+        "failedToolNames": []
+      }
+    ]
+  },
+  "proxxInspect": {
+    "observedAt": "2026-10-07T18:50:12.433690+00:00",
+    "name": "/proxx-proxx-1",
+    "imageRef": "ghcr.io/open-hax/proxx:88471efd7f8cd27f64fc733a1c31369f00a6d432",
+    "imageId": "sha256:26837706ffc08e41cfa97c121c8325769b33b959c8ff64f9cf5a6f0fbecffbab",
+    "status": "running",
+    "startedAt": "2026-10-07T06:03:24.319616395Z",
+    "numericTimeouts": {
+      "UPSTREAM_STREAM_BOOTSTRAP_TIMEOUT_MS": 60000
+    },
+    "priorInspectError": "SSH argument splitting caused format fragments to be treated as extra Docker object names; not production verification",
+    "mutations": false
+  },
+  "proxxSelectedErrorWindow": {
+    "evidenceKind": "selected native log fields, not raw logs or independently bound maker requests",
+    "window": [
+      "2026-10-07T18:36:00Z",
+      "2026-10-07T18:43:00Z"
+    ],
+    "errors": [
+      {
+        "time": 1791398386123,
+        "reqId": "req-2xh",
+        "msg": "Promise errored, but reply.sent = true was set",
+        "keys": [
+          "level",
+          "time",
+          "pid",
+          "hostname",
+          "reqId",
+          "err",
+          "msg"
+        ],
+        "err": {
+          "name": "Error",
+          "type": "fj",
+          "message": "Attempt 0 timed out"
+        }
+      },
+      {
+        "time": 1791398508667,
+        "reqId": "req-2xq",
+        "msg": "Promise errored, but reply.sent = true was set",
+        "keys": [
+          "level",
+          "time",
+          "pid",
+          "hostname",
+          "reqId",
+          "err",
+          "msg"
+        ],
+        "err": {
+          "name": "Error",
+          "type": "fj",
+          "message": "Attempt 0 timed out"
+        }
+      }
+    ],
+    "mutations": false
+  },
+  "diagnosticEarlierThisTurn": {
+    "pass": 12,
+    "warn": 8,
+    "fail": 0,
+    "active": [],
+    "contractFileCount": 240,
+    "servedImage": "sha256:ce0123ef17bade99603ea6ea19967c99c62869118d1cf52c057ab6a72500bf14",
+    "limitations": "Diagnostic projected status/receipt names; later whitelisted answer reveals failed queue transport despite persisted completed/error-null."
+  },
+  "limits": [
+    "Do not equate persisted completed with successful creative output.",
+    "Proxx request IDs req-2xh/req-2xq in matching window are not independently bound to maker request; causal link provisional.",
+    "No restart, timeout/model/contract/owner/PM2/cloud/board mutation, provider probe or publication replay.",
+    "18:22/18:07 nonempty answers and completed tools are observations, not independent artifact/destination/quality proof."
+  ]
+}

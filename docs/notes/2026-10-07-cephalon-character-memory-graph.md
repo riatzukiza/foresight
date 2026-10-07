@@ -405,3 +405,65 @@ denials, and make any missing grant a separately reviewed authorization change.
 The candidate source already separates stored actor binding from display
 fallback and has an actor-membership resolver that refuses ambiguous matches;
 that is an existing integration seam, not a live repair or permission grant.
+
+## 2026-10-07 — bounded hydration source audit
+
+This subsection records the completed static audit of existing Knoxx Git objects.
+S denotes the previously observed served revision
+`2644fc6c51bbbcda599964a5a674415b58344c3b`; C denotes the inspected candidate
+`366e72ab68c8afae708d3f6d5546faee808ebc07`. Source was read with `git show`,
+without checkout/reset or source/test execution. These bindings preserve the
+earlier deployment observations; they do not attest a new served revision,
+installed behavior, planning readiness or deployment.
+
+Paths in the following table are relative to Knoxx's
+`backend/src/cljs/knoxx/backend/`. S/C line numbers refer to those immutable
+objects, rather than whichever checkout a local source link now opens.
+
+| Source path and immutable anchors | Verified source fact | Consequence for planned verification |
+| --- | --- | --- |
+| `infra/agent/hydration.cljs`, S/C 108–128; `infra/openplanner/memory.cljs`, S 269–287 / C 268–286 | Hydration searches the message, with surrounding whitespace trimmed in shared search, source `knoxx` and configured session project. Conversation identity is returned metadata, not a session restriction. The memory tool/API share this search and decoding path. | Freeze the complete query, search options, corpus/index snapshot, candidate order and actual principal. Do not substitute a short diagnostic query or later corpus. |
+| `infra/openplanner/memory.cljs`, S 232–238 / C 231–237; `domain/graph/expansion_policy.cljs`, S/C 48–52; `infra/core_memory.cljs`, S/C 375–385 | Quality/reasoning/provider-error filtering and good-first ordering precede `take k`; session visibility runs afterward with no refill. Default hydration k=6 fetches 18 candidates under the default policy. | Six denied leading candidates can exclude an authorized seventh candidate already inside the fetched set. This deterministic loss case is not proof that it caused the eight sampled empty arrays. |
+| `infra/core_memory.cljs`, S/C 113–132, 315–385; `infra/routes/memory.cljs`, S/C 727–780 | Session checks use stored organization/owner scope or actual grants; actor identity alone is insufficient. Session-fetch errors become denied candidates. The API additionally requires memory-read permission and cross-session permission/admin for an omitted session. | Preserve denials and observe rejection/error stages. Identical principal/query does not require identical HTTP acceptance: compare shared retrieval/visibility while testing the API's additional gates explicitly. Never invent grants to force parity. |
+| `infra/agent/turn.cljs`, S 775–787, 905–907 / C 624–646 | The memory event counter reads `:results`, while memory payloads use `:hits`. Ordinary positive memory events therefore report zero hits. Resource patches separately preserve the actual memory hit array. | Assert truthful event counts and final prompt inclusion. This exact accounting bug cannot explain the previously persisted empty `memoryHydration.hits` arrays. |
+| `infra/openplanner/tools.cljs`, S/C 135–169; `infra/openplanner/memory.cljs`, S 289–305 / C 288–304; `infra/clients/openplanner_mongo.cljs`, S/C 29–36; `infra/clients/openplanner.cljs`, S/C 83–87, 214–217 | The memory tool captures auth context; the graph handler does not capture a per-turn principal or apply memory visibility. Graph uses REST with service/tenant configuration even when vectors use direct Mongo. Its optional `edgeLimit` becomes `maxCost`, not a forwarded edge-count limit. | Verify principal/scope admission before traversal and effects; verify graph transport independently of vector availability. Make bounds explicit without claiming an installed edge-count or physical-field contract. |
+| `extern/openplanner_sdk.cljs`, S/C 418–442; `infra/openplanner/memory.cljs`, S 551–568, 782–792 / C 550–556, 770–780 | Ordinary event ingestion does not await detached indexing; the optional await-index path exists separately. C awaits run projection ingestion, which still uses the ordinary events operation. | Hold indexing readiness separately from event acceptance. A later search with more hits does not prove earlier indexing delay, and ingestion completion alone does not prove vector readiness. |
+| `infra/openplanner/memory.cljs`, S 175–195 / C 174–194; C `backend/test/js/openplanner_sdk_test_stub.mjs` 202–224 (relative to repository root) | Vector decoding consumes the first nested IDs/documents/metadatas/distances arrays. Missing session identity is dropped by authorization. The canned SDK hit has no session and its session lookup returns empty rows. | Build a positive authorized fixture with real nested result shape, session metadata and matching stored scope rows. The existing canned conversion fixture supplies no positive authorized recall proof. |
+
+The scoped recall story now names prospective RED scenarios for the denied
+leading-candidate case, matched retrieval inputs, strict privacy failures,
+index readiness, transport failure, truthful telemetry and the actual prompt
+boundary. Raw/quality/visibility/inclusion diagnostics must remain safe for the
+authorized observer. No new test was authored or run for this audit or update;
+canonical planning review and lawful Rheos readiness still precede RED.
+
+Existing reusable C seams are `backend/test/cljs/knoxx/backend/` tests
+`agent_hydration_test.cljs:57` (outage boundary),
+`openplanner_semantic_test.cljs:6` (nested results and captured requests),
+`extern_openplanner_sdk_test.cljs:212` (conversion),
+`extern/hydration_publication_test.cljs:61` (actual turn ordering with hydration
+stubbed), and `actor_credential_org_scope_test.cljs:44` (stored binding and
+ambiguity). They are reuse candidates, not newly executed acceptance evidence.
+
+The existing [graph recall boundary note](2026-10-07-cephalon-graph-recall-boundary.md)
+and its [retained selected-handler observations](../../.ημ/review-evidence/cephalon-character/20261007-openplanner-memory-boundary-observations.json)
+preserve the separate OpenPlanner revision
+`07085d6557b75834ce6f50e6c54b8ca47e1c7c08` and synthetic boundary execution
+limits. Disabling trail persistence did not disable semantic reinforcement;
+repeated recall did not deduplicate those increments; failed feedback could
+still report selected reinforcement counts. Those are previously recorded
+isolated handler observations, not live HTTP authorization or a formal RED gate.
+The reviewed repair must distinguish authorized retrieval/projection influence
+from deliberately admitted feedback, bind effects to stable identities, and
+report attempted/completed/partial/failed persistence. Scope must cover seeds,
+connecting nodes/edges, compacted views, trails and forces before they influence
+selection or effects; filtering returned text cannot remove earlier influence.
+Existing consumer compatibility and upstream source integration remain explicit
+review decisions, without changing that boundary note or its evidence here.
+
+This refinement keeps the full encounter -> physical field -> independent mood
+-> graph recall -> choice -> observed outcome loop. Physical motion, deposits,
+decay, bonds, collision ownership, replay, slow character continuity and social
+obligations remain as specified above and in the sibling stories. Scoped recall
+is its first delivery slice; these source findings supply neither a completed
+character loop nor a causal explanation for the eight historical empty arrays.
