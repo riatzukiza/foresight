@@ -1,6 +1,6 @@
 # F24 historical proof scope clarification
 
-This source successor addresses only c2-precommit-proof-scope in full native review5437540306 at preservation baseline d7ad3f18cd968fa064bd08dc70babc9dfdf529cc. It appends the explicit scope paragraph to the earlier README and adds a separate provenance record. The original artifact, old receipts/reflection, all33 prior changed paths, card/event state and23Gitlinks remain exact. No census implementation or board operation occurs.
+This source successor addresses only c2-precommit-proof-scope in full native review5437540306 at preservation baseline d7ad3f18cd968fa064bd08dc70babc9dfdf529cc. It appends the explicit scope paragraph to the earlier README and adds a separate provenance record. All 33 prior changed paths are retained: 30 retain exact blob identities, while the receipt ledger, reflection ledger and earlier README preserve their original byte prefixes beneath intentional appends. Across the preservation baseline, the other 573 inherited tree entries and all 23 Gitlinks remain exact; card and event state is unchanged. No census implementation or board operation occurs.
 
 The baseline counts33/8573/fourrecords and historical66a counts21/1588 are immutable source comparisons againstc289. The future full-tip proof separately covers this new successor; no self-referential current-head count is asserted here. Generation time remains unknown. Native command times and Git commit time are labeled independently.
 
