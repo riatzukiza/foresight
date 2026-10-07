@@ -49,8 +49,9 @@ Live Discord voice/STT and Codex chat dispatch are independent capabilities.
 
 1. A blocked maker does not block head admission or abort on user conversation.
 2. Three unattended clock cycles each save validated inspectable artifacts or
-   an explicit failed outcome. Successful cycles represent at least two creative
-   media in their saved artifacts; every failed cycle reports its real reason.
+   an explicit failed outcome. At least one cycle succeeds with validated saved
+   artifacts; across successful cycles, those artifacts represent at least two
+   creative media. The remaining cycles may fail explicitly, with their real reasons.
 3. A configured non-clock event produces work through the same bounded path.
 4. A real Bluesky publication and Discord share have native IDs/receipts.
    Publication is deduplicated and governed by explicit frequency policy.

@@ -563,3 +563,38 @@ success evidence.
 Reloading a contract rearms the current native interval, so repeated prompt
 edits would postpone this proof. No manually dispatched cycle is counted as
 unattended-clock evidence.
+
+
+## October 7 — successful-cycle floor and malformed-feed regression
+
+Native personal-fork CodeRabbit review5436717119 on c420507 completed at
+01:55:36 UTC, selecting all17 changed inputs on the included Essentials
+allowance. Its two verified findings are repaired in this successor:
+
+- Epic AC2 and creative-cycle AC1 require at least one successful cycle with
+  validated saved artifacts. Across successful outputs at least two media
+  must be represented; the other attempted cycles may explicitly fail with
+  their actual reasons. Both existing frontmatter blocks are byte-identical.
+- The observation script maps the Bluesky feed only when it is an array,
+  otherwise returning null. The existing valid-feed check remains a failure,
+  while subsequent observations and the final failure count can continue.
+
+The real observation script executes against isolated HTTP/Mongo boundaries
+with non-array object, string and boolean feeds. Before the proposed guard,
+12 tests/72 assertions fail6 assertions with0 errors: the script catches
+TypeError and emits no snapshot. After the exact proposed guard, the suite
+passes12 tests/93 assertions, including each named Bluesky failure, exactly
+one diagnostic failure, exit1 and continued active-run observations. The
+conditional assertions execute only after a snapshot exists, which explains
+the different red/green assertion counts. Lint is0 errors/0 warnings; the
+root workspace suite passes24 tests/120 assertions with its intentional
+missing-command fixture output visible. Diff hygiene passes.
+
+The actual read-only deployed diagnostic still observes12 PASS/0 FAIL, with
+8 WARN on this read: the seven configured operational gaps plus a sampled
+text-only feed warning. The served image and240 contract-file hashes match
+the existing manifest; active runs were empty. The01:37 persisted completed
+cycle includes two failed music_generate receipts and a failed discord_send;
+the01:52 completed cycle has publication-tool receipts. These are observed
+receipt statuses, not independently verified new delivery or artifact quality.
+No runtime restart, agent dispatch, publication or board transition was made.

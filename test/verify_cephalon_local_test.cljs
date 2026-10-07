@@ -156,7 +156,8 @@
 
 (defn observe-query-fixture
   "Execute the actual observation script with isolated HTTP/Mongo boundaries."
-  [rows]
+  ([rows] (observe-query-fixture rows []))
+  ([rows feed]
   (let [selected (atom rows)
         query (atom nil)
         calls (atom [])
@@ -199,7 +200,7 @@
                      (str/includes? url "agent=ussyverse_social_creative")
                      {:tools (mapv #(hash-map :id %) (:makerTools observed))}
                      (str/includes? url "/api/admin/agents/active") {:runs []}
-                     (str/starts-with? url "https://public.api.bsky.app/") {:feed []}
+                     (str/starts-with? url "https://public.api.bsky.app/") {:feed feed}
                      :else (throw (ex-info "Unexpected fixture HTTP request" {:url url}))))
         context #js {:process #js {:env #js {:KNOXX_API_KEY "fixture-only"
                                              :KNOXX_BASE_URL "http://127.0.0.1:8000"
@@ -225,7 +226,31 @@
                                   (throw (ex-info "Unexpected fixture module" {:module module}))))}]
     (reset! cursor-ref cursor)
     (-> (.runInNewContext vm diagnostic/observation-script context)
-        (.then (fn [] {:query @query :calls @calls :snapshot @snapshot :errors @errors})))))
+        (.then (fn [] {:query @query :calls @calls :snapshot @snapshot :errors @errors}))))))
+
+(deftest non-array-feed-reports-the-named-failure-and-continues
+  (async done
+    (let [scheduled (assoc-in (first (:runs observed)) [:settings :agentSpec :contractId]
+                              "ussyverse_social_creative")]
+      (-> (js/Promise.all
+           (clj->js
+            (mapv (fn [feed]
+                    (-> (observe-query-fixture [scheduled] feed)
+                        (.then (fn [{:keys [snapshot errors]}]
+                                 (is (empty? errors))
+                                 (is (some? snapshot))
+                                 (when snapshot
+                                   (is (false? (:publicationReadOk snapshot)))
+                                   (is (nil? (:publications snapshot)))
+                                   (let [result (inspect manifest snapshot)]
+                                     (is (= 1 (:exit result)))
+                                     (is (str/includes? (:output result)
+                                                        "FAIL public Bluesky feed read succeeded with a valid feed"))
+                                     (is (str/includes? (:output result) "OBSERVED active runs:"))
+                                     (is (str/includes? (:output result) "Failures: 1"))))))))
+                  [{:unexpected "object"} "not-an-array" false])))
+          (.then (fn [_] (done)))
+          (.catch (fn [error] (is false (ex-message error)) (done)))))))
 
 (deftest scheduled-run-query-filters-before-the-recent-limit
   (async done

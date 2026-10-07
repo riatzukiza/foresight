@@ -47,7 +47,9 @@ style, or claim every generated piece must be published.
 ## Acceptance criteria
 
 1. Three consecutive unattended cycles produce validated saved artifacts or
-   explicit failed outcomes; successful cycles cover at least two media.
+   explicit failed outcomes. At least one cycle succeeds with validated saved
+   artifacts; successful outputs cover at least two media. The remaining cycles
+   may fail explicitly, with their real reasons.
 2. Music has a playable non-empty audio file and its composition specification;
    visual work has a valid image/SVG; lyrics/MIDI have parseable inspectable data.
 3. The maker reservation lasts until its run and delegated work have terminal

@@ -663,3 +663,24 @@
 - Scores: efficiency0.93, friction0.12, skill-candidate0.25.
 - Lesson: diagnostic guards should name each missing input and continue inspecting independent entries while preserving the final fail-closed runtime boundary; real filesystem fixtures expose first-error reporting gaps.
 - No spore incubated or promoted. Existing canonical skills own the process.
+
+## 2026-10-07 — cephalon-personal-readonly-follow-up-20261007T0101
+
+- Evidence: receipt `cephalon-personal-readonly-follow-up-20261007T0101`.
+- Scores: efficiency0.91, friction0.09, skill-candidate0.18.
+- Lesson: use actual workflow-run state for manually dispatched functional CI; native PR-check enumeration can omit it. Distinguish existing-container starts after kernel boot from newly created containers, and resumed schedule records from uninterrupted operation or in-flight recovery.
+- No new implementation, spore or promotion. Observations remain uncommitted until a concrete owned change.
+
+## 2026-10-07 — cephalon-personal-current-mimo-and-full-request-20261007T0131
+
+- Evidence: same-named receipt, native approvals5436426239/5436449931 and explanation6029010146.
+- Scores: efficiency0.88, friction0.14, skill-candidate0.22.
+- Lesson: distinguish reviewer gate execution from separate hosted functional CI and exact-head approval from convergence; a description correction does not change the commit. Use supported REST fields for native base/head ownership binding, and retry a failed read preflight only after pending-request deduplication.
+- No spore incubated or promoted; canonical skills remain authoritative. Observation appends stay uncommitted until a concrete owned change.
+
+## 2026-10-07 — cephalon-personal-success-floor-and-malformed-feed
+
+- Evidence: same-named receipt, native review5436717119/findings4202267999 and4202268004.
+- Scores: efficiency0.94, friction0.08, skill-candidate0.28.
+- Lesson: a completion criterion that permits failed outcomes needs a successful-output floor; provider shape checks must happen before mapping so a diagnostic can name the failure and preserve remaining observations. Execute the actual adapter script in negative fixtures.
+- No spore incubated or promoted; native board state remains incoming.

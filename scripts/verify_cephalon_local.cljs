@@ -55,7 +55,7 @@
       headTools:head.tools.map(t=>t.id),makerTools:maker.tools.map(t=>t.id),
       active:active.runs.map(r=>({id:r.run_id,status:r.status,event:r.latest_event})),runs,
       publicationReadOk:p.ok&&Array.isArray(feed.feed),
-      publications:feed.feed?.map(x=>({uri:x.post.uri,createdAt:x.post.record.createdAt,images:x.post.embed?.images?.length||0})),
+      publications:Array.isArray(feed.feed)?feed.feed.map(x=>({uri:x.post.uri,createdAt:x.post.record.createdAt,images:x.post.embed?.images?.length||0})):null,
       synthesisScript:require('fs').existsSync('/app/scripts/synthesize-music.mjs')}));
   })().catch(e=>{console.error(e.name+': '+e.message);process.exitCode=1})")
 
