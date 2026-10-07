@@ -861,3 +861,11 @@
 - Correction: retained short diagnostic query is accurately described, historical7/8WARN snapshots separately labeled, kernel-selection UUID recorded in proposed dependency input. Original transcript bytes/hash remain in Git9043; only descriptive metadata changed.
 - Limits: native content read is not graph admission, current completed receipt rows are not output quality, and current7WARN does not erase an earlier8WARN. Full loop remains active; current approvals must be re-qualified after successor push.
 - No spore incubated or promoted; no maker/clock/PM2/owner/runtime/social changes.
+
+## 2026-10-07T22:38:28.984Z — bounded receipt reader prerequisite
+
+- Receipt `cephalon-bound-envelope-reader-plan-20261007T2235`; efficiency 0.72, friction 0.30, skill-candidate 0.20.
+- Native P1 requires correcting existing reader interpretation while retaining original bytes; the read-only ownership audit places this gate in Foresight evidence law and its existing NBB adapter.
+- Separate3point standalone incoming card starts at1069 with no malformed appends imported; prospective fixtures cover exact binding, narrow fields, original-byte retention and all3consumers.
+- Keep strict ordinary envelopes and evidence truth; a documentary correction is not result/approval promotion. Native planning and Rheos Ready precede RED.
+- No spore incubated/promoted or runtime/board mutation; full physical character goal remains active.
