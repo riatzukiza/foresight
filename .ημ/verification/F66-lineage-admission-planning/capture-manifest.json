@@ -1,0 +1,86 @@
+[
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/F66.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "family": "observed-source-or-baseline-lint"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/F66.stdout.b64",
+    "size": 5668,
+    "sha256": "085091f609f413c9b458e83487d7f1680ef3e0c05316a52ab017a3ad7b45cf68",
+    "family": "observed-source-or-baseline-lint"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/baseline-lint.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "family": "observed-source-or-baseline-lint"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/baseline-lint.stdout.b64",
+    "size": 43,
+    "sha256": "9a3bccdb19cae83d5c68e83b198a8170b7e6257fa3173d98b1446ea188694931",
+    "family": "observed-source-or-baseline-lint"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-admission.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-admission.stdout.b64",
+    "size": 4251,
+    "sha256": "281d14fae81fa97bdbb2be7e930a7a48117d46e14b42e81d43ae7c04e5e4ee45",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-contracts.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-contracts.stdout.b64",
+    "size": 4118,
+    "sha256": "3e8124a10f36d4d2d4423a355c53325759b5e1889e985d554f3f819b077fd1f8",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-epic.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-epic.stdout.b64",
+    "size": 4496,
+    "sha256": "968eb9e7f09db8beef772119aa606e08c5f40cdebe9214cdd9017b00c8aa11e2",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-proof.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/native-proof.stdout.b64",
+    "size": 4323,
+    "sha256": "81c68d86486c9bdcd09cdbb3ea190473a980c47ab5c02f635b623a0fd5b3c00e",
+    "family": "native-readback"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/staged-diff-attempt1.stdout.b64",
+    "size": 309,
+    "sha256": "1fb25fc41b36d921c00a8d671645b3359befce298d07a3e2c7011b3ef3b7264a",
+    "family": "own-authoring-whitespace-refusal"
+  },
+  {
+    "path": ".\u03b7\u03bc/verification/F66-lineage-admission-planning/staged-diff-attempt1.stderr.b64",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "family": "own-authoring-whitespace-refusal"
+  }
+]

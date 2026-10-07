@@ -1,0 +1,11 @@
+{
+  "expected": "fcfc2d17f28640203066ddfe0a22f87db7372a32",
+  "origin-main-observed": "fcfc2d17f28640203066ddfe0a22f87db7372a32",
+  "personal-main-observed": "4927ab7d439ac7e1093c574096a2d5a6d6241391",
+  "requested-base-branch": "sync/origin-fcfc2d17f28640203066ddfe0a22f87db7372a32",
+  "base-head-observed": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "guard-result": "refused",
+  "clone-created": false,
+  "worktree-created": false,
+  "remote-mutations": false
+}

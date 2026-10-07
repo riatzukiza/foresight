@@ -1,0 +1,178 @@
+[
+  {
+    "name": "canonical-status-first",
+    "argv": [
+      "/home/err/.volta/tools/image/node/24.14.1/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/nbb-runtime/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/pr-flow",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/pr-flow/pr.cljs",
+      "status",
+      "riatzukiza/foresight",
+      "23"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree",
+    "exit": 1,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 158,
+      "sha256": "86d7ca20a49d8c3d4eb8f7387e068b82315e44745867274bd3ad25aef7401c66"
+    }
+  },
+  {
+    "name": "native-current-head",
+    "argv": [
+      "gh",
+      "api",
+      "repos/riatzukiza/foresight/pulls/23",
+      "--jq",
+      "{head:.head.sha,base:.base.sha,state,draft,auto_merge,head_ref:.head.ref}"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree",
+    "exit": 4,
+    "stdout": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stderr": {
+      "size": 157,
+      "sha256": "69f5519080eaf4c3a8900ff6c94fe8295d61829c17161fb23806005b55bc84b9"
+    }
+  },
+  {
+    "name": "canonical-status-complete-pack",
+    "argv": [
+      "/home/err/.volta/tools/image/node/24.14.1/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/nbb-runtime/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/pr-flow",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/pr-flow/pr.cljs",
+      "status",
+      "riatzukiza/foresight",
+      "23"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree",
+    "exit": 0,
+    "stdout": {
+      "size": 602,
+      "sha256": "6ae4b00cc6d6a1cfc853d61db4ab48b0f0213df464cdb01a2b7c24480f37011e"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "native-current-head-visible-config",
+    "argv": [
+      "gh",
+      "api",
+      "repos/riatzukiza/foresight/pulls/23",
+      "--jq",
+      "{head:.head.sha,base:.base.sha,state,draft,auto_merge,head_ref:.head.ref}"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree",
+    "exit": 0,
+    "stdout": {
+      "size": 199,
+      "sha256": "672fd4c0810804dedee688f100d0b31ab796feb06fd640577aacd26c7b70cf12"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "canonical-reader-before",
+    "argv": [
+      "/usr/local/bin/bb",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/session-mycology/sm-list.bb",
+      "--ledger-only",
+      "--limit",
+      "1"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree",
+    "exit": 0,
+    "stdout": {
+      "size": 1249,
+      "sha256": "33d50853738b1047ed0a5fc06d0e8528d0ea0c017057e15184c3a1eee374ee19"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "canonical-writer-correction",
+    "argv": [
+      "/usr/local/bin/bb",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/session-mycology/sm-log.bb",
+      "--task",
+      "F66 lineage planning reflection: canonical-format correction for finding 4202376980",
+      "--efficiency",
+      "0.82",
+      "--friction",
+      "0.28",
+      "--candidate",
+      "0.20",
+      "--receipt-refs",
+      "02b3c793a45719a6f2c322b480fad2d386e7064d6600bc891808c0f89e75c922",
+      "--note",
+      "Append-only canonical successor for the F66 reflection at 9bfcfe37e6e8ba58512fe3e000a0f71d4db83bef. The original heading/prose is retained byte-exact as history; all eight planning acceptance criteria, provisional tiers, owner decisions and admission holds remain unchanged. This portable Markdown entry supplies the reader boundary and p-fields; no live reflection event, schema validation, board transition, review approval or spore promotion is claimed."
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree",
+    "exit": 0,
+    "stdout": {
+      "size": 133,
+      "sha256": "238b606c99e9effd7c26d0399159bddc84c17fd66b137dca16ca5d7e8aff216c"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "canonical-reader-after",
+    "argv": [
+      "/usr/local/bin/bb",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/session-mycology/sm-list.bb",
+      "--ledger-only",
+      "--limit",
+      "1"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree",
+    "exit": 0,
+    "stdout": {
+      "size": 830,
+      "sha256": "04bdb5246cc0c7bf196d1773c1d5904f1985ce138e1f74bc19476a48cd7c9752"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "name": "correction-root-owning-receipt-api",
+    "argv": [
+      "/home/err/.volta/tools/image/node/24.14.1/bin/node",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/nbb-runtime/cli.js",
+      "-cp",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree/src:/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/receipt-river-runtime/src/cljs",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit/append-correction-receipt.cljs",
+      "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/worktree/.\u03b7\u03bc/receipts.edn"
+    ],
+    "cwd": "/home/err/.codex/parallel-goal/issues-20261006/F66-lineage-planning-0bd6609af7/reflection-correction-audit",
+    "exit": 0,
+    "stdout": {
+      "size": 155,
+      "sha256": "9070cfd3a8d98dc9ec80701ba8a7a847516d7ff157177713ffe6a8058b33e8aa"
+    },
+    "stderr": {
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

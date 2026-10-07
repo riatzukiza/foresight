@@ -1,0 +1,20 @@
+{
+  "published_head": "9bfcfe37e6e8ba58512fe3e000a0f71d4db83bef",
+  "original_ledger_size": 30481,
+  "original_ledger_sha256": "5e490f202a7e929d4dbc6c0e7e28d983a7ca74c1c709acb7aad78950ad763929",
+  "new_ledger_size": 31285,
+  "new_ledger_sha256": "57754efc703516b0c1b296ae1d29a771890279d5662e16419c1e58f5e6beca2b",
+  "original_prefix_exact": true,
+  "new_entry_sha256": "58cb713a70d4510c7a5039794049b09fd3301170e6ba0324a2cb1e40e389023e",
+  "new_entry_size": 804,
+  "receipt200_sha256": "02b3c793a45719a6f2c322b480fad2d386e7064d6600bc891808c0f89e75c922",
+  "canonical_before_latest_entry_not_F66": true,
+  "canonical_after_latest_entry_exact_writer_output": true,
+  "writer_exit": 0,
+  "reader_before_exit": 0,
+  "reader_after_exit": 0,
+  "p_efficiency": "0.82",
+  "p_friction": "0.28",
+  "p_skill_candidate": "0.20",
+  "event_schema_status": "portable Markdown; no versioned package/live reflection event produced or validated"
+}
