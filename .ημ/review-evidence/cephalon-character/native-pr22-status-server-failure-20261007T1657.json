@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-07T16:56:41.484679+00:00",
+  "exit": 1,
+  "stdout": "",
+  "stderr": "gh api repos/riatzukiza/foresight/commits/22b4c1225818b0a8204728a09599bc3e5750ee1b/statuses --paginate failed: gh: HTTP 500\n"
+}

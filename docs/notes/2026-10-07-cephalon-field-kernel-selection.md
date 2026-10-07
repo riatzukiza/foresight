@@ -40,11 +40,15 @@ separate. A later shared-law lift needs its own reviewed decision.
 | Visualization | Read the committed kernel snapshot; screen coordinates cannot become cognition authority |
 
 Development head and base must use the personal fork
-`riatzukiza/eros-eris-field`. That fork was not found by the authenticated native
-read on 2026-10-07; its existence, source synchronization and review surface
-must be established before publishing the owning plan. The organizational
-repository is a separately qualified release destination. No approval from
-this proposal transfers to that source or release PR.
+`riatzukiza/eros-eris-field`. The initial authenticated native read on
+2026-10-07 returned 404. The fork was subsequently created at
+`2026-10-07T17:09:50Z`; native readback verified its `octave-commons/eros-eris-field`
+parent and personal `main` at `3af779f3ec306834710719ccb46f49370343eed9`.
+This establishes the personal repository and that source revision. The owning
+plan, actual reviewer routes, source/distribution license and lawful readiness
+still require independent qualification. The organizational repository is a
+separately qualified release destination. No approval from this proposal
+transfers to that source or release PR.
 
 ## Source basis and non-equivalence
 

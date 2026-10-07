@@ -908,3 +908,36 @@
 - Correction: proposal gives one library computation authority, portable pure boundary and actual physical contacts in recall, with explicit time/friction/seed/sparsefield/immutableowner/conservation rules. The existing layout/query mechanics remain donors and fail to prove a character field merely by sharing names.
 - Limits: this is independent planning input; owner acknowledgement, license/calibration/collision decisions, native Rheos readiness and actual solver RED/GREEN remain required. Full actor/mood/social loop stays ACTIVE. No state transition or deployed mechanics claimed.
 - No spore incubated/promoted; no other chat message or active maker interruption.
+
+## 2026-10-07T16:58:10.680393+00:00 — kernel proposal committed, publication failed
+
+- Origin: `cephalon-kernel-selection-publication-server-failure-20261007T1657`.
+- Scores: efficiency0.74; friction0.46; skillcandidate0.14.
+- Concrete progress: one source-owner/numeric/physical-recall decision committed832; immutable consumer266/7 and preserved29ownedinputs PASS.
+- Execution: six actual GitHub push500 responses across SSH and HTTPS, native branch/commit404; no PR or review request. Fresh parent gate collection also failed500 after known quota reset.
+- Lesson: status pages and local verification cannot stand in for an acknowledged remote ref or current native gate. Keep the exact commit and prepared PR body; preserve errors and retry ordinary publication with backoff, never force/rewrite or invent approvals.
+- No spore incubated/promoted: external outage alone is not a reusable skill gap. Full character/mood/social goal remains active; no implementation, board admission or deployed proof.
+
+## 2026-10-07T16:59:58.250150+00:00 — final ordinary publication retry
+
+- Origin: `cephalon-kernel-selection-final-publication-failure-20261007T1659`.
+- Scores: efficiency0.73; friction0.47; skillcandidate0.12.
+- Seven actual remote500responses now prevent native publication; no new PR/review. Latest canonical skill main4b4 still equals installed reviewed pack. Keep exact local832commit and prepared body; actual parent gate unavailable after reset, never relabel cached PASS as current.
+- External outage supplies no spore, quota waiver, review credit or permission to rewrite history. Full loop remains active; no deployed implementation or board admission.
+
+## 2026-10-07T17:02:24.097047+00:00 — durable paused handoff readback
+
+- Origin: `cephalon-kernel-selection-paused-handoff-readback-20261007T1700`.
+- Scores: efficiency0.79; friction0.41; skillcandidate0.15.
+- Whole71938bytepromptreadbackPASS; priorPAUSED/cadence/chat unchanged. Exact local832/proposedphysicalowner/currentpublicationerrors/expiredquotaandunknownfreshparentgate recorded with fullgoal and unsentcoordinationpermission.
+- Keep oldevidence and workingappendprefixes; no spore/policywaiver/activation/runtime/board/sourceimplementation or claimedcompletion.
+
+## 2026-10-07T17:29:26.657374+00:00 — real kernel proposal review and bounded documentation correction
+
+- Origin: `cephalon-kernel-review-completed-and-docstrings-20261007`.
+- Scores: efficiency0.88; friction0.23; skillcandidate0.10.
+- Actual native CodeRabbit completion and MiMo APPROVED832 with95/95pagecoverage/13hostedgates yield current canonical PASS3checks/0threads/one available cohort. Quota is availability evidence, never approval.
+- Verified nine listed archive hashes and exact before/after threads; the summary itself is a tenth file. Probe is executable investigation tooling despite the overly broad review summary phrase.
+- Five JSDoc blocks add documentation only; stripping them recovers executable bytes, node syntax check passes. Actual native coverage rerun still required. Real personal source fork now exists at3af; no source plan/readiness/license/implementation delivered.
+- Preserve failed pushes and pending handoffs as dated history; next current head requires fresh review. Replace layered automation history with current cohesive handoff only after preserving private old bytes.
+- Full physical graph/independent mood/outside encounters/social presence/deployed character loop remains ACTIVE. No board admission/runtime/owner/service/maker interruption/paidusage/other-chat message/spore.

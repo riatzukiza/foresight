@@ -13,6 +13,11 @@ if (!repo || !/^[a-f0-9]{40}$/.test(revision || '')) {
 }
 const ts = require(path.join(repo, 'node_modules/typescript'));
 const sourceRecords = [];
+/**
+ * Read one blob at the requested immutable Git revision and record its hash.
+ * @param {string} relative Repository-relative TypeScript source path.
+ * @returns {import('typescript').SourceFile} Parsed committed source; no checkout mutation.
+ */
 function committedSource(relative) {
   const bytes = cp.execFileSync('git', ['show', revision + ':' + relative], {cwd: repo});
   sourceRecords.push({path: relative, bytes: bytes.length,
@@ -26,12 +31,23 @@ const helperNames = ['escapeRegex', 'matchesNodeType', 'clampConfidence',
   'stableUnitInterval', 'fadeNoise', 'lerp', 'simplexTrailNoise',
   'decayedTrailInfluence', 'undirectedEdgeKey', 'sortGraphMemorySeedScores',
   'filterGraphMemorySeedScores', 'resolveGraphMemorySeedNodes'];
+/**
+ * Select exactly one top-level donor function, refusing missing or ambiguous names.
+ * @param {import('typescript').SourceFile} source Parsed immutable donor blob.
+ * @param {string} name Required declaration name.
+ * @returns {string} Original declaration text with only its export modifier removed.
+ */
 function selectFunction(source, name) {
   const matches = source.statements.filter(n => ts.isFunctionDeclaration(n) && n.name?.text === name);
   if (matches.length !== 1) throw new Error('ambiguous/missing committed helper: ' + name);
   return matches[0].getText(source).replace(/^export\s+/, '');
 }
 const routeMatches = [];
+/**
+ * Collect literal POST /graph/memory registrations in the committed route AST.
+ * @param {import('typescript').Node} node Current syntax node.
+ * @returns {void} Updates only the fixture's routeMatches array.
+ */
 function visit(node) {
   if (ts.isCallExpression(node) && ts.isPropertyAccessExpression(node.expression)
       && node.expression.expression.getText(graph) === 'app'
@@ -54,9 +70,20 @@ if (errors.length) throw new Error('selected source transpilation failed');
 
 const seed = 'knoxx-session:run:fixture-allowed:user';
 const neighbor = 'knoxx-session:run:fixture-outside-scope:user';
+/**
+ * Provide the minimal recorded Mongo cursor seam using cloned synthetic rows.
+ * @param {Array<object>} rows In-memory fixture values; never live database results.
+ * @returns {{limit(): object, toArray(): Promise<Array<object>>}} Chainable fixture cursor.
+ */
 function cursor(rows) {
   return {limit() {return this;}, async toArray() {return structuredClone(rows);}};
 }
+/**
+ * Run the selected committed handler against isolated synthetic effect boundaries.
+ * @param {string} label Observation case identity.
+ * @param {{persistTrails: boolean, repeat?: number, failWrites?: boolean}} options Fixture controls.
+ * @returns {Promise<object>} Recorded reads, writes, warnings and recall outcomes; no live effects.
+ */
 async function scenario(label, options) {
   const writes = [];
   const warnings = [];

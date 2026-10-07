@@ -1,0 +1,7 @@
+riatzukiza/foresight#26  head 83231cd
+  coderabbit: completed   checks: {:pass 3}
+  threads: 0 total, 0 unresolved; by severity {}; informational 0
+  exact-head approvals: #{"coderabbit" "mimo"}  observed commit binding: {"mimo" #{"83231cd02156965d21363e0ebeb1f97b5c18be87"}, "coderabbit" #{"83231cd02156965d21363e0ebeb1f97b5c18be87"}}
+  completed planning rounds: 1 / soft minimum 5  participants: #{"coderabbit" "mimo"}
+  codex quota-unavailable: native source 6042771169 request  scope account observed 2026-10-07T17:05:06Z retry-at-ms UNKNOWN
+  gate: PASS
