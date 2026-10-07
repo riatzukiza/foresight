@@ -521,3 +521,7 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+
+## 2026-10-07 — Census native hold evidence
+
+Scores: efficiency 0.70; friction 0.62; skill-candidate 0.45. Preserve native append content according to the actual API grouping, rather than asserting immutable whole aggregate sections. One accepted comment and one rejected transition are distinct facts; GitHub blocked label does not imply native blocked status. Existing Rheos4 owns the missing edge. Receipt: persistent-census-review-hold-20261007. No spore/promotion.
