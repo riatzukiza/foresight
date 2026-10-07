@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+# Disable the exact default log exclusion so review can include evidence logs.
+# Configuration intent does not establish native input coverage or admission.
+reviews:
+  path_filters:
+    - "**/*.log"
