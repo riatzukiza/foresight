@@ -920,8 +920,21 @@
                                       :receipt/source-sha256
                                       (cli/sha256 (js/Buffer.from line "utf8")))])
             head (commit! (str source-text (pr-str correction) "\n"))]
-        (is (thrown-with-msg? js/Error #"invalid evidence receipts"
-                              (cli/verify-receipts! {:base base :at head})))))))
+        (doseq [trusted-base [base head]]
+          (is (thrown-with-msg? js/Error #"invalid evidence receipts"
+                                (cli/verify-receipts! {:base trusted-base :at head}))))))))
+
+(deftest correction-verification-revalidates-source-binding-in-trusted-prefix
+  (with-correction-ledger-fixture
+    (fn [{:keys [file] :as context}]
+      (let [head (correction-head!
+                  (assoc-in context [:correction :correction/entries 0
+                                     :receipt/source-sha256]
+                            (apply str (repeat 64 "0"))))
+            before (fs/readFileSync file)]
+        (is (thrown-with-msg? js/Error #"correction source hash differs"
+                              (cli/verify-receipts! {:base head :at head})))
+        (is (.equals before (fs/readFileSync file)))))))
 
 (deftest promotion-consumes-qualified-view-without-changing-originals
   (with-correction-ledger-fixture
@@ -1215,6 +1228,7 @@
                 {:ledger/path law/receipt-ledger-path
                  :ledger/revision revision
                  :ledger/sha256 (apply str (repeat 64 "d"))}
+                :ledger/bytes (js/Buffer.alloc 0)
                 :ledger/records
                 [(cli/evidence-receipt
                   passed-result "2026-08-29T17:22:40Z" "test"
@@ -1292,6 +1306,7 @@
                 {:ledger/path law/receipt-ledger-path
                  :ledger/revision reviewed-root-revision
                  :ledger/sha256 (apply str (repeat 64 "d"))}
+                :ledger/bytes (js/Buffer.alloc 0)
                 :ledger/records
                 [(cli/evidence-receipt
                   passed-result "2026-08-29T17:22:40Z" "test"

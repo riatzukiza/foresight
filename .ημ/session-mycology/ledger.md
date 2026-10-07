@@ -891,3 +891,10 @@
 - Expanded RED was committed before adapter implementation; actual errors and fixture expectation correction are retained. Local migration dependency failure was repaired in a private pinned venv; no failed action relabeled as a pass.
 - Native Rheos Review remains refused by its Node build gate in a Clojure root. Keep actual In_progress and event bytes intact; fix that behavior upstream instead of inventing a local writer or manifest.
 - New code requires independent exact-head hosted reviews; planning approval and local real-case pass do not settle PR27P1 or complete the character goal. Automation remainsPAUSED. No spore/runtime effect.
+
+## 2026-10-07T23:45:19.806402+00:00 — retain documentary views across trusted-base advancement
+
+- Receipt `cephalon-receipt-prefix-promotion-fix-20261007T2347`; efficiency0.78, friction0.28, skill-candidate0.18.
+- Independent source assessment found valid promotion false-refusal after the correction entered the trusted prefix. Committed RED65/339/2fail/0errors before repair; final GREEN66/342/0fail/0errors includes prefix source-hash and semantic refusal. Native CodeRabbit subsequently confirmed the same defect as Major.
+- Trusted bytes and trusted interpretation are separate: reconstruct declared corrections at every exact anchor while preserving all original bytes and untargeted ordinary historical compatibility. No result or approval promotion.
+- Native settlement and fresh exact-head review remain required after push; Rheos build-gap refusal and PR27P1 remain explicit. Full character loop active, automationPAUSED. No spore incubated/promoted or runtime effect.

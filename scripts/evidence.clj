@@ -1119,16 +1119,23 @@
 
 (defn admit-receipt-extension! [base-bytes head-bytes anchor]
   (let [appended (appended-receipt-records! base-bytes head-bytes)
-        documents (filter #(and (map? %) (contains? % :correction/entries)) appended)]
+        all-items (physical-receipt-items! head-bytes)
+        documents (filterv #(let [record (:receipt/record %)]
+                              (and (map? record)
+                                   (contains? record :correction/entries))) all-items)]
     (if (empty? documents)
       (assoc (require-valid-receipt-records! appended)
              :receipt/originals appended :receipt/views appended :receipt/corrections [])
-      (let [all-items (physical-receipt-items! head-bytes)
-            suffix-items (vec (take-last (count appended) all-items))
-            entries (correction-entries suffix-items)
+      ;; A correction remains an interpretation when it becomes trusted history.
+      ;; Reconstruct and authenticate every declared correction at this anchor;
+      ;; compatibility still leaves untargeted ordinary prefix records alone.
+      (let [suffix-items (vec (take-last (count appended) all-items))
+            entries (correction-entries documents)
             target-lines (into #{} (keep #(when (map? %) (:receipt/line %))) entries)
+            document-lines (set (map :receipt/line documents))
             suffix-lines (set (map :receipt/line suffix-items))
             selected (filterv #(or (contains? suffix-lines (:receipt/line %))
+                                    (contains? document-lines (:receipt/line %))
                                     (contains? target-lines (:receipt/line %))) all-items)
             source-cache (atom {})
             bindings

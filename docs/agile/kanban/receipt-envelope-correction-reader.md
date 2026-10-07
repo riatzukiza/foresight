@@ -178,6 +178,18 @@ River's different compatibility/schema semantics need their own qualification
 if generalization is proposed. Native Rheos owns status/WIP/build admission;
 source inspection or a parent planning PASS does not demonstrate installed Ready.
 
+The subsequent prefix-promotion regression was captured in `4ce3650`:
+65adaptertests/339assertions/2failures/0errors. A valid corrected attestation was
+lost when its correction became the trusted base, including after an ordinary
+append. The repaired adapter reconstructs every declared correction at the
+current exact anchor, revalidates source binding and semantics, and leaves
+untargeted ordinary prefix records under historical compatibility. Final local
+GREEN is66tests/342assertions/0failures/0errors; explicit prefix bad-hash and
+invalid-result cases remain refused without changing original bytes.
+Native CodeRabbit review5449712860/comment4213133901 independently confirmed
+the same defect as Major. This verification is local preparation; settlement
+and fresh exact-head hosted review still follow the pushed repair.
+
 ## Relation to the character work
 
 This prerequisite unblocks retained recall evidence for the full encounter ->
