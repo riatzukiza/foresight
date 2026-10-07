@@ -521,3 +521,21 @@
   spore: none
   receipt-refs: personal-fork-synchronization
   note: Verify personal fork lineage and existing work before publication routing. A diverged fork requires a recoverable synchronization candidate preserving both causal histories, then bounded development diffs; native review and final release evidence do not transfer implicitly between PRs. Existing plans cover this; no duplicate spore.
+- ts: 2026-10-07T06:28:18.951566709Z
+  session: /home/err/.codex/parallel-goal/issues-20261006/Fork-drift-planning-f1afe97f12/worktree
+  task: Full existing fork-org-drift five-criterion planning refinement
+  p-efficiency: 0.8
+  p-friction: 0.3
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: fork-org-drift-planning decision; base96a
+  note: Kept complete post-sync M and receipt-X owner seams; old NBB profile retained, actual current pin checks and native EDN input visibility passed; future software and integration unqualified. No spore/live event or board transition.
+- ts: 2026-10-07T07:20:22.725284032Z
+  session: /home/err/.codex/parallel-goal/foresight25-manifest-repair-l0o5q0k8/worktree
+  task: Correct PR25 baseline manifest capture references
+  p-efficiency: 0.93
+  p-friction: 0.08
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: .ημ/receipts.edn
+  note: Exact16path-only correction resolves both manifests to existing current-owned captures while preserving all5originalcriteria and historical command/time/result/hash fields. All68source streams verify canonical base64 plus terminalLF; my initial noLF check refused and is retained without normalization. Canonical discovery verified owned cwd before sandboxed writer; no native settlement, reviewer request, board state or source qualification claim.

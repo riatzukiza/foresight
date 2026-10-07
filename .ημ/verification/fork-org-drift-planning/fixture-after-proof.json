@@ -1,0 +1,404 @@
+{
+  "inputs": [
+    {
+      "path": ".\u03b7\u03bc/kanban-events/ledger.edn",
+      "mode": "100644",
+      "bytes": 145352,
+      "sha256": "17ac05adc453d1e0238e4b864b19577af012abc56e583af3692ce4cfefaa0c12"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "bytes": 12713,
+      "sha256": "06fc1530851d3d78894159430846a3aecb99d968bf9c5c8094157bd4b377a7b8"
+    },
+    {
+      "path": "docs/agile/AGENTS.md",
+      "mode": "100644",
+      "bytes": 1216,
+      "sha256": "a58b72f8532c860898def8a902a56ed467879a76303880cea94eb3fa81fe644f"
+    },
+    {
+      "path": "docs/agile/kanban/.events",
+      "mode": "120000",
+      "bytes": 28,
+      "sha256": "62f084ea55756476172ea82637d90fed3b996987668ac352e2ceceaeb7fe07ab"
+    },
+    {
+      "path": "docs/agile/kanban/330aa63f-f697-5bd6-9fc0-3f19fbea2be4.md",
+      "mode": "100644",
+      "bytes": 11253,
+      "sha256": "20b9a6dcc0de8534e808a3b8e356801dea5b7c604daeed1face19b67e5857954"
+    },
+    {
+      "path": "docs/agile/kanban/5f19dd78-9ee5-4c3f-97a8-930f76994447.md",
+      "mode": "100644",
+      "bytes": 2534,
+      "sha256": "bfc0e4b922b5ab270fc466140d10a5e1b313f0567d2c69bbb365de956465d9d4"
+    },
+    {
+      "path": "docs/agile/kanban/760f7f1e-a086-4e0a-82a5-71d2a761073d.md",
+      "mode": "100644",
+      "bytes": 1913,
+      "sha256": "4ba4da2c1f1340abddf29e97094bc89ce4833348fbb30b407cae854805ac68d8"
+    },
+    {
+      "path": "docs/agile/kanban/98371a85-76ed-46e4-9fef-b733b630c799.md",
+      "mode": "100644",
+      "bytes": 2763,
+      "sha256": "1240891c187961c37c7c82c7138a674dc1ff70e713828ecc87a3b607cb503c42"
+    },
+    {
+      "path": "docs/agile/kanban/a32d2994-3a80-46c3-bc52-5815f3cf51ab.md",
+      "mode": "100644",
+      "bytes": 1399,
+      "sha256": "5434e32b80a7be4f7bc540bacc107c2daecb2a6a48402b9db86aa834378ce527"
+    },
+    {
+      "path": "docs/agile/kanban/add-a-promote-stage-to-pr-flow-romotion.md",
+      "mode": "100644",
+      "bytes": 3650,
+      "sha256": "713a6ef2f1babab1576dca76b1c039be4f564933945300cff22ed73c6dc0589a"
+    },
+    {
+      "path": "docs/agile/kanban/admit-sol-episode-events-through-clio-2c5ad649.md",
+      "mode": "100644",
+      "bytes": 3711,
+      "sha256": "bf9492e02ddc94729cbff691c8efc0eec17250124caf21600672c63108e57717"
+    },
+    {
+      "path": "docs/agile/kanban/authenticate-promotion-evidence-989b31ef.md",
+      "mode": "100644",
+      "bytes": 990,
+      "sha256": "e30730693271de4a0918f95ee3c8143ec5d38acd849895199cc57feaacc2a4f5"
+    },
+    {
+      "path": "docs/agile/kanban/b0bb29f3-56d5-5c7c-9a1e-f4a1989e952f.md",
+      "mode": "100644",
+      "bytes": 2587,
+      "sha256": "647472064d3ee0c4dc5fe4d259665a9223bf499fb2a6a8235ee3f135253fd39d"
+    },
+    {
+      "path": "docs/agile/kanban/bind-coverage-promotion-to-immutable-report-evidence.md",
+      "mode": "100644",
+      "bytes": 900,
+      "sha256": "4724f1f86bd1a99cb827c360da6342dd2e59ca0d44da2f1d48181029d3340db5"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-01-codex-cloud-bootstrap-contract.md",
+      "mode": "100644",
+      "bytes": 5895,
+      "sha256": "ff27772f85c94bf5b365e8ec706fadc2203eed3a892b0acc2c65f813f484081c"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-02-cloud-safe-submodule-transport.md",
+      "mode": "100644",
+      "bytes": 4189,
+      "sha256": "47db0e04af3d454faba53e51e69a3e0b71685330d743707a6b98f3056e4f8024"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-03-idempotent-direct-child-hydration.md",
+      "mode": "100644",
+      "bytes": 5296,
+      "sha256": "8b931349eaa37e6f870152f44310072e7d47e69680beb92561b2241a9139063b"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-04-toolchain-and-root-validation.md",
+      "mode": "100644",
+      "bytes": 3786,
+      "sha256": "48c59b0729ebdcc842b7d90e73243f1d467349d5edabd9857b874a6630e6c2ef"
+    },
+    {
+      "path": "docs/agile/kanban/cc1-05-fresh-root-only-cloud-acceptance.md",
+      "mode": "100644",
+      "bytes": 4090,
+      "sha256": "06a3eb99d56214eec51d6d586764864b08367c5ec6241edee322083930377ebf"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-01-separate-source-hydration-from-repository-access.md",
+      "mode": "100644",
+      "bytes": 3755,
+      "sha256": "d04f88cf950061f55820a4426334e3f8a0feec8174a306612047f764c8b95c50"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-02-project-dev-origin-map-into-codex-selection.md",
+      "mode": "100644",
+      "bytes": 4754,
+      "sha256": "bfa3763b04ee73b05bd2a1cd9c098fec88801be8ed41ef386d50756214b53ee7"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-03-configure-child-remotes-for-active-policy.md",
+      "mode": "100644",
+      "bytes": 3946,
+      "sha256": "630b900b03974715a366157460ac5926bf1bd174994da9369862198860576474"
+    },
+    {
+      "path": "docs/agile/kanban/cc2-04-codex-cloud-access-acceptance-matrix.md",
+      "mode": "100644",
+      "bytes": 5623,
+      "sha256": "2bd81c4d291490a87cf2c10d166e6e3c57714b2e4053f9033aa1ccc0fac9b045"
+    },
+    {
+      "path": "docs/agile/kanban/codify-revision-bound-layered-evidence-gates.md",
+      "mode": "100644",
+      "bytes": 3114,
+      "sha256": "b141eae3492fb3ed2506987788d1bc39e59412c869d3a5ac6ed9fd7576f11b21"
+    },
+    {
+      "path": "docs/agile/kanban/configure-review-and-merge-protection-on-every-fork-ew-setup.md",
+      "mode": "100644",
+      "bytes": 4441,
+      "sha256": "a3006cf79f1292f770fda76e18ae2c353cf836fc1bb6fcca2042b695a28af51c"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-event-laws-6b44f2f4.md",
+      "mode": "100644",
+      "bytes": 933,
+      "sha256": "11b41458ce39b97fb5cc2da9045215ed298a3f47e6235edbbe1219152954baf3"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-markdown-resolution-57b63011.md",
+      "mode": "100644",
+      "bytes": 1034,
+      "sha256": "6306360c32da3cba8c0676e4f84b330756cba9e2194342c0d8a530b553cc9d0a"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-mermaid-graph-laws-c3a5e4b3.md",
+      "mode": "100644",
+      "bytes": 999,
+      "sha256": "42437597c8a620c75d80708702cbe9e5bbb3395a38fb0218ee069a4d52eee14d"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-portable-envelopes-ae23b7a1.md",
+      "mode": "100644",
+      "bytes": 1113,
+      "sha256": "6d7b8f35cea3bf0ee64875aeb36ab6214f77def8763398ac379f2e4df0c43ddd"
+    },
+    {
+      "path": "docs/agile/kanban/converge-alpha-reaction-planning-1d0d272c.md",
+      "mode": "100644",
+      "bytes": 1002,
+      "sha256": "ff5ea4bb7fb2ff2bf3943a863f4a131a5ba9eea3313aefdb96329a0e18edbd1a"
+    },
+    {
+      "path": "docs/agile/kanban/coordinate-eta-mu-github-evidence-agent.md",
+      "mode": "100644",
+      "bytes": 6406,
+      "sha256": "5240c510bf7605d8b0fcaedee100199490c7f6c14fdfc5f745bd96859c4994ed"
+    },
+    {
+      "path": "docs/agile/kanban/create-the-riatzukiza-dev-forks-ev-forks.md",
+      "mode": "100644",
+      "bytes": 2302,
+      "sha256": "82986b4c18ec4b8a0eacdd53e85082a9bc9312e17499091957848f5fea1c5ed1"
+    },
+    {
+      "path": "docs/agile/kanban/cut-sol-session-ledgers-over-to-clio-96c99928.md",
+      "mode": "100644",
+      "bytes": 2711,
+      "sha256": "878d099794cf86a1e8ce655f314698ab1bbfa714ff561c4ce0bf6cc065b21c9a"
+    },
+    {
+      "path": "docs/agile/kanban/ddebd3d4-7a75-5657-8ab9-cd606406f998.md",
+      "mode": "100644",
+      "bytes": 2755,
+      "sha256": "09f38ead3579eb67f1b1fcc7a4c579953e09445910d219c8b8412796c4d20d7c"
+    },
+    {
+      "path": "docs/agile/kanban/detect-fork-org-drift-ft-check.md",
+      "mode": "100644",
+      "bytes": 8840,
+      "sha256": "07de909ca01e69d01952f0f23cd35fb12a47b5bd38264be467f3e6bebbd6dad6"
+    },
+    {
+      "path": "docs/agile/kanban/e1-01-migration-surface-manifest.md",
+      "mode": "100644",
+      "bytes": 2850,
+      "sha256": "ac2f515927d3e36c0fe80cde5360de405fd0b1062615cf6008b6f6b37fa06ef7"
+    },
+    {
+      "path": "docs/agile/kanban/e1-02-faithful-clean-copies.md",
+      "mode": "100644",
+      "bytes": 2019,
+      "sha256": "12a253193a46c99363b2876e50014f57316c799d9e60f68285621b7b85cbb887"
+    },
+    {
+      "path": "docs/agile/kanban/e1-03-bootstrap-dependency-resolution.md",
+      "mode": "100644",
+      "bytes": 2266,
+      "sha256": "01654d81e903b82e86dcc1ab211341c3034c180dd2457f4dc1aea5c3bb52f08b"
+    },
+    {
+      "path": "docs/agile/kanban/e1-04-independent-git-history.md",
+      "mode": "100644",
+      "bytes": 1784,
+      "sha256": "26a873efb8d53a1f72c31566090a28e169181d0428cee4f4db4c23f6a59f2b4f"
+    },
+    {
+      "path": "docs/agile/kanban/e1-05-foresight-discovers-children.md",
+      "mode": "100644",
+      "bytes": 2024,
+      "sha256": "a388c55d0f85358827022b24f5c2d8c4e94286f8ee31341ac075ecb1032abc39"
+    },
+    {
+      "path": "docs/agile/kanban/e1-06-transplant-edges-one-at-a-time.md",
+      "mode": "100644",
+      "bytes": 1787,
+      "sha256": "767dfb3263c1349c1d2767f0597bcfc6fa073ae543e7385207686375a078432f"
+    },
+    {
+      "path": "docs/agile/kanban/e1-07-remaining-eta-mu-consumers.md",
+      "mode": "100644",
+      "bytes": 2250,
+      "sha256": "0d6e2577c4caf76adab3f1647d14ab791aa331eb00695303ea081c130a549c4f"
+    },
+    {
+      "path": "docs/agile/kanban/e1-08-osmos-ingestion-service.md",
+      "mode": "100644",
+      "bytes": 2087,
+      "sha256": "63b5015f77a82948bb9b066bd467143e4b22bc026e1ddcbf4c1d837a0872f90a"
+    },
+    {
+      "path": "docs/agile/kanban/e1-09-honest-quality-gates.md",
+      "mode": "100644",
+      "bytes": 2131,
+      "sha256": "4e274922aeeac58aa528da28b32046af768d8bfa1ce7372446af442e5b3d172a"
+    },
+    {
+      "path": "docs/agile/kanban/e1-10-reviewer-start-window-protection.md",
+      "mode": "100644",
+      "bytes": 2158,
+      "sha256": "fb32dd02beb07bc302719f5903ae51ee05074eec0c9c3b5d5a6443fb4b4a355d"
+    },
+    {
+      "path": "docs/agile/kanban/e1-11-donor-retirement-after-cutover.md",
+      "mode": "100644",
+      "bytes": 1870,
+      "sha256": "fcba3393dc66c29338be753aa4e6e233735edbca75d42f43225ebc598bbc44ca"
+    },
+    {
+      "path": "docs/agile/kanban/e1-12-migration-documentation.md",
+      "mode": "100644",
+      "bytes": 1805,
+      "sha256": "f4aebba1d4a96e868bb8ea481502d6986cb2f0c7388d0a2275abae230e556c5d"
+    },
+    {
+      "path": "docs/agile/kanban/ed7a709b-43e6-4270-9cb7-2cad9d89b4d0.md",
+      "mode": "100644",
+      "bytes": 1937,
+      "sha256": "8d56de8e45ee2e54c1803f44301229fc350cb961875665ee5b0e960323f316f8"
+    },
+    {
+      "path": "docs/agile/kanban/epic-codex-cloud-repository-access-and-fork-auth.md",
+      "mode": "100644",
+      "bytes": 5499,
+      "sha256": "c925dbe61f934f56574e532c9a2f0e5be18fe0dde39d8fe750587756e3a11a50"
+    },
+    {
+      "path": "docs/agile/kanban/epic-codex-cloud-self-hydrating-foresight-workspace.md",
+      "mode": "100644",
+      "bytes": 8051,
+      "sha256": "d3ff67b8eefdf6b30d22a300c05e09707f7210d025d9dda84da97aa9183eabe6"
+    },
+    {
+      "path": "docs/agile/kanban/epic-develop-on-riatzukiza-forks-orgs-receive-promotions-and-run-ops--origins.md",
+      "mode": "100644",
+      "bytes": 4872,
+      "sha256": "3b5bfd88c47fba62a77db7618f5ee475e5e4ec93f93fbaf9f6d5243ae7459f7b"
+    },
+    {
+      "path": "docs/agile/kanban/establish-the-pinned-repository-census-94175066.md",
+      "mode": "100644",
+      "bytes": 1585,
+      "sha256": "168c5a0111ee060ecbbc30553745e6da56d40097ce2faa4f138c430443b16c6b"
+    },
+    {
+      "path": "docs/agile/kanban/isolate-exact-commit-evidence-execution-be44f659.md",
+      "mode": "100644",
+      "bytes": 1033,
+      "sha256": "dd651e661f296c136bc10a79ed0b2e38f3b1d19db25117fb09a699e56cc637ee"
+    },
+    {
+      "path": "docs/agile/kanban/make-org-repositories-promotion-only-and-document-the-split-ops-only.md",
+      "mode": "100644",
+      "bytes": 2007,
+      "sha256": "cb3587553ccdd6c43031f7f846da7a1edb895144b517615a4ac96424e6bea8a1"
+    },
+    {
+      "path": "docs/agile/kanban/point-foresight-s-submodules-and-local-checkouts-at-the-forks-to-forks.md",
+      "mode": "100644",
+      "bytes": 1741,
+      "sha256": "e9062e8a3e73dc8950d39823fba83fa654197f1a063e6a946b30abc82750d319"
+    },
+    {
+      "path": "docs/agile/kanban/prove-content-generation-layout-publishing-and-review-independently.md",
+      "mode": "100644",
+      "bytes": 2092,
+      "sha256": "0c8d1288aa45b56e7dca8b048ba0f033eb0e83b8e13cde60a7c487a16a56989a"
+    },
+    {
+      "path": "docs/agile/kanban/prove-translation-generation-and-sme-review-independently.md",
+      "mode": "100644",
+      "bytes": 1877,
+      "sha256": "9c4e98b8b5f49f4197749e9708d6db13b0d6e362ce851fc3b4cb7435a6ae517f"
+    },
+    {
+      "path": "docs/agile/kanban/reconcile-the-opening-pull-request-portfolio.md",
+      "mode": "100644",
+      "bytes": 1783,
+      "sha256": "fdee3ef9ecfa150b92635787b347d4c9296684bfe7e1ca00afc45e54ea434111"
+    },
+    {
+      "path": "docs/agile/kanban/record-digitalocean-deployment-acceptance-86af1ffc.md",
+      "mode": "100644",
+      "bytes": 1053,
+      "sha256": "fd2b8191e2e725cd4bb16ffad6295fc083dba63fb3fae7f6b8b495b00a127d56"
+    },
+    {
+      "path": "docs/agile/kanban/record-the-fork-org-map-as-validated-data-igin-map.md",
+      "mode": "100644",
+      "bytes": 2085,
+      "sha256": "38d31e56d838632744175f127b4d85620fed1b1a6e748f6b2400a015336fbd35"
+    },
+    {
+      "path": "docs/agile/kanban/recover-inaccessible-census-revisions-3c4226e3.md",
+      "mode": "100644",
+      "bytes": 1192,
+      "sha256": "0d7eeb529fb81d29f3b49e2da5bb61da5f8712045c7a1d31bc5bff48eea7c993"
+    },
+    {
+      "path": "docs/agile/kanban/replace-sol-legacy-ledger-dependency-with-clio.md",
+      "mode": "100644",
+      "bytes": 3046,
+      "sha256": "6b6dd49fc64e1a757b8f1ce46070303fcaf28b9326fe68e6468289f9c6c68422"
+    },
+    {
+      "path": "docs/agile/kanban/restore-reproducible-sol-node-22-runtime-prerequisites-dd91f6b6.md",
+      "mode": "100644",
+      "bytes": 5935,
+      "sha256": "a552dbab9a4374331a80e08c5be9087fc142b30d24136a97fac6096bca5d2749"
+    },
+    {
+      "path": "docs/agile/kanban/run-the-foresight-root-gate-on-every-pull-request-te-in-ci.md",
+      "mode": "100644",
+      "bytes": 1974,
+      "sha256": "7ffb1ed70ffe7cd28ff1fb91a21f2f9a2a41a0bbd76f497b1dab41aa0c637d0f"
+    },
+    {
+      "path": "openhax.kanban.edn",
+      "mode": "100644",
+      "bytes": 53,
+      "sha256": "d0c04722963d540448c6b60c8e0d6d14e7129cf747a2b057f0ed63612b262d86"
+    },
+    {
+      "path": "openhax.kanban.json",
+      "mode": "100644",
+      "bytes": 63,
+      "sha256": "1bc6c217180601964638c8ea0647a7c2f3c4e72bdc05cf6412b39ddfb2f5c1e6"
+    }
+  ],
+  "all_inputs_unchanged_after_reads": true,
+  "extras": [],
+  "config": "unchanged authoritative EDN",
+  "read_only_no_transition_or_admission": true
+}

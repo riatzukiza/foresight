@@ -1,0 +1,28 @@
+{
+  "base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "original_card_bytes": 1929,
+  "original_card_sha256": "400c2385c12de96de1c14976bf648f6ef7ac7a394c36accc47e48acc972dd3d8",
+  "original_card_full_prefix_exact": true,
+  "frontmatter_and_historical_comment_unchanged": true,
+  "native_before_status": "incoming/P2/2",
+  "native_after_status": "incoming/P2/2",
+  "map_native_status_at_base": "in_progress",
+  "private_fixtures": {
+    "before": 66,
+    "after": 66,
+    "unchanged_after_read": true,
+    "extras": []
+  },
+  "source_engine": {
+    "pin": "ef3c4abf1ea75199486f693e9470df3fec88dd49",
+    "artifact_sha256": "791418bc9767260df804b5a972acb4bee7a5ffb409ea1edb899c348a2b8546a4",
+    "read_capability_only": true
+  },
+  "old_profile_nbb": "1.3.204",
+  "current_ci_nbb": "1.4.207",
+  "node": "22.20.0",
+  "clj_kondo": "2025.07.28",
+  "transport_commands": 34,
+  "transport_containers": 68,
+  "historical_native_intake_scope": "60tasks/Ready0 and23personal16origin PR scope are time-qualified snapshots from prior intake; no absence inference at later publication"
+}

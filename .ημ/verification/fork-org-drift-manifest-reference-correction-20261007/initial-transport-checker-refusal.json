@@ -1,0 +1,8 @@
+{
+  "observed_exit": 1,
+  "exception": "binascii.Error: Excess data after padding",
+  "first_path": "captures/current-owned/canonical-FIRST-sync3.stdout.b64",
+  "cause": "Own checker assumed noLF; historical transport containers all have exactly one terminalLF.",
+  "correction": "Validate exact canonical base64+oneLF without changing any stored source container; decoded68sizes/hashes pass.",
+  "no_product_defect_or_source_normalization": true
+}
