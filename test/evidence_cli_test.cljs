@@ -938,6 +938,27 @@
                                        [passed-result] base head)))
         (is (.equals before (fs/readFileSync file)))))))
 
+(deftest promotion-retains-qualified-view-after-trusted-base-advances
+  (with-correction-ledger-fixture
+    (fn [{:keys [base file current commit!] :as context}]
+      (let [corrected-head (correction-head! context)
+            catalog {:catalog/version 1 :catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}]
+        (with-redefs [cli/read-immutable-catalog-bundle!
+                      (fn [_] {:catalog catalog :catalog-identity test-catalog-identity})
+                      cli/validate-catalog! identity
+                      cli/gitlink-target! (fn [& _] child-revision)]
+          (is (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                       [passed-result] base corrected-head))
+          (is (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                       [passed-result] corrected-head corrected-head))
+          (let [ordinary (assoc current :kind :observation :origin "ordinary-after-correction")
+                contents (str (fs/readFileSync file "utf8") (pr-str ordinary) "\n")
+                next-head (commit! contents)]
+            (is (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                         [passed-result] corrected-head next-head))
+            (is (= contents (fs/readFileSync file "utf8")))))))))
+
 (deftest held-correction-admission-rechecks-captured-head-before-gate
   (with-correction-ledger-fixture
     (fn [{:keys [file source-text correction]}]
