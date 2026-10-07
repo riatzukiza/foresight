@@ -389,8 +389,8 @@
 
 ;; BEGIN receipt-correction-view RED contract
 ;; The only new production API is receipt-correction-view [items verified-targets].
-;; This resolver is test-only: an absent API is an explicit assertion failure,
-;; never a production stub or a successful negative. Git, ancestry, UTF-8 and
+;; The RED commit used a test-only absent-API resolver. GREEN calls the now
+;; implemented API directly, retaining every assertion. Git, ancestry, UTF-8 and
 ;; including-LF digest verification belong to the adapter. Digests below are
 ;; opaque fixture identities, not hashes independently verified by this suite.
 ;;
@@ -401,9 +401,7 @@
 ;; Successful provenance is the original documentary entry plus
 ;; :correction/line (the absolute line of the correction record).
 (defn correction-view-under-test [items verified-targets]
-  (if-let [law-fn (ns-resolve 'foresight.evidence 'receipt-correction-view)]
-    (law-fn items verified-targets)
-    {:receipt/errors [{:error :receipt-correction/missing-function}]}))
+  (evidence/receipt-correction-view items verified-targets))
 
 (def correction-source-revision
   "91a6fc6b27264da4b8c9b8cd7919f153adea0ff2")

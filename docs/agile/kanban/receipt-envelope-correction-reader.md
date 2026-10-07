@@ -137,9 +137,36 @@ line/hash identities and expected exclusions. Isolate fixture I/O and disposable
 Git objects; no historical production ledger is edited to prepare tests.
 Run the relevant root law/adapter suites, native `verify-receipts --base ...
 --at ...`, diff hygiene and current exact-head hosted evidence/review gates.
-All these behavioral scenarios are prospective, not authored or executed by this
-planning artifact. Current preparation checks only its new envelope and preserved
-active-ledger prefix.
+The initial planning artifact contained prospective scenarios. Implementation
+evidence now retains pure RED49tests/313assertions/224failures/0errors in
+`04549da`, and expanded adapter RED59tests/285assertions/17failures/3errors in
+`f2e570a`. The three adapter errors were legitimate positive admission calls
+throwing the missing correction behavior; an earlier edit parse error was
+repaired before that captured RED execution. All original laws remain covered.
+
+Local GREEN passes49puretests/313assertions and64adaptertests/335assertions,
+zero failures/errors. Scoped source and complete scripts/test lint pass with
+zero warnings/errors using unchanged repository configuration. The GREEN test
+calls the implemented law directly, removing only the RED absent-API resolver.
+Disposable Git cases verify ancestry, source availability, absolute ordinals,
+UTF-8 including-LF hashes, unchanged raw target bytes, semantic evidence refusal,
+both older and changed held HEADs, and no execution on refused admission.
+
+The frozen nineteen-record PR27 suffix is retained under
+`test/fixtures/receipt-correction/`:60487bytes/SHA256
+`52e3dc0e2fa4103c03a688d5c747780ae8d1d0ecd58af3c854e4455e094e6eba`.
+Its fixture facts exercise the pure boundary, separately from actual Git proof.
+The original `verify-receipts` command against the actual immutable base1069,
+source91a6 and headbdac returns exit0 locally, retaining278raw receipts,
+19appends and11qualified views. This is preparation, not integration, provider
+approval or a replacement for PR27's required hosted gate and P1 settlement.
+
+Native Rheos admitted this card through Ready and In_progress before RED. Its
+later In_progress→Review attempt failed: the installed engine invokes
+`pnpm build`, but this root has no Node package manifest. The card and event
+ledger remained byte-identical; status is still In_progress. This is the existing
+upstream Clojure build-gate gap documented in root AGENTS.md. No alternate
+board writer, parser, fabricated Node manifest or bypass is introduced here.
 
 ## Risks
 

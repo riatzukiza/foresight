@@ -229,6 +229,212 @@
        (vector? (:refs receipt))
        (every? nonblank-string? (:refs receipt))))
 
+(def ^:private correction-envelope-fields #{:manifest :refs :dod :pi})
+
+(def ^:private correction-entry-keys
+  #{:receipt/line :receipt/origin :receipt/source-revision
+    :receipt/source-sha256 :envelope/corrected-fields})
+
+(def ^:private correction-binding-keys
+  [:receipt/line :receipt/origin :receipt/source-revision
+   :receipt/source-sha256 :receipt/record])
+
+(defn- valid-envelope-field? [field value]
+  (case field
+    (:manifest :refs) (and (vector? value) (every? nonblank-string? value))
+    (:dod :pi) (nonblank-string? value)
+    false))
+
+(defn- interpreted-envelope-field [field value]
+  (case field
+    (:manifest :refs) (when (nonblank-string? value) [value])
+    :dod (when (and (vector? value) (seq value)
+                    (every? nonblank-string? value))
+           (str/join "; " value))
+    :pi (when (keyword? value)
+          (let [text (subs (str value) 1)]
+            (when (nonblank-string? text) text)))
+    nil))
+
+(defn- correction-error [code context]
+  (assoc context :error code))
+
+(defn- correction-field-errors [original fields context]
+  (into []
+        (keep (fn [field]
+                (let [value (get original field)
+                      interpretation (interpreted-envelope-field field value)
+                      replacement (get fields field)
+                      code (cond
+                             (valid-envelope-field? field value)
+                             :receipt-correction/field-already-valid
+
+                             (nil? interpretation)
+                             :receipt-correction/original-field
+
+                             (not (and (valid-envelope-field? field replacement)
+                                       (= interpretation replacement)))
+                             :receipt-correction/field-interpretation)]
+                  (when code
+                    (correction-error code (assoc context :field field))))))
+        (sort (keys fields))))
+
+(defn- correction-entry-errors
+  [entry correction-line correction-index target-index duplicates verified-targets]
+  (let [line (:receipt/line entry)
+        origin (:receipt/origin entry)
+        revision (:receipt/source-revision entry)
+        digest (:receipt/source-sha256 entry)
+        fields (:envelope/corrected-fields entry)
+        target (get target-index line)
+        original (get-in target [:item :receipt/record])
+        binding-key [revision line digest]
+        binding (get verified-targets binding-key)
+        context {:correction/line correction-line :receipt/line line}
+        code (cond
+               (not (map? entry)) :receipt-correction/entry-type
+               (not= correction-entry-keys (set (keys entry)))
+               :receipt-correction/entry-fields
+               (not (and (integer? line) (pos? line)))
+               :receipt-correction/target-line
+               (not (nonblank-string? origin)) :receipt-correction/entry-origin
+               (not (git-commit-id? revision)) :receipt-correction/source-revision
+               (not (sha256? digest)) :receipt-correction/source-sha256
+               (not (and (map? fields) (seq fields)))
+               :receipt-correction/corrected-fields
+               (not (every? correction-envelope-fields (keys fields)))
+               :receipt-correction/unsupported-fields
+               (not (< line correction-line)) :receipt-correction/target-not-prior
+               (nil? target) :receipt-correction/target-missing
+               (not (< (:index target) correction-index))
+               :receipt-correction/target-not-prior
+               (contains? duplicates line) :receipt-correction/duplicate-target
+               (not (contains? verified-targets binding-key))
+               :receipt-correction/binding-missing
+               (not (map? binding)) :receipt-correction/binding-type
+               (not (every? #(contains? binding %) correction-binding-keys))
+               :receipt-correction/binding-fields
+               (not (true? (:binding/verified? binding)))
+               :receipt-correction/binding-unverified
+               (not= line (:receipt/line binding)) :receipt-correction/line-mismatch
+               (not (and (= origin (:receipt/origin binding))
+                         (= origin (:origin original))))
+               :receipt-correction/origin-mismatch
+               (not= revision (:receipt/source-revision binding))
+               :receipt-correction/revision-mismatch
+               (not= digest (:receipt/source-sha256 binding))
+               :receipt-correction/hash-mismatch
+               (not (and (map? original) (map? (:receipt/record binding))
+                         (= original (:receipt/record binding))))
+               :receipt-correction/record-mismatch)]
+    (if code
+      [(correction-error code context)]
+      (correction-field-errors original fields context))))
+
+(defn- correction-documents [items]
+  (into []
+        (keep-indexed
+         (fn [index item]
+           (let [record (:receipt/record item)]
+             (when (and (map? record) (contains? record :correction/entries))
+               {:index index :line (:receipt/line item) :record record}))))
+        items))
+
+(defn- duplicate-correction-targets [documents]
+  ;; Preflight all claims before deriving any view. A later duplicate also
+  ;; refuses the first claim, even when its source identity differs.
+  (->> documents
+       (mapcat (fn [{:keys [record]}]
+                 (let [entries (:correction/entries record)]
+                   (if (vector? entries) entries []))))
+       (keep (fn [entry]
+               (when (map? entry)
+                 (let [line (:receipt/line entry)]
+                   (when (and (integer? line) (pos? line)) line)))))
+       frequencies
+       (keep (fn [[line claims]] (when (> claims 1) line)))
+       set))
+
+(defn- apply-correction-document
+  [state {:keys [index line record]} target-index duplicates verified-targets]
+  (let [entries (:correction/entries record)
+        code (cond
+               (not= :correction (:kind record)) :receipt-correction/kind
+               (not (receipt-envelope? record)) :receipt/invalid-envelope
+               (not (and (vector? entries) (seq entries)))
+               :receipt-correction/entries)]
+    (if code
+      (update state :receipt/errors conj
+              (correction-error code {:receipt/line line}))
+      (reduce
+       (fn [current entry]
+         (let [errors (correction-entry-errors
+                       entry line index target-index duplicates verified-targets)]
+           (if (seq errors)
+             (update current :receipt/errors into errors)
+             ;; All fields must qualify before a single field is applied.
+             (-> current
+                 (update-in [:receipt/views
+                             (:index (get target-index (:receipt/line entry)))]
+                            merge (:envelope/corrected-fields entry))
+                 (update :receipt/corrections conj
+                         (assoc entry :correction/line line))))))
+       state entries))))
+
+(defn receipt-correction-view
+  "Derive documentary envelope views from original, absolutely numbered items.
+
+  verified-targets contains adapter-supplied facts keyed by
+  [full-source-revision absolute-line original-including-LF-SHA256]. This pure
+  decision matches those facts; it performs no Git, byte/hash or ancestry
+  verification. Originals and evidence payloads are retained unchanged.
+  Errors refuse ledger admission, including remaining malformed partial views.
+  Successful provenance is the documentary entry plus :correction/line."
+  [items verified-targets]
+  (let [selected (if (vector? items) items [])
+        originals (mapv :receipt/record selected)
+        item-lines (mapv :receipt/line selected)
+        item-errors (cond-> []
+                      (not (vector? items))
+                      (conj {:error :receipt/items-type})
+                      (not (every? #(and (map? %)
+                                        (contains? % :receipt/record)
+                                        (integer? (:receipt/line %))
+                                        (pos? (:receipt/line %))) selected))
+                      (conj {:error :receipt/items-shape})
+                      (not= (count item-lines) (count (set item-lines)))
+                      (conj {:error :receipt/item-line-duplicate}))
+        initial {:receipt/originals originals
+                 :receipt/views originals
+                 :receipt/corrections []
+                 :receipt/errors item-errors}
+        derived (cond
+                  (seq item-errors) initial
+                  (not (map? verified-targets))
+                  (update initial :receipt/errors conj
+                          {:error :receipt-correction/bindings-type})
+                  :else
+                  (let [documents (correction-documents selected)
+                        duplicates (duplicate-correction-targets documents)
+                        target-index (into {}
+                                           (map-indexed
+                                            (fn [index item]
+                                              [(:receipt/line item)
+                                               {:index index :item item}]))
+                                           selected)]
+                    (reduce #(apply-correction-document
+                              %1 %2 target-index duplicates verified-targets)
+                            initial documents)))]
+    ;; Check envelopes after derivation, without duplicating evidence/result
+    ;; validation. A partial permitted interpretation is never an implicit pass.
+    (update derived :receipt/errors into
+            (keep-indexed
+             (fn [index view]
+               (when-not (receipt-envelope? view)
+                 {:error :receipt/invalid-envelope
+                  :receipt/line (:receipt/line (get selected index))}))
+             (:receipt/views derived)))))
+
 (defn evidence-receipt? [receipt]
   (let [schema (:evidence/schema receipt)]
     (and (receipt-envelope? receipt)

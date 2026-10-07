@@ -883,3 +883,11 @@
 - PureRED preserves all17old tests/89assertions and adds32new tests/224intentional failures for missing API. Real adapterfixture rejects valid bound correction:52tests262assertions1failure0errors. No implementation or compiler/fixture failure is claimed.
 - Preserve original receipts, derived views and provenance separately; qualify source/line/hash/ancestry at the existing adapter. Planning approval is historical for later code, not transfer credit.
 - Fullgraph/mood/socialgoal active; heartbeatPAUSED. No spore incubated/promoted or runtime effect.
+
+## 2026-10-07T23:28:37.710526+00:00 — append-only correction reader GREEN
+
+- Receipt `cephalon-receipt-correction-green-20261007T2347`; efficiency0.74, friction0.29, skill-candidate0.21.
+- Existing-reader repair now passes pure49/313 and adapter64/335; exact nineteen-record PR27 suffix retains original bytes and eleven derived metadata views. Git/source identity belongs at the outer adapter, semantic result validation remains strict.
+- Expanded RED was committed before adapter implementation; actual errors and fixture expectation correction are retained. Local migration dependency failure was repaired in a private pinned venv; no failed action relabeled as a pass.
+- Native Rheos Review remains refused by its Node build gate in a Clojure root. Keep actual In_progress and event bytes intact; fix that behavior upstream instead of inventing a local writer or manifest.
+- New code requires independent exact-head hosted reviews; planning approval and local real-case pass do not settle PR27P1 or complete the character goal. Automation remainsPAUSED. No spore/runtime effect.

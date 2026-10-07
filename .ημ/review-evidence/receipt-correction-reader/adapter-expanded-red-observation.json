@@ -1,0 +1,21 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "command": [
+    "nbb",
+    "-cp",
+    "scripts:src:test",
+    "test/evidence_cli_test.cljs"
+  ],
+  "exit": 1,
+  "tests": 59,
+  "assertions": 285,
+  "failures": 17,
+  "errors": 3,
+  "meaning": "Missing adapter behavior: legitimate corrected views throw invalid-envelope errors, source refusals and correction telemetry absent; captured HEAD change can still execute gate. Three errors are actual expected-positive admission calls, not syntax/bootstrap failures. A prior edit parse failure was repaired before this captured RED execution.",
+  "stdout_bytes": 26438,
+  "stdout_sha256": "856b5b4c3de96864540441c832862eb84e18de91e6e6336fd54002ae82c4afb7",
+  "stderr_bytes": 0,
+  "private_stdout_path": "/home/err/.local/share/codex/cephalon-review-artifacts/receipt-reader-plan-20261007T2235/adapter-expanded-red.stdout",
+  "commit": "f2e570a",
+  "test_correction": "One wrong-line refusal expected origin mismatch, but the historical fixture shares its origin; GREEN correctly expects the independently mismatched including-LF hash. No negative was removed."
+}
