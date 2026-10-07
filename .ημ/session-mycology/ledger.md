@@ -656,3 +656,10 @@
 - Scores: efficiency0.91, friction0.10, skill-candidate0.15.
 - Lesson: when review splits a story, reconcile the operator synthesis with the actual slices; keep provisional estimates and incoming board metadata separate.
 - No spore incubated or promoted. Existing skills own the protocol.
+
+## 2026-10-07 — cephalon-personal-named-missing-contract-files
+
+- Evidence: receipt `cephalon-personal-named-missing-contract-files`, native CodeRabbit review5436180047/comment4201848791.
+- Scores: efficiency0.93, friction0.12, skill-candidate0.25.
+- Lesson: diagnostic guards should name each missing input and continue inspecting independent entries while preserving the final fail-closed runtime boundary; real filesystem fixtures expose first-error reporting gaps.
+- No spore incubated or promoted. Existing canonical skills own the process.

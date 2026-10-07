@@ -88,6 +88,18 @@
     (is (= 1 (:exit result)))
     (is (= ["inspect"] (mapv #(first (second %)) (:commands result))))))
 
+(deftest reject-missing-contract-files-and-continue-hash-inspection
+  (let [snapshot (assoc manifest :files [{:path "missing-first.edn" :sha256 contract-hash}
+                                         {:path "fixture.edn" :sha256 "wrong"}
+                                         {:path "missing-last.edn" :sha256 contract-hash}])
+        result (inspect snapshot observed)]
+    (is (= 1 (:exit result)))
+    (is (= ["inspect"] (mapv #(first (second %)) (:commands result))))
+    (is (str/includes? (:output result) "FAIL contract snapshot file missing: missing-first.edn"))
+    (is (str/includes? (:output result) "FAIL contract snapshot hash drift: fixture.edn"))
+    (is (str/includes? (:output result) "FAIL contract snapshot file missing: missing-last.edn"))
+    (is (not (str/includes? (:output result) "ENOENT")))))
+
 (deftest successful-inspection-and-text-only-window
   (testing "mixed media proves a sampled image observation"
     (let [result (inspect manifest observed)]

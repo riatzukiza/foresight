@@ -83,6 +83,17 @@ An initial VM fixture exposed a cross-realm object-conversion error; it was
 normalized at the fixture edge before the meaningful red run. Command assertions
 also bind Docker executable, arguments and the exact inspect/exec container.
 
+Personal CodeRabbit review 5436180047 on `56db4ef` identified a diagnostic
+reporting failure for a missing contract file. The verifier now checks existence
+before reading each entry, names every missing file and continues checking the
+remaining manifest entries for hash drift. Any identity failure still prevents
+runtime API inspection. A real temporary-filesystem fixture places two missing
+entries around one present file with a wrong hash; the prior code stopped at
+the first raw ENOENT and failed four assertions. The repaired suite passes
+11 tests / 66 assertions with no failures or errors, and lint remains at zero
+errors/warnings. This improves evidence reporting without changing deployment
+files or relaxing identity admission.
+
 Rheos's native `content` read preserves the creative card's scalar dependency
 UUID, epic, parent and incoming metadata. That read does not validate dependency
 admission or move a card. The native `frontmatter points` command refuses the
