@@ -1933,6 +1933,96 @@
           (is (= 11 (count (:ledger/correction-provenance @seen))))
           (is (.equals head-bytes (fs/readFileSync file))))))))
 
+(defn with-common-correction-stream-fixture [run!]
+  (with-receipt-fixture
+    (fn [{:keys [fixture file] :as context}]
+      (with-redefs [cli/root fixture cli/receipt-file file]
+        (cli/git-capture! ["init" "--quiet"])
+        (let [commit! (fn [bytes parents]
+                        (fs/writeFileSync file bytes)
+                        (cli/git-capture! ["add" "--" law/receipt-ledger-path])
+                        (let [tree (str/trim (cli/git-capture! ["write-tree"]))
+                              head (str/trim
+                                    (cli/git-capture!
+                                     (into ["-c" "user.name=Receipt Test"
+                                            "-c" "user.email=receipt-test@example.invalid"
+                                            "commit-tree" tree "-m" "common correction fixture"]
+                                           (mapcat #(vector "-p" %) parents))))]
+                          (cli/git-capture! ["update-ref" "HEAD" head])
+                          head))
+              original (assoc stream-fixture-record :origin "common-target"
+                              :dod ["first objective" "second objective"])
+              original-line (receipt-line-bytes original)
+              ;; Blank lines make parsed common count differ from physical ordinals.
+              target-bytes (js/Buffer.concat #js [(js/Buffer.from "\n") original-line])
+              target-head (commit! target-bytes [])
+              entry {:receipt/line 2 :receipt/origin (:origin original)
+                     :receipt/source-revision target-head
+                     :receipt/source-sha256 (cli/sha256 original-line)
+                     :envelope/corrected-fields {:dod "first objective; second objective"}}
+              correction (assoc stream-fixture-record :kind :correction
+                                :origin "common-correction" :correction/entries [entry])
+              build! (fn [common shared-head canonical-suffix source-suffix]
+                       (let [source (js/Buffer.concat #js [common source-suffix])
+                             source-head (commit! source [shared-head])
+                             import (assoc stream-fixture-record :kind :receipt-stream-import
+                                           :receipt/stream
+                                           (stream-descriptor shared-head source-head common source))
+                             bytes (js/Buffer.concat
+                                    #js [common canonical-suffix (receipt-line-bytes import)])
+                             head (commit! bytes [shared-head source-head])]
+                         {:common common :source source :head head :bytes bytes
+                          :admission #(cli/admit-receipt-extension! common bytes head)}))]
+          (run! (merge context {:commit! commit! :target-bytes target-bytes
+                               :target-head target-head :original original
+                               :entry entry :correction correction :build! build!})))))))
+
+(deftest source-stream-counts-shared-correction-document-once
+  (with-common-correction-stream-fixture
+    (fn [{:keys [target-bytes target-head correction original commit! build! file]}]
+      (let [common (js/Buffer.concat
+                    #js [target-bytes (js/Buffer.from "\n") (receipt-line-bytes correction)])
+            common-head (commit! common [target-head])
+            {:keys [admission head bytes]} (build! common common-head (js/Buffer.alloc 0)
+                                                   (receipt-line-bytes stream-fixture-record))
+            view (admission)
+            replay (cli/admit-receipt-extension! bytes bytes head)
+            output (with-out-str (is (zero? (cli/verify-receipts! {:base common-head :at head}))))]
+        (is (= 4 (:ledger/combined-receipts view)))
+        (is (= original (first (:ledger/originals view))))
+        (is (= "first objective; second objective" (:dod (first (:ledger/views view)))))
+        (is (= 1 (count (:receipt/corrections view))))
+        (is (= 4 (:correction/line (first (:receipt/corrections view)))))
+        (is (= :canonical (:receipt/stream-role (first (:ledger/occurrences view)))))
+        (is (= (:receipt/corrections view) (:receipt/corrections replay)))
+        (is (str/includes? output ":corrected-receipts 1"))
+        (is (.equals bytes (fs/readFileSync file)))))))
+
+(deftest source-stream-keeps-delta-correction-targeting-common-occurrence
+  (with-common-correction-stream-fixture
+    (fn [{:keys [target-bytes target-head correction build! file]}]
+      (let [canonical-document (assoc correction :origin "canonical-correction")
+            {:keys [admission bytes]} (build! target-bytes target-head
+                                               (receipt-line-bytes canonical-document)
+                                               (receipt-line-bytes correction))
+            view (admission)
+            corrections (:receipt/corrections view)]
+        (is (= 4 (:ledger/combined-receipts view)))
+        (is (= 2 (count corrections)) "Two distinct documents retain both provenance entries")
+        (is (= [2 2] (mapv :receipt/line corrections)))
+        (is (= [3 3] (mapv :correction/line corrections)))
+        (is (= [nil target-head] (mapv #(get-in % [:receipt/stream :source/base]) corrections)))
+        (is (.equals bytes (fs/readFileSync file)))))))
+
+(deftest source-stream-refuses-delta-correction-with-conflicting-common-view
+  (with-common-correction-stream-fixture
+    (fn [{:keys [target-bytes target-head correction build! file]}]
+      (let [{:keys [admission bytes]} (build! target-bytes target-head (js/Buffer.alloc 0)
+                                               (receipt-line-bytes correction))]
+        (is (thrown-with-msg? js/Error #"common original occurrences have conflicting documentary views"
+                              (admission)))
+        (is (.equals bytes (fs/readFileSync file)))))))
+
 (defmethod test/report [::test/default :end-run-tests] [summary]
   (set! (.-exitCode js/process) (if (test/successful? summary) 0 1)))
 
