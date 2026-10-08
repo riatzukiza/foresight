@@ -983,8 +983,7 @@
 ;; No combined order is an occurrence key. Source common-view agreement is
 ;; authenticated before this delta-only interface, at the adapter boundary.
 (defn receipt-stream-view-under-test []
-  (let [candidate (ns-resolve 'foresight.evidence 'receipt-stream-view)]
-    (when (ifn? candidate) candidate)))
+  evidence/receipt-stream-view)
 
 (def composition-canonical-identity
   {:stream/repository "." :stream/path ".ημ/receipts.edn"
@@ -1189,6 +1188,17 @@
     (expect-composition-refusal!
      compose "empty canonical journal has no required import" :receipt-stream/import-limit
      (assoc (composition-fixture) :canonical/items [] :common/records 0))))
+
+(deftest receipt-stream-view-composes-empty-facts-without-an-import
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (assoc (composition-fixture)
+                       :canonical/items [] :source/items [] :common/records 0
+                       :canonical/corrections [] :source/corrections [])]
+      (is (= {:receipt/errors [] :ledger/occurrences [] :ledger/originals [] :ledger/views []
+              :ledger/canonical-receipts 0 :ledger/imported-receipts 0
+              :ledger/combined-receipts 0 :receipt/corrections []}
+             (compose facts))
+          "only an empty composition needs no canonical import; identities remain shaped"))))
 
 (deftest receipt-stream-view-refuses-malformed-input-and-common-record-count
   (when-let [compose (receipt-stream-view-under-test)]

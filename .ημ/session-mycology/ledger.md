@@ -935,3 +935,12 @@
 - Actual78/521/1failure0errors is the missing composition API;16 guarded behavioral tests remain unexecuted. Adapter RED was independently committed first.
 - Label held canonical revision as anchor, retain source identity and physical ordinals, and refuse ambiguous overlap rather than deduplicating source rows. No original map or prior evidence rewritten.
 - Domain/adapter GREEN and exact code review remain required. Full character goal active, automationpaused; no spore or runtime effect.
+
+## 2026-10-08T01:56:59.841461+00:00 — admit retained source history without flattening
+
+- Receipt `cephalon-receipt-stream-domain-adapter-green-20261008T0157`; efficiency0.77, friction0.26, skill-candidate0.18.
+- Actual pure79/1239 and adapter76/417 GREEN; fullrepositorylocalgates/lint0warnings passed. NativeTesting→Review admitted. Production source journals and old correctioncoordinates stay exact.
+- One shared authenticated admission composes265canonical+19source occurrences, derives11documentary targetviews267–277 and preserves source correction278. Replay/import-limit/overlap and held no-effect refusals are tested. No model/title dedup or missingrepo field invented.
+- Existing stricttest caught duplicate ordinary prefixvalidation; reusecapturedappends rather than changing the test. Isolated pinned Python dependencies corrected an operator preflight mismatch; no global packages changed.
+- Dedicated common-target documentary-view conflict negative remains a disclosed gap, not a claimed test. Current code still needs native hostedreview/gates and actual PR27consumerhandoff.
+- Full character goal active; automationpaused. No spore, runtime, social, model, proxy or maker effect.
