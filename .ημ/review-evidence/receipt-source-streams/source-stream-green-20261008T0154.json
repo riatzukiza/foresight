@@ -1,0 +1,384 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "observed_at": "2026-10-08T01:55:00.972471+00:00",
+  "red_commits": [
+    "0d5eb7c2cc632de8d64654615ccd6708c7c39aad",
+    "959b16d22cf8175db64db3a0cfe1312b054b30c3"
+  ],
+  "green_suites": {
+    "pure": {
+      "tests": 79,
+      "assertions": 1239,
+      "failures": 0,
+      "errors": 0
+    },
+    "adapter": {
+      "tests": 76,
+      "assertions": 417,
+      "failures": 0,
+      "errors": 0
+    }
+  },
+  "local_gates": {
+    "workspace_laws": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "scripts:test",
+        "test/workspace_test.cljs"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 403,
+          "sha256": "e85338313795f375cd3ee5136b56a7df2b5ad81824f172d13fcf63c63eb68f69"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "cephalon_diagnostic": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "scripts:test",
+        "test/verify_cephalon_local_test.cljs"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 98,
+          "sha256": "2a2e601008549570dba758be4d75c9ff6fbd4adffd7e67000b16a36251586ca7"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "project_laws": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts:test",
+        "test/project_test.cljs"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 85,
+          "sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "lineage_laws": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:test",
+        "test/lineage_test.cljs"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 84,
+          "sha256": "25b93b49bbb5a1b7f5686cf0e651365b684b97430b23da3b32749f5659245101"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "evidence_laws": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:test",
+        "test/evidence_test.cljs"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 87,
+          "sha256": "eac73f4e57195a67f9d61edc6ed5bc6506502b0c988533c45c1ea62474b2c895"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "evidence_adapter": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts:test",
+        "test/evidence_cli_test.cljs"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 8187,
+          "sha256": "22020957e04d8264c58d68a6a2d1605b1e0ef21c0718e98195ffbb0779773d00"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "project_contract": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts",
+        "scripts/project.clj",
+        "validate"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 103,
+          "sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "catalog_contract": {
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts",
+        "scripts/evidence.clj",
+        "validate"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 26,
+          "sha256": "8c1bce937b9e28b9855c9a680398dd38e0297b6d8a1aa85ef2d19e82b78ef2b5"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "migration_pack": {
+      "command": [
+        "/home/err/.local/share/codex/cephalon-review-artifacts/stream-plan-37710278775/gate-venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/migrations/eta-mu-breakdown/checks",
+        "-p",
+        "check_pack.py"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "bytes": 126,
+          "sha256": "ee5959b9cf6888ff1abf9ac8050ab82229595facca1390aaafa6098f09bca1fb"
+        }
+      }
+    },
+    "lint": {
+      "command": [
+        "clj-kondo",
+        "--lint",
+        "src",
+        "scripts",
+        "test"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 44,
+          "sha256": "eaa005e9f5f128d4a22c2f049db7215e859458e784fc06af2fd2568314d10346"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    "diff_hygiene": {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    }
+  },
+  "native_transitions": [
+    {
+      "evidence_kind": "observed-command-output-transcription",
+      "observed_at": "2026-10-08T01:52:07.687877+00:00",
+      "command": [
+        "eta-mu",
+        "kanban",
+        "frontmatter",
+        "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+        "status",
+        "testing",
+        "--config",
+        "openhax.kanban.json",
+        "--tasks-dir",
+        "docs/agile/kanban"
+      ],
+      "exit": 0,
+      "frontmatter_readback": {
+        "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+        "title": "Admit an immutable source receipt stream during branch integration",
+        "status": "testing",
+        "priority": "P1",
+        "points": "5",
+        "labels": "evidence, receipts, compatibility, confluence, laws",
+        "write-id": "1791424326900-0.cf67g43rx1kyvcsoqkc"
+      },
+      "event_append_bytes": 448,
+      "event_append_sha256": "9869f10c6ee74438b0f52714da10355f228ac9ee6beb3414d1ff9e74d4057257",
+      "limits": [
+        "Native operational transition after actual local gates; no current code approval, merge, consumer handoff, deployment or Done"
+      ]
+    },
+    {
+      "evidence_kind": "observed-command-output-transcription",
+      "observed_at": "2026-10-08T01:52:09.190692+00:00",
+      "command": [
+        "eta-mu",
+        "kanban",
+        "frontmatter",
+        "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+        "status",
+        "review",
+        "--config",
+        "openhax.kanban.json",
+        "--tasks-dir",
+        "docs/agile/kanban"
+      ],
+      "exit": 0,
+      "frontmatter_readback": {
+        "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+        "title": "Admit an immutable source receipt stream during branch integration",
+        "status": "review",
+        "priority": "P1",
+        "points": "5",
+        "labels": "evidence, receipts, compatibility, confluence, laws",
+        "write-id": "1791424328374-0.sjedmna5ehprxaiz455"
+      },
+      "event_append_bytes": 443,
+      "event_append_sha256": "5cf602e564c95c2ba5adc6df3fa63ce119fa2651a2b1e4d03a48ca963ee4bb12",
+      "limits": [
+        "Native operational transition after actual local gates; no current code approval, merge, consumer handoff, deployment or Done"
+      ]
+    }
+  ],
+  "frozen_composition": {
+    "canonical_receipts": 265,
+    "imported_receipts": 19,
+    "combined_originals_and_views": 284,
+    "corrected_source_views": 11,
+    "source_ordinals": [
+      267,
+      278
+    ],
+    "ordinary_append": {
+      "canonical": 266,
+      "imported": 19,
+      "combined": 285,
+      "corrected": 11
+    },
+    "blank_source_ordinals": [
+      261,
+      263
+    ],
+    "held_unavailable_source": {
+      "gate_calls": 0,
+      "raw_bytes_unchanged": true,
+      "lock_removed": true
+    }
+  },
+  "source_hashes": {
+    "src/foresight/evidence.cljc": {
+      "bytes": 32356,
+      "sha256": "e9f17fc4a6c6e774eb6c67d93b68a9dcb37bc477c5e0814f8d3f472601a9e543"
+    },
+    "scripts/evidence.clj": {
+      "bytes": 61044,
+      "sha256": "5d0fd62bcaf082986ff3a3b5b4841464b38d3af4e134472c980ea55ec409643f"
+    },
+    "test/evidence_test.cljs": {
+      "bytes": 69808,
+      "sha256": "86ec0ab081b68feff8bf14008e5c7b911cb7d86cf42a3451568814b0146f522c"
+    },
+    "test/evidence_cli_test.cljs": {
+      "bytes": 98043,
+      "sha256": "b24bc821c28b8a6550e9b74aa95d1a4b6608e20943001a7c72cb3f890053a61d"
+    }
+  },
+  "skill_installation": {
+    "canonical_main": "4b4f48dae1b804b2581974e604cca618ecedadf1",
+    "native_and_fetched_head_match": true,
+    "installed_files_and_modes": 40,
+    "entry_sha256": "efe5e0818d673b8aab6f962a711ba80c10b7a1877b24b0e986217601b6042472",
+    "whole_checkout_head": "0e1101c8d76cca92d6a4321f0e880624bf5e0d14",
+    "unrelated_dirt": "preserved"
+  },
+  "paused_automation": {
+    "native_prompt_utf8_bytes": 70022,
+    "native_prompt_sha256": "73d83ff82da5e432ade082d8e7175dedda9d0c05e6071481202966cad23ccb33",
+    "whole_readback": "PASS",
+    "historical_tail": "byte-identical",
+    "status": "PAUSED"
+  },
+  "limits": [
+    "Local GREEN is not current hosted code approval, PR29 qualification, PR27 integration/P1 settlement or deployment",
+    "Promotion fixture captures combined admitted view and returns false; no current approval manufactured from source review snapshots",
+    "Existing workspace ENOENT/coverage unavailable/external blocked output belongs to intentional fixtures, not hidden production successes",
+    "Source common-view conflict guard is present; a dedicated native common-target correction-conflict fixture is not among the reported tests",
+    "No new source journal imported into production canonical ledger yet; frozen fixture proves reader behavior only",
+    "Native card is Review, not Done; actual consumer handoff remains required",
+    "No maker/runtime/model/proxy/social/PM2/cloud mutation or spore"
+  ],
+  "initial_operator_observations": [
+    "Local dependency preflight found jsonschema4.25.0 rather than pinned4.26.0 and stopped before suites; exact4.26.0/networkx3.6.1 installed in private isolated venv, no global package change",
+    "First adapter GREEN76/417/1fail0errors caught duplicate ordinary prefix validation; captured appended records reused without weakening existing test",
+    "Full lint initially rejected SCI ns-resolve test discovery; after missingAPI RED was committed, direct portable function reference runs all tests with zero ignores/warnings"
+  ]
+}

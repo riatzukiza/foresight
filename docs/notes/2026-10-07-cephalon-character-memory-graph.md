@@ -64,27 +64,31 @@ deployment's explicitly selected clock.
 
 ## Observed source map
 
-The paths below are actual local sources inspected on October 7. External
-checkouts are evidence donors, not code automatically admitted to Foresight.
+The source map was recovered from local inspections on October 7. The portable
+links below pin repository, revision, path and line; on October 8, each linked
+Git blob was verified byte-identical to its inspected checkout file. This
+later provenance readback is not a new runtime or deployment observation.
+External repositories remain evidence donors, not code automatically admitted
+to Foresight.
 
 | Anchor | What it actually says or implements | Epistemic tier |
 | --- | --- | --- |
-| [Promethean Eidolon fields](/home/err/devel/orgs/octave-commons/promethean/docs/design/fields/eidolon-fields.md:7) | Local tension, charge, gradients, history, and changing attention; emotion and habit are described as field patterns. | Observed historical design |
-| [Nooi](/home/err/devel/orgs/octave-commons/promethean/docs/design/nooi.md:26) | Field cells retain local pressure, charge, trails, and binding sites; particles both read and change the field. | Observed historical design |
-| [Duck's attractor states](/home/err/devel/orgs/octave-commons/promethean/docs/hacks/notes/ducks-attractor-states.md:133) | Outside inputs and self-reflection feed a persistent feedback buffer, changing operational modes. | Observed historical interpretation, not a measured affect model |
-| [Fork Tales corrections](/home/err/devel/orgs/octave-commons/fork_tales/docs/notes/system_design/2026-02-20-design-hole-responses-field-and-collisions.md:14) | Decaying sparse fields, probabilistic paths, flexible intent bonds, immutable emitted ownership, seed/mantle/intent embeddings, and different friction for presences, nexus, and daimoi. | Observed design clarification |
-| [Fork Tales runtime](/home/err/devel/orgs/octave-commons/fork_tales/part64/code/world_web/daimoi_probabilistic.py:439) | Contains actual semantic-force and collision machinery, with separately tested graph/presence/nooi surfaces. | Observed source; not live verification here |
-| [Cephalon MVP](/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-mvp-spec.md:18) | Memories derive from events, carry provenance and links, and share identity/preferences across session facets. | Observed historical design |
-| [Eidolon retrieval notes](/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-eidolon-field-concept.md:25) | Stable content vectors and contextual vectors coexist; nexus keys support associative expansion. | Observed historical proposal |
-| [Daimoi retrieval notes](/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-daimoi-v01.md:1) | Bounded walkers expand semantic seeds through structural neighborhoods and retain reasons. | Observed proposed approximation |
-| [Event-native engagement](/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-ts/docs/event-native-engagement-spec.md:1) | Feed intake, novelty, social timing, live field change, and action grounded in actual encounters. | Observed proposal; its timer replacement is not selected for the current deployment |
-| [CLJS mood tool](/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-cljs/src/promethean/tools/self.cljs:21) | Returns a `self.set_mood` action map. The searched cephalon sources contain its declaration/registration but no matching state transition consumer. | Observed bounded source search |
-| [TS field](/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-ts/src/mind/eidolon-field.ts:16) | An in-memory map of eight keyword-driven counters, with decay applied on ingestion. | Observed donor implementation |
-| [TS local graph](/home/err/spaces/foresight/openplanner/packages/agents/cephalon/packages/cephalon-ts/src/mind/local-mind-graph.ts:31) | Persists nodes/edges and increases encounter weights; exposes channel/link summaries. | Observed donor implementation |
-| [Knoxx hydration](/home/err/spaces/foresight/knoxx/backend/src/cljs/knoxx/backend/infra/agent/hydration.cljs:102) | Triggered keyword-based conversational recall, vector retrieval, authorization filtering, and a short prompt snippet. | Observed implementation; same path inspected at served revision `2644fc6` |
-| [Knoxx memory/graph clients](/home/err/spaces/foresight/knoxx/backend/src/cljs/knoxx/backend/infra/openplanner/memory.cljs:268) | `memory_search` uses vector search; `graph_query` is a separate graph-memory request. | Observed implementation |
-| [OpenPlanner graph memory](/home/err/spaces/foresight/openplanner/src/routes/v1/graph.ts:4496) | Vector seeds, bounded cost traversal, force/trail inputs, semantic reinforcement and persisted daimoi trails. | Observed source; this query can write feedback |
-| [Knoxx Bluesky tools](/home/err/spaces/foresight/knoxx/backend/src/cljs/knoxx/backend/domain/bluesky/bluesky.cljs:356) | Existing timeline, likes/unlikes, follows/unfollows, notifications, thread access, and replies through publication. | Observed source; live maker permissions differ |
+| [Promethean Eidolon fields](https://github.com/octave-commons/promethean/blob/2c878b6a565f5ac8cc09bf503a6dec5ad3efc00f/docs/design/fields/eidolon-fields.md#L7) | Local tension, charge, gradients, history, and changing attention; emotion and habit are described as field patterns. | Observed historical design |
+| [Nooi](https://github.com/octave-commons/promethean/blob/2c878b6a565f5ac8cc09bf503a6dec5ad3efc00f/docs/design/nooi.md#L26) | Field cells retain local pressure, charge, trails, and binding sites; particles both read and change the field. | Observed historical design |
+| [Duck's attractor states](https://github.com/octave-commons/promethean/blob/2c878b6a565f5ac8cc09bf503a6dec5ad3efc00f/docs/hacks/notes/ducks-attractor-states.md#L133) | Outside inputs and self-reflection feed a persistent feedback buffer, changing operational modes. | Observed historical interpretation, not a measured affect model |
+| [Fork Tales corrections](https://github.com/octave-commons/fork_tales/blob/f4c43d7b9c832a54bc5d224cb4d5d2497c04423b/docs/notes/system_design/2026-02-20-design-hole-responses-field-and-collisions.md#L14) | Decaying sparse fields, probabilistic paths, flexible intent bonds, immutable emitted ownership, seed/mantle/intent embeddings, and different friction for presences, nexus, and daimoi. | Observed design clarification |
+| [Fork Tales runtime](https://github.com/octave-commons/fork_tales/blob/f4c43d7b9c832a54bc5d224cb4d5d2497c04423b/part64/code/world_web/daimoi_probabilistic.py#L439) | Contains actual semantic-force and collision machinery, with separately tested graph/presence/nooi surfaces. | Observed source; not live verification here |
+| [Cephalon MVP](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-mvp-spec.md#L18) | Memories derive from events, carry provenance and links, and share identity/preferences across session facets. | Observed historical design |
+| [Eidolon retrieval notes](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-eidolon-field-concept.md#L25) | Stable content vectors and contextual vectors coexist; nexus keys support associative expansion. | Observed historical proposal |
+| [Daimoi retrieval notes](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/packages/agents/cephalon/packages/cephalon-cljs/docs/notes/cephalon/cephalon-daimoi-v01.md#L1) | Bounded walkers expand semantic seeds through structural neighborhoods and retain reasons. | Observed proposed approximation |
+| [Event-native engagement](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/packages/agents/cephalon/packages/cephalon-ts/docs/event-native-engagement-spec.md#L1) | Feed intake, novelty, social timing, live field change, and action grounded in actual encounters. | Observed proposal; its timer replacement is not selected for the current deployment |
+| [CLJS mood tool](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/packages/agents/cephalon/packages/cephalon-cljs/src/promethean/tools/self.cljs#L21) | Returns a `self.set_mood` action map. The searched cephalon sources contain its declaration/registration but no matching state transition consumer. | Observed bounded source search |
+| [TS field](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/packages/agents/cephalon/packages/cephalon-ts/src/mind/eidolon-field.ts#L16) | An in-memory map of eight keyword-driven counters, with decay applied on ingestion. | Observed donor implementation |
+| [TS local graph](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/packages/agents/cephalon/packages/cephalon-ts/src/mind/local-mind-graph.ts#L31) | Persists nodes/edges and increases encounter weights; exposes channel/link summaries. | Observed donor implementation |
+| [Knoxx hydration](https://github.com/open-hax/knoxx/blob/40221a69f7fff675b46614d9ab318b4ef52f3786/backend/src/cljs/knoxx/backend/infra/agent/hydration.cljs#L102) | Triggered keyword-based conversational recall, vector retrieval, authorization filtering, and a short prompt snippet. | Observed implementation; same path inspected at served revision `2644fc6` |
+| [Knoxx memory/graph clients](https://github.com/open-hax/knoxx/blob/40221a69f7fff675b46614d9ab318b4ef52f3786/backend/src/cljs/knoxx/backend/infra/openplanner/memory.cljs#L268) | `memory_search` uses vector search; `graph_query` is a separate graph-memory request. | Observed implementation |
+| [OpenPlanner graph memory](https://github.com/open-hax/openplanner/blob/582efb7ebbdc542650fd239bfc5f2de076316c53/src/routes/v1/graph.ts#L4496) | Vector seeds, bounded cost traversal, force/trail inputs, semantic reinforcement and persisted daimoi trails. | Observed source; this query can write feedback |
+| [Knoxx Bluesky tools](https://github.com/open-hax/knoxx/blob/40221a69f7fff675b46614d9ab318b4ef52f3786/backend/src/cljs/knoxx/backend/domain/bluesky/bluesky.cljs#L356) | Existing timeline, likes/unlikes, follows/unfollows, notifications, thread access, and replies through publication. | Observed source; live maker permissions differ |
 
 There is relevant affect/field material. This investigation did not establish a
 complete, deployed, separately trained mood model hidden elsewhere. The named
@@ -405,3 +409,81 @@ denials, and make any missing grant a separately reviewed authorization change.
 The candidate source already separates stored actor binding from display
 fallback and has an actor-membership resolver that refuses ambiguous matches;
 that is an existing integration seam, not a live repair or permission grant.
+
+## 2026-10-07 — bounded hydration source audit
+
+This subsection records the completed static audit of existing Knoxx Git objects.
+S denotes the previously observed served revision
+`2644fc6c51bbbcda599964a5a674415b58344c3b`; C denotes the inspected candidate
+`366e72ab68c8afae708d3f6d5546faee808ebc07`. Source was read with `git show`,
+without checkout/reset or source/test execution. These bindings preserve the
+earlier deployment observations; they do not attest a new served revision,
+installed behavior, planning readiness or deployment.
+
+Paths in the following table are relative to Knoxx's
+`backend/src/cljs/knoxx/backend/`. S/C line numbers refer to those immutable
+objects, rather than whichever checkout a local source link now opens.
+
+| Source path and immutable anchors | Verified source fact | Consequence for planned verification |
+| --- | --- | --- |
+| `infra/agent/hydration.cljs`, S/C 108–128; `infra/openplanner/memory.cljs`, S 269–287 / C 268–286 | Hydration searches the message, with surrounding whitespace trimmed in shared search, source `knoxx` and configured session project. Conversation identity is returned metadata, not a session restriction. The memory tool/API share this search and decoding path. | Freeze the complete query, search options, corpus/index snapshot, candidate order and actual principal. Do not substitute a short diagnostic query or later corpus. |
+| `infra/openplanner/memory.cljs`, S 232–238 / C 231–237; `domain/graph/expansion_policy.cljs`, S/C 48–52; `infra/core_memory.cljs`, S/C 375–385 | Quality/reasoning/provider-error filtering and good-first ordering precede `take k`; session visibility runs afterward with no refill. Default hydration k=6 fetches 18 candidates under the default policy. | Six denied leading candidates can exclude an authorized seventh candidate already inside the fetched set. This deterministic loss case is not proof that it caused the eight sampled empty arrays. |
+| `infra/core_memory.cljs`, S/C 113–132, 315–385; `infra/routes/memory.cljs`, S/C 727–780 | Session checks use stored organization/owner scope or actual grants; actor identity alone is insufficient. Session-fetch errors become denied candidates. The API additionally requires memory-read permission and cross-session permission/admin for an omitted session. | Preserve denials and observe rejection/error stages. Identical principal/query does not require identical HTTP acceptance: compare shared retrieval/visibility while testing the API's additional gates explicitly. Never invent grants to force parity. |
+| `infra/agent/turn.cljs`, S 775–787, 905–907 / C 624–646 | The memory event counter reads `:results`, while memory payloads use `:hits`. Ordinary positive memory events therefore report zero hits. Resource patches separately preserve the actual memory hit array. | Assert truthful event counts and final prompt inclusion. This exact accounting bug cannot explain the previously persisted empty `memoryHydration.hits` arrays. |
+| `infra/openplanner/tools.cljs`, S/C 135–169; `infra/openplanner/memory.cljs`, S 289–305 / C 288–304; `infra/clients/openplanner_mongo.cljs`, S/C 29–36; `infra/clients/openplanner.cljs`, S/C 83–87, 214–217 | The memory tool captures auth context; the graph handler does not capture a per-turn principal or apply memory visibility. Graph uses REST with service/tenant configuration even when vectors use direct Mongo. Its optional `edgeLimit` becomes `maxCost`, not a forwarded edge-count limit. | Verify principal/scope admission before traversal and effects; verify graph transport independently of vector availability. Make bounds explicit without claiming an installed edge-count or physical-field contract. |
+| `extern/openplanner_sdk.cljs`, S/C 418–442; `infra/openplanner/memory.cljs`, S 551–568, 782–792 / C 550–556, 770–780 | Ordinary event ingestion does not await detached indexing; the optional await-index path exists separately. C awaits run projection ingestion, which still uses the ordinary events operation. | Hold indexing readiness separately from event acceptance. A later search with more hits does not prove earlier indexing delay, and ingestion completion alone does not prove vector readiness. |
+| `infra/openplanner/memory.cljs`, S 175–195 / C 174–194; C `backend/test/js/openplanner_sdk_test_stub.mjs` 202–224 (relative to repository root) | Vector decoding consumes the first nested IDs/documents/metadatas/distances arrays. Missing session identity is dropped by authorization. The canned SDK hit has no session and its session lookup returns empty rows. | Build a positive authorized fixture with real nested result shape, session metadata and matching stored scope rows. The existing canned conversion fixture supplies no positive authorized recall proof. |
+
+The scoped recall story now names prospective RED scenarios for the denied
+leading-candidate case, matched retrieval inputs, strict privacy failures,
+index readiness, transport failure, truthful telemetry and the actual prompt
+boundary. Raw/quality/visibility/inclusion diagnostics must remain safe for the
+authorized observer. No new test was authored or run for this audit or update;
+canonical planning review and lawful Rheos readiness still precede RED.
+
+Existing reusable C seams are `backend/test/cljs/knoxx/backend/` tests
+`agent_hydration_test.cljs:57` (outage boundary),
+`openplanner_semantic_test.cljs:6` (nested results and captured requests),
+`extern_openplanner_sdk_test.cljs:212` (conversion),
+`extern/hydration_publication_test.cljs:61` (actual turn ordering with hydration
+stubbed), and `actor_credential_org_scope_test.cljs:44` (stored binding and
+ambiguity). They are reuse candidates, not newly executed acceptance evidence.
+
+The existing [graph recall boundary note](2026-10-07-cephalon-graph-recall-boundary.md)
+and its [retained selected-handler observations](../../.ημ/review-evidence/cephalon-character/20261007-openplanner-memory-boundary-observations.json)
+preserve the separate OpenPlanner revision
+`07085d6557b75834ce6f50e6c54b8ca47e1c7c08` and synthetic boundary execution
+limits. Disabling trail persistence did not disable semantic reinforcement;
+repeated recall did not deduplicate those increments; failed feedback could
+still report selected reinforcement counts. Those are previously recorded
+isolated handler observations, not live HTTP authorization or a formal RED gate.
+The reviewed repair must distinguish authorized retrieval/projection influence
+from deliberately admitted feedback, bind effects to stable identities, and
+report attempted/completed/partial/failed persistence. Scope must cover seeds,
+connecting nodes/edges, compacted views, trails and forces before they influence
+selection or effects; filtering returned text cannot remove earlier influence.
+Existing consumer compatibility and upstream source integration remain explicit
+review decisions, without changing that boundary note or its evidence here.
+
+This refinement keeps the full encounter -> physical field -> independent mood
+-> graph recall -> choice -> observed outcome loop. Physical motion, deposits,
+decay, bonds, collision ownership, replay, slow character continuity and social
+obligations remain as specified above and in the sibling stories. Scoped recall
+is its first delivery slice; these source findings supply neither a completed
+character loop nor a causal explanation for the eight historical empty arrays.
+
+## 2026-10-08 — approved finite completion contract
+
+The human selected the finite milestones and storage limits in **Free space for
+active goals**, native message `01a11970-34bc-7e03-85fa-46b8b6bbc8a2`. The current
+goal finishes after one encounter writes persistent graph/field changes, one
+deterministic mood transition is consumed, and automatic recall includes an
+eligible stored encounter under the live maker's principal, with recorded inputs,
+transitions and outputs. The [accepted milestone](2026-10-08-cephalon-loop-slice-milestone.md)
+specifies the fixed inventory, retained prerequisites, proof and resource limits.
+
+The wider design above remains the mission and later-milestone context. Older
+open-ended completion claims are historical. This scope correction changes no
+card status, dependency, estimate or native admission and waives no actor,
+principal, review, isolation or persistence proof. The scheduled continuation
+remains paused.

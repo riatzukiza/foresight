@@ -1,0 +1,10 @@
+{
+  "number": 22,
+  "head": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "state": "open",
+  "autoMerge": null,
+  "exit": 0,
+  "stdout": "riatzukiza/foresight#22  head 1069d4c\n  coderabbit: rate-limited   checks: {:pass 3}\n  threads: 16 total, 0 unresolved; by severity {}; informational 0\n  exact-head approvals: #{\"mimo\"}  observed commit binding: {\"mimo\" #{\"1069d4c9bcba29ef55e6c72c7c597de101f0520b\"}}\n  completed planning rounds: 1 / soft minimum 5  participants: #{\"mimo\"}\n  coderabbit quota-unavailable: native source 6043314949 request 6043313014 scope current-head observed 2026-10-07T17:35:08Z retry-at-ms 1791396428000\n  codex quota-unavailable: native source 6037972816 request 6037970464 scope account observed 2026-10-07T12:32:27Z retry-at-ms UNKNOWN\n  gate: PASS\n",
+  "stderr": ""
+}

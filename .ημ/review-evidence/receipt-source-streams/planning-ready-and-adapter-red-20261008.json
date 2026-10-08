@@ -1,0 +1,262 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "observed_at": "2026-10-08T01:35:51.917979+00:00",
+  "planning": {
+    "head": "574c59aec6853e09d81d134d2b9ae89a7d49319b",
+    "base": "b3fffe3bc29cca09b6ff70b41768160b288a12ba",
+    "native_review_id": 5450259526,
+    "full_diff_bytes": 50813,
+    "full_diff_sha256": "22c2db961c8e4129a9cf3917294e25ab418985ace1f82bb99975457b02e773ea",
+    "coverage": {
+      "chunks": 7,
+      "delivered": 7,
+      "assessed": 7,
+      "missing": []
+    },
+    "gates": {
+      "diff_stat": 0,
+      "workspace_laws": 0,
+      "cephalon_diagnostic": 0,
+      "project_laws": 0,
+      "lineage_laws": 0,
+      "evidence_laws": 0,
+      "evidence_adapter": 0,
+      "project_contract": 0,
+      "catalog_contract": 0,
+      "migration_pack_dependencies": 0,
+      "migration_pack": 0,
+      "receipt_history": 0,
+      "diff_hygiene": 0
+    },
+    "limits": [
+      "Runtime context SHA manifest remains in verified hosted pre/post records; context ZIP not independently downloaded in this plan packet.",
+      "Native provider assessment genuine; no import implementation or deployed character behavior inferred."
+    ]
+  },
+  "canonical_gate": "PASS before implementation at exact574c59/baseb3; 3 passing checks, 0 threads, 1 completed available-agent planning cohort; no apply/merge",
+  "native_card": {
+    "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+    "direct_incoming_to_ready": {
+      "exit": 1,
+      "reason": "No transition from incoming to ready; original card/event bytes unchanged"
+    },
+    "lawful_path": [
+      "accepted",
+      "breakdown",
+      "ready",
+      "todo",
+      "in_progress"
+    ],
+    "observations": [
+      {
+        "status": "accepted",
+        "bytes": 735,
+        "sha256": "5df1cba8fcc4148a88c2b70c80d0278d8b60552bdd3a56dab670beaecda440fd",
+        "observation": {
+          "status": "accepted",
+          "observed_at": "2026-10-08T01:17:56.212901+00:00",
+          "event_append_bytes": 446,
+          "event_append_sha256": "f461dae5a9c2d644756dae248947ee05e030206a991b7fae149f78a3076c9bd3",
+          "card_readback": {
+            "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+            "title": "Admit an immutable source receipt stream during branch integration",
+            "status": "accepted",
+            "priority": "P1",
+            "points": "5",
+            "labels": "evidence, receipts, compatibility, confluence, laws",
+            "write-id": "1791422275419-0.2vslmbh1rt6uywqeek9"
+          },
+          "head": "574c59aec6853e09d81d134d2b9ae89a7d49319b",
+          "limits": [
+            "Actual native operational transition; no source import implementation or fullgraph validation claimed."
+          ]
+        }
+      },
+      {
+        "status": "breakdown",
+        "bytes": 736,
+        "sha256": "69181b609b4bb5dbad39651a2f47fdd46f44dbfbc9a7b003c6f80a1c3e7a25e6",
+        "observation": {
+          "status": "breakdown",
+          "observed_at": "2026-10-08T01:17:57.683909+00:00",
+          "event_append_bytes": 446,
+          "event_append_sha256": "da060f7e8124cef1a6803135df1dca5de2c2802a22872b9303934431d3803f9f",
+          "card_readback": {
+            "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+            "title": "Admit an immutable source receipt stream during branch integration",
+            "status": "breakdown",
+            "priority": "P1",
+            "points": "5",
+            "labels": "evidence, receipts, compatibility, confluence, laws",
+            "write-id": "1791422276936-0.31tbn0y3k4oteaa9d4"
+          },
+          "head": "574c59aec6853e09d81d134d2b9ae89a7d49319b",
+          "limits": [
+            "Actual native operational transition; no source import implementation or fullgraph validation claimed."
+          ]
+        }
+      },
+      {
+        "status": "ready",
+        "bytes": 729,
+        "sha256": "705d6e2dd3dd78babd85b052d9819f51d2daf5a5c4887eea0c878692b38ffcc8",
+        "observation": {
+          "status": "ready",
+          "observed_at": "2026-10-08T01:17:59.438433+00:00",
+          "event_append_bytes": 444,
+          "event_append_sha256": "1d1dd290ea61291ffcdce025442b0aa4c0e8a474daa54ef58538125e3f0e1407",
+          "card_readback": {
+            "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+            "title": "Admit an immutable source receipt stream during branch integration",
+            "status": "ready",
+            "priority": "P1",
+            "points": "5",
+            "labels": "evidence, receipts, compatibility, confluence, laws",
+            "write-id": "1791422278531-0.l5b3n2c4eje2wum0kc5"
+          },
+          "head": "574c59aec6853e09d81d134d2b9ae89a7d49319b",
+          "limits": [
+            "Actual native operational transition; no source import implementation or fullgraph validation claimed."
+          ]
+        }
+      },
+      {
+        "status": "todo",
+        "bytes": 726,
+        "sha256": "2e0d6a7c38e860e026296ca21939f559fe5d4c91e4b411e0a3defb974e7a98d1",
+        "observation": {
+          "status": "todo",
+          "observed_at": "2026-10-08T01:18:00.948535+00:00",
+          "event_append_bytes": 438,
+          "event_append_sha256": "d827a8b3535b6d8582b6efcb04d246c877cc6c687b626bcbdbbb275137406bd9",
+          "card_readback": {
+            "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+            "title": "Admit an immutable source receipt stream during branch integration",
+            "status": "todo",
+            "priority": "P1",
+            "points": "5",
+            "labels": "evidence, receipts, compatibility, confluence, laws",
+            "write-id": "1791422280252-0.f6t2lp4qso0jie4ghl"
+          },
+          "head": "574c59aec6853e09d81d134d2b9ae89a7d49319b",
+          "limits": [
+            "Actual native operational transition; no source import implementation or fullgraph validation claimed."
+          ]
+        }
+      },
+      {
+        "status": "in_progress",
+        "bytes": 742,
+        "sha256": "fdbc2ec21a83b4cbd1129ad53b548c36135787951792d8c337154f9f6116b413",
+        "observation": {
+          "status": "in_progress",
+          "observed_at": "2026-10-08T01:18:02.518914+00:00",
+          "event_append_bytes": 446,
+          "event_append_sha256": "5de2662bbd99239df9138320dccd7b18ece133c696dd3ae49756e3d2938b96b6",
+          "card_readback": {
+            "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+            "title": "Admit an immutable source receipt stream during branch integration",
+            "status": "in_progress",
+            "priority": "P1",
+            "points": "5",
+            "labels": "evidence, receipts, compatibility, confluence, laws",
+            "write-id": "1791422281814-0.0y6ff6wcy34bkcwvq3ya"
+          },
+          "head": "574c59aec6853e09d81d134d2b9ae89a7d49319b",
+          "limits": [
+            "Actual native operational transition; no source import implementation or fullgraph validation claimed."
+          ]
+        }
+      }
+    ]
+  },
+  "adapter_red": [
+    {
+      "name": "initial-stream-adapter-red",
+      "exit": 1,
+      "tests": 67,
+      "assertions": 354,
+      "failures": 4,
+      "errors": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 9010,
+          "sha256": "79ff5bfcc50c5efbe33311697190c1397e90107af3e0416c928771a27df278db"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "frozen-stream-adapter-red",
+      "exit": 1,
+      "tests": 72,
+      "assertions": 395,
+      "failures": 38,
+      "errors": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 80502,
+          "sha256": "0133a9466297bbd2915a8e6db770a591e697ff2a1c7d359889ad40ceeafcdd1c"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "complete-stream-adapter-red",
+      "exit": 1,
+      "tests": 75,
+      "assertions": 407,
+      "failures": 47,
+      "errors": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 82786,
+          "sha256": "19e5cfcae3ff524404f372bc6fa526e41abd49a01dde4aa49a6ebc1e1129a815"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    },
+    {
+      "name": "all-consumers-stream-red",
+      "exit": 1,
+      "tests": 76,
+      "assertions": 417,
+      "failures": 54,
+      "errors": 0,
+      "logs": {
+        "stdout": {
+          "bytes": 86549,
+          "sha256": "28f5eacc36c6910777aba7c78f1667476be717b91deb0572b08e0a89ca3f1b86"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "observed_defects": [
+        "Malformed import declarations accepted without source reads",
+        "Frozen19 delta rows and eleven documentary views absent",
+        "Whole-head replay and second import not enforced",
+        "Tampered descriptors, available nonancestor, nested import and noncommon overlap accepted",
+        "Held anchor cannot reach source but gate executes and appends in isolated fixture",
+        "Verifier and promotion see265 canonical receipts rather than284 combined receipts"
+      ]
+    }
+  ],
+  "limits": [
+    "No source import implementation, current code approval, PR27 integration/settlement, deployed graph/mood/social behavior or full-goal completion",
+    "No original receipt, raw evidence, prior reflection or native event rewritten",
+    "Temporary fixture index/trees/commits/refs only; borrowed immutable Git objects do not modify original repository",
+    "Pure shape tests passed 61/520; composition RED will be recorded separately before GREEN",
+    "Early unmatched closing delimiters were repaired before reported behavioral RED; not claimed as feature failures"
+  ]
+}
