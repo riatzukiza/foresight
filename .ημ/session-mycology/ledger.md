@@ -1249,3 +1249,8 @@ Efficiency0.70/friction0.32/skill-candidate0.28: compare the parser values of in
 - Actual combined reader exit2 rejects six duplicate raw records; envelope-only PASS was insufficient. Trial245 was applied locally prematurely and never pushed; preserve it as an ordinary ancestor.
 - Current journal returns to qualified a17 prefix and carries five unique unchanged records; shared six retain existing imported addresses. Original6a and every held byte remain inspectable. New documentary correction will bind current raw held row address.
 - Scores: efficiency0.64; friction0.53; skillcandidate0.18. Inspect combined admission before dependent mutations. No new law, parser, source outcome or spore; all B1/B2/B3 incomplete.
+
+## 2026-10-08T22:39:11.345Z — source-bound held envelope correction
+
+- Actual private candidate dc534 receipt admission refused unchanged held record `cephalon-selection-current-availability-20261007T1931` at canonical line 285. Append correction 288 supplies the existing law's singleton-vector view of original manifest/refs; no original field or byte edited.
+- Native current-head review and final immutable GREEN remain subsequent gates. Source ancestry and LF hash retained. No spore, extra parser, historical repo migration, board/runtime mutation or behavior completion.
