@@ -914,3 +914,9 @@
 - IndependentP3 streaminference required actualcapture: existingNBBcommand emitted64stdoutbytes/0stderr. KeeporiginalJSON andappendreadback; sourcebinding alone doesnotidentifyruntimechannel.
 - One-direct-stream5points remainsprovisional before nativeplanning/Ready. Reflection/boardhistoryconflicts are separate, andPR27requiresactualfreshconsumerproof.
 - Fullcharactergoalactive/automationpaused; no sporeincubation/promotion orruntimeeffects.
+
+### cephalon-portable-character-source-map-20261008T0056
+
+- Native reviewer found checkout-only links in the source map; all16 now bind published repository revisions and exact paths/lines with equal local/Git bytes.
+- Preserved descriptions and receipt originals. A later provenance verification does not retroactively date the source pin or prove deployed behavior. One Knoxx client differs from served2644, so only the two actual matching sources retain byte equivalence.
+- No spore, source behavior, maker interruption, provider request, social publication or full-goal completion. The confluence plan remains incoming until current native planning and Rheos readiness.
