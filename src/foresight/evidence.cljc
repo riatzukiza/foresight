@@ -229,6 +229,40 @@
        (vector? (:refs receipt))
        (every? nonblank-string? (:refs receipt))))
 
+(def ^:private receipt-stream-descriptor-keys
+  #{:source/base :source/head :source/path
+    :source/ledger-sha256 :source/ledger-bytes :source/ledger-records
+    :source/delta-sha256 :source/delta-bytes :source/delta-records})
+
+(defn receipt-stream-descriptor?
+  "Closed shape of one source stream. Byte, count and ancestry proof is external."
+  [descriptor]
+  (and (map? descriptor)
+       (= receipt-stream-descriptor-keys (set (keys descriptor)))
+       (every? #(and (string? %)
+                     (boolean (re-matches #"[0-9a-f]{40}" %)))
+               ((juxt :source/base :source/head) descriptor))
+       (= receipt-ledger-path (:source/path descriptor))
+       (every? sha256?
+               ((juxt :source/ledger-sha256 :source/delta-sha256) descriptor))
+       (every? #(and (integer? %) (pos? %))
+               ((juxt :source/ledger-bytes :source/ledger-records
+                      :source/delta-bytes :source/delta-records) descriptor))))
+
+(defn receipt-stream-trigger?
+  "Recognize import grammar by kind or descriptor-key presence, even if invalid."
+  [receipt]
+  (and (map? receipt)
+       (or (= :receipt-stream-import (:kind receipt))
+           (contains? receipt :receipt/stream))))
+
+(defn receipt-stream-import?
+  "Strict envelope and source descriptor shape; this predicate grants no admission."
+  [receipt]
+  (and (receipt-envelope? receipt)
+       (= :receipt-stream-import (:kind receipt))
+       (receipt-stream-descriptor? (:receipt/stream receipt))))
+
 (def ^:private correction-envelope-fields #{:manifest :refs :dod :pi})
 
 (def ^:private correction-entry-keys
@@ -434,6 +468,157 @@
                  {:error :receipt/invalid-envelope
                   :receipt/line (:receipt/line (get selected index))}))
              (:receipt/views derived)))))
+
+(def ^:private receipt-stream-input-keys
+  #{:canonical/items :source/items :common/records :canonical/identity
+    :source/identity :canonical/corrections :source/corrections})
+
+(def ^:private receipt-stream-item-keys
+  #{:receipt/line :receipt/sha256 :receipt/raw :receipt/record :receipt/view})
+
+(defn- receipt-stream-identity? [role value]
+  (and (map? value)
+       (= "." (:stream/repository value))
+       (= receipt-ledger-path (:stream/path value))
+       (if (= :canonical role)
+         (and (= #{:stream/repository :stream/path :stream/anchor :stream/ledger-sha256}
+                 (set (keys value)))
+              (git-commit-id? (:stream/anchor value))
+              (sha256? (:stream/ledger-sha256 value)))
+         (and (= #{:stream/repository :stream/path :source/base :source/head
+                   :source/ledger-sha256}
+                 (set (keys value)))
+              (every? #(and (string? %)
+                            (boolean (re-matches #"[0-9a-f]{40}" %)))
+                      ((juxt :source/base :source/head) value))
+              (sha256? (:source/ledger-sha256 value))))))
+
+(defn- receipt-stream-item? [item]
+  (and (map? item)
+       (= receipt-stream-item-keys (set (keys item)))
+       (integer? (:receipt/line item))
+       (pos? (:receipt/line item))
+       (sha256? (:receipt/sha256 item))
+       (let [raw (:receipt/raw item)]
+         (and (nonblank-string? raw)
+              (str/ends-with? raw "\n")
+              (not (str/includes? (subs raw 0 (dec (count raw))) "\n"))))
+       (map? (:receipt/record item))
+       (map? (:receipt/view item))))
+
+(defn- receipt-stream-fact-errors [streams common-records]
+  (let [canonical-items (:items (first streams))
+        common-valid? (and (integer? common-records) (not (neg? common-records))
+                           (or (not (vector? canonical-items))
+                               (<= common-records (count canonical-items))))]
+    (reduce
+     (fn [errors {:keys [role items identity corrections]}]
+       (cond-> errors
+         (not (vector? items))
+         (conj {:error :receipt-stream/items :receipt/stream-role role})
+
+         (vector? items)
+         (into (keep-indexed
+                (fn [index item]
+                  (when-not (receipt-stream-item? item)
+                    {:error :receipt-stream/item :receipt/stream-role role
+                     :receipt/index index}))
+                items))
+
+         (not (receipt-stream-identity? role identity))
+         (conj {:error :receipt-stream/identity :receipt/stream-role role})
+
+         (not (and (vector? corrections) (every? map? corrections)))
+         (conj {:error :receipt-stream/corrections :receipt/stream-role role})))
+     (if common-valid? [] [{:error :receipt-stream/common-records}])
+     streams)))
+
+(defn- receipt-stream-composition-errors [streams common-records]
+  (let [canonical (:items (first streams))
+        source (:items (second streams))
+        empty-composition? (every? #(and (empty? (:items %))
+                                         (empty? (:corrections %))) streams)
+        triggers (filterv #(or (receipt-stream-trigger? (:receipt/record %))
+                               (receipt-stream-trigger? (:receipt/view %))) canonical)
+        non-common-raw (set (map :receipt/raw (drop common-records canonical)))]
+    (into
+     (cond-> []
+       (and (not empty-composition?) (not= 1 (count triggers)))
+       (conj {:error :receipt-stream/import-limit})
+
+       (and (= 1 (count triggers))
+            (not (and (receipt-stream-import? (:receipt/record (first triggers)))
+                      (receipt-stream-import? (:receipt/view (first triggers))))))
+       (conj {:error :receipt-stream/import}))
+     (concat
+      (mapcat
+       (fn [{:keys [role items]}]
+         (keep (fn [[line occurrences]]
+                 (when (> occurrences 1)
+                   {:error :receipt-stream/duplicate-line :receipt/stream-role role
+                    :receipt/line line}))
+               (sort-by key (frequencies (map :receipt/line items)))))
+       streams)
+      (mapcat
+       (fn [item]
+         (cond-> []
+           (or (receipt-stream-trigger? (:receipt/record item))
+               (receipt-stream-trigger? (:receipt/view item)))
+           (conj {:error :receipt-stream/nested-import :receipt/line (:receipt/line item)})
+
+           (contains? non-common-raw (:receipt/raw item))
+           (conj {:error :receipt-stream/raw-overlap :receipt/line (:receipt/line item)})))
+       source)))))
+
+(defn- receipt-stream-occurrence [role stream item]
+  {:receipt/stream-role role :receipt/stream stream
+   :receipt/identity [stream (:receipt/line item) (:receipt/sha256 item)]
+   :receipt/line (:receipt/line item) :receipt/sha256 (:receipt/sha256 item)
+   :receipt/raw (:receipt/raw item) :receipt/original (:receipt/record item)
+   :receipt/view (:receipt/view item)})
+
+(defn receipt-stream-view
+  "Compose one canonical journal and its adapter-admitted source delta.
+
+  All items and correction entries are supplied admitted facts. This decision
+  checks portable boundaries and refuses overlap or nested imports atomically;
+  it does not parse raw EDN, authenticate hashes/Git ancestry, revalidate ordinary
+  envelopes/results or establish source common-view agreement. Those proofs
+  remain with the existing adapter. Imported identity retains original stream
+  coordinates and has no combined position, so a canonical append leaves it stable.
+  Empty item/correction vectors compose without an import; all fact shapes still apply."
+  [facts]
+  (let [input-valid? (and (map? facts) (= receipt-stream-input-keys (set (keys facts))))
+        streams (when input-valid?
+                  [{:role :canonical :items (:canonical/items facts)
+                    :identity (:canonical/identity facts) :corrections (:canonical/corrections facts)}
+                   {:role :imported :items (:source/items facts)
+                    :identity (:source/identity facts) :corrections (:source/corrections facts)}])
+        common-records (:common/records (when input-valid? facts))
+        fact-errors (if input-valid?
+                      (receipt-stream-fact-errors streams common-records)
+                      [{:error :receipt-stream/input}])
+        errors (if (seq fact-errors)
+                 fact-errors
+                 (receipt-stream-composition-errors streams common-records))]
+    (if (seq errors)
+      {:receipt/errors errors :ledger/occurrences [] :ledger/originals []
+       :ledger/views [] :receipt/corrections []}
+      (let [canonical (:items (first streams))
+            source (:items (second streams))
+            items (into canonical source)]
+        {:receipt/errors []
+         :ledger/occurrences
+         (into [] (mapcat (fn [{:keys [role identity items]}]
+                           (map #(receipt-stream-occurrence role identity %) items))) streams)
+         :ledger/originals (mapv :receipt/record items)
+         :ledger/views (mapv :receipt/view items)
+         :ledger/canonical-receipts (count canonical)
+         :ledger/imported-receipts (count source)
+         :ledger/combined-receipts (count items)
+         :receipt/corrections
+         (into [] (mapcat (fn [{:keys [identity corrections]}]
+                           (map #(assoc % :receipt/stream identity) corrections))) streams)}))))
 
 (defn evidence-receipt? [receipt]
   (let [schema (:evidence/schema receipt)]

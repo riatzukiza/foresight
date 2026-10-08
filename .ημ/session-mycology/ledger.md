@@ -898,3 +898,57 @@
 - Independent source assessment found valid promotion false-refusal after the correction entered the trusted prefix. Committed RED65/339/2fail/0errors before repair; final GREEN66/342/0fail/0errors includes prefix source-hash and semantic refusal. Native CodeRabbit subsequently confirmed the same defect as Major.
 - Trusted bytes and trusted interpretation are separate: reconstruct declared corrections at every exact anchor while preserving all original bytes and untargeted ordinary historical compatibility. No result or approval promotion.
 - Native settlement and fresh exact-head review remain required after push; Rheos build-gap refusal and PR27P1 remain explicit. Full character loop active, automationPAUSED. No spore incubated/promoted or runtime effect.
+
+## 2026-10-08T00:40:38.989633Z — preserve concurrent immutable receipt streams
+
+- Receipt `cephalon-immutable-stream-confluence-plan-20261008T0042`; efficiency0.72, friction0.35, skill-candidate0.25.
+- ReaderPR28 passed actualcurrentreview/gates andmerged withheadguard. NormalnativeTesting→Review worked; the olddirectNodebuildfailure stayshistorical.
+- Integration exposed incompatiblepost259prefixes andsame-coordinate correctionassumptions. Preserveoriginalsourcejournals andqualifyanexplicitimport through existinglaw/adapter; no renumbering, oldbaseescape orignoredarchive.
+- CurrentreviewproofusesactualnativeAPPROVED5449927329, full33pages and13gates. UTF16-versusUTF8operatorcheckwasrepaired without changingproviderbytes.
+- Fullcharactergoalactive; automationpaused. No sporeincubation/promotion orruntimechange.
+
+## 2026-10-08T00:45:16.657111Z — clarify source stream admission before implementation
+
+- Receipt `cephalon-immutable-stream-confluence-clarified-20261008T0047`; efficiency0.78, friction0.24, skill-candidate0.15.
+- Three independentP2 planninggaps prompted explicitlineage/descriptor, streamoccurrenceidentity and wholehead replay/countlaws. No change tooriginalsourcebytes orreaderimplementation.
+- IndependentP3 streaminference required actualcapture: existingNBBcommand emitted64stdoutbytes/0stderr. KeeporiginalJSON andappendreadback; sourcebinding alone doesnotidentifyruntimechannel.
+- One-direct-stream5points remainsprovisional before nativeplanning/Ready. Reflection/boardhistoryconflicts are separate, andPR27requiresactualfreshconsumerproof.
+- Fullcharactergoalactive/automationpaused; no sporeincubation/promotion orruntimeeffects.
+
+### cephalon-portable-character-source-map-20261008T0056
+
+- Native reviewer found checkout-only links in the source map; all16 now bind published repository revisions and exact paths/lines with equal local/Git bytes.
+- Preserved descriptions and receipt originals. A later provenance verification does not retroactively date the source pin or prove deployed behavior. One Knoxx client differs from served2644, so only the two actual matching sources retain byte equivalence.
+- No spore, source behavior, maker interruption, provider request, social publication or full-goal completion. The confluence plan remains incoming until current native planning and Rheos readiness.
+
+## 2026-10-08T01:37:51.835906+00:00 — preserve source stream failure before admission repair
+
+- Receipt `cephalon-receipt-stream-native-ready-and-red-20261008T0138`; efficiency0.77, friction0.25, skill-candidate0.18.
+- Actual current planning qualified; native accepted→breakdown→ready→todo→in_progress was admitted. Direct incoming→ready refusal retained separately.
+- Real frozen Git fixture RED76/417/54fail/0errors confirms missing provenance composition and unsafe held admission, rather than rewriting old receipts to create failure. Preserve265canonical+19source occurrences and original267–277 correction coordinates.
+- Original maps and histories stay exact; containing repository attribution belongs outside them. Current source code still requires GREEN and independent exact-head code review.
+- Full character goal active; automation paused. No spore/runtime/provider/social effects.
+
+## 2026-10-08T01:41:42.718076+00:00 — pure composition contracts before domain
+
+- Receipt `cephalon-receipt-stream-pure-composition-red-20261008T0145`; efficiency0.78, friction0.21, skill-candidate0.16.
+- Actual78/521/1failure0errors is the missing composition API;16 guarded behavioral tests remain unexecuted. Adapter RED was independently committed first.
+- Label held canonical revision as anchor, retain source identity and physical ordinals, and refuse ambiguous overlap rather than deduplicating source rows. No original map or prior evidence rewritten.
+- Domain/adapter GREEN and exact code review remain required. Full character goal active, automationpaused; no spore or runtime effect.
+
+## 2026-10-08T01:56:59.841461+00:00 — admit retained source history without flattening
+
+- Receipt `cephalon-receipt-stream-domain-adapter-green-20261008T0157`; efficiency0.77, friction0.26, skill-candidate0.18.
+- Actual pure79/1239 and adapter76/417 GREEN; fullrepositorylocalgates/lint0warnings passed. NativeTesting→Review admitted. Production source journals and old correctioncoordinates stay exact.
+- One shared authenticated admission composes265canonical+19source occurrences, derives11documentary targetviews267–277 and preserves source correction278. Replay/import-limit/overlap and held no-effect refusals are tested. No model/title dedup or missingrepo field invented.
+- Existing stricttest caught duplicate ordinary prefixvalidation; reusecapturedappends rather than changing the test. Isolated pinned Python dependencies corrected an operator preflight mismatch; no global packages changed.
+- Dedicated common-target documentary-view conflict negative remains a disclosed gap, not a claimed test. Current code still needs native hostedreview/gates and actual PR27consumerhandoff.
+- Full character goal active; automationpaused. No spore, runtime, social, model, proxy or maker effect.
+
+## cephalon-receipt-stream-common-correction-red-20261008T0205
+
+(己, p=1.0) Shared correction counting RED79/435/2fail/0errors is captured before repair. Source delta/common-target positive and common-view conflict refusal already pass. Preserve original bytes; select imported provenance by document occurrence. Initial unsupported slurp in operator prevalidation stopped before append; actual fs adapter validation succeeds. Efficiency0.76/friction0.43/skill-candidate0.32; no spore. Full character goal active, automation paused.
+
+## cephalon-receipt-stream-common-correction-green-20261008T0210
+
+(己, p=1.0) Common correction RED1f73440 now GREEN79/435; pure79/1239 and full local gates pass. Source provenance follows correction document physical occurrence, never target ordinal. Dedicated common-view divergence refusal now exercised. Prior gap description stays historical. Efficiency0.84/friction0.38/skill-candidate0.32; no spore. Goalactive/automationpaused; no runtime or social effect.

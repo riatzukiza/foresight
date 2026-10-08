@@ -1643,6 +1643,386 @@
   (is (= 4 (cli/result-exit {:result/outcome :blocked})))
   (is (zero? (cli/result-exit {:result/outcome :not-applicable}))))
 
+(deftest receipt-stream-declarations-cannot-pass-as-ordinary-appends
+  (let [ordinary {:ts "2026-10-08T01:20:00Z"
+                  :kind :decision :origin "stream-shape-fixture"
+                  :owner "test" :dod "authenticate source before admission"
+                  :pi "receipt-stream" :host "isolated test"
+                  :manifest [] :refs []}
+        candidates [(assoc ordinary :kind :receipt-stream-import)
+                    (assoc ordinary :receipt/stream {})
+                    (assoc ordinary :kind :receipt-stream-import
+                           :receipt/stream nil)
+                    (assoc ordinary :kind :receipt-stream-import
+                           :receipt/stream {})]]
+    (doseq [candidate candidates]
+      (let [git-calls (atom 0)
+            head (js/Buffer.from (str (pr-str candidate) "\n") "utf8")]
+        (is (law/receipt-envelope? candidate)
+            "Ordinary envelope validity cannot authenticate an import")
+        (with-redefs [cli/git-capture! (fn [& _]
+                                        (swap! git-calls inc)
+                                        (throw (js/Error. "unexpected Git call")))
+                      cli/git-buffer! (fn [& _]
+                                       (swap! git-calls inc)
+                                       (throw (js/Error. "unexpected Git call")))]
+          (is (thrown-with-msg?
+               js/Error #"Receipt source stream admission refused"
+               (cli/admit-receipt-extension!
+                (js/Buffer.alloc 0) head reviewed-root-revision)))
+          (is (zero? @git-calls)
+              "Malformed declarations refuse before source Git reads"))))))
+
+(def frozen-stream-common "1069d4c9bcba29ef55e6c72c7c597de101f0520b")
+(def frozen-stream-parent "b3fffe3bc29cca09b6ff70b41768160b288a12ba")
+(def frozen-stream-head "bdac1ed6470c98128ff367e757132797a39ac436")
+
+(def stream-fixture-record
+  {:ts "2026-10-08T01:20:00Z" :kind :observation
+   :origin "source-stream-fixture" :owner "test"
+   :dod "preserve source occurrences" :pi "receipt-stream"
+   :host "isolated Git fixture" :manifest [] :refs []})
+
+(defn receipt-line-bytes [record]
+  (js/Buffer.from (str (pr-str record) "\n") "utf8"))
+
+(defn stream-descriptor [base head base-bytes head-bytes]
+  (let [delta (.subarray head-bytes (.-length base-bytes))]
+    {:source/base base :source/head head :source/path law/receipt-ledger-path
+     :source/ledger-sha256 (cli/sha256 head-bytes)
+     :source/ledger-bytes (.-length head-bytes)
+     :source/ledger-records (count (cli/physical-receipt-items! head-bytes))
+     :source/delta-sha256 (cli/sha256 delta)
+     :source/delta-bytes (.-length delta)
+     :source/delta-records (count (cli/physical-receipt-items! delta))}))
+
+(defn with-frozen-stream-fixture [run!]
+  ;; Borrow immutable objects through an alternate in this temporary repository.
+  ;; All new trees, commits, index writes and refs belong only to the fixture.
+  (let [objects (path/resolve cli/root
+                              (str/trim (cli/git-capture! ["rev-parse" "--git-path" "objects"])))
+        common (:ledger/bytes (cli/read-immutable-receipt-ledger! frozen-stream-common))
+        parent (:ledger/bytes (cli/read-immutable-receipt-ledger! frozen-stream-parent))
+        source (:ledger/bytes (cli/read-immutable-receipt-ledger! frozen-stream-head))]
+    (with-receipt-fixture
+      (fn [{:keys [fixture file] :as context}]
+        (with-redefs [cli/root fixture cli/receipt-file file]
+          (cli/git-capture! ["init" "--quiet"])
+          (fs/writeFileSync (path/join fixture ".git/objects/info/alternates")
+                            (str objects "\n") "utf8")
+          (let [commit! (fn [bytes parents]
+                          (fs/writeFileSync file bytes)
+                          (cli/git-capture! ["add" "--" law/receipt-ledger-path])
+                          (let [tree (str/trim (cli/git-capture! ["write-tree"]))
+                                head (str/trim
+                                      (cli/git-capture!
+                                       (into ["-c" "user.name=Receipt Test"
+                                              "-c" "user.email=receipt-test@example.invalid"
+                                              "commit-tree" tree "-m" "isolated stream fixture"]
+                                             (mapcat #(vector "-p" %) parents))))]
+                            (cli/git-capture! ["update-ref" "HEAD" head])
+                            head))
+                descriptor (stream-descriptor frozen-stream-common frozen-stream-head common source)
+                import (assoc stream-fixture-record :kind :receipt-stream-import
+                              :receipt/stream descriptor)
+                head-bytes (js/Buffer.concat #js [parent (receipt-line-bytes import)])
+                head (commit! head-bytes [frozen-stream-parent frozen-stream-head])]
+            (run! (merge context {:common common :parent parent :source source
+                                 :descriptor descriptor :import import :commit! commit!
+                                 :head head :head-bytes head-bytes}))))))))
+
+(deftest frozen-source-stream-retains-original-coordinates-and-every-receipt
+  (with-frozen-stream-fixture
+    (fn [{:keys [common parent source head head-bytes]}]
+      (is (= "01ef747305b0446523c00caf39833da0737241bfa3698bc093a13e56dea9d177" (cli/sha256 common)))
+      (is (= "3e217a5d9e2e8f5e4f43a8692bff57535b9966111ab1d59e8f67d8258f6f5161" (cli/sha256 parent)))
+      (is (= "e0657dbd24dd5327371e6a144c4fcb4001b3e1146940a6c269fa746570db035a" (cli/sha256 source)))
+      (is (thrown-with-msg? js/Error #"does not preserve the base bytes"
+                            (cli/admit-receipt-extension! parent source frozen-stream-head)))
+      (let [admission (cli/admit-receipt-extension! parent head-bytes head)
+            source-items (vec (drop 259 (cli/physical-receipt-items! source)))
+            occurrences (:ledger/occurrences admission)
+            imported (filterv #(= :imported (:receipt/stream-role %)) occurrences)]
+        (is (= {:ledger/canonical-receipts 265 :ledger/imported-receipts 19
+                :ledger/combined-receipts 284}
+               (select-keys admission [:ledger/canonical-receipts :ledger/imported-receipts
+                                       :ledger/combined-receipts])))
+        (is (= 284 (count (:ledger/originals admission))))
+        (is (= 284 (count (:ledger/views admission))))
+        (is (= 11 (count (:receipt/corrections admission))))
+        (is (= (mapv :receipt/record source-items) (mapv :receipt/original imported)))
+        (is (= (vec (range 260 279)) (mapv :receipt/line imported)))
+        (is (= (mapv #(cli/sha256 (:receipt/bytes %)) source-items)
+               (mapv :receipt/sha256 imported)))
+        (is (= (vec (range 267 278)) (mapv :receipt/line (:receipt/corrections admission))))
+        (is (every? #(= 278 (:correction/line %)) (:receipt/corrections admission)))
+        (is (= 284 (count (set (map :receipt/identity occurrences)))))
+        (is (.equals head-bytes (:ledger/bytes (cli/read-immutable-receipt-ledger! head))))))))
+
+(deftest source-stream-is-reauthenticated-after-base-advancement-and-ordinary-append
+  (with-frozen-stream-fixture
+    (fn [{:keys [head head-bytes import commit!]}]
+      (let [first-view (cli/admit-receipt-extension! head-bytes head-bytes head)
+            appended (js/Buffer.concat #js [head-bytes (receipt-line-bytes stream-fixture-record)])
+            next-head (commit! appended [head])
+            next-view (cli/admit-receipt-extension! head-bytes appended next-head)
+            second-import (js/Buffer.concat #js [appended (receipt-line-bytes import)])
+            second-head (commit! second-import [next-head])]
+        (is (= 284 (count (:ledger/views first-view))))
+        (is (= 11 (count (:receipt/corrections first-view))))
+        (is (= 285 (:ledger/combined-receipts next-view)))
+        (is (= 266 (:ledger/canonical-receipts next-view)))
+        (is (= 19 (:ledger/imported-receipts next-view)))
+        (is (= (filterv #(= :imported (:receipt/stream-role %)) (:ledger/occurrences first-view))
+               (filterv #(= :imported (:receipt/stream-role %)) (:ledger/occurrences next-view))))
+        (doseq [base [appended second-import]]
+          (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                                (cli/admit-receipt-extension! base second-import second-head))))))))
+
+(deftest source-stream-refuses-tampered-descriptors-and-foreign-objects
+  (with-frozen-stream-fixture
+    (fn [{:keys [parent import head commit!]}]
+      (doseq [[field value]
+              [[:source/base frozen-stream-parent]
+               [:source/head (apply str (repeat 40 "0"))]
+               [:source/path "./.ημ/receipts.edn"]
+               [:source/ledger-sha256 (apply str (repeat 64 "0"))]
+               [:source/delta-sha256 (apply str (repeat 64 "0"))]
+               [:source/ledger-bytes 537421] [:source/ledger-records 277]
+               [:source/delta-bytes 60486] [:source/delta-records 18]
+               [:source/repository "foreign"]]]
+        (let [bytes (js/Buffer.concat
+                     #js [parent (receipt-line-bytes (assoc-in import [:receipt/stream field] value))])
+              candidate (commit! bytes [head])]
+          (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                                (cli/admit-receipt-extension! parent bytes candidate))
+              (str "tampered descriptor " field))))
+      (let [tree (str/trim (cli/git-capture! ["rev-parse" (str frozen-stream-head "^{tree}")]))
+            foreign (str/trim (cli/git-capture!
+                              ["-c" "user.name=Receipt Test" "-c" "user.email=receipt-test@example.invalid"
+                               "commit-tree" tree "-m" "unrelated object"]))
+            bytes (js/Buffer.concat #js [parent (receipt-line-bytes
+                                                 (assoc-in import [:receipt/stream :source/head] foreign))])
+            candidate (commit! bytes [head])]
+        (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                              (cli/admit-receipt-extension! parent bytes candidate)))))))
+
+(deftest source-stream-refuses-cross-stream-overlap-and-nested-imports
+  (with-frozen-stream-fixture
+    (fn [{:keys [common parent source import head commit!]}]
+      (let [row (:receipt/bytes (nth (cli/physical-receipt-items! source) 259))
+            overlap (js/Buffer.concat #js [parent row (receipt-line-bytes import)])
+            overlap-head (commit! overlap [head])]
+        (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                              (cli/admit-receipt-extension! parent overlap overlap-head))))
+      (let [nested-bytes (js/Buffer.concat #js [source (receipt-line-bytes import)])
+            nested-head (commit! nested-bytes [frozen-stream-head])
+            nested-import (assoc import :receipt/stream
+                                 (stream-descriptor frozen-stream-common nested-head common nested-bytes))
+            bytes (js/Buffer.concat #js [parent (receipt-line-bytes nested-import)])
+            candidate (commit! bytes [head nested-head])]
+        (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                              (cli/admit-receipt-extension! parent bytes candidate)))))))
+
+(deftest source-stream-preserves-equal-occurrences-and-blank-physical-ordinals
+  (with-frozen-stream-fixture
+    (fn [{:keys [common parent import head commit!]}]
+      (let [line (receipt-line-bytes stream-fixture-record)
+            blank (js/Buffer.from "\n" "utf8")
+            source (js/Buffer.concat #js [common blank line blank line])
+            source-head (commit! source [frozen-stream-common])
+            descriptor (stream-descriptor frozen-stream-common source-head common source)
+            bytes (js/Buffer.concat #js [parent (receipt-line-bytes (assoc import :receipt/stream descriptor))])
+            candidate (commit! bytes [head source-head])
+            admission (cli/admit-receipt-extension! parent bytes candidate)
+            occurrences (filterv #(= :imported (:receipt/stream-role %)) (:ledger/occurrences admission))]
+        (is (= 267 (:ledger/combined-receipts admission)))
+        (is (= 2 (:ledger/imported-receipts admission)))
+        (is (= [261 263] (mapv :receipt/line occurrences)))
+        (is (= [(cli/sha256 line) (cli/sha256 line)] (mapv :receipt/sha256 occurrences)))
+        (is (= 2 (count (set (map :receipt/identity occurrences)))))))))
+
+(deftest source-stream-refuses-nonlinear-unavailable-and-unframed-source-bytes
+  (with-frozen-stream-fixture
+    (fn [{:keys [common parent source import head commit!]}]
+      (doseq [bytes [(.subarray source 0 (dec (.-length source)))
+                    (js/Buffer.concat #js [common (js/Buffer.from #js [255 10])])
+                    (js/Buffer.concat #js [common
+                                          (:receipt/bytes (nth (cli/physical-receipt-items! source) 260))
+                                          (.subarray source (.-length common))])]]
+        (let [source-head (commit! bytes [frozen-stream-head])
+              candidate-bytes (js/Buffer.concat
+                               #js [parent (receipt-line-bytes
+                                             (assoc-in import [:receipt/stream :source/head] source-head))])
+              candidate (commit! candidate-bytes [head source-head])]
+          (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                                (cli/admit-receipt-extension! parent candidate-bytes candidate)))))
+      (let [new-source (js/Buffer.concat #js [source (receipt-line-bytes stream-fixture-record)])
+            new-source-head (commit! new-source [frozen-stream-head])
+            candidate-bytes (js/Buffer.concat
+                             #js [parent (receipt-line-bytes
+                                           (assoc import :receipt/stream
+                                                  (stream-descriptor frozen-stream-common new-source-head common new-source)))])]
+        ;; The object exists, but the immutable held anchor cannot reach it.
+        (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                              (cli/admit-receipt-extension! parent candidate-bytes head)))))))
+
+(deftest imported-evidence-cannot-become-valid-by-entering-another-stream
+  (with-frozen-stream-fixture
+    (fn [{:keys [common parent import head commit!]}]
+      (let [invalid (assoc stream-fixture-record :origin law/evidence-receipt-origin
+                           :kind :test-run :evidence/schema 2 :evidence/adapter "fixture"
+                           :evidence/result (assoc passed-result :result/exit 9))
+            source (js/Buffer.concat #js [common (receipt-line-bytes invalid)])
+            source-head (commit! source [frozen-stream-common])
+            bytes (js/Buffer.concat #js [parent (receipt-line-bytes
+                                                (assoc import :receipt/stream
+                                                       (stream-descriptor frozen-stream-common source-head common source)))])
+            candidate (commit! bytes [head source-head])]
+        (is (law/receipt-envelope? invalid))
+        (is (false? (law/evidence-receipt? invalid)))
+        (doseq [base [parent bytes]]
+          (is (thrown-with-msg? js/Error #"invalid evidence receipts"
+                                (cli/admit-receipt-extension! base bytes candidate))))))))
+
+(deftest held-foreign-import-executes-no-gate-and-leaves-raw-ledger-unchanged
+  (with-frozen-stream-fixture
+    (fn [{:keys [file directory parent import head commit!]}]
+      (let [source (js/Buffer.concat #js [parent (receipt-line-bytes stream-fixture-record)])
+            source-head (commit! source [head])
+            held (js/Buffer.concat #js [parent (receipt-line-bytes
+                                               (assoc import :receipt/stream
+                                                      (stream-descriptor frozen-stream-parent source-head parent source)))])
+            gate-count (atom 0)
+            catalog {:catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}]
+        (cli/git-capture! ["update-ref" "HEAD" frozen-stream-parent])
+        (fs/writeFileSync file held)
+        (with-redefs [cli/require-repositories!
+                      (fn [& _] {"repo" {:path "repo" :absolute "/repo" :revision child-revision}})
+                      cli/run-gate! (fn [& _] (swap! gate-count inc) passed-result)]
+          (is (thrown-with-msg? js/Error #"Receipt source stream admission refused"
+                                (cli/run-selected-gates! catalog test-catalog-identity
+                                                         {:only #{"repo"} :kinds #{:unit}})))
+          (is (zero? @gate-count))
+          (is (.equals held (fs/readFileSync file)))
+          (is (not (fs/existsSync (path/join directory ".receipts.edn.append.lock")))))))))
+
+(deftest verifier-and-promotion-consume-the-same-authenticated-stream-view
+  (with-frozen-stream-fixture
+    (fn [{:keys [head head-bytes file]}]
+      (let [seen (atom nil)
+            output (with-out-str (is (zero? (cli/verify-receipts!
+                                            {:base frozen-stream-parent :at head}))))
+            catalog {:catalog/version 1 :catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}]
+        (doseq [part [":total-receipts 284" ":canonical-receipts 265"
+                      ":imported-receipts 19" ":corrected-receipts 11"]]
+          (is (str/includes? output part) (str "verifier explicit count " part)))
+        (with-redefs [cli/read-immutable-catalog-bundle!
+                      (fn [_] {:catalog catalog :catalog-identity test-catalog-identity})
+                      cli/validate-catalog! identity
+                      law/promotion-evidence-consistent?
+                      (fn [_ _ _ _ _ ledger] (reset! seen ledger) false)]
+          ;; Capture the actual replaceable consumer seam; returning false avoids
+          ;; inferring promotion from historical observations in the frozen source.
+          (is (false? (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                               [passed-result] frozen-stream-parent head)))
+          (is (= 284 (count (:ledger/records @seen))))
+          (is (= 284 (count (:ledger/original-records @seen))))
+          (is (= 11 (count (:ledger/correction-provenance @seen))))
+          (is (.equals head-bytes (fs/readFileSync file))))))))
+
+(defn with-common-correction-stream-fixture [run!]
+  (with-receipt-fixture
+    (fn [{:keys [fixture file] :as context}]
+      (with-redefs [cli/root fixture cli/receipt-file file]
+        (cli/git-capture! ["init" "--quiet"])
+        (let [commit! (fn [bytes parents]
+                        (fs/writeFileSync file bytes)
+                        (cli/git-capture! ["add" "--" law/receipt-ledger-path])
+                        (let [tree (str/trim (cli/git-capture! ["write-tree"]))
+                              head (str/trim
+                                    (cli/git-capture!
+                                     (into ["-c" "user.name=Receipt Test"
+                                            "-c" "user.email=receipt-test@example.invalid"
+                                            "commit-tree" tree "-m" "common correction fixture"]
+                                           (mapcat #(vector "-p" %) parents))))]
+                          (cli/git-capture! ["update-ref" "HEAD" head])
+                          head))
+              original (assoc stream-fixture-record :origin "common-target"
+                              :dod ["first objective" "second objective"])
+              original-line (receipt-line-bytes original)
+              ;; Blank lines make parsed common count differ from physical ordinals.
+              target-bytes (js/Buffer.concat #js [(js/Buffer.from "\n") original-line])
+              target-head (commit! target-bytes [])
+              entry {:receipt/line 2 :receipt/origin (:origin original)
+                     :receipt/source-revision target-head
+                     :receipt/source-sha256 (cli/sha256 original-line)
+                     :envelope/corrected-fields {:dod "first objective; second objective"}}
+              correction (assoc stream-fixture-record :kind :correction
+                                :origin "common-correction" :correction/entries [entry])
+              build! (fn [common shared-head canonical-suffix source-suffix]
+                       (let [source (js/Buffer.concat #js [common source-suffix])
+                             source-head (commit! source [shared-head])
+                             import (assoc stream-fixture-record :kind :receipt-stream-import
+                                           :receipt/stream
+                                           (stream-descriptor shared-head source-head common source))
+                             bytes (js/Buffer.concat
+                                    #js [common canonical-suffix (receipt-line-bytes import)])
+                             head (commit! bytes [shared-head source-head])]
+                         {:common common :source source :head head :bytes bytes
+                          :admission #(cli/admit-receipt-extension! common bytes head)}))]
+          (run! (merge context {:commit! commit! :target-bytes target-bytes
+                               :target-head target-head :original original
+                               :entry entry :correction correction :build! build!})))))))
+
+(deftest source-stream-counts-shared-correction-document-once
+  (with-common-correction-stream-fixture
+    (fn [{:keys [target-bytes target-head correction original commit! build! file]}]
+      (let [common (js/Buffer.concat
+                    #js [target-bytes (js/Buffer.from "\n") (receipt-line-bytes correction)])
+            common-head (commit! common [target-head])
+            {:keys [admission head bytes]} (build! common common-head (js/Buffer.alloc 0)
+                                                   (receipt-line-bytes stream-fixture-record))
+            view (admission)
+            replay (cli/admit-receipt-extension! bytes bytes head)
+            output (with-out-str (is (zero? (cli/verify-receipts! {:base common-head :at head}))))]
+        (is (= 4 (:ledger/combined-receipts view)))
+        (is (= original (first (:ledger/originals view))))
+        (is (= "first objective; second objective" (:dod (first (:ledger/views view)))))
+        (is (= 1 (count (:receipt/corrections view))))
+        (is (= 4 (:correction/line (first (:receipt/corrections view)))))
+        (is (= :canonical (:receipt/stream-role (first (:ledger/occurrences view)))))
+        (is (= (:receipt/corrections view) (:receipt/corrections replay)))
+        (is (str/includes? output ":corrected-receipts 1"))
+        (is (.equals bytes (fs/readFileSync file)))))))
+
+(deftest source-stream-keeps-delta-correction-targeting-common-occurrence
+  (with-common-correction-stream-fixture
+    (fn [{:keys [target-bytes target-head correction build! file]}]
+      (let [canonical-document (assoc correction :origin "canonical-correction")
+            {:keys [admission bytes]} (build! target-bytes target-head
+                                               (receipt-line-bytes canonical-document)
+                                               (receipt-line-bytes correction))
+            view (admission)
+            corrections (:receipt/corrections view)]
+        (is (= 4 (:ledger/combined-receipts view)))
+        (is (= 2 (count corrections)) "Two distinct documents retain both provenance entries")
+        (is (= [2 2] (mapv :receipt/line corrections)))
+        (is (= [3 3] (mapv :correction/line corrections)))
+        (is (= [nil target-head] (mapv #(get-in % [:receipt/stream :source/base]) corrections)))
+        (is (.equals bytes (fs/readFileSync file)))))))
+
+(deftest source-stream-refuses-delta-correction-with-conflicting-common-view
+  (with-common-correction-stream-fixture
+    (fn [{:keys [target-bytes target-head correction build! file]}]
+      (let [{:keys [admission bytes]} (build! target-bytes target-head (js/Buffer.alloc 0)
+                                               (receipt-line-bytes correction))]
+        (is (thrown-with-msg? js/Error #"common original occurrences have conflicting documentary views"
+                              (admission)))
+        (is (.equals bytes (fs/readFileSync file)))))))
+
 (defmethod test/report [::test/default :end-run-tests] [summary]
   (set! (.-exitCode js/process) (if (test/successful? summary) 0 1)))
 

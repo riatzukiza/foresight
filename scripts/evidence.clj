@@ -266,9 +266,14 @@
         ;; The immutable ledger, its digest and its original records stay intact.
         consistency-ledger
         (if-let [views (:ledger/views admission)]
-          (assoc ledger :ledger/records views
-                        :ledger/original-records (:ledger/records ledger)
-                        :ledger/correction-provenance (:receipt/corrections admission))
+          (merge ledger
+                 (select-keys admission [:ledger/occurrences :ledger/canonical-receipts
+                                         :ledger/imported-receipts :ledger/combined-receipts])
+                 {:ledger/records views
+                  :ledger/original-records (or (:ledger/originals admission)
+                                               (:ledger/records ledger))
+                  :ledger/canonical-original-records (:ledger/records ledger)
+                  :ledger/correction-provenance (:receipt/corrections admission)})
           ledger)]
     (if-not (law/promotion-evidence-consistent?
              catalog catalog-identity target-revision
@@ -1117,9 +1122,8 @@
        :receipt/source-revision source-revision :receipt/source-sha256 source-sha256
        :receipt/record (:receipt/record source-item)})))
 
-(defn admit-receipt-extension! [base-bytes head-bytes anchor]
-  (let [appended (appended-receipt-records! base-bytes head-bytes)
-        all-items (physical-receipt-items! head-bytes)
+(defn- admit-single-receipt-extension! [head-bytes anchor appended]
+  (let [all-items (physical-receipt-items! head-bytes)
         documents (filterv #(let [record (:receipt/record %)]
                               (and (map? record)
                                    (contains? record :correction/entries))) all-items)]
@@ -1175,6 +1179,116 @@
                  :receipt/views views :receipt/corrections (:receipt/corrections result)
                  :ledger/views (mapv #(get by-line (:receipt/line %) (:receipt/record %)) all-items)))))))
 
+(defn- stream-refuse! [reason]
+  (throw (js/Error. (str "Receipt source stream admission refused: " reason))))
+
+(defn- require-stream-ancestor! [source anchor]
+  (try
+    (git-capture! ["merge-base" "--is-ancestor" source anchor])
+    (catch :default _
+      (stream-refuse! "source is not an ancestor of the exact anchor"))))
+
+(defn- read-source-stream! [descriptor canonical-base-bytes anchor]
+  (try
+    (let [base (read-immutable-receipt-ledger! (:source/base descriptor))
+          head (read-immutable-receipt-ledger! (:source/head descriptor))
+          base-bytes (:ledger/bytes base)
+          head-bytes (:ledger/bytes head)]
+      (require-stream-ancestor! (:source/base descriptor) anchor)
+      (require-stream-ancestor! (:source/head descriptor) anchor)
+      (require-stream-ancestor! (:source/base descriptor) (:source/head descriptor))
+      (when-not (and (buffer-prefix? base-bytes head-bytes)
+                     (buffer-prefix? base-bytes canonical-base-bytes))
+        (stream-refuse! "source base is not the proven common byte prefix"))
+      (when-not (and (= 10 (.at head-bytes -1))
+                     (or (zero? (.-length base-bytes)) (= 10 (.at base-bytes -1))))
+        (stream-refuse! "source journals must end on complete LF boundaries"))
+      (let [delta (.subarray head-bytes (.-length base-bytes))
+            source-items (physical-receipt-items! head-bytes)
+            common-items (physical-receipt-items! base-bytes)
+            delta-items (physical-receipt-items! delta)]
+        (when-not (= [(:source/ledger-sha256 descriptor)
+                      (:source/ledger-bytes descriptor) (:source/ledger-records descriptor)
+                      (:source/delta-sha256 descriptor)
+                      (:source/delta-bytes descriptor) (:source/delta-records descriptor)]
+                     [(sha256 head-bytes) (.-length head-bytes) (count source-items)
+                      (sha256 delta) (.-length delta) (count delta-items)])
+          (stream-refuse! "source ledger or delta hash/byte/record counts differ"))
+        (when (some #(law/receipt-stream-trigger? (:receipt/record %)) source-items)
+          (stream-refuse! "nested source imports are unsupported"))
+        {:source/base-bytes base-bytes :source/head-bytes head-bytes
+         :source/items source-items :common/records (count common-items)}))
+    (catch :default error
+      (if (str/starts-with? (.-message error) "Receipt source stream admission refused")
+        (throw error)
+        (stream-refuse! (str "source unavailable or malformed: " (.-message error)))))))
+
+(defn- stream-items [items views]
+  (mapv (fn [item view]
+          {:receipt/line (:receipt/line item)
+           :receipt/sha256 (sha256 (:receipt/bytes item))
+           :receipt/raw (decode-utf8! (:receipt/bytes item) "source stream physical line")
+           :receipt/record (:receipt/record item) :receipt/view view})
+        items views))
+
+(defn admit-receipt-extension! [base-bytes head-bytes anchor]
+  ;; Historical compatibility never bypasses declared import grammar. Scan the
+  ;; whole head, including its trusted prefix, before the ordinary fast path.
+  (let [appended (appended-receipt-records! base-bytes head-bytes)
+        items (physical-receipt-items! head-bytes)
+        imports (filterv #(law/receipt-stream-trigger? (:receipt/record %)) items)]
+    (if (empty? imports)
+      (admit-single-receipt-extension! head-bytes anchor appended)
+      (do
+        (when-not (and (= 1 (count imports))
+                       (law/receipt-stream-import? (:receipt/record (first imports)))
+                       (law/git-commit-id? anchor))
+          (stream-refuse! "expected one well-shaped direct import and immutable anchor"))
+        (let [descriptor (:receipt/stream (:receipt/record (first imports)))
+              source (read-source-stream! descriptor base-bytes anchor)
+              ;; Keep existing envelope/result validation and correction source
+              ;; authentication within each stream's original physical ordinals.
+              canonical-admission (admit-single-receipt-extension! head-bytes anchor appended)
+              source-admission (admit-single-receipt-extension!
+                                (:source/head-bytes source) anchor
+                                (appended-receipt-records! (:source/base-bytes source)
+                                                          (:source/head-bytes source)))
+              canonical-views (or (:ledger/views canonical-admission) (mapv :receipt/record items))
+              source-views (or (:ledger/views source-admission)
+                               (mapv :receipt/record (:source/items source)))
+              common-count (:common/records source)
+              source-delta-items (vec (drop common-count (:source/items source)))
+              source-delta-lines (set (map :receipt/line source-delta-items))]
+          (when-not (= (vec (take common-count canonical-views))
+                       (vec (take common-count source-views)))
+            (stream-refuse! "common original occurrences have conflicting documentary views"))
+          (let [composition (law/receipt-stream-view
+                             {:canonical/items (stream-items items canonical-views)
+                              :source/items (stream-items
+                                             source-delta-items
+                                             (vec (drop common-count source-views)))
+                              :common/records common-count
+                              :canonical/identity {:stream/repository "."
+                                                   :stream/path law/receipt-ledger-path
+                                                   :stream/anchor anchor
+                                                   :stream/ledger-sha256 (sha256 head-bytes)}
+                              :source/identity {:stream/repository "."
+                                                :stream/path law/receipt-ledger-path
+                                                :source/base (:source/base descriptor)
+                                                :source/head (:source/head descriptor)
+                                                :source/ledger-sha256 (:source/ledger-sha256 descriptor)}
+                              :canonical/corrections (:receipt/corrections canonical-admission)
+                              ;; The common document already belongs to the canonical
+                              ;; journal. Select by the source document's physical
+                              ;; occurrence, retaining delta documents even when their
+                              ;; target lies within the common prefix.
+                              :source/corrections
+                              (filterv #(contains? source-delta-lines (:correction/line %))
+                                       (:receipt/corrections source-admission))})]
+            (when (seq (:receipt/errors composition))
+              (stream-refuse! (pr-str (:receipt/errors composition))))
+            (merge canonical-admission composition)))))))
+
 (defn verify-receipts! [{:keys [at base]}]
   (when-not (law/git-commit-id? base)
     (throw (js/Error. "verify-receipts requires --base with a full Git commit ID")))
@@ -1184,14 +1298,19 @@
         appended-records (appended-receipt-records!
                           (:ledger/bytes base-ledger)
                           (:ledger/bytes ledger))
-        candidates (filter #(= law/evidence-receipt-origin (:origin %)) records)
-        evidence-count (count candidates)
         counts (admit-receipt-extension! (:ledger/bytes base-ledger)
-                                         (:ledger/bytes ledger) at)]
+                                        (:ledger/bytes ledger) at)
+        views (or (:ledger/views counts) records)
+        candidates (filter #(= law/evidence-receipt-origin (:origin %)) views)
+        evidence-count (count candidates)
+        canonical-count (count records)]
     (println "PASS"
              (pr-str (assoc (:ledger/identity ledger)
                             :ledger/base-revision base
-                            :ledger/total-receipts (count records)
+                            :ledger/total-receipts (count views)
+                            :ledger/canonical-receipts canonical-count
+                            :ledger/imported-receipts (or (:ledger/imported-receipts counts) 0)
+                            :ledger/combined-receipts (count views)
                             :ledger/appended-receipts (count appended-records)
                             :ledger/appended-evidence-receipts
                             (:receipt/evidence counts)
