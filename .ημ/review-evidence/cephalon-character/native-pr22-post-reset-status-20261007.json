@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-07T17:04:22.086043+00:00",
+  "exit": 0,
+  "stdout": "riatzukiza/foresight#22  head 1069d4c\n  coderabbit: rate-limited   checks: {:pass 3}\n  threads: 16 total, 0 unresolved; by severity {}; informational 0\n  exact-head approvals: #{\"mimo\"}  observed commit binding: {\"mimo\" #{\"1069d4c9bcba29ef55e6c72c7c597de101f0520b\"}}\n  completed planning rounds: 0 / soft minimum 5  participants: #{\"coderabbit\" \"mimo\"}\n  codex quota-unavailable: native source 6037972816 request 6037970464 scope account observed 2026-10-07T12:32:27Z retry-at-ms UNKNOWN\n  gate: BLOCKED\n    - Review loop requires 5 completed rounds or unanimous current-head approval, with every finding settled\n",
+  "stderr": ""
+}

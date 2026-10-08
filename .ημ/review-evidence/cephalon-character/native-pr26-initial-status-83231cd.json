@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-07T17:05:46.742108+00:00",
+  "exit": 0,
+  "stdout": "riatzukiza/foresight#26  head 83231cd\n  coderabbit: absent   checks: {:pending 2}\n  threads: 0 total, 0 unresolved; by severity {}; informational 0\n  exact-head approvals: #{}  observed commit binding: {}\n  completed code rounds: 0 / soft minimum 5  participants: #{\"coderabbit\" \"mimo\"}\n  codex quota-unavailable: native source 6042771169 request  scope account observed 2026-10-07T17:05:06Z retry-at-ms UNKNOWN\n  gate: BLOCKED\n    - No trusted exact-head APPROVED review meets the quorum\n    - 2 pending deterministic/required check(s)\n    - Review loop requires 5 completed rounds or unanimous current-head approval, with every finding settled\n",
+  "stderr": ""
+}
