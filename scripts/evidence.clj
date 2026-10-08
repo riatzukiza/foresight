@@ -1256,14 +1256,16 @@
               canonical-views (or (:ledger/views canonical-admission) (mapv :receipt/record items))
               source-views (or (:ledger/views source-admission)
                                (mapv :receipt/record (:source/items source)))
-              common-count (:common/records source)]
+              common-count (:common/records source)
+              source-delta-items (vec (drop common-count (:source/items source)))
+              source-delta-lines (set (map :receipt/line source-delta-items))]
           (when-not (= (vec (take common-count canonical-views))
                        (vec (take common-count source-views)))
             (stream-refuse! "common original occurrences have conflicting documentary views"))
           (let [composition (law/receipt-stream-view
                              {:canonical/items (stream-items items canonical-views)
                               :source/items (stream-items
-                                             (vec (drop common-count (:source/items source)))
+                                             source-delta-items
                                              (vec (drop common-count source-views)))
                               :common/records common-count
                               :canonical/identity {:stream/repository "."
@@ -1276,7 +1278,13 @@
                                                 :source/head (:source/head descriptor)
                                                 :source/ledger-sha256 (:source/ledger-sha256 descriptor)}
                               :canonical/corrections (:receipt/corrections canonical-admission)
-                              :source/corrections (:receipt/corrections source-admission)})]
+                              ;; The common document already belongs to the canonical
+                              ;; journal. Select by the source document's physical
+                              ;; occurrence, retaining delta documents even when their
+                              ;; target lies within the common prefix.
+                              :source/corrections
+                              (filterv #(contains? source-delta-lines (:correction/line %))
+                                       (:receipt/corrections source-admission))})]
             (when (seq (:receipt/errors composition))
               (stream-refuse! (pr-str (:receipt/errors composition))))
             (merge canonical-admission composition)))))))

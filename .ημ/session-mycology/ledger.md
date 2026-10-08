@@ -948,3 +948,7 @@
 ## cephalon-receipt-stream-common-correction-red-20261008T0205
 
 (己, p=1.0) Shared correction counting RED79/435/2fail/0errors is captured before repair. Source delta/common-target positive and common-view conflict refusal already pass. Preserve original bytes; select imported provenance by document occurrence. Initial unsupported slurp in operator prevalidation stopped before append; actual fs adapter validation succeeds. Efficiency0.76/friction0.43/skill-candidate0.32; no spore. Full character goal active, automation paused.
+
+## cephalon-receipt-stream-common-correction-green-20261008T0210
+
+(己, p=1.0) Common correction RED1f73440 now GREEN79/435; pure79/1239 and full local gates pass. Source provenance follows correction document physical occurrence, never target ordinal. Dedicated common-view divergence refusal now exercised. Prior gap description stays historical. Efficiency0.84/friction0.38/skill-candidate0.32; no spore. Goalactive/automationpaused; no runtime or social effect.
