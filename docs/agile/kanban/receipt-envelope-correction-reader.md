@@ -1,12 +1,12 @@
 ---
 uuid: "707901cb-e498-4ce3-aa1c-245202ced648"
 title: "Support bound envelope corrections in immutable receipt verification"
-status: "in_progress"
+status: "done"
 priority: "P1"
 points: "3"
 labels: "evidence, receipts, compatibility, laws"
 created_at: "2026-10-07"
-write-id: "1791413899606-0.sayxzmk0izr8z47rum"
+write-id: "1791432203768-0.daftz1xgbk973447cw"
 ---
 
 # Support bound envelope corrections in immutable receipt verification
@@ -198,3 +198,7 @@ recall -> choice -> observed outcome -> memory goal. That goal also retains
 social engagement, relationships, continuity, privacy and quality obligations.
 All existing character card metadata/status, kernel/runtime/artifact state and
 old root/source receipt/reflection appends remain untouched.
+
+---
+Consumer handoff AC7 completed: personal PR27 exactd58ced88052470ef231988fea64db88c56023f6c/base6771e5fadbb5835c0c7f6a48e3b00645b1571be8 passed all13executed hosted gates in run37722282062, including original immutable receipt_history;274canonical +19original imported =293combined/11source-bound corrections. Original sourcebdac1ed6470c98128ff367e757132797a39ac436 full journal, correction coordinates and exact parent/source reflection prefixes remain intact. Both native P1 roots4212570105/4212700949 are fixed/resolved. Fresh CodeRabbit full completion6051522099/summary6047891540 and actual MiMo APPROVED5451097136/all103assessed pages/no declared omitted input qualified one available-agent planning cohort and canonical head-guarded gatePASS. Native PR27 merged03:56:09UTC asf525611dde98f63dca9594a741ecae4f96478df4, actualparents6771+d58 and exact reviewed tree. Reader/source PR28 andPR29 retained their separate earlier code qualification; these are actual consumer proof and receipt prerequisite completion, not character implementation/deployment. Native review observations6051825696 preserve prospective REDs, historical scope and UTF8/UTF16 unit correction. Larger encounter/mood/automatic recall slice remainsunfinished; native goalACTIVE/heartbeatPAUSED; no runtime/maker/PM2/cloud changes.
+---

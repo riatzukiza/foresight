@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-10-08T03:49:52.222191+00:00",
+  "source": "actual native review and digest-verified hosted ZIP bytes",
+  "head": "d58ced88052470ef231988fea64db88c56023f6c",
+  "base": "6771e5fadbb5835c0c7f6a48e3b00645b1571be8",
+  "run": 37722282062,
+  "run_conclusion": "success",
+  "native_review_id": 5451097136,
+  "native_state": "APPROVED",
+  "native_body_exact_submission": true,
+  "artifact": {
+    "id": 11527087575,
+    "bytes": 28850,
+    "sha256": "670ff2c92f8c03e5bcfa40c5285a40e8827a6e43bb6a2969953a254d3295c027"
+  },
+  "full_diff_bytes": 793774,
+  "full_diff_sha256": "2d9cdd7ca26682115a0e388bcf9b61f06f74a7e126074783289fd1dd81398b58",
+  "full_diff_matches_immutable_local_git": true,
+  "manifest_sha256": "3215d3d86800db05d8aadc27bc2029767981c264335abe00bbdac16271f9c796",
+  "context_sha256": "4333ec0692b1f421e81a1a5093beeaf72f833a0f34955e3a18a0ebf9447b92aa",
+  "pre_post_verification": "PASS",
+  "input_coverage": {
+    "chunks": 103,
+    "delivered": 103,
+    "assessed": 103,
+    "missing": []
+  },
+  "recovery": {
+    "schema": "open-hax.review-recovery/v1",
+    "max_attempts": 2,
+    "recovery_reason": null,
+    "attempts": [
+      {
+        "attempt": 1,
+        "exit_code": 0,
+        "invocation_state": "completed",
+        "response_file": "model-response-attempt-1.txt",
+        "stderr_file": "opencode-stderr-attempt-1.log",
+        "submission_state": "present"
+      }
+    ]
+  },
+  "inline_comments": [],
+  "limits": [
+    "Model assessment is not proof of every reported test-detail",
+    "Complete source-journal assessment and any omitted input must be inspected by the operator",
+    "This byte-verification artifact supplies no independent approval, review round or merge permission"
+  ]
+}

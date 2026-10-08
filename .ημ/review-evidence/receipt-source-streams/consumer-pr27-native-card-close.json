@@ -1,0 +1,72 @@
+{
+  "schema": "cephalon.native-receipt-handoff-close/v1",
+  "observed_at": "2026-10-08T04:04:26.177110+00:00",
+  "tier": "observed-command-output transcription with actual native content readback; not provider approval",
+  "actual_pr27_merge": "f525611dde98f63dca9594a741ecae4f96478df4",
+  "reviewed_head": "d58ced88052470ef231988fea64db88c56023f6c",
+  "actual_base": "6771e5fadbb5835c0c7f6a48e3b00645b1571be8",
+  "cards": [
+    {
+      "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+      "native_frontmatter": {
+        "uuid": "d67f9876-6941-4bc9-b7cd-90e9b469aa95",
+        "title": "Admit an immutable source receipt stream during branch integration",
+        "status": "done",
+        "priority": "P1",
+        "points": "5",
+        "labels": "evidence, receipts, compatibility, confluence, laws",
+        "write-id": "1791432011087-0.p9k84mb9d6ojs20cncf"
+      },
+      "raw_bytes": 13649,
+      "raw_sha256": "17c967778a6780319ca2fe73d1e5e51f2ae362ca5489d2abd2effbf613eb3816",
+      "proof_comment_present": true
+    },
+    {
+      "uuid": "707901cb-e498-4ce3-aa1c-245202ced648",
+      "native_frontmatter": {
+        "uuid": "707901cb-e498-4ce3-aa1c-245202ced648",
+        "title": "Support bound envelope corrections in immutable receipt verification",
+        "status": "done",
+        "priority": "P1",
+        "points": "3",
+        "labels": "evidence, receipts, compatibility, laws",
+        "created_at": "2026-10-07",
+        "write-id": "1791432203768-0.daftz1xgbk973447cw"
+      },
+      "raw_bytes": 14260,
+      "raw_sha256": "7b121a205ebe3da839976adc250185a7a7b812d7186b8aac6c885194674baa46",
+      "proof_comment_present": true
+    }
+  ],
+  "native_event_base_prefix_exact": true,
+  "native_event_suffix_bytes": 6095,
+  "native_event_suffix_sha256": "fa81081057bb5a767c49dd363bae84dbab7c975b4fea71d714e6d82dd09110c6",
+  "native_event_suffix_lines": 8,
+  "operator_correction": {
+    "earlier_private_reader_card_status": "review",
+    "merged_reader_card_initial_status": "in_progress",
+    "initial_expected_review_assertion_failed_before_reader_transition": true,
+    "subsequent_in_progress_to_document_refused_by_native_Rheos": true,
+    "merged_reader_lawful_path": [
+      "in_progress",
+      "testing",
+      "review",
+      "document",
+      "done"
+    ],
+    "no_direct_status_edit_or_native_event_recreation": true,
+    "old_private_card_and_native_event_bytes_unchanged": true
+  },
+  "preservation": {
+    "root_owned_receipts_and_reflections_unchanged": true,
+    "source_owned_receipts_reflections_and_raw_evidence_untouched": true,
+    "root_dirty_journal_not_flattened_or_silently_deduplicated": true
+  },
+  "limits": [
+    "Receipt prerequisites are complete; encounter/field, mood and automatic recall are unfinished",
+    "Character cards are not moved to Ready/Done; upstream dependency retention/enforcement remains required",
+    "Native goal ACTIVE; scheduled heartbeat PAUSED",
+    "No runtime/maker/model/proxy/social/PM2/cloud probe or mutation; no new expensive copy/dependency install",
+    "Current native canonical closure is separate from earlier uncommitted private board projections"
+  ]
+}
