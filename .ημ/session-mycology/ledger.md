@@ -898,3 +898,19 @@
 - Independent source assessment found valid promotion false-refusal after the correction entered the trusted prefix. Committed RED65/339/2fail/0errors before repair; final GREEN66/342/0fail/0errors includes prefix source-hash and semantic refusal. Native CodeRabbit subsequently confirmed the same defect as Major.
 - Trusted bytes and trusted interpretation are separate: reconstruct declared corrections at every exact anchor while preserving all original bytes and untargeted ordinary historical compatibility. No result or approval promotion.
 - Native settlement and fresh exact-head review remain required after push; Rheos build-gap refusal and PR27P1 remain explicit. Full character loop active, automationPAUSED. No spore incubated/promoted or runtime effect.
+
+## 2026-10-08T00:40:38.989633Z — preserve concurrent immutable receipt streams
+
+- Receipt `cephalon-immutable-stream-confluence-plan-20261008T0042`; efficiency0.72, friction0.35, skill-candidate0.25.
+- ReaderPR28 passed actualcurrentreview/gates andmerged withheadguard. NormalnativeTesting→Review worked; the olddirectNodebuildfailure stayshistorical.
+- Integration exposed incompatiblepost259prefixes andsame-coordinate correctionassumptions. Preserveoriginalsourcejournals andqualifyanexplicitimport through existinglaw/adapter; no renumbering, oldbaseescape orignoredarchive.
+- CurrentreviewproofusesactualnativeAPPROVED5449927329, full33pages and13gates. UTF16-versusUTF8operatorcheckwasrepaired without changingproviderbytes.
+- Fullcharactergoalactive; automationpaused. No sporeincubation/promotion orruntimechange.
+
+## 2026-10-08T00:45:16.657111Z — clarify source stream admission before implementation
+
+- Receipt `cephalon-immutable-stream-confluence-clarified-20261008T0047`; efficiency0.78, friction0.24, skill-candidate0.15.
+- Three independentP2 planninggaps prompted explicitlineage/descriptor, streamoccurrenceidentity and wholehead replay/countlaws. No change tooriginalsourcebytes orreaderimplementation.
+- IndependentP3 streaminference required actualcapture: existingNBBcommand emitted64stdoutbytes/0stderr. KeeporiginalJSON andappendreadback; sourcebinding alone doesnotidentifyruntimechannel.
+- One-direct-stream5points remainsprovisional before nativeplanning/Ready. Reflection/boardhistoryconflicts are separate, andPR27requiresactualfreshconsumerproof.
+- Fullcharactergoalactive/automationpaused; no sporeincubation/promotion orruntimeeffects.
