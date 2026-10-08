@@ -952,3 +952,150 @@
 ## cephalon-receipt-stream-common-correction-green-20261008T0210
 
 (己, p=1.0) Common correction RED1f73440 now GREEN79/435; pure79/1239 and full local gates pass. Source provenance follows correction document physical occurrence, never target ordinal. Dedicated common-view divergence refusal now exercised. Prior gap description stays historical. Efficiency0.84/friction0.38/skill-candidate0.32; no spore. Goalactive/automationpaused; no runtime or social effect.
+
+## 2026-10-07T15:24:33.114787+00:00 — published correction and native PR-head lag
+
+- Origin: `cephalon-character-correction-published-native-head-lag-20261007`.
+- Scores: efficiency0.76; friction0.58; skillcandidate0.14.
+- Evidence: committed1069 immutable259/60PASS; actual fourthpushACK and gitremote1069 versus REST/GraphQL/nativecanonical old9043. All21priorproofs and source366owneduncommittedhashes remain exact. Savedpausedheartbeat readback49733bytes/SHA478541b3138ac2fb491de6ca1dfe5497080b4523cd4dded78eb26b217b7d51d3.
+- Lesson: a successful gitpush and a delayed PR metadata projection are different observations. Bind qualification to converged fresh heads, preserve the successful push, and let the guard refuse premature settlement rather than repeating an already published head.
+- Limits: three source planning findings remain open natively despite their published fixes; no1069approval/currentchecks/readiness/deployment claimed. Threeactualserverpushfailures are not a quota refusal.
+- No spore incubated/promoted; this observation append waits for the next concrete change. Full character goal remains active; nativecreativeclock and actualpausedheartbeat activation remain independent.
+
+## 2026-10-07T15:43:01.080052+00:00 — graph memory boundary observation
+
+- Origin: `cephalon-character-graph-memory-boundary-observation-20261007`.
+- Scores: efficiency 0.82; friction 0.24; skill candidate 0.23.
+- Evidence: unchanged committed OpenPlanner07085d6 callback and native seed helper execution; four isolated scenarios and retained full stdout.
+- Lesson: a trail-disable flag is not a pure-read guarantee; scope must govern causal inputs and every feedback write before a character consumes graph recall. Count attempted writes separately from persistence success.
+- Better path: qualify the upstream source/visibility/feedback contract, then consume it through trusted Knoxx actor scope and graph inclusion tests after lawful readiness.
+- Limits: callback fixture omits HTTP/auth/tenant plugins and uses synthetic visibility expectations; no deployed exposure, live feedback, physical solver, new law or completed loop is claimed. No spore incubated or promoted.
+
+## 2026-10-07T16:01:56.030044+00:00 — native PR synchronization and available-cohort proof
+
+- Origin: `cephalon-character-native-pr-refresh-and-quota-20261007T1550`.
+- Scores: efficiency0.86; friction0.47; skillcandidate0.12.
+- Evidence: one supported author close/reopen and complete native before/after body/thread binding; canonical three Fixed settlements and CodeRabbit actual verification; exact-head quota/request; current hosted13gate artifact/full input hash.
+- Lesson: Git refs and PR metadata can diverge. One bounded supported refresh restored this observed projection; it is not a universal repair guarantee. Fresh authenticated quota changes availability without supplying review credit. Current full review remains a separate live attempt.
+- Better path: fetch and compare native/local/ref heads, preserve whole body/conversation identities, restore OPEN even if maintenance fails, then use the current canonical cohort laws and native complete-input review evidence.
+- Limits: artifact staging and successful deterministic execution do not prove full model assessment, graph admission, deployed physical recall, artifact quality or terminal ownership. Saved heartbeat remains PAUSED; native maker clock independent. No spore incubated or promoted.
+
+## 2026-10-07T16:28:12.298805+00:00 — completed native review and current planning convergence
+
+- Origin: `cephalon-character-completed-mimo-planning-pass-20261007T1625`.
+- Scores: efficiency0.89; friction0.25; skillcandidate0.12.
+- Evidence: actual native APPROVED5445044799, completedSUCCESS37647239158, full82chunk input/submission proof, current stable canonical gatePASS and exact native body/saved prompt readback.
+- Lesson: availability, review credit and convergence are independent observations. Native quota can remove an optional unavailable participant while a real complete exact-head approving review qualifies the available cohort. A transient evidence-change guard must re-evaluate; it is not permission to ignore snapshot consistency.
+- Better path: adopt the coherent reviewed canonical pack, verify native full-input completion and deterministic gates, settle body observations, then preserve the qualified result in a fresh durable handoff. Do not continue claiming a completed review is pending.
+- Limits: planning approval does not deliver dependency enforcement or admit character implementation. Existing upstream Rheos ownership remains separate; coordination draft awaits actual human authorization. Graph physics, independent mood, recall, relationships and deployed full loop remain required.
+- State: full goal ACTIVE; saved heartbeat PAUSED/native maker clock independent. No source/runtime/board/maker mutation, paid usage, observation-only push or spore incubated/promoted.
+
+## 2026-10-07T17:48:02.913363+00:00 — current canonical policy and native availability
+
+- Origin: `cephalon-character-fresh-quota-qualification-20261007T1735`.
+- Scores: efficiency0.88; friction0.21; skillcandidate0.08.
+- Actual root1069 PASS uses real MiMo and fresh native quota availability under the coherent canonical pack; old zero-round blockers remain dated history.
+- Current6a doc correction requires its own review;13hostedgates/full855000byte diff verified, MiMo pending at17:44. No832approval transfer.
+- Old handoff/TOML privately preserved; current saved14662byteprompt substantive readback PASS after observing tool normalization of finalLF. PAUSED/cadence/chat unchanged. Initial exact comparison failure has no production-proof credit.
+- Eros workflow inventory empty/license absent and native Rheos admission not delivered. Full goal ACTIVE; no observation-onlypush/board/runtime/maker/sourceimplementation/other-chatmessage/spore.
+- ts: 2026-10-07T18:54:24.998948051Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: cephalon-field-provider-queue-timeout-20261007T1837
+  p-efficiency: 0.75
+  p-friction: 0.34
+  p-skill-candidate: 0.22
+  spore: none
+  receipt-refs: cephalon-field-provider-queue-timeout-20261007T1837
+  note: Whitelisted native answer is necessary for minimal receipts: first502 regex missed a distinct queue timeout. Persisted completed/error-null is not successful work. SSH format quoting first read failed and corrected; no production proof for failed inspect, no maintenance repeat. No spore.
+- ts: 2026-10-07T19:05:36.902103237Z
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: cephalon-current-policy-source-handoff-20261007T1905
+  p-efficiency: 0.8
+  p-friction: 0.28
+  p-skill-candidate: 0.15
+  spore: none
+  receipt-refs: cephalon-current-policy-source-handoff-20261007T1905
+  note: Future-agent instructions must use current canonical policy and distinguish dated approval/quota snapshots from fresh qualification. Current source planning remains pending current-head review; user-rate-limit correction is installed, not a local exception. Preserve paused heartbeat and active full goal separately. No spore.
+
+- ts: 2026-10-07T19:31:37.339815+00:00
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: cephalon-native-current-availability-20261007T1931
+  p-efficiency: 0.84
+  p-friction: 0.24
+  p-skill-candidate: 0.12
+  spore: none
+  receipt-refs: cephalon-native-current-availability-20261007T1931
+  note: Current native availability and findings control; old failed or pending snapshots stay historical. The available-agent policy is installed canonical law, not a local waiver. Checkpoint restoration needs a declared causal admission path; workflow evidence scope must be inspected at its actual immutable path. Shared-worktree fetches should be sequential and targeted. No spore incubated or promoted.
+
+- ts: 2026-10-07T19:37:28.384602+00:00
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: cephalon-reviewed-policy-restore-handoff-20261007T1936
+  p-efficiency: 0.86
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: cephalon-reviewed-policy-restore-handoff-20261007T1936
+  note: Persist current native IDs and reviewed policy without erasing historical observations. A real finding supplies a reason for a new source head; a quota or acknowledgement supplies no approval. Restored checkpoint ABI is a plan, not implemented graph or mood. Exact saved handoff prevents future agents from reviving obsolete quota blockers. No spore.
+
+- ts: 2026-10-07T20:30:42.333927+00:00
+  session: /home/err/.codex/worktrees/cephalon-planning/foresight
+  task: cephalon-feedback-native-review-and-upstream-plan-20261007T2030
+  p-efficiency: 0.83
+  p-friction: 0.3
+  p-skill-candidate: 0.15
+  spore: none
+  receipt-refs: cephalon-feedback-native-review-and-upstream-plan-20261007T2030
+  note: Actual current native publication can supersede failed provider attempts while preserving their evidence. Keep outside-scope receiver defects in their owning repository and require exact native settlement; caller mitigation and a general counterassessment are not a Major fix. Native captured-description drift and reviewer count errors need truthful explanation. Updated canonical availability policy persists without rewriting historical ledgers. No spore or observation-only push.
+
+- ts: "2026-10-07T20:53:17.309954Z"
+  origin: cephalon-review-receiver-native-ready-20261007T2049
+  p-efficiency: 0.85
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: cephalon-review-receiver-native-ready-20261007T2049
+  note: Native edited quota prose and stale check labels are separate evidence. One concrete full new-head review completed; explicit receiver planning request received a genuine quota exception, so current canonical available-agent rules admitted one actual MiMo cohort. Build current native artifacts, verify true input/body hashes, then walk Rheos hops before delegated RED. Do not publish raw scoped review links, relabel planning as code, or disturb the active maker. Earlier failed operator reads/shape assumptions were corrected, not counted as production failures. Existing lessons suffice; no spore or promotion.
+
+- ts: "2026-10-07T21:27:10.922066Z"
+  origin: cephalon-receiver-green-published-and-receipt-guard-20261007T2127
+  p-efficiency: 0.8
+  p-friction: 0.35
+  p-skill-candidate: 0.15
+  spore: none
+  receipt-refs: cephalon-receiver-green-published-and-receipt-guard-20261007T2127
+  note: Native verification exposed a metadata obligation missing from generic receipt guidance. Inspect the owning schema before appending; do not retroactively edit immutable evidence to hide the error. Prepare the smallest reviewable correction and preserve original bytes, then obtain the explicit required exception. A plain head line is not the canonical HTML stage marker; record real correction time and retain old review timing. Test source causality through per-guard reversions and keep localGREEN separate from native approval/full gates/deployment. Existing lessons suffice; no spore or promotion.
+
+- ts: "2026-10-07T21:44:27.270985Z"
+  origin: cephalon-receipt-append-decision-and-c4-hosted-proof-20261007T2141
+  p-efficiency: 0.78
+  p-friction: 0.35
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: cephalon-receipt-append-decision-and-c4-hosted-proof-20261007T2141; receiver1c4c53a8; native4212271488
+  note: Append a correction or preserve the original when receipt metadata is omitted and repository context is clear. The direct user answer resolves the earlier proposed rewrite exception; no permission question remains pending. Preserve old-byte evidence and truthful validator limits. Hosted execution, reviewer approval and deployed character behavior remain separate. Candidate attrition and hit-count source bugs guide future recall RED but do not establish the complete cause of observed empty arrays. Existing provenance lessons suffice; no spore or promotion.
+
+## 2026-10-07T22:07:24.787Z — bounded recall source refinement
+
+- Receipt: `cephalon-bounded-recall-refinement-20261007T2210`; efficiency 0.76, friction 0.22, skill-candidate 0.20.
+- Actual change: freeze query/candidates/principal/index inputs; test take-k-before-visibility loss, event-hit accounting and actual prompt inclusion. Carry separately observed graph scope/feedback boundaries into the existing recall story.
+- Preserve intent: encounters physically change the field, separately modeled mood/attention and later choices; prospective recall fixtures do not complete that loop.
+- Evidence discipline: all36copied owned files matched originals; design prefix, card311byte frontmatter and committed receipt/reflection prefixes match. Old native approvals/quotas/readbacks remain historical, not this head's qualification.
+- Receipt correction: user directs append or contextual attribution, original bytes stay immutable; no rewrite approval is pending. Native reader's old per-map limit remains disclosed.
+- Better path: source-proven behavioral fixtures before adapter changes; native Rheos readiness before RED; scope before causal influence and deliberate idempotent feedback. No spore incubated or promoted.
+
+## 2026-10-07T22:09:45.368Z — append-only envelope correction
+
+- Receipt: `cephalon-append-only-envelope-correction-20261007T2211`; efficiency 0.55, friction 0.48, skill-candidate 0.20.
+- Actual failure: the immutable Foresight gate rejected11preserved appends for string/vector/keyword envelope types, including my latest record. Native source requires string DoD/Pi and vector manifest/refs.
+- Correction: append exact line/revision/hash-bound corrected fields and validate the new map with the owning `receipt-envelope?` before writing; preserve every original byte.
+- Limits: the current reader does not fold corrections, so the whole-ledger required gate remains failed. Do not relabel that failure as a pass or ask to rewrite history again.
+- Better path: read actual project envelope before each producer append; preserve repo-context attribution and reviewed owning-reader boundaries. No spore incubated or promoted.
+
+
+## PR27 qualified source composition and approved finite milestone — 2026-10-08T03:18:52.784Z
+
+Canonical prefix source: `6771e5fadbb5835c0c7f6a48e3b00645b1571be8` (reviewed `1383acc563f9fba8345d41af56c0602ae6488e16`). The source reflection suffix immediately above is copied byte for byte from `bdac1ed6470c98128ff367e757132797a39ac436`, after the exact common `1069d4c9bcba29ef55e6c72c7c597de101f0520b` prefix: 14184 bytes; SHA256 `1709219d8b5332f56a6b94e8537dd8811d7b04f1f764a867665f8fc2bf7109db`. Native board events were ordinary Git merge inputs, not recreated.
+
+Human approval narrows the current finish to one encounter → persistent graph/field change → consumed deterministic mood transition → automatic authorized recall slice. See `docs/notes/2026-10-08-cephalon-loop-slice-milestone.md`. Existing authority and proof constraints remain; wider links are later milestones. The heartbeat remains paused.
+
+Reflection: efficiency0.70, friction0.55, skill-candidate0.30. Preserve immutable source coordinates instead of flattening diverged journals. Current reviewed reader merge is verified; consumer hosted proof remains pending. No new spore incubated or promoted.

@@ -1,0 +1,70 @@
+{
+  "observedAt": "2026-10-07T15:50:34.165509+00:00",
+  "method": "one supported close/reopen of authenticated author PR; no Git ref/history/source mutation",
+  "beforeHead": "9043e5702c91c374bf8aa7cca4481a461e61db24",
+  "branchHead": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "afterHead": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "state": "open",
+  "base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "autoMerge": null,
+  "wholeBodyPreserved": true,
+  "threadIdentitiesPreserved": true,
+  "threadCount": 16,
+  "records": [
+    {
+      "label": "before",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-before.json",
+      "bytes": 44831,
+      "sha256": "d115fe6213dff8c9f58badc748fd0756cbc72fe971b7f80b1d61c3961205d3ed"
+    },
+    {
+      "label": "branch-before",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-branch-before.json",
+      "bytes": 427,
+      "sha256": "ba8d1ed62c1fe3d661ca8e2fb301c080b402b6a1ae446dea22a595af3d53c26a"
+    },
+    {
+      "label": "threads-before",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-threads-before.json",
+      "bytes": 1673,
+      "sha256": "9e00104c9e4b1444c6b4cbb1e858a2af1aa0992fccc6f9f5e46ea9890a87dd16"
+    },
+    {
+      "label": "new-checks-before",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-new-checks-before.json",
+      "bytes": 33,
+      "sha256": "e83cfac35507982a40cfeb776ce85aa0367e7646f81fe857df4a6c841ea8a170"
+    },
+    {
+      "label": "runs-before",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-runs-before.json",
+      "bytes": 129744,
+      "sha256": "73611a05ab037d79764cfdd5ae74e23adbe28b09d22cd0c19d065676a37fe5ad"
+    },
+    {
+      "label": "closed",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-closed.json",
+      "bytes": 44851,
+      "sha256": "ef4bc67ab62eb069d6e4d47f7a8acd14fc76c70696b3617c24ee389565320d0c"
+    },
+    {
+      "label": "reopened",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-reopened.json",
+      "bytes": 44794,
+      "sha256": "f9fed0a91fd4e2dd101b42cae197d37078f2cee5a27d1ed1e84560c8ec8f5927"
+    },
+    {
+      "label": "threads-after",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-threads-after.json",
+      "bytes": 1673,
+      "sha256": "9e00104c9e4b1444c6b4cbb1e858a2af1aa0992fccc6f9f5e46ea9890a87dd16"
+    },
+    {
+      "label": "after",
+      "path": ".\u03b7\u03bc/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-after.json",
+      "bytes": 44831,
+      "sha256": "04b0fa6dff6c27b53e0669121de2526277601d2a38e8c4f766f6b521ea2602ed"
+    }
+  ],
+  "claim": "A successful state refresh is not a current-head review, approval, convergence, board readiness or deployment."
+}

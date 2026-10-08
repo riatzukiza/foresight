@@ -1,0 +1,24 @@
+{
+  "schema": "open-hax.review-input/v1",
+  "base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "head_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "diff_base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+  "full_diff": {
+    "path": "basehead.diff",
+    "bytes": 600848,
+    "sha256": "8726521a16d16e6d665648f79cdc74ea860c979a4155ce29cf8306afca174a36"
+  },
+  "preview": {
+    "path": "pr.diff",
+    "limit_bytes": 300000,
+    "truncated": true
+  },
+  "provenance": {
+    "repository": "riatzukiza/foresight",
+    "pull_request": "22",
+    "run_id": "37647239158",
+    "run_attempt": "1",
+    "workflow_sha": "fcb7ba01fabe2531d1b85be5f41fb8bb1514c368",
+    "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/22/merge"
+  }
+}
