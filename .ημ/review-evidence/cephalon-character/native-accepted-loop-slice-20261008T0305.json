@@ -1,0 +1,31 @@
+{
+  "schema": "cephalon.selected-native-goal-steering/v1",
+  "tier": "selected native readback of human approval; not provider or PR approval",
+  "source_thread": {
+    "id": "01a11961-2908-7982-965b-07ab15bc1235",
+    "title": "Free space for active goals",
+    "hostId": "local"
+  },
+  "human_approval": {
+    "type": "userMessage",
+    "id": "01a11970-34bc-7e03-85fa-46b8b6bbc8a2",
+    "content": [
+      {
+        "type": "text",
+        "text": "<send_user_message_question_reply>\n[{\"questionItemId\":\"[\\\"request_user_input_async\\\",\\\"call_6fa4e106e0b841a6b3c9d798d3e07e09\\\",0]\",\"question\":\"Space is recovered. Which instructions should I send to the four goal chats and apply to their existing scheduled continuations? The drafted finite milestones preserve the wider missions, use closed work batches, cap expensive checkouts at three per goal, and avoid allocating new copies below 20 GiB free space.\",\"answer\":\"Apply the drafted finite milestones and storage limits (Recommended)\"}]\n</send_user_message_question_reply>"
+      }
+    ]
+  },
+  "approved_proposal_path": "/home/err/Documents/Codex/2026-10-07/new-chat/outputs/proposed-goal-milestones.md",
+  "accepted_milestone": "Deliver one measurable loop slice from the current design: an encounter writes persistent graph/field changes; one deterministic mood transition is consumed; automatic recall retrieves an eligible stored encounter under the live maker's principal. Verify the links with recorded inputs, state transitions, and outputs. Finish this slice and document the remaining design links as later milestones. Apply the resource discipline above, while retaining existing actor/principal and proof constraints.",
+  "resource_limits": {
+    "free_space_before_full_snapshot_or_dependency_installation_gib": 20,
+    "max_expensive_checkouts_or_independent_snapshot_jobs_in_flight": 3
+  },
+  "limits": [
+    "Human reply authorizes the drafted milestones; this selection is a subset of native thread history, not a raw REST snapshot",
+    "Existing PR, actor/principal, board, isolation and proof constraints remain",
+    "Old open-ended completion mandates are superseded; historical records remain unchanged",
+    "No reply sent to coordinating chat; heartbeat remains PAUSED"
+  ]
+}

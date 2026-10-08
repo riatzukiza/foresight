@@ -1,0 +1,37 @@
+{
+  "reflection-resolution-sha256": "38406cf33b3b63660ae416f93ed2539729aca947d78dbf024bfb2f283c58d09d",
+  "schema": "cephalon.source-stream-integration/v1",
+  "tier": "observed Git and native review outputs; not raw REST or synthetic approval",
+  "reviewed-reader": "1383acc563f9fba8345d41af56c0602ae6488e16",
+  "descriptor": {
+    "ledger-sha256": "e0657dbd24dd5327371e6a144c4fcb4001b3e1146940a6c269fa746570db035a",
+    "delta-sha256": "52e3dc0e2fa4103c03a688d5c747780ae8d1d0ecd58af3c854e4455e094e6eba",
+    "delta-records": 19,
+    "ledger-bytes": 537422,
+    "delta-bytes": 60487,
+    "path": ".ημ/receipts.edn",
+    "head": "bdac1ed6470c98128ff367e757132797a39ac436",
+    "ledger-records": 278,
+    "base": "1069d4c9bcba29ef55e6c72c7c597de101f0520b"
+  },
+  "source-original-sha256": "e0657dbd24dd5327371e6a144c4fcb4001b3e1146940a6c269fa746570db035a",
+  "parent-receipt-prefix-exact": true,
+  "receipt-resolution-sha256": "4a293ac1c7b7447b7b2d99cb0327dd0b6fd18683a905efe7ec67c42f2f004119",
+  "authority-readback-sha256": "d80a98e7914194cfb7c7dc67edb6ab25416d52e302b746f85349ba46bd911320",
+  "imported-records": 19,
+  "source": "bdac1ed6470c98128ff367e757132797a39ac436",
+  "common": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "accepted-proposal-sha256": "ccc12ba5117b63a089127191d1f1c5db097600b8f5ac8779009ab63127b8179e",
+  "source-original-reflection-sha256": "0560b6e5efb205daf8ec0a352f9ba62a05bedca6ac8ddd953e17c97959969205",
+  "parent-reflection-prefix-exact": true,
+  "qualified-parent": "6771e5fadbb5835c0c7f6a48e3b00645b1571be8",
+  "canonical-records": 274,
+  "limits": [
+    "Actual committed consumer-head ancestry/admission and hosted gate remain subsequent obligations",
+    "No source original rewrite, historical approval transfer, deployment or character behavior claimed"
+  ],
+  "timestamp": "2026-10-08T03:18:52.784Z",
+  "source-reflection-delta-bytes": 14184,
+  "milestone-sha256": "8cd125c6edb353c063fd9be0a99e51cfd92818e9783aca9dda9311cfc612a970",
+  "source-reflection-delta-sha256": "1709219d8b5332f56a6b94e8537dd8811d7b04f1f764a867665f8fc2bf7109db"
+}

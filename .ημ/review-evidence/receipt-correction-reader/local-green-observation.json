@@ -1,0 +1,138 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "observed_at": "2026-10-07T23:28:37.710526+00:00",
+  "scope": "Local GREEN preparation, not native provider approval or installed behavior",
+  "checks": [
+    {
+      "gate": "workspace_laws",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "scripts:test",
+        "test/workspace_test.cljs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 402,
+      "stderr_bytes": 0,
+      "stdout_sha256": "eb667e2b852d56d9aca46de90f46baaa73a90dc324d756d780493dc4e9e6e457",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "gate": "cephalon_diagnostic_fixtures",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "scripts:test",
+        "test/verify_cephalon_local_test.cljs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 98,
+      "stderr_bytes": 0,
+      "stdout_sha256": "2a2e601008549570dba758be4d75c9ff6fbd4adffd7e67000b16a36251586ca7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "gate": "project_laws",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts:test",
+        "test/project_test.cljs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 85,
+      "stderr_bytes": 0,
+      "stdout_sha256": "29aeab31e5fbb7bcc128401f2286355fd32d6b2edb0178c2b254fd887593b672",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "gate": "lineage_laws",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:test",
+        "test/lineage_test.cljs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 84,
+      "stderr_bytes": 0,
+      "stdout_sha256": "25b93b49bbb5a1b7f5686cf0e651365b684b97430b23da3b32749f5659245101",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "gate": "evidence_laws",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:test",
+        "test/evidence_test.cljs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 86,
+      "stderr_bytes": 0,
+      "stdout_sha256": "bd2b0ce7cd8ec18f41a8875aad2b1e41363416cdf883e28ea6f7013eca02bcb0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "gate": "evidence_adapter",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts:test",
+        "test/evidence_cli_test.cljs"
+      ],
+      "exit": 0,
+      "stdout_bytes": 7986,
+      "stderr_bytes": 0,
+      "stdout_sha256": "e8e48946d18bfb7c73fb940095606b0f48c18bb30c11d439248e1459cf7635ce",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "gate": "project_contract",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts",
+        "scripts/project.clj",
+        "validate"
+      ],
+      "exit": 0,
+      "stdout_bytes": 103,
+      "stderr_bytes": 0,
+      "stdout_sha256": "b0d4a43075ba4cef535f39256a6c58b5398db68341b55981dc4b8c8c5e0f05e2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "gate": "catalog_contract",
+      "command": [
+        "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+        "-cp",
+        "src:scripts",
+        "scripts/evidence.clj",
+        "validate"
+      ],
+      "exit": 0,
+      "stdout_bytes": 26,
+      "stderr_bytes": 0,
+      "stdout_sha256": "8c1bce937b9e28b9855c9a680398dd38e0297b6d8a1aa85ef2d19e82b78ef2b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_lint": "clj-kondo --lint src/foresight/evidence.cljc scripts/evidence.clj test/evidence_test.cljs test/evidence_cli_test.cljs: 0 errors/0 warnings",
+  "root_lint": "clj-kondo --lint scripts test src/foresight/evidence.cljc: 0 errors/0 warnings, unchanged configuration",
+  "migration_pack": {
+    "initial_system_python_result": "ImportError: networkx absent; 1 test/1 error; visible local tooling failure",
+    "repair": "private task venv; exact workflow jsonschema4.26.0 and networkx3.6.1 installed from cache",
+    "execution": "PYTHONDONTWRITEBYTECODE=1 private-venv/python -m unittest discover -s docs/migrations/eta-mu-breakdown/checks -p check_pack.py",
+    "result": "27 tests/0 failures/errors, exit0"
+  },
+  "remaining": "Current-head hosted gates and complete native code review; Rheos Review transition remains refused by upstream build-gate gap; PR27 actual integration/P1 untouched."
+}

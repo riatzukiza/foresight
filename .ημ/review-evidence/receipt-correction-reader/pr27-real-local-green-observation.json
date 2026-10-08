@@ -1,0 +1,52 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "scope": "Local preparation only; actual immutable PR27 Git objects, no native approval or integration claim",
+  "command": [
+    "nbb",
+    "-cp",
+    "src:scripts",
+    "scripts/evidence.clj",
+    "verify-receipts",
+    "--base",
+    "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "--at",
+    "bdac1ed6470c98128ff367e757132797a39ac436"
+  ],
+  "exit": 0,
+  "raw_stdout": {
+    "bytes": 5996,
+    "sha256": "f66a10c7ce263bc438ddb662156676c08e890d56bba38d7adef98847f7a960a3",
+    "private_path": "/home/err/.local/share/codex/cephalon-review-artifacts/receipt-reader-plan-20261007T2235/pr27-real-local-green.stdout"
+  },
+  "raw_stderr_bytes": 0,
+  "original_ledgers": {
+    "base": {
+      "revision": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+      "bytes": 476935,
+      "sha256": "01ef747305b0446523c00caf39833da0737241bfa3698bc093a13e56dea9d177",
+      "physical_lines": 259
+    },
+    "source": {
+      "revision": "91a6fc6b27264da4b8c9b8cd7919f153adea0ff2",
+      "bytes": 529920,
+      "sha256": "98e752611cc6d18552975a0ece22a35f48ea9a96b0c035761d5ff2de65da95d9",
+      "physical_lines": 277
+    },
+    "head": {
+      "revision": "bdac1ed6470c98128ff367e757132797a39ac436",
+      "bytes": 537422,
+      "sha256": "e0657dbd24dd5327371e6a144c4fcb4001b3e1146940a6c269fa746570db035a",
+      "physical_lines": 278
+    },
+    "suffix": {
+      "bytes": 60487,
+      "sha256": "52e3dc0e2fa4103c03a688d5c747780ae8d1d0ecd58af3c854e4455e094e6eba",
+      "physical_lines": 19
+    }
+  },
+  "raw_total_receipts": 278,
+  "raw_appended_receipts": 19,
+  "corrected_views": 11,
+  "unchanged_original_lines": "267–277; documentary correction278; all raw prefix/source/head bytes retained",
+  "qualification": "PR27 native required gate and P1 remain pending independent reader code qualification and ordinary integration"
+}

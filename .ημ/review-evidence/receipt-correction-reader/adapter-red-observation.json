@@ -1,0 +1,19 @@
+{
+  "epistemic_tier": "observed-command-output transcription, not raw REST or provider approval",
+  "command": "nbb -cp src:scripts:test test/evidence_cli_test.cljs",
+  "exit": 1,
+  "tests": 52,
+  "assertions": 262,
+  "failures": 1,
+  "errors": 0,
+  "reason": "Existing reader refuses the exact immutable-source/line/origin/including-LF hash-bound correction; original bytes retained",
+  "stdout": {
+    "private_path": "/home/err/.local/share/codex/cephalon-review-artifacts/receipt-reader-plan-20261007T2235/adapter-red.stdout",
+    "bytes": 8232,
+    "sha256": "d3e118b6e2eb79ecb50898b1a60f1f561354ff0c2e4a7b44dacfd1254af3cdb4"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

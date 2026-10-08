@@ -1,0 +1,30 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "observed_at": "2026-10-08T00:44:12.369488Z",
+  "correction_of": {
+    "path": ".ημ/review-evidence/receipt-source-streams/divergent-journals-observation.json",
+    "sha256": "7f0e4a70caced1d3db6c322a345d26f841177be1c90524f6fb864669520c9136",
+    "field": "observed_results.verify_stdout",
+    "reason": "Original tools.exec output combined streams; its stdout-specific label was not established. Preserve original bytes; this explicit independent capture records both streams."
+  },
+  "command": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+    "-cp",
+    "src:scripts",
+    "scripts/evidence.clj",
+    "verify-receipts",
+    "--base",
+    "b3fffe3bc29cca09b6ff70b41768160b288a12ba",
+    "--at",
+    "bdac1ed6470c98128ff367e757132797a39ac436"
+  ],
+  "cwd": "/home/err/.codex/worktrees/cephalon-receipt-streams/foresight",
+  "exit": 2,
+  "stdout": "Receipt River head does not preserve the base bytes as a prefix\n",
+  "stderr": "",
+  "stdout_sha256": "c6e42e67a4b18d5c558b1e6a0f7305347929485b870ce894e557da46dfc2db82",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "original_observation_unchanged": true,
+  "qualification": "Actual existing prefix refusal, not a new confluence RED, behavior repair, admission, approval or consumer settlement."
+}
