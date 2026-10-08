@@ -1,0 +1,31 @@
+{
+  "schema": "open-hax.review-input-verification/v1",
+  "input_verified": true,
+  "verification_stage": "fresh-review-job-before-model",
+  "base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "head_sha": "920f1321239dd73d7188e5c9df217fdaf949967d",
+  "diff_base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "full_diff": {
+    "path": "basehead.diff",
+    "bytes": 28110,
+    "sha256": "85a48179fbadecdd37bb691926eff62ee84bb4cddcdd1255fe585292c1dff157"
+  },
+  "manifest_sha256": "ff2605d9dce8ba7f1e2d8b003fec3133ef1937b0f332eb664523840375103986",
+  "provenance": {
+    "repository": "riatzukiza/foresight",
+    "pull_request": "28",
+    "run_id": "37698100077",
+    "run_attempt": "1",
+    "workflow_sha": "2ef8076cfe60fbe98fcc74ce0f451f607914af7d",
+    "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/28/merge"
+  },
+  "evidence_artifact_name": "review-evidence-28-37698100077-1",
+  "verification_provenance": {
+    "repository": "riatzukiza/foresight",
+    "pull_request": "28",
+    "run_id": "37698100077",
+    "run_attempt": "1",
+    "workflow_sha": "2ef8076cfe60fbe98fcc74ce0f451f607914af7d",
+    "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/28/merge"
+  }
+}

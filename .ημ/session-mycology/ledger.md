@@ -861,3 +861,40 @@
 - Correction: retained short diagnostic query is accurately described, historical7/8WARN snapshots separately labeled, kernel-selection UUID recorded in proposed dependency input. Original transcript bytes/hash remain in Git9043; only descriptive metadata changed.
 - Limits: native content read is not graph admission, current completed receipt rows are not output quality, and current7WARN does not erase an earlier8WARN. Full loop remains active; current approvals must be re-qualified after successor push.
 - No spore incubated or promoted; no maker/clock/PM2/owner/runtime/social changes.
+
+## 2026-10-07T22:38:28.984Z — bounded receipt reader prerequisite
+
+- Receipt `cephalon-bound-envelope-reader-plan-20261007T2235`; efficiency 0.72, friction 0.30, skill-candidate 0.20.
+- Native P1 requires correcting existing reader interpretation while retaining original bytes; the read-only ownership audit places this gate in Foresight evidence law and its existing NBB adapter.
+- Separate3point standalone incoming card starts at1069 with no malformed appends imported; prospective fixtures cover exact binding, narrow fields, original-byte retention and all3consumers.
+- Keep strict ordinary envelopes and evidence truth; a documentary correction is not result/approval promotion. Native planning and Rheos Ready precede RED.
+- No spore incubated/promoted or runtime/board mutation; full physical character goal remains active.
+
+## 2026-10-07T22:44:11.512112+00:00 — clarify bounded envelope planning
+
+- Receipt `cephalon-bound-envelope-reader-clarified-20261007T2244`; efficiency 0.78, friction 0.22, skill-candidate 0.15.
+- Read-only independent review identified two genuine P2 ambiguities: exact DoD text conversion and per-consumer ancestry anchors. Clarified both before native planning review.
+- Preserve prior provenance and strict ordinary law; no implementation, behavioral tests, native Ready or provider approval claimed. No spore incubated/promoted.
+
+## 2026-10-07T23:10:11.530435+00:00 — qualified prerequisite and native RED
+
+- Receipt `cephalon-receipt-correction-native-ready-red-20261007T2308`; efficiency0.76, friction0.23, skill-candidate0.20.
+- Current available-cohort planning qualification succeeded without quota credit. Native Rheos advanced only the owned card through Ready and In_progress, preserving the event prefix.
+- PureRED preserves all17old tests/89assertions and adds32new tests/224intentional failures for missing API. Real adapterfixture rejects valid bound correction:52tests262assertions1failure0errors. No implementation or compiler/fixture failure is claimed.
+- Preserve original receipts, derived views and provenance separately; qualify source/line/hash/ancestry at the existing adapter. Planning approval is historical for later code, not transfer credit.
+- Fullgraph/mood/socialgoal active; heartbeatPAUSED. No spore incubated/promoted or runtime effect.
+
+## 2026-10-07T23:28:37.710526+00:00 — append-only correction reader GREEN
+
+- Receipt `cephalon-receipt-correction-green-20261007T2347`; efficiency0.74, friction0.29, skill-candidate0.21.
+- Existing-reader repair now passes pure49/313 and adapter64/335; exact nineteen-record PR27 suffix retains original bytes and eleven derived metadata views. Git/source identity belongs at the outer adapter, semantic result validation remains strict.
+- Expanded RED was committed before adapter implementation; actual errors and fixture expectation correction are retained. Local migration dependency failure was repaired in a private pinned venv; no failed action relabeled as a pass.
+- Native Rheos Review remains refused by its Node build gate in a Clojure root. Keep actual In_progress and event bytes intact; fix that behavior upstream instead of inventing a local writer or manifest.
+- New code requires independent exact-head hosted reviews; planning approval and local real-case pass do not settle PR27P1 or complete the character goal. Automation remainsPAUSED. No spore/runtime effect.
+
+## 2026-10-07T23:45:19.806402+00:00 — retain documentary views across trusted-base advancement
+
+- Receipt `cephalon-receipt-prefix-promotion-fix-20261007T2347`; efficiency0.78, friction0.28, skill-candidate0.18.
+- Independent source assessment found valid promotion false-refusal after the correction entered the trusted prefix. Committed RED65/339/2fail/0errors before repair; final GREEN66/342/0fail/0errors includes prefix source-hash and semantic refusal. Native CodeRabbit subsequently confirmed the same defect as Major.
+- Trusted bytes and trusted interpretation are separate: reconstruct declared corrections at every exact anchor while preserving all original bytes and untargeted ordinary historical compatibility. No result or approval promotion.
+- Native settlement and fresh exact-head review remain required after push; Rheos build-gap refusal and PR27P1 remain explicit. Full character loop active, automationPAUSED. No spore incubated/promoted or runtime effect.

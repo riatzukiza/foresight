@@ -784,6 +784,321 @@
                        :current current :historical historical
                        :base-text base-text :base base :commit! commit!)))))))
 
+(deftest receipt-verification-admits-bound-envelope-view-with-original-bytes
+  (with-historical-ledger-fixture true
+    (fn [{:keys [base base-text current commit!]}]
+      (let [original (assoc current
+                            :kind :decision
+                            :origin "bound-envelope-target"
+                            :manifest "exact, manifest contents"
+                            :refs "exact, reference contents"
+                            :dod ["first requirement" " second requirement "]
+                            :pi :cephalon/character-memory)
+            original-line (str (pr-str original) "\n")
+            source-text (str base-text original-line)
+            source (commit! source-text)
+            correction (assoc current
+                              :kind :correction
+                              :origin "bound-envelope-correction"
+                              :correction/entries
+                              [{:receipt/line 2
+                                :receipt/origin (:origin original)
+                                :receipt/source-revision source
+                                :receipt/source-sha256
+                                (cli/sha256 (js/Buffer.from original-line "utf8"))
+                                :envelope/corrected-fields
+                                {:manifest ["exact, manifest contents"]
+                                 :refs ["exact, reference contents"]
+                                 :dod "first requirement;  second requirement "
+                                 :pi "cephalon/character-memory"}}])
+            head-text (str source-text (pr-str correction) "\n")
+            head (commit! head-text)
+            outcome (try
+                      {:exit (cli/verify-receipts! {:base base :at head})}
+                      (catch :default error
+                        {:error (.-message error)}))]
+        (is (not (law/receipt-envelope? original)))
+        (is (law/receipt-envelope? correction))
+        (is (str/starts-with? head-text source-text)
+            "The source's original physical ledger bytes stay unchanged")
+        (is (= {:exit 0} outcome)
+            "An exact ancestor/line/origin/including-LF hash correction should admit the documentary view")))))
+
+(defn with-correction-ledger-fixture [run!]
+  (with-historical-ledger-fixture true
+    (fn [{:keys [base-text current commit!] :as context}]
+      (let [original (assoc current :dod ["exact, ημ objective" "second objective"])
+            original-line (str (pr-str original) "\n")
+            source-text (str base-text original-line)
+            source (commit! source-text)
+            entry {:receipt/line 2
+                   :receipt/origin (:origin original)
+                   :receipt/source-revision source
+                   :receipt/source-sha256
+                   (cli/sha256 (js/Buffer.from original-line "utf8"))
+                   :envelope/corrected-fields
+                   {:dod "exact, ημ objective; second objective"}}
+            correction (assoc current :kind :correction
+                              :origin "bound-correction" :correction/entries [entry])]
+        (run! (assoc context :original original :original-line original-line
+                     :source source :source-text source-text
+                     :entry entry :correction correction))))))
+
+(defn correction-head! [{:keys [commit! source-text correction]}]
+  (commit! (str source-text (pr-str correction) "\n")))
+
+(deftest correction-verification-discloses-raw-counts-and-provenance-deterministically
+  (with-correction-ledger-fixture
+    (fn [{:keys [base entry original file] :as context}]
+      (let [head (correction-head! context)
+            before (fs/readFileSync file)
+            read! #(with-out-str (is (zero? (cli/verify-receipts! {:base base :at head}))))
+            first-output (read!)]
+        (is (= first-output (read!)))
+        (is (str/includes? first-output ":total-receipts 3"))
+        (is (str/includes? first-output ":appended-receipts 2"))
+        (is (str/includes? first-output ":corrected-receipts 1"))
+        (is (str/includes? first-output (pr-str (assoc entry :correction/line 3))))
+        (is (.equals before (fs/readFileSync file)))
+        (is (= original (second (:ledger/records (cli/read-immutable-receipt-ledger! head)))))))))
+
+(deftest correction-verification-refuses-wrong-source-bindings
+  (with-correction-ledger-fixture
+    (fn [{:keys [base entry original-line] :as context}]
+      (doseq [[field value message]
+              [[:receipt/origin "other-origin" #"correction source origin"]
+               [:receipt/line 1 #"correction source hash"]
+               [:receipt/line 20 #"correction source line"]
+               [:receipt/source-revision (apply str (repeat 40 "f"))
+                #"correction source unavailable"]
+               [:receipt/source-sha256 (apply str (repeat 64 "a"))
+                #"correction source hash"]
+               [:receipt/source-sha256
+                (cli/sha256 (js/Buffer.from (subs original-line 0 (dec (count original-line))) "utf8"))
+                #"correction source hash"]]]
+        (let [head (correction-head!
+                    (assoc-in context [:correction :correction/entries]
+                              [(assoc entry field value)]))]
+          (is (thrown-with-msg? js/Error message
+                                (cli/verify-receipts! {:base base :at head}))))))))
+
+(deftest correction-verification-refuses-available-nonancestor-source
+  (with-correction-ledger-fixture
+    (fn [{:keys [base source entry] :as context}]
+      (let [tree (str/trim (cli/git-capture! ["rev-parse" (str source "^{tree}")]))
+            unrelated (str/trim
+                       (cli/git-capture!
+                        ["-c" "user.name=Receipt Test"
+                         "-c" "user.email=receipt-test@example.invalid"
+                         "commit-tree" tree "-m" "unrelated source"]))
+            head (correction-head!
+                  (assoc-in context [:correction :correction/entries]
+                            [(assoc entry :receipt/source-revision unrelated)]))]
+        (is (thrown-with-msg? js/Error #"correction source is not an ancestor"
+                              (cli/verify-receipts! {:base base :at head})))))))
+
+(deftest correction-verification-refuses-reserialized-original-line
+  (with-correction-ledger-fixture
+    (fn [{:keys [base base-text original-line] :as context}]
+      ;; Same parsed map, different physical bytes. Source binding is not EDN
+      ;; equality or a digest of a normalized reserialization.
+      (let [head (correction-head!
+                  (assoc context :source-text
+                         (str base-text " " original-line)))]
+        (is (thrown-with-msg? js/Error #"correction target bytes differ"
+                              (cli/verify-receipts! {:base base :at head})))))))
+
+(deftest correction-verification-keeps-semantic-evidence-validation
+  (with-correction-ledger-fixture
+    (fn [{:keys [base base-text original commit! correction entry]}]
+      (let [invalid (assoc-in original [:evidence/result :result/exit] 7)
+            line (str (pr-str invalid) "\n")
+            source-text (str base-text line)
+            source (commit! source-text)
+            correction (assoc correction :correction/entries
+                              [(assoc entry :receipt/source-revision source
+                                      :receipt/source-sha256
+                                      (cli/sha256 (js/Buffer.from line "utf8")))])
+            head (commit! (str source-text (pr-str correction) "\n"))]
+        (doseq [trusted-base [base head]]
+          (is (thrown-with-msg? js/Error #"invalid evidence receipts"
+                                (cli/verify-receipts! {:base trusted-base :at head}))))))))
+
+(deftest correction-verification-revalidates-source-binding-in-trusted-prefix
+  (with-correction-ledger-fixture
+    (fn [{:keys [file] :as context}]
+      (let [head (correction-head!
+                  (assoc-in context [:correction :correction/entries 0
+                                     :receipt/source-sha256]
+                            (apply str (repeat 64 "0"))))
+            before (fs/readFileSync file)]
+        (is (thrown-with-msg? js/Error #"correction source hash differs"
+                              (cli/verify-receipts! {:base head :at head})))
+        (is (.equals before (fs/readFileSync file)))))))
+
+(deftest promotion-consumes-qualified-view-without-changing-originals
+  (with-correction-ledger-fixture
+    (fn [{:keys [base file] :as context}]
+      (let [head (correction-head! context)
+            before (fs/readFileSync file)
+            catalog {:catalog/version 1 :catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}]
+        (with-redefs [cli/read-immutable-catalog-bundle!
+                      (fn [_] {:catalog catalog :catalog-identity test-catalog-identity})
+                      cli/validate-catalog! identity
+                      cli/gitlink-target! (fn [& _] child-revision)]
+          (is (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                       [passed-result] base head)))
+        (is (.equals before (fs/readFileSync file)))))))
+
+(deftest promotion-retains-qualified-view-after-trusted-base-advances
+  (with-correction-ledger-fixture
+    (fn [{:keys [base file current commit!] :as context}]
+      (let [corrected-head (correction-head! context)
+            catalog {:catalog/version 1 :catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}]
+        (with-redefs [cli/read-immutable-catalog-bundle!
+                      (fn [_] {:catalog catalog :catalog-identity test-catalog-identity})
+                      cli/validate-catalog! identity
+                      cli/gitlink-target! (fn [& _] child-revision)]
+          (is (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                       [passed-result] base corrected-head))
+          (is (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                       [passed-result] corrected-head corrected-head))
+          (let [ordinary (assoc current :kind :observation :origin "ordinary-after-correction")
+                contents (str (fs/readFileSync file "utf8") (pr-str ordinary) "\n")
+                next-head (commit! contents)]
+            (is (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                         [passed-result] corrected-head next-head))
+            (is (= contents (fs/readFileSync file "utf8")))))))))
+
+(deftest held-correction-admission-rechecks-captured-head-before-gate
+  (with-correction-ledger-fixture
+    (fn [{:keys [file source-text correction]}]
+      ;; Source has descended from the base and is now committed HEAD. Only the
+      ;; documentary correction is in the uncommitted held extension.
+      (fs/writeFileSync file (str source-text (pr-str correction) "\n"))
+      (let [catalog {:catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}
+            captured-git cli/git-capture!
+            heads-read (atom 0)
+            gate-ran? (atom false)
+            before (fs/readFileSync file)]
+        (with-redefs [cli/require-repositories! (fn [& _] {"repo" {}})
+                      cli/git-capture!
+                      (fn [args]
+                        (if (and (= ["rev-parse" "HEAD"] args)
+                                 (> (swap! heads-read inc) 1))
+                          reviewed-root-revision
+                          (captured-git args)))
+                      cli/run-gate! (fn [& _] (reset! gate-ran? true) passed-result)]
+          (is (thrown-with-msg? js/Error #"captured receipt HEAD changed"
+                                (cli/run-selected-gates!
+                                 catalog test-catalog-identity
+                                 {:only #{"repo"} :kinds #{:unit}}))))
+        (is (false? @gate-ran?))
+        (is (.equals before (fs/readFileSync file)))))))
+
+(deftest held-correction-admits-only-sources-in-captured-committed-ancestry
+  (doseq [capture-old-head? [true false]]
+    (with-correction-ledger-fixture
+      (fn [{:keys [base file source-text correction]}]
+        (let [held-text (str source-text (pr-str correction) "\n")
+              captured-git cli/git-capture!
+              gate-ran? (atom false)
+              catalog {:catalog/repositories
+                       {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}]
+          (fs/writeFileSync file held-text)
+          (with-redefs [cli/require-repositories! (fn [& _] {"repo" {}})
+                        cli/git-capture! (fn [args]
+                                           (if (and capture-old-head?
+                                                    (= ["rev-parse" "HEAD"] args))
+                                             base (captured-git args)))
+                        cli/run-gate! (fn [& _] (reset! gate-ran? true) passed-result)]
+            (if capture-old-head?
+              (is (thrown-with-msg? js/Error #"correction source is not an ancestor"
+                                    (cli/run-selected-gates!
+                                     catalog test-catalog-identity
+                                     {:only #{"repo"} :kinds #{:unit}})))
+              (is (zero? (cli/run-selected-gates!
+                          catalog test-catalog-identity
+                          {:only #{"repo"} :kinds #{:unit}})))))
+          (is (= (not capture-old-head?) @gate-ran?))
+          (if capture-old-head?
+            (is (= held-text (fs/readFileSync file "utf8")))
+            (is (str/starts-with? (fs/readFileSync file "utf8") held-text))))))))
+
+(deftest correction-verification-retains-absolute-physical-ordinals
+  (with-correction-ledger-fixture
+    (fn [{:keys [base base-text original-line commit! correction entry]}]
+      (let [source-text (str base-text "\n" original-line)
+            source (commit! source-text)
+            correction (assoc correction :correction/entries
+                              [(assoc entry :receipt/line 3 :receipt/source-revision source)])
+            head (commit! (str source-text (pr-str correction) "\n"))
+            output (with-out-str
+                     (is (zero? (cli/verify-receipts! {:base base :at head}))))]
+        (is (str/includes? output ":receipt/line 3"))
+        (is (str/includes? output ":correction/line 4"))))))
+
+(deftest correction-verification-rejects-source-without-final-lf
+  (with-correction-ledger-fixture
+    (fn [{:keys [base base-text original-line commit! correction entry]}]
+      (let [without-lf (subs original-line 0 (dec (count original-line)))
+            source (commit! (str base-text without-lf))
+            correction (assoc correction :correction/entries
+                              [(assoc entry :receipt/source-revision source
+                                      :receipt/source-sha256
+                                      (cli/sha256 (js/Buffer.from without-lf "utf8")))])
+            head (commit! (str base-text original-line (pr-str correction) "\n"))]
+        (is (thrown-with-msg? js/Error #"source line must include final LF"
+                              (cli/verify-receipts! {:base base :at head})))))))
+
+(deftest correction-verification-refuses-second-claim-across-trusted-prefix
+  (with-correction-ledger-fixture
+    (fn [{:keys [correction commit!] :as context}]
+      (let [first-head (correction-head! context)
+            before (:ledger/bytes (cli/read-immutable-receipt-ledger! first-head))
+            second-head (commit! (str (.toString before "utf8")
+                                     (pr-str (assoc correction :origin "second-claim")) "\n"))]
+        (is (thrown-with-msg? js/Error #"duplicate target"
+                              (cli/verify-receipts! {:base first-head :at second-head})))))))
+
+(deftest frozen-pr27-suffix-retains-all-originals-and-exact-eleven-views
+  (let [suffix (fs/readFileSync
+                (path/join cli/root "test/fixtures/receipt-correction/pr27-suffix.edn"))
+        ;; Blank prefix supplies ordinals only. No Git fact is inferred here;
+        ;; the actual base/source/head command is separately retained evidence.
+        bytes (js/Buffer.concat
+               #js [(js/Buffer.from (apply str (repeat 259 "\n")) "utf8") suffix])
+        raw-items (cli/physical-receipt-items! bytes)
+        items (mapv #(select-keys % [:receipt/line :receipt/record]) raw-items)
+        entries (cli/correction-entries items)
+        by-line (into {} (map (juxt :receipt/line identity)) raw-items)
+        bindings (into {}
+                       (map (fn [entry]
+                              (let [item (get by-line (:receipt/line entry))]
+                                (is (= (:receipt/source-sha256 entry)
+                                       (cli/sha256 (:receipt/bytes item))))
+                                [[(:receipt/source-revision entry) (:receipt/line entry)
+                                  (:receipt/source-sha256 entry)]
+                                 (assoc (dissoc entry :envelope/corrected-fields)
+                                        :binding/verified? true
+                                        :receipt/record (:receipt/record item))])))
+                       entries)
+        result (law/receipt-correction-view items bindings)]
+    (is (= "52e3dc0e2fa4103c03a688d5c747780ae8d1d0ecd58af3c854e4455e094e6eba"
+           (cli/sha256 suffix)))
+    (is (= 19 (count items)))
+    (is (= 11 (count (remove law/receipt-envelope? (:receipt/originals result)))))
+    (is (= [] (:receipt/errors result)))
+    (is (= 11 (count (:receipt/corrections result))))
+    (is (every? law/receipt-envelope? (:receipt/views result)))
+    (is (= (mapv :receipt/record items) (:receipt/originals result)))
+    (doseq [[original view] (map vector (:receipt/originals result) (:receipt/views result))]
+      (is (= (dissoc original :manifest :refs :dod :pi)
+             (dissoc view :manifest :refs :dod :pi))))))
+
 (deftest receipt-verification-trusts-exact-historical-prefix-only
   (doseq [terminal-newline? [true false]]
     (with-historical-ledger-fixture terminal-newline?
@@ -913,6 +1228,7 @@
                 {:ledger/path law/receipt-ledger-path
                  :ledger/revision revision
                  :ledger/sha256 (apply str (repeat 64 "d"))}
+                :ledger/bytes (js/Buffer.alloc 0)
                 :ledger/records
                 [(cli/evidence-receipt
                   passed-result "2026-08-29T17:22:40Z" "test"
@@ -990,6 +1306,7 @@
                 {:ledger/path law/receipt-ledger-path
                  :ledger/revision reviewed-root-revision
                  :ledger/sha256 (apply str (repeat 64 "d"))}
+                :ledger/bytes (js/Buffer.alloc 0)
                 :ledger/records
                 [(cli/evidence-receipt
                   passed-result "2026-08-29T17:22:40Z" "test"
