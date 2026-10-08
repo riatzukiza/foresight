@@ -89,6 +89,169 @@
     (is (false? (evidence/receipt-envelope? (dissoc receipt :origin))))
     (is (false? (evidence/receipt-envelope? 42)))))
 
+(def valid-receipt-stream-descriptor
+  {:source/base revision-a
+   :source/head revision-b
+   :source/path ".ημ/receipts.edn"
+   :source/ledger-sha256 (apply str (repeat 64 "a"))
+   :source/ledger-bytes 100
+   :source/ledger-records 5
+   :source/delta-sha256 (apply str (repeat 64 "b"))
+   :source/delta-bytes 60
+   :source/delta-records 2})
+
+(def valid-receipt-stream-import
+  (-> (receipt-for (recorded-result :repo/unit :passed revision-a))
+      (dissoc :repo :evidence/schema :evidence/adapter :evidence/result)
+      (assoc :kind :receipt-stream-import
+             :origin "receipt-stream-shape-fixture"
+             :receipt/stream valid-receipt-stream-descriptor)))
+
+(deftest receipt-stream-descriptor-admits-declared-shape-without-source-proof
+  (is (true? (evidence/receipt-stream-descriptor? valid-receipt-stream-descriptor)))
+  (let [counts [:source/ledger-bytes :source/ledger-records
+                :source/delta-bytes :source/delta-records]]
+    (is (true? (evidence/receipt-stream-descriptor?
+                (reduce #(assoc %1 %2 1) valid-receipt-stream-descriptor counts)))
+        "positive minimum counts and equal ledger/delta counts permit an empty source base")
+    (is (true? (evidence/receipt-stream-descriptor?
+                (assoc valid-receipt-stream-descriptor
+                       :source/delta-bytes 101 :source/delta-records 6)))
+        "shape does not authenticate claimed counts or impose an undeclared ordering"))
+  (is (true? (evidence/receipt-stream-descriptor?
+              (assoc valid-receipt-stream-descriptor :source/head revision-a)))
+      "full commit strings are shaped here; source existence and ancestry belong to the adapter"))
+
+(deftest receipt-stream-descriptor-is-a-closed-nine-key-map
+  (doseq [field (keys valid-receipt-stream-descriptor)]
+    (is (false? (evidence/receipt-stream-descriptor?
+                  (dissoc valid-receipt-stream-descriptor field)))
+        (str "missing descriptor field " field)))
+  (doseq [field [:source/repository :source/ordinal :receipt/stream "source/base"]]
+    (is (false? (evidence/receipt-stream-descriptor?
+                  (assoc valid-receipt-stream-descriptor field "extra")))
+        (str "unsupported descriptor field " (pr-str field))))
+  (is (false? (evidence/receipt-stream-descriptor?
+                (-> valid-receipt-stream-descriptor
+                    (dissoc :source/base)
+                    (assoc "source/base" revision-a))))
+      "a string key cannot replace its declared keyword even with nine total keys"))
+
+(deftest receipt-stream-descriptor-refuses-nonmap-values
+  (doseq [value [nil false 42 "descriptor" :descriptor []
+                (seq valid-receipt-stream-descriptor)]]
+    (is (false? (evidence/receipt-stream-descriptor? value))
+        (str "descriptor type " (pr-str value)))))
+
+(deftest receipt-stream-descriptor-requires-full-forty-lowercase-commit-strings
+  (doseq [field [:source/base :source/head]
+          value [nil 42 :revision [] "" " "
+                 (apply str (repeat 39 "a"))
+                 (apply str (repeat 41 "a"))
+                 (apply str (repeat 64 "a"))
+                 (apply str (repeat 40 "A"))
+                 (apply str (repeat 40 "g"))
+                 (str " " revision-a) (str revision-a "\n")]]
+    (is (false? (evidence/receipt-stream-descriptor?
+                  (assoc valid-receipt-stream-descriptor field value)))
+        (str "commit field " field " value " (pr-str value)))))
+
+(deftest receipt-stream-shape-keeps-existing-git-id-compatibility
+  (is (true? (evidence/git-commit-id? revision-a)))
+  (is (true? (evidence/git-commit-id? (apply str (repeat 64 "a")))))
+  (is (true? (evidence/receipt-stream-descriptor?
+              (assoc valid-receipt-stream-descriptor
+                     :source/base (apply str (repeat 40 "0"))
+                     :source/ledger-sha256 (apply str (repeat 64 "0")))))
+      "well-shaped identities do not claim that a source or digest was verified"))
+
+(deftest receipt-stream-descriptor-requires-exact-lowercase-sha256-strings
+  (doseq [field [:source/ledger-sha256 :source/delta-sha256]
+          value [nil 42 :digest [] "" " "
+                 (apply str (repeat 40 "a"))
+                 (apply str (repeat 63 "a"))
+                 (apply str (repeat 65 "a"))
+                 (apply str (repeat 64 "A"))
+                 (apply str (repeat 64 "g"))
+                 (str (apply str (repeat 64 "a")) "\n")]]
+    (is (false? (evidence/receipt-stream-descriptor?
+                  (assoc valid-receipt-stream-descriptor field value)))
+        (str "digest field " field " value " (pr-str value)))))
+
+(deftest receipt-stream-descriptor-requires-the-literal-ledger-path
+  (doseq [value [nil 42 :receipts "" " " "./.ημ/receipts.edn"
+                ".eta-mu/receipts.edn" ".ημ/receipts.edn/" ".ημ/receipts.edn\n"
+                "/repo/.ημ/receipts.edn"]]
+    (is (false? (evidence/receipt-stream-descriptor?
+                  (assoc valid-receipt-stream-descriptor :source/path value)))
+        (str "source path " (pr-str value)))))
+
+(deftest receipt-stream-descriptor-requires-positive-integer-counts
+  (doseq [field [:source/ledger-bytes :source/ledger-records
+                :source/delta-bytes :source/delta-records]
+          value [nil false "1" :one 0 -1 1.5 [] {}]]
+    (is (false? (evidence/receipt-stream-descriptor?
+                  (assoc valid-receipt-stream-descriptor field value)))
+        (str "count field " field " value " (pr-str value)))))
+
+(deftest receipt-stream-trigger-recognizes-kind-or-descriptor-presence
+  (doseq [receipt [valid-receipt-stream-import
+                  {:kind :receipt-stream-import}
+                  {:kind :receipt-stream-import :receipt/stream nil}
+                  {:receipt/stream valid-receipt-stream-descriptor}
+                  {:receipt/stream nil}
+                  {:kind :observation :receipt/stream false}
+                  {:kind :correction :receipt/stream []}]]
+    (is (true? (evidence/receipt-stream-trigger? receipt))
+        (str "import grammar must inspect " (pr-str receipt)))))
+
+(deftest receipt-stream-trigger-leaves-ordinary-and-nonmap-values-alone
+  (doseq [receipt [nil false 42 :receipt-stream-import []
+                  {} {:kind :observation} {:kind :correction}
+                  {:kind "receipt-stream-import"}
+                  {:kind :observation "receipt/stream" valid-receipt-stream-descriptor}]]
+    (is (false? (evidence/receipt-stream-trigger? receipt))
+        (str "no keyword import trigger in " (pr-str receipt)))))
+
+(deftest receipt-stream-import-requires-its-kind-and-valid-descriptor
+  (is (true? (evidence/receipt-stream-import? valid-receipt-stream-import)))
+  (doseq [kind [nil :observation :correction "receipt-stream-import"]]
+    (let [receipt (assoc valid-receipt-stream-import :kind kind)]
+      (is (true? (evidence/receipt-stream-trigger? receipt)))
+      (is (false? (evidence/receipt-stream-import? receipt))
+          (str "descriptor presence does not authorize kind " (pr-str kind)))))
+  (doseq [receipt [(dissoc valid-receipt-stream-import :receipt/stream)
+                  (assoc valid-receipt-stream-import :receipt/stream nil)
+                  (assoc valid-receipt-stream-import :receipt/stream {})
+                  (update valid-receipt-stream-import :receipt/stream dissoc :source/head)
+                  (assoc-in valid-receipt-stream-import [:receipt/stream :source/delta-bytes] 0)
+                  (assoc-in valid-receipt-stream-import [:receipt/stream :source/head]
+                            (apply str (repeat 64 "a")))]]
+    (is (true? (evidence/receipt-stream-trigger? receipt)))
+    (is (false? (evidence/receipt-stream-import? receipt))
+        "an import trigger with missing or malformed descriptor is refused")))
+
+(deftest receipt-stream-import-preserves-strict-native-envelope-requirements
+  (doseq [field [:ts :origin :owner :dod :pi :host]]
+    (is (false? (evidence/receipt-stream-import?
+                  (dissoc valid-receipt-stream-import field)))
+        (str "missing native envelope field " field))
+    (doseq [value [nil "" " " :text]]
+      (is (false? (evidence/receipt-stream-import?
+                    (assoc valid-receipt-stream-import field value)))
+          (str "invalid native envelope field " field " value " (pr-str value)))))
+  (doseq [field [:manifest :refs]
+          value [nil "entry" '("entry") [""] [42]]]
+    (is (false? (evidence/receipt-stream-import?
+                  (assoc valid-receipt-stream-import field value)))
+        (str "native envelope vector field " field " value " (pr-str value))))
+  (doseq [receipt [nil false 42 []]]
+    (is (false? (evidence/receipt-stream-import? receipt))
+        (str "import record type " (pr-str receipt))))
+  (is (true? (evidence/receipt-stream-import?
+              (assoc valid-receipt-stream-import :manifest [] :refs [])))
+      "the existing native envelope permits empty string vectors"))
+
 (deftest validates-gate-catalogs
   (is (evidence/valid-catalog? valid-catalog))
   (is (= :gate/command
@@ -805,6 +968,330 @@
    :receipt/invalid-envelope
    (assoc-in (correction-fixture) [:items 1 :receipt/record :owner] "")))
 ;; END receipt-correction-view RED contract
+
+;; BEGIN receipt-stream-view RED contract
+;; These are synthetic, adapter-admitted Clojure facts. The pure composition
+;; cannot authenticate raw hashes, parse raw EDN, read Git or prove ancestry.
+;; Canonical identity uses :stream/repository/path/anchor/ledger-sha256;
+;; source identity uses :stream/repository/path plus source base/head/hash. Items are
+;; closed maps containing line/hash/raw/original/view, with absolute physical
+;; ordinals. Common count is parsed records, not a physical line boundary.
+;; Error maps use :error and the refusal codes asserted below. A refusal emits
+;; no partial ledger or correction provenance. Identity validation must retain
+;; existing canonical Git-ID compatibility; source base/head use the reviewed
+;; forty-character descriptor boundary. Canonical has exactly one valid import.
+;; No combined order is an occurrence key. Source common-view agreement is
+;; authenticated before this delta-only interface, at the adapter boundary.
+(defn receipt-stream-view-under-test []
+  (let [candidate (ns-resolve 'foresight.evidence 'receipt-stream-view)]
+    (when (ifn? candidate) candidate)))
+
+(def composition-canonical-identity
+  {:stream/repository "." :stream/path ".ημ/receipts.edn"
+   :stream/anchor (apply str (repeat 40 "c"))
+   :stream/ledger-sha256 (apply str (repeat 64 "c"))})
+
+(def composition-source-identity
+  {:stream/repository "." :stream/path ".ημ/receipts.edn"
+   :source/base revision-a :source/head revision-b
+   :source/ledger-sha256 (:source/ledger-sha256 valid-receipt-stream-descriptor)})
+
+(defn composition-record [origin]
+  {:ts "2026-10-08T01:20:00Z" :kind :observation :origin origin
+   :owner "pure-fixture" :dod "Preserve source occurrences" :pi "receipt-stream"
+   :host "synthetic admitted facts" :manifest [] :refs []})
+
+(defn composition-item
+  ([line original] (composition-item line original original))
+  ([line original view]
+   {:receipt/line line :receipt/sha256 (apply str (repeat 64 "a"))
+    :receipt/raw (str (pr-str original) "\n")
+    :receipt/record original :receipt/view view}))
+
+(defn composition-fixture []
+  (let [original (assoc (composition-record "source-target") :manifest "exact, path")
+        view (assoc original :manifest ["exact, path"])
+        entry {:receipt/line 7 :receipt/origin (:origin original)
+               :receipt/source-revision revision-b
+               :receipt/source-sha256 (apply str (repeat 64 "a"))
+               :envelope/corrected-fields {:manifest ["exact, path"]}}
+        correction (assoc (composition-record "source-correction")
+                          :kind :correction :correction/entries [entry])
+        import (assoc (composition-record "canonical-import")
+                      :kind :receipt-stream-import
+                      :receipt/stream (assoc valid-receipt-stream-descriptor
+                                             :source/ledger-records 4))]
+    {:canonical/items [(composition-item 1 (composition-record "common-a"))
+                       (composition-item 3 (composition-record "common-b"))
+                       (composition-item 7 (composition-record "canonical-ordinary"))
+                       (composition-item 9 import)]
+     :source/items [(composition-item 7 original view)
+                    (composition-item 11 correction)]
+     :common/records 2
+     :canonical/identity composition-canonical-identity
+     :source/identity composition-source-identity
+     :canonical/corrections []
+     :source/corrections [(assoc entry :correction/line 11)]}))
+
+(defn expected-composition-occurrence [role stream item]
+  {:receipt/stream-role role :receipt/stream stream
+   :receipt/identity [stream (:receipt/line item) (:receipt/sha256 item)]
+   :receipt/line (:receipt/line item) :receipt/sha256 (:receipt/sha256 item)
+   :receipt/raw (:receipt/raw item) :receipt/original (:receipt/record item)
+   :receipt/view (:receipt/view item)})
+
+(defn expect-composition-refusal! [compose scenario code facts]
+  (let [result (compose facts)]
+    (is (vector? (:receipt/errors result)) scenario)
+    (is (contains? (set (map :error (:receipt/errors result))) code)
+        (str scenario " must report " code))
+    (doseq [field [:ledger/occurrences :ledger/originals :ledger/views :receipt/corrections]]
+      (is (empty? (get result field))
+          (str scenario " must not publish partial " field)))))
+
+(deftest receipt-stream-view-api-must-exist
+  (is (some? (receipt-stream-view-under-test))
+      "Missing callable foresight.evidence/receipt-stream-view: intentional composition RED"))
+
+(deftest receipt-stream-view-preserves-exact-occurrences-originals-views-and-counts
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          canonical (:canonical/items facts)
+          imported (:source/items facts)
+          originals (mapv :receipt/record (into canonical imported))
+          views (mapv :receipt/view (into canonical imported))
+          expected {:receipt/errors []
+                    :ledger/occurrences
+                    (into (mapv #(expected-composition-occurrence
+                                  :canonical composition-canonical-identity %) canonical)
+                          (mapv #(expected-composition-occurrence
+                                  :imported composition-source-identity %) imported))
+                    :ledger/originals originals :ledger/views views
+                    :ledger/canonical-receipts 4 :ledger/imported-receipts 2
+                    :ledger/combined-receipts 6
+                    :receipt/corrections
+                    (mapv #(assoc % :receipt/stream composition-source-identity)
+                          (:source/corrections facts))}]
+      (is (= expected (compose facts)))
+      (is (= (compose facts) (compose facts)) "composition is deterministic")
+      (is (= facts (composition-fixture)) "original fixture facts are unchanged")
+      (is (= 6 (count (set (map :receipt/identity (:ledger/occurrences (compose facts))))))
+          "equal ordinals across streams retain distinct occurrence identities"))))
+
+(deftest receipt-stream-view-keeps-imported-occurrences-stable-after-canonical-append
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          first-view (compose facts)
+          next-facts (-> facts
+                         (update :canonical/items conj
+                                 (composition-item 12 (composition-record "later ordinary")))
+                         (assoc :canonical/identity
+                                (assoc composition-canonical-identity
+                                       :stream/anchor (apply str (repeat 40 "e"))
+                                       :stream/ledger-sha256 (apply str (repeat 64 "f")))))
+          next-view (compose next-facts)
+          imported #(filterv (fn [item] (= :imported (:receipt/stream-role item)))
+                             (:ledger/occurrences %))]
+      (is (= [] (:receipt/errors next-view)))
+      (is (= (imported first-view) (imported next-view)))
+      (is (= {:ledger/canonical-receipts 5 :ledger/imported-receipts 2
+              :ledger/combined-receipts 7}
+             (select-keys next-view [:ledger/canonical-receipts :ledger/imported-receipts
+                                    :ledger/combined-receipts])))
+      (is (= (:receipt/corrections first-view) (:receipt/corrections next-view))))))
+
+(deftest receipt-stream-view-scopes-correction-provenance-to-each-stream
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          source-entry (first (:source/corrections facts))
+          canonical-original (assoc (composition-record "canonical-ordinary")
+                                    :manifest "canonical, path")
+          canonical-view (assoc canonical-original :manifest ["canonical, path"])
+          canonical-entry (assoc source-entry :receipt/origin "canonical-ordinary"
+                                 :receipt/source-revision revision-a :correction/line 8
+                                 :envelope/corrected-fields {:manifest ["canonical, path"]})
+          canonical-document (assoc (composition-record "canonical-correction")
+                                    :kind :correction
+                                    :correction/entries [(dissoc canonical-entry :correction/line)])
+          facts (assoc facts :canonical/corrections [canonical-entry]
+                       :canonical/items
+                       (into (conj (subvec (:canonical/items facts) 0 2)
+                                   (composition-item 7 canonical-original canonical-view)
+                                   (composition-item 8 canonical-document))
+                             [(last (:canonical/items facts))]))
+          result (compose facts)]
+      (is (= [] (:receipt/errors result)))
+      (is (= [(assoc canonical-entry :receipt/stream composition-canonical-identity)
+              (assoc source-entry :receipt/stream composition-source-identity)]
+             (:receipt/corrections result)))
+      (is (= [7 7] (mapv :receipt/line (:receipt/corrections result)))
+          "already-admitted equal correction ordinals belong to separate streams"))))
+
+(deftest receipt-stream-view-retains-equal-raw-source-rows-at-distinct-ordinals
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [item (composition-item 261 (composition-record "source repeated"))
+          facts (assoc (composition-fixture)
+                       :source/items [item (assoc item :receipt/line 263)]
+                       :source/corrections [])
+          result (compose facts)
+          imported (filterv #(= :imported (:receipt/stream-role %)) (:ledger/occurrences result))]
+      (is (= [] (:receipt/errors result)))
+      (is (= [261 263] (mapv :receipt/line imported)))
+      (is (= [(:receipt/raw item) (:receipt/raw item)] (mapv :receipt/raw imported)))
+      (is (= 2 (count (set (map :receipt/identity imported)))))
+      (is (= 6 (:ledger/combined-receipts result))))))
+
+(deftest receipt-stream-view-overlap-boundary-is-common-parsed-count-not-line-number
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          common-item (second (:canonical/items facts))
+          source-item (assoc common-item :receipt/line 21)
+          result (compose (assoc facts :source/items [source-item] :source/corrections []))]
+      (is (= [] (:receipt/errors result)))
+      (is (= 5 (:ledger/combined-receipts result)))
+      (is (= (expected-composition-occurrence :imported composition-source-identity source-item)
+             (last (:ledger/occurrences result))))
+      (is (= [1 3 7 9 21] (mapv :receipt/line (:ledger/occurrences result)))
+          "blank physical lines do not consume common parsed-record count"))))
+
+(deftest receipt-stream-view-refuses-exact-raw-overlap-after-common-records
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          canonical-item (nth (:canonical/items facts) 2)
+          overlap (assoc canonical-item :receipt/line 21
+                         :receipt/sha256 (apply str (repeat 64 "b")))]
+      (expect-composition-refusal!
+       compose "raw overlap even when supplied hashes differ" :receipt-stream/raw-overlap
+       (assoc facts :source/items [overlap] :source/corrections [])))))
+
+(deftest receipt-stream-view-does-not-deduplicate-parsed-maps-or-supplied-hashes
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          canonical-item (nth (:canonical/items facts) 2)
+          source-item (assoc canonical-item :receipt/line 21
+                             :receipt/raw (str " " (:receipt/raw canonical-item)))
+          result (compose (assoc facts :source/items [source-item] :source/corrections []))]
+      (is (= [] (:receipt/errors result)))
+      (is (= 5 (:ledger/combined-receipts result)))
+      (is (= (:receipt/record canonical-item) (last (:ledger/originals result))))
+      (is (= (:receipt/raw source-item) (:receipt/raw (last (:ledger/occurrences result)))))
+      (is (= 5 (count (set (map :receipt/identity (:ledger/occurrences result)))))))))
+
+(deftest receipt-stream-view-allows-zero-common-records-with-one-valid-import
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (assoc (composition-fixture) :common/records 0)
+          result (compose facts)]
+      (is (= [] (:receipt/errors result)))
+      (is (= {:ledger/canonical-receipts 4 :ledger/imported-receipts 2
+              :ledger/combined-receipts 6}
+             (select-keys result [:ledger/canonical-receipts :ledger/imported-receipts
+                                  :ledger/combined-receipts]))))
+    (expect-composition-refusal!
+     compose "empty canonical journal has no required import" :receipt-stream/import-limit
+     (assoc (composition-fixture) :canonical/items [] :common/records 0))))
+
+(deftest receipt-stream-view-refuses-malformed-input-and-common-record-count
+  (when-let [compose (receipt-stream-view-under-test)]
+    (doseq [facts [nil 42 []]]
+      (expect-composition-refusal! compose "composition requires one Clojure map"
+                                   :receipt-stream/input facts))
+    (doseq [field (keys (composition-fixture))]
+      (expect-composition-refusal! compose (str "missing input field " field)
+                                   :receipt-stream/input (dissoc (composition-fixture) field)))
+    (doseq [value [nil false "2" -1 1.5 5]]
+      (expect-composition-refusal!
+       compose (str "common parsed count " (pr-str value)) :receipt-stream/common-records
+       (assoc (composition-fixture) :common/records value)))))
+
+(deftest receipt-stream-view-refuses-nonvector-items-and-correction-facts
+  (when-let [compose (receipt-stream-view-under-test)]
+    (doseq [field [:canonical/items :source/items]
+            value [nil {} '(item)]]
+      (expect-composition-refusal! compose (str "nonvector " field)
+                                   :receipt-stream/items (assoc (composition-fixture) field value)))
+    (doseq [field [:canonical/corrections :source/corrections]
+            value [nil {} '(entry) [42]]]
+      (expect-composition-refusal!
+       compose (str "malformed correction provenance " field) :receipt-stream/corrections
+       (assoc (composition-fixture) field value)))))
+
+(deftest receipt-stream-view-refuses-nonclosed-or-malformed-item-facts
+  (when-let [compose (receipt-stream-view-under-test)]
+    (doseq [role [:canonical/items :source/items]]
+      (let [facts (composition-fixture)
+            item (first (get facts role))
+            replace-item #(assoc-in facts [role 0] %)]
+        (doseq [candidate (concat
+                          [nil 42 (assoc item :receipt/order 0)]
+                          (map #(dissoc item %) (keys item))
+                          (map #(assoc item :receipt/line %) [nil 0 -1 "1" 1.5])
+                          (map #(assoc item :receipt/sha256 %)
+                               [nil (apply str (repeat 40 "a")) (apply str (repeat 64 "A"))])
+                          (map #(assoc item :receipt/raw %) [nil 42 "" "{}" "{}\n{}\n"])
+                          [(assoc item :receipt/record []) (assoc item :receipt/view nil)
+                           (assoc item :receipt/view [])])]
+          (expect-composition-refusal!
+           compose (str "malformed closed item in " role ": " (pr-str candidate))
+           :receipt-stream/item (replace-item candidate)))))))
+
+(deftest receipt-stream-view-refuses-duplicate-physical-lines-within-each-stream
+  (when-let [compose (receipt-stream-view-under-test)]
+    (doseq [role [:canonical/items :source/items]]
+      (let [facts (composition-fixture)
+            item (first (get facts role))]
+        (expect-composition-refusal!
+         compose (str "duplicate original ordinal within " role) :receipt-stream/duplicate-line
+         (update facts role conj (assoc item :receipt/raw (str " " (:receipt/raw item)))))))))
+
+(deftest receipt-stream-view-refuses-malformed-or-foreign-stream-identities
+  (when-let [compose (receipt-stream-view-under-test)]
+    (doseq [role [:canonical/identity :source/identity]]
+      (let [facts (composition-fixture)
+            identity (get facts role)
+            repository :stream/repository
+            path :stream/path
+            digest (if (= role :canonical/identity) :stream/ledger-sha256 :source/ledger-sha256)
+            revisions (if (= role :canonical/identity) [:stream/anchor] [:source/base :source/head])]
+        (doseq [candidate (concat
+                          [nil [] (assoc identity repository "foreign")
+                           (assoc identity repository nil) (assoc identity path "./.ημ/receipts.edn")
+                           (assoc identity digest (apply str (repeat 64 "A")))]
+                          (map #(dissoc identity %) (keys identity))
+                          (map #(assoc identity % "short-revision") revisions))]
+          (expect-composition-refusal! compose (str "invalid stream identity " role)
+                                       :receipt-stream/identity (assoc facts role candidate)))))))
+
+(deftest receipt-stream-view-refuses-nested-import-triggers-in-originals-or-views
+  (when-let [compose (receipt-stream-view-under-test)]
+    (doseq [field [:receipt/record :receipt/view]
+            record [(assoc (composition-record "nested") :kind :receipt-stream-import)
+                    (assoc (composition-record "nested") :receipt/stream nil)]]
+      (expect-composition-refusal!
+       compose (str "source delta nested import trigger in " field) :receipt-stream/nested-import
+       (assoc-in (composition-fixture) [:source/items 0 field] record)))))
+
+(deftest receipt-stream-view-refuses-more-than-one-canonical-import
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          first-import (last (:canonical/items facts))]
+      (expect-composition-refusal!
+       compose "a later second canonical import cannot survive pure composition"
+       :receipt-stream/import-limit
+       (update facts :canonical/items conj (assoc first-import :receipt/line 12))))))
+
+(deftest receipt-stream-view-refuses-invalid-canonical-import-triggers
+  (when-let [compose (receipt-stream-view-under-test)]
+    (let [facts (composition-fixture)
+          import (:receipt/record (last (:canonical/items facts)))]
+      (doseq [record [(dissoc import :receipt/stream)
+                      (assoc import :receipt/stream nil)
+                      (assoc import :kind :observation)
+                      (assoc import :kind :correction)]]
+        (expect-composition-refusal!
+         compose "canonical trigger must be one valid native import"
+         :receipt-stream/import
+         (assoc-in facts [:canonical/items 3] (composition-item 9 record)))))))
+;; END receipt-stream-view RED contract
 
 (defmethod test/report [::test/default :end-run-tests] [summary]
   (set! (.-exitCode js/process) (if (test/successful? summary) 0 1)))

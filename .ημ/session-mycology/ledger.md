@@ -928,3 +928,10 @@
 - Real frozen Git fixture RED76/417/54fail/0errors confirms missing provenance composition and unsafe held admission, rather than rewriting old receipts to create failure. Preserve265canonical+19source occurrences and original267–277 correction coordinates.
 - Original maps and histories stay exact; containing repository attribution belongs outside them. Current source code still requires GREEN and independent exact-head code review.
 - Full character goal active; automation paused. No spore/runtime/provider/social effects.
+
+## 2026-10-08T01:41:42.718076+00:00 — pure composition contracts before domain
+
+- Receipt `cephalon-receipt-stream-pure-composition-red-20261008T0145`; efficiency0.78, friction0.21, skill-candidate0.16.
+- Actual78/521/1failure0errors is the missing composition API;16 guarded behavioral tests remain unexecuted. Adapter RED was independently committed first.
+- Label held canonical revision as anchor, retain source identity and physical ordinals, and refuse ambiguous overlap rather than deduplicating source rows. No original map or prior evidence rewritten.
+- Domain/adapter GREEN and exact code review remain required. Full character goal active, automationpaused; no spore or runtime effect.

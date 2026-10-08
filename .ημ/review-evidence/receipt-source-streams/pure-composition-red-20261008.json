@@ -1,0 +1,27 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "observed_at": "2026-10-08T01:41:13.414413+00:00",
+  "pure_red": {
+    "exit": 1,
+    "tests": 78,
+    "assertions": 521,
+    "failures": 1,
+    "errors": 0,
+    "cause": "Missing callable receipt-stream-view;16 conditional behavior tests not executed yet",
+    "logs": {
+      "stdout": {
+        "bytes": 389,
+        "sha256": "88654b3b1985debc91d54cfe23988fef0afdff2de077b1166159617ea8b63c79"
+      },
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "limits": [
+    "Actual missing-function RED, not passed composition behavior",
+    "Adapter GREEN WIP uncommitted and not included in this RED commit",
+    "No current code approval, PR27 integration, deployment or completed character goal"
+  ]
+}

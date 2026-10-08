@@ -229,6 +229,40 @@
        (vector? (:refs receipt))
        (every? nonblank-string? (:refs receipt))))
 
+(def ^:private receipt-stream-descriptor-keys
+  #{:source/base :source/head :source/path
+    :source/ledger-sha256 :source/ledger-bytes :source/ledger-records
+    :source/delta-sha256 :source/delta-bytes :source/delta-records})
+
+(defn receipt-stream-descriptor?
+  "Closed shape of one source stream. Byte, count and ancestry proof is external."
+  [descriptor]
+  (and (map? descriptor)
+       (= receipt-stream-descriptor-keys (set (keys descriptor)))
+       (every? #(and (string? %)
+                     (boolean (re-matches #"[0-9a-f]{40}" %)))
+               ((juxt :source/base :source/head) descriptor))
+       (= receipt-ledger-path (:source/path descriptor))
+       (every? sha256?
+               ((juxt :source/ledger-sha256 :source/delta-sha256) descriptor))
+       (every? #(and (integer? %) (pos? %))
+               ((juxt :source/ledger-bytes :source/ledger-records
+                      :source/delta-bytes :source/delta-records) descriptor))))
+
+(defn receipt-stream-trigger?
+  "Recognize import grammar by kind or descriptor-key presence, even if invalid."
+  [receipt]
+  (and (map? receipt)
+       (or (= :receipt-stream-import (:kind receipt))
+           (contains? receipt :receipt/stream))))
+
+(defn receipt-stream-import?
+  "Strict envelope and source descriptor shape; this predicate grants no admission."
+  [receipt]
+  (and (receipt-envelope? receipt)
+       (= :receipt-stream-import (:kind receipt))
+       (receipt-stream-descriptor? (:receipt/stream receipt))))
+
 (def ^:private correction-envelope-fields #{:manifest :refs :dod :pi})
 
 (def ^:private correction-entry-keys
