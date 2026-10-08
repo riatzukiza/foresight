@@ -1,10 +1,11 @@
 ---
 uuid: "d67f9876-6941-4bc9-b7cd-90e9b469aa95"
 title: "Admit an immutable source receipt stream during branch integration"
-status: incoming
-priority: P1
-points: 5
+status: "in_progress"
+priority: "P1"
+points: "5"
 labels: "evidence, receipts, compatibility, confluence, laws"
+write-id: "1791422281814-0.0y6ff6wcy34bkcwvq3ya"
 ---
 
 ## Context

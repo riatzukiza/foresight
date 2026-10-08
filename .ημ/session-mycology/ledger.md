@@ -920,3 +920,11 @@
 - Native reviewer found checkout-only links in the source map; all16 now bind published repository revisions and exact paths/lines with equal local/Git bytes.
 - Preserved descriptions and receipt originals. A later provenance verification does not retroactively date the source pin or prove deployed behavior. One Knoxx client differs from served2644, so only the two actual matching sources retain byte equivalence.
 - No spore, source behavior, maker interruption, provider request, social publication or full-goal completion. The confluence plan remains incoming until current native planning and Rheos readiness.
+
+## 2026-10-08T01:37:51.835906+00:00 — preserve source stream failure before admission repair
+
+- Receipt `cephalon-receipt-stream-native-ready-and-red-20261008T0138`; efficiency0.77, friction0.25, skill-candidate0.18.
+- Actual current planning qualified; native accepted→breakdown→ready→todo→in_progress was admitted. Direct incoming→ready refusal retained separately.
+- Real frozen Git fixture RED76/417/54fail/0errors confirms missing provenance composition and unsafe held admission, rather than rewriting old receipts to create failure. Preserve265canonical+19source occurrences and original267–277 correction coordinates.
+- Original maps and histories stay exact; containing repository attribution belongs outside them. Current source code still requires GREEN and independent exact-head code review.
+- Full character goal active; automation paused. No spore/runtime/provider/social effects.
