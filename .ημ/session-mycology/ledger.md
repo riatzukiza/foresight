@@ -1115,3 +1115,10 @@ Finiteencounter/field,moodandautomaticactualprincipalrecall slice remainsunfinis
 Receipt `cephalon-parent-older-base-receipt-refusal-20261008T0425` preserves actual96/e7 EXIT2 stdout90/stderr0 and exactcommon1069 bytes. The immediate-base consumer qualification remains history; checking the older cumulative base revealed a missed adapter boundary. New card b44514f0 is one proposed3point receipt repair, Incoming only. Source-map finding4213507071 is settled by the delivered sixteen pinned links.
 
 Efficiency0.58/friction0.56/skill-candidate0.40: distinguish the diff comparison base from the immutable canonical authority for imported common-prefix identity. Preserve both independent proofs. The initial stderr assertion was corrected by actual separate-channel capture; it is not a product test. No spore. GoalACTIVE/heartbeatPAUSED; finite encounter, consumed mood and actual-principal recall remain unfinished.
+
+
+## Receipt-anchor acceptance command correction — 2026-10-08T04:47:58.916Z
+
+Receipt `cephalon-pr30-acceptance-command-correction-20261008` preserves native PR30 finding4214749761 and changes only AC5 prose to the supported full `--base`/`--at` command. Actual parser values pass and unsupported `--base96` is refused. Earlier receipts' compressed narrative stays untouched. All thirteen initial plan gates passed; the cumulative parent independently failed receipt_history, so producer success is not gate success.
+
+Efficiency0.70/friction0.32/skill-candidate0.28: compare the parser values of interest while retaining its defaults, and publish executable commands separately from compressed historical notation. The initial overstrict assertion and wrong API endpoint remain truthful operator failures. No spore; goalACTIVE/heartbeatPAUSED. Native Ready, adapter regression repair and finite character encounter/mood/actual-principal recall proof remain unfinished.

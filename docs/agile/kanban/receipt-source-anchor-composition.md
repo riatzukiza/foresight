@@ -101,10 +101,19 @@ hand-editing their status; transfer source approvals to the parent.
    Keep existing malformed descriptors, overlapping deltas, conflicting common
    views, duplicate imports and source framing tests passing.
 5. Preserve the original parent command surface. The repaired immutable
-   candidate passes `verify-receipts --base96 --at <full candidate SHA>` and its
-   actual implementation-PR base/head gate, with separately reported counts.
-   All required hosted gates, complete changed-input review, native findings
-   settlement and exact-head convergence pass before parent integration.
+   candidate passes this command with the actual comparison-base commit and
+   captured full candidate SHA:
+
+   ```bash
+   nbb -cp src:scripts scripts/evidence.clj verify-receipts \
+     --base 96a6dca24cb7a14b041bdd6e3e7922c568238da9 \
+     --at "$(git rev-parse HEAD)"
+   ```
+
+   Its actual implementation-PR base/head gate also passes, with separately
+   reported counts. All required hosted gates, complete changed-input review,
+   native findings settlement and exact-head convergence pass before parent
+   integration.
 
 ## Verification
 
