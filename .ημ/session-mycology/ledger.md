@@ -1108,3 +1108,10 @@ Receipt `cephalon-pr27-qualified-consumer-and-native-reader-close-20261008T0405`
 Both receipt cards are nowDone throughactualRheos. Earlierprivate envelope-readerReview wasuncommitted; deliveredcanonical cardwasInProgress. ExpectedReviewassertion andInProgress→Document refusal retained; nativeTesting→Review→Document→Done succeeded. Oldprivate card/event bytes androot/sourceuncommittedprovenance wereleftintact. Newcanonicaleventprefix isexact; no handstatusedit or eventrecreation.
 
 Finiteencounter/field,moodandautomaticactualprincipalrecall slice remainsunfinished; upstreamdependency-admission andsourcegatesretainauthority. GoalACTIVE/heartbeatPAUSED. Efficiency0.68/friction0.43/skill-candidate0.31: inspectactualmergedboardprojection before selecting a transition; do notturn a private state snapshot into deliveredstate. No sporeincubated/promoted andno runtimeeffects.
+
+
+## Cumulative parent receipt anchor boundary — 2026-10-08T04:28:21.266Z
+
+Receipt `cephalon-parent-older-base-receipt-refusal-20261008T0425` preserves actual96/e7 EXIT2 stdout90/stderr0 and exactcommon1069 bytes. The immediate-base consumer qualification remains history; checking the older cumulative base revealed a missed adapter boundary. New card b44514f0 is one proposed3point receipt repair, Incoming only. Source-map finding4213507071 is settled by the delivered sixteen pinned links.
+
+Efficiency0.58/friction0.56/skill-candidate0.40: distinguish the diff comparison base from the immutable canonical authority for imported common-prefix identity. Preserve both independent proofs. The initial stderr assertion was corrected by actual separate-channel capture; it is not a product test. No spore. GoalACTIVE/heartbeatPAUSED; finite encounter, consumed mood and actual-principal recall remain unfinished.
