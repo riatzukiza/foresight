@@ -1,0 +1,143 @@
+{
+  "evidence_tier": "observed immutable refusal and explicit corrected source selection",
+  "failed_trial_head": "24577789d1df2205a5f5a3d395789e504abfba52",
+  "unpublished_trial_head": true,
+  "actual_refusal": "Receipt source stream admission refused: [{:error :receipt-stream/raw-overlap, :receipt/line 260} {:error :receipt-stream/raw-overlap, :receipt/line 261} {:error :receipt-stream/raw-overlap, :receipt/line 262} {:error :receipt-stream/raw-overlap, :receipt/line 263} {:error :receipt-stream/raw-overlap, :receipt/line 264} {:error :receipt-stream/raw-overlap, :receipt/line 265}]\n",
+  "actual_refusal_exit": 2,
+  "qualified_canonical_prefix": {
+    "revision": "a17efe1110e857d3b72f686729e18dcd6ebe55d0",
+    "bytes": 523390,
+    "sha256": "57a4d1b895a68d30717bc01173cad2f8ff13ee6f60a48f0acf5c3cf2e2edf649",
+    "exact": true
+  },
+  "original_source": {
+    "revision": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+    "sha256": "dee76493aaf8dbcb0f6c8ef998bea7b0a235b1f7704789c21e3633d04a15d8c5",
+    "all_original_bytes_retained_in_git": true
+  },
+  "shared_original_occurrences": [
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 260,
+      "origin": "cephalon-character-correction-published-native-head-lag-20261007",
+      "sha256_with_LF": "90fdb54fafecfbd880d1d12916eec329eb5d9e411c965ec2e83ddf7d2472217c",
+      "bytes": 3699,
+      "new_canonical_line": 278,
+      "same_bytes_in_existing_import": true,
+      "canonical_disposition": "already retained byte-identically at imported source bdac1ed6470c98128ff367e757132797a39ac436",
+      "trial_new_address_refused": true
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 261,
+      "origin": "cephalon-character-graph-memory-boundary-observation-20261007",
+      "sha256_with_LF": "eb3ab0517f617d67016a233290f662c9492881b92af228f73c2ea9f40e6cd66a",
+      "bytes": 2478,
+      "new_canonical_line": 279,
+      "same_bytes_in_existing_import": true,
+      "canonical_disposition": "already retained byte-identically at imported source bdac1ed6470c98128ff367e757132797a39ac436",
+      "trial_new_address_refused": true
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 262,
+      "origin": "cephalon-character-graph-boundary-handoff-20261007",
+      "sha256_with_LF": "b7af9c3fee58a7643b4691cd7e758da0ffdab18e2e1c35af4ee9e43e1bf67b20",
+      "bytes": 1371,
+      "new_canonical_line": 280,
+      "same_bytes_in_existing_import": true,
+      "canonical_disposition": "already retained byte-identically at imported source bdac1ed6470c98128ff367e757132797a39ac436",
+      "trial_new_address_refused": true
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 263,
+      "origin": "cephalon-character-native-pr-refresh-and-quota-20261007T1550",
+      "sha256_with_LF": "5ee6da2d7647bd70b6a400f13fe9f2a3c71dba2356d1d45a786ed7a401924a88",
+      "bytes": 4892,
+      "new_canonical_line": 281,
+      "same_bytes_in_existing_import": true,
+      "canonical_disposition": "already retained byte-identically at imported source bdac1ed6470c98128ff367e757132797a39ac436",
+      "trial_new_address_refused": true
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 264,
+      "origin": "cephalon-character-native-refresh-canonical-handoff-20261007T1607",
+      "sha256_with_LF": "9660e354044993a4cb824304f9ca976fbadf8be96a4c700ef0edebd343b3e2ad",
+      "bytes": 1531,
+      "new_canonical_line": 282,
+      "same_bytes_in_existing_import": true,
+      "canonical_disposition": "already retained byte-identically at imported source bdac1ed6470c98128ff367e757132797a39ac436",
+      "trial_new_address_refused": true
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 265,
+      "origin": "cephalon-character-completed-mimo-planning-pass-20261007T1625",
+      "sha256_with_LF": "a306c93d349589efac59e4f7b14ab46fa435a331ef676035f0cf3f0d5bb5b691",
+      "bytes": 5387,
+      "new_canonical_line": 283,
+      "same_bytes_in_existing_import": true,
+      "canonical_disposition": "already retained byte-identically at imported source bdac1ed6470c98128ff367e757132797a39ac436",
+      "trial_new_address_refused": true
+    }
+  ],
+  "unique_original_occurrences": [
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 266,
+      "origin": "cephalon-character-physical-kernel-selection-proposal-20261007",
+      "sha256_with_LF": "aa3852bf19be4adeac51f1d1fb27fc33746be93c7edfa8268fca288afd8574a2",
+      "bytes": 3883,
+      "new_canonical_line": 278,
+      "same_bytes_in_existing_import": false,
+      "canonical_disposition": "unchanged new canonical copy with disclosed original address"
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 267,
+      "origin": "cephalon-kernel-selection-publication-server-failure-20261007T1657",
+      "sha256_with_LF": "170742cc8e881cccd310508dfe1d2c8c2d68429a9b6f3f8c299dc555bef985c4",
+      "bytes": 3650,
+      "new_canonical_line": 279,
+      "same_bytes_in_existing_import": false,
+      "canonical_disposition": "unchanged new canonical copy with disclosed original address"
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 268,
+      "origin": "cephalon-kernel-selection-final-publication-failure-20261007T1659",
+      "sha256_with_LF": "104f24c2ca72dfd359c3f0587b9da1e5b32e50a55fcb1fab18040887ea1e1f9d",
+      "bytes": 1692,
+      "new_canonical_line": 280,
+      "same_bytes_in_existing_import": false,
+      "canonical_disposition": "unchanged new canonical copy with disclosed original address"
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 269,
+      "origin": "cephalon-kernel-selection-paused-handoff-readback-20261007T1700",
+      "sha256_with_LF": "28a7a3ce5992d42f889a037438e906da0939953e3718c7ab525084e28661ea92",
+      "bytes": 1747,
+      "new_canonical_line": 281,
+      "same_bytes_in_existing_import": false,
+      "canonical_disposition": "unchanged new canonical copy with disclosed original address"
+    },
+    {
+      "original_source": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+      "original_line": 270,
+      "origin": "cephalon-kernel-review-completed-and-docstrings-20261007",
+      "sha256_with_LF": "c9640692831bc543d61454d8bbbdabfc21ab2dbf67118df686a1102098f3bd84",
+      "bytes": 9767,
+      "new_canonical_line": 282,
+      "same_bytes_in_existing_import": false,
+      "canonical_disposition": "unchanged new canonical copy with disclosed original address"
+    }
+  ],
+  "overlap_rule": "Existing canonical reader rejects duplicate raw source/canonical bytes. The six shared original records remain at existing imported addresses; original6a source identity/history stays inspectable. No deduplication or rewrite of either original source blob, second import or reader change.",
+  "owned_held_bytes_retained": true,
+  "bad_held_envelope": "Retained unchanged; fresh source-bound singleton-vector correction must bind its corrected physical address after this ordinary recovery merge.",
+  "operator_error": "Local trial was fast-forwarded before combined gate result was inspected. No remote push/review/runtime action. Correction uses ordinary commits preserving failed245 and source6a histories; no reset/amend/force.",
+  "supersedes": "Earlier prepared full-eleven-copy integration is preserved as a failed trial, not claimed to have passed or to be the current admitted journal."
+}
