@@ -1237,3 +1237,8 @@ Efficiency0.70/friction0.32/skill-candidate0.28: compare the parser values of in
 - Preserve current target `a17efe1110e857d3b72f686729e18dcd6ebe55d0` prefixes; the complete original `6a4438982fdf1eca98f856748bb23b19ab017c0a` receipt/reflection suffixes and held appends remain byte-identical. All eleven receipt occurrences are retained, including six overlapping byte values; no deduplication or new outcomes claimed. Original/new coordinate and LF hash map: `.ημ/review-evidence/cephalon-character/pr26-current-parent-integration-20261008T2234.json`.
 - Five investigation JSDoc blocks resolve the add/add conflict without executable change. Actual candidate/current-head hosted review remains required.
 - Scores: efficiency0.82; friction0.35; skillcandidate0.12. Resolve concrete integration using existing admission laws and explicit source provenance; do not turn journal overlap into another semantic authority. No spore or behavior/readiness/deployment completion.
+
+## 2026-10-08T22:35:24.962Z — source-bound held envelope correction
+
+- Actual private candidate dc534 receipt admission refused unchanged held record `cephalon-selection-current-availability-20261007T1931` at canonical line 291. Append correction 293 supplies the existing law's singleton-vector view of original manifest/refs; no original field or byte edited.
+- Native current-head review and final immutable GREEN remain subsequent gates. Source ancestry and LF hash retained. No spore, extra parser, historical repo migration, board/runtime mutation or behavior completion.
