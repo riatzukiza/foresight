@@ -1188,17 +1188,22 @@
     (catch :default _
       (stream-refuse! "source is not an ancestor of the exact anchor"))))
 
-(defn- read-source-stream! [descriptor canonical-base-bytes anchor]
+(defn- read-source-stream! [descriptor canonical-candidate-bytes anchor]
   (try
     (let [base (read-immutable-receipt-ledger! (:source/base descriptor))
           head (read-immutable-receipt-ledger! (:source/head descriptor))
+          canonical-anchor (read-immutable-receipt-ledger! anchor)
           base-bytes (:ledger/bytes base)
           head-bytes (:ledger/bytes head)]
       (require-stream-ancestor! (:source/base descriptor) anchor)
       (require-stream-ancestor! (:source/head descriptor) anchor)
       (require-stream-ancestor! (:source/base descriptor) (:source/head descriptor))
+      ;; The caller's comparison base may precede the shared stream prefix.
+      ;; Authenticate that prefix at the committed canonical anchor and in the
+      ;; admitted candidate; held bytes alone cannot establish this trust.
       (when-not (and (buffer-prefix? base-bytes head-bytes)
-                     (buffer-prefix? base-bytes canonical-base-bytes))
+                     (buffer-prefix? base-bytes (:ledger/bytes canonical-anchor))
+                     (buffer-prefix? base-bytes canonical-candidate-bytes))
         (stream-refuse! "source base is not the proven common byte prefix"))
       (when-not (and (= 10 (.at head-bytes -1))
                      (or (zero? (.-length base-bytes)) (= 10 (.at base-bytes -1))))
@@ -1245,7 +1250,7 @@
                        (law/git-commit-id? anchor))
           (stream-refuse! "expected one well-shaped direct import and immutable anchor"))
         (let [descriptor (:receipt/stream (:receipt/record (first imports)))
-              source (read-source-stream! descriptor base-bytes anchor)
+              source (read-source-stream! descriptor head-bytes anchor)
               ;; Keep existing envelope/result validation and correction source
               ;; authentication within each stream's original physical ordinals.
               canonical-admission (admit-single-receipt-extension! head-bytes anchor appended)
