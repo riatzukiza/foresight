@@ -1,0 +1,530 @@
+{
+  "schema": "open-hax.github-review/v1",
+  "event": "APPROVE",
+  "summary": "Reviewed PR #22 (base 96a6dca → head 1069d4c): complete immutable diff of 58 files / 82 chunks, all pages read and assessed — append-only receipts and session-mycology ledger appends, ~40 archived review-evidence JSONs (PR22/136/386 bot reviews, proxx/knoxx runtime observations), 14 kanban planning cards across the always-on and character epics, two operator/verification notes plus a 603-line operational evidence report, one additive CI gate, and the new read-only diagnostic `scripts/verify_cephalon_local.cljs` with its fixture suite `test/verify_cephalon_local_test.cljs`.\n\nDeterministic evidence: 13/13 gates exit 0 at exact head on a clean checkout (workspace 24/120, cephalon_diagnostic 12/93, project/lineage/evidence laws, contracts, migration pack, receipt history, diff hygiene); opencode/jscpd ENOENT lines are isolated-runner tool absences, not change-introduced failures.\n\nConfirmed findings: none. Three low-severity candidates were registered and all rejected under adversarial validation: (1) the `:end-run-tests` exit hook is the exact extension nbb's bundled cljs.test documents and is already used by five pre-existing suites whose gates catch red fixtures; (2) mixed scalar/array `dependency:` frontmatter is pre-existing corpus convention (unchanged cc1/cc2 cards use arrays), no repo gate parses kanban frontmatter (all 13 gates green), the installed Rheos loader's metadata drop is disclosed and tracked upstream (rheos#3), and no card claims admission; (3) the diagnostic's \"Failures: N\" equals the printed FAIL lines on every path (throw paths print a second FAIL line from the -main catch) with the correct exit status, pinned by exact-count test assertions. Independently verified that all three archived CodeRabbit findings (destination access-policy + negative no-write tests, b5f2ba9e predecessor in the physical-field dependency array, 7-vs-8 WARN labeling) are addressed in current content and honestly labeled as planning criteria with runtime guarantees still unimplemented; card UUID cross-references, dependency orientations, and point arithmetic (24/21 vs frontmatter 16; 34+3=37 vs frontmatter 34; 10×3+1+5=36min cycle budget) are internally consistent with no status, transition, or frontmatter-points changes.\n\nNon-blocking notes: the spawnSync-nonzero / docker-exec-inner-failure paths are only indirectly fixture-covered (test gap without a demonstrated regression); archived bot approvals in the diff bind historical heads and were not treated as current evidence; absolute host paths in planning notes are provenance references only.",
+  "input-source": {
+    "schema": "open-hax.review-input/v1",
+    "base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "head_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "diff_base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "full_diff": {
+      "path": "basehead.diff",
+      "bytes": 600848,
+      "sha256": "8726521a16d16e6d665648f79cdc74ea860c979a4155ce29cf8306afca174a36"
+    },
+    "preview": {
+      "path": "pr.diff",
+      "limit_bytes": 300000,
+      "truncated": true
+    },
+    "provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "22",
+      "run_id": "37647239158",
+      "run_attempt": "1",
+      "workflow_sha": "fcb7ba01fabe2531d1b85be5f41fb8bb1514c368",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/22/merge"
+    }
+  },
+  "input-coverage": {
+    "chunks": 82,
+    "delivered": 82,
+    "assessed": 82,
+    "missing": []
+  },
+  "input-assessments": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8192,
+      "note": "Chunk 1 (bytes 0-8192): (a) `.github/workflows/eta-mu-review.yml` adds one deterministic gate line `run_gate cephalon_diagnostic npx ... test/verify_cephalon_local_test.cljs` — additive CI gate invoking a new test file; no existing gate removed or weakened. (b) `.ημ/receipts.edn` begins appending new records after the existing prefix: first new record is a 2026-10-06T19:03:00Z :test-run receipt (cephalon-always-on-local-activation) with manifest refs to verify script and verification doc, honest limits (no board transition, no approval claims). Second new record begins (2026-10-06T19:25 correction) and continues into chunk 2. Append-only structure preserved (existing lines unchanged, + additions only). No behavioral code here; content is operational provenance. No defect candidate from these hunks."
+    },
+    {
+      "id": 2,
+      "start": 8192,
+      "end": 16384,
+      "note": "Chunk 2 (8192-16384): continuation of appended `.ημ/receipts.edn` records — 2026-10-06T19:25 correction (clock liveness basis), a delegation/three-cycles test-run record, a second-native-planning-findings decision record, and start of a fourth-cycle observation record. All are append-only EDN maps with :ts/:kind/:origin/:owner/:dod/:pi/:host/:manifest/:refs/:tests/:note keys consistent with existing records. Notes explicitly disclaim approvals/qualifications (no fabrication of review credit). No code, no contract change. No defect candidate."
+    },
+    {
+      "id": 3,
+      "start": 16384,
+      "end": 24576,
+      "note": "Chunk 3 (16384-24576): continued receipts.edn appends — heartbeat observation, source386 native qualification observation, pr136 manifest hardening test-run, timestamped cycle-count decision, and start of a native-complete-input-gap observation. Consistent append-only format; claims reference native review IDs and explicitly distinguish quota from approval. Content is evidence records, not executable behavior. No defect candidate."
+    },
+    {
+      "id": 4,
+      "start": 24576,
+      "end": 32768,
+      "note": "Chunk 4 (24576-32768): continued receipts.edn appends — native-complete-input-gap observation (notes CodeRabbit skipped receipts; opens upstream issue rather than waiving), sampled-publication-diagnostic test-run (test counts and fail-closed fixes documented), personal-fork-review-migration decision (env var names present but values not read/printed — no secret exposure in receipt text). Append-only; existing prefix untouched. No executable behavior; no defect candidate."
+    },
+    {
+      "id": 5,
+      "start": 32768,
+      "end": 40960,
+      "note": "Chunk 5 (32768-40960): more appended receipts.edn records — personal-review native Rheos evidence (records eta-mu 1.1.1/rheos 0.1.0 dependency-tolerance probe, explicitly no graph admission), subscription/privacy observation (CodeRabbit finding on destination access → requires permission check + zero-external-writes denial criteria in future red phase), native settlement observation, and start of a diagnostic failure-coverage test-run. Notes disclaim credentials ('values were not read or printed', 'no credential bytes recorded'). Append-only; consistent schema; no executable change. No defect candidate."
+    },
+    {
+      "id": 6,
+      "start": 40960,
+      "end": 49152,
+      "note": "Chunk 6 (40960-49152): continued receipts appends — expanded native diagnostic 8/46 test-run, push-truth record, head-qualification observation, complete-review-fixes test-run (RED 10/60 with documented fixture-edge normalization then GREEN; card frontmatter byte-identical claims), and start of literal-container-boundary test-run. Honest RED/GREEN reporting including an initial failed attempt not counted as red evidence. Append-only EDN. No executable behavior change; no defect candidate."
+    },
+    {
+      "id": 7,
+      "start": 49152,
+      "end": 57344,
+      "note": "Chunk 7 (49152-57344): continued receipts appends — literal-container test-run completion (wrong-container control exits 1), push-truth successor record, head-qualification observation (notes failed Discord send/empty tool receipts remain visible — honest failure retention), five-slice-note test-run, and start of named-missing-contract-files test-run (RED 11/66 exposes two missing manifest entries; GREEN uses existsSync guard). All append-only evidence records with consistent keys; disclaimers about no board/deployment mutation. No defect candidate."
+    },
+    {
+      "id": 8,
+      "start": 57344,
+      "end": 65536,
+      "note": "Chunk 8 (57344-65536): continued receipts appends — missing-file native settlement push-truth, current-workflow-admission observation, historical-mimo-scope observation (explicitly keeps historical APPROVE from transferring to successor head), read-only follow-up observation (host boot/docker restart evidence; failed Kimi quota not counted as approval). Append-only; honest provenance discipline. No executable change; no defect candidate."
+    },
+    {
+      "id": 9,
+      "start": 65536,
+      "end": 73728,
+      "note": "Chunk 9 (65536-73728): continued receipts appends — current MiMo/full-request observation (failed preflights explicitly deny review credit), success-floor-and-malformed-feed test-run (RED 12/72 with actual TypeError reproduction; Array.isArray guard GREEN 12/93; frontmatter byte-identical claims), root-qualified observation (exact head 22b4c12 binding, 228/29 receipts), and start of native-timeout observation. Honest evidence discipline throughout; append-only. No executable change; no defect candidate."
+    },
+    {
+      "id": 10,
+      "start": 73728,
+      "end": 81920,
+      "note": "Chunk 10 (73728-81920): continued receipts appends — timeout/successor-clock observation (failed 02:37 run preserved, next admission observed without fencing claims), full-review request observation (pending ≠ approval), pending-handoff observation (records a byte-equality assertion failure and its normalization correction honestly), completed-review observation (CodeRabbit completion archived with SHA256). Append-only evidence. No defect candidate."
+    },
+    {
+      "id": 11,
+      "start": 81920,
+      "end": 90112,
+      "note": "Chunk 11 (81920-90112): continued receipts appends — several 'unchanged read-only follow-up' observations recording stable canonical status, quota non-approval discipline, failed music_generate receipts retained, no mutation claims. Uniform append-only schema; explicit non-claims about fencing/quality. No executable behavior; no defect candidate."
+    },
+    {
+      "id": 12,
+      "start": 90112,
+      "end": 98304,
+      "note": "Chunk 12 (90112-98304): continued receipts appends — another unchanged follow-up, then a Proxx stream bootstrap repair decision record. The decision describes an operational change to an EXTERNAL cloud Proxx compose/env (UPSTREAM_STREAM_BOOTSTRAP_TIMEOUT_MS 8000→60000) performed outside this repository; in-diff it is only an evidence record with hashes and explicit non-claims (no gate waiver, no synthetic approvals). Manifest references repo evidence JSON files introduced by this PR. Note the record's honest limits: empty image alt and wrong timestamp path remain unimplemented admission requirements. No defect introduced by the diff itself; content claims are operational provenance, not repo behavior."
+    },
+    {
+      "id": 13,
+      "start": 98304,
+      "end": 106496,
+      "note": "Chunk 13 (98304-106496): continued receipts appends — automation readback correction (initial assertion failure honestly recorded, corrected comparison passed), and three post-repair read-only follow-up observations with unchanged canonical status and explicit non-claims. Append-only, consistent schema, no executable content. No defect candidate."
+    },
+    {
+      "id": 14,
+      "start": 106496,
+      "end": 114688,
+      "note": "Chunk 14 (106496-114688): continued receipts appends — four more read-only follow-up observations (07:22, 07:55, 08:22 runs) with failed music_generate/SVG rasterization failures retained and explicitly not erased; bounded text-only WARN not over-claimed. Append-only evidence; no repo behavior change. No defect candidate."
+    },
+    {
+      "id": 15,
+      "start": 114688,
+      "end": 122880,
+      "note": "Chunk 15 (114688-122880): continued receipts appends — three more unchanged follow-up observations (08:51, 09:21, 09:52) with same honest non-claims, then start of a :catalog record (character memory intent recovery) referencing the new note and evidence JSON. Append-only; no executable change. No defect candidate."
+    },
+    {
+      "id": 16,
+      "start": 122880,
+      "end": 131072,
+      "note": "Chunk 16 (122880-131072): receipts appends — intent-recovery :catalog record (records drift: donor set_mood unconsumed, empty-hit vs API-hit discrepancy not root-caused due to principal/corpus difference — careful epistemics), character planning/authority decision (authored epic + seven stories, 34 provisional points, explicit 'not native admission'), and start of review-prerequisites decision. Notably records operator lookup mistakes as corrections rather than verification. Append-only evidence; claims are planning provenance. No defect candidate in the diff itself."
+    },
+    {
+      "id": 17,
+      "start": 131072,
+      "end": 139264,
+      "note": "Chunk 17 (131072-139264): continued receipts appends — review-prerequisites decision completion (CodeRabbit COMMENTED5442414707 with 2 findings addressed as local corrections; honest 'not yet pushed or settled' status; operator lookup failures recorded as drift), 9043 published review handoff push-truth (UTF8 vs UTF16 byte-count correction honestly noted; old approvals explicitly not transferred). Append-only evidence with careful provenance. No executable behavior change. No defect candidate."
+    },
+    {
+      "id": 18,
+      "start": 139264,
+      "end": 147456,
+      "note": "Chunk 18 (139264-147456): continued receipts appends — 9043 gates/donor audit observation (full-input byte-identity proof 422626/SHA174f..., donor audit records dense-array vs sparse design differences as questions not conclusions), MiMo completed observation (APPROVED5442867699 exact9043; honest non-blocking notes about 60s diagnostic deadline failing closed). Append-only; claims are review provenance with explicit limits. No defect candidate."
+    },
+    {
+      "id": 19,
+      "start": 147456,
+      "end": 155648,
+      "note": "Chunk 19 (147456-155648): continued receipts appends — OpenPlanner kernel audit observation (Node transpile probe observations recorded as preparation not admission; NaN dt propagation observed honestly; no kernel selected), CodeRabbit included-limit observation (rate-limit refusal recorded verbatim; explicit refusal ≠ completion). Append-only evidence. No executable repo change; no defect candidate."
+    },
+    {
+      "id": 20,
+      "start": 155648,
+      "end": 163840,
+      "note": "Chunk 20 (155648-163840): continued receipts appends — goal-blocked handoff (goal status BLOCKED preserved, elapsed time ≠ eligibility), canonical cohort correction decision (user correction recorded: available-agent policy supersedes full-cohort; skill installation with backup paths), and start of canonical-pr-flow install-complete test-run (223 tests/4936 assertions PASS recorded). Append-only; policy adoption recorded as evidence not code. No defect candidate."
+    },
+    {
+      "id": 21,
+      "start": 163840,
+      "end": 172032,
+      "note": "Chunk 21 (163840-172032): end of receipts.edn appends (three-planning-corrections test-run with honest redaction-description correction, manual UUID addition disclosed per docs/agile/AGENTS.md rule, no native setter bypass), then start of new file `.ημ/review-evidence/cephalon-character/20261007-event-memory-authority.json` — labeled 'observed-command-output-transcription', raw_response:false, provider_approval:false. Begins native observation of a knoxx run with auth snapshot presence flags. Evidence JSON is well-formed so far; labels are honest about epistemic tier. No defect candidate."
+    },
+    {
+      "id": 22,
+      "start": 172032,
+      "end": 177817,
+      "note": "Chunk 22 (172032-177817): completes event-memory-authority.json — permission_count 0, memory_cross_session false, is_system_admin false; served_source_execution records six decision results on fixture contexts (actor-only denied, owner allowed, foreign-org denied, nil-context bypass true) with synthetic-fixture control note; conclusion tier 'derived' with confidence 0.99 and explicit limits; operator_errors discloses the agent_runs→knoxx_runs mistake with verification_credit:false. Then starts new file 20261007-field-donor-conformance.json (labelled 'derived conformance questions, not runtime execution'). Well-formed JSON, honest tiering, no secrets. No defect candidate."
+    },
+    {
+      "id": 23,
+      "start": 177817,
+      "end": 183810,
+      "note": "Chunk 23 (177817-183810): completes field-donor-conformance.json — line-level facts about dense 64x64 arrays, direction-only deposit, mutable owner vs immutable-owner design divergence; derived_selection_requirements list explicit open questions; limits state no runtime executed, no kernel selected, head 9043 not assessed by live reviewer. Then starts 20261007-native-memory-observation.json — 'observed selected output; derived conclusions separately qualified'; sensitive_fields redaction declared (no credentials/queries copied); graph_query_executed false with reason (would change feedback state) — good non-mutation discipline. Deployment paths of the operator machine disclosed as provenance (not secrets). No defect candidate."
+    },
+    {
+      "id": 24,
+      "start": 183810,
+      "end": 187250,
+      "note": "Chunk 24 (183810-187250): continues native-memory-observation.json — creative_contract tool allowlist, responsive_head memory denial, and native_runs array with eight hydration hit_count 0 entries and receipt tool names. Data transcription only; limits note 'timed observation, not reservation/fencing or deep quality proof'. No credential material. JSON well-formed. No defect candidate."
+    },
+    {
+      "id": 25,
+      "start": 187250,
+      "end": 190826,
+      "note": "Chunk 25 (187250-190826): completes native-memory-observation.json native_runs (all eight 0-hit hydrations), collection_counts (9950 events/12838 edges/6544 node embeddings etc. with selection caveat), scope metadata, two memory API comparisons (second query text deliberately not retained), and derived_findings including causal_bug_proven:false. Honest epistemics; no credentials. No defect candidate."
+    },
+    {
+      "id": 26,
+      "start": 190826,
+      "end": 197107,
+      "note": "Chunk 26 (190826-197107): finishes native-memory-observation.json (limitations list strong: principal/corpus not held fixed; no mutation claims; local_repository_bindings with absolute operator paths and source_file_manifest hashes — provenance only). Then starts 20261007-openplanner-field-step-observations.json labeled 'not full package test, character solver qualification or live runtime proof'. JSON well-formed; local absolute paths are environment provenance, not defects. No defect candidate."
+    },
+    {
+      "id": 27,
+      "start": 197107,
+      "end": 200165,
+      "note": "Chunk 27 (197107-200165): continues field-step-observations.json — file hashes vs committed head, isolated fixture config, initial state, first observations: zero dt still moves/damps (changed:true), negative dt behaves like zero (recorded honestly), NaN dt begins. These are probe RESULTS recorded as evidence about donor code, not this repo's behavior; labeled as fixture execution with limits. No defect candidate in this diff."
+    },
+    {
+      "id": 28,
+      "start": 200165,
+      "end": 203568,
+      "note": "Chunk 28 (200165-203568): finishes field-step-observations.json (NaN propagates nonfinite; Infinity bounded; one 0.1 step vs two 0.05 steps divergence vx0.8 vs 0.64 — recorded numerically), limits state no service/mutation and transpile-without-typecheck caveat. Then starts new executable file `.ημ/review-evidence/cephalon-character/20261007-openplanner-field-step-probe.cjs`: reads argv repo/scratch, loads typescript from repo node_modules, git rev-parse HEAD, reads three committed source files. Read-only so far; next chunk continues. No defect candidate yet — continue."
+    },
+    {
+      "id": 29,
+      "start": 203568,
+      "end": 211098,
+      "note": "Chunk 29 (203568-211098): completes the probe .cjs (verifies source equals `git show revision:path`, transpiles with flag 'wx' writes into scratch, requires sim.js, runs six observations, JSON output with limits — read-only against donor repo, writes only into caller-supplied scratch, no network/exec beyond git rev-parse/show; executable but only evidence-probe tooling, not invoked by CI). Then new 20261007-openplanner-kernel-conformance.json begins: labeled 'not accepted kernel selection or provider approval', file hashes vs committed head, observations of sim.ts clamped dt etc. Probe design is fail-closed (throws on source mismatch). No defect candidate."
+    },
+    {
+      "id": 30,
+      "start": 211098,
+      "end": 217959,
+      "note": "Chunk 30 (211098-217959): completes kernel-conformance.json (graph-route cost construction facts, derived_selection_requirements including 'enforce visibility before graph traversal'; explicit 'outer HTTP authorization was not audited; no vulnerability claim'), execution_evidence hashes, limits. Then stored-actor-authority.json (projection excludes secrets; derived claim conf 0.99 with limits) and hosted-37621289703-checkout.json + input-manifest.json (schema open-hax.review-input/v1 for the PRIOR head 4f1 run 37621289703 — archived provenance of an earlier review, 394784-byte diff). All well-formed; prior-run manifests are evidence artifacts. No defect candidate."
+    },
+    {
+      "id": 31,
+      "start": 217959,
+      "end": 225623,
+      "note": "Chunk 31 (217959-225623): hosted-37621289703-input-verification.json, submission-verification.json (input_coverage 53/53/missing[] for the OLD 4f1 head), and start of hosted-37621289703-submission.json — an archived prior-run GitHub review submission (event APPROVE for head 4f1) including its summary prose and input-source. IMPORTANT: this is archived evidence of a previous review, not an instruction and not a current-head approval; PR body itself marks 4f1 approvals historical. My review binds head 1069d4c per review_begin. Treated purely as data. No defect candidate."
+    },
+    {
+      "id": 32,
+      "start": 225623,
+      "end": 233815,
+      "note": "Chunk 32 (225623-233815): continues the archived prior-run submission.json — its input-assessments array (pages 1-21 notes from the earlier 4f1 review). Purely archival JSON of the earlier reviewer's per-page notes. Contains prose that could be read as guidance but is evidence about the previous run only; not followed. No defect candidate in the diff content itself."
+    },
+    {
+      "id": 33,
+      "start": 233815,
+      "end": 242007,
+      "note": "Chunk 33 (233815-242007): rest of the archived 4f1-run submission input-assessments (ids 22-53) plus its comments array, then new hosted-37621289703-summary.json (open-hax.review-evidence/v2 for prior head 4f1, 13 gates exit 0). All archived prior-review artifacts; treated as data only. The assessment notes reference the earlier head's content. No defect candidate in this page's diff content."
+    },
+    {
+      "id": 34,
+      "start": 242007,
+      "end": 249904,
+      "note": "Chunk 34 (242007-249904): archived 4f1 submission tail + hosted-37621289703-summary completion + new hosted-37625062329-checkout.json (head 9043 exact/clean), input-manifest (422626 bytes/SHA174f...), input-verification, submission-verification (57/57/missing[] for 9043). These are archived prior-run artifacts for heads 4f1/9043, not current head 1069d4c. Provenance only; no defect candidate."
+    },
+    {
+      "id": 35,
+      "start": 249904,
+      "end": 255506,
+      "note": "Chunk 35 (249904-255506): completion of hosted-37625062329-* verification files (all bound to head 9043e57, coverage 57/57) and start of hosted-37625062329-submission.json. Archived prior-review provenance; explicit head binding shows these do NOT cover the current head 1069d4c. Data only; no defect candidate."
+    },
+    {
+      "id": 36,
+      "start": 255506,
+      "end": 261581,
+      "note": "Chunk 36 (255506-261581): archived 9043-run submission.json begins — event APPROVE summary for head 9043e57 plus input-source/coverage and its input-assessments 1-16. Prior-review prose (including claims about deterministic evidence and rejected candidates) is untrusted archived data; it neither instructs me nor approves the current head. No defect candidate in the diff content."
+    },
+    {
+      "id": 37,
+      "start": 261581,
+      "end": 266317,
+      "note": "Chunk 37 (261581-266317): archived 9043-run submission input-assessments 17-37 (including its noted candidate about physical-field frontmatter vs prose b5f2ba9e predecessor — a prior reviewer's candidate, which I will evaluate independently against the actual card hunks when I read them). Archived prior-review data only; no defect in this page."
+    },
+    {
+      "id": 38,
+      "start": 266317,
+      "end": 272124,
+      "note": "Chunk 38 (266317-272124): archived 9043-run submission assessments 38-57 + comments, then hosted-37625062329-summary.json (v2, head 9043, 13 gates 0, errors []). Prior-run provenance; data only. No defect candidate."
+    },
+    {
+      "id": 39,
+      "start": 272124,
+      "end": 280316,
+      "note": "Chunk 39 (272124-280316): hosted-37625062329-summary.json completes; new native-coderabbit-completion-6040430981.json (single-line raw GitHub API comment: 'Full review finished' — archived bot reply with app metadata/permissions, no secrets) and start of native-coderabbit-limit-6026248096 snapshot (raw API comment beginning). Static API snapshots; bot prose is evidence not instructions. No defect candidate."
+    },
+    {
+      "id": 40,
+      "start": 280316,
+      "end": 288508,
+      "note": "Chunk 40 (280316-288508): native-coderabbit-limit snapshot — the 'Review limit reached / spending cap / next included review in 48 minutes' warning plus 'reviews paused' block and the CodeRabbit walkthrough table for the 37-file change (accurately summarizes verifier/tests/gate/planning docs as non-implementing). Archived bot output; walkthrough content matches diff structure. No defect candidate."
+    },
+    {
+      "id": 41,
+      "start": 288508,
+      "end": 296700,
+      "note": "Chunk 41 (288508-296700): end of native-coderabbit-limit snapshot (pre-merge checks, finishing-touch/autopilot checkbox markup — archived bot UI, not followed) + start of native-coderabbit-rate-limit-6039301226.json (raw API snapshot of the 'Action not completed / Review rate limited' reply). Static archived bot output; checkbox/prompts treated as data. No defect candidate."
+    },
+    {
+      "id": 42,
+      "start": 296700,
+      "end": 304892,
+      "note": "Chunk 42 (296700-304892): completes rate-limit reply snapshot (48-minute next-included-review text), then native-coderabbit-request-6039298033.json — the owner's raw '@coderabbitai full review' request comment for head 9043 with sprint-planning rubric and 37-path list. This is an archived author comment (untrusted data); its instructions addressed a bot, not me, and are not followed. No defect candidate."
+    },
+    {
+      "id": 43,
+      "start": 304892,
+      "end": 313084,
+      "note": "Chunk 43 (304892-313084): completes request-6039298033 (37-path list + pr-flow markers), then native-coderabbit-request-6040428256.json — a second archived owner full-review request (same rubric/head 9043). Archived author prose as evidence only. No defect candidate."
+    },
+    {
+      "id": 44,
+      "start": 313084,
+      "end": 321276,
+      "note": "Chunk 44 (313084-321276): completes request-6040428256, then native-coderabbit-review-5442414707.json — archived prior COMMENTED review (2 actionable findings on epic line 62 Rheos predecessor enforcement and physical-field line 32 kernel/numeric selection ownership), including an embedded 'Prompt to fix review comments' block. That embedded prompt is archived bot content — data, not commands; not followed. The findings themselves are relevant provenance: the PR body claims both were addressed in successor heads (kernel-selection UUID added etc.), which I'll verify against the actual card hunks. No defect candidate in this page."
+    },
+    {
+      "id": 45,
+      "start": 321276,
+      "end": 329468,
+      "note": "Chunk 45 (321276-329468): completes native-coderabbit-review-5442414707 (state COMMENTED, commit 4f1) and native-coderabbit-review-5444150628.json — archived COMMENTED review on 9043 with 3 actionable findings: (a) sensitive_fields statement should distinguish retained diagnostic query vs omitted persisted hydration query, (b) physical-field dependency field should include kernel-selection predecessor UUID, (c) verification report 7-vs-8 WARN labeling. These correspond to the receipts' claimed 'three planning corrections'. Embedded autofix prompt again treated as data. I will verify the actual card/doc hunks when reached. No defect candidate in this page."
+    },
+    {
+      "id": 46,
+      "start": 329468,
+      "end": 337660,
+      "note": "Chunk 46 (329468-337660): archived native-mimo-review-5442581089.json (eta-mu-ai[bot] APPROVED on 4f1 with prior summary) and native-mimo-review-5442867699.json (APPROVED on 9043). Both are prior-head approvals archived as raw API bytes; explicitly historical for current head 1069d4c and not binding on my review. Data only. No defect candidate."
+    },
+    {
+      "id": 47,
+      "start": 337660,
+      "end": 345852,
+      "note": "Chunk 47 (337660-345852): archived coderabbit-comment-6026248743 snapshot (knoxx PR3 in-progress review comment, bot UI checkbox markup) and start of coderabbit-completion-6026248096 snapshot (foresight PR22 completion comment for head 22b4c12). Static bot/API archives; checkbox markup and tips treated as data. No defect candidate."
+    },
+    {
+      "id": 48,
+      "start": 345852,
+      "end": 354044,
+      "note": "Chunk 48 (345852-354044): coderabbit-completion snapshot continues — 'No actionable comments' for 22b4c12, walkthrough table and mermaid sequence diagram of the verifier flow (docker image → contract hash validation → runtime queries, fail-closed stop), merge-risk note that always-on capabilities remain planning work. Archived bot prose matching the diff's actual design. Data only; no defect candidate."
+    },
+    {
+      "id": 49,
+      "start": 354044,
+      "end": 362236,
+      "note": "Chunk 49 (354044-362236): closes the archived CodeRabbit completion comment (22b4c12: gate table all-pass incl. docstring/link checks skipped-as-scoped, finishing-touch checkboxes, autopilot prompt — all bot UI markup treated as data) and starts coderabbit-review-5435159871 archive: a COMMENTED review on efdc61c (earlier head of this same PR #22) with 1 actionable inline comment on docs/agile/kanban/cephalon-event-publication.md ~lines 38-39 — publication must require existing access policy to permit the artifact for the selected Bluesky/Discord destination, rejected artifacts must cause no external write, plus negative no-write tests. This is a real prior finding against a file in this diff; I will verify the current hunk of that card when reached (it should be later in the diff). No defect candidate on this page itself."
+    },
+    {
+      "id": 50,
+      "start": 362236,
+      "end": 369646,
+      "note": "Chunk 50 (362236-369646): finishes review-5435159871 archive (review scope: 14 files including the new verify script/test, workflow gate, cards, notes, verification report — confirms what this PR contains) and adds two cephalon-runtime evidence JSONs: proxx-natural-successor-20261007T0615.json (observed command output transcription: one successful native creative cycle with public Bluesky post and Discord send, diagnostic pass=12/warn=7/fail=0, limits admitting empty image alt, unfixed source lifecycle bug, port3000 error) and start of proxx-stream-timeout-20261007T0547.json (six failed-clock runs persisted status completed with 502 answers). These are observation records with explicit scope/limits fields; untrusted as claims but internally honest about limitations. No defect candidate — candidate-finding material here would be about the recorded systems (Knoxx/Proxx), not this diff's code."
+    },
+    {
+      "id": 51,
+      "start": 369646,
+      "end": 374079,
+      "note": "Chunk 51 (369646-374079): continues proxx-stream-timeout record — runtime image/contract hashes, six persisted 502 runs, before-probes (stream 502 vs nonstream 200), native request log examples (requesty timeouts, ollama ENOTFOUND). Purely observational transcription with fail-honest limits. No defect candidate."
+    },
+    {
+      "id": 52,
+      "start": 374079,
+      "end": 382271,
+      "note": "Chunk 52 (374079-382271): completes proxx-stream-timeout record (maintenance raising UPSTREAM_STREAM_BOOTSTRAP_TIMEOUT_MS 8000→60000 with backup hashes, after-probes 200, limits explicitly noting state mismatch NOT repaired, no enforcement claims) and starts foresight-pr136 coderabbit-comment archive — walkthrough of the earlier open-hax/foresight PR136 which introduced the same cephalon cards/script (that PR's head 33b8ff04, base fc9fd727 — cross-repo provenance for these artifacts). Prior bot prose and walkthrough, data only. No defect candidate."
+    },
+    {
+      "id": 53,
+      "start": 382271,
+      "end": 390463,
+      "note": "Chunk 53 (382271-390463): completes foresight-pr136 CodeRabbit summary comment archive — merge risk minimal, 5 pre-merge checks passed (several skipped-as-scoped), bot tips/poem/marketing footer. Bot prose and UI markup, data only; the prior open-hax PR136 context explains these artifacts' origin. No defect candidate."
+    },
+    {
+      "id": 54,
+      "start": 390463,
+      "end": 398655,
+      "note": "Chunk 54 (390463-398655): archives CodeRabbit reply on open-hax PR136 documenting that receipts.edn was skipped as similar in that run and five appended receipt lines (200–204) fell outside substantive coverage — an honesty clarification about review coverage, not this PR's code. Contains an embedded shell script inside bot markdown (data, not executed here). No defect candidate."
+    },
+    {
+      "id": 55,
+      "start": 398655,
+      "end": 406847,
+      "note": "Chunk 55 (398655-406847): closes the pr136 comment archive, then begins .ημ/session-mycology/ledger.md append (+343 lines): session spore entries 2026-10-06 (local activation, delegation/clock cycles, manifest hardening — 'empty collections can make evidence predicates pass vacuously', cycle-count scoping, native review-scope gap, publication diagnostics, personal-fork review migration, Rheos pre-write tolerance note). These are reflection records with explicit receipt-refs; append-only documentation. No executable behavior. No defect candidate; entry content is consistent with the receipts/archives already reviewed."
+    },
+    {
+      "id": 56,
+      "start": 406847,
+      "end": 415039,
+      "note": "Chunk 56 (406847-415039): continues ledger.md append — dated session summaries 2026-10-06/07 (personal review scope, diagnostic failure coverage, head qualifications, review fixes, five-slice note, named missing contract files, readonly follow-up, MiMo approvals, success floor, timeout/successor clock). Notably records the planning correction 'destination-specific existing access policy must deny external writes; Bluesky and Discord each require a negative no-write law; tests belong to the reviewed future red phase' — matching the archived CodeRabbit finding on cephalon-event-publication.md. These are documented lessons in an append-only ledger; no executable behavior, no defect candidate. The referenced future-law statement will be checked against the actual card hunks."
+    },
+    {
+      "id": 57,
+      "start": 415039,
+      "end": 423231,
+      "note": "Chunk 57 (415039-423231): continues ledger.md append — routine post-repair readonly follow-ups (2026-10-07 03:26 through 09:52, all 'observation append only, no spore/promotion') plus character-memory intent-recovery entry noting 'a diagnostic graph query can mutate reinforcement even while vector search is read-only'. Append-only reflection records; no executable behavior. No defect candidate."
+    },
+    {
+      "id": 58,
+      "start": 423231,
+      "end": 431423,
+      "note": "Chunk 58 (423231-431423): continues ledger.md append — character planning/authority, review prerequisites, 9043 published review handoff, gates/donor audit, MiMo completed, OpenPlanner kernel audit, CodeRabbit rate limit, blocked goal handoff, canonical cohort correction. All session-lesson records with receipt refs, explicitly distinguishing approvals/convergence/readiness. Documentation only; no defect candidate."
+    },
+    {
+      "id": 59,
+      "start": 431423,
+      "end": 438061,
+      "note": "Chunk 59 (431423-438061): final ledger.md entry (three-planning-corrections: diagnostic query description, 7/8 WARN labeling, kernel-selection UUID recorded in proposed dependency input — matching archived review-5444150628 findings as now-corrected). Then begins docs/agile/kanban/cephalon-always-on-epic.md (new, 70 lines: uuid 25e3a688…a00, status incoming, scope lists child UUIDs, point arithmetic 24 vs 21 vs frontmatter 16 explicitly flagged as unadmitted metadata, acceptance criteria, risks) and cephalon-character-continuity.md (new card, dependency 4cac8ac8… mood/attention predecessor — correct orientation). Cards are planning data with honest 'proposed/not admitted' labeling. No defect candidate yet; epic/child UUID cross-references to be checked against later card chunks."
+    },
+    {
+      "id": 60,
+      "start": 438061,
+      "end": 444833,
+      "note": "Chunk 60 (438061-444833): completes character-continuity card (acceptance criteria for identity separation, trait revision, cross-facet reads, restart/pruning, operator corrections as attributed events) and starts cephalon-character-epic.md (new, uuid 63a0e4ff…d54c, 34 points, scope lists 8 child UUIDs incl. kernel ownership b5f2ba9e… as proposed predecessor of physical graph/field coupling ff3e628b…; proposed total 37 vs frontmatter 34 flagged unadmitted; explicit 'every UUID relationship here is a proposal, not an ordering control' with upstream Rheos dependency-gap caveat). Honest proposal labeling matches AGENTS.md law re: non-admitted metadata. Acceptance criterion 1 begins. Watch: does any child card omit a required predecessor or misstate UUIDs — will verify when children appear. No defect candidate on this page."
+    },
+    {
+      "id": 61,
+      "start": 444833,
+      "end": 451331,
+      "note": "Chunk 61 (444833-451331): finishes character-epic card (acceptance 2-6, verification, risks incl. prompt injection through external content) and adds cephalon-character-field-contract.md (new card, uuid b5f2ba9e…, the kernel-selection prerequisite: explicitly 'proposed predecessor of ff3e628b…', no dependency frontmatter of its own, honest provisional labeling, 5 acceptance criteria). Also starts cephalon-character-intake.md (uuid 6eb77110…). UUIDs consistent with epic scope list; the physical-field predecessor reference matches. These are planning cards, proposals honestly labeled as such. No defect candidate."
+    },
+    {
+      "id": 62,
+      "start": 451331,
+      "end": 457641,
+      "note": "Chunk 62 (451331-457641): completes intake card (dedup by canonical external identity, cursor durability, provenance separation, bounds, no second creative timer) and starts loop-verification card (uuid 5ea872c3…, dependency vector lists acac43b9 (social choices) + always-on children a01/a04/a05 — cross-epic dependencies pointing at the always-on epic's listed child UUIDs, consistent with chunk 59's scope). Both planning cards with strong acceptance criteria. No defect candidate."
+    },
+    {
+      "id": 63,
+      "start": 457641,
+      "end": 463564,
+      "note": "Chunk 63 (457641-463564): completes loop-verification card (acceptance 5-6, verification: script creates/cleans only owned isolated fixtures, exits nonzero on broken links; risks) and adds mood card (uuid 4cac8ac8…, dependency ff3e628b — mood depends on physical field, consistent with character-continuity's dependency on 4cac8ac8) plus starts physical-field card (uuid ff3e628b, dependency list [a1e9d6af recall, 6eb77110 intake, b5f2ba9e field-contract] — includes the kernel-selection predecessor in FRONTMATTER, which was the archived review finding (b) now corrected). Dependency orientations consistent across cards seen so far. No defect candidate."
+    },
+    {
+      "id": 64,
+      "start": 463564,
+      "end": 470446,
+      "note": "Chunk 64 (463564-470446): completes physical-field card — scope prose explicitly states proposed predecessor b5f2ba9e with link to field-contract card, 'Its UUID is a proposed relationship until the epic's upstream Rheos prerequisite is delivered and verified'; 9 acceptance criteria incl. revision-bound kernel selection blocking admission; verification requires native Rheos reading predecessor decision. Then starts recall card (uuid a1e9d6af, no dependency frontmatter). The predecessor appears BOTH in frontmatter dependency array and prose — the archived finding (b) appears addressed for this card. Planning-only; no defect candidate."
+    },
+    {
+      "id": 65,
+      "start": 470446,
+      "end": 476771,
+      "note": "Chunk 65 (470446-476771): completes recall card (scope-before-expansion, private-node leakage negatives, distinct failure results, reserved-head lane protection) and adds social card (uuid acac43b9, dependency list [intake, continuity, always-on publication a03] — all valid cross-referenced UUIDs; effect-identity idempotency, foreign-record refusal) plus starts creative-cycles card (uuid a02, dependency a01 head). Dependency chain a01→a02→a03→a04 matches epic scope. All planning cards, no executable code. No defect candidate."
+    },
+    {
+      "id": 66,
+      "start": 476771,
+      "end": 483252,
+      "note": "Chunk 66 (476771-483252): completes creative-cycles card (attempt deadline 10min ×3 attempts, 36-min cycle budget, backoffs 1min/5min, quarantine on expiry — recovery story supplies same limits before AC3) and starts event-publication card (uuid a03, dependency a02): acceptance 2 now explicitly requires 'the existing access policy permits that artifact for the selected Bluesky or Discord destination. An artifact denied for that destination causes no external write' plus imageAlts nonempty/cardinality rules with zero-write failure semantics — this addresses the archived CodeRabbit finding 4200965630(a). Planning card; consistent internal budget arithmetic (10×3 + backoffs ≤ 36min). No defect candidate."
+    },
+    {
+      "id": 67,
+      "start": 483252,
+      "end": 489077,
+      "note": "Chunk 67 (483252-489077): completes event-publication card (verification requires negative no-write tests for BOTH Bluesky and Discord adapters — matches archived finding (a) demand; frequency policy 30min Bluesky / 1hr Discord / 10-per-60s operator replies, runtime-enforced) and adds independent-head card (uuid a01, no dependency: reserved lane saturation AC, 2s admission/30s reply targets not enforced in CI, acknowledgment-before-dispatch AC7) plus starts lifecycle-placement card (uuid a05, dependency a02). Note: dependency chain a05→a02 while recovery a04→a03 with proposed a05 predecessor — coherent. No defect candidate."
+    },
+    {
+      "id": 68,
+      "start": 489077,
+      "end": 495701,
+      "note": "Chunk 68 (489077-495701): completes lifecycle card (proposed 5 points explicitly provisional, readiness predecessor for recovery without enabling gateway, honest unhealthy-state ACs) and starts operation-recovery card (uuid a04, dependency a03; proposed 8 points vs frontmatter 5 labeled unadmitted, 'unsupported native Rheos points setter must be resolved upstream... No local setter is used'; proposed placement-readiness predecessor a05 explicitly NOT added to frontmatter — 'Rheos must retain/admit this additional edge'). Recovery AC2 requires fencing proof beyond budget expiry. Honest metadata discipline consistent throughout. No defect candidate."
+    },
+    {
+      "id": 69,
+      "start": 495701,
+      "end": 502777,
+      "note": "Chunk 69 (495701-502777): completes operation-recovery card (AC3 budget/quarantine/exhaustion semantics consistent with creative-cycles limits; verification requires fencing proof at both write boundaries; risks). Then adds docs/notes/2026-10-06-cephalon-always-on.md (operator intent note with quotes, observed connections incl. one event slot/ten-minute deadline, derived Alpha/Eta/Mu/Pi + Katamorph/Clio mapping consistent with AGENTS.md vocabulary, proposed delivery labeled, explicit definitions of 'immediate'/'always-on'; then an 'October 7 character and memory steering' section appended pointing to the next note) and starts the 407-line character-memory-graph note (status: observed/derived/provisional, not deployed). Honest epistemic labeling throughout. No defect candidate."
+    },
+    {
+      "id": 70,
+      "start": 502777,
+      "end": 510969,
+      "note": "Chunk 70 (502777-510969): character-memory-graph note: recovered human intent quotes, derived invariant, mermaid closed-loop diagram, note that historical 'remove all LLM timers' proposal is NOT authority to replace the selected 15-min clock; observed source map table with absolute local paths (e.g. /home/err/devel/... donors) and epistemic tiers, including 'this query can write feedback' for OpenPlanner /graph/memory. Documentation with explicit non-claims. Absolute machine paths in a planning note are provenance references, not code — not a defect for this PR. No defect candidate."
+    },
+    {
+      "id": 71,
+      "start": 510969,
+      "end": 519161,
+      "note": "Chunk 71 (510969-519161): note continues — actual deployment evidence (12 checks/7 warnings/240 contract hashes; eight maker runs with empty hits; store counts; two read-only queries returning 200/3/6 hits explicitly NOT claiming proven causal bug), drift table (8 intended-vs-observed rows with required corrections), provisional model boundaries table (presence/role/personality/mood/attention/graph). All claims bounded by stated limits; consistent with archived evidence JSONs (12/7/240 numbers match chunk 50). No defect candidate."
+    },
+    {
+      "id": 72,
+      "start": 519161,
+      "end": 527353,
+      "note": "Chunk 72 (519161-527353): note continues — memory/physical-graph contract (7 numbered laws incl. replay as acceptance test), outside input/social life, 5-step delivery sequence with falsification cases, explicit 'This is a planning handoff... adds no card status, frontmatter, transition, board writer', ownership boundaries (Knoxx .cljc guidance matches AGENTS.md; '/graph/memory can reinforce edges... must not call it a pure read'), and starts implementation-planning table linking the 7 child stories. Consistent with cards reviewed in chunks 59–69. No defect candidate."
+    },
+    {
+      "id": 73,
+      "start": 527353,
+      "end": 535545,
+      "note": "Chunk 73 (527353-535545): completes the character note — child-story table (7 stories, points consistent with cards: 5/3/8/5/5/5/3=34, +3=37), follow-up read-only observations (actor context fixture results, authority evidence refs), 'Planning-review prerequisite correction' section documenting CodeRabbit 5442414707's two findings and their fixes (Rheos admission prerequisite + field-contract card), 'Subsequent planning-review corrections' for 5444150628 (diagnostic-query description, 7/8 WARN labeling, dependency array UUID with explicit appeal to docs/agile/AGENTS.md planning-input rule), stored-principal follow-up. The record explicitly distinguishes planning input from admission. Then starts the 603-line verification report (docs/verification/cephalon-always-on-20261006.md) opening with observed-behavior scope and read-only inspection command. No defect candidate."
+    },
+    {
+      "id": 74,
+      "start": 535545,
+      "end": 543737,
+      "note": "Chunk 74 (535545-543737): verification report — dated 12/7 vs 12/8 warnings distinction; MiMo findings remediation history (vacuous manifest hash check fixed with non-empty vector requirement + 3 fixtures; image-frequency sampling → warning not failure); CodeRabbit 5435625417 selection defects (filter before sort/limit, resource ID binding, 10 tests/60 assertions); 5436180047 missing-file naming (11 tests/66 assertions); Rheos loader observation (dependency metadata dropped pre-validation — consistent with upstream issue 3); estimate provenance (24/21/37 point discussions, frontmatter byte-identical); observed gates (24 tests/120 assertions root, clj-kondo 0 warnings, git diff --check). All claims dated and bounded; test counts are recorded observations in an evidence report. No defect candidate — test-file behavior to be verified in its own chunks."
+    },
+    {
+      "id": 75,
+      "start": 543737,
+      "end": 551929,
+      "note": "Chunk 75 (543737-551929): verification report — served identities table (image/contract/Discord bot/model/cadence), cloud single-consumer warning (KNOXX_DISABLE_EVENT_RUNTIMES, 'Do not enable both consumers'), artifacts & independently observed deliveries table (Bluesky posts read via public API, Discord audio attachment retrieved with bot credential, ffprobe-measured WAV), responsive-head probes with explicit 'does NOT prove reserved Discord reply capacity' limits, and 9 known failures/fallbacks each honestly stated (shared FIFO, prompt-only cadence incl. 10-min post violating 30-min guidance, music.generate JSON-parse bug, 403 provider, host sleep, empty alt, hardcoded running:true, quality advisory, acknowledgment ordering). Failures are documented, not hidden. This is observational evidence with limitations — no defect introduced by this diff."
+    },
+    {
+      "id": 76,
+      "start": 551929,
+      "end": 560121,
+      "note": "Chunk 76 (551929-560121): verification report — KNOXX_BASE_URL fix + idle recreation caveat, cephalon_control internal principal creation (knowledge-worker role, no credential reassignment), delegation probes incl. failed ack-before-spawn batched probe honestly retained as failed contract test, head contract adjustment (ack once before spawn, no completion claim), review-routing section (personal fork PR22/PR3 replacements, org PR136/386 as provenance only — 'their approvals...do not qualify the new personal PRs'), CodeRabbit personal review 5435159871 with one actionable publication-privacy finding, and statement that finding 4200965630 is fixed as a planning criterion with runtime tests still unimplemented ('Card identity, frontmatter and incoming state are unchanged'), planning snapshot. Consistent with archives and cards. No defect candidate."
+    },
+    {
+      "id": 77,
+      "start": 560121,
+      "end": 568313,
+      "note": "Chunk 77 (560121-568313): verification report continuation — cooldown/quota evidence with 'neither condition supplies approval'; org planning history (MiMo 5434877321 approval labeled historical, CodeRabbit skip of receipts.edn + clarification 6025753621 confirming lines 200-204 excluded, upstream issue 24 for parser gap, no local waiver); Knoxx PR386 provenance (1,848 tests/9,107 assertions, auto-merge disabled, exact-head reviews historical after e8c0083); three unsettled author walkthrough notes explicitly NOT self-settled (upstream issue 22, no impersonation); MCP SDK schema verification; cohort 0/5 rounds due to Codex quota; heartbeat vs Knoxx clock distinction. Careful provenance discipline; no policy waiver claims. No defect candidate."
+    },
+    {
+      "id": 78,
+      "start": 568313,
+      "end": 575829,
+      "note": "Chunk 78 already assessed above (verify_cephalon_local.cljs header: check! increments failures atom and prints PASS/FAIL; command! rejects nonzero status with 60000ms timeout and 1048576 maxBuffer, returns stdout; bounded read-only contract)."
+    },
+    {
+      "id": 79,
+      "start": 575829,
+      "end": 584021,
+      "note": "Chunk 79 (575829-584021): complete verify_cephalon_local.cljs (138 lines). Read the code closely: observation-script is an in-container JS doing fetches to loopback :8000 with x-api-key from env KNOXX_API_KEY (read-only GETs), Mongo query projecting runs, public Bluesky GET, prints JSON; on error sets exitCode=1 but docker exec still returns stdout parsed as JSON — if the inner script fails, JSON.parse of output throws and command! may still return (status 0? No: process.exitCode=1 makes docker exec return 1 → command! throws). verify! enforces exactly [--only knoxx]; fail-closed ordering: image match → non-empty files vector → per-file hash checks (missing file = FAIL, hash drift = FAIL, continues over all entries) → throw if any failure → only then runtime exec. Runtime checks: unauth ∈ {401,403}, self-control identity, recent completed schedule-origin run within 40min (2400000ms), 15-min cadence rule, enabled creative-request trigger, head tools exactly #{4 tools}, maker tools superset via every?, synthesis script exists, public feed read valid; WARN (not FAIL) when no image in sample; prints observed data and operationalGaps as WARN; explicitly prints 'No agent invocation, publication, contract change or board transition'. -main resets failures, catches errors → increments + FAIL print, returns exit 1 when failures>0; guarded by nbb/*file* invocation check so importing performs no I/O. Fail-closed identity admission precedes runtime inspection; read-only GETs only; loopback-only URLs. Matches the documented design and the report's claims (vacuous-manifest fix, continue-on-missing-file, feed guard). No defect candidate: exit code is correctly wired to process.exitCode via apply -main; no write/mutate calls present."
+    },
+    {
+      "id": 80,
+      "start": 584021,
+      "end": 590458,
+      "note": "Chunk 80 (584021-590458): test/verify_cephalon_local_test.cljs (281 lines, first 8 tests visible). Fixtures use real temp manifest/contract bytes; with-redefs stub only deployment/failures/command! boundaries — import performs no I/O (consistent with ns docstring). Tests: (1) explicit --only selection rejects [] and other selectors with zero commands; (2) wrong image stops after inspect only; (3) missing/empty/files-map manifest stops before runtime (files {} is a map → vector? false, caught); (4) hash drift stops before runtime; (5) missing-first + wrong-hash + missing-last continues inspection, names both missing and drift, no ENOENT leakage; (6) success path with exact docker command assertion + text-only/empty feed still exit 0 with WARN; (7) unavailable feed → exit 1; (8) publications nil → exit 1 (vector? nil fails the valid-feed check). Assertions align with the production code paths just read (each failure mode maps to an actual check!). Note: check! for feed validity uses `(and (:publicationReadOk observed) (vector? (:publications observed)))` — a successful read with non-array feed yields publicationReadOk true but publications nil → FAIL, matching test 8 and the documented 'non-array feed is a failure' fix. Solid coverage of new branches; remaining 201 lines to read."
+    },
+    {
+      "id": 81,
+      "start": 590458,
+      "end": 598306,
+      "note": "Chunk 81 (590458-598306): test file continues — runtime-evidence-failure matrix (stale run age >40min, extra head tool, missing maker tool, disabled trigger, absent synthesis script each → exit 1 with exact FAIL text and 'Failures: 1'); cadence test requires the rule to bind to the SELECTED schedule id (unrelated 15-min clock or wrong rule → FAIL); observe-query-fixture executes the ACTUAL observation-script via node:vm with stubbed fetch/mongodb/fs (anonymous config GET distinguished by nil headers → 401), capturing console.log snapshot; non-array feed tests (object/string/false) prove snapshot still produced (no TypeError swallow), publicationReadOk false, publications nil, exit 1 with OBSERVED lines continuing. Fixtures execute real script bytes against isolated boundaries — matches the report's description of the filter-before-limit and feed-guard reproductions. No defect candidate."
+    },
+    {
+      "id": 82,
+      "start": 598306,
+      "end": 599856,
+      "note": "Chunk 82 (598306-599856, final): scheduled-run-query-filters-before-the-recent-limit test — 10 newer creative-request events plus one older schedule-origin run; asserts the exact Mongo filter (contractId+eventType+scheduleId), call order [:find :sort :limit :to-array] (filter before sort/limit — the CodeRabbit 5435625417 fix), and retained run is the clock run; test-end hook `(defmethod test/report [::test/default :end-run-tests] ...)` sets process exitCode 1 on fail/error, followed by `(test/run-tests 'verify-cephalon-local-test)` at top level. Full diff now delivered 82/82 and assessed 82/82. One open verification question for candidate generation: whether `:end-run-tests` is a real cljs.test report type (exit-code hook liveness) and how CI invokes this suite — to be checked in adversarial stage before proposing."
+    }
+  ],
+  "comments": []
+}

@@ -1,0 +1,16 @@
+{
+  "observedAt": "2026-10-07T17:48:02.913363+00:00",
+  "automationId": "cephalon-runtime-follow-up",
+  "status": "PAUSED",
+  "cadenceAndTargetPreserved": true,
+  "wholePromptReadback": "PASS after observing the tool normalization of one final LF",
+  "inputTrailingLFNormalizedByTool": true,
+  "promptBytes": 14662,
+  "promptSHA256": "26dbb0df67a47d93b7b1f9369361a1143d3555406ac8f14f624d0bdbb9adceb6",
+  "tomlSHA256": "565e851f8c5d3704c12aec67305dfb062a0dd042149bcee731cdafd0552efd1f",
+  "oldBackup": "/home/err/.local/share/codex/automation-backups/cephalon-runtime-follow-up-20261007T-review-policy",
+  "oldPromptBytes": 71938,
+  "oldPromptSHA256": "12aa31640039514af0d20781c02807e67d2c7c950a8dc6dc464077850ffeb46e",
+  "oldTomlSHA256": "b7970a340c6f05da79150e53de7014c56b41857b6bc6c4be5773cc2eaeb5fc97",
+  "claim": "Mutable current handoff consolidated; historical Git/receipts and paused status retained. Initial exact input comparison differed by trailing LF only; corrected comparison verifies all saved substantive bytes. No resumed automation or deployed character implementation."
+}

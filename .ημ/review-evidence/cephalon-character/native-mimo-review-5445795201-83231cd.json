@@ -1,0 +1,40 @@
+{
+  "id": 5445795201,
+  "node_id": "PRR_kwDOU4VJMM8AAAABRJg9gQ",
+  "user": {
+    "login": "eta-mu-ai[bot]",
+    "id": 270021952,
+    "node_id": "BOT_kgDOEBg1QA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10676925?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D",
+    "html_url": "https://github.com/apps/eta-mu-ai",
+    "followers_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "body": "Reviewed PR #26 (1069d4c → 83231cd): 33 files, 2815 insertions, 95/95 full-diff pages read and assessed.\n\nDeterministic evidence: summary result=success — all 13 gates exit 0, including receipt_history PASS (266 receipts, 7 appended, exact base/head binding), evidence_laws/project_laws/lineage_laws/workspace_laws/cephalon_diagnostic suites green, diff_hygiene clean. lint/jscpd spawn ENOENT and the coverage-attestation UNAVAILABLE row are environment/pre-existing (the latter cites open-hax/foresight#59), not change-introduced.\n\nChange surface: append-only evidence — .ημ/receipts.edn appends, .ημ/session-mycology/ledger.md gains five dated observation entries (additions-only), archived GitHub/CodeRabbit/MiMo/hosted-run snapshots including the supported PR-22 close/reopen before/after/threads/runs/summary set, a new field-kernel owner-selection planning note with its numeric/replay contract and future RED/GREEN matrix, a new graph-recall boundary investigation note, and a tail section on the field-contract kanban card. No executable source, workflow, or board-state change.\n\nConfirmed findings: none. Cross-checks performed adversarially all held: all 10 records named in the reopen summary exist in the diff; thread snapshots are byte-identical and match the claimed thread count; card frontmatter untouched; relative links resolve; receipts/ledger/cards additions-only; no approval-laundering claim introduced (archived parent-head approvals are explicitly non-transferable and were treated as untrusted data, not instructions).\n\nNon-blocking notes: (1) the reopen summary's per-record sha256/byte claims could not be recomputed in this sandbox and have no automated cross-check — a test-gap worth a small verification hook; (2) planning documents' stated obligations (license/calibration decisions, Rheos readiness, RED/GREEN) remain future work by their own admission; (3) deterministic UNAVAILABLE rows are harness/environment artifacts.",
+  "state": "APPROVED",
+  "html_url": "https://github.com/riatzukiza/foresight/pull/26#pullrequestreview-5445795201",
+  "pull_request_url": "https://api.github.com/repos/riatzukiza/foresight/pulls/26",
+  "author_association": "NONE",
+  "_links": {
+    "html": {
+      "href": "https://github.com/riatzukiza/foresight/pull/26#pullrequestreview-5445795201"
+    },
+    "pull_request": {
+      "href": "https://api.github.com/repos/riatzukiza/foresight/pulls/26"
+    }
+  },
+  "submitted_at": "2026-10-07T17:16:55Z",
+  "commit_id": "83231cd02156965d21363e0ebeb1f97b5c18be87"
+}

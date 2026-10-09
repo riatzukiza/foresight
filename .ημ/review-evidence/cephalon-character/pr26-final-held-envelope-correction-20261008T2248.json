@@ -1,0 +1,23 @@
+{
+  "documentary-fields": {
+    "manifest": [
+      "native:riatzukiza/foresight#26,current-source:riatzukiza/eros-eris-field#1"
+    ],
+    "refs": [
+      "head6a4438982fdf1eca98f856748bb23b19ab017c0a,base1069d4c9bcba29ef55e6c72c7c597de101f0520b,request6044963726,quota6044965823,MiMo5446131731"
+    ]
+  },
+  "evidence-tier": "observed immutable rejection and derived existing-law documentary view",
+  "source-origin": "cephalon-selection-current-availability-20261007T1931",
+  "original-candidate-prefix-exact": true,
+  "source": "6e2be5efaf16406e8a89f7b3a5e51c996b878646",
+  "original-fields": {
+    "manifest": "native:riatzukiza/foresight#26,current-source:riatzukiza/eros-eris-field#1",
+    "refs": "head6a4438982fdf1eca98f856748bb23b19ab017c0a,base1069d4c9bcba29ef55e6c72c7c597de101f0520b,request6044963726,quota6044965823,MiMo5446131731"
+  },
+  "correction-line": 288,
+  "source-line": 285,
+  "law-errors": [],
+  "source-line-sha256-with-LF": "f9a246a4478ba464486cc9a54ee6f6fd8429c7533b90608d9ad0693027bea287",
+  "limits": "No current-head review, final immutable admission or deployment asserted by preparation"
+}

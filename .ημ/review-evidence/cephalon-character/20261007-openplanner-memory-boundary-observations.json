@@ -1,0 +1,1288 @@
+{
+  "evidenceKind": "executed selected unchanged committed handler with isolated in-memory effect boundaries; not live HTTP, formal RED gate or provider review",
+  "observedAt": "2026-10-07T15:41:24.338Z",
+  "repositoryPath": "/home/err/spaces/foresight/openplanner",
+  "revision": "07085d6557b75834ce6f50e6c54b8ca47e1c7c08",
+  "nodeVersion": "v24.14.1",
+  "typescriptVersion": "5.9.3",
+  "sourceRecords": [
+    {
+      "path": "src/routes/v1/graph.ts",
+      "bytes": 202632,
+      "sha256": "217a99b3b89d8a952b1d988c8054df7af34e38a3c7b9da777f668e62ad03d2e2"
+    },
+    {
+      "path": "packages/openplanner-sdk/src/embedding-text.ts",
+      "bytes": 1036,
+      "sha256": "de4753c62b57ceab0b212414d5c71f27d5033d7ab67fc5eca01fd39fa67ad3dd"
+    }
+  ],
+  "helperNames": [
+    "escapeRegex",
+    "matchesNodeType",
+    "clampConfidence",
+    "semanticChargeFromSimilarity",
+    "semanticCircuitConductance",
+    "hashHex",
+    "stableUnitInterval",
+    "fadeNoise",
+    "lerp",
+    "simplexTrailNoise",
+    "decayedTrailInfluence",
+    "undirectedEdgeKey",
+    "sortGraphMemorySeedScores",
+    "filterGraphMemorySeedScores",
+    "resolveGraphMemorySeedNodes"
+  ],
+  "callbackSha256": "553598b5678b14c7398b9d444cc96283510961ec8f909a0ef138d1d238103ee9",
+  "selectedSourceSha256": "14d8044ebc1a62626d24bb124c214b758c6e7b6f317f04e8e0f1a1f469cdb4c4",
+  "observations": [
+    {
+      "label": "trail-persistence-disabled",
+      "fixture": {
+        "seed": "knoxx-session:run:fixture-allowed:user",
+        "neighbor": "knoxx-session:run:fixture-outside-scope:user",
+        "attachedScope": "fixture-allowed-tenant",
+        "expectedAccessibleNodeIds": [
+          "knoxx-session:run:fixture-allowed:user"
+        ],
+        "persistDaimoiTrails": false,
+        "repeat": 1,
+        "failWrites": false
+      },
+      "results": [
+        {
+          "statusCode": 200,
+          "nodeIds": [
+            "knoxx-session:run:fixture-allowed:user",
+            "knoxx-session:run:fixture-outside-scope:user"
+          ],
+          "edgeEndpoints": [
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "trails": [
+            [
+              "knoxx-session:run:fixture-allowed:user"
+            ],
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "stats": {
+            "vectorHits": 1,
+            "truthSeeds": 1,
+            "seeds": 1,
+            "compactViewSeeds": 0,
+            "compactedSeedMembers": 0,
+            "expandedCompactViewSeeds": 0,
+            "daimoi": 2,
+            "visited": 2,
+            "edges": 1,
+            "forceSamples": 0,
+            "semanticReinforcements": 1,
+            "edgeClaims": 0,
+            "legacySemanticEdges": 1,
+            "trailSamples": 0,
+            "trailInfluenceNodes": 0,
+            "persistedDaimoiTrails": 0,
+            "clusters": 1,
+            "mode": "query_daimoi_fill"
+          },
+          "explicitFeedbackError": false
+        }
+      ],
+      "reads": [
+        {
+          "collection": "graphNodeEmbeddings",
+          "pipeline": [
+            {
+              "$vectorSearch": {
+                "index": "embedding_vector",
+                "path": "embedding",
+                "queryVector": [
+                  1,
+                  0
+                ],
+                "numCandidates": 500,
+                "limit": 50
+              }
+            },
+            {
+              "$project": {
+                "_id": 0,
+                "node_id": 1,
+                "project": 1,
+                "score": {
+                  "$meta": "vectorSearchScore"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "collection": "graphSemanticForceSamples",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "charge": {
+                  "$gte": 0.8667839288498187
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphEdgeClaims",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "status": {
+                  "$in": [
+                    "supported",
+                    "active"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphDaimoiTrails",
+          "filter": {
+            "node_ids": {
+              "$in": [
+                "knoxx-session:run:fixture-allowed:user"
+              ]
+            },
+            "emitted_at": {
+              "$gte": "2026-10-07T13:40:00.000Z"
+            }
+          }
+        },
+        {
+          "collection": "graphSemanticEdges",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "similarity": {
+                  "$gte": 0.55
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "writes": [
+        {
+          "collection": "graphSemanticEdges",
+          "operations": [
+            {
+              "updateOne": {
+                "filter": {
+                  "$or": [
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-allowed:user",
+                      "target_node_id": "knoxx-session:run:fixture-outside-scope:user"
+                    },
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-outside-scope:user",
+                      "target_node_id": "knoxx-session:run:fixture-allowed:user"
+                    }
+                  ]
+                },
+                "update": {
+                  "$set": {
+                    "status": "active",
+                    "last_reinforced_at": "2026-10-07T15:40:00.000Z",
+                    "decay_half_life_ms": 3600000,
+                    "updated_at": "2026-10-07T15:40:00.000Z",
+                    "updatedAt": "2026-10-07T15:40:00.000Z"
+                  },
+                  "$max": {
+                    "conductance": 0.876374426993215
+                  },
+                  "$inc": {
+                    "reinforcement_count": 1
+                  }
+                }
+              }
+            }
+          ],
+          "outcome": "completed"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "label": "same-recall-repeated",
+      "fixture": {
+        "seed": "knoxx-session:run:fixture-allowed:user",
+        "neighbor": "knoxx-session:run:fixture-outside-scope:user",
+        "attachedScope": "fixture-allowed-tenant",
+        "expectedAccessibleNodeIds": [
+          "knoxx-session:run:fixture-allowed:user"
+        ],
+        "persistDaimoiTrails": false,
+        "repeat": 2,
+        "failWrites": false
+      },
+      "results": [
+        {
+          "statusCode": 200,
+          "nodeIds": [
+            "knoxx-session:run:fixture-allowed:user",
+            "knoxx-session:run:fixture-outside-scope:user"
+          ],
+          "edgeEndpoints": [
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "trails": [
+            [
+              "knoxx-session:run:fixture-allowed:user"
+            ],
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "stats": {
+            "vectorHits": 1,
+            "truthSeeds": 1,
+            "seeds": 1,
+            "compactViewSeeds": 0,
+            "compactedSeedMembers": 0,
+            "expandedCompactViewSeeds": 0,
+            "daimoi": 2,
+            "visited": 2,
+            "edges": 1,
+            "forceSamples": 0,
+            "semanticReinforcements": 1,
+            "edgeClaims": 0,
+            "legacySemanticEdges": 1,
+            "trailSamples": 0,
+            "trailInfluenceNodes": 0,
+            "persistedDaimoiTrails": 0,
+            "clusters": 1,
+            "mode": "query_daimoi_fill"
+          },
+          "explicitFeedbackError": false
+        },
+        {
+          "statusCode": 200,
+          "nodeIds": [
+            "knoxx-session:run:fixture-allowed:user",
+            "knoxx-session:run:fixture-outside-scope:user"
+          ],
+          "edgeEndpoints": [
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "trails": [
+            [
+              "knoxx-session:run:fixture-allowed:user"
+            ],
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "stats": {
+            "vectorHits": 1,
+            "truthSeeds": 1,
+            "seeds": 1,
+            "compactViewSeeds": 0,
+            "compactedSeedMembers": 0,
+            "expandedCompactViewSeeds": 0,
+            "daimoi": 2,
+            "visited": 2,
+            "edges": 1,
+            "forceSamples": 0,
+            "semanticReinforcements": 1,
+            "edgeClaims": 0,
+            "legacySemanticEdges": 1,
+            "trailSamples": 0,
+            "trailInfluenceNodes": 0,
+            "persistedDaimoiTrails": 0,
+            "clusters": 1,
+            "mode": "query_daimoi_fill"
+          },
+          "explicitFeedbackError": false
+        }
+      ],
+      "reads": [
+        {
+          "collection": "graphNodeEmbeddings",
+          "pipeline": [
+            {
+              "$vectorSearch": {
+                "index": "embedding_vector",
+                "path": "embedding",
+                "queryVector": [
+                  1,
+                  0
+                ],
+                "numCandidates": 500,
+                "limit": 50
+              }
+            },
+            {
+              "$project": {
+                "_id": 0,
+                "node_id": 1,
+                "project": 1,
+                "score": {
+                  "$meta": "vectorSearchScore"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "collection": "graphSemanticForceSamples",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "charge": {
+                  "$gte": 0.8667839288498187
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphEdgeClaims",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "status": {
+                  "$in": [
+                    "supported",
+                    "active"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphDaimoiTrails",
+          "filter": {
+            "node_ids": {
+              "$in": [
+                "knoxx-session:run:fixture-allowed:user"
+              ]
+            },
+            "emitted_at": {
+              "$gte": "2026-10-07T13:40:00.000Z"
+            }
+          }
+        },
+        {
+          "collection": "graphSemanticEdges",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "similarity": {
+                  "$gte": 0.55
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphNodeEmbeddings",
+          "pipeline": [
+            {
+              "$vectorSearch": {
+                "index": "embedding_vector",
+                "path": "embedding",
+                "queryVector": [
+                  1,
+                  0
+                ],
+                "numCandidates": 500,
+                "limit": 50
+              }
+            },
+            {
+              "$project": {
+                "_id": 0,
+                "node_id": 1,
+                "project": 1,
+                "score": {
+                  "$meta": "vectorSearchScore"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "collection": "graphSemanticForceSamples",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "charge": {
+                  "$gte": 0.8667839288498187
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphEdgeClaims",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "status": {
+                  "$in": [
+                    "supported",
+                    "active"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphDaimoiTrails",
+          "filter": {
+            "node_ids": {
+              "$in": [
+                "knoxx-session:run:fixture-allowed:user"
+              ]
+            },
+            "emitted_at": {
+              "$gte": "2026-10-07T13:40:00.000Z"
+            }
+          }
+        },
+        {
+          "collection": "graphSemanticEdges",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "similarity": {
+                  "$gte": 0.55
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "writes": [
+        {
+          "collection": "graphSemanticEdges",
+          "operations": [
+            {
+              "updateOne": {
+                "filter": {
+                  "$or": [
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-allowed:user",
+                      "target_node_id": "knoxx-session:run:fixture-outside-scope:user"
+                    },
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-outside-scope:user",
+                      "target_node_id": "knoxx-session:run:fixture-allowed:user"
+                    }
+                  ]
+                },
+                "update": {
+                  "$set": {
+                    "status": "active",
+                    "last_reinforced_at": "2026-10-07T15:40:00.000Z",
+                    "decay_half_life_ms": 3600000,
+                    "updated_at": "2026-10-07T15:40:00.000Z",
+                    "updatedAt": "2026-10-07T15:40:00.000Z"
+                  },
+                  "$max": {
+                    "conductance": 0.876374426993215
+                  },
+                  "$inc": {
+                    "reinforcement_count": 1
+                  }
+                }
+              }
+            }
+          ],
+          "outcome": "completed"
+        },
+        {
+          "collection": "graphSemanticEdges",
+          "operations": [
+            {
+              "updateOne": {
+                "filter": {
+                  "$or": [
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-allowed:user",
+                      "target_node_id": "knoxx-session:run:fixture-outside-scope:user"
+                    },
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-outside-scope:user",
+                      "target_node_id": "knoxx-session:run:fixture-allowed:user"
+                    }
+                  ]
+                },
+                "update": {
+                  "$set": {
+                    "status": "active",
+                    "last_reinforced_at": "2026-10-07T15:40:00.000Z",
+                    "decay_half_life_ms": 3600000,
+                    "updated_at": "2026-10-07T15:40:00.000Z",
+                    "updatedAt": "2026-10-07T15:40:00.000Z"
+                  },
+                  "$max": {
+                    "conductance": 0.876374426993215
+                  },
+                  "$inc": {
+                    "reinforcement_count": 1
+                  }
+                }
+              }
+            }
+          ],
+          "outcome": "completed"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "label": "feedback-write-failure",
+      "fixture": {
+        "seed": "knoxx-session:run:fixture-allowed:user",
+        "neighbor": "knoxx-session:run:fixture-outside-scope:user",
+        "attachedScope": "fixture-allowed-tenant",
+        "expectedAccessibleNodeIds": [
+          "knoxx-session:run:fixture-allowed:user"
+        ],
+        "persistDaimoiTrails": false,
+        "repeat": 1,
+        "failWrites": true
+      },
+      "results": [
+        {
+          "statusCode": 200,
+          "nodeIds": [
+            "knoxx-session:run:fixture-allowed:user",
+            "knoxx-session:run:fixture-outside-scope:user"
+          ],
+          "edgeEndpoints": [
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "trails": [
+            [
+              "knoxx-session:run:fixture-allowed:user"
+            ],
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "stats": {
+            "vectorHits": 1,
+            "truthSeeds": 1,
+            "seeds": 1,
+            "compactViewSeeds": 0,
+            "compactedSeedMembers": 0,
+            "expandedCompactViewSeeds": 0,
+            "daimoi": 2,
+            "visited": 2,
+            "edges": 1,
+            "forceSamples": 0,
+            "semanticReinforcements": 1,
+            "edgeClaims": 0,
+            "legacySemanticEdges": 1,
+            "trailSamples": 0,
+            "trailInfluenceNodes": 0,
+            "persistedDaimoiTrails": 0,
+            "clusters": 1,
+            "mode": "query_daimoi_fill"
+          },
+          "explicitFeedbackError": false
+        }
+      ],
+      "reads": [
+        {
+          "collection": "graphNodeEmbeddings",
+          "pipeline": [
+            {
+              "$vectorSearch": {
+                "index": "embedding_vector",
+                "path": "embedding",
+                "queryVector": [
+                  1,
+                  0
+                ],
+                "numCandidates": 500,
+                "limit": 50
+              }
+            },
+            {
+              "$project": {
+                "_id": 0,
+                "node_id": 1,
+                "project": 1,
+                "score": {
+                  "$meta": "vectorSearchScore"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "collection": "graphSemanticForceSamples",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "charge": {
+                  "$gte": 0.8667839288498187
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphEdgeClaims",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "status": {
+                  "$in": [
+                    "supported",
+                    "active"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphDaimoiTrails",
+          "filter": {
+            "node_ids": {
+              "$in": [
+                "knoxx-session:run:fixture-allowed:user"
+              ]
+            },
+            "emitted_at": {
+              "$gte": "2026-10-07T13:40:00.000Z"
+            }
+          }
+        },
+        {
+          "collection": "graphSemanticEdges",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "similarity": {
+                  "$gte": 0.55
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "writes": [
+        {
+          "collection": "graphSemanticEdges",
+          "operations": [
+            {
+              "updateOne": {
+                "filter": {
+                  "$or": [
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-allowed:user",
+                      "target_node_id": "knoxx-session:run:fixture-outside-scope:user"
+                    },
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-outside-scope:user",
+                      "target_node_id": "knoxx-session:run:fixture-allowed:user"
+                    }
+                  ]
+                },
+                "update": {
+                  "$set": {
+                    "status": "active",
+                    "last_reinforced_at": "2026-10-07T15:40:00.000Z",
+                    "decay_half_life_ms": 3600000,
+                    "updated_at": "2026-10-07T15:40:00.000Z",
+                    "updatedAt": "2026-10-07T15:40:00.000Z"
+                  },
+                  "$max": {
+                    "conductance": 0.876374426993215
+                  },
+                  "$inc": {
+                    "reinforcement_count": 1
+                  }
+                }
+              }
+            }
+          ],
+          "outcome": "failed"
+        }
+      ],
+      "warnings": [
+        "failed to reinforce traversed semantic edges"
+      ]
+    },
+    {
+      "label": "trail-persistence-enabled",
+      "fixture": {
+        "seed": "knoxx-session:run:fixture-allowed:user",
+        "neighbor": "knoxx-session:run:fixture-outside-scope:user",
+        "attachedScope": "fixture-allowed-tenant",
+        "expectedAccessibleNodeIds": [
+          "knoxx-session:run:fixture-allowed:user"
+        ],
+        "persistDaimoiTrails": true,
+        "repeat": 1,
+        "failWrites": false
+      },
+      "results": [
+        {
+          "statusCode": 200,
+          "nodeIds": [
+            "knoxx-session:run:fixture-allowed:user",
+            "knoxx-session:run:fixture-outside-scope:user"
+          ],
+          "edgeEndpoints": [
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "trails": [
+            [
+              "knoxx-session:run:fixture-allowed:user"
+            ],
+            [
+              "knoxx-session:run:fixture-allowed:user",
+              "knoxx-session:run:fixture-outside-scope:user"
+            ]
+          ],
+          "stats": {
+            "vectorHits": 1,
+            "truthSeeds": 1,
+            "seeds": 1,
+            "compactViewSeeds": 0,
+            "compactedSeedMembers": 0,
+            "expandedCompactViewSeeds": 0,
+            "daimoi": 2,
+            "visited": 2,
+            "edges": 1,
+            "forceSamples": 0,
+            "semanticReinforcements": 1,
+            "edgeClaims": 0,
+            "legacySemanticEdges": 1,
+            "trailSamples": 0,
+            "trailInfluenceNodes": 0,
+            "persistedDaimoiTrails": 2,
+            "clusters": 1,
+            "mode": "query_daimoi_fill"
+          },
+          "explicitFeedbackError": false
+        }
+      ],
+      "reads": [
+        {
+          "collection": "graphNodeEmbeddings",
+          "pipeline": [
+            {
+              "$vectorSearch": {
+                "index": "embedding_vector",
+                "path": "embedding",
+                "queryVector": [
+                  1,
+                  0
+                ],
+                "numCandidates": 500,
+                "limit": 50
+              }
+            },
+            {
+              "$project": {
+                "_id": 0,
+                "node_id": 1,
+                "project": 1,
+                "score": {
+                  "$meta": "vectorSearchScore"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "collection": "graphSemanticForceSamples",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "charge": {
+                  "$gte": 0.8667839288498187
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphEdgeClaims",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "status": {
+                  "$in": [
+                    "supported",
+                    "active"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "collection": "graphDaimoiTrails",
+          "filter": {
+            "node_ids": {
+              "$in": [
+                "knoxx-session:run:fixture-allowed:user"
+              ]
+            },
+            "emitted_at": {
+              "$gte": "2026-10-07T13:40:00.000Z"
+            }
+          }
+        },
+        {
+          "collection": "graphSemanticEdges",
+          "filter": {
+            "$and": [
+              {
+                "$or": [
+                  {
+                    "source_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  },
+                  {
+                    "target_node_id": {
+                      "$in": [
+                        "knoxx-session:run:fixture-allowed:user"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "similarity": {
+                  "$gte": 0.55
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "writes": [
+        {
+          "collection": "graphSemanticEdges",
+          "operations": [
+            {
+              "updateOne": {
+                "filter": {
+                  "$or": [
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-allowed:user",
+                      "target_node_id": "knoxx-session:run:fixture-outside-scope:user"
+                    },
+                    {
+                      "source_node_id": "knoxx-session:run:fixture-outside-scope:user",
+                      "target_node_id": "knoxx-session:run:fixture-allowed:user"
+                    }
+                  ]
+                },
+                "update": {
+                  "$set": {
+                    "status": "active",
+                    "last_reinforced_at": "2026-10-07T15:40:00.000Z",
+                    "decay_half_life_ms": 3600000,
+                    "updated_at": "2026-10-07T15:40:00.000Z",
+                    "updatedAt": "2026-10-07T15:40:00.000Z"
+                  },
+                  "$max": {
+                    "conductance": 0.876374426993215
+                  },
+                  "$inc": {
+                    "reinforcement_count": 1
+                  }
+                }
+              }
+            }
+          ],
+          "outcome": "completed"
+        },
+        {
+          "collection": "graphDaimoiTrails",
+          "operations": [
+            {
+              "updateOne": {
+                "filter": {
+                  "_id": "daimoi-trail:14cc4cb689596b91f93c206c"
+                },
+                "update": {
+                  "$setOnInsert": {
+                    "_id": "daimoi-trail:14cc4cb689596b91f93c206c",
+                    "query_hash": "d6645d144907790d97646dd249dae92aaa6ec06eed65400d9d87eb8459cd826a",
+                    "query_text": "synthetic fixture encounter",
+                    "daimoi_id": "daimoi:9adcbc3e20ad25d97e0a586f",
+                    "origin_node_id": "knoxx-session:run:fixture-allowed:user",
+                    "current_node_id": "knoxx-session:run:fixture-allowed:user",
+                    "node_ids": [
+                      "knoxx-session:run:fixture-allowed:user"
+                    ],
+                    "edge_keys": [],
+                    "trail": [
+                      "knoxx-session:run:fixture-allowed:user"
+                    ],
+                    "activation": 0.9,
+                    "traversal_cost": 0,
+                    "field_adjustments": [
+                      {
+                        "node_id": "knoxx-session:run:fixture-allowed:user",
+                        "delta": 0.9
+                      }
+                    ],
+                    "decay_half_life_seconds": 900,
+                    "emitted_at": "2026-10-07T15:40:00.000Z",
+                    "createdAt": "2026-10-07T15:40:00.000Z",
+                    "updatedAt": "2026-10-07T15:40:00.000Z"
+                  }
+                },
+                "upsert": true
+              }
+            },
+            {
+              "updateOne": {
+                "filter": {
+                  "_id": "daimoi-trail:bea4aadb240e0b706e45c98c"
+                },
+                "update": {
+                  "$setOnInsert": {
+                    "_id": "daimoi-trail:bea4aadb240e0b706e45c98c",
+                    "query_hash": "d6645d144907790d97646dd249dae92aaa6ec06eed65400d9d87eb8459cd826a",
+                    "query_text": "synthetic fixture encounter",
+                    "daimoi_id": "daimoi:9adcbc3e20ad25d97e0a586f",
+                    "origin_node_id": "knoxx-session:run:fixture-allowed:user",
+                    "current_node_id": "knoxx-session:run:fixture-outside-scope:user",
+                    "node_ids": [
+                      "knoxx-session:run:fixture-allowed:user",
+                      "knoxx-session:run:fixture-outside-scope:user"
+                    ],
+                    "edge_keys": [
+                      "knoxx-session:run:fixture-allowed:user||knoxx-session:run:fixture-outside-scope:user"
+                    ],
+                    "trail": [
+                      "knoxx-session:run:fixture-allowed:user",
+                      "knoxx-session:run:fixture-outside-scope:user"
+                    ],
+                    "activation": 0.7967040245392863,
+                    "traversal_cost": 0.09999999999999998,
+                    "field_adjustments": [
+                      {
+                        "node_id": "knoxx-session:run:fixture-allowed:user",
+                        "delta": 0.7967040245392863
+                      },
+                      {
+                        "node_id": "knoxx-session:run:fixture-outside-scope:user",
+                        "delta": 0.3983520122696432
+                      }
+                    ],
+                    "decay_half_life_seconds": 900,
+                    "emitted_at": "2026-10-07T15:40:00.000Z",
+                    "createdAt": "2026-10-07T15:40:00.000Z",
+                    "updatedAt": "2026-10-07T15:40:00.000Z"
+                  }
+                },
+                "upsert": true
+              }
+            }
+          ],
+          "outcome": "completed"
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "limits": [
+    "No network, HTTP server, live database, graph feedback, maker, credential, social action or donor working-file mutation.",
+    "The actual committed callback, native seed filter/resolver and listed pure helpers run; embedding and Mongo boundaries are synthetic.",
+    "The graph callback is isolated from authentication/tenant plugins. Attached fixture scope proves only whether this callback consumes it, not deployment exposure or a complete authorization exploit.",
+    "Synthetic outside-scope classification is an external fixture expectation, not a newly implemented authorization law.",
+    "TranspileModule removes TypeScript annotations; this is not typechecking or a complete package test.",
+    "Date and graph data are held fixed; no physical solver, mood, character continuity, successful publication or end-to-end loop is admitted."
+  ]
+}

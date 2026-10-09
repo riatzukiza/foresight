@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-10-07T16:55:08.433360+00:00",
+  "transport": "HTTPS using existing gh keyring",
+  "exit": 1,
+  "stdout": "",
+  "stderr": "remote: Internal Server Error        \nremote: Request ID 791A:26655B:1F146B:2A152A:6AC67969        \nremote: Time 2026-10-07T16:55:06Z\nTo github.com:riatzukiza/foresight.git\n ! [remote rejected] codex/cephalon-kernel-selection -> codex/cephalon-kernel-selection (Internal Server Error)\nerror: failed to push some refs to 'github.com:riatzukiza/foresight.git'\nremote: Internal Server Error        \nremote: Request ID 790E:1EBBB3:1010306:15185D5:6AC6796B        \nremote: Time 2026-10-07T16:55:08Z\nTo https://github.com/riatzukiza/foresight.git\n ! [remote rejected] codex/cephalon-kernel-selection -> codex/cephalon-kernel-selection (Internal Server Error)\nerror: failed to push some refs to 'https://github.com/riatzukiza/foresight.git'\n"
+}

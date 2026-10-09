@@ -1,0 +1,229 @@
+{
+  "evidence_kind": "observed-command-output; not provider approval or hosted qualification",
+  "observed_at": "2026-10-09T03:20:52.635025+00:00",
+  "plan_pr": "https://github.com/riatzukiza/foresight/pull/30",
+  "native_ready_task": "b44514f0-7ed6-44ae-91bc-ab3a052871f1",
+  "red_commit": "9b44a0ab78d1fd4011b56cb6a496bd6b3e7754d3",
+  "implementation_base": "2f1ad78b50890f7bb57c1fcfb6d3bbdc247b355b",
+  "red": {
+    "observed_at": "2026-10-09T03:13:03.697788+00:00",
+    "command": [
+      "nbb",
+      "-cp",
+      "src:scripts:test",
+      "test/evidence_cli_test.cljs"
+    ],
+    "exit": 1,
+    "source_before_sha256": "8692f528a04c358fd0de98684bc03180f4e49c002266b9ae2f12c733503c122d",
+    "source_after_sha256": "8692f528a04c358fd0de98684bc03180f4e49c002266b9ae2f12c733503c122d",
+    "production_source_unchanged": true,
+    "stdout_bytes": 13161,
+    "stderr_bytes": 0
+  },
+  "red_summary": {
+    "tests": 84,
+    "assertions": 450,
+    "failures": 5,
+    "errors": 2,
+    "reason": "Valid older-base source admission fails; foreign/missing canonical anchors improperly admitted. Held common-prefix negative already passes."
+  },
+  "green_summary": {
+    "tests": 84,
+    "assertions": 459,
+    "failures": 0,
+    "errors": 0,
+    "reason_for_differing_assertion_count": "Previously thrown admission now reaches remaining assertions; no tests removed or weakened."
+  },
+  "production_final_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+  "raw_outputs": {
+    "canonical-anchor-red-20261009.stdout": {
+      "bytes": 13161,
+      "sha256": "b76a2633adb201c64364c00d6f8cf68178deff738f3202ac6493ea5e4248624b",
+      "kind": "raw actual command stdout"
+    },
+    "canonical-anchor-green-20261009.stdout": {
+      "bytes": 17346,
+      "sha256": "784f10470efec597a811d2023e1f477a4c547d82a49986632da38dad453a8152",
+      "kind": "raw actual command stdout"
+    }
+  },
+  "local_gates": [
+    {
+      "name": "adapter-final",
+      "observed_at": "2026-10-09T03:19:31.512655+00:00",
+      "command": [
+        "nbb",
+        "-cp",
+        "src:scripts:test",
+        "test/evidence_cli_test.cljs"
+      ],
+      "exit": 0,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 17346,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "workspace",
+      "observed_at": "2026-10-09T03:19:31.917955+00:00",
+      "command": [
+        "nbb",
+        "-cp",
+        "scripts:test",
+        "test/workspace_test.cljs"
+      ],
+      "exit": 0,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 402,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "diagnostic",
+      "observed_at": "2026-10-09T03:19:32.241379+00:00",
+      "command": [
+        "nbb",
+        "-cp",
+        "scripts:test",
+        "test/verify_cephalon_local_test.cljs"
+      ],
+      "exit": 0,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 98,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "project",
+      "observed_at": "2026-10-09T03:19:32.591891+00:00",
+      "command": [
+        "nbb",
+        "-cp",
+        "src:scripts:test",
+        "test/project_test.cljs"
+      ],
+      "exit": 0,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 85,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "lineage",
+      "observed_at": "2026-10-09T03:19:32.830134+00:00",
+      "command": [
+        "nbb",
+        "-cp",
+        "src:test",
+        "test/lineage_test.cljs"
+      ],
+      "exit": 0,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 84,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "project-contract",
+      "observed_at": "2026-10-09T03:19:33.087722+00:00",
+      "command": [
+        "nbb",
+        "-cp",
+        "src:scripts",
+        "scripts/project.clj",
+        "validate"
+      ],
+      "exit": 0,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 103,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "catalog",
+      "observed_at": "2026-10-09T03:19:33.420614+00:00",
+      "command": [
+        "nbb",
+        "-cp",
+        "src:scripts",
+        "scripts/evidence.clj",
+        "validate"
+      ],
+      "exit": 0,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 26,
+      "stderr_bytes": 0
+    },
+    {
+      "name": "migration",
+      "observed_at": "2026-10-09T03:19:33.544409+00:00",
+      "command": [
+        "env",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "docs/migrations/eta-mu-breakdown/checks",
+        "-p",
+        "check_pack.py"
+      ],
+      "exit": 1,
+      "production_sha256": "ecb39a87d4be113fb8edb70feffd7f432201e3169b9aae8b6674864c99dec65d",
+      "source_unchanged": true,
+      "stdout_bytes": 0,
+      "stderr_bytes": 900
+    }
+  ],
+  "lint": {
+    "observed_at": "2026-10-09T03:18:23.296835+00:00",
+    "command": [
+      "clj-kondo",
+      "--lint",
+      "scripts",
+      "test"
+    ],
+    "exit": 0
+  },
+  "evidence_laws": {
+    "observed_at": "2026-10-09T03:18:23.932770+00:00",
+    "command": [
+      "nbb",
+      "-cp",
+      "src:test",
+      "test/evidence_test.cljs"
+    ],
+    "exit": 0,
+    "tests": 79,
+    "assertions": 1239,
+    "failures": 0,
+    "errors": 0
+  },
+  "immutable_frozen_proof": {
+    "comparison_base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "common": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "source": "bdac1ed6470c98128ff367e757132797a39ac436",
+    "canonical_anchor": "e7ce01804633e0c3ddbb82cd444ac9e796b8cf65",
+    "canonical_receipts": 275,
+    "imported_receipts": 19,
+    "combined_receipts": 294,
+    "corrections": 11,
+    "source_lines": [
+      260,
+      278
+    ],
+    "corrected_original_lines": [
+      267,
+      277
+    ],
+    "correction_line": 278
+  },
+  "limits": [
+    "Promotion fixture deliberately returns false from independent consistency decision; proves admission reaches decision, not actual promotion.",
+    "Local migration suite exits1 because networkx is unavailable; hosted workflow retains its dependency install and actual execution gate.",
+    "All required hosted checks and complete exact-head review remain outstanding.",
+    "No original receipt/reflection bytes changed, no board engine, CLI or workflow change, and no B1/B2/B3 implementation/deployment claim."
+  ]
+}

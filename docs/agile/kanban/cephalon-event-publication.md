@@ -1,0 +1,74 @@
+---
+uuid: "25e3a688-09b5-4e9a-8765-9b13944b1a03"
+title: "Trigger creative work and publish accepted pieces with native receipts"
+status: incoming
+priority: P1
+points: 3
+labels: "knoxx, cephalon, triggers, bluesky, discord"
+epic: "25e3a688-09b5-4e9a-8765-9b13944b1a00"
+parent: "25e3a688-09b5-4e9a-8765-9b13944b1a00"
+dependency: "25e3a688-09b5-4e9a-8765-9b13944b1a02"
+---
+
+## Context
+
+Clock, conversation, artifact completion and arbitrary configured observations
+can motivate creative work. Publication is an external effect with replay risk.
+
+## Outcome
+
+Clock and non-clock events use one admissible bounded work path. Original
+selected pieces reach Bluesky and occasional Discord sharing, with verified IDs.
+
+## Scope
+
+Reusable event/resource agreements, configured publication frequency, saved
+artifact identity and durable publication attempt/result records. Reuse existing
+Bluesky/Discord clients and preserve labels/access policy.
+
+## Non-goals
+
+Reply to every third-party message, publish private context, add another event
+transport, or treat a localhost artifact URL as publicly accessible.
+
+## Acceptance criteria
+
+1. A manually dispatched arbitrary creative-request event follows the same
+   maker path as the clock, with no overlap or conversation cancellation.
+2. Publication occurs only after artifact validation and the existing access
+   policy permits that artifact for the selected Bluesky or Discord destination.
+   An artifact denied for that destination causes no external write. Before any
+   external write for a Bluesky image post, every image has a corresponding
+   non-empty, non-whitespace `imageAlts` entry; cardinality matches the images,
+   and the accepted alt text is passed unchanged to the post. Missing or invalid
+   alt text causes zero external writes. Text-only posts do not require image
+   alt text. Accepted
+   publication records account, artifact identity, native URI/message ID and
+   attempt outcome. Reuse existing labels and policy; no new access-label API.
+3. Replaying the same accepted event does not duplicate its publication.
+   Ambiguous external completion is reconciled before retrying.
+4. The configured initial policy permits at most one Bluesky creation post per
+   30 minutes and one unsolicited Discord creative share per hour; operator
+   replies have a separate initial limit of ten newly admitted head turns per
+   60 seconds per operator actor/channel. Excess input receives an explicit
+   rate-limit outcome or is coalesced with an observable receipt; it cannot
+   silently disappear or interrupt a maker. These configurable policies are
+   runtime-enforced, not only prompts.
+5. Verify one real Bluesky post and Discord attachment independently, without
+   exposing credentials. An unavailable outlet records a failure/backoff.
+
+## Verification
+
+Red replay/frequency/unknown-outcome and destination-access laws; negative tests
+for both Bluesky and Discord adapters prove that denied artifacts cause no
+external write. Bluesky image-post tests prove missing, empty, whitespace-only
+or mismatched alt entries prevent all external writes, and a positive adapter
+case retains the accepted alt text; adapter failure tests; backend gates.
+Human script defaults to dry-run and requires explicit publication mode against
+the intended identity, then verifies native records and cleans up owned fixtures.
+
+## Risks
+
+Provider retries after accepted writes, media limits, inaccessible links, bot
+feedback and externally deleted posts. Publication authorization is scoped to
+the configured account and home channels.

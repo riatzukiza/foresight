@@ -1,0 +1,62 @@
+{
+  "schema": "open-hax.github-review/v1",
+  "event": "APPROVE",
+  "summary": "Reviewed PR #28 \"Plan bound envelope corrections in the existing receipt reader\" (riatzukiza/foresight, base 1069d4c9 → head 920f1321) in full: all 4 pages of the immutable base/head diff (3 files, +176/−0), each hunk assessed.\n\nChange: one new 160-line planning card (`docs/agile/kanban/receipt-envelope-correction-reader.md`), two appended decision receipts in `.ημ/receipts.edn`, and a 14-line append to `.ημ/session-mycology/ledger.md`. No executable code changes.\n\nDeterministic evidence: all 13 gates exited 0 at the exact expected head — including `receipt_history` (261 records, 2 appended, base 1069d4c9 prefix preserved byte-for-byte) and `diff_hygiene`. The `workspace_laws` log contains `ENOENT` lines for absent `opencode`/`jscpd` tools; these are isolated-runner environment limitations, not change-introduced failures.\n\nVerification performed: both new receipts were checked key-by-key against `foresight.evidence/receipt-envelope?`; the card's factual claims were checked against complete source (`receipt-envelope?` at `src/foresight/evidence.cljc:222`, `require-valid-receipt-records!` at `scripts/evidence.clj:226`, and its exactly three consumers `verify-receipts!`/`promotion-ready-at!`/`validate-held-receipt-ledger!`) and are accurate. Manual authoring of an `incoming` card with UUID and initial metadata is explicitly permitted first-class input per `docs/agile/AGENTS.md`; the UUID is unique; receipts live only under `.ημ/`.\n\nConfirmed findings: none. No candidate survived adversarial validation, so this review yields no blocking or non-blocking defects.\n\nNon-blocking notes: (1) no behavioral tests accompany this PR — correct for a planning-only change and honestly disclaimed in the PR body; the card's RED fixtures are prospective by design; (2) PR-body claims about PR27/PR22 contents, native review IDs, and suffix byte-count/SHA values are not independently verifiable from this checkout — they are documentary context, and the load-bearing prefix-preservation claim is gate-verified; (3) PR27's own failing gate remains separately open and is untouched by this PR, as the PR itself states.",
+  "input-source": {
+    "schema": "open-hax.review-input/v1",
+    "base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "head_sha": "920f1321239dd73d7188e5c9df217fdaf949967d",
+    "diff_base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "full_diff": {
+      "path": "basehead.diff",
+      "bytes": 28110,
+      "sha256": "85a48179fbadecdd37bb691926eff62ee84bb4cddcdd1255fe585292c1dff157"
+    },
+    "preview": {
+      "path": "pr.diff",
+      "limit_bytes": 300000,
+      "truncated": false
+    },
+    "provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "28",
+      "run_id": "37698100077",
+      "run_attempt": "1",
+      "workflow_sha": "2ef8076cfe60fbe98fcc74ce0f451f607914af7d",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/28/merge"
+    }
+  },
+  "input-coverage": {
+    "chunks": 4,
+    "delivered": 4,
+    "assessed": 4,
+    "missing": []
+  },
+  "input-assessments": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8192,
+      "note": "Page 1 (bytes 0–8192): opens the diff for `.ημ/receipts.edn` (@@ -257,3 +257,5 @@) showing two appended EDN records — a `:kind :decision` record at ts 2026-10-07T14:51:18 and a `:kind :test-run` record at ts 2026-10-07T15:02:52 — plus the beginning of a third `:kind :test-run` record at ts 2026-10-07T15:12:47. Context lines are the two pre-existing base records (lines 257–259 of base), confirming an append-only hunk with 0 deletions as claimed. Content is documentary receipt metadata (notes/tests/decisions/drift/manifest/refs) with no executable semantics; manifests cite only files inside the repo's own ledger/docs trees. No injected instructions obeyed — text treated as evidence. Assessment: append-only ledger growth consistent with the PR's stated 'two appended valid records' claim; no byte rewriting of history visible in this hunk."
+    },
+    {
+      "id": 2,
+      "start": 8192,
+      "end": 16384,
+      "note": "Page 2 (bytes 8192–16384): completes `.ημ/receipts.edn` — final context line of the base 15:12:47 test-run record, then exactly two added lines (`+`): decision record ts 2026-10-07T22:38:28.984Z origin 'cephalon-bound-envelope-reader-plan-20261007T2235' and decision record ts 2026-10-07T22:44:11.512112+00:00 origin 'cephalon-bound-envelope-reader-clarified-20261007T2244'. Both carry :kind :decision, :manifest listing only the three changed files, :refs citing the parent base SHA 1069d4c9 and native review/thread IDs, and notes stating no implementation/native-Ready claimed. These match the deterministic gate's appended-receipts=2 and the PR body's 'new lines 260–261'. Then the diff opens `.ημ/session-mycology/ledger.md` (@@ -861,3 +861,17 @@) with base context lines about prior WARN snapshots. The two new records are documentary; their claims (e.g., 'native receipt-envelope? validation before append') are corroborated by the receipt_history gate PASS. No history rewritten; append-only shape holds. Assessment: receipts.edn hunk fully reviewed, append-only, no defect surfaced."
+    },
+    {
+      "id": 3,
+      "start": 16384,
+      "end": 24572,
+      "note": "Page 3 (bytes 16384–24572): finishes `.ημ/session-mycology/ledger.md` — 14 appended lines (two dated reflection sections at 22:38:28 and 22:44:11 with receipt origins matching the two new receipts.edn records, efficiency/friction/skill-candidate metrics, and explicit 'no implementation, behavioral tests, native Ready or provider approval claimed'). Append-only, base context lines untouched, consistent with PR body's 14-line append claim. Then opens new file `docs/agile/kanban/receipt-envelope-correction-reader.md` (160 lines, @@ -0,0 +1,160 @@): frontmatter uuid 707901cb-e498-4ce3-aa1c-245202ced648, status incoming, priority P1, points 3 — matching PR body. Sections Context/Outcome/Scope/Non-goals/Acceptance criteria describe a *prospective* plan to add a portable .cljc correction-admission decision while keeping `receipt-envelope?` strict, with narrow permitted fields (manifest/refs/dod/pi), source-commit/ancestry/line/hash binding including final LF, and applying it to the three consumers. The doc correctly scopes out Receipt River protocol promotion, board mutation, and implementation. It cites PR27's eleven malformed records and native P1 finding as motivation. All claims are planning intent, not behavior changes; the only executable change in the PR is ledger/receipt appends, which deterministic gates validate. No adversarial instructions found; links and IDs treated as evidence. Assessment: ledger.md hunk append-only and consistent; planning doc so far internally consistent with PR body."
+    },
+    {
+      "id": 4,
+      "start": 24572,
+      "end": 28036,
+      "note": "Page 4 (bytes 24572–28036): completes the new planning card — remainder of acceptance criterion 3 (explicit refusal of malformed/duplicate/forward/self-target corrections, no order-dependent last-wins), criteria 4–7 (corrections cannot alter timestamp/owner/origin/kind/command/outcome/revision/schema/evidence payload; invalid revision-bound-evidence remains refused; ordinary suffixes keep existing refusals; all three consumers must agree; PR27's real suffix passes only after independently qualified integration and this card cannot waive PR27's P1/CI), Verification section (prospective RED via existing evidence_test.cljs/evidence_cli_test.cljs fixture seams with-historical-ledger-fixture, frozen base1069/source91a6fc6b/PR27headbdac1ed64, explicit statement that all behavioral scenarios are prospective and not executed), Risks (narrow permitted fields, visible CI object-unavailability, Receipt River qualification kept separate, Rheos owns admission), and Relation to character work (scope containment). Cross-checked against complete card file: page content matches head file byte-for-byte in the reviewed regions. The criteria align with the named source contracts already verified (three consumers, strict envelope, including-LF hash convention exists in appended-receipt-records! at scripts/evidence.clj:1029-1036 requiring LF-terminated appends). No executable change, no hidden scope, no instruction-targeting beyond ordinary PR-review prose (treated as evidence). Assessment: final page reviewed; all four pages now delivered and assessed; no defect surfaced anywhere in the diff."
+    }
+  ],
+  "comments": []
+}

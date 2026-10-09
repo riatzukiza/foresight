@@ -1,0 +1,356 @@
+{
+  "schema": "open-hax.github-review/v1",
+  "event": "APPROVE",
+  "summary": "Reviewed PR #22 \"Plan an always-on creative cephalon with an independent responsive head\" — complete immutable diff (31 files, 394,307 bytes), all 53 pages read and assessed, plus full source of the new diagnostic script/test, the workflow file, and kanban/ledger/receipt context.\n\nDeterministic evidence: 13/13 gates attempted, all exit 0 at exact head on a clean checkout, errors=[], including the newly added cephalon_diagnostic gate (12 tests/93 assertions). workspace_laws log ENOENT lines (opencode/jscpd) are isolated-runner tool availability, not change-introduced failures; evidence_adapter UNAVAILABLE/BLOCKED output is passing-suite fixture content.\n\nChange: one new CI gate pattern-identical to the existing 12; a new read-only diagnostic with fail-closed phase ordering (usage, image digest, manifest shape, per-file sha256, runtime observation), loopback-only credential use, no I/O at import; a fixture/vm test suite that executes the actual shipped observation script; append-only receipts/ledger appends (receipt_history passed); 14 planning cards, notes, and a verification report with consistent UUID cross-refs and story-point sums.\n\nConfirmed findings: none. Three low-severity candidates were registered and all rejected under adversarial validation: (1) multi-level FAIL reporting in the diagnostic count - the count equals the printed FAIL lines and the exit status, its documented purpose, is correct on every path and pinned by tests; (2) mixed scalar/array dependency frontmatter - installed Rheos natively validated the scalar cards, array is pre-existing corpus convention, the projection gap is disclosed and tracked upstream (Rheos issue 3), no board admission claimed, no deterministic gate parses kanban frontmatter; (3) the :end-run-tests defmethod - the exact extension cljs.test documents, already used by five pre-existing suites, only sets exit 1 on failure, gate green with visible output.\n\nNon-blocking notes: real spawnSync nonzero/timeout/ENOENT paths are exercised only through the test stub (fail-closed by construction); external artifact/URL claims in the verification report are not independently verifiable from this runner; cosmetic nits (multi-level FAIL lines, mid-file license line, missing spaces in output strings) match existing repo style.\n\nNo demonstrated invariant violation, no confirmed finding, nothing blocking.",
+  "input-source": {
+    "schema": "open-hax.review-input/v1",
+    "base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "head_sha": "4f1ad49d0cb9990e5a3b8b4374ab193ce9b477c7",
+    "diff_base_sha": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "full_diff": {
+      "path": "basehead.diff",
+      "bytes": 394784,
+      "sha256": "89fa39da7da77f36ebd0ad529863f87ede8a9496a34458cd3eb114b81e723a1a"
+    },
+    "preview": {
+      "path": "pr.diff",
+      "limit_bytes": 300000,
+      "truncated": true
+    },
+    "provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "22",
+      "run_id": "37621289703",
+      "run_attempt": "1",
+      "workflow_sha": "6a1e56c0dcfcff4de3c2c86b12322dceade37548",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/22/merge"
+    }
+  },
+  "input-coverage": {
+    "chunks": 53,
+    "delivered": 53,
+    "assessed": 53,
+    "missing": []
+  },
+  "input-assessments": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8192,
+      "note": "Workflow +1 gate line (cephalon_diagnostic test gate) and start of append-only .ημ/receipts.edn suffix: activation/clock-liveness receipts. Context lines show existing history preserved (hunk @@ -197,3 +197,53 @@ adds only). Gate line follows run_gate pattern, same pinned nbb version; deterministic gates all exit 0 with exact_head. No defect in this page."
+    },
+    {
+      "id": 2,
+      "start": 8192,
+      "end": 16384,
+      "note": "receipts.edn continued: delegation/three-clock-cycles, second-native-planning-findings, fourth-cycle observation receipts (all '+' lines, append-only). Content is provenance narrative, not executable; describes diagnostic counts and native review state. Self-reported counts not independently verified but explicitly framed as observations, no claims of approval transfer. No defect."
+    },
+    {
+      "id": 3,
+      "start": 16384,
+      "end": 24576,
+      "note": "receipts.edn continued: source386 native qualification, manifest-observation hardening (fail-closed contract verification), timestamped cycle-count decision. Append-only '+' lines; the hardening receipt corresponds to the existsSync/empty-files checks actually present in scripts/verify_cephalon_local.cljs (lines 73-86 verified). No defect."
+    },
+    {
+      "id": 4,
+      "start": 24576,
+      "end": 32768,
+      "note": "receipts.edn continued: complete-input gap observation, sampled-publication diagnostic test-run, personal-fork review migration decision. Append-only; documents CodeRabbit scope omission and routing change to riatzukiza forks (matches PR base). Claims of native reviews are provenance records, not gates. No defect."
+    },
+    {
+      "id": 5,
+      "start": 32768,
+      "end": 40960,
+      "note": "receipts.edn continued: native Rheos scalar-dependency tolerance observation (upstream issue 3), subscription/privacy finding, settlement, diagnostic failure coverage test-run. Append-only. The scalar-dependency claim matches the mixed frontmatter seen in cards; framed as input tolerance + upstream gap, not enforced graph admission. No defect introduced here."
+    },
+    {
+      "id": 6,
+      "start": 40960,
+      "end": 49152,
+      "note": "receipts.edn continued: push-truth, head-qualification, complete-review-fixes (RED→GREEN 10/60), literal-container-boundary test-run. Append-only. The literal container assertion claim matches test fixture expectations already read; narrative only. No defect."
+    },
+    {
+      "id": 7,
+      "start": 49152,
+      "end": 57344,
+      "note": "receipts.edn continued: successor push, 20261007 head qualification, five-slice note reconciliation, named-missing-contract-files RED/GREEN receipt. Append-only '+' lines. The named-missing-file behavior claim matches current script (existsSync guard + continue + pre-runtime throw at lines 75-86). No defect."
+    },
+    {
+      "id": 8,
+      "start": 57344,
+      "end": 65536,
+      "note": "receipts.edn continued: missing-file native settlement, workflow admission observation, historical MiMo scope preservation, readonly follow-up. Append-only; explicitly preserves 'no current approval' boundaries and uncommitted-append discipline. Narrative provenance only; no code/state transition in this page. No defect."
+    },
+    {
+      "id": 9,
+      "start": 65536,
+      "end": 73728,
+      "note": "receipts.edn continued: current-MiMo/full-request observation, success-floor + malformed-feed test-run (RED12/72→GREEN12/93), root-qualified observation, native-timeout observation. Append-only narrative; success-floor claim corresponds to epic acceptance criteria added in cards. Provenance only, no executable surface. No defect."
+    },
+    {
+      "id": 10,
+      "start": 73728,
+      "end": 81920,
+      "note": "receipts.edn continued: full-review request, pending-handoff (records app-trimmed-newline readback correction honestly), completed-review observation, readonly follow-up. Append-only '+' lines; explicitly records failed preflights and no approval transfer. No defect."
+    },
+    {
+      "id": 11,
+      "start": 81920,
+      "end": 90112,
+      "note": "receipts.edn continued: three unchanged readonly follow-up observations (03:49/04:20/04:49). Append-only; routine status records with explicit non-claims (no fencing/quality/delivery proof). No executable or state-transition content. No defect."
+    },
+    {
+      "id": 12,
+      "start": 90112,
+      "end": 98304,
+      "note": "receipts.edn continued: 05:21 readonly follow-up, Proxx stream-bootstrap repair decision (records a cloud Proxx UPSTREAM_STREAM_BOOTSTRAP_TIMEOUT_MS config change — outside this repo's diff, receipt only), start of 06:18 automation-readback correction. Append-only; the cloud change is recorded as decision provenance, not implemented here. No defect in this page."
+    },
+    {
+      "id": 13,
+      "start": 98304,
+      "end": 106496,
+      "note": "receipts.edn continued: automation readback correction (snake_case TOML field honest correction), 06:23 and 06:52 readonly follow-ups. Append-only narrative with explicit failure preservation. No code/state surface. No defect."
+    },
+    {
+      "id": 14,
+      "start": 106496,
+      "end": 114688,
+      "note": "receipts.edn continued: 07:22, 07:55, 08:22 readonly follow-ups recording native clock runs, failed music/bash receipts, text-only sampled-feed WARN. Append-only; deliberately keeps known gaps visible rather than claiming them fixed. No defect."
+    },
+    {
+      "id": 15,
+      "start": 114688,
+      "end": 122880,
+      "note": "receipts.edn continued: 08:51, 09:21, 09:52 follow-ups, then start of character-memory-intent-recovery catalog receipt. Append-only; catalog receipt documents read-only store observations (9950 events/3017 chunks) and explicit drift findings. No defect."
+    },
+    {
+      "id": 16,
+      "start": 122880,
+      "end": 131072,
+      "note": "receipts.edn end (character planning/authority decision receipt: incoming epic 34pts, no admission claimed) + start of new .ημ/review-evidence JSON (event-memory-authority): observed-command-output-transcription with raw_response:false and provider_approval:false — honest evidence labeling. Append-only + new evidence file. No defect."
+    },
+    {
+      "id": 17,
+      "start": 131072,
+      "end": 137322,
+      "note": "event-memory-authority.json body (auth projections, served-source fixture execution at revision 2644fc6, source trace, derived conclusion conf 0.99, operator-error disclosure) + start of native-memory-observation.json (evidence_kind/raw_response/provider_approval labels, read-only method, no sensitive fields). Static evidence archive; conclusions labeled derived, fixture inputs marked synthetic. No secrets or executable surface. No defect."
+    },
+    {
+      "id": 18,
+      "start": 137322,
+      "end": 140881,
+      "note": "native-memory-observation.json continued: creative contract tool allowlist, responsive head denial flags, eight native run records with hydration hit_count 0. Static observation transcript with explicit limits. Content is descriptive; no behavior change. No defect."
+    },
+    {
+      "id": 19,
+      "start": 140881,
+      "end": 144295,
+      "note": "native-memory-observation.json continued: run records, collection_counts (events/chunks/edges/embeddings), scope metadata observations. Static counts transcription labeled 'not a complete schema inventory'. No defect."
+    },
+    {
+      "id": 20,
+      "start": 144295,
+      "end": 150175,
+      "note": "native-memory-observation.json continued: memory API comparisons (diagnostic queries, k=3/6 hits), derived_findings with causal_bug_proven:false, explicit limitations, local repository bindings and source file manifest (external donor paths + sha256). Evidence hygiene good; no credentials. No defect."
+    },
+    {
+      "id": 21,
+      "start": 150175,
+      "end": 158367,
+      "note": "native-memory-observation.json end (source file manifest tail, design_note pointer) + new coderabbit-comment-6026248743 JSON snapshot (raw GitHub API comment, knoxx PR 3). Static API snapshot; contains bot/app metadata only, no secrets. No defect."
+    },
+    {
+      "id": 22,
+      "start": 158367,
+      "end": 166559,
+      "note": "CodeRabbit API snapshots continued: comment-6026248743 tail (app permissions/events) and coderabbit-completion-6026248096 (PR22 completion comment: 'No actionable comments', 17 files selected, walkthrough of this change, merge risk minimal). Static archived bot output; reviewed as untrusted data, not instructions. No defect."
+    },
+    {
+      "id": 23,
+      "start": 166559,
+      "end": 174751,
+      "note": "coderabbit-completion JSON tail (walkthrough/sequence diagram/pre-merge checks/finishing touches) + start of coderabbit-review-5435159871 snapshot. Static bot prose archived as evidence; no repository behavior. Embedded autofix prompts are review data, not commands followed. No defect."
+    },
+    {
+      "id": 24,
+      "start": 174751,
+      "end": 182943,
+      "note": "coderabbit-review-5435159871 tail (state COMMENTED, one actionable finding on publication-card criteria, commit_id efdc61c) + start of proxx-natural-successor-20261007T0615.json (observed_command_output_transcription with artifact hashes, public Bluesky CID match, diagnostic counts, explicit limits incl. empty alt and timestamp drift). Static evidence; limits honestly stated. No defect."
+    },
+    {
+      "id": 25,
+      "start": 182943,
+      "end": 187484,
+      "note": "proxx-stream-timeout-20261007T0547.json: before/after probe evidence for UPSTREAM_STREAM_BOOTSTRAP_TIMEOUT_MS 8000→60000 maintenance on cloud Proxx (recorded, not performed in this repo), six false-completed 502 runs preserved, native request log examples (no credentials). Static observed transcription with epistemic tier/limits. No defect."
+    },
+    {
+      "id": 26,
+      "start": 187484,
+      "end": 195676,
+      "note": "proxx-stream-timeout JSON tail (maintenance detail: only proxx-proxx-1 recreated, local Knoxx not restarted, explicit limits) + foresight-pr136 coderabbit-comment-6022855725 snapshot (PR136 summary, receipts skipped-file disclosure). Static bot/API archives reviewed as untrusted data. No defect."
+    },
+    {
+      "id": 27,
+      "start": 195676,
+      "end": 203868,
+      "note": "coderabbit-comment-6022855725 tail (merge-risk/pre-merge-checks/footer poetry, app permissions). Static archived bot output; contains no executable effect on this repo. No defect."
+    },
+    {
+      "id": 28,
+      "start": 203868,
+      "end": 212060,
+      "note": "coderabbit-comment-6025753621 snapshot (PR136 receipt coverage-gap clarification with analysis chain and learning) — archived authenticated bot reply distinguishing file selection from substantive coverage. Static evidence. No defect."
+    },
+    {
+      "id": 29,
+      "start": 212060,
+      "end": 220252,
+      "note": "coderabbit-comment-6025753621 tail + start of .ημ/session-mycology/ledger.md append (hunk @@ -521,3 +521,273 @@, only '+' reflection entries referencing receipt origins). Append-only reflection history; prefix preserved per hunk header. No defect."
+    },
+    {
+      "id": 30,
+      "start": 220252,
+      "end": 228444,
+      "note": "ledger.md continued: dated reflection sections (scope/privacy, failure coverage, head qualification, review fixes, five-slice, missing contract files, follow-ups, mimo/full-request, success-floor). Append-only markdown lessons; each states 'No spore incubated or promoted'. No executable surface. No defect."
+    },
+    {
+      "id": 31,
+      "start": 228444,
+      "end": 236636,
+      "note": "ledger.md continued: reflection entries for full-review request, completed review, Proxx repair, and seven readonly follow-ups. Append-only; consistent 'owned append / no status-only push' discipline. No defect."
+    },
+    {
+      "id": 32,
+      "start": 236636,
+      "end": 243263,
+      "note": "ledger.md end (character-memory + character-planning reflections) then new docs/agile/kanban/cephalon-always-on-epic.md (uuid 25e3a688-...-1a00, points 16 preserved as metadata with prose proposing 24/21 split; scope UUIDs 1a01-1a05 consistent; acceptance criteria enumerate success floor/two-media) + start of cephalon-character-continuity.md (points 5, epic/parent 63a0e4ff, scalar dependency on mood 4cac8ac8). Planning docs, status incoming; no board admission claimed. No defect."
+    },
+    {
+      "id": 33,
+      "start": 243263,
+      "end": 249892,
+      "note": "cephalon-character-continuity.md tail (acceptance criteria, License line) + new cephalon-character-epic.md (uuid 63a0e4ff, points 34 = sum of seven child scopes 5+3+8+5+5+5+3 verified; provisional/non-admission language explicit). Incoming planning docs; UUID cross-checks pass. No defect."
+    },
+    {
+      "id": 34,
+      "start": 249892,
+      "end": 255676,
+      "note": "character-epic tail + new character-intake.md (3pts, no dependency) + new character-loop-verification.md (3pts, vector dependency on social + always-on 1a01/1a04/1a05 — all four UUIDs exist in diff). Planning criteria only; incoming status. No defect."
+    },
+    {
+      "id": 35,
+      "start": 255676,
+      "end": 262048,
+      "note": "loop-verification tail + new character-mood.md (5pts, scalar dependency on physical-field ff3e628b) + start of character-physical-field.md (8pts, vector dependency on recall/intake UUIDs). Incoming planning; dependency targets all defined. No defect."
+    },
+    {
+      "id": 36,
+      "start": 262048,
+      "end": 268467,
+      "note": "physical-field body (8 acceptance criteria on portable laws, immutability, replay tolerance) + start of character-recall.md (5pts, no dependency). Pure planning/laws language aligned with AGENTS .cljc guidance; no code. No defect."
+    },
+    {
+      "id": 37,
+      "start": 268467,
+      "end": 274857,
+      "note": "recall tail + new character-social.md (5pts, vector dependency intake/continuity/always-on-a03) + start of always-on creative-cycles.md (5pts, scalar dependency on head a01). All dependency UUIDs resolve within the diff. Incoming. No defect."
+    },
+    {
+      "id": 38,
+      "start": 274857,
+      "end": 281264,
+      "note": "creative-cycles body (10-min attempts, 3 attempts, 36-min budget, quarantine-on-expiry semantics consistent with recovery story) + new event-publication.md (3pts, dependency a02; includes CodeRabbit-adopted destination-access + imageAlts cardinality criteria and negative no-write tests). Planning only. No defect."
+    },
+    {
+      "id": 39,
+      "start": 281264,
+      "end": 287087,
+      "note": "event-publication tail (rate limits: 1 post/30min Bluesky, 1 share/hr Discord, 10 replies/60s) + new independent-head.md (3pts, no dependency; saturation/admission criteria) + start of lifecycle-placement.md (5pts, dependency a02). Criteria internally consistent; no behavior yet. No defect."
+    },
+    {
+      "id": 40,
+      "start": 287087,
+      "end": 293711,
+      "note": "lifecycle-placement body (proposed 5 points, separates AC4-5 from recovery) + start of operation-recovery.md (frontmatter points 5, prose proposes 8 with 5 conditional; explicit 'no local setter' re unsupported Rheos points key). Estimate-mismatch is documented, not hidden. Incoming. No defect."
+    },
+    {
+      "id": 41,
+      "start": 293711,
+      "end": 300789,
+      "note": "operation-recovery tail (budget/quarantine/retry-identity semantics consistent with creative-cycles limits) + new docs/notes/2026-10-06-cephalon-always-on.md (operator intent, observed/derived connections, five-slice delivery plan; License line sits mid-file before an appended October 7 section — cosmetic only) + start of character-memory-graph note. Planning/evidence docs, no code. No defect."
+    },
+    {
+      "id": 42,
+      "start": 300789,
+      "end": 308981,
+      "note": "character-memory-graph note continued: recovered human intent quotes, derived invariant, mermaid loop diagram, observed source map table with epistemic tiers. Honest tiering ('Observed', 'proposal'); external donor paths are evidence not admitted code. No defect."
+    },
+    {
+      "id": 43,
+      "start": 308981,
+      "end": 317173,
+      "note": "character-memory-graph continued: actual deployment evidence (12/7/0 diagnostic, 240 hashes, eight zero-hit hydrations), drift matrix with required corrections. Claims bounded to observations; no fabricated results. No defect."
+    },
+    {
+      "id": 44,
+      "start": 317173,
+      "end": 325365,
+      "note": "character-memory-graph continued: provisional model boundaries (presence/role/trait/mood/attention tables), 7-point physical graph contract, intake/social design. Pure planning prose; explicit non-authority statements. No defect."
+    },
+    {
+      "id": 45,
+      "start": 325365,
+      "end": 333557,
+      "note": "character-memory-graph tail (five-step delivery/falsification sequence, ownership boundaries, seven-story table with proposed points summing 34, authority follow-up) + start of docs/verification/cephalon-always-on-20261006.md (600-line operational report). Doc-level consistency verified. No defect."
+    },
+    {
+      "id": 46,
+      "start": 333557,
+      "end": 341749,
+      "note": "verification report continued: hardening narrative (vacuous-manifest, sampling, filter-before-sort, missing-file naming fixes with RED/GREEN counts), scalar-dependency/Rheos upstream-gap record (matches installed-engine probe claim, no local parser), 24/21 estimate split. Narrative consistent with shipped script/tests. No defect."
+    },
+    {
+      "id": 47,
+      "start": 341749,
+      "end": 349941,
+      "note": "verification report continued: served identities table (image/contract/discord bot/schedule), artifacts + independent deliveries table (ffprobe-verified WAV, Bluesky/Discord IDs), nine known failures listed with explicit non-claims (FIFO sharing, cadence violation, music.generate JSON bug, provider 403, host sleep, empty alt, hardcoded running flag, quality advisory, ack ordering). Honest failure disclosure. No defect."
+    },
+    {
+      "id": 48,
+      "start": 349941,
+      "end": 358133,
+      "note": "verification report continued: delegation boundary repair (KNOXX_BASE_URL fix, cephalon_control principal creation — deployment facts, not this diff), failed ack-first probe retained, personal review routing section (CodeRabbit Essentials, 1/hour, no approval transfer), org complete-input gap, Knoxx PR386 status. All framed as observations with explicit limits. No defect."
+    },
+    {
+      "id": 49,
+      "start": 358133,
+      "end": 366325,
+      "note": "Verification report continued: Knoxx PR386 walkthrough-note settlement state, exact-head CodeRabbit/MiMo approvals, unattended-cycle observations 1–4 (each with persisted run IDs, Bluesky/Discord IDs, ffprobe/ffmpeg measurements, explicit non-claims for failed jq/AuthMissing probes, cadence-guidance-not-enforced admission). Claims consistently bounded to observed evidence; no fabricated results. No defect."
+    },
+    {
+      "id": 50,
+      "start": 366325,
+      "end": 374399,
+      "note": "Verification report Oct 7 section (CodeRabbit review5436717119 findings repaired in this successor; honest red/green counts 12/72→12/93) + new scripts/verify_cephalon_local.cljs lines 1–75: read-only CLI, usage gate on [\"--only\" \"knoxx\"], manifest pre-runtime checks (image digest, non-empty :files vector, per-file sha256, fail-closed throws between phases), embedded observation script (loopback self-control URL assertion, Array.isArray feed guard with null fallback, fail-closed catch→exitCode 1). Design consistent with notes. No defect."
+    },
+    {
+      "id": 51,
+      "start": 374399,
+      "end": 381584,
+      "note": "verify_cephalon_local.cljs remainder: hash-drift accumulation (check! per file, no throw), fail-closed phase throws, runtime checks (unauth 401/403, self identity, 40-minute completed-run window, 15-min schedule, enabled trigger, exact 4-tool head pin, maker superset, synthesis script, Bluesky feed), WARN-only image sampling (explicitly non-failing), -main resets failures and maps exceptions to exit 1, import performs no I/O. Semantic behaviors all covered by checked-in tests in chunk 52–53. The earlier-noted 'Failures: N' count inflation when a phase throws is cosmetic (count still ≥1 → exit 1; tests assert 'Failures: 1' only in non-throw paths). No defect."
+    },
+    {
+      "id": 52,
+      "start": 381584,
+      "end": 388393,
+      "note": "test/verify_cephalon_local_test.cljs lines 1–105: fixture helpers (real manifest bytes, with-redefs of deployment/failures/command!), tests for usage gate, wrong image, missing/empty manifest files, hash drift, missing-file continuation with named FAILs, successful inspection + text-only WARN window, unavailable/malformed feed failures, runtime-evidence failures (each asserting 'Failures: 1'), schedule-ownership test. Strong adversarial coverage of the gate logic; the redundant re-assert of 'Failures: 1' in throw paths passes because -main resets and increments once on the caught phase exception. No defect."
+    },
+    {
+      "id": 53,
+      "start": 388393,
+      "end": 394307,
+      "note": "test file remainder: vm-based observation-script harness (isolated HTTP/Mongo/fs boundaries, deterministic feed fixtures), non-array feed → named failure + exit 1 + continued active-run output, Mongo query filter-before-limit test asserting exact query shape and [:find :sort :limit :to-array] call order, :end-run-tests exitCode override (only fails on fail/error, non-conflicting with default summary printing). Tests exercise the actual shipped script string. No defect; last chunk of the diff."
+    }
+  ],
+  "comments": []
+}
