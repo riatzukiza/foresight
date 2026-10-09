@@ -1254,3 +1254,7 @@ Efficiency0.70/friction0.32/skill-candidate0.28: compare the parser values of in
 
 - Actual private candidate dc534 receipt admission refused unchanged held record `cephalon-selection-current-availability-20261007T1931` at canonical line 285. Append correction 288 supplies the existing law's singleton-vector view of original manifest/refs; no original field or byte edited.
 - Native current-head review and final immutable GREEN remain subsequent gates. Source ancestry and LF hash retained. No spore, extra parser, historical repo migration, board/runtime mutation or behavior completion.
+
+## 2026-10-09T02:48:53.017Z — Authorized missing migration epic input
+
+Origin: `cephalon-missing-authored-migration-epic-20261009`. Human yes includes this bounded prerequisite in the accepted character-loop batch. Add the exact prepared Incoming epic input and obtain native readback, then current-input review before any readiness retry. Preserve existing card bytes and immutable journal prefixes. Earlier missing-epic refusal remains truthful evidence. B1/B2/B3 remain unfinished; no new spore or operational runtime change.
