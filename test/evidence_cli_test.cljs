@@ -1676,6 +1676,8 @@
 (def frozen-stream-common "1069d4c9bcba29ef55e6c72c7c597de101f0520b")
 (def frozen-stream-parent "b3fffe3bc29cca09b6ff70b41768160b288a12ba")
 (def frozen-stream-head "bdac1ed6470c98128ff367e757132797a39ac436")
+(def frozen-stream-older-base "96a6dca24cb7a14b041bdd6e3e7922c568238da9")
+(def frozen-stream-delivered-head "e7ce01804633e0c3ddbb82cd444ac9e796b8cf65")
 
 (def stream-fixture-record
   {:ts "2026-10-08T01:20:00Z" :kind :observation
@@ -1758,6 +1760,100 @@
         (is (every? #(= 278 (:correction/line %)) (:receipt/corrections admission)))
         (is (= 284 (count (set (map :receipt/identity occurrences)))))
         (is (.equals head-bytes (:ledger/bytes (cli/read-immutable-receipt-ledger! head))))))))
+
+(deftest older-comparison-base-authenticates-common-at-canonical-anchor
+  (with-frozen-stream-fixture
+    (fn [{:keys [file source]}]
+      (let [older (:ledger/bytes (cli/read-immutable-receipt-ledger! frozen-stream-older-base))
+            canonical (:ledger/bytes (cli/read-immutable-receipt-ledger! frozen-stream-delivered-head))
+            before (fs/readFileSync file)
+            admission (cli/admit-receipt-extension! older canonical frozen-stream-delivered-head)
+            imported (filterv #(= :imported (:receipt/stream-role %))
+                              (:ledger/occurrences admission))
+            original-items (vec (drop 259 (cli/physical-receipt-items! source)))]
+        (is (= {:ledger/canonical-receipts 275 :ledger/imported-receipts 19
+                :ledger/combined-receipts 294}
+               (select-keys admission [:ledger/canonical-receipts :ledger/imported-receipts
+                                       :ledger/combined-receipts])))
+        (is (= 294 (count (:ledger/originals admission))))
+        (is (= 11 (count (:receipt/corrections admission))))
+        (is (= (vec (range 260 279)) (mapv :receipt/line imported)))
+        (is (= (mapv :receipt/record original-items) (mapv :receipt/original imported)))
+        (is (= (mapv #(cli/sha256 (:receipt/bytes %)) original-items)
+               (mapv :receipt/sha256 imported)))
+        (is (= (vec (range 267 278)) (mapv :receipt/line (:receipt/corrections admission))))
+        (is (every? #(= 278 (:correction/line %)) (:receipt/corrections admission)))
+        (is (zero? (cli/verify-receipts! {:base frozen-stream-older-base
+                                        :at frozen-stream-delivered-head})))
+        (is (.equals before (fs/readFileSync file)))))))
+
+(deftest promotion-source-admission-reaches-consistency-with-older-base
+  (with-frozen-stream-fixture
+    (fn [{:keys [commit!]}]
+      (let [canonical (:ledger/bytes (cli/read-immutable-receipt-ledger! frozen-stream-delivered-head))
+            anchor (commit! canonical [frozen-stream-delivered-head])
+            observed (atom nil)
+            catalog {:catalog/version 1 :catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}]
+        (with-redefs [cli/read-immutable-catalog-bundle!
+                      (fn [_] {:catalog catalog :catalog-identity test-catalog-identity})
+                      cli/validate-catalog! identity
+                      law/promotion-evidence-consistent?
+                      (fn [& args] (reset! observed (last args)) false)]
+          ;; Admission must reach the independent evidence decision. Returning
+          ;; false does not claim this fixture has qualified promotion evidence.
+          (is (false? (cli/promotion-ready-at! child-revision #{:repo/unit}
+                                              [passed-result] frozen-stream-older-base anchor))))
+        (is (= 294 (count (:ledger/records @observed))))
+        (is (= 275 (count (:ledger/canonical-original-records @observed))))
+        (is (= 19 (:ledger/imported-receipts @observed)))
+        (is (.equals canonical (fs/readFileSync cli/receipt-file)))))))
+
+(deftest held-source-common-cannot-be-borrowed-from-uncommitted-bytes
+  (with-frozen-stream-fixture
+    (fn [{:keys [file head head-bytes commit!]}]
+      (let [older (:ledger/bytes (cli/read-immutable-receipt-ledger! frozen-stream-older-base))
+            anchor (commit! older [head])
+            catalog {:catalog/repositories
+                     {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}
+            gate-ran? (atom false)]
+        (fs/writeFileSync file head-bytes)
+        (with-redefs [cli/require-repositories! (fn [& _] {"repo" {}})
+                      cli/run-gate! (fn [& _] (reset! gate-ran? true) passed-result)]
+          (is (thrown-with-msg?
+               js/Error #"source base is not the proven common byte prefix"
+               (cli/run-selected-gates! catalog test-catalog-identity
+                                        {:only #{"repo"} :kinds #{:unit}}))))
+        (is (false? @gate-ran?))
+        (is (= anchor (str/trim (cli/git-capture! ["rev-parse" "HEAD"]))))
+        (is (.equals head-bytes (fs/readFileSync file)))))))
+
+(deftest source-common-must-match-canonical-anchor-not-only-candidate
+  (with-frozen-stream-fixture
+    (fn [{:keys [common head head-bytes commit!]}]
+      (let [foreign-bytes (receipt-line-bytes (assoc stream-fixture-record :origin "different-anchor-prefix"))
+            anchor (commit! foreign-bytes [head])]
+        (is (thrown-with-msg?
+             js/Error #"source base is not the proven common byte prefix"
+             (cli/admit-receipt-extension! common head-bytes anchor)))
+        (is (.equals foreign-bytes (fs/readFileSync cli/receipt-file)))))))
+
+(deftest missing-canonical-anchor-blob-cannot-fall-back-to-working-ledger
+  (with-frozen-stream-fixture
+    (fn [{:keys [common head head-bytes file]}]
+      ;; The commit and source ancestry exist, but its tree omits the ledger.
+      ;; The valid working file remains present and must not supply authority.
+      (cli/git-capture! ["rm" "--cached" "--" law/receipt-ledger-path])
+      (let [tree (str/trim (cli/git-capture! ["write-tree"]))
+            anchor (str/trim (cli/git-capture!
+                             ["-c" "user.name=Receipt Test"
+                              "-c" "user.email=receipt-test@example.invalid"
+                              "commit-tree" tree "-p" head "-m" "anchor without ledger"]))]
+        (is (thrown-with-msg?
+             js/Error #"Receipt source stream admission refused"
+             (cli/admit-receipt-extension! common head-bytes anchor)))
+        (is (= head (str/trim (cli/git-capture! ["rev-parse" "HEAD"]))))
+        (is (.equals head-bytes (fs/readFileSync file)))))))
 
 (deftest source-stream-is-reauthenticated-after-base-advancement-and-ordinary-append
   (with-frozen-stream-fixture

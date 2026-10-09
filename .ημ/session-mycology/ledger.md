@@ -1258,3 +1258,11 @@ Efficiency0.70/friction0.32/skill-candidate0.28: compare the parser values of in
 ## 2026-10-09T02:48:53.017Z — Authorized missing migration epic input
 
 Origin: `cephalon-missing-authored-migration-epic-20261009`. Human yes includes this bounded prerequisite in the accepted character-loop batch. Add the exact prepared Incoming epic input and obtain native readback, then current-input review before any readiness retry. Preserve existing card bytes and immutable journal prefixes. Earlier missing-epic refusal remains truthful evidence. B1/B2/B3 remain unfinished; no new spore or operational runtime change.
+
+## 2026-10-09T03:20:52.637Z — Receipt common prefix anchored independently of older comparison base
+
+Origin: `cephalon-receipt-canonical-anchor-red-green-20261009`. Commit failing regression before adapter change; verify final84/459 GREEN and frozen original stream coordinates. Preserve independent comparison-base guard plus canonical committed-anchor/candidate proofs, including held negatives. Local migration dependency is unavailable and remains a failure until actual hosted execution. Efficiency0.70/friction0.30/skill-candidate0.20; existing skills suffice, no spore. This is a finite prerequisite for the accepted character loop, not B1/B2/B3 completion.
+
+## 2026-10-09T03:28:34.873Z — Preserve output bytes without weakening diff hygiene
+
+Origin: `cephalon-receipt-output-framing-correction-20261009`. Actual hosted twelve gates pass, including migration and receipt history; raw-output trailing blank lines fail diff hygiene. Use lossless JSON physical lines and exact reconstruction, retaining original Git blobs and original packets. Initial proof remains historical. Efficiency0.60/friction0.40/skill-candidate0.20; no spore and no policy waiver.
