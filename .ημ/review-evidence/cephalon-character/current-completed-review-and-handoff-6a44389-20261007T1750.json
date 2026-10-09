@@ -1,0 +1,14 @@
+{
+  "observedAt": "2026-10-07T17:57:28.195497+00:00",
+  "wholePromptReadback": "PASS",
+  "promptBytes": 15937,
+  "promptSHA256": "e374a24be522b6c51321b6182be0f69ecdaba2a8ea73a23c29691c865f064a90",
+  "tomlSHA256": "ed06f55090bbf62278973b83c4bff4669fd492415c6c2607e6664eb9e746d13a",
+  "status": "PAUSED",
+  "cadenceAndTargetPreserved": true,
+  "currentHead": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+  "nativeReviewId": 5446131731,
+  "runId": 37659519828,
+  "currentCanonicalGate": "PASS",
+  "intendedFullGoal": "ACTIVE/incomplete; no native readiness/source implementation/deployed full loop proof"
+}

@@ -1,0 +1,147 @@
+{
+  "evidence_kind": "selected committed local-source observation and derived candidate conformance questions; isolated execution linked separately; not accepted kernel selection or provider approval",
+  "observed_at": "2026-10-07T13:40:02.946155+00:00",
+  "repository_path": "/home/err/spaces/foresight/openplanner",
+  "revision": "582efb7ebbdc542650fd239bfc5f2de076316c53",
+  "files": [
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/graph/eros-eris-field/README.md",
+      "bytes": 716,
+      "sha256": "95d980fd81068a3c56e62b7a5b9def393c76eb91ecdde4f4f36dfe8a81f11c8d",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/graph/eros-eris-field/package.json",
+      "bytes": 556,
+      "sha256": "ddb0335de16171a751ac5a65597c6ad27872b7c5cfdfd857dc28e982684ca529",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/graph/eros-eris-field/src/types.ts",
+      "bytes": 2496,
+      "sha256": "7ca4f386e534a926994ddd926a9044fbf111e291d1796975d93c987a579fe313",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/graph/eros-eris-field/src/sim.ts",
+      "bytes": 9105,
+      "sha256": "c69958002dba0207b17e5e42adc2e044b396dd69f03b5b104b693162234d4340",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/graph/eros-eris-field/src/quadtree.ts",
+      "bytes": 4530,
+      "sha256": "fcfefce4f97793825014b0dd0a274ddd990705d49cabdd0dde76acb5e1000d5c",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/graph/eros-eris-field/src/graph-ant.ts",
+      "bytes": 5589,
+      "sha256": "b92efd839a571eba71bcc885b50918e41a0662fdecbc819187af0a942a59f9db",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/packages/graph/eros-eris-field-app/src/index.ts",
+      "bytes": 65225,
+      "sha256": "f1c903e139d23b40a89a62ef5706c73649418da4d78d36d4243e36c8920a661f",
+      "matches_committed_head": true
+    },
+    {
+      "path": "/home/err/spaces/foresight/openplanner/src/routes/v1/graph.ts",
+      "bytes": 202632,
+      "sha256": "217a99b3b89d8a952b1d988c8054df7af34e38a3c7b9da777f668e62ad03d2e2",
+      "matches_committed_head": true
+    }
+  ],
+  "observations": [
+    {
+      "path": "packages/graph/eros-eris-field/README.md",
+      "lines": [
+        1,
+        12
+      ],
+      "fact": "Package describes a semantic-force layout engine extracted from Fork Tales and an intended graph layout app consumer."
+    },
+    {
+      "path": "packages/graph/eros-eris-field/src/sim.ts",
+      "lines": [
+        17,
+        32
+      ],
+      "fact": "Pure numeric step mutates Particle arrays and clamps dt to [0.001,0.5]; isolated actual execution observes zero/negative elapsed time motion, NaN propagation and infinite dt treated as a bounded positive step."
+    },
+    {
+      "path": "packages/graph/eros-eris-field/src/sim.ts",
+      "lines": [
+        111,
+        247
+      ],
+      "fact": "Structural/semantic force passes feed mass-scaled integration, common per-step damping, recentering and hard boundary clamp; split-step fixture changes damping over an equal total interval."
+    },
+    {
+      "path": "packages/graph/eros-eris-field/src/graph-ant.ts",
+      "lines": [
+        22,
+        187
+      ],
+      "fact": "Graph ants maintain in-memory pheromone/visit state, use Math.random for starts/resets/choices and evaporate once per tick; config has no explicit replay seed."
+    },
+    {
+      "path": "packages/graph/eros-eris-field-app/src/index.ts",
+      "lines": [
+        553,
+        589
+      ],
+      "fact": "The app publishes semantic similarity samples with layout.v1/semantic_charge provenance, rather than publishing particle motion or collision state as that sample."
+    },
+    {
+      "path": "packages/graph/eros-eris-field-app/src/index.ts",
+      "lines": [
+        1623,
+        1659
+      ],
+      "fact": "Simulation tick uses configured simDt subdivided by simSubsteps; optional ants become spring edges. Position writes send id,x,y to layout storage."
+    },
+    {
+      "path": "src/routes/v1/graph.ts",
+      "lines": [
+        4496,
+        4789
+      ],
+      "fact": "Selected graph memory route seeds from vectors, constructs adjacency from semantic samples/legacy edges/claims, then adjusts costs using decayed prior trails and time-varying noise. No position/velocity/collision input appears in this selected cost construction."
+    },
+    {
+      "path": "src/routes/v1/graph.ts",
+      "lines": [
+        4923,
+        5011
+      ],
+      "fact": "Traversed semantic edges are reinforced and default-enabled trails persisted within retrieval; persistDaimoiTrails=false controls trail persistence, not the separately executed semantic reinforcement."
+    }
+  ],
+  "derived_selection_requirements": [
+    "Existing force math and persistence/query seams are concrete reuse candidates. Select one computation authority through the reviewed owner/numeric decision; a package name or donor claim does not supply promotion authority.",
+    "Separate layout geometry from semantic samples and graph-cost trails. Demonstrate that physical state and mood causally change authorized recall and choices rather than crediting a shared field/daimoi vocabulary.",
+    "Resolve actual elapsed time, zero/negative/nonfinite refusal, damping as time semantics, fixed ordering and explicit exploration seed in the selected numeric contract. Fixture constants are not proposed production parameters.",
+    "Preserve sparse environmental vector fields, differentiated entity friction, elastic intent bonds, collision exchange and immutable emitted ownership from the recovered design. The selected layout-only Particle/config/ant surface does not implement those character mechanics.",
+    "Separate memory retrieval observations from outcome-authorized reinforcement and enforce visibility before graph traversal and any feedback. Outer HTTP authorization was not audited; no vulnerability claim follows from route-local projection alone."
+  ],
+  "execution_evidence": [
+    {
+      "path": "/home/err/.codex/worktrees/cephalon-planning/foresight/.ημ/review-evidence/cephalon-character/20261007-openplanner-field-step-observations.json",
+      "bytes": 5257,
+      "sha256": "107e2b5ab785c6381c051fd318282bd5ce5e224f6294b4d1f2cc8eb6d21605f8"
+    },
+    {
+      "path": "/home/err/.codex/worktrees/cephalon-planning/foresight/.ημ/review-evidence/cephalon-character/20261007-openplanner-field-step-probe.cjs",
+      "bytes": 3300,
+      "sha256": "8ffdb8d349a5fbd96f9af2bc0d7cc83849b2c2fc49383f385d5e05c47e494304"
+    }
+  ],
+  "limits": [
+    "No donor repository edits, graph app start, live graph query, package gate execution, database or social effect.",
+    "The selected-source trace is not an exhaustive audit of all OpenPlanner graph/field paths or a claim that the whole repository lacks other physical state.",
+    "No accepted kernel owner/numeric contract, shared-law promotion, native Rheos readiness or character implementation.",
+    "Planning head9043 remains unchanged; these uncommitted observations and probe are outside that head's reviewed input."
+  ]
+}

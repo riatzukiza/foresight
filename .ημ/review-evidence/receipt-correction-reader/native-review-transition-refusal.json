@@ -1,0 +1,21 @@
+{
+  "evidence_kind": "observed-tool-output-transcription",
+  "command": [
+    "eta-mu",
+    "kanban",
+    "frontmatter",
+    "707901cb-e498-4ce3-aa1c-245202ced648",
+    "status",
+    "review",
+    "--tasks-dir",
+    "docs/agile/kanban"
+  ],
+  "exit": 1,
+  "stdout_observed": "build-gate: pnpm build",
+  "error_observed": "transition rejected: Build gate failed: `pnpm build` exited with code 1; ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND: root has no package.json (or package.yaml, or package.json5)",
+  "warning_observed": "Private npmrc has an unresolved NPM_TOKEN interpolation; no credential value inspected or recorded",
+  "native_status_after": "in_progress",
+  "card_bytes_unchanged": true,
+  "event_bytes_unchanged": true,
+  "qualification": "Native review transition failed. Existing root AGENTS.md identifies the Clojure build gate as an upstream Rheos gap; no local parser/writer/package-manifest bypass is introduced."
+}

@@ -1,0 +1,105 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "raw_response": false,
+  "provider_approval": false,
+  "recorded_at": "2026-10-07T12:24:31.717596+00:00",
+  "origin": "cephalon-character-planning-and-authority-20261007",
+  "native_observations": [
+    {
+      "observed_at": "2026-10-07T12:16:33.822Z",
+      "collection": "knoxx_runs",
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791374845382-1791374845403",
+      "created_at": "2026-10-07T12:07:25.415Z",
+      "auth_snapshot_present": {
+        "org": false,
+        "membership": false,
+        "user": false,
+        "actor": true
+      },
+      "actor_id": "discord_automation",
+      "role_slugs": [
+        "discord-source-synthesizer"
+      ],
+      "agent_spec_role": "discord-source-synthesizer",
+      "agent_spec_actor": "discord_automation",
+      "hydration_hit_count": 0,
+      "session_event_auth_presence": [
+        {
+          "org": "present",
+          "membership": "present",
+          "user": "present",
+          "count": 210
+        },
+        {
+          "org": "absent",
+          "membership": "absent",
+          "user": "absent",
+          "count": 4632
+        }
+      ],
+      "event_count_scope": {
+        "source": "knoxx",
+        "project": "knoxx-session"
+      }
+    },
+    {
+      "observed_at": "2026-10-07T12:22:31.571Z",
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791374845382-1791374845403",
+      "permission_count": 0,
+      "memory_cross_session": false,
+      "is_system_admin": false,
+      "role_slugs": [
+        "discord-source-synthesizer"
+      ]
+    }
+  ],
+  "served_source_execution": {
+    "revision": "2644fc6c51bbbcda599964a5a674415b58344c3b",
+    "method": "Select actual synchronous defn forms from git show 2644fc6, evaluate with NBB and existing row-extra codec; fixture contexts only, no production effects",
+    "auth_source": "backend/src/cljs/knoxx/backend/infra/auth/authz.cljs",
+    "auth_source_sha256": "686e7a71c89d669e219f68cf2cd380cff8d80a7849c34668e668fae4122fcee4",
+    "memory_source": "backend/src/cljs/knoxx/backend/infra/core_memory.cljs",
+    "memory_source_sha256": "c61d70218449b709da164f0ac37de20f07e60fc9a0e1fb9f14d145ecf2998ce5",
+    "selected_forms": [
+      "ctx-org-id",
+      "ctx-user-id",
+      "ctx-membership-id",
+      "ctx-role-slugs",
+      "system-admin-slugs",
+      "system-admin?",
+      "ctx-permissions",
+      "ctx-permitted?",
+      "row-extra-map",
+      "session-visible?"
+    ],
+    "results": {
+      "actor_only_legacy": false,
+      "actor_only_scoped": false,
+      "owner_scoped": true,
+      "cross_session_legacy": true,
+      "foreign_org_cross_session": false,
+      "nil_context_legacy": true
+    },
+    "controls": "Fixture org/member values are synthetic inputs, not production principals or granted permissions."
+  },
+  "source_trace": {
+    "turn": "infra.agent.turn/auth-context-for-agent-turn adds actor/role/policies but no organization/membership/permission grants when no inbound context",
+    "event": "domain.action.start-agent-session passes an event-policy-authority context when resource policies exist; that builder also carries actor/role/policies without organization/membership/memory grants",
+    "visibility": "infra.core-memory/session-visible? denies non-admin contexts without matching organization/member/user or cross-session grant; nil/admin paths separately bypass visibility filtering"
+  },
+  "conclusion": {
+    "tier": "derived from actual native snapshot and executed served-source decision",
+    "claim": "The latest observed scheduled maker context cannot pass the served session-visibility decision for either legacy or organization-scoped memory. This explains an authorization barrier on that path.",
+    "confidence": 0.99,
+    "limits": "Original eight turns were not each rerun with frozen vector candidates. Other retrieval/indexing failures may coexist. No administrative or nil-context workaround is implemented; the actual stored authority must be resolved."
+  },
+  "operator_errors": [
+    {
+      "operation": "First whitelisted projection used nonexistent/unmatched agent_runs collection",
+      "result": "No matching native maker run; exit 1",
+      "correction": "Used the authoritative verifier collection knoxx_runs and explicit schedule filter before the successful reads",
+      "verification_credit": false
+    }
+  ],
+  "mutations": "No source, runtime, contracts, model, owner, cloud consumer, social effect or board transition changed."
+}

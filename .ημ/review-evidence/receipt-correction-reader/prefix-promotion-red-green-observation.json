@@ -1,0 +1,58 @@
+{
+  "evidence_kind": "observed-command-output-transcription",
+  "observed_at": "2026-10-07T23:45:19.806402+00:00",
+  "red_commit": "4ce36505e46f559142aa7b3ff6c3973a4ea924f5",
+  "previous_code_head": "3c3a2d383268e3b7b414359b29cf5a427c17ac53",
+  "scope": "Local prefix-promotion regression and repair; not provider approval or installed behavior",
+  "checks": [
+    {
+      "stage": "red",
+      "exit": 1,
+      "tests": 65,
+      "assertions": 339,
+      "failures": 2,
+      "errors": 0,
+      "stdout_bytes": 9849,
+      "stdout_sha256": "1b3adeb6044101bd1f18f59218a596244064ebd286e2f372fb956a915227fa1e",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "stage": "green",
+      "exit": 0,
+      "tests": 66,
+      "assertions": 342,
+      "failures": 0,
+      "errors": 0,
+      "stdout_bytes": 7986,
+      "stdout_sha256": "d3a35da82f797c0daa0d4bf12869fa73d0c3880626b3ad39d7749de284a7be1a",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "lint": {
+    "command": "clj-kondo --lint scripts test src/foresight/evidence.cljc",
+    "exit": 0,
+    "errors": 0,
+    "warnings": 0,
+    "configuration_changed": false
+  },
+  "repair": "Reconstruct all declared correction documents and targeted views, including trusted prefix; revalidate source Git ancestry, including-LF physical bytes and semantic evidence at exact anchor. Validate ordinary suffix only; preserve untargeted historical-prefix compatibility.",
+  "counterexamples": [
+    "Corrected receipt as only attestation must remain usable when trusted base equals corrected head and after an ordinary append.",
+    "Trusted prefix containing a declared correction with wrong source hash must be refused without rewriting bytes.",
+    "Invalid semantic evidence result stays refused even when its metadata correction is in the trusted prefix."
+  ],
+  "native_findings": {
+    "review": 5449712860,
+    "comment": 4213133901,
+    "native_priority": "Major",
+    "local_independent_assessment": "P2, recorded before native review publication; no relabeling of native priority"
+  },
+  "limits": [
+    "All original maps and bytes remain immutable.",
+    "Current 3c native finding not yet settled; new successor requires fresh exact-head hosted gates and provider review.",
+    "Actual Rheos card remains In_progress after native build-gate refusal.",
+    "PR27 P1 remains open until independently qualified integration and required hosted verification."
+  ]
+}

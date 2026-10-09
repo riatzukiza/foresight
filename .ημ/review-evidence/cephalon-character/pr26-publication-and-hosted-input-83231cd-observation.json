@@ -1,0 +1,78 @@
+{
+  "schema": "cephalon.review-preparation-observation/v1",
+  "head": "83231cd02156965d21363e0ebeb1f97b5c18be87",
+  "base": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "hosted_run": 37656279794,
+  "artifact": 11497934921,
+  "artifact_digest": "f343c8ec0af8c8ac10e421ac1f80cc2f1c14416e0fbaa7c96f15005243a22b78",
+  "full_diff_bytes": 731761,
+  "full_diff_sha256": "35d462f456ec4dbbc6459c4858181b72491ec73337dd4d0b9da43496901f0a1c",
+  "local_immutable_diff_byte_equal": true,
+  "changed_inputs": 33,
+  "hosted13gates_all_executed_exit0": true,
+  "preview_truncated": true,
+  "full_review_not_yet_approved_by_mimo": true,
+  "persistent_artifacts": [
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/native-artifact-11497934921.zip",
+      "bytes": 234119,
+      "sha256": "f343c8ec0af8c8ac10e421ac1f80cc2f1c14416e0fbaa7c96f15005243a22b78"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/basehead.diff",
+      "bytes": 731761,
+      "sha256": "35d462f456ec4dbbc6459c4858181b72491ec73337dd4d0b9da43496901f0a1c"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/checkout.json",
+      "bytes": 287,
+      "sha256": "bcfe6d2a4364c0f5854193989ea67c0e2b6a308013ebc87ad35f3a2c9891e7cc"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/input-manifest.json",
+      "bytes": 773,
+      "sha256": "8885fb4f2842419c3b48f1eb8ed5a595f89ed1c129ec8fb11b217dff2a9475a5"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/summary.json",
+      "bytes": 1405,
+      "sha256": "58f889f9ee2b9ef212e4669125c5125b3d8007494fdb122a388abe0535e829f0"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/deterministic.log",
+      "bytes": 14227,
+      "sha256": "eca669d0b4c1c23513a0db14854c4d5cb0f9a83c7c4528e606fd7806d002358a"
+    }
+  ],
+  "pending_owned_changes": {
+    "probe_docblocks": 5,
+    "all_old_executable_bytes_preserved_when_removing_new_blocks": true,
+    "old_probe_sha256": "d58b2205edebdafbd70dd0b1c45a4fb91ea4c5498bfd37ad0eb6b99416cde19d",
+    "new_probe_sha256": "d110c92e59c6889c09afe14455f4fb6ca38702fc21b9795254e3619c416d7691",
+    "native_coderabbit_docstring_warning": {
+      "comment_id": 6042789341,
+      "functions": 5,
+      "coverage_percent": 0,
+      "threshold_percent": 80,
+      "not_yet_native_recomputed": true
+    }
+  },
+  "runtime_observed_transcription": {
+    "command": "nbb scripts/verify_cephalon_local.cljs --only knoxx",
+    "pass": 12,
+    "warn": 8,
+    "fail": 0,
+    "active": [],
+    "latest_sampled_run": "trigger-ussyverse-social_creative-cron-creative-evt_1791391945240-1791391945255",
+    "latest_sampled_created_at": "2026-10-07T16:52:25.260Z",
+    "latest_receipts": 8,
+    "latest_sampled_public_post": "3mxcfu2fh2m23",
+    "latest_public_post_images": 0,
+    "warning_count_change": "An additional no-image-in-sampled-feed warning; no image frequency or delivery/quality proof.",
+    "limits": "Completed status/receipt count is not newly verified answer, artifact quality, Discord destination access or terminal ownership. No runtime or publication mutation."
+  },
+  "initial_operator_errors": [
+    "guessed .coderabbit.yaml absent; exact repo search showed no configuration; native review reports defaults",
+    "gh repo fork --remote=false unsupported with explicit repo argument; actual corrected --clone=false succeeded, calling Git config unchanged"
+  ]
+}

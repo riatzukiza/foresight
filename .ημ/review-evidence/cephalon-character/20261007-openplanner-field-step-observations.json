@@ -1,0 +1,239 @@
+{
+  "evidenceKind": "actual selected committed source fixture execution; not full package test, character solver qualification or live runtime proof",
+  "observedAt": "2026-10-07T13:38:55.189Z",
+  "repositoryPath": "/home/err/spaces/foresight/openplanner",
+  "revision": "582efb7ebbdc542650fd239bfc5f2de076316c53",
+  "nodeVersion": "v24.14.1",
+  "typescriptVersion": "5.9.3",
+  "files": [
+    {
+      "path": "packages/graph/eros-eris-field/src/sim.ts",
+      "bytes": 9105,
+      "sha256": "c69958002dba0207b17e5e42adc2e044b396dd69f03b5b104b693162234d4340",
+      "matchesCommittedHead": true
+    },
+    {
+      "path": "packages/graph/eros-eris-field/src/quadtree.ts",
+      "bytes": 4530,
+      "sha256": "fcfefce4f97793825014b0dd0a274ddd990705d49cabdd0dde76acb5e1000d5c",
+      "matchesCommittedHead": true
+    },
+    {
+      "path": "packages/graph/eros-eris-field/src/types.ts",
+      "bytes": 2496,
+      "sha256": "7ca4f386e534a926994ddd926a9044fbf111e291d1796975d93c987a579fe313",
+      "matchesCommittedHead": true
+    }
+  ],
+  "config": {
+    "theta": 0.6,
+    "repulsionStrength": 0,
+    "localRepulsionRadius": 0,
+    "localRepulsionStrength": 0,
+    "localRepulsionPower": 2,
+    "softening": 0.01,
+    "damping": 0.8,
+    "maxSpeed": 100,
+    "minSeparation": 0,
+    "separationStrength": 0,
+    "semanticAttractAbove": 0.7,
+    "semanticRepelBelow": 0.2,
+    "semanticAttractStrength": 0,
+    "semanticRepelStrength": 0,
+    "semanticRepelRadius": 0,
+    "semanticRestLength": 1,
+    "semanticBreakDistance": 10,
+    "targetRadius": 0,
+    "boundaryThickness": 0,
+    "boundaryPressure": 0,
+    "boundaryEdgeFraction": 0.1
+  },
+  "initial": [
+    {
+      "id": "a",
+      "x": -1,
+      "y": 0,
+      "vx": 1,
+      "vy": 0,
+      "mass": 1
+    },
+    {
+      "id": "b",
+      "x": 1,
+      "y": 0,
+      "vx": -1,
+      "vy": 0,
+      "mass": 1
+    }
+  ],
+  "observations": [
+    {
+      "label": "zero_elapsed_time",
+      "dts": [
+        0
+      ],
+      "error": null,
+      "state": [
+        {
+          "id": "a",
+          "x": -0.9992,
+          "y": 0,
+          "vx": 0.8,
+          "vy": 0,
+          "mass": 1
+        },
+        {
+          "id": "b",
+          "x": 0.9992,
+          "y": 0,
+          "vx": -0.8,
+          "vy": 0,
+          "mass": 1
+        }
+      ],
+      "finite": true,
+      "changed": true
+    },
+    {
+      "label": "negative_elapsed_time",
+      "dts": [
+        -0.1
+      ],
+      "error": null,
+      "state": [
+        {
+          "id": "a",
+          "x": -0.9992,
+          "y": 0,
+          "vx": 0.8,
+          "vy": 0,
+          "mass": 1
+        },
+        {
+          "id": "b",
+          "x": 0.9992,
+          "y": 0,
+          "vx": -0.8,
+          "vy": 0,
+          "mass": 1
+        }
+      ],
+      "finite": true,
+      "changed": true
+    },
+    {
+      "label": "nonfinite_nan_elapsed_time",
+      "dts": [
+        "NaN"
+      ],
+      "error": null,
+      "state": [
+        {
+          "id": "a",
+          "x": "NaN",
+          "y": "NaN",
+          "vx": "NaN",
+          "vy": "NaN",
+          "mass": 1
+        },
+        {
+          "id": "b",
+          "x": "NaN",
+          "y": "NaN",
+          "vx": "NaN",
+          "vy": "NaN",
+          "mass": 1
+        }
+      ],
+      "finite": false,
+      "changed": true
+    },
+    {
+      "label": "nonfinite_infinite_elapsed_time",
+      "dts": [
+        "Infinity"
+      ],
+      "error": null,
+      "state": [
+        {
+          "id": "a",
+          "x": -0.6,
+          "y": 0,
+          "vx": 0.8,
+          "vy": 0,
+          "mass": 1
+        },
+        {
+          "id": "b",
+          "x": 0.6,
+          "y": 0,
+          "vx": -0.8,
+          "vy": 0,
+          "mass": 1
+        }
+      ],
+      "finite": true,
+      "changed": true
+    },
+    {
+      "label": "one_step_0.1",
+      "dts": [
+        0.1
+      ],
+      "error": null,
+      "state": [
+        {
+          "id": "a",
+          "x": -0.9199999999999999,
+          "y": 0,
+          "vx": 0.8,
+          "vy": 0,
+          "mass": 1
+        },
+        {
+          "id": "b",
+          "x": 0.9199999999999999,
+          "y": 0,
+          "vx": -0.8,
+          "vy": 0,
+          "mass": 1
+        }
+      ],
+      "finite": true,
+      "changed": true
+    },
+    {
+      "label": "two_substeps_0.05",
+      "dts": [
+        0.05,
+        0.05
+      ],
+      "error": null,
+      "state": [
+        {
+          "id": "a",
+          "x": -0.9279999999999999,
+          "y": 0,
+          "vx": 0.6400000000000001,
+          "vy": 0,
+          "mass": 1
+        },
+        {
+          "id": "b",
+          "x": 0.9279999999999999,
+          "y": 0,
+          "vx": -0.6400000000000001,
+          "vy": 0,
+          "mass": 1
+        }
+      ],
+      "finite": true,
+      "changed": true
+    }
+  ],
+  "limits": [
+    "No graph app, HTTP service, database, maker, social effect, package build or donor source mutation.",
+    "TypeScript transpileModule emitted temporary CommonJS without typecheck; actual pure stepField and its quadtree dependency were loaded from selected committed bytes.",
+    "Configuration is an isolated fixture, not an accepted kernel contract; no RNG, authorization, collision, mood or full recall coupling tested."
+  ]
+}

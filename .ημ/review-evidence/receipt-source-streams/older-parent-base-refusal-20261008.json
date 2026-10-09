@@ -1,0 +1,59 @@
+{
+  "kind": "observed-command-output-transcription",
+  "observed_at": "2026-10-08T04:25:43.173827+00:00",
+  "repository_context": "riatzukiza/foresight (containing Git repository; no historical receipt field added)",
+  "cwd": "/home/err/.codex/worktrees/cephalon-recall-refinement/foresight",
+  "argv": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/.npm/_npx/0856042db19db713/node_modules/nbb/cli.js",
+    "-cp",
+    "src:scripts",
+    "scripts/evidence.clj",
+    "verify-receipts",
+    "--base",
+    "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "--at",
+    "e7ce01804633e0c3ddbb82cd444ac9e796b8cf65"
+  ],
+  "exit": 2,
+  "stdout": "Receipt source stream admission refused: source base is not the proven common byte prefix\n",
+  "stderr": "",
+  "stdout_bytes": 90,
+  "stderr_bytes": 0,
+  "bindings": {
+    "comparison_base": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+    "source_common": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "canonical_anchor": "e7ce01804633e0c3ddbb82cd444ac9e796b8cf65"
+  },
+  "blobs": {
+    "comparison_base": {
+      "commit": "96a6dca24cb7a14b041bdd6e3e7922c568238da9",
+      "utf8_bytes": 311209,
+      "sha256": "cebde833fe64b27144a9de0007e942bde0ea1cc5d2b90fa64619066cd1b14e33"
+    },
+    "source_common": {
+      "commit": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+      "utf8_bytes": 476935,
+      "sha256": "01ef747305b0446523c00caf39833da0737241bfa3698bc093a13e56dea9d177"
+    },
+    "canonical_anchor": {
+      "commit": "e7ce01804633e0c3ddbb82cd444ac9e796b8cf65",
+      "utf8_bytes": 517516,
+      "sha256": "c336513b6edbf6c151438295cce7b5cc594e2c2aad06fc96ef53a7688cd883ca"
+    }
+  },
+  "byte_relations": {
+    "source_common_extends_comparison_base": true,
+    "canonical_anchor_extends_source_common": true,
+    "canonical_anchor_extends_comparison_base": true,
+    "comparison_base_extends_source_common": false
+  },
+  "introducing_source_commit": "3d0efb2092e6f8a54964594c16dbc367dfb97470",
+  "operator_capture_correction": "The first capture script assumed the CLI refusal was on stderr and its assertion failed before writing a proof. This later capture records stdout/stderr separately; that channel assumption is not production verification.",
+  "limits": [
+    "This reproduces the actual parent command; it is not a new failing feature test or hosted CI result.",
+    "PR27 passed against its actual immediate base6771; that completion and the two native receipt-card closures remain history.",
+    "The older parent comparison-base scenario is a newly discovered scope gap; implementation still requires independent planning qualification and lawful Ready before RED.",
+    "No old receipt bytes, board state, runtime, actor principal or review policy changed."
+  ]
+}

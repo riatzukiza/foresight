@@ -1,0 +1,40 @@
+{
+  "id": 5446131731,
+  "node_id": "PRR_kwDOU4VJMM8AAAABRJ1gEw",
+  "user": {
+    "login": "eta-mu-ai[bot]",
+    "id": 270021952,
+    "node_id": "BOT_kgDOEBg1QA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/10676925?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D",
+    "html_url": "https://github.com/apps/eta-mu-ai",
+    "followers_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/eta-mu-ai%5Bbot%5D/received_events",
+    "type": "Bot",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "body": "## Evidence-first review of PR #26 — APPROVE\n\n**Scope.** Full immutable base/head diff reviewed: 55 files, 852,853 bytes, all 111 chunks read and individually assessed against the staged head (`6a443898`).\n\n**Deterministic evidence.** `summary.json` reports `result=success`, `exact_head=true`, with all 13 gates exiting 0. The ENOENT lines in `deterministic.log` are environment noise (missing optional tooling paths), not change-introduced failures.\n\n**Change map.** The PR is documentation and accountability evidence: appended receipt rows (`.ημ/receipts.edn`), archived GitHub provenance JSON (PR objects, Actions runs, review threads, close/reopen transition manifests with SHA256 records, prior-run review submissions), session-mycology ledger appends, a kanban card appendix, two new planning notes (field kernel ownership/numeric contract; graph recall boundary), and an OpenPlanner memory-boundary investigation probe with its observations. No application/runtime source, schema, authorization, persistence, or dependency changes.\n\n**Confirmed findings: none.**\n\nThe closest adversarial candidates were all rejected:\n- Ledger references to the `APPROVED832` review are date- and head-labeled and paired with \"next current head requires fresh review\"; archived evidence independently shows the real prior-head approval. Not a current-head approval claim.\n- Pending docstring-coverage rerun is disclosed provenance, not a regression: the exact-head deterministic gate set passes 13/13.\n- The probe's observed OpenPlanner handler gaps concern unchanged upstream code outside the diff, explicitly bounded as synthetic investigation — documenting an upstream gap is not a defect introduced here.\n- No secrets in the archived API JSON (public metadata and normal git author email only); ledger/receipt appends preserve prior bytes; thread before/after snapshots are byte-identical (16 threads), matching the preservation claim.\n\n**Non-blocking notes (summary-only, not findings).**\n- Test gap: the two new notes promise future RED/GREEN falsification matrices; nothing executes them yet — by design, and labeled as such in the PR.\n- The docstring-coverage rerun noted in the ledger remains an outstanding follow-up at publication time.\n- Archived approvals are bound to earlier heads (1069 / 83231cd); qualification of the current head rests on this review plus the passing exact-head gates.\n\nNo confirmed findings ⇒ APPROVE.",
+  "state": "APPROVED",
+  "html_url": "https://github.com/riatzukiza/foresight/pull/26#pullrequestreview-5446131731",
+  "pull_request_url": "https://api.github.com/repos/riatzukiza/foresight/pulls/26",
+  "author_association": "NONE",
+  "_links": {
+    "html": {
+      "href": "https://github.com/riatzukiza/foresight/pull/26#pullrequestreview-5446131731"
+    },
+    "pull_request": {
+      "href": "https://api.github.com/repos/riatzukiza/foresight/pulls/26"
+    }
+  },
+  "submitted_at": "2026-10-07T17:44:39Z",
+  "commit_id": "6a4438982fdf1eca98f856748bb23b19ab017c0a"
+}

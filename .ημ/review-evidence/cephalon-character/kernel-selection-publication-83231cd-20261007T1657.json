@@ -1,0 +1,84 @@
+{
+  "epistemic_tier": "observed execution and explicit operator transcription; not reviewer approval",
+  "observed_at": "2026-10-07T16:58:10.680393+00:00",
+  "head": "83231cd02156965d21363e0ebeb1f97b5c18be87",
+  "parent": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "owned_changed_paths": 33,
+  "immutable_receipt_consumer": {
+    "result": "PASS",
+    "total": 266,
+    "appended": 7,
+    "sha256": "858e5efa5b55f884bf696a5c36548f119ca89cce66c99d83449eee51ccaff21a"
+  },
+  "publication": {
+    "successful": false,
+    "native_branch_last_read": "404 Not Found",
+    "native_commit_last_read": "404 Not Found",
+    "native_pr": "NOT CREATED",
+    "review_requests": [],
+    "push_remote": "personal",
+    "history_rewritten": false,
+    "push_errors": [
+      {
+        "time": "2026-10-07T16:53:25Z",
+        "request_id": "7844:2B1F2C:1F4400:2A32AF:6AC67904",
+        "transport": "SSH",
+        "source": "operator transcription of actual exec result"
+      },
+      {
+        "time": "2026-10-07T16:53:47Z",
+        "request_id": "78F8:1DC852:2A3299:32A697:6AC67919",
+        "transport": "SSH",
+        "source": "operator transcription of actual exec result"
+      },
+      {
+        "time": "2026-10-07T16:54:41Z",
+        "request_id": "78FE:7FC2F:1E20DF:291DC3:6AC6794F",
+        "transport": "SSH",
+        "source": "saved subprocess output"
+      },
+      {
+        "time": "2026-10-07T16:55:06Z",
+        "request_id": "791A:26655B:1F146B:2A152A:6AC67969",
+        "transport": "SSH",
+        "source": "saved subprocess output; transport override appended URLs, so both attempted"
+      },
+      {
+        "time": "2026-10-07T16:55:08Z",
+        "request_id": "790E:1EBBB3:1010306:15185D5:6AC6796B",
+        "transport": "HTTPS",
+        "source": "saved subprocess output"
+      },
+      {
+        "time": "2026-10-07T16:56:50Z",
+        "request_id": "7834:59354:10DB319:15FB543:6AC679D1",
+        "transport": "HTTPS direct URL",
+        "source": "saved subprocess output"
+      }
+    ],
+    "error": "remote Internal Server Error"
+  },
+  "parent_gate": {
+    "historical_completed_PASS_at": "2026-10-07T16:25:00Z",
+    "known_coderabbit_reset": "2026-10-07T16:54:15Z",
+    "fresh_status_result": "UNKNOWN: failed HTTP500 collecting historical commit22b4 status; no new gate verdict",
+    "archive": "native-pr22-status-server-failure-20261007T1657.json"
+  },
+  "limits": [
+    "No source implementation/admission/runtime mutation/deployment",
+    "No other-chat coordination message without pending human authorization",
+    "No inherited approval for unpublished child",
+    "GitHub public status Operational/earlier incident resolved16:25 is not proof these later repository operations succeeded"
+  ],
+  "operator_read_errors": [
+    "cat guessed mimo-review.yml absent; actual eta-mu-review.yml then read",
+    "rg guessed scripts/*review* unmatched; exact existing workflow then read"
+  ],
+  "saved_command_archives": [
+    ".ημ/review-evidence/cephalon-character/kernel-selection-push-third-83231cd.json",
+    ".ημ/review-evidence/cephalon-character/kernel-selection-push-transports-83231cd.json",
+    ".ημ/review-evidence/cephalon-character/kernel-selection-push-https-direct-83231cd.json",
+    ".ημ/review-evidence/cephalon-character/native-pr22-status-server-failure-20261007T1657.json",
+    ".ημ/review-evidence/cephalon-character/kernel-selection-prepared-pr-body-83231cd.md"
+  ]
+}

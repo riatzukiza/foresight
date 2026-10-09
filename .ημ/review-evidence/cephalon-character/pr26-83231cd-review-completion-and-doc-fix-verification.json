@@ -1,0 +1,118 @@
+{
+  "observedAt": "2026-10-07T17:27:48.575459+00:00",
+  "evidenceKind": "Observed local immutable Git-byte and hosted/native readback verification; not a new CI gate or provider approval",
+  "head": "83231cd02156965d21363e0ebeb1f97b5c18be87",
+  "sourceSummary": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-summary.json",
+  "listedRecords": 9,
+  "summaryPlusListedFiles": 10,
+  "records": [
+    {
+      "label": "before",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-before.json",
+      "bytes": 44831,
+      "sha256": "d115fe6213dff8c9f58badc748fd0756cbc72fe971b7f80b1d61c3961205d3ed",
+      "verification": "PASS"
+    },
+    {
+      "label": "branch-before",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-branch-before.json",
+      "bytes": 427,
+      "sha256": "ba8d1ed62c1fe3d661ca8e2fb301c080b402b6a1ae446dea22a595af3d53c26a",
+      "verification": "PASS"
+    },
+    {
+      "label": "threads-before",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-threads-before.json",
+      "bytes": 1673,
+      "sha256": "9e00104c9e4b1444c6b4cbb1e858a2af1aa0992fccc6f9f5e46ea9890a87dd16",
+      "verification": "PASS"
+    },
+    {
+      "label": "new-checks-before",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-new-checks-before.json",
+      "bytes": 33,
+      "sha256": "e83cfac35507982a40cfeb776ce85aa0367e7646f81fe857df4a6c841ea8a170",
+      "verification": "PASS"
+    },
+    {
+      "label": "runs-before",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-runs-before.json",
+      "bytes": 129744,
+      "sha256": "73611a05ab037d79764cfdd5ae74e23adbe28b09d22cd0c19d065676a37fe5ad",
+      "verification": "PASS"
+    },
+    {
+      "label": "closed",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-closed.json",
+      "bytes": 44851,
+      "sha256": "ef4bc67ab62eb069d6e4d47f7a8acd14fc76c70696b3617c24ee389565320d0c",
+      "verification": "PASS"
+    },
+    {
+      "label": "reopened",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-reopened.json",
+      "bytes": 44794,
+      "sha256": "f9fed0a91fd4e2dd101b42cae197d37078f2cee5a27d1ed1e84560c8ec8f5927",
+      "verification": "PASS"
+    },
+    {
+      "label": "threads-after",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-threads-after.json",
+      "bytes": 1673,
+      "sha256": "9e00104c9e4b1444c6b4cbb1e858a2af1aa0992fccc6f9f5e46ea9890a87dd16",
+      "verification": "PASS"
+    },
+    {
+      "label": "after",
+      "path": ".ημ/review-evidence/cephalon-personal-forks/native-pr22-reopen-20261007T155023Z-after.json",
+      "bytes": 44831,
+      "sha256": "04b0fa6dff6c27b53e0669121de2526277601d2a38e8c4f766f6b521ea2602ed",
+      "verification": "PASS"
+    }
+  ],
+  "threadSnapshotsByteEqual": true,
+  "probeDocumentation": {
+    "oldSHA256": "d58b2205edebdafbd70dd0b1c45a4fb91ea4c5498bfd37ad0eb6b99416cde19d",
+    "newSHA256": "d110c92e59c6889c09afe14455f4fb6ca38702fc21b9795254e3619c416d7691",
+    "removingOnlyJSDocRecoversExactExecutableBytes": true,
+    "nodeCheckExit": 0,
+    "nativeDocstringCoverageRecomputed": false
+  },
+  "hostedReview": {
+    "runId": 37656279794,
+    "nativeReviewId": 5445795201,
+    "state": "APPROVED",
+    "submittedAt": "2026-10-07T17:16:55Z",
+    "head": "83231cd02156965d21363e0ebeb1f97b5c18be87",
+    "nativeBodyEqualsHostedSubmission": true,
+    "coverage": {
+      "chunks": 95,
+      "delivered": 95,
+      "assessed": 95,
+      "missing": []
+    },
+    "artifacts": [
+      {
+        "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/attempt/input-verification.json",
+        "bytes": 1249,
+        "sha256": "e19d8fa6a2511bff69dde2bca8679f31055b6349a0245aaa896e539471647945"
+      },
+      {
+        "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/attempt/submission-verification.json",
+        "bytes": 1651,
+        "sha256": "8321eb83be728183a9e01e7932304189bbeaeb5936fe4481440236bbe691271f"
+      },
+      {
+        "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37656279794/attempt/submission.json",
+        "bytes": 35274,
+        "sha256": "191710e4a7bffa55e0fc3cf28232d383925e2332c778d84f3ff1db6342b709f3"
+      }
+    ]
+  },
+  "limits": [
+    "95 assessed pages do not prove correctness of proposed physics or deployed character behavior",
+    "Probe is executable investigation tooling: the review summary statement No executable source is too broad; its page 15 assessment recognized that probe",
+    "Nine records are listed by the reopen summary; including the summary yields ten files",
+    "No new source implementation, license resolution, Rheos readiness, board transition, runtime mutation or deployment"
+  ]
+}

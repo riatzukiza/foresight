@@ -1,0 +1,125 @@
+{
+  "observedAt": "2026-10-07T17:53:44.118835+00:00",
+  "evidenceKind": "Observed actual hosted/native publication verification, not coordinator-authored provider approval",
+  "runId": 37659519828,
+  "nativeReviewId": 5446131731,
+  "nativeReviewURL": "https://github.com/riatzukiza/foresight/pull/26#pullrequestreview-5446131731",
+  "head": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+  "base": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+  "nativeState": "APPROVED",
+  "submittedAt": "2026-10-07T17:44:39Z",
+  "hostedSubmissionNativeBodyByteEqual": true,
+  "artifactId": 11501585723,
+  "verifiedZIPSHA256": "0bb9f1862a46030a9e8817c5ede88867b2109a86aa59b03fd0e4c607b3a7edfa",
+  "records": [
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37659519828/attempt/input-verification.json",
+      "bytes": 1249,
+      "sha256": "0f266382abb4e622d6f37315024e453a5950c3a84d4c701940e95f1374a4b170"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37659519828/attempt/submission-verification.json",
+      "bytes": 1654,
+      "sha256": "81f8259c745172ecd8e860d1c041d9529bf622c7782a8fe6a77f7f7e4be01528"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-review-artifacts/37659519828/attempt/submission.json",
+      "bytes": 47965,
+      "sha256": "431fae00ee6cd9af963e24a32c803120a7f8278c478c55c3a2d24b4475c18a0d"
+    }
+  ],
+  "inputVerification": {
+    "schema": "open-hax.review-input-verification/v1",
+    "input_verified": true,
+    "verification_stage": "fresh-review-job-before-model",
+    "base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "head_sha": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+    "diff_base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "full_diff": {
+      "path": "basehead.diff",
+      "bytes": 855000,
+      "sha256": "e85c02ea6d434b8e16bcd8671a37e28033946c95eb9b4da7a16ff5cecddc95de"
+    },
+    "manifest_sha256": "4950f6dc59cf2b443d9c5beb2427003080300a4791e0884bbb002bc064691434",
+    "provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "26",
+      "run_id": "37659519828",
+      "run_attempt": "1",
+      "workflow_sha": "f36dad95eef2c2c3be98214d04aa19b3ee2a8405",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/26/merge"
+    },
+    "evidence_artifact_name": "review-evidence-26-37659519828-1",
+    "verification_provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "26",
+      "run_id": "37659519828",
+      "run_attempt": "1",
+      "workflow_sha": "f36dad95eef2c2c3be98214d04aa19b3ee2a8405",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/26/merge"
+    }
+  },
+  "submissionVerification": {
+    "schema": "open-hax.review-submission-verification/v1",
+    "input_verified": true,
+    "verification_stage": "after-review-and-recovery-before-publication",
+    "base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "head_sha": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+    "diff_base_sha": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "full_diff": {
+      "path": "basehead.diff",
+      "bytes": 855000,
+      "sha256": "e85c02ea6d434b8e16bcd8671a37e28033946c95eb9b4da7a16ff5cecddc95de"
+    },
+    "manifest_sha256": "4950f6dc59cf2b443d9c5beb2427003080300a4791e0884bbb002bc064691434",
+    "provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "26",
+      "run_id": "37659519828",
+      "run_attempt": "1",
+      "workflow_sha": "f36dad95eef2c2c3be98214d04aa19b3ee2a8405",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/26/merge"
+    },
+    "evidence_artifact_name": "review-evidence-26-37659519828-1",
+    "verification_provenance": {
+      "repository": "riatzukiza/foresight",
+      "pull_request": "26",
+      "run_id": "37659519828",
+      "run_attempt": "1",
+      "workflow_sha": "f36dad95eef2c2c3be98214d04aa19b3ee2a8405",
+      "workflow_ref": "riatzukiza/foresight/.github/workflows/eta-mu-review.yml@refs/pull/26/merge"
+    },
+    "input_verification_sha256": "0f266382abb4e622d6f37315024e453a5950c3a84d4c701940e95f1374a4b170",
+    "context_sha256": "9c11ba3c417b0756a4bc831259cff1da62baca6f0e671a141c722b73578e076b",
+    "submission_sha256": "431fae00ee6cd9af963e24a32c803120a7f8278c478c55c3a2d24b4475c18a0d",
+    "input_coverage": {
+      "chunks": 111,
+      "delivered": 111,
+      "assessed": 111,
+      "missing": []
+    }
+  },
+  "nativeSummaryLengthCorrection": {
+    "UTF8Bytes": 855000,
+    "UnicodeCodePoints": 852763,
+    "UTF16CodeUnits": 852853,
+    "nativeSummaryCallsUTF16UnitCountBytes": true,
+    "initialOperatorAssumptionCodePointCountFailed": true,
+    "initialAssumptionNoProductionVerificationCredit": true
+  },
+  "currentCanonicalStatus": {
+    "number": 26,
+    "head": "6a4438982fdf1eca98f856748bb23b19ab017c0a",
+    "base": "1069d4c9bcba29ef55e6c72c7c597de101f0520b",
+    "state": "open",
+    "autoMerge": null,
+    "exit": 0,
+    "stdout": "riatzukiza/foresight#26  head 6a44389\n  coderabbit: rate-limited   checks: {:pass 3}\n  threads: 0 total, 0 unresolved; by severity {}; informational 0\n  exact-head approvals: #{\"mimo\"}  observed commit binding: {\"mimo\" #{\"6a4438982fdf1eca98f856748bb23b19ab017c0a\"}}\n  completed planning rounds: 1 / soft minimum 5  participants: #{\"mimo\"}\n  coderabbit quota-unavailable: native source 6043256178 request 6043254142 scope current-head observed 2026-10-07T17:31:49Z retry-at-ms 1791396409000\n  codex quota-unavailable: native source 6042771169 request  scope account observed 2026-10-07T17:05:06Z retry-at-ms UNKNOWN\n  gate: PASS\n",
+    "stderr": ""
+  },
+  "limits": [
+    "Actual111page full assessment is not numerical correctness, source readiness, Rheos admission or deployment proof",
+    "CodeRabbit native docstring coverage after fiveJSDoc correction was not rerun due actual quota; no invented coveragePASS",
+    "Source fork Actions enabled=true but no discovered MiMo workflow/route yet; no source settings or App/secrets changed"
+  ]
+}

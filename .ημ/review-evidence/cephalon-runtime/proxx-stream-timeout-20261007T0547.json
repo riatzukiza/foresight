@@ -1,0 +1,191 @@
+{
+  "record_kind": "observed_command_output_transcription",
+  "epistemic_tier": "observed",
+  "recorded_at": "2026-10-07T06:07:51.379647+00:00",
+  "scope": "Whitelisted native run/query and diagnostic command outputs. This is not a raw REST/provider response or review approval.",
+  "runtime": {
+    "knoxx_image_id": "sha256:ce0123ef17bade99603ea6ea19967c99c62869118d1cf52c057ab6a72500bf14",
+    "knoxx_image_ref": "knoxx-backend:social-local-2644fc6-creative",
+    "contract_files": 240,
+    "model": "deepinfra/google/gemma-4-31B-it",
+    "proxx_image_id": "sha256:26837706ffc08e41cfa97c121c8325769b33b959c8ff64f9cf5a6f0fbecffbab",
+    "proxx_image_ref": "ghcr.io/open-hax/proxx:88471efd7f8cd27f64fc733a1c31369f00a6d432"
+  },
+  "failed_clock_runs": [
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791347845209-1791347845248",
+      "created_at": "2026-10-07T04:37:25.288Z",
+      "persisted_status": "completed",
+      "answer": "502 All upstream attempts failed due to network/transport errors.",
+      "receipt_count": 2
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791348745195-1791348745248",
+      "created_at": "2026-10-07T04:52:25.316Z",
+      "persisted_status": "completed",
+      "answer": "502 All upstream attempts failed due to network/transport errors.",
+      "receipt_count": 0
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791349645307-1791349645327",
+      "created_at": "2026-10-07T05:07:25.332Z",
+      "persisted_status": "completed",
+      "answer": "502 All upstream attempts failed due to network/transport errors.",
+      "receipt_count": 2
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791350545266-1791350545446",
+      "created_at": "2026-10-07T05:22:25.490Z",
+      "persisted_status": "completed",
+      "answer": "502 All upstream attempts failed due to network/transport errors.",
+      "receipt_count": 0
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791351445355-1791351445384",
+      "created_at": "2026-10-07T05:37:25.392Z",
+      "persisted_status": "completed",
+      "answer": "502 All upstream attempts failed due to network/transport errors.",
+      "receipt_count": 0
+    },
+    {
+      "run_id": "trigger-ussyverse-social_creative-cron-creative-evt_1791352345478-1791352345530",
+      "created_at": "2026-10-07T05:52:25.547Z",
+      "persisted_status": "completed",
+      "answer": "502 All upstream attempts failed due to network/transport errors.",
+      "receipt_count": 0
+    }
+  ],
+  "before": [
+    {
+      "probe": "health",
+      "status": 200
+    },
+    {
+      "probe": "models",
+      "status": 200,
+      "count": 177,
+      "configured_model_listed": true
+    },
+    {
+      "probe": "nonstream_short_completion",
+      "status": 200,
+      "elapsed_ms": 19232,
+      "content": "OK"
+    },
+    {
+      "probe": "stream_with_unused_tool_schema",
+      "status": 502,
+      "elapsed_ms": 13614,
+      "event_count": 0,
+      "error_code": "upstream_unavailable"
+    },
+    {
+      "probe": "stream_without_tools",
+      "status": 502,
+      "elapsed_ms": 16674,
+      "event_count": 0,
+      "error_code": "upstream_unavailable"
+    },
+    {
+      "probe": "nonstream_with_unused_tool_schema",
+      "status": 200,
+      "elapsed_ms": 26068,
+      "upstream": "requesty",
+      "content": "OK"
+    },
+    {
+      "probe": "unsupported_requesty_prefixed_model",
+      "status": 502,
+      "elapsed_ms": 8488,
+      "upstream_requesty_status": 404,
+      "note": "Rejected diagnostic candidate; no model/config change was made."
+    }
+  ],
+  "native_request_log_examples": [
+    {
+      "id": "8c13590f-ba78-42f4-b3f1-06e54dc993ce",
+      "provider": "requesty",
+      "status": 0,
+      "latency_ms": 8001,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "687b1341-ad7d-4e29-9ba1-140109e044c0",
+      "provider": "requesty",
+      "status": 0,
+      "latency_ms": 8004,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "60ef83cc-025a-4976-8cb2-5dc8504196a4",
+      "provider": "requesty",
+      "status": 200,
+      "latency_ms": 15319
+    },
+    {
+      "id": "9852b46f-9916-458e-9f72-1a8b28a11530",
+      "provider": "ollama",
+      "status": 0,
+      "error_code": "ENOTFOUND"
+    },
+    {
+      "id": "1d8fe2f8-508d-41cb-911f-ff287f3fc5e8",
+      "provider": "ollama-lan",
+      "status": 0,
+      "error_code": "UND_ERR_CONNECT_TIMEOUT"
+    }
+  ],
+  "maintenance": {
+    "local_active_runs": 0,
+    "local_idle_observed_at": "2026-10-07T06:03:18.782Z",
+    "proxy_unmatched_starts_in_bounded_log_window": 0,
+    "setting": "UPSTREAM_STREAM_BOOTSTRAP_TIMEOUT_MS",
+    "before_default_ms": 8000,
+    "after_ms": 60000,
+    "backup_dir": "/srv/open-hax/services/proxx/backups/cephalon-stream-timeout-20261007T060321Z",
+    "compose_before_sha256": "23cb4a06e5db8f434e794692a1a931a2b13c5ac7fd6d173377371ed1810e9caa",
+    "compose_after_sha256": "f74b725b0c5193a3347b84ab6b2942f8401c2bbc329d9c79e680aa415d367de8",
+    "only_recreated_service": "proxx-proxx-1",
+    "started_at": "2026-10-07T06:03:24.319616395Z",
+    "image_id_unchanged": true,
+    "application_user": "node",
+    "cloud_knoxx_events_disabled": true,
+    "local_knoxx_restarted": false,
+    "local_contracts_changed": false,
+    "pm2_changed": false
+  },
+  "after": [
+    {
+      "probe": "same_stream_with_unused_tool_schema",
+      "status": 200,
+      "elapsed_ms": 15062,
+      "upstream": "requesty",
+      "event_count": 4,
+      "content": "OK",
+      "stream_errors": []
+    },
+    {
+      "probe": "stream_tool_call",
+      "status": 200,
+      "elapsed_ms": 11295,
+      "upstream": "requesty",
+      "event_count": 6,
+      "function_name": "diagnostic_noop",
+      "arguments": {
+        "value": "OK"
+      },
+      "valid_noop_call": true,
+      "stream_errors": [],
+      "tool_executed": false
+    }
+  ],
+  "limits": [
+    "The request/answer state mismatch is not repaired by the timeout setting.",
+    "The probes are dependency/transport evidence, not creative output, outlet delivery or artistic-quality proof.",
+    "Idle snapshots and bounded request-log matching are observations, not enforced admission isolation.",
+    "Dead fallbacks remain configured; the timeout repair does not provide mesh/cloud availability guarantees.",
+    "No source PR was merged or deployed; source366e72ab remains unqualified.",
+    "Personal Knoxx issues are disabled; a native issue-list attempt exited1, no repository settings changed."
+  ],
+  "natural_successor": "Pending observation of the native06:07 clock; no manual creative turn was dispatched."
+}
