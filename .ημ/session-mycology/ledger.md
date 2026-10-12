@@ -1365,3 +1365,12 @@
   spore: none
   receipt-refs: 36107c2121bbca4be81a6d3773e973750a945579b7a7cf50a5dfd828531da867
   note: Consult retained cross-session evidence and canonical global routing skills before investigating credentials; dynamic catalog selection preserves route. Original source existed but generated Codex memory was empty. Four explicit docs/skill changes independently reviewed; no new skill or spore promotion.
+- ts: 2026-10-12T19:01:56.570159500Z
+  session: /home/err/spaces/foresight
+  task: Recover recorded anonymous MiMo route and retain actual hosted success plus bounded repairs
+  p-efficiency: 0.38
+  p-friction: 0.88
+  p-skill-candidate: 0.20
+  spore: none
+  receipt-refs: 85c716de-62f5-4c5c-9d85-0391d5683308
+  note: Consult shared routing memory before investigating provider keys; fresh native review is distinct from source preparation and full deployment. Preserve genuine failing controls, isolate fixture state, and bind actual child audit records before credit. Existing skills updated; no new spore or promotion.
