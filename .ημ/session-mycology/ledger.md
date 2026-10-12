@@ -1374,3 +1374,12 @@
   spore: none
   receipt-refs: 85c716de-62f5-4c5c-9d85-0391d5683308
   note: Consult shared routing memory before investigating provider keys; fresh native review is distinct from source preparation and full deployment. Preserve genuine failing controls, isolate fixture state, and bind actual child audit records before credit. Existing skills updated; no new spore or promotion.
+- ts: 2026-10-12T20:08:35.221195784Z
+  session: /home/err/spaces/foresight
+  task: Recover prior anonymous OpenCode MiMo memory and persist tested native review-route repairs
+  p-efficiency: 0.35
+  p-friction: 0.85
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: 02f5619c-20b7-4b1d-81a7-c8dbac86d686,fc99c5dad4c2cf96ce27f78389863be23c2d647d3e3e5c1e9ff5982ef21ffab3
+  note: Existing session evidence already explained anonymous MiMo tool registration; retain catalog-based model discovery and classify upstream errors without asking for keys. Applied exact qualified sources and preserved failures. Registered public-pin fetching resolved absent local objects; existing NBB lint config and current GitHub job-context docs resolved analyzer false positives. No new spore or promotion. Native review, protected adoption, mutation campaign and CMS deployment still pending.
