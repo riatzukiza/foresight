@@ -1410,3 +1410,12 @@
   spore: none
   receipt-refs: 48b7a2d0-9992-4f9c-b292-9812bd6f214b,260ad458112252da1762bbbe6b5db69a01c8488dc1e402bdcc5a4edb4a3560ef
   note: Recover shared skill-linked memory before credential investigation. Use actual pinned reporter transport instead of a partial assumed decoder. Preserve failed captures and require predecessor phase success before dependent execution; no new spore or promotion.
+- ts: 2026-10-12T23:30:38.244234421Z
+  session: /home/err/spaces/foresight
+  task: Recover recorded anonymous OpenCode MiMo memory and publish qualified dynamic-routing fixes
+  p-efficiency: 0.30
+  p-friction: 0.90
+  p-skill-candidate: 0.10
+  spore: none
+  receipt-refs: b7cb8414-0925-447e-9db4-aa30bee4c13d,b22865348dfd7cf6b120ea78f8998077685e9764842e69c3e8bad4c1f5c8947c
+  note: Existing shared routing notes and skill/AGENTS links already preserve anonymous OpenCode and changing MiMo IDs. Discover memory before credential investigation. Catalog bytes must remain checked across discovery and inference. Corrected TAP capture quoting without changing product semantics; retained failed full normal runs and separate passed scoped retry. T350 f6ee pushed, four real native fixes confirmed, current review/CI remain pending. No new spore or same-session promotion; deployment and live Spanish remain unfinished.
