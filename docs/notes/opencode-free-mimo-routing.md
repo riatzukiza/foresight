@@ -10,6 +10,12 @@ Recorded from the user's routing history and saved observations on 2026-10-12. T
 
 ## Evidence
 
+(世, p=0.99) The earlier session is recovered: `01a0fe9a-76ba-7db1-9538-fd709ddbc3b1`, retained in [the October 2 transcript](/home/err/.codex/sessions/2026/10/02/rollout-2026-10-02T16-52-10-01a0fe9a-76ba-7db1-9538-fd709ddbc3b1.jsonl:290). Its final recorded control matrix used OpenCode 1.18.18 without a supplied API key. Blanket `bash: deny` rejected the reviewer; keeping the Bash tool registered with deny-all except `true` admitted requests while an attempted `touch PWNED` remained blocked. The patched reviewer produced two successful tiny replies and one generic upstream error. These are recovered historical observations, distinct from the October 12 measurements below.
+
+(世, p=0.99) That session persisted the explanation in [Muse PR17](https://github.com/octave-commons/muse/pull/17), source `.ημ/config/opencode/agents/github-reviewer.md`, commit `05b4f1c5e5bf2297bccf113a56c17e246d769d47`; the consuming eta-mu commit was `cbe1b986`. The retained [hosted run36979654351](https://github.com/open-hax/eta-mu/actions/runs/36979654351) completed the MiMo job and recorded `review_submit` returning `ok` at 2026-10-02 08:03:33 UTC. Its final deterministic evidence gate failed, so this is not evidence of a passing whole run. The earlier session explicitly retracted its CI-network causal guess. The user's IP-based-limit history does not establish that rejected hypothesis or a measured current quota.
+
+(己, p=1.00) The [sealed recovery](/home/err/.local/share/openhax-codex/20261010/review-state/mimo-free-route-probe-v1/prior-session-memory-recovery-v1/selected-records-and-memory-catalog-recovery-v1.json), SHA256 `651f559c6f45cd5ab61015bff722236d5df15328f65f4a1c645c872843e82ae6`, preserves 15 selected records with exact raw-line/text hashes. Imported transcript timestamps are import times; the embedded hosted timestamps establish the narrower execution chronology. This host's `memories_1.sqlite` contained zero `stage1_outputs` rows when inspected, and its usual `~/.codex/memories/` directory was absent. The old source comment and transcript existed; generated automatic memory was not populated.
+
 (世, p=0.99) Existing eta-mu documentation already records this route: [agent-workflows.md:285](/home/err/.local/share/openhax-codex/20261010/eta-mu-actionability-host/docs/agent-workflows.md:285) describes the anonymous public-provider path and no required `OPENCODE_API_KEY`; [github-automation-architecture.md:84](/home/err/.local/share/openhax-codex/20261010/eta-mu-actionability-host/docs/github-automation-architecture.md:84) describes read-only operation and retaining Bash registration with only the exact no-op `true`. Their observed whole-file SHA256 values are `918ae5168dbfa85ed8e0735d235d7f6990ffea969eaeaad9702240dbb74d3a35` and `534e4478133ce8223a342649d0395eb4ea79161d2e8b84575f46155ee1782261` respectively. Their other workflow revisions are historical documentation, not current pin authority.
 
 (世, p=0.99) The current [github-reviewer profile](/home/err/.config/opencode/agents/github-reviewer.md:25), SHA256 `518c646482d97e1c50e64339bc01481fca6289761f04d915820456b0b7afce62`, contains this exact warning and restriction:
@@ -63,4 +69,4 @@ bash:
 
 ## Next
 
-(己, p=0.99) Recover the actual hosted effective client and tool profile against the successful credential-free read-only observation before classifying the remaining hosted failure.
+(己, p=0.99) Use the recovered anonymous-route guidance and qualify the new catalog-discovery review workflow against its exact current source and hosted result.

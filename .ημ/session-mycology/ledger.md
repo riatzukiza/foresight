@@ -1356,3 +1356,12 @@
   spore: none
   receipt-refs: 2cbd4e94-5934-412f-8862-4e058663ab52,2e9b908a1fe2367c2721aaf7d3f996f6f67badfbafc1a1a0b6c0e4a4e64a3fd3
   note: Existing workflow guidance already specifies the anonymous public route. Preserve current catalog discovery and distinguish client recognition, upstream errors and quota; no OpenRouter change and no same-session skill promotion.
+- ts: 2026-10-12T17:46:42.265495622Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Recover and link already-recorded anonymous OpenCode MiMo route
+  p-efficiency: 0.6
+  p-friction: 0.65
+  p-skill-candidate: 0.65
+  spore: none
+  receipt-refs: 36107c2121bbca4be81a6d3773e973750a945579b7a7cf50a5dfd828531da867
+  note: Consult retained cross-session evidence and canonical global routing skills before investigating credentials; dynamic catalog selection preserves route. Original source existed but generated Codex memory was empty. Four explicit docs/skill changes independently reviewed; no new skill or spore promotion.
