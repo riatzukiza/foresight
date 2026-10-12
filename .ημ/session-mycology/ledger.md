@@ -1401,3 +1401,12 @@
   spore: none
   receipt-refs: c4eb4ed6-37a8-41ed-9c07-2c2d07597622,e560427f666a5fea686d7be7b0ab7eaecc6c4a0a80cf24f460bf2c96dfd97357
   note: Existing cross-session routing knowledge is now linked from shared skills; classify client recognition and upstream failures before credential escalation, carry checked catalog bytes across private homes, and restore global console mocks before assertion reporters. Exact canonical two kills are bounded evidence; source proposals and provider requests do not finish production deployment. No new spore or promotion.
+- ts: 2026-10-12T22:38:25.000477432Z
+  session: /home/err/spaces/foresight
+  task: Recover recorded OpenCode MiMo route and qualify deployment gate repairs
+  p-efficiency: 0.30
+  p-friction: 0.85
+  p-skill-candidate: 0.10
+  spore: none
+  receipt-refs: 48b7a2d0-9992-4f9c-b292-9812bd6f214b,260ad458112252da1762bbbe6b5db69a01c8488dc1e402bdcc5a4edb4a3560ef
+  note: Recover shared skill-linked memory before credential investigation. Use actual pinned reporter transport instead of a partial assumed decoder. Preserve failed captures and require predecessor phase success before dependent execution; no new spore or promotion.
