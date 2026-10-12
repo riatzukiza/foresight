@@ -143,3 +143,9 @@ must remain visible. Never convert an unavailable action into a pass.
 
 Cards live under `docs/agile/kanban`. Rheos events and receipts belong under
 `.ημ/`; no provenance ledger may be created elsewhere.
+
+## Operational memory
+
+Before troubleshooting OpenCode's free MiMo route, read the recovered
+[routing memory](docs/notes/opencode-free-mimo-routing.md). It links the earlier
+session and shared routing guidance; recorded model IDs are dated observations.
