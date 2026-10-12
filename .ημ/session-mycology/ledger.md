@@ -1383,3 +1383,12 @@
   spore: none
   receipt-refs: 02f5619c-20b7-4b1d-81a7-c8dbac86d686,fc99c5dad4c2cf96ce27f78389863be23c2d647d3e3e5c1e9ff5982ef21ffab3
   note: Existing session evidence already explained anonymous MiMo tool registration; retain catalog-based model discovery and classify upstream errors without asking for keys. Applied exact qualified sources and preserved failures. Registered public-pin fetching resolved absent local objects; existing NBB lint config and current GitHub job-context docs resolved analyzer false positives. No new spore or promotion. Native review, protected adoption, mutation campaign and CMS deployment still pending.
+- ts: 2026-10-12T21:28:11.007706120Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Persist recovered anonymous MiMo memory and truthful deployment qualification
+  p-efficiency: 0.35
+  p-friction: 0.85
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: 0e70bc53-9c8d-4444-aba7-5f6130f676da/bca35c3f4ae02cecd6bd96b431887570424a9100560a29847707c8f9fc74f5ac
+  note: Prior session already contained anonymous free OpenCode route; durable shared skills now point to recovered memory and full hosted success. Literal test controls must restore global mocks before failure reporting: normal pass did not reveal reporter interaction. Keep canonical invalid outcomes and no production credit; no new spore because existing skills cover the routing lesson.
