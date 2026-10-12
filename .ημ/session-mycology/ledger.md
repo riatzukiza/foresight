@@ -1392,3 +1392,12 @@
   spore: none
   receipt-refs: 0e70bc53-9c8d-4444-aba7-5f6130f676da/bca35c3f4ae02cecd6bd96b431887570424a9100560a29847707c8f9fc74f5ac
   note: Prior session already contained anonymous free OpenCode route; durable shared skills now point to recovered memory and full hosted success. Literal test controls must restore global mocks before failure reporting: normal pass did not reveal reporter interaction. Keep canonical invalid outcomes and no production credit; no new spore because existing skills cover the routing lesson.
+- ts: 2026-10-12T21:59:49.160485260Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Recover recorded anonymous MiMo route and qualify repaired canonical Knoxx pilot
+  p-efficiency: 0.35
+  p-friction: 0.85
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: c4eb4ed6-37a8-41ed-9c07-2c2d07597622,e560427f666a5fea686d7be7b0ab7eaecc6c4a0a80cf24f460bf2c96dfd97357
+  note: Existing cross-session routing knowledge is now linked from shared skills; classify client recognition and upstream failures before credential escalation, carry checked catalog bytes across private homes, and restore global console mocks before assertion reporters. Exact canonical two kills are bounded evidence; source proposals and provider requests do not finish production deployment. No new spore or promotion.
