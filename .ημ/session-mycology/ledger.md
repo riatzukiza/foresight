@@ -1446,3 +1446,12 @@
   spore: none
   receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/t350-native-dynamic-mimo-preparation-v1/root-routing-and-native-review-checkpoint-20261013T0330-v1/root-canonical-progress-event-v1.edn
   note: Read committed shared/project routing memory before credential investigation. Healthy unfinished reviews are not credential failures; retain checked catalog carrier and exact-head limits. Complete raw CI logs established format cause, scoped formatting preserved semantic controls. Nine current native author proposals verified, no independent agreement/settlement credit. Preserve one-second updatedAt observation and failed cleanup capture; no new spore/promotion, deployment and live Spanish remain unfinished.
+- ts: 2026-10-13T04:52:53.598770302Z
+  session: codex/01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Persist exact routing memory and qualified native deployment prerequisite progress
+  p-efficiency: 0.62
+  p-friction: 0.77
+  p-skill-candidate: 0.10
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/t350-native-dynamic-mimo-preparation-v1/root-routing-and-deployment-prerequisite-checkpoint-20261013T0450-v1/root-canonical-event-v1.edn
+  note: Reuse recorded anonymous OpenCode routing memory and actual current source custody. Preserve hosted success versus stale/cancelled run distinctions and ordinary reply root-commit versus current review association. Correct summary-only independent-review assumptions through actual source readback. Remaining policy/adapter/production gates explicit; no new spore, promotion, board change or deployment credit.
