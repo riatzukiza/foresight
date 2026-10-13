@@ -1545,3 +1545,12 @@
   spore: none
   receipt-refs: ca38b653a0720162d75a1c333ca2d4d932eb13fe8d964eeb19c5a1af696be813
   note: Actual positivebody User refresh verified exact2211B/currenthead; later native review changed67resolved snapshot into72threads/5P2 plus1body/1fail/1pending. Append dated facts, never rewrite earlier proof or infer individualadmission fromaggregate4to1. Newfindingintake delegated, productionCMS remains pending; existingfresh-native-evidence discipline covers lesson, no newspore/promotion.
+- ts: 2026-10-13T23:24:49.788385367Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Verify Website live and native CMS pending; compose causal CI repairs
+  p-efficiency: 0.62
+  p-friction: 0.83
+  p-skill-candidate: 0.25
+  spore: none
+  receipt-refs: 58345f7bb39af2444f9119b55ed4679c86ef252baaa549f84fc38eb1296daace
+  note: Fresh exact approved Website image and public HTTP confirmed; older healthy Knoxx remains. Reproduce Sandbox TAP JSON transport error and finite Git timeout; combine narrow peer repairs before complete normal gates. CLI checks pass, D runtime and deadline proposal still private. No new spore; deployment requires new CMS create, provider Spanish translation, approval, reconciliation and fresh browser proof.
