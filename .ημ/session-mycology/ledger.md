@@ -1428,3 +1428,12 @@
   spore: none
   receipt-refs: ecc7a226-f73e-407d-82be-e2dd24380b47,b50b746aceaf13cd6749cf7569a1281cdf6ae5ca432ecaadea427ceb6a870f62
   note: Read existing shared/project routing memory before credential investigation. Anonymous OpenCode and changing MiMo IDs already recorded and discoverable. Qualify actual shell behavior with production-shaped fixtures; offline npm still runs an update notifier when CI is stripped, so explicitly disable that independent path in offline controls while preserving audits. Retain failed controls, then actual corrected RED/GREEN and full existing gate. Seven runtime/doc files committed locally e498; dynamic native assessment source remains pending. No new spore or promotion; deployment and live Spanish remain unfinished.
+- ts: 2026-10-13T01:39:10.061814217Z
+  session: /home/err/spaces/foresight
+  task: Use recorded anonymous OpenCode MiMo memory and qualify native routing completion
+  p-efficiency: 0.55
+  p-friction: 0.88
+  p-skill-candidate: 0.20
+  spore: none
+  receipt-refs: root-qualified-routing-progress-receipt-event-v1.edn,69ac855287793ff2e6ad3a1bee2ce64b44941ee1525494756a1bfe8a6c42ddf0
+  note: Discover committed shared/project operational notes before credential investigation; no OpenRouter inference or account changes. Same catalog carrier must survive checked CLI discovery and inference. Actual f6 model traces are healthy but incomplete, so completion guidance preserves MAX2/STOP rather than credential retries. Dynamic route, fixture root alias and fixed Node helper normal gates passed and pushed cea8/952; native scan cleared two CodeQL alerts. Fresh hidden-artifact, large inventory, catalog prose and separate model-child lock findings remain genuine scoped work. Old approvals/positive acknowledgements require current-head custody. Preserve every failed control; no new spore or promotion; deployment and live Spanish remain unfinished.
