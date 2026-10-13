@@ -1464,3 +1464,12 @@
   spore: none
   receipt-refs: 8893ca12304d9822099aa162df92cad35e427c05597f8e0eccb8527968a94a76
   note: AnonymousOpenCode memory alreadyversioned/discoverable; ownedsourcequalifications/nativefindingfixes published, stalealways-job canceled through documentedscopedAPI. Freshreviews expose three furtheredgecases; preserve failedcontrols and boundarylimitations. No newspore/adoption/deployment claim.
+- ts: 2026-10-13T16:50:17.642574624Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Production deployment review repair and runtime diagnosis checkpoint
+  p-efficiency: 0.32
+  p-friction: 0.86
+  p-skill-candidate: 0.60
+  spore: none
+  receipt-refs: db950b861aeb4afd3612f00d7aaebe2ed35bbd72741ac7bb1c8ba7b9eec86f4f
+  note: Use already committed routing memory before credential troubleshooting. Preserve diagnostic vs normal qualification, actual native head/reply custody and old failed runs. Positive pidfd evidence repairs runtime retention, not a proven prior suite cause. No new spore or deployment claim.
