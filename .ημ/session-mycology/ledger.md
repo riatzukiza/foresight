@@ -1482,3 +1482,12 @@
   spore: none
   receipt-refs: 0c69ce56f0137d46098fcb3443827d112e09b89fa53aa7eace248daf3ae8244c
   note: Reused existing memory; distinguish upstream401/tool403/jobbudget. Canonical current reviews and actual merge readback required; record ratelimited unsent Codex request and private untested successor truthfully. No spore promoted.
+- ts: 2026-10-13T19:08:05.941608493Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Website live, CMS pending; persist adopted review prerequisites and actual source qualification
+  p-efficiency: 0.55
+  p-friction: 0.95
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/website-cms-user-status-and-adopted-review-prerequisites-20261013T1909-v1/canonical-progress-receipt-v1.edn
+  note: Observed Website promotion plus current HTTP/browser availability are distinct from CMS update. Merged and installed reviewed canonical source; final10 normal functional gates and V5 formatting/lint pass. Protected assessment transport remains pending; private19 not qualified. Historical native corrections do not override configured same-thread withdrawal law. Preserve evidence and continue upstream review without inventing deployment credit.
