@@ -1473,3 +1473,12 @@
   spore: none
   receipt-refs: db950b861aeb4afd3612f00d7aaebe2ed35bbd72741ac7bb1c8ba7b9eec86f4f
   note: Use already committed routing memory before credential troubleshooting. Preserve diagnostic vs normal qualification, actual native head/reply custody and old failed runs. Positive pidfd evidence repairs runtime retention, not a proven prior suite cause. No new spore or deployment claim.
+- ts: 2026-10-13T17:58:59.293773347Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Persist MiMo route memory, actual hosted timeout and reviewed dependency merge
+  p-efficiency: 0.4
+  p-friction: 0.8
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 0c69ce56f0137d46098fcb3443827d112e09b89fa53aa7eace248daf3ae8244c
+  note: Reused existing memory; distinguish upstream401/tool403/jobbudget. Canonical current reviews and actual merge readback required; record ratelimited unsent Codex request and private untested successor truthfully. No spore promoted.
