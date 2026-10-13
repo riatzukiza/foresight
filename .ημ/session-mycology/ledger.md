@@ -1437,3 +1437,12 @@
   spore: none
   receipt-refs: root-qualified-routing-progress-receipt-event-v1.edn,69ac855287793ff2e6ad3a1bee2ce64b44941ee1525494756a1bfe8a6c42ddf0
   note: Discover committed shared/project operational notes before credential investigation; no OpenRouter inference or account changes. Same catalog carrier must survive checked CLI discovery and inference. Actual f6 model traces are healthy but incomplete, so completion guidance preserves MAX2/STOP rather than credential retries. Dynamic route, fixture root alias and fixed Node helper normal gates passed and pushed cea8/952; native scan cleared two CodeQL alerts. Fresh hidden-artifact, large inventory, catalog prose and separate model-child lock findings remain genuine scoped work. Old approvals/positive acknowledgements require current-head custody. Preserve every failed control; no new spore or promotion; deployment and live Spanish remain unfinished.
+- ts: 2026-10-13T03:31:37.058899294Z
+  session: codex/01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Recover recorded anonymous MiMo memory and persist real source qualifications and native proposals
+  p-efficiency: 0.55
+  p-friction: 0.88
+  p-skill-candidate: 0.15
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/t350-native-dynamic-mimo-preparation-v1/root-routing-and-native-review-checkpoint-20261013T0330-v1/root-canonical-progress-event-v1.edn
+  note: Read committed shared/project routing memory before credential investigation. Healthy unfinished reviews are not credential failures; retain checked catalog carrier and exact-head limits. Complete raw CI logs established format cause, scoped formatting preserved semantic controls. Nine current native author proposals verified, no independent agreement/settlement credit. Preserve one-second updatedAt observation and failed cleanup capture; no new spore/promotion, deployment and live Spanish remain unfinished.
