@@ -1536,3 +1536,12 @@
   spore: none
   receipt-refs: 1a2df68e0ec4217d3a7b02f6ce88821c070015d5581b15926a0754d82fe5c936
   note: ProductionWebsite approved6fd stillhealthy; oldKnoxx841 lacksnativeCMScreate. Fouractualreviewhostrepairs qualified/pushedb2; full67native threadsresolved with independentUser/currentreviewhead custody. Workflowtests caught two stale phase-token assertions; one fixture Biome formatting failure retained before AST equality and affected reruns. HostedfreeMiMo read64 failure is realmissingread, not inferredkeys/compaction/quota/timeout. Existing memory appended; current positivebodyrefresh and freshreview/adoption/Services/liveCMS journey remain separate; no new spore/promotion.
+- ts: 2026-10-13T22:54:29.883490622Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Keep fresh review blockers distinct from earlier settled deployment evidence
+  p-efficiency: 0.72
+  p-friction: 0.75
+  p-skill-candidate: 0.40
+  spore: none
+  receipt-refs: ca38b653a0720162d75a1c333ca2d4d932eb13fe8d964eeb19c5a1af696be813
+  note: Actual positivebody User refresh verified exact2211B/currenthead; later native review changed67resolved snapshot into72threads/5P2 plus1body/1fail/1pending. Append dated facts, never rewrite earlier proof or infer individualadmission fromaggregate4to1. Newfindingintake delegated, productionCMS remains pending; existingfresh-native-evidence discipline covers lesson, no newspore/promotion.
