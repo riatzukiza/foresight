@@ -1491,3 +1491,12 @@
   spore: none
   receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/website-cms-user-status-and-adopted-review-prerequisites-20261013T1909-v1/canonical-progress-receipt-v1.edn
   note: Observed Website promotion plus current HTTP/browser availability are distinct from CMS update. Merged and installed reviewed canonical source; final10 normal functional gates and V5 formatting/lint pass. Protected assessment transport remains pending; private19 not qualified. Historical native corrections do not override configured same-thread withdrawal law. Preserve evidence and continue upstream review without inventing deployment credit.
+- ts: 2026-10-13T20:06:35.158306063Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Publish qualified assessment source and correct missing native review-body evidence
+  p-efficiency: 0.65
+  p-friction: 0.90
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-qualified313-and-native-settlement-correction-checkpoint-20261013T2000-v1/canonical-progress-receipt-v1.edn
+  note: Actual full tests caught deeper filename and prompt enrollment omissions that static reviews missed. Source31301b is qualified, pushed and four old findings are natively settled; two newer publication races require repairs. Missing selected API field means unknown, not empty: fresh nonempty K387 body removes false policy-gap claim, stops unjustified extension and preserves earlier reports additively. Existing SSH safely handles workflow pushes when HTTPS OAuth lacks workflow scope. No new spore/promotion; production goal remains active.
