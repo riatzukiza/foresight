@@ -1419,3 +1419,12 @@
   spore: none
   receipt-refs: b7cb8414-0925-447e-9db4-aa30bee4c13d,b22865348dfd7cf6b120ea78f8998077685e9764842e69c3e8bad4c1f5c8947c
   note: Existing shared routing notes and skill/AGENTS links already preserve anonymous OpenCode and changing MiMo IDs. Discover memory before credential investigation. Catalog bytes must remain checked across discovery and inference. Corrected TAP capture quoting without changing product semantics; retained failed full normal runs and separate passed scoped retry. T350 f6ee pushed, four real native fixes confirmed, current review/CI remain pending. No new spore or same-session promotion; deployment and live Spanish remain unfinished.
+- ts: 2026-10-13T00:02:18.456335445Z
+  session: /home/err/spaces/foresight
+  task: Verify recorded anonymous MiMo memory and qualify locked native-assessment runtime
+  p-efficiency: 0.60
+  p-friction: 0.82
+  p-skill-candidate: 0.20
+  spore: none
+  receipt-refs: ecc7a226-f73e-407d-82be-e2dd24380b47,b50b746aceaf13cd6749cf7569a1281cdf6ae5ca432ecaadea427ceb6a870f62
+  note: Read existing shared/project routing memory before credential investigation. Anonymous OpenCode and changing MiMo IDs already recorded and discoverable. Qualify actual shell behavior with production-shaped fixtures; offline npm still runs an update notifier when CI is stripped, so explicitly disable that independent path in offline controls while preserving audits. Retain failed controls, then actual corrected RED/GREEN and full existing gate. Seven runtime/doc files committed locally e498; dynamic native assessment source remains pending. No new spore or promotion; deployment and live Spanish remain unfinished.
