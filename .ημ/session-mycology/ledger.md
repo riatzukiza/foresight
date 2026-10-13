@@ -1527,3 +1527,12 @@
   spore: none
   receipt-refs: 54d9eae1645ab2badf3e4d629320442ce7b5f80de8dd5a61a743723bd51d1f7e
   note: Advanced qualified Knoxx e524 correction with six exact native Fixed replies and resolutions; one first-command cleanup anomaly was checked through complete native readback with no mutation retry. Review-host current866 CodeRabbit complete but four new Codex findings need genuine source repairs; private arithmetic timeout error caught against GitHub grammar before any application. Production CMS and live translation/publication remain pending. No new spore: existing fresh-source verification rule covers this syntax trap.
+- ts: 2026-10-13T22:49:15.254241250Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Advance website/CMS deployment prerequisite and persist free OpenCode MiMo failure classification
+  p-efficiency: 0.73
+  p-friction: 0.78
+  p-skill-candidate: 0.50
+  spore: none
+  receipt-refs: 1a2df68e0ec4217d3a7b02f6ce88821c070015d5581b15926a0754d82fe5c936
+  note: ProductionWebsite approved6fd stillhealthy; oldKnoxx841 lacksnativeCMScreate. Fouractualreviewhostrepairs qualified/pushedb2; full67native threadsresolved with independentUser/currentreviewhead custody. Workflowtests caught two stale phase-token assertions; one fixture Biome formatting failure retained before AST equality and affected reruns. HostedfreeMiMo read64 failure is realmissingread, not inferredkeys/compaction/quota/timeout. Existing memory appended; current positivebodyrefresh and freshreview/adoption/Services/liveCMS journey remain separate; no new spore/promotion.
