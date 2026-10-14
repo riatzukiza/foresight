@@ -61,9 +61,14 @@ board semantics locally, or treat a documentation link as native admission.
    Rheos records lawful readiness and the retained predecessor relationship
    after the upstream admission prerequisite passes. Before that, the relationship
    and 3-point estimate remain provisional.
-5. The successor's RED tests and GREEN solver/replay bind this decision's revision,
-   kernel configuration and numeric tolerance; a changed selection requires fresh
-   review and cannot reuse incompatible replay evidence.
+5. The completed selection handoff records the reviewed decision revision,
+   owning-plan acknowledgement and numeric/configuration contract that each
+   successor must consume. The successor's RED tests and GREEN solver/replay
+   must bind those revisions and tolerances before its own completion; those
+   tests are retained successor obligations rather than prerequisites for
+   completing the decision handoff before implementation starts. A changed
+   selection requires fresh review and cannot reuse incompatible replay evidence.
+   This card's completion does not certify an implemented or replaying solver.
 
 ## Verification
 
