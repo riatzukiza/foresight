@@ -188,7 +188,11 @@ delivery; an omitted or unsupported mechanic is not implicitly complete.
 6. **Automatic causal proof:** after qualified deployment and fresh served-
    revision checks, bind actual stored maker principal, admitted encounter,
    authorized graph/field/mood revisions, consumed attention, actual provider
-   prompt, persistent readbacks and accounting. Use separate controlled cases:
+   prompt, persistent readbacks and accounting. Capture visibility-safe eligible
+   and denied candidate IDs with exclusion reasons, traversal revision and actual
+   prompt-included IDs from that same served automatic run. Lower-level fixtures
+   and aggregate counts cannot substitute for these live identity bindings.
+   Use separate controlled cases:
    with seed, mood/lens/attention/read weights/authority fixed, changing only an
    admitted deposit or bond must change actual physical motion/contact, recall
    path and prompt-included association. In the separate mood contrast, hold
@@ -228,7 +232,14 @@ attribution; the recovered diagnostic coordinates are not accepted axes here.
 No dedicated paid provider or subjective-feeling claim follows from this plan.
 
 Each admitted packet needs meaningful RED before owning domain/adapters GREEN,
-current source/consumer review and required checks. Bind all consumer pins to
+current source/consumer review and required checks. After every finished
+verification job, append to that owner's existing receipt ledger the exact
+source/configuration identities, commands, results, evidence paths/hashes and
+truthful failure/refusal outcomes. Preserve prior rows; corrections append.
+Receipt River's containing repository supplies repository context; no new
+`:repo` receipt key or parallel provenance ledger is required. A packet cannot
+complete without this reproducible verification output.
+Bind all consumer pins to
 actual qualified merge commits. Before native-clock observation, qualify the
 affected release/deployment and rollback through the existing promotion gates.
 Verify the actual served artifact revisions and loaded configuration, schema,
@@ -239,17 +250,25 @@ identities together with the actual maker principal, prompt and independent
 persistent readbacks. Only then observe one real native-clock maker loop.
 Do not replay publication, restart a maker for maintenance or change consumer ownership.
 Native fifteen-minute clock, one event owner, disabled cloud event runtime and
-human-paused heartbeat remain. B1/B2/B3 completion requires those actual links.
+human-paused heartbeat remain during delivery. B1/B2/B3 completion requires
+those actual links. Once all three live proofs and every fixed-inventory gate
+pass, the automatic-proof packet owns terminal closeout: record remaining design
+links as later milestones, verify the completion inventory and evidence, close
+the native goal as complete, and retire its heartbeat through the existing
+native lifecycle surfaces. This does not mark larger aggregate cards Done or
+resume the human-paused heartbeat before completion.
 
 ## Current source boundaries
 
 Character base is personal Foresight8c649fee, carrying reviewed numeric decision
-020d97fe. OpenPlanner current329dc728 remains a separately unmerged source with
-functionalCI success, current model review in progress and future current-head
-full review required. Eros/Eris current51b5f4f fixes the existing parse gate and
-remains independently unmerged/review-pending. Prior numerical declarations and
-approvals are history, not current source adoption. This PR changes no dependency
-pins, native state, implementation source or deployment.
+020d97fe. At proposal creation, the recorded OpenPlanner snapshot was329dc728
+with functionalCI success and incomplete review qualification; the Eros/Eris
+snapshot was51b5f4f with an existing parse-gate repair. Those are dated source
+observations, not claims about the latest heads or adopted dependencies. Refresh
+actual native/local head/base bindings, current complete reviews and required
+checks before every qualification or consumer pin. Prior numerical declarations
+and approvals stay history. This PR changes no dependency pins, native state,
+implementation source or deployment.
 
 The canonical withdrawal repair is completed and installed. The distinct large-
 review-throughput proposal remains pending human inclusion under the accepted
