@@ -1626,3 +1626,12 @@
   spore: none
   receipt-refs: c5a6c0fa2421135a1ce3fadbb88f03c5c7a291f93ed13ccfb4084c852de95825
   note: Website freshly healthy and public root/en/de HTTP200. Native CMS remains old runtime. Published receipt shape and aggregate event identity repairs pass actual captured gates; current56 native workflow SUCCESS and real MiMo APPROVED still leave14unresolved threads and no settlements. Durable publication adapter, source-preserving GTE-to-Qwen cutover, owning qualification, Services rollout and actual Spanish browser journey remain. Distinguish green infrastructure progress from delivered application behavior, keep the critical path explicit, and preserve native history and source bytes. No production mutation, no full-input approval admission, no spore.
+- ts: 2026-10-14T09:44:27.345340323Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Record twenty-four native settlements, owning plan publication and Website/CMS status
+  p-efficiency: 0.60
+  p-friction: 0.85
+  p-skill-candidate: 0.10
+  spore: none
+  receipt-refs: 972159dd-3a2f-4d3c-81ec-a21522a626ea,8d9411cdc285c5b575f1ca18e2907f3cb30d7e028cef21049b2c38d14ecebcb2
+  note: Real native effects and owner plans advanced; new findings and a missing final MiMo submission remain. Preserve diagnostic and immutable evidence; no retry of uncertain effects, no production changes, no new spore. A manually assigned manifest timestamp was corrected by a successor and appended receipt.
