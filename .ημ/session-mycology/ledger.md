@@ -1554,3 +1554,12 @@
   spore: none
   receipt-refs: 58345f7bb39af2444f9119b55ed4679c86ef252baaa549f84fc38eb1296daace
   note: Fresh exact approved Website image and public HTTP confirmed; older healthy Knoxx remains. Reproduce Sandbox TAP JSON transport error and finite Git timeout; combine narrow peer repairs before complete normal gates. CLI checks pass, D runtime and deadline proposal still private. No new spore; deployment requires new CMS create, provider Spanish translation, approval, reconciliation and fresh browser proof.
+- ts: 2026-10-14T00:16:30.850014323Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Report Website and CMS deployment status after qualified release fixes and verified native settlements
+  p-efficiency: 0.42
+  p-friction: 0.91
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: bc7af40d0bd329b5865b813884f2cdf3d0513b2f3c56094d304fab7c5fa23a39
+  note: Website is live on the approved image; new native CMS remains pending. Qualified c7debaa source and five prior fixes plus two review-body effects are verified. Fresh review introduces three P2 threads and one diagnostic item; the current gate has 15 passing checks, one failing and one pending, with no current approvals. Record actual Sandbox cause separately when its native log is frozen. Preserve append-only historical ledgers and the complete deployment objective. No new spore.
