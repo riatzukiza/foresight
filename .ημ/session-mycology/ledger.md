@@ -1743,3 +1743,12 @@
   spore: none
   receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-deployment-status-update-20261014T2140Z-v1/canonical-receipt-event.edn
   note: Website live at16:40CDT; newCMS still old production. Durable1924/10425GREEN and205noops208receipts; OSrestart source-proof fixture refusal retained. Audit meaningful8RED→0GREEN464/2114; optimizedbrowserAVA pending. Qwen DBfence, applicationServices qualification and Spanish journey unfinished. Preserve historical evidence; no spore/promotion.
+- ts: 2026-10-14T22:38:41.858199791Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Current website/CMS deployment status
+  p-efficiency: 0.75
+  p-friction: 0.25
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-deployment-status-update-20261014T2237Z-v1/canonical-receipt-event.edn
+  note: Separate healthy live website and old Knoxx from privately qualified CMS repairs. Verify production identity/HTTP directly, preserve failed historical evidence, and keep migration/release/rollout/live Spanish work visibly unfinished. No new spore or promotion.
