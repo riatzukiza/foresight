@@ -1599,3 +1599,12 @@
   spore: none
   receipt-refs: b7f8cf0296aa361241ba43f68c97867dee0844caf60a0cede193c9ba0db4acb6
   note: Fresh selected production reads establish healthy approved Website and older healthy Knoxx; native CMS and live Spanish journey remain outstanding. The actual database contains 736 retained events, empty four derived vector stores, empty graph view/label sources, and a READY queryable graph index. Counts narrow implementation but do not prove source eligibility, full source preservation, index definition or stopped-writer migration coverage. Preserve pending T350 attempt2, its passing prerequisites and actual live MiMo state; no duplicate review dispatch or credentials/account changes. Scope a small Knoxx-owned cutover proof and Services consumer through existing pinned SDK boundaries. An absent guessed manifest path was recorded as unobserved, without claiming actual publication loss. No deployment, database write, index change, model invocation or new spore.
+- ts: 2026-10-14T05:08:19.630643575Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Advance retained-source migration planning and repair complete review input access
+  p-efficiency: 0.63
+  p-friction: 0.79
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 0689a6d3c63e47022714ff21d525c40f4f5f9ae8ec978c4d628d455347593d82
+  note: Production eligibility identifies 312 hot events and 424 graph nodes, so empty vectors cannot justify zero-generation cutover. Four planning cards are now public in PR140 with successful native workflow and a real MiMo approval; other planning findings remain obligations. T350 also finished green and published APPROVED, but actual supporting-input trace skips 1868 log lines and clips17 despite a full-read claim. Root published that scope limitation once with exact native body readback and held adoption. Preserve raw diff geometry and original supporting byte identities; prepare the smallest Muse-owned complete paging extension rather than relabel a composite file. Actual Rheos readback anchors existing task290f. Fresh root/en/de HTTP200 confirms website delivery; native CMS and actual Spanish journey remain outstanding. No database or deployment mutation, no complete-support qualification or synthetic review credit, no spore.

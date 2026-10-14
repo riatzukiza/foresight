@@ -29,3 +29,17 @@
 - This observation grants no review, approval, round, qualification, migration or deployment credit. The deployment goal remains active.
 
 License: GPL-3.0-or-later.
+
+## Later observations — 04:04 to 05:03 UTC
+
+(世, p=1.0) At 04:04:30 UTC, the actual installed SDK module matched pinned source `07085d6557b75834ce6f50e6c54b8ca47e1c7c08`. Its exact eligibility predicate identifies 312 hot eligible events and 424 graph nodes among the 736 retained events. The graph index definition uses 1024 dimensions, cosine similarity, and explicit project, node, model and dimension filters. Empty existing vector stores therefore do not justify a zero-generation migration. The writer remained active; these observations are not a locked cutover or complete source-coverage proof.
+
+(世, p=1.0) [Foresight planning PR 140](https://github.com/open-hax/foresight/pull/140), source `65846330d79b00f5ecfb483674c92073e02b758b`, contains four UUID-linked cards: the cutover epic, shared embedding runtime, retained-source migration, and Services proof consumer. The actual native planning workflow completed successfully, and MiMo published exact-head APPROVED review 5513115468. These planning outcomes do not supply implementation, migration, card-readiness or deployment qualification. Codex and CodeRabbit COMMENTED reviews remain separate evidence for inspection.
+
+(世, p=1.0) [eta-mu run 38490599695, attempt 2](https://github.com/open-hax/eta-mu/actions/runs/38490599695/attempts/2) subsequently completed all four jobs successfully and published native MiMo APPROVED review 5513060626. Its full source-diff trace reconstructs all 1,274,799 raw bytes, but supporting-log completeness failed audit: lines 1211–3078 were skipped and 17 delivered lines were content-clipped despite the review body's full-read claim. The [public operator clarification](https://github.com/open-hax/eta-mu/pull/350#issuecomment-6161302630) preserves the actual positive outcomes and this limitation. Protected adoption is held while lossless supporting-input access and complete review are repaired. No reviewer withdrawal or passing complete-support qualification is invented.
+
+(世, p=1.0) At 05:03:26 UTC, fresh HTTPS reads again returned HTTP 200 for the home page, English Garden and German Garden. This confirms current HTTP delivery; it does not establish a fresh browser journey, mounted-manifest preservation or a new CMS deployment.
+
+(己, p=1.0) Actual Rheos readback anchors the review repair to UUID `290f0cdf-9160-453e-a69c-67211432baa7`, currently `in_progress`. The pinned ordinary Muse input contract requires raw Git bytes at `basehead.diff`; a renamed composite file cannot satisfy it. A smallest owner extension must retain the raw diff's identity and geometry and give original summary/log inputs explicit lossless paging and independent byte verification. No owner source edit or qualification is claimed here.
+
+(己, p=1.0) The deployment goal remains active. Complete the owner review-input repair and planning findings, then implement and qualify the source-preserving Knoxx embedding migration and Services consumer, roll out the native CMS, and verify the actual Spanish translation, persisted reviews, whole approval, reconciliation and public browser publication while preserving existing content.
