@@ -1644,3 +1644,12 @@
   spore: none
   receipt-refs: fa15d88a-6920-4990-89b1-ed63e86465a8,c1a1d7265b5eed7c83ad9829602a51864cd7b4e2a723e3d2d88d10c7ed23998e
   note: Planning and review progress is distinct from deployment. Preserve exact one-attempt effects, complete byte custody, current-head findings and unknown quota resets. Keep commentary frequent and corrections bounded to actual defects; new CMS rollout and Spanish product journey remain unfinished. No new spore.
+- ts: 2026-10-14T12:31:51.253352320Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: website-CMS-status-and-real-observed-receipt-repair
+  p-efficiency: 0.63
+  p-friction: 0.54
+  p-skill-candidate: 0.12
+  spore: none
+  receipt-refs: e3bc48d2bc96c7f3bfb74071707069c52e1e89ac906d8ece7e774d20e47b568b
+  note: Connect desired/observed status through actual registered-route HTTP before claiming product progress. Commit causal RED first, preserve typed scoped receipt evidence and real noop/readback, then publish exact reviewed source. Recorded inherited full lint failure stays failed despite exact diagnostic equality. A valid review-input positive neighbor must include independently supplied trusted context; reject contextless admission rather than making an unsafe positive pass. Keep source/image and local/production/durability/provider claims separate. Bound helper guard/legacy native-readback assembly failures and confirm existing effects read-only without duplicate writes. No extra spore or promotion.
