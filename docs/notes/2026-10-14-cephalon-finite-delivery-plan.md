@@ -132,14 +132,22 @@ delivery; an omitted or unsupported mechanic is not implicitly complete.
    selection reason and actual seed. Duplicate external revision cannot mint a
    fresh independent effect. Empty, malformed, failed and partial pages have
    distinct recorded outcomes; failed admission/page cannot advance the cursor
-   or claim a graph write. Preserve tool/account permissions and source scope.
+   or claim a graph write. Set and exercise actual queue, per-source request,
+   byte and retention caps, including exceeded-cap refusal. Preserve tool/account
+   permissions and source scope; adversarial encounter text cannot select model
+   routing, credentials, permissions or effect admission.
    Prepare author/topic/reply relationship evidence for the atomic projection;
    unknown or absent relationships stay explicit rather than invented.
 2. **Graph interface and feedback:** reproduce the exact `k=6`, `fetch=18`
    case with six denied leading candidates and an authorized seventh, retaining
    authorized recall after visibility/quality ordering and refill. Test actual
-   automatic trigger/bounded context behavior, current stored authority and
-   hidden node/path/field influence before ranking/caps/traversal/feedback.
+   automatic trigger/bounded context behavior and current stored authority.
+   Missing, revoked, ambiguous or mismatched resolver bindings fail closed;
+   payload-selected role, organization, credentials or grants cannot supply
+   authority. Exercise actual automatic and tool/API adapter boundaries with
+   matched corpus/query/options/principal and positive stored session ownership;
+   retain endpoint-specific policy refusals. Test hidden node/path/field influence
+   before ranking/caps/traversal/feedback.
    Empty, denied, indexing-pending, malformed, timeout/transport and exhausted
    budgets remain distinct. Preserve legacy context/privacy regressions.
    Correct/verify event counting from `:hits`, not `:results`; raw candidates,
@@ -152,6 +160,8 @@ delivery; an omitted or unsupported mechanic is not implicitly complete.
    and owning finite declaration, calibrated config/layer mapping, units and
    seeds to actual build/law/replay evidence. Require declared order, finite
    refusal, exact IDs/cells, zero/quiet/split/catch-up and repeated-time behavior,
+   explicit particle/node/edge/field-cell/work limits and exceeded-limit refusals
+   preserving the prior state,
    differing friction, passive nexus/presence, immutable emitted ownership and
    contribution lineage. Source mapping and unsupported mechanics remain
    explicit. Physical positions, winds, forces and contacts are actual state,
@@ -181,8 +191,11 @@ delivery; an omitted or unsupported mechanic is not implicitly complete.
    prompt, persistent readbacks and accounting. Use separate controlled cases:
    with seed, mood/lens/attention/read weights/authority fixed, changing only an
    admitted deposit or bond must change actual physical motion/contact, recall
-   path and prompt-included association; with physical/world inputs fixed,
-   different independently persisted mood must change bounded attention/recall
+   path and prompt-included association. In the separate mood contrast, hold
+   seed, actual principal/grants, query/corpus/index readiness, graph/field/world
+   revision, timestep schedule, consumer/configuration and non-mood read inputs
+   fixed; change only the independently persisted mood state/revision. Derived
+   mood attention/read weights may then change bounded attention/recall
    and the recorded decision. A loaded revision label or disconnected simulation
    fails. Lower-level physical intervention is separate from valid persisted
    replay; never tamper saved hashes/cursors/history as an admitted control.
