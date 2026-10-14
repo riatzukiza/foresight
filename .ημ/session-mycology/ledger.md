@@ -1707,3 +1707,12 @@
   spore: none
   receipt-refs: 7ba87c8fc5afaf957e46c3c4372501852899d165712dccf935de257fe8055597
   note: Published qualified transport once and verified native successor/body, both actual Fixed settlements and both current review requests; preserved donor configuration and all history. Initial Codex request cleanup error required native readback, never duplicate posting. Current assessment RED started with scoped Mongo unavailable, no implementation/adoption/production credit. Exact offline client/config investigation remains separate from provider inference health. No new spore or promotion.
+- ts: 2026-10-14T18:43:49.663369492Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Advance deployment through actual component causal tests and bounded free-route controls
+  p-efficiency: 0.35
+  p-friction: 0.9
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: ea88f4a78c98f187c11dd814612d3755aa95867b3d2708205be3df02d8952d83
+  note: Actual six memory failures and four payload/LAST failures led to committed regressions and shared repairs; helpers are portable and existing controls preserved. Two anonymous probes ended in title-guard stop and timeout, no invented403 cause/acceptance or extra retry. Canonical initial-metadata gap still holds CMS readiness. Continue qualification and application work; no spore or promotion.
