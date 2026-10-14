@@ -1725,3 +1725,12 @@
   spore: none
   receipt-refs: 077261ec-345c-4024-a894-cd5c452b01f9; Muse28 merge50b5c75; Muse29 head6ac9c735; liveproofbc61b838dc6c14f9b4fd58011bacdb5f4245eb2d50aa9b2373baaa4eea8e8f48
   note: Complete formal source approval and strict runtime qualification are separate obligations. Avoid circular adoption blockers and status claims based on supporting PR merges. Actual CMS code gap remains durable receipts after205same-publication noops/restart plus embedding fencing/frontend/Services/Spanish acceptance. Preserve anonymous OpenCode dynamicMiMo memory, quota deduplication and historical evidence; no new spore/promotion.
+- ts: 2026-10-14T20:46:07.078617536Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: website-CMS-fresh-status-and-parallel-native-repairs
+  p-efficiency: 0.78
+  p-friction: 0.56
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: root-deployment-status-and-parallel-repairs-20261014T2044Z-v1/canonical-receipt-event.edn
+  note: Fresh production status is the authoritative user outcome: Website healthy/live, replacement CMS still unfinished. Record actual causal frontend failures and qualified Muse fixes separately from source admission, required app qualification and rollout. Prefer bounded code fixes with existing meaningful checks; avoid creating artificial RED for a pure projection relocation. Preserve anonymous dynamic OpenCode MiMo route and all existing evidence; no spore or promotion.
