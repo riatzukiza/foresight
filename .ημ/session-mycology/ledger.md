@@ -1617,3 +1617,12 @@
   spore: none
   receipt-refs: 3de90a607d1a213c873b4e510e8cb13a1fec3494f78f3a1d3e09c904afd72495
   note: Website remains live and healthy in fresh HTTP and production container checks. Native CMS remains on the old healthy Knoxx release; the Spanish provider, persisted independent judgments, whole approval, reconciliation and public browser journey are unproved. Public seven-card cutover plan now binds337d and current native status still has a failing deterministic check and unresolved findings. Owner review-input planning and successful local Rheos qualification are preparatory, not a CMS rollout or complete review-input qualification. Keep the deployment critical path explicit and preserve original source events, native review history and dated evidence; no production mutation or new spore.
+- ts: 2026-10-14T08:27:05.109094143Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Refresh live Website and pending CMS deployment after actual source validation repairs
+  p-efficiency: 0.41
+  p-friction: 0.76
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: c5a6c0fa2421135a1ce3fadbb88f03c5c7a291f93ed13ccfb4084c852de95825
+  note: Website freshly healthy and public root/en/de HTTP200. Native CMS remains old runtime. Published receipt shape and aggregate event identity repairs pass actual captured gates; current56 native workflow SUCCESS and real MiMo APPROVED still leave14unresolved threads and no settlements. Durable publication adapter, source-preserving GTE-to-Qwen cutover, owning qualification, Services rollout and actual Spanish browser journey remain. Distinguish green infrastructure progress from delivered application behavior, keep the critical path explicit, and preserve native history and source bytes. No production mutation, no full-input approval admission, no spore.
