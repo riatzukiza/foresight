@@ -1563,3 +1563,12 @@
   spore: none
   receipt-refs: bc7af40d0bd329b5865b813884f2cdf3d0513b2f3c56094d304fab7c5fa23a39
   note: Website is live on the approved image; new native CMS remains pending. Qualified c7debaa source and five prior fixes plus two review-body effects are verified. Fresh review introduces three P2 threads and one diagnostic item; the current gate has 15 passing checks, one failing and one pending, with no current approvals. Record actual Sandbox cause separately when its native log is frozen. Preserve append-only historical ledgers and the complete deployment objective. No new spore.
+- ts: 2026-10-14T01:23:13.090153275Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Record live Website and pending native CMS after qualified release repairs and pushed Services guide
+  p-efficiency: 0.71
+  p-friction: 0.74
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: fde4b71a4834d7b647a5d57c5917a6068f60192f1a3eeca661567e417c756835
+  note: Actual 2d release repairs pass hosted Sandbox and deterministic evidence checks; canonical status has 17 passing, one pending, zero failures, and current Codex and CodeRabbit approvals. The single historical ledger finding still lacks admitted settlement; general approval does not establish scoped rejection agreement. MiMo job 115621299382 remains live at 01:21:35 UTC. Services deployment guide d126 is committed and pushed, with five unfinished code sources and old controller pin preserved. Website remains live on the approved image; old Knoxx remains healthy. Full native CMS rollout and actual Spanish provider translation, persisted review, whole approval, reconciliation and public browser demonstration remain required. Preserve append-only provenance and unrelated state; no new spore.
