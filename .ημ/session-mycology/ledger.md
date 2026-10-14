@@ -1698,3 +1698,12 @@
   spore: none
   receipt-refs: 2e0d9dfe78c0e89e62225329bedeeb34f98868bc86ce8af55b25c936b2f004d3
   note: Recover and preserve exact successful client evidence before comparing failed carriers. Configured registry equality is not sent-definition equality. A FreeTierError does not establish a user's credential requirement. No spore or promotion.
+- ts: 2026-10-14T17:22:42.771158803Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Publish qualified Muse attempt and byte repair; preserve deployment status
+  p-efficiency: 0.65
+  p-friction: 0.85
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 7ba87c8fc5afaf957e46c3c4372501852899d165712dccf935de257fe8055597
+  note: Published qualified transport once and verified native successor/body, both actual Fixed settlements and both current review requests; preserved donor configuration and all history. Initial Codex request cleanup error required native readback, never duplicate posting. Current assessment RED started with scoped Mongo unavailable, no implementation/adoption/production credit. Exact offline client/config investigation remains separate from provider inference health. No new spore or promotion.
