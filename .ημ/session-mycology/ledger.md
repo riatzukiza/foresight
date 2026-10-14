@@ -1716,3 +1716,12 @@
   spore: none
   receipt-refs: ea88f4a78c98f187c11dd814612d3755aa95867b3d2708205be3df02d8952d83
   note: Actual six memory failures and four payload/LAST failures led to committed regressions and shared repairs; helpers are portable and existing controls preserved. Two anonymous probes ended in title-guard stop and timeout, no invented403 cause/acceptance or extra retry. Canonical initial-metadata gap still holds CMS readiness. Continue qualification and application work; no spore or promotion.
+- ts: 2026-10-14T19:39:55.145284897Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Fresh website status and merged review transport; CMS remains implementation and qualification work
+  p-efficiency: 0.70
+  p-friction: 0.58
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 077261ec-345c-4024-a894-cd5c452b01f9; Muse28 merge50b5c75; Muse29 head6ac9c735; liveproofbc61b838dc6c14f9b4fd58011bacdb5f4245eb2d50aa9b2373baaa4eea8e8f48
+  note: Complete formal source approval and strict runtime qualification are separate obligations. Avoid circular adoption blockers and status claims based on supporting PR merges. Actual CMS code gap remains durable receipts after205same-publication noops/restart plus embedding fencing/frontend/Services/Spanish acceptance. Preserve anonymous OpenCode dynamicMiMo memory, quota deduplication and historical evidence; no new spore/promotion.
