@@ -1680,3 +1680,12 @@
   spore: none
   receipt-refs: 07b58f1b-e8f4-4881-a929-6251f9c570a3,25c738dde8a6be4b48e11ee2bb811f6588cf3374
   note: Reproduce hosted failures with the exact pinned tool before claiming local/CI equivalence; preserve causal RED and every original assertion. Reuse one named nonblank shape across candidate/caller boundaries without inventing authentication. Source filename correction preserves protected card bytes and history. Qualify unchanged physical source hashes when a coordinated doc commit changes HEAD during cold checks. Keep actual settlements/requests separate from approvals and pending hosted gates. Publish concrete owner plans without implementation or readiness credit. Production health uses approved immutable images; preserve differing OCI labels and initial derivations. Website remains live, new CMS and full Spanish journey unfinished. No new spore or promotion. Current hosted checks pass and real CodeRabbit approval is source-bound; unfinished review loop still blocks adoption. Fresh production health and local CMS readback are distinct from durable receipts and deployment. Keep the user status focused on shipped Website and unfinished CMS work; execute bounded causal repairs instead of prolonged gate speculation.
+- ts: 2026-10-14T15:59:32.653675950Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Refresh actual website/CMS deployment status and persist qualified owner source
+  p-efficiency: 0.65
+  p-friction: 0.62
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: b83c44d68b9b810ed53d96ac16cae122970054ac4d85ea7dd989f77e261b755a
+  note: Distinguish deployed website from incomplete CMS implementation. Commit bounded passing source before wider review work; verify current upstream adoption rather than carrying an old hold forward. Anonymous OpenCode routing stays credential-free. No new spore or promotion.
