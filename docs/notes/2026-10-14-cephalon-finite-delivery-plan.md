@@ -30,7 +30,7 @@ to their allocated execution packets or derive remainders by subtraction.
 
 | Packet | Owner / existing story | Proposed points | Completed input and required output |
 | --- | --- | --- | --- |
-| Identified encounter admission | Knoxx intake `6eb77110-8cf4-44d5-a242-f495d25d6aaf` | 3 | Current stored authority and qualified source; one identified outside payload, visibility/hash/author/source/UTC, unique effect and independent graph readback |
+| Identified encounter admission | Knoxx intake `6eb77110-8cf4-44d5-a242-f495d25d6aaf` | 3 | Current stored authority and qualified source; durable identified admission envelope with visibility/hash/author/source/UTC and prepared effect identity. Graph/field projection is still pending |
 | Qualified scoped graph interface | OpenPlanner + Knoxx recall `a1e9d6af-0233-4dcb-9677-5c76fa9a2701` | 5 | Qualified SDK/composition; authorization before all graph influence, bounded traversal/revisions and provider-context custody. Graph-only status may say field-not-loaded |
 | Kernel ABI, numeric identity and time | Eros/Eris field `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 3 | Completed reviewed selection handoff and scoped graph input; standalone owning build, explicit distribution license, schemas, exact IDs/cells and split/zero/catch-up time laws |
 | Physical force, wind, bond and seed coupling | Eros/Eris field | 5 | Completed ABI/time packet; actual authorized sparse deposits, sample/decay, ordered forces, differing friction, immutable emitted ownership and exact RNG lineage |
@@ -56,6 +56,19 @@ encounter and graph interface feed atomic persistence. Completed persisted
 finite field feeds the separate mood transition/consumer. The automatic proof
 consumes all completed finite outputs under the actual maker principal.
 
+The encounter packet completes only the admitted envelope and prepared effect
+identity, not a graph projection or a successful B1 write. Physical computation
+uses the prior authorized stored snapshot and a validated candidate projection
+of that envelope. Both remain immutable inputs; the candidate is not written
+or exposed as committed state. Its authorization comes from current stored
+authority and actual admission, never from the payload or a guessed grant.
+The atomic packet commits the planned graph projection, physical field and
+effect record together against expected revisions, then independently reads
+the pair back. That completed packet supplies the selected intake graph-write
+proof and B1 persistence proof. Failed or uncertain commit leaves the projection
+pending/refused or quarantined. No early graph write and no dependency on a
+later successful commit are hidden inside the admission packet.
+
 The larger recall story retains reserved-head work; the larger field retains
 its complete mechanics; the larger mood retains sustained appraisal/continuity.
 Their original aggregate completion edges remain meaningful for those later
@@ -70,7 +83,7 @@ If that lawful adoption is unavailable, retain the owner gap explicitly.
 | Original criteria | Finite proof retained | Larger obligation preserved |
 | --- | --- | --- |
 | Intake AC1 | Canonical selected identity, changed payload and duplicate refusal | Sustained pagination/reconnect/two-facet coverage |
-| Intake AC2–3 | Truthful selected page, durable event and author/source/visibility/UTC | Long-running cursors and interrupted batch recovery |
+| Intake AC2–3 | Truthful selected page and durable admission envelope; graph/field projection and independent readback complete in the atomic packet | Long-running cursors and interrupted batch recovery |
 | Intake AC4 | Actual outside input with selection reason/seed | Changing exploration over time |
 | Intake AC5–6 | Selected permissions/bounds and actual maker consumption | Continuous intake and sustained queues/retention |
 | Selection AC1–4 | Reviewed owner/numeric decision and lawful handoff | Requalification after selection change |
@@ -113,9 +126,15 @@ No dedicated paid provider or subjective-feeling claim follows from this plan.
 
 Each admitted packet needs meaningful RED before owning domain/adapters GREEN,
 current source/consumer review and required checks. Bind all consumer pins to
-actual qualified merge commits. Then observe one real native-clock maker loop
-with its actual principal and independent persistent readback. Do not replay
-publication, restart a maker for maintenance or change consumer ownership.
+actual qualified merge commits. Before native-clock observation, qualify the
+affected release/deployment and rollback through the existing promotion gates.
+Verify the actual served artifact revisions and loaded configuration, schema,
+kernel and consumer bindings against that tested qualified composition; a source
+pin or candidate build is not served-source proof. Stale or mixed revisions
+refuse the live proof. Retain the deployment/rollback evidence and fresh served
+identities together with the actual maker principal, prompt and independent
+persistent readbacks. Only then observe one real native-clock maker loop.
+Do not replay publication, restart a maker for maintenance or change consumer ownership.
 Native fifteen-minute clock, one event owner, disabled cloud event runtime and
 human-paused heartbeat remain. B1/B2/B3 completion requires those actual links.
 
