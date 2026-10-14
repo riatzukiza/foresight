@@ -1689,3 +1689,12 @@
   spore: none
   receipt-refs: b83c44d68b9b810ed53d96ac16cae122970054ac4d85ea7dd989f77e261b755a
   note: Distinguish deployed website from incomplete CMS implementation. Commit bounded passing source before wider review work; verify current upstream adoption rather than carrying an old hold forward. Anonymous OpenCode routing stays credential-free. No new spore or promotion.
+- ts: 2026-10-14T16:45:13.460688249Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Persist actual anonymous MiMo route adoption and failure distinction
+  p-efficiency: 0.78
+  p-friction: 0.47
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 2e0d9dfe78c0e89e62225329bedeeb34f98868bc86ce8af55b25c936b2f004d3
+  note: Recover and preserve exact successful client evidence before comparing failed carriers. Configured registry equality is not sent-definition equality. A FreeTierError does not establish a user's credential requirement. No spore or promotion.
