@@ -1266,3 +1266,13 @@ Origin: `cephalon-receipt-canonical-anchor-red-green-20261009`. Commit failing r
 ## 2026-10-09T03:28:34.873Z — Preserve output bytes without weakening diff hygiene
 
 Origin: `cephalon-receipt-output-framing-correction-20261009`. Actual hosted twelve gates pass, including migration and receipt history; raw-output trailing blank lines fail diff hygiene. Use lossless JSON physical lines and exact reconstruction, retaining original Git blobs and original packets. Initial proof remains historical. Efficiency0.60/friction0.40/skill-candidate0.20; no spore and no policy waiver.
+
+- ts: 2026-10-14T19:48:24.524Z
+  session: /home/err/.codex/worktrees/cephalon-kernel-selection/foresight
+  task: Existing selectionb5f2ba9e and physicalff3e628b under accepted B1 B2 B3
+  p-efficiency: 0.8
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: cephalon-field-index-coordinator-selection-amendment-20261014
+  note: Proposed exception permits only floor-derived field cell indices in signed safe range[-(2^53-1),2^53-1]. Counts/wallets/time/residuals/backlog/RNG remain nonnegative safe, with unchanged binary64/2D/units/owner/seed/time/replay contract. Nonfinite/out-of-range field quotient/index refuses whole transition, without clamp/wrap/shifted origin. Both old decision and owned ledger prefixes remain immutable history; source kernel must consume independently qualified new coordinator and ABI revisions before admission. Uses existing selection/physical tasks, no new implementation inventory/card/UUID/point/dependency/status or copied Root operational state. This is real planning input, not installed adapter support, source approval transfer, native readiness or B1/B2/B3 proof. No workflow/model/Muse/agents/auth/credential/publisher/paid/live runtime/maker/clock/gateway/grant/social/deployment/spore change. GoalACTIVE, heartbeat humanPAUSED; actual original OpenPlanner MiMo38615534310 and new full request6176739296 remain independent live review work.

@@ -109,9 +109,13 @@ The actual standalone source and current consumer seams are the basis here.
 - Physical scalars use finite IEEE-754 **binary64**. The authoritative target
   is the compiled CLJS kernel on Node. `.cljc` keeps the domain portable, but
   this proposal does not claim JVM, Python, GPU or browser numerical parity.
-- IDs, sequence numbers, event times and wallet counts are exact integers or
-  canonical strings. Integer values accepted by the JS adapter must be within
-  `[0, 2^53 - 1]`; overflow refuses the whole transition. No f32 state packing.
+- IDs, sequence numbers, event times and wallet counts are exact nonnegative
+  integers within `[0, 2^53 - 1]` or their admitted canonical strings.
+  Floor-derived field cell indices are the explicit exception: exact signed
+  safe integers within `[-(2^53 - 1), 2^53 - 1]`. This exception does not allow
+  negative counts, wallets, elapsed time, residuals, backlog or RNG counters.
+  Nonfinite/out-of-range quotients or indices refuse the whole transition;
+  there is no coordinate clamping or unsigned wrap. No f32 state packing.
 - The world is two-dimensional and measured in **world units**. Position is wu;
   velocity is wu/s; acceleration is wu/s²; mass is positive dimensionless
   inertia; spring rest length is wu; friction/decay rates are s⁻¹. Screen pixels
@@ -120,6 +124,9 @@ The actual standalone source and current consumer seams are the basis here.
   `[scope-revision, layer-index, floor(x/cell-size), floor(y/cell-size)]`.
   Layer indices are exactly `0..7`. Their semantic bindings are a versioned
   character configuration, not labels inferred from eight English keywords.
+  The signed field-index rule permits finite negative world coordinates without
+  silently changing the physical origin. It is a prospective reviewed amendment
+  to the earlier positive-only adapter statement, not existing implementation.
 - Intent units are nonnegative exact integer counts. Embedding vectors are
   immutable, dimension/model-revision-bound input values; mismatched dimensions,
   missing revisions or nonfinite components are refused before any force pass.
