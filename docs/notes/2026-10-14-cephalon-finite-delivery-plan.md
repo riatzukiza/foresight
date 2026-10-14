@@ -30,13 +30,13 @@ to their allocated execution packets or derive remainders by subtraction.
 
 | Packet | Owner / existing story | Proposed points | Completed input and required output |
 | --- | --- | --- | --- |
-| Identified encounter admission | Knoxx intake `6eb77110-8cf4-44d5-a242-f495d25d6aaf` | 3 | Current stored authority and qualified source; durable identified admission envelope with visibility/hash/author/source/UTC and prepared effect identity. Graph/field projection is still pending |
-| Qualified scoped graph interface | OpenPlanner + Knoxx recall `a1e9d6af-0233-4dcb-9677-5c76fa9a2701` | 5 | Qualified SDK/composition; authorization before all graph influence, bounded traversal/revisions and provider-context custody. Graph-only status may say field-not-loaded |
+| Identified encounter admission | Knoxx intake `6eb77110-8cf4-44d5-a242-f495d25d6aaf` | 3 | Current stored authority and qualified source; durable envelope with canonical external identity, content hash/revision, visibility/author/source/UTC, selection reason/seed and effect identity bound to that encounter revision. Changed content is an attributed revision; duplicate admission recovers/refuses rather than minting a new identity. Graph/field projection is still pending |
+| Qualified scoped graph interface | OpenPlanner + Knoxx recall `a1e9d6af-0233-4dcb-9677-5c76fa9a2701` | 5 | Qualified SDK/composition; authorization before all graph influence, bounded traversal/revisions and provider-context custody. Separate outcome-attributed feedback writer has idempotent identity, explicit partial/failed/uncertain outcomes and persistence verification. Graph-only status may say field-not-loaded |
 | Kernel ABI, numeric identity and time | Eros/Eris field `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 3 | Completed reviewed selection handoff and scoped graph input; standalone owning build, explicit distribution license, schemas, exact IDs/cells and split/zero/catch-up time laws |
 | Physical force, wind, bond and seed coupling | Eros/Eris field | 5 | Completed ABI/time packet; actual authorized sparse deposits, sample/decay, ordered forces, differing friction, immutable emitted ownership and exact RNG lineage |
 | Physical contact, inclusion and replay | Eros/Eris field | 5 | Completed force packet; implemented finite deflection/contact changes encountered memory, attribution and frozen replay. Unsupported absorption/exchange refuse and remain later obligations |
 | Atomic graph/field persistence | OpenPlanner field adapter | 5 | Completed encounter, graph interface and physical output contract; actual once-only transactional graph/field/effect commit, revisions, independent readback, conflict/failure and uncertain-commit recovery/quarantine |
-| Separate persisted mood and bounded consumer | Knoxx mood `4cac8ac8-1a9f-441d-ac87-aa09f874eb57` | 5 | Completed finite field persistence and reviewed mood schema/axes; deterministic attributed transition, persisted independent load and bounded attention/recall effect with unchanged permissions |
+| Separate persisted mood and bounded consumer | Knoxx mood `4cac8ac8-1a9f-441d-ac87-aa09f874eb57` | 5 | Completed finite field persistence and reviewed mood schema/axes; deterministic attributed transition, persisted independent load and bounded attention/recall effect with unchanged permissions. Missing/contradictory/malformed/late/provider-failed appraisals have observable outcomes and an explicit reviewed fallback; none may fabricate accepted state |
 | Automatic character loop proof | Knoxx recall + verification `5ea872c3-1db4-47c5-a63d-d49f99f79497` | 5 | Qualified encounter/graph/field/mood composition; actual maker principal, eligible/denied cases, consumed revisions, exact assembled prompt and frozen replay |
 
 These eight provisional execution estimates total36. The existing selection
@@ -69,6 +69,25 @@ proof and B1 persistence proof. Failed or uncertain commit leaves the projection
 pending/refused or quarantined. No early graph write and no dependency on a
 later successful commit are hidden inside the admission packet.
 
+The prepared effect identity is bound to the canonical external encounter and
+content revision, not an independently generated identifier per attempt.
+Admission retains edits and predecessor attribution and deduplicates the same
+external revision before preparing physical work. Its selection reason and
+actual seed remain inspectable; a changed hash cannot silently become an
+unrelated encounter.
+
+The graph-interface packet also owns the separate deliberate feedback contract
+and its storage implementation/tests. Read-only traversal does not implicitly
+reinforce. Feedback requires an admitted observed inclusion/outcome, the same
+current authority and a stable recall/outcome effect identity; retrieval count
+alone is not usefulness. Repeated recall/submission/replay cannot multiply it.
+Partial, failed or uncertain writes remain explicit and require actual recovery
+readback or quarantine before retry. Source qualification uses bounded owning
+storage fixtures and does not require the later live maker proof to complete;
+the automatic-proof packet must additionally observe this once-only behavior
+on the selected actual loop. Existing graph-only source provides no feedback
+implementation merely by exposing a read API.
+
 The larger recall story retains reserved-head work; the larger field retains
 its complete mechanics; the larger mood retains sustained appraisal/continuity.
 Their original aggregate completion edges remain meaningful for those later
@@ -94,7 +113,7 @@ If that lawful adoption is unavailable, retain the owner gap explicitly.
 | Field AC1–4 | Actual selected force/wind/contact and immutable lineage | Full absorption/exchange, multi-contact conservation and complete mechanics; unsupported remains blocking for the larger story |
 | Field AC5–7 | Stable content, versioned actual field, causal inclusion and independent replay/readback | Full bond/association matrix and restart/load program |
 | Field AC8–9 | Selected authorization/idempotence negatives and bound numeric/config/time/seed | Sustained outcome reinforcement and full solver acceptance |
-| Mood AC1–3 | Reviewed separate contract, deterministic transition, elapsed/duplicate/malformed/late cases | Sustained quiet decay and changing appraisal stream |
+| Mood AC1–3 | Reviewed separate contract, deterministic transition, elapsed/duplicate and missing/contradictory/malformed/late/provider-failed appraisal cases, observable failure and explicit validated fallback | Sustained quiet decay and changing appraisal stream |
 | Mood AC4 | Paired fixed-input consumed mood changes bounded attention/recall | Sustained expression/artistic-choice study |
 | Mood AC5–6 | Persisted revision/readback, selected conflict/failure/budget invariants | Concurrent facets, restart and sustained appraisal cadence |
 
