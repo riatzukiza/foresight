@@ -129,7 +129,12 @@ delivery; an omitted or unsupported mechanic is not implicitly complete.
 
 1. **Admission:** freeze canonical external identity, actual payload hash and
    attributed content revision/predecessor, author/source/visibility/UTC,
-   selection reason and actual seed. Duplicate external revision cannot mint a
+   selection reason and actual seed. Classify self-output, outside authors,
+   replies and explicit operator input with separate provenance. The selected
+   B1 outside encounter must be evidenced as outside input; a maker's own post
+   or repeated own output cannot satisfy it merely by having a platform ID.
+   Include a self-output refusal fixture for that proof.
+   Duplicate external revision cannot mint a
    fresh independent effect. Empty, malformed, failed and partial pages have
    distinct recorded outcomes; failed admission/page cannot advance the cursor
    or claim a graph write. Set and exercise actual queue, per-source request,
@@ -239,9 +244,25 @@ truthful failure/refusal outcomes. Preserve prior rows; corrections append.
 Receipt River's containing repository supplies repository context; no new
 `:repo` receipt key or parallel provenance ledger is required. A packet cannot
 complete without this reproducible verification output.
+Before each full snapshot or dependency installation, measure actual free disk
+space. Below20GiB, finish the current small operation, report the constraint and
+allocate no additional full copy. Across this whole goal, allow at most three
+expensive checkout or independent-snapshot jobs in flight, counting all packets
+and owners together. Reuse suitable worktrees/shared objects where permitted;
+required independent stores retain an explicit storage budget. Remove only
+regenerable caches from retired owned snapshots, preserving unique source,
+refs, lockfiles, evidence and failed attempts. These are packet-start constraints,
+not checks deferred until terminal closeout.
 Bind all consumer pins to
 actual qualified merge commits. Before native-clock observation, qualify the
 affected release/deployment and rollback through the existing promotion gates.
+Before changing any served revision, establish and verify a qualified idle or
+fenced deployment window through supported owner/admission controls. Preserve
+all held maker/parent/delegate/effect identities: wait for verified termination
+or use qualified fencing that blocks both old artifact persistence and
+publication; an idle poll or expiry alone does not supply that guarantee.
+No deployment-induced abort or replacement is permitted. If the supported
+window cannot be established, retain that prerequisite and refuse deployment.
 Verify the actual served artifact revisions and loaded configuration, schema,
 kernel and consumer bindings against that tested qualified composition; a source
 pin or candidate build is not served-source proof. Stale or mixed revisions
