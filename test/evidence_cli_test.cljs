@@ -3,6 +3,8 @@
   (:require [cljs.test :as test :refer [deftest is]]
             [clojure.string :as str]
             [evidence :as cli]
+            [eta-mu.receipt-river.law.receipt :as native-rr]
+            [eta-mu.receipt-river.domain.event :as native-event]
             [foresight.evidence :as law]
             [workspace :as workspace]
             ["child_process" :as child-process]
@@ -783,6 +785,318 @@
           (run! (assoc context
                        :current current :historical historical
                        :base-text base-text :base base :commit! commit!)))))))
+
+
+;; Immutable F40 producer bytes, not regenerated or imported into this ledger.
+;; Source7f02c7f3b987741eefebe6d35fdf064e5310b927, original lines198/199.
+(def original-f40-observations
+  [   {:line 198 :length 2553 :sha256 "198b312258607be9607a78c9e2ac67dce4eb634696dbc1bd8f334c393322a23a"
+    :base64 "ezpldmVudC9pZCAjdXVpZCAiYzg5ZTk1NmEtZTNjOC00YmVkLTkxZGItOWVhNTI3ZmZlMDAwIiwgOmV2ZW50L3R5cGUgOnJlY2VpcHQtcml2ZXIvcmVjZWlwdC1yZWNvcmRlZCwgOmV2ZW50L3JlY29yZGVkLWF0ICIyMDI2LTEwLTE1VDE1OjU1OjUxLjE3NloiLCA6ZXZlbnQvc2NoZW1hIHs6aWQgOmV0YS1tdS5yZWNlaXB0LXJpdmVyL3JlY2VpcHQtcmVjb3JkZWQsIDp2ZXJzaW9uIDF9LCA6ZXZlbnQvcHJvZHVjZXIgezpldGEtbXUvdmVyc2lvbiAiMS4xLjEiLCA6cGFja2FnZS9uYW1lICJAZXRhLW11L3JlY2VpcHQtcml2ZXIiLCA6cGFja2FnZS92ZXJzaW9uICIwLjEuMCIsIDpjb21tYW5kICJldGEtbXUgcmVjZWlwdCBhcHBlbmQifSwgOmV2ZW50L3N1YmplY3QgezpyZXBvc2l0b3J5L3BhdGggIi9ob21lL2Vyci8uY29kZXgvd29ya3RyZWVzL2tub3h4LWZvcmstcmVqZWN0aW9uLXBsYW4vZm9yZXNpZ2h0In0sIDpldmVudC9wYXlsb2FkIHs6cGkgImV0YS1tdSIsIDpyZWZzICJub25lIiwgOmRvZCAicmVjZWlwdC1yaXZlciIsIDptYW5pZmVzdCAibm9uZSIsIDpub3RlICJQbGFubmluZyBvbmx5OiBzb3VyY2UyN2QyMDdiYmQ0YTc5ODJmYmE1ZjMwNGU0MWEyNmI3ZTUzODNlNjUwIG92ZXIgYWNjZXB0ZWQgcGVyc29uYWwgRm9yZXNpZ2h0IG1haW40NWUzM2Y5M2E1NjgwZTRjNzVhM2I2ODNmOTg3MGNlZDgyYTlmMThjIGNyZWF0ZXMgc2VwYXJhdGUgcHJvdmlzaW9uYWwgUDEvMyByZWplY3Rpb24tdHJhbnNwb3J0IHNpYmxpbmcgYTFjZGVhNTUtMTVmZS00YjQ5LTk5MGEtNDZlZDdmMTlhMWE0IHVuZGVyIGZvcmstcmV2aWV3LXNldHVwLCBleHBsaWNpdGx5ICszIGRpc2NvdmVyeS4gRXhhY3QgcGFyZW50IGJ5dGVzIGFuZCBpbmNvbWluZy9QMS8zIG1ldGFkYXRhIHJlbWFpbiB1bmNoYW5nZWQuIEV4aXN0aW5nIGFjdGlvbmFiaWxpdHkgYWEzOTc3MGQgaW5fcHJvZ3Jlc3MvUDEvMyByZW1haW5zIGluIGl0cyBzZXBhcmF0ZSBzb3VyY2UgbGFuZTsgbm8gdW5hZG9wdGVkIGFjdGlvbmFiaWxpdHkgb3IgQ01TL0YzOSBjYXJkL2V2ZW50IHN1ZmZpeCBpbXBvcnRlZC4gRnJlc2ggY2Fub25pY2FsIHBhcmVudCBhbmQgYm90aCBhY2NlcHRlZC1zb3VyY2UvZmFtaWx5IHJlamVjdGlvbiBkZWR1cCByZWFkcyBwcmVjZWRlZCBuYXRpdmUgVVVJRHY0IGNyZWF0ZSwgb25lIGNvbW1lbnQgYW5kIGxhd2Z1bCBpbmNvbWluZy1hY2NlcHRlZC1icmVha2Rvd247IGZvdXIgZ2VudWluZSBuYXRpdmUgZXZlbnRzIHByZXNlcnZlIHRoZSBjb21wbGV0ZTE0NTM1Mi1ieXRlIGFjY2VwdGVkIGV2ZW50IHByZWZpeC4gU291cmNlIGNvbW1pdCBvd25zIG9ubHkgbmV3IGNhcmQgYW5kIG5hdGl2ZSBldmVudCBsZWRnZXIuIENvbXBsZXRlNTA4IGFjY2VwdGVkIG9yaWdpbmFsIGJsb2IgaW5wdXRzIGNoZWNrZWQsNTA3IHVuY2hhbmdlZCBhbmQgb25seSBvd25pbmcgZXZlbnQgZmlsZSBjaGFuZ2VkLiBFeGFjdDExNzM1LWJ5dGUgYm9keSBTSEE4ZDNlYzYzYTViOWM0NDRiNzMyZDgzMGM0YzMyNzMyMzgwYzRjODUzOWZiYzdkZTAxMmI0YWIwMTA0ZmFhNjI1IGNhcnJpZXMgZml2ZSBmdXR1cmUgRVRBIHBhdGhzLCBjYXVzYWwgYWN0dWFsIGd1YXJkL2hvc3QgUkVELUdSRUVOIGFuZCBpbmplY3RlZCBmdWxsIGNvbGxlY3Rvci9wdWJsaXNoZXIgY29udHJvbHM7IG5hdGl2ZSBzY29wZWQgcXVhbGlmaWNhdGlvbiByZW1haW5zIGxhdGVyIGFuZCBubyBwb3NpdGl2ZSBhbnN3ZXIgaXMgcHJvbWlzZWQuIFByZXNlcnZlIGNhbm9uaWNhbCByZWplY3Rpb24vYXBwcm92YWwvd2l0aGRyYXdhbC9wcmluY2lwYWwvcGlucywgYWN0dWFsIEFwcC9ncmFudC9lbnZpcm9ubWVudCB1bmtub3ducyBhbmQgdW5hbnN3ZXJlZCBzY29wZWQgQ29kZXggcmVxdWVzdHM7IG5vIGdlbmVyaWMgYXBwcm92YWwvcm91bmQvc2V0dGxlbWVudCBjcmVkaXQuIE5hdGl2ZSBkaWZmIGNoZWNrMCBhbmQgZXhhY3QyIHNvdXJjZSBwYXRocy9jbGVhbiBjb21taXQgcXVhbGlmaWVkOyBubyBhcHAvd29ya2Zsb3cgaW1wbGVtZW50YXRpb24gb3IgaW1wbGVtZW50YXRpb24gdGVzdHMsIHJlYWRpbmVzcywgUFIvcmV2aWV3ZXIvbW9kZWwvcHJvdmlkZXIvQ0kvQXBwL2FjY291bnQvc2VjcmV0L3NldHRpbmdzL3J1bnRpbWUvZGVwbG95bWVudCBlZmZlY3QuIENvcnJlY3RlZCBpbml0aWFsIEYzOSBhc3NvY2lhdGlvbiBhZnRlciBmdWxsIG5hdGl2ZSBHRVQ6IGFjdHVhbCBGMzkgaXMgc2VwYXJhdGUgQ01TIGN1dG92ZXIgcGxhbiwgbm90IHRoaXMgYWN0aW9uYWJpbGl0eSBmYW1pbHkuIFB1YmxpYyBwbGFubmluZyBwdWJsaWNhdGlvbiBIT0xEIGZvciByb290IGV4YWN0IHNvdXJjZS9wcm92ZW5hbmNlIHJlYWQuIENhbmRpZGF0ZTAsIG5vIHNwb3JlLiIsIDp0cyAiMjAyNi0xMC0xNVQxNTo1NTo1MS4xNzZaIiwgOmhvc3QgImxvY2FsIiwgOmtpbmQgOm9ic2VydmF0aW9uLCA6b3JpZ2luICJldGEtbXUiLCA6cmVwbyAiL2hvbWUvZXJyLy5jb2RleC93b3JrdHJlZXMva25veHgtZm9yay1yZWplY3Rpb24tcGxhbi9mb3Jlc2lnaHQiLCA6b3duZXIgInJlY2VpcHQtcml2ZXIifX0K"}
+   {:line 199 :length 2133 :sha256 "b6baedd2bc9b34a07f99c81195cfe4364ca8eed3ac61449d158ca3658c096dab"
+    :base64 "IzpldmVudHs6aWQgI3V1aWQgIjlhZmZjMjEwLTk2YWEtNGRlYi05NzY4LWYzNmFjMjA4ZTYxZiIsIDp0eXBlIDpyZWNlaXB0LXJpdmVyL3JlY2VpcHQtcmVjb3JkZWQsIDpyZWNvcmRlZC1hdCAiMjAyNi0xMC0xNVQxNjoxMjozNS4wODdaIiwgOnNjaGVtYSB7OmlkIDpldGEtbXUucmVjZWlwdC1yaXZlci9yZWNlaXB0LXJlY29yZGVkLCA6dmVyc2lvbiAxfSwgOnByb2R1Y2VyIHs6ZXRhLW11L3ZlcnNpb24gIjEuMS4xIiwgOnBhY2thZ2UvbmFtZSAiQGV0YS1tdS9yZWNlaXB0LXJpdmVyIiwgOnBhY2thZ2UvdmVyc2lvbiAiMC4xLjAiLCA6Y29tbWFuZCAiUmVjZWlwdCBSaXZlciBwYWNrYWdlIEFQSSAvIG93bmVkIHBsYW5uaW5nIGNsYXJpZmljYXRpb24iLCA6YWN0b3IgImNvZGV4L2Ntc19mcm9udGVuZF9jYXBfcHJvYmUifSwgOnN1YmplY3QgIzpyZXBvc2l0b3J5ezpwYXRoICIvaG9tZS9lcnIvLmNvZGV4L3dvcmt0cmVlcy9rbm94eC1mb3JrLXJlamVjdGlvbi1wbGFuL2ZvcmVzaWdodCJ9LCA6cGF5bG9hZCB7OnBpICJldGEtbXUiLCA6cmVmcyAibm9uZSIsIDpkb2QgInJlY2VpcHQtcml2ZXIiLCA6bWFuaWZlc3QgIm5vbmUiLCA6bm90ZSAiUGxhbm5pbmcgZmFjdHVhbCBjbGFyaWZpY2F0aW9uIG9ubHk6IHNvdXJjZTc3NTljYzcwOWJiMzgyOTllZTEwMzZlMmQxNGVmMzUzZGYyY2NkZjYgZm9sbG93cyBwcmVzZXJ2ZWQyN2QyMDdiYiBhbmQ1M2I1OGYxYiBoaXN0b3J5IG92ZXIgYWNjZXB0ZWQ0NWUzMy4gRXhhY3QgU0RLMTcgTm9uLWdvYWxzIHdvcmRpbmcgbm93IHByZXNlcnZlcyBhY3R1YWwgcGlubmVkIHdpdGhkcmF3YWwgcnVsZXMvbmF0aXZlIGlkZW50aXRpZXMgd2l0aG91dCBpbnZlbnRlZCBVc2VyIGV2aWRlbmNlLCBhY3RvciBzdWJzdGl0dXRpb24gb3IgY29waWVkIEJvdCB0ZXh0LiBObyBwb2xpY3kvcHJpbmNpcGFsL3BpbiBjaGFuZ2Ugb3IgU0RLMTcgYWRtaXNzaW9uIGlzIGNsYWltZWQuIEV4aXN0aW5nIHJlamVjdGlvbiBzdG9yeSBhMWNkZWE1NSByZW1haW5zIGJyZWFrZG93bi9QMS9wcm92aXNpb25hbDMgdW5kZXIgdW5jaGFuZ2VkIG9wZW4gZm9yay1yZXZpZXctc2V0dXA7IGZpdmUgZnV0dXJlIEVUQSBwYXRocyBhbmQgKzMgZGlzY292ZXJ5IHVuY2hhbmdlZC4gT25lIG5hdGl2ZSBvd25lciBjb21tZW50IGFuZCBldmVudCBwcmVzZXJ2ZSBvbGQgYm9keS9jb21tZW50IGNvbnRlbnQgZXhjZXB0IGV4YWN0IGFwcHJvdmVkIHNlbnRlbmNlIGFuZCBuYXRpdmUgd3JpdGUtaWQuIFByaXZhdGUgZ3VhcmQgZXhwZWN0ZWQgYSB0aGlyZCBuYXRpdmUgY29tbWVudCBzZWN0aW9uIGFuZCBmYWlsZWQgYmVmb3JlIHN0YWdlL2NvbW1pdC9wcm92ZW5hbmNlOyBhY3R1YWwgUmhlb3MgY29tYmluZXMgZXhhY3Qgb2xkIGNvbW1lbnQgcGx1cyBuZXcgbm90ZSBzZXBhcmF0ZWQgYnkgdHdvIG5ld2xpbmVzLCBpbmRlcGVuZGVudGx5IGNoZWNrZWQgYmVmb3JlIGNvbnRpbnVhdGlvbi4gT3JpZ2luYWwgZmFpbGVkIHByZWRpY2F0ZSByZXRhaW5lZCBhbmQgbm8gY29tbWVudCByZXBlYXRlZC4gRXhhY3QyIHNvdXJjZSBwYXRocywgc3RhZ2VkIGRpZmZjaGVjazAgYW5kIGNsZWFuIHNvdXJjZSBjb21taXQgcXVhbGlmaWVkLiBUaGlzIGdlbnVpbmUgcGFja2FnZS1BUEkgcmVjZWlwdCB1c2VzIGV4cGxpY2l0IGNhbm9uaWNhbCAuzrfOvC9yZWNlaXB0cy5lZG4gc3RvcmFnZSBiZWNhdXNlIHRoZSBlYXJsaWVyIG5hdGl2ZSBDTEkgaGFyZGNvZGVzIHJvb3Q7IHByZXNlcnZlIGFsbCBvbGQgcmVjZWlwdCBieXRlcyBhbmQgZXZlbnQgaWRlbnRpdGllcy4gUHVibGljIHBsYW5uaW5nIHB1YmxpY2F0aW9uIHJlbWFpbnMgSE9MRDsgbm8gaW1wbGVtZW50YXRpb24vcmVhZGluZXNzL1BSL3Jldmlld2VyL21vZGVsL0FwcC9jcmVkZW50aWFsL2FjY291bnQvcnVudGltZS9kZXBsb3ltZW50IGVmZmVjdHMuIENhbmRpZGF0ZTAsIG5vIHNwb3JlLiIsIDp0cyAiMjAyNi0xMC0xNVQxNjoxMjozNS4wODdaIiwgOmhvc3QgImxvY2FsIiwgOmtpbmQgOm9ic2VydmF0aW9uLCA6b3JpZ2luICJldGEtbXUiLCA6cmVwbyAiL2hvbWUvZXJyLy5jb2RleC93b3JrdHJlZXMva25veHgtZm9yay1yZWplY3Rpb24tcGxhbi9mb3Jlc2lnaHQiLCA6b3duZXIgInJlY2VpcHQtcml2ZXIifX0K"}])
+
+(defn original-observation-bytes []
+  (mapv (fn [{:keys [length sha256 base64]}]
+          (let [bytes (js/Buffer.from base64 "base64")]
+            (is (= length (.-length bytes)))
+            (is (= sha256 (cli/sha256 bytes)))
+            bytes))
+        original-f40-observations))
+
+(deftest original-native-observations-extend-the-real-historical-prefix
+  (let [ancestor "45e33f93a5680e4c75a3b683f9870ced82a9f18c"
+        base-bytes (cli/git-regular-blob-bytes!
+                    ancestor law/receipt-ledger-path "F40 accepted prefix")
+        original-bytes (original-observation-bytes)
+        original-records (mapv #(cli/read-single-edn!
+                                (cli/decode-utf8! % "original event")
+                                "original event") original-bytes)
+        history (cli/read-receipt-records! (.toString base-bytes "utf8"))
+        head-bytes (js/Buffer.concat (clj->js (into [base-bytes] original-bytes)))]
+    (is (= 308287 (.-length base-bytes)))
+    (is (= "bc8e88c3fd153e6342409bbe6e053747232ad8c101c7862008756d876ba0a185"
+           (cli/sha256 base-bytes)))
+    (is (= 197 (count history)))
+    (is (= 11 (count (remove law/receipt-envelope? history))))
+    (is (= "e83c483f6df4b49d0d9058acf7d52708265e50a0b7cb73277da1c16f68b5083c"
+           (cli/sha256 head-bytes)))
+    (doseq [record original-records]
+      (is (= [] (native-rr/record-errors record)))
+      (is (uuid? (:event/id record)))
+      (is (false? (law/receipt-envelope? record)))
+      (is (false? (law/evidence-receipt? record))))
+    (with-receipt-fixture
+      (fn [{:keys [fixture file]}]
+        (with-redefs [cli/root fixture cli/receipt-file file]
+          (cli/git-capture! ["init" "--quiet"])
+          (cli/git-capture! ["update-index" "--add" "--cacheinfo"
+                             "160000,7c7c62343fea0241ac545e37f14e57ab344bfa30,receipt-river"])
+          (let [commit! (fn [bytes]
+                          (fs/writeFileSync file bytes)
+                          (cli/git-capture! ["add" "--" law/receipt-ledger-path])
+                          (cli/git-capture! ["-c" "user.name=Receipt Test"
+                                             "-c" "user.email=receipt-test@example.invalid"
+                                             "-c" "commit.gpgsign=false" "commit" "--quiet"
+                                             "-m" "Original-byte observation fixture"])
+                          (str/trim (cli/git-capture! ["rev-parse" "HEAD"])))
+                base (commit! base-bytes)
+                head (commit! head-bytes)]
+            (is (= 0 (cli/verify-receipts! {:base base :at head})))))))))
+
+(defn synthetic-native-observation []
+  (native-event/build-event
+   {:event-id #uuid "5c80cd80-b4a7-4d6e-9cd4-93d6960e7a0c"
+    :recorded-at "2026-10-15T18:00:00Z"
+    :component-manifest {:eta-mu/version "1.1.1"}
+    :command "synthetic isolated F41 fixture"
+    :subject {:repository/path "/synthetic/foresight"}}
+   {:ts "2026-10-15T18:00:00Z" :kind :observation :repo "/synthetic/foresight"
+    :origin "synthetic-fixture" :owner "F41 test" :dod "negative controls"
+    :pi "eta-mu" :host "isolated" :manifest "none" :refs "none"
+    :note "Explicit synthetic fixture; no execution or evidence credit."}))
+
+(defn with-native-ledger-fixture [run!]
+  (with-receipt-fixture
+    (fn [{:keys [fixture file] :as context}]
+      (with-redefs [cli/root fixture cli/receipt-file file]
+        (cli/git-capture! ["init" "--quiet"])
+        (fs/mkdirSync (path/join fixture "receipt-river"))
+        (cli/git-capture! ["update-index" "--add" "--cacheinfo"
+                           (str "160000," cli/canonical-receipt-river-pin ",receipt-river")])
+        (let [commit! (fn [records]
+                        (fs/writeFileSync file
+                          (apply str (map #(str (pr-str %) "\n") records)))
+                        (cli/git-capture! ["add" "--" law/receipt-ledger-path])
+                        (cli/git-capture! ["-c" "user.name=Receipt Test"
+                                           "-c" "user.email=receipt-test@example.invalid"
+                                           "-c" "commit.gpgsign=false" "commit" "--quiet"
+                                           "--allow-empty" "-m" "Native observation fixture"])
+                        (str/trim (cli/git-capture! ["rev-parse" "HEAD"])))
+              base (commit! [])]
+          (run! (assoc context :base base :commit! commit!)))))))
+
+(deftest native-observation-consumer-refuses-invalid-or-evidence-looking-input
+  (let [event (synthetic-native-observation)
+        missing-paths [[:event/id] [:event/schema] [:event/type] [:event/recorded-at]
+                       [:event/producer] [:event/subject] [:event/payload]
+                       [:event/producer :eta-mu/version]
+                       [:event/producer :package/name] [:event/producer :package/version]
+                       [:event/producer :command] [:event/subject :repository/path]
+                       [:event/payload :ts] [:event/payload :kind]
+                       [:event/payload :repo] [:event/payload :origin]
+                       [:event/payload :owner] [:event/payload :dod]
+                       [:event/payload :pi] [:event/payload :host]
+                       [:event/payload :manifest] [:event/payload :refs]]
+        malformed (concat
+                    (mapcat (fn [p] (map #(assoc-in event p %) [nil "" " " 42 false]))
+                            missing-paths)
+                    [(assoc event :event/id (str (:event/id event)))
+                     (assoc event :event/schema {:id :unknown :version 1})
+                     (assoc-in event [:event/schema :version] 2)
+                     (assoc event :event/type :unknown)
+                     (assoc event :event/recorded-at "2026-02-30T00:00:00Z")
+                     (assoc-in event [:event/payload :ts] "2026-13-01T00:00:00Z")
+                     (assoc-in event [:event/producer :package/name] "other")
+                     (assoc-in event [:event/payload :kind] :test-run)
+                     (assoc-in event [:event/payload :kind] :build)
+                     (assoc-in event [:event/payload :kind] :decision)
+                     (assoc-in event [:event/payload :manifest] [])
+                     (assoc-in event [:event/payload :refs] [""])
+                     (assoc event :evidence/schema 2)
+                     (assoc event :result/outcome :passed)
+                     (assoc event :origin law/evidence-receipt-origin)
+                     (assoc-in event [:event/payload :evidence/result] passed-result)
+                     (assoc-in event [:event/payload :result/outcome] :passed)
+                     (assoc-in event [:event/payload :origin] law/evidence-receipt-origin)
+                     ;; A valid flat wrapper must not hide a declared malformed event.
+                     (assoc (cli/evidence-receipt passed-result "2026-10-15T18:00:00Z"
+                                                  "test" "nbb/node@test")
+                            :event/unknown true)
+                     {:event/schema {:id :unknown} :validated? true :ok true}])]
+    (is (= [] (native-rr/record-errors event)))
+    (is (= 1 (:receipt/native-observations
+              (cli/require-valid-receipt-records! [event] [] {}))))
+    (doseq [record malformed]
+      (is (thrown? js/Error (cli/require-valid-receipt-records! [record] [] {}))
+          (pr-str record)))
+    (is (thrown-with-msg? js/Error #"retained history"
+                          (cli/require-valid-receipt-records! [event])))
+    (doseq [value [nil false true {} {:ok true} ["invalid"]]]
+      (with-redefs [native-rr/record-errors (constantly value)]
+        (is (thrown? js/Error (cli/require-valid-receipt-records! [event] [] {})))))
+    (with-redefs [native-rr/record-errors (fn [_] (throw (js/Error. "validator fault")))]
+      (is (thrown-with-msg? js/Error #"validator failed"
+                            (cli/require-valid-receipt-records! [event] [] {}))))
+    (doseq [refs ["none" ["opaque-reference"]]]
+      (let [record (assoc-in event [:event/payload :refs] refs)
+            admitted (cli/require-native-observation! record {})]
+        (is (= record admitted))
+        (is (= refs (get-in admitted [:event/payload :refs])))))))
+
+(deftest native-identity-collisions-preserve-history-and-flat-compatibility
+  (let [event (synthetic-native-observation)
+        ambiguous (assoc event :event/id "untyped historical identity")
+        flat (cli/evidence-receipt passed-result "2026-10-15T18:00:00Z"
+                                   "test" "nbb/node@test")]
+    (doseq [[records history] [[[event event] []] [[event] [event]]
+                               [[event] [ambiguous]]
+                               [[event] [{:event/id (:event/id event)}]]
+                               [[event] nil]]]
+      (is (thrown-with-msg? js/Error #"history identity"
+                            (cli/require-valid-receipt-records! records history {}))))
+    (is (= 1 (:receipt/evidence
+              (cli/require-valid-receipt-records! [flat] [ambiguous] {}))))
+    (with-native-ledger-fixture
+      (fn [{:keys [base commit!]}]
+        (let [head (commit! [event event])]
+          (is (thrown-with-msg? js/Error #"history identity"
+                                (cli/verify-receipts! {:base base :at head}))))))))
+
+(deftest native-held-ledger-admission-precedes-gate-mutation
+  (with-native-ledger-fixture
+    (fn [{:keys [file]}]
+      (let [event (synthetic-native-observation)
+            expected (str (pr-str event) "\n")]
+        (fs/writeFileSync file expected)
+        (cli/with-append-reservation! file true
+          (fn [reservation]
+            (is (.equals (js/Buffer.from expected "utf8")
+                          (:held-ledger-bytes reservation)))))
+        (doseq [record [(assoc-in event [:event/payload :kind] :test-run)
+                        (assoc event :evidence/result passed-result)]]
+          (fs/writeFileSync file (str (pr-str record) "\n"))
+          (let [ran? (atom false)]
+            (is (thrown? js/Error
+                          (cli/with-append-reservation! file true
+                            (fn [_] (reset! ran? true)))))
+            (is (false? @ran?))))))))
+
+(deftest canonical-source-refuses-wrong-context-pin-and-shadowed-loader
+  (let [source (aget js/process.env "FORESIGHT_RECEIPT_RIVER_SOURCE")
+        run (aget js/process.env "FORESIGHT_RECEIPT_RIVER_RUN")]
+    (try
+      (aset js/process.env "FORESIGHT_RECEIPT_RIVER_RUN" (str run "/missing"))
+      (is (thrown? js/Error (cli/canonical-source! {})))
+      (finally (aset js/process.env "FORESIGHT_RECEIPT_RIVER_RUN" run)))
+    (try
+      (aset js/process.env "FORESIGHT_RECEIPT_RIVER_SOURCE" (str source "/missing"))
+      (is (thrown? js/Error (cli/canonical-source! {})))
+      (finally (aset js/process.env "FORESIGHT_RECEIPT_RIVER_SOURCE" source)))
+    (with-native-ledger-fixture
+      (fn [{:keys [commit!]}]
+        (cli/git-capture! ["update-index" "--cacheinfo"
+                           (str "160000," child-revision ",receipt-river")])
+        (commit! [])
+        (is (thrown-with-msg? js/Error #"gitlink mismatch"
+                              (cli/canonical-source! {})))))
+    ;; Fresh subprocess: real namespace shadowing must fail before admission.
+    (with-receipt-fixture
+      (fn [{:keys [fixture]}]
+        (let [shadow (path/join fixture "shadow")
+              file (path/join shadow "eta_mu/receipt_river/law/receipt.cljs")
+              nbb (aget js/process.argv 1)
+              cp (str shadow ":" source "/src/cljs:" cli/root "/src:"
+                      cli/root "/scripts:" cli/root "/test")]
+          (fs/mkdirSync (path/dirname file) #js {:recursive true})
+          (fs/writeFileSync file
+            "(ns eta-mu.receipt-river.law.receipt) (defn record-errors [_] [])")
+          (let [result (child-process/spawnSync
+                         (.-execPath js/process)
+                         #js [nbb "-cp" cp (path/join cli/root "scripts/evidence.clj")
+                              "canonical-source"]
+                         #js {:cwd run :encoding "utf8" :timeout 30000})]
+            (is (nil? (.-error result)))
+            (is (= 2 (.-status result)))
+            (is (str/includes? (str (.-stdout result) (.-stderr result))
+                               "source/loader identity mismatch"))))))))
+
+(deftest native-observations-do-not-change-outer-promotion-verdicts
+  (let [catalog {:catalog/version 1
+                 :catalog/repositories
+                 {"repo" {:repository/path "repo" :repository/gates [local-gate]}}}
+        catalog-bytes (js/Buffer.from (pr-str catalog) "utf8")
+        event (synthetic-native-observation)]
+    (with-native-ledger-fixture
+      (fn [{:keys [fixture base commit!]}]
+        (let [directory (path/join fixture "config")
+              file (path/join directory "quality-gates.edn")]
+          (fs/mkdirSync directory)
+          (fs/writeFileSync file catalog-bytes)
+          (cli/git-capture! ["add" "--" "config/quality-gates.edn"])
+          (fs/mkdirSync (path/join fixture "repo"))
+          (cli/git-capture! ["update-index" "--add" "--cacheinfo"
+                             (str "160000," child-revision ",repo")])
+          (let [head (commit! [event])
+                identity {:catalog/path "config/quality-gates.edn"
+                          :catalog/sha256 (cli/sha256 catalog-bytes)}
+                result (assoc passed-result :result/catalog identity)
+                flat (cli/evidence-receipt result "2026-10-15T18:00:00Z"
+                                           "fixture" "nbb/node@test")]
+            (with-redefs [cli/actionable-submodule-paths (constantly #{"repo"})]
+              (is (= 0 (cli/verify-receipts! {:base base :at head})))
+              (is (false? (cli/promotion-ready-at!
+                           child-revision #{:repo/unit} [result] base head)))
+              (let [with-evidence (commit! [event flat])]
+                (is (true? (cli/promotion-ready-at!
+                             child-revision #{:repo/unit} [result] base with-evidence)))
+                (is (false? (cli/promotion-ready-at!
+                              (apply str (repeat 40 "9")) #{:repo/unit} [result]
+                              base with-evidence)))))))))))
+
+(deftest canonical-source-rejects-dirty-moved-and-symlinked-fixture-source
+  (let [source (aget js/process.env "FORESIGHT_RECEIPT_RIVER_SOURCE")
+        run (aget js/process.env "FORESIGHT_RECEIPT_RIVER_RUN")
+        nbb (aget js/process.argv 1)]
+    (with-receipt-fixture
+      (fn [{:keys [fixture]}]
+        (let [copy (path/join fixture "canonical")
+              file (path/join copy cli/canonical-law-path)
+              dirty (path/join copy "unexpected-untracked")
+              cp (str copy "/src/cljs:" cli/root "/src:" cli/root "/scripts:" cli/root "/test")
+              invoke (fn [expression]
+                       (let [environment (js/Object.assign #js {} js/process.env)]
+                         (aset environment "FORESIGHT_RECEIPT_RIVER_SOURCE" copy)
+                         (child-process/spawnSync (.-execPath js/process)
+                           #js [nbb "-cp" cp "-e" expression]
+                           #js {:cwd run :env environment :encoding "utf8" :timeout 30000})))
+              check "(require '[evidence :as e]) (try (e/canonical-source! {}) (println :qualified) (catch :default x (println (.-message x)) (set! (.-exitCode js/process) 2)))"]
+          (fs/cpSync source copy #js {:recursive true})
+          (let [result (invoke check)]
+            (is (nil? (.-error result)))
+            (is (= 0 (.-status result))))
+          (fs/writeFileSync dirty "fixture dirt")
+          (is (= 2 (.-status (invoke check))))
+          (fs/unlinkSync dirty)
+          (let [bytes (fs/readFileSync file)]
+            (fs/appendFileSync file "\n;; dirty fixture\n")
+            (is (= 2 (.-status (invoke check))))
+            (fs/writeFileSync file bytes)
+            (fs/unlinkSync file)
+            (fs/symlinkSync (path/join source cli/canonical-law-path) file)
+            (is (= 2 (.-status (invoke check))))
+            (fs/unlinkSync file)
+            (fs/writeFileSync file bytes))
+          (let [moving (str "(require '[evidence :as e] '[eta-mu.receipt-river.law.receipt :as r] '[\"fs\" :as f]) "
+                            "(let [original r/record-errors] (with-redefs [r/record-errors (fn [record] "
+                            "(f/writeFileSync " (pr-str dirty) " \"moved during validator\") (original record))] "
+                            "(try (e/require-native-observation! " (pr-str (synthetic-native-observation)) " {}) "
+                            "(set! (.-exitCode js/process) 7) "
+                            "(catch :default x (println (.-message x)) (set! (.-exitCode js/process) 2)))))")
+                result (invoke moving)]
+            (is (nil? (.-error result)))
+            (is (= 2 (.-status result)))
+            (is (str/includes? (str (.-stdout result) (.-stderr result))
+                               "source/loader identity mismatch")))
+          (fs/unlinkSync dirty)
+          ;; New fixture commit with unchanged validator bytes must fail the pin.
+          (let [result (child-process/spawnSync
+                         "git" #js ["-C" copy "-c" "user.name=Receipt Test"
+                                    "-c" "user.email=receipt-test@example.invalid"
+                                    "-c" "commit.gpgsign=false" "commit" "--allow-empty"
+                                    "--quiet" "-m" "Deliberately wrong source pin"]
+                         #js {:encoding "utf8" :timeout 30000})]
+            (is (= 0 (.-status result))))
+          (is (= 2 (.-status (invoke check)))))))))
 
 (deftest receipt-verification-trusts-exact-historical-prefix-only
   (doseq [terminal-newline? [true false]]

@@ -4,6 +4,7 @@
             [cljs.reader :as reader]
             [clojure.string :as str]
             [foresight.evidence :as law]
+            [eta-mu.receipt-river.law.receipt]
             [foresight.project :as project-model]
             [nbb.core :as nbb]
             [workspace :as workspace]
@@ -223,24 +224,111 @@
     (throw (js/Error. (str "Invalid quality gate catalog: " (pr-str errors)))))
    catalog))
 
-(defn require-valid-receipt-records! [records]
-  (let [invalid-envelopes (remove law/receipt-envelope? records)
-        evidence-records (filter #(= law/evidence-receipt-origin (:origin %))
-                                 records)
-        invalid-evidence (remove law/evidence-receipt? evidence-records)]
-    (when (seq invalid-envelopes)
-      (throw (js/Error.
-              (str "Immutable ledger contains invalid receipt envelopes: "
-                   (pr-str (vec invalid-envelopes))))))
-    (when (seq invalid-evidence)
-      (throw (js/Error.
-              (str "Immutable ledger contains invalid evidence receipts: "
-                   (pr-str (mapv #(law/result-errors (:evidence/result %))
-                                 invalid-evidence))))))
-    {:receipt/total (count records)
-     :receipt/evidence (count evidence-records)
-     :receipt/legacy-evidence
-     (count (filter #(nil? (:evidence/schema %)) evidence-records))}))
+;; This is source identity, not a local copy of the Receipt River schema.
+(def canonical-receipt-river-pin "7c7c62343fea0241ac545e37f14e57ab344bfa30")
+(def canonical-law-path "src/cljs/eta_mu/receipt_river/law/receipt.cljs")
+(def canonical-law-blob "99f480e1c3fc5be282b3d5bb64310eb052ace2b8")
+(def canonical-validator-var
+  (resolve 'eta-mu.receipt-river.law.receipt/record-errors))
+
+(def canonical-law-sha256
+  "a40dd843cf298926dfbe229d5544470dbd51682fd538e841a0fad62d29bed320")
+
+(defn canonical-git! [source args]
+  (let [result (child-process/spawnSync
+                "git" (clj->js (into ["--no-replace-objects"] args))
+                #js {:cwd source :encoding "utf8" :shell false})]
+    (when (or (.-error result) (not= 0 (.-status result)))
+      (throw (js/Error. "Canonical Receipt River Git source check failed")))
+    (str/trim (or (.-stdout result) ""))))
+
+(defn canonical-source!
+  "Bind the actual loaded validator to the declared, clean immutable source.
+  Run from an empty isolated cwd with an explicit canonical-first classpath."
+  [{:keys [base at]}]
+  (let [source (aget js/process.env "FORESIGHT_RECEIPT_RIVER_SOURCE")
+        run (aget js/process.env "FORESIGHT_RECEIPT_RIVER_RUN")
+        head (str/trim (git-capture! ["rev-parse" "HEAD"]))
+        at (or at head)
+        base (or base at)]
+    (when-not (and (law/nonblank-string? source) (path/isAbsolute source)
+                   (law/nonblank-string? run) (path/isAbsolute run)
+                   (= source (fs/realpathSync source))
+                   (= run (fs/realpathSync run))
+                   (= run (js/process.cwd))
+                   (zero? (.-length (fs/readdirSync run)))
+                   (not= run source)
+                   (not (str/starts-with? source (str (path/resolve root) path/sep)))
+                   (not (str/starts-with? run (str (path/resolve root) path/sep))))
+      (throw (js/Error. "Canonical Receipt River requires an empty isolated source/run context")))
+    (doseq [revision [base at]]
+      (when-not (and (law/git-commit-id? revision)
+                     (= "commit" (str/trim (git-capture! ["cat-file" "-t" revision])))
+                     (= canonical-receipt-river-pin
+                        (gitlink-target! revision "receipt-river")))
+        (throw (js/Error. "Canonical Receipt River reviewed gitlink mismatch"))))
+    (when-not (= head at)
+      (throw (js/Error. "Canonical Receipt River reviewed source is not HEAD")))
+    (let [file (path/join source canonical-law-path)
+          loaded (:file (meta canonical-validator-var))]
+      (when-not (and (= file (fs/realpathSync file))
+                     (string? loaded) (= file (path/resolve loaded))
+                     (= canonical-receipt-river-pin
+                        (canonical-git! source ["rev-parse" "HEAD"]))
+                     (str/blank? (canonical-git! source ["status" "--porcelain=v1"
+                                                       "--untracked-files=all"]))
+                     (str/blank? (canonical-git! source ["for-each-ref" "refs/replace"]))
+                     (= canonical-law-blob
+                        (canonical-git! source ["rev-parse" (str "HEAD:" canonical-law-path)]))
+                     (= canonical-law-sha256 (sha256 (fs/readFileSync file))))
+        (throw (js/Error. "Canonical Receipt River source/loader identity mismatch")))
+      {:source/revision canonical-receipt-river-pin
+       :source/validator canonical-law-path :source/sha256 canonical-law-sha256
+       :source/loaded-file loaded})))
+
+(defn require-native-observation! [record context]
+  (let [before (canonical-source! context)
+        errors (try
+                 (@canonical-validator-var record)
+                 (catch :default _
+                   (throw (js/Error. "Canonical Receipt River validator failed"))))
+        after (canonical-source! context)]
+    (when-not (and (= before after) (vector? errors) (empty? errors))
+      (throw (js/Error. "Canonical Receipt River rejected native observation")))
+    (when (seq (law/native-observation-errors record))
+      (throw (js/Error. "Invalid native observation provenance")))
+    record))
+
+(defn require-valid-receipt-records!
+  ([records]
+   (when (some law/declared-native-event? records)
+     (throw (js/Error. "Native observations require retained history context")))
+   (require-valid-receipt-records! records [] nil))
+  ([records history context]
+   (let [native (filter law/declared-native-event? records)
+         flat (remove law/declared-native-event? records)
+         invalid-envelopes (remove law/receipt-envelope? flat)
+         evidence-records (filter #(= law/evidence-receipt-origin (:origin %)) flat)
+         invalid-evidence (remove law/evidence-receipt? evidence-records)]
+     (when (and (seq native)
+                (or (not (vector? history))
+                    (seq (law/native-identity-errors history records))))
+       (throw (js/Error. "Native observation history identity is ambiguous or duplicated")))
+     (doseq [record native] (require-native-observation! record context))
+     (when (seq invalid-envelopes)
+       (throw (js/Error.
+               (str "Immutable ledger contains invalid receipt envelopes: "
+                    (pr-str (vec invalid-envelopes))))))
+     (when (seq invalid-evidence)
+       (throw (js/Error.
+               (str "Immutable ledger contains invalid evidence receipts: "
+                    (pr-str (mapv #(law/result-errors (:evidence/result %))
+                                  invalid-evidence))))))
+     {:receipt/total (count records)
+      :receipt/native-observations (count native)
+      :receipt/evidence (count evidence-records)
+      :receipt/legacy-evidence
+      (count (filter #(nil? (:evidence/schema %)) evidence-records))})))
 
 (declare appended-receipt-records!)
 
@@ -261,7 +349,9 @@
         ledger (read-immutable-receipt-ledger! reviewed-root-revision)]
     (require-valid-receipt-records!
      (appended-receipt-records! (:ledger/bytes base-ledger)
-                                (:ledger/bytes ledger)))
+                                (:ledger/bytes ledger))
+     (:ledger/records base-ledger)
+     {:base trusted-base-revision :at reviewed-root-revision})
     (if-not (law/promotion-evidence-consistent?
              catalog catalog-identity target-revision
              required-gate-ids results ledger)
@@ -789,7 +879,9 @@
       (append-error!
        "Receipt River does not preserve the committed ledger as a prefix"))
     (require-valid-receipt-records!
-     (appended-receipt-records! committed-bytes bytes))
+     (appended-receipt-records! committed-bytes bytes)
+     (read-receipt-records! (decode-utf8! committed-bytes "committed Receipt River ledger"))
+     {})
     bytes))
 
 (defn require-held-ledger-unchanged! [target validated-bytes]
@@ -1048,7 +1140,8 @@
                           (:ledger/bytes ledger))
         candidates (filter #(= law/evidence-receipt-origin (:origin %)) records)
         evidence-count (count candidates)
-        counts (require-valid-receipt-records! appended-records)]
+        counts (require-valid-receipt-records!
+                appended-records (:ledger/records base-ledger) {:base base :at at})]
     (println "PASS"
              (pr-str (assoc (:ledger/identity ledger)
                             :ledger/base-revision base
@@ -1056,6 +1149,8 @@
                             :ledger/appended-receipts (count appended-records)
                             :ledger/appended-evidence-receipts
                             (:receipt/evidence counts)
+                            :ledger/appended-native-observations
+                            (:receipt/native-observations counts)
                             :ledger/legacy-evidence-receipts
                             (count (filter #(nil? (:evidence/schema %)) candidates))
                             :ledger/evidence-receipts evidence-count)))
@@ -1068,7 +1163,9 @@
           catalog (validate-catalog! catalog)
           options (parse-args option-args)]
       (case command
-        "validate" (do (println "PASS quality gate catalog") 0)
+        "validate" (do (canonical-source! options)
+                       (println "PASS quality gate catalog") 0)
+        "canonical-source" (do (println "PASS" (pr-str (canonical-source! options))) 0)
         "list" (list-gates! catalog options)
         "run" (run-selected-gates! catalog catalog-identity options)
         "verify-receipts" (verify-receipts! options)
