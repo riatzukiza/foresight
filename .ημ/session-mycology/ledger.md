@@ -1986,3 +1986,12 @@
   spore: none
   receipt-refs: 8684fb96-b375-4cd0-b580-7d2f9e8d9a49
   note: Genuine clock controls preceded exact fixture repair; retain separate successful owning/typecheck/explicit+normal+coverage/boundary results and real7error258warning full-lint blocker. Keep native review completion/stage chronology, request pending versus actual dispatch, quota cooldown and source/adoption boundaries. Native CLI syntax, terminal-LF/body serialization and target repository context are separate from payload semantics: use native help, NUL path readbacks and source-bound secure writer root context; retain pre-effect guard failures without repeating successful effects. Accepted finite runner exists; caller adoption is separately owned. Known nativeSM null-cwd failure remains unretried; portablecandidate0/no spore. No deployment or fullGREEN claim.
+- ts: 2026-10-15T23:17:41.391342430Z
+  session: /home/err/spaces/foresight
+  task: Persist finite caller publication and concrete backend characterization scope
+  p-efficiency: 0.68
+  p-friction: 0.46
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: f30345f2-6f7e-43d5-a630-c1b301dd522f
+  note: Publish the concrete caller plan once and distinguish hosted producer/compiler passes from an in-progress model and unsettled native findings. Characterize existing APIs before movement; two independent source reviews identify potential synchronous-throw pending poisoning, but only the actual baseline proves RED. Preserve original fallbacks if a warning sink fails, including nil throws. Current native search [] failed a positive control; use native inventory rather than fabricate semantic dedup. Use bounded status/private NUL capture and actual accepted filenames; retain cleanup/setup failures without repeating successful effects. Known nativeSM null-cwd failure is not retried; portablecandidate0/no spore. Full deployment remains incomplete.
