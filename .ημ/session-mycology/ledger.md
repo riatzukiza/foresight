@@ -664,3 +664,12 @@
   spore: none
   receipt-refs: 1217ad3f-bf5e-4fe9-b45e-71b9ecdfb1a5,c929bb023120ac34bacf556b6525a767ac84841f
   note: Preserve the final rollout prerequisite UUID while splitting a real earlier durable adapter from final integration. Read actual native state/metadata and record once-only effects; distinguish registered planning edges from accepted runtime guarantees. Keep historical source gaps and empty dependency writer representation visible.
+- ts: 2026-10-15T12:35:06.517515257Z
+  session: /home/err/.codex/worktrees/openhax-embedding-cutover/foresight
+  task: Narrow obsolete ADA initialization plan to two genuine remaining operations
+  p-efficiency: 0.82
+  p-friction: 0.32
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 7d0988c8-8ad9-42da-a1c7-32872f538bc4,e0f536cbe98752b6d0f48db60f6f1d26373fb348
+  note: Re-read actual native state before preserving an older operation plan: remove inapplicable future effects rather than fabricate their completion. Keep immutable historical collision evidence and current observations distinct; same-value writes cannot reidentify history or fix the producer. Source-owned event-ID repair belongs to current canonical Rheos and its existing legacy owner. Portable file reflection only; no native mycology or spore credit.
