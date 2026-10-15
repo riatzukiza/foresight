@@ -511,3 +511,12 @@
   spore: none
   receipt-refs: foresight-pr127-current-main-integration
   note: A cached pull base can lag the actual branch tip. Fetch the live ref and inspect mergeability even after review convergence passes; preserve full main ledger prefixes and exact branch-only bytes, then obtain fresh successor evidence. Use a pinned canonical main skill snapshot when the global checkout contains unrelated work.
+- ts: 2026-10-15T22:39:01.561654567Z
+  session: /home/err/.codex/worktrees/finite-review-caller-adoption/foresight
+  task: Persist bounded finite MiMo caller-adoption planning owner
+  p-efficiency: 0.82
+  p-friction: 0.24
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: a57e8ff5-de4e-4e92-9448-1fa590209049
+  note: Inspect genuine native owner/event and source custody before committing. Preserve the exact approved body and native LF serialization separately; compare symlink text without recursing. Reuse the accepted secure flat receipt writer for this accepted source family; no historical receipt normalization or invented native event. One incoming P1/2 caller task remains planning-only; ETA worker implementation, F41 consumer source and protected caller adoption remain separate. Existing read-only guard mistakes are retained. Candidate0/no spore; no workflow pin, public review/model/runtime/deployment effect.
