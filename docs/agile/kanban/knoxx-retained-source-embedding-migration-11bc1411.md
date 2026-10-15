@@ -5,10 +5,11 @@ story_id: "EC1.02"
 dependency: ["d3277a3c-6e30-42b1-8151-16c041612a6a", "6cc1e1ca-c8dd-4cf9-9cd1-24675a7ee0c0"]
 parent: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
 type: "story"
-write-id: "1791956986109-0.quufze9r0rkkfnbfwnh"
+write-id: "1792062023442-0.0szjchifhd6ld6cloi5l"
 points: "8"
 title: "EC1.02: Materialize and verify retained Knoxx sources without rewriting history"
 priority: "P1"
+status: "breakdown"
 epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
 uuid: "11bc1411-154d-4db7-8c27-51506ab30508"
 ---

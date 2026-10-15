@@ -1,14 +1,16 @@
 ---
 category: "kanban"
-type: "story"
+labels: "knoxx, embeddings, runtime, law, 5sp"
 story_id: "EC1.01"
-uuid: "d3277a3c-6e30-42b1-8151-16c041612a6a"
-epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
 parent: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
+type: "story"
+write-id: "1792062022124-0.0joiym59efauc1smljln"
+points: "5"
 title: "EC1.01: Validate one Knoxx embedding runtime across ingest, search and repair"
 priority: "P1"
-points: "5"
-labels: "knoxx, embeddings, runtime, law, 5sp"
+status: "breakdown"
+epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
+uuid: "d3277a3c-6e30-42b1-8151-16c041612a6a"
 ---
 
 # EC1.01: Validate one Knoxx embedding runtime across ingest, search and repair

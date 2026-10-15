@@ -5,10 +5,11 @@ story_id: "EC1.03"
 dependency: ["11bc1411-154d-4db7-8c27-51506ab30508", "afacb7b7-263a-48e6-a744-a9f4b450407b", "60e85d88-3960-449f-8376-10e75eae82d9", "a7402e9d-6538-4e38-9919-93fe88af373d", "c002072c-2415-46a8-b533-6b502129f2bf", "dee4ddbf-c00b-4f4a-9f28-a6183056b8dc"]
 parent: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
 type: "story"
-write-id: "1791971867208-0.pzk37r3d841g6e2l39"
+write-id: "1792062025076-0.28ox6jk97exjatkpfkv"
 points: "8"
 title: "EC1.03: Consume controller-bound embedding proof and deploy the native Knoxx CMS"
 priority: "P1"
+status: "breakdown"
 epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
 uuid: "03a057e4-3098-4fe7-a5b8-95168f45ca96"
 ---

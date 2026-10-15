@@ -3,10 +3,11 @@ category: "kanban"
 labels: "deployment, knoxx, embeddings, cms, source-preservation"
 dependency: ["ada3bc51-1528-4ae3-aa46-095d217142ea"]
 type: "epic"
-write-id: "1791972198458-0.fetkko7sbgiutloe3p3"
+write-id: "1792062020744-0.syjbcgnw0olp1xetxr"
 points: "59"
 title: "EPIC: Preserve retained sources while admitting the native Knoxx CMS embedding cutover"
 priority: "P1"
+status: "breakdown"
 uuid: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
 ---
 
