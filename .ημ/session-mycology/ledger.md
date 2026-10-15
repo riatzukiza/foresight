@@ -520,3 +520,12 @@
   spore: none
   receipt-refs: b33880cb-bba5-4e07-b1ff-f127e61d326f,eb2b8eb4-017e-413e-a9b2-01ca0d6d25cc
   note: Recover native format evidence and actual ownership before creating a bounded adapter story. Preserve latest negative/pending and real code-completion chronology; shared recognition does not grant new quorum or source-adoption authority. Include CONTRACT alignment for automated governance. Query actual creator vocabulary before mutation: generic help named story, configured vocabulary rejected it with zero effects, then native task creation succeeded once after absence/physical/event-prefix readback. Preserve native dependency[] limitation and distinguish approved body terminalLF from native section export hash. Existing canonical secure flat writer validates only new records; separate source and provenance commits. Portable candidate0/no spore, no source implementation/public/review/model/runtime/deployment effect.
+- ts: 2026-10-15T23:20:53.630309726Z
+  session: /home/err/.codex/worktrees/codex-native-review-state-plan/foresight
+  task: Refine Codex structured planning and native ownership with separate classic wrapper scope
+  p-efficiency: 0.76
+  p-friction: 0.34
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 1d529978-58c5-40c4-92dd-0cd6a244b040,02aaf8513c1132e38deb7b8247545e7304e43991
+  note: Require a known-positive inventory control: empty cross-project title search cannot establish no owner. Native scoped board and related body reads recover actual broader admission ownership; native dependencies bind two empty-dependency leaves. Separate independently deliverable classic1 from structured3 before readiness, record explicit extra1point, preserve creation and current BODY hashes as distinct observations. No adapter/parser implementation, readiness, public settlement, model rerun, native-SM retry, spore or deployment credit.
