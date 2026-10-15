@@ -9,7 +9,7 @@ parent: "8bcaa0f3-37ec-44e2-8f20-4798dfc4b795"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "7f7b6b5b-2df1-4e52-a167-8e631ca598e4"]
 category: "kanban"
-write-id: "1792030640288-0.zfo2ezp58f4mo4qjqp"
+write-id: "1792037567740-0.gognau2piyti2sxl6ji"
 created_at: "2026-10-15T01:54:47.744Z"
 labels: "cephalon, finite-slice, planning"
 ---
@@ -53,7 +53,14 @@ Stale/revoked authority, unknown dimensions or mapping, duplicate/conflicting st
 License: GPL-3.0-or-later.
 
 
+
+## Selected encounter to exact field to mood custody — 2026-10-15
+
+For the selected-encounter transition, independently read the selected atomic field output and bind its exact field revision/checkpoint hash, kernel-history and admitted encounter/content/effect identity into the typed transition input/trace and persisted/read-back mood. Validate against that independent selected output, not an arbitrary caller label. The actual mood consumer must load that exact resulting mood revision and require its trace field binding to equal both the selected atomic field output and the field snapshot used by this actual turn before attention/recall or prompt influence. Correct encounter/appraisal with stale or unrelated field input, or a later context loading a different field, refuses/refreshes through the qualified seam before persistence or causal use. Positive source fixtures and later natural proof retain the same equality chain; a valid mood assembled from another field history fails B2/combined proof. Quiet decay remains its separate typed path and is not relabeled as a selected-encounter transition.
+
 ---
 Incoming privacy clarification for native4278317599: maker access to private/shared memory does not grant repository-reviewer/public access. Actual provider-prompt inspection must remain authorized/protected outside Git; commit only digest and explicitly redacted audience-safe trace bound to protected inspection and exact turn/state revisions. Raw private/shared content, credentials and unapproved IDs/URLs/grants cannot enter receipts/.ημ/resources/events/public logs. Retain positive allowed-private/shared evidence-audience fixtures separately from denied prompt negatives. No Ready/status/estimate/identity change.
+
+Finding4278629793: actual consumed mood trace field binding must equal independently read selected atomic field output and actual turn field snapshot before attention/recall/prompt. Changed field after await refreshes/refuses; unrelated valid histories cannot assemble B1/B2. Source fixtures remain distinct from natural proof.
 
 ---

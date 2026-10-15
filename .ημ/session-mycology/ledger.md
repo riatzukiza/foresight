@@ -1466,3 +1466,13 @@ Origin: `cephalon-receipt-output-framing-correction-20261009`. Actual hosted twe
   spore: none
   receipt-refs: cephalon-canonical-authority-checkpoint-and-independent-exits-root-20261015
   note: Verified planning findings repaired under existing finite scope. Same selected physical field/mood/graph causal chain retained with explicit canonical owners and source-vs-served boundaries; no larger story or liveB1/B2/B3 completion. Actual runtime/source ports must be qualified; unsupported authority/event/restore operation refuses, not a local substitute. Preserve all immutable receipts and containing-repo context, no repo field. No paid/model/credentials/runtime/deployment/clock/heartbeat/publication replay changes; no spore.
+
+- ts: 2026-10-15T04:14:31.653Z
+  session: /home/err/.codex/worktrees/cephalon-kernel-selection/foresight
+  task: cephalon-character-memory/accepted-finite-B1-B2-B3
+  p-efficiency: 0.8
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: cephalon-nine-causal-authority-calibration-and-pair-order-root-20261015
+  note: Seven root/two field findings verified. Explicitly bind already-authorized Muse9 planning merge/profile/joint/ETA/OpenPlanner source-review prerequisite to affected graph readiness; no fake cross-board edge/local gate. Feedback requires current Axxium owner decision/version through commit with revocation-race zero writes. Selected atomic field revision/hash/history flows through typed mood transition/persistence and actual consumer/natural proof; unrelated field histories refuse. All3graph/field/effect components unchanged on every precommit fault/permutation; audit provenance remains separate. Exact closeout predecessor table and atomic fixture-only B1 text corrected. Existing calibration/workload work separated at proposed3 after contact5 before deployment:13execution48 now visible, older45/44/36 preserved; field8/mood5/automatic5 non-additive history, no adopted increase or Ready. Owning comparator normalizes distinct unordered pairs by exact unsignedUTF8 IDs, lexicographic first/second with prefix rule, preserves roles and reverses multi-contact input order in required fixtures. General body/metadata/source qualification remains independent; GoalACTIVE heartbeat humanPAUSED live0/3. No runtime/deployment/paid/realcredentials/continuation/publication/spore change.

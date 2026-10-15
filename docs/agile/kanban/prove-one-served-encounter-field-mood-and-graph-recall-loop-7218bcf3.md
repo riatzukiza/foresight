@@ -10,7 +10,7 @@ parent: "2df3d26b-394a-436d-9e02-fe18a55132dd"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["885a4b34-74fb-4e4e-a42a-6dbb54d54829"]
 category: "kanban"
-write-id: "1792034165788-0.fs4p3jug5mkxu7elrvl"
+write-id: "1792037568586-0.h7i1anfa3vvi379ltdt"
 created_at: "2026-10-15T01:03:01.313Z"
 ---
 
@@ -64,6 +64,11 @@ Classify artifact and destination evidence audiences separately from the maker's
 
 The actual submitted model-visible authorized node/edge path and traversal trace explicitly carries BOTH matching graph/projection revision and physical-field revision, bound to the selected encounter/effect lineage and independently read states from AC1. A singular traversal/graph revision plus a field revision only in protected diagnostic metadata cannot satisfy B3. Add stale/mixed/omitted model-visible field-revision negatives while preserving protected full-prompt inspection and audience-safe retained evidence.
 
+
+## Selected encounter to exact field to mood custody — 2026-10-15
+
+For the selected-encounter transition, independently read the selected atomic field output and bind its exact field revision/checkpoint hash, kernel-history and admitted encounter/content/effect identity into the typed transition input/trace and persisted/read-back mood. Validate against that independent selected output, not an arbitrary caller label. The actual mood consumer must load that exact resulting mood revision and require its trace field binding to equal both the selected atomic field output and the field snapshot used by this actual turn before attention/recall or prompt influence. Correct encounter/appraisal with stale or unrelated field input, or a later context loading a different field, refuses/refreshes through the qualified seam before persistence or causal use. Positive source fixtures and later natural proof retain the same equality chain; a valid mood assembled from another field history fails B2/combined proof. Quiet decay remains its separate typed path and is not relabeled as a selected-encounter transition.
+
 ---
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
 
@@ -74,5 +79,7 @@ Incoming privacy clarification for native4278317599: maker access to private/sha
 Verified planning correction from review5527377626: The sole varied physical deposit/bond must be the one produced by the same selected outside encounter and immutable effect observed in AC1. Freeze and require exact equality of encounter ID/content revision/hash, effect identity, attributed deposit/bond source/lineage and prior/derived graph/field revision bindings from B1 through physical contact/path to the actual B3 submitted prompt association. Both controlled arms reference that same selected source; never substitute another valid older encounter/effect/deposit. Preserve immutable history and all declared single-variable equality constraints; if the permitted intervention cannot be established safely, refuse proof. Add a valid unrelated-encounter B deposit as a negative even when all other recall inputs match. This is distinct from two valid different-encounter storage arms, which cannot satisfy the selected chain.  Classify artifact and destination evidence audiences separately from the maker's access. Private/restricted artifact bytes, paths/media identity, destination account/record IDs/URLs and their association may be inspected only through an authorized protected seam outside Git/public logs. Retain full restricted matching proof only in protected private storage or inspect transiently. Committed/reviewer/public evidence may retain only an explicitly audience-authorized digest/redacted binding to that protected proof; identifiers or hashes are not presumed safe merely because the maker may read them. No credentials, raw private artifact/message content or unapproved identifiers enter receipts/events/resources/logs. Positive private-destination/artifact fixtures must prove actual protected matching and no forbidden retained disclosure; public outcomes retain their authorized independent readback. If protected verification or safe evidence is unavailable, refuse outcome proof and reinforcement. No publication replay.
 
 Verified current planning correction: The actual submitted model-visible authorized node/edge path and traversal trace explicitly carries BOTH matching graph/projection revision and physical-field revision, bound to the selected encounter/effect lineage and independently read states from AC1. A singular traversal/graph revision plus a field revision only in protected diagnostic metadata cannot satisfy B3. Add stale/mixed/omitted model-visible field-revision negatives while preserving protected full-prompt inspection and audience-safe retained evidence.
+
+Finding4278629793: natural proof retains selected atomic field revision/hash/encounter/effect through mood transition trace, persisted readback and actual consumer context. Stale/unrelated field history fails despite correct encounter/appraisal and valid mood. Graph+field revisions must reach actual prompt; no fixture/diagnostic substitute.
 
 ---

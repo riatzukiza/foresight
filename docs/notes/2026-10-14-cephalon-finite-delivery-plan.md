@@ -40,6 +40,7 @@ to their allocated execution packets or derive remainders by subtraction.
 | Kernel ABI, numeric identity and time | Eros/Eris field `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 3 | Completed reviewed selection handoff and scoped graph input; standalone owning build, explicit distribution license, schemas, exact IDs/cells and split/zero/catch-up time laws |
 | Physical force, wind, bond and seed coupling | Eros/Eris field | 5 | Completed ABI/time packet; actual authorized sparse deposits, sample/decay, ordered forces, differing friction, immutable emitted ownership and exact RNG lineage |
 | Physical contact, inclusion and replay | Eros/Eris field | 5 | Finite contact changes the selected association; canonical memory/content embedding remain unchanged while salience is separately versioned. Attribution/frozen replay are required; unsupported absorption/exchange refuse and remain later obligations |
+| Complete finite calibration and workload qualification | Eros/Eris field | 3 | Completed contact kernel plus reviewed force inputs; independently qualified full revisioned calibration and high-density/quiet/catch-up time/memory/rejection artifact before deployment; source fixtures do not require this successor |
 | Atomic graph/field persistence | OpenPlanner field adapter | 5 | Once-only graph/field/effect transaction includes the encounter's author/topic/reply provenance relationships, visibility/source/UTC, revisions and independent readback; conflicts/failures/uncertain commits recover or quarantine |
 | Separate mood transition/persistence interface | Knoxx mood `4cac8ac8-1a9f-441d-ac87-aa09f874eb57` | 3 | Reviewed pure schema/transition, deterministic elapsed/quiet decay and replay; scoped revision/idempotence/persistence and independent readback using validated appraisal data; completes without runtime appraisal or maker integration |
 | Bounded mood appraisal and actual consumer | Knoxx mood | 3 | Completed transition/persistence and scoped graph interfaces; bounded validated appraisal/fallback and actual turn-context mood load, bounded causal attention/recall and refresh/refusal across authority awaits; completes before deployment/served proof |
@@ -47,20 +48,17 @@ to their allocated execution packets or derive remainders by subtraction.
 | Served automatic causal proof | Existing automatic integration parent | 5 | Completed deployment, actual native-clock B1/B2/B3 graph/field/mood/principal/provider-prompt evidence, isolated physical/mood contrasts, replay/privacy/failure and once-only feedback |
 | Terminal inventory and closeout | Existing automatic integration parent | 2 | Completed causal proof and all fixed-inventory gates; document later milestones, close native goal and retire heartbeat |
 
-These twelve provisional execution estimates total45. The earlier eleven-packet
+These thirteen provisional execution estimates total48. The earlier twelve-packet45, eleven-packet
 44-point and eight-packet36-point proposals remain estimate history. The newly
 separated existing mood work is independently proposed3+3 rather than one5-point
 execution packet; that is a provisional estimate refinement, not new behavior
-or an adopted increase. The existing mood and automatic parents each retain
-recorded5 as non-additive aggregate history until lawful adoption. Never add
-those parents to child execution points. Selection remains a separate3-point
+or an adopted increase. Separately estimating the already-required complete calibration/workload artifact at3 makes its previously hidden cost visible; it adds no character behavior or prerequisite scope. The original field parent retains8, and mood/automatic parents each retain5, as non-additive aggregate history. Native Rheos classifies the Incoming field parent through category=aggregate-history and an explicit non-additive comment, preserving its8, type, relationships and broader obligations. Conditional epic-type promotion refused before mutation because current children bind the character epic; no graph/type or aggregate-points adoption is claimed. Never add these three containing estimates to the selected child execution total. Selection remains a separate3-point
 predecessor. Independent review must assess fair estimates/reuse and native
 aggregation/type adoption before Ready; these numbers grant no admission.
 
 ## Canonical Incoming packet identities
 
-The fourteen native Incoming cards comprise twelve selected execution packets
-and the existing mood and automatic integration parents. New cards are initial planning inputs;
+The current sixteen described Incoming records comprise thirteen selected execution packets and the retained field, mood and automatic aggregate parents. The original fourteen-card creation remains history; calibration is newly authored initial Markdown and field is a pre-existing containing record. New cards are initial planning inputs;
 no Ready/Done or implementation claim follows. The actual native `uuid` field
 is canonical identity: feedback's native default is the explicit slug-valued
 identity shown below; other new children used standard generated UUID inputs.
@@ -75,16 +73,18 @@ later work by subtracting estimates.
 | --- | --- | --- | --- |
 | admission | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a` | 3 | None; owning source qualification required |
 | graph | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` | 5 | None; owning source qualification required |
+| field-history | `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 8 (native aggregate-history category; excluded) | `a1e9d6af-0233-4dcb-9677-5c76fa9a2701`, `6eb77110-8cf4-44d5-a242-f495d25d6aaf`, `b5f2ba9e-8d67-4c73-9919-e275983aca87` (broader history; excluded) |
 | abi | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` | 3 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `b5f2ba9e-8d67-4c73-9919-e275983aca87` |
 | forces | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` | 5 | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` |
 | contact | `ba078119-482c-49dc-bd18-c2dfcaad9024` | 5 | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` |
+| calibration | `4f4c7cf6-9be8-47b9-b03a-be235c4dd519` | 3 | `ba078119-482c-49dc-bd18-c2dfcaad9024` |
 | atomic | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` | 5 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `ba078119-482c-49dc-bd18-c2dfcaad9024` |
 | mood-state | `7f7b6b5b-2df1-4e52-a167-8e631ca598e4` | 3 | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` |
 | mood-consumer | `5450c07d-1e90-4640-90e9-995f1e32d28a` | 3 | `7f7b6b5b-2df1-4e52-a167-8e631ca598e4`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` |
 | mood | `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795` | 5 (aggregate history; excluded) | `7f7b6b5b-2df1-4e52-a167-8e631ca598e4`, `5450c07d-1e90-4640-90e9-995f1e32d28a` |
-| automatic | `2df3d26b-394a-436d-9e02-fe18a55132dd` | 5 (aggregate history; excluded) | `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `deliver-outcome-attributed-once-only-graph-feedback` |
+| automatic | `2df3d26b-394a-436d-9e02-fe18a55132dd` | 5 (aggregate history; excluded) | `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `deliver-outcome-attributed-once-only-graph-feedback`, `7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71` |
 | feedback | `deliver-outcome-attributed-once-only-graph-feedback` | 3 | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` |
-| deployment | `885a4b34-74fb-4e4e-a42a-6dbb54d54829` | 3 | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `deliver-outcome-attributed-once-only-graph-feedback` |
+| deployment | `885a4b34-74fb-4e4e-a42a-6dbb54d54829` | 3 | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `deliver-outcome-attributed-once-only-graph-feedback`, `4f4c7cf6-9be8-47b9-b03a-be235c4dd519` |
 | causal | `f503ae5a-e414-4da8-a8d4-328a7218bcf3` | 5 | `885a4b34-74fb-4e4e-a42a-6dbb54d54829` |
 | closeout | `7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71` | 2 | `f503ae5a-e414-4da8-a8d4-328a7218bcf3` |
 
@@ -111,7 +111,7 @@ authority and actual admission, never from the payload or a guessed grant.
 The atomic packet commits the planned graph projection, physical field and
 effect record together against expected revisions, then independently reads
 the pair back. That completed packet supplies the selected intake graph-write
-proof and B1 persistence proof. Failed or uncertain commit leaves the projection
+source/fixture portion of B1 persistence proof only. The post-deployment causal packet must independently observe the selected real encounter for live B1; atomic fixture completion cannot close B1. Failed or uncertain commit leaves the projection
 pending/refused or quarantined. No early graph write and no dependency on a
 later successful commit are hidden inside the admission packet.
 
@@ -430,11 +430,9 @@ and approvals stay history. This PR changes no dependency pins, served runtime/e
 implementation source or deployment. Native Incoming planning records and
 descriptive/dependency refinements supply no readiness or admission.
 
-The canonical withdrawal repair is completed and installed. The distinct large-
-review-throughput proposal remains pending human inclusion under the accepted
-milestone; this decomposition grants no permission to implement it or waive
-complete-input review. Neither pending approval nor source selection supplies
-native readiness. The complete existing milestone remains unfulfilled.
+The canonical withdrawal repair is completed and installed. The human has explicitly included bounded lossless review batching (call_1d609fd775e34385958566086e527a3e). Its separate owning planning PR is riatzukiza/muse#9, actually MERGED as c914b423eb15fc8278389b1df1c7c77c32f296d2. Native Muse profile95efe284-754b-4c4c-9a5e-b55b0c3d5d0e precedes jointd5bd4e91-8717-4da0-8e13-e307972ecd32; measured profile PR10 does not complete the joint implementation. ETA2 and OpenPlanner1 consumer qualification plus a genuine complete native review of unchanged OpenPlanner PR3 remain downstream exits. This prerequisite is authorized and remains separate from the finite character execution estimates.
+
+Affected readiness path: graph1eb3aa1f requires its exact owning OpenPlanner source/consumer qualification, including the complete-input review held by this Muse/ETA prerequisite; ABI, forces/contact/atomic, mood and deployment inherit their actual graph predecessor/source gates. Admission work independent of OpenPlanner is not given a fabricated dependency. Before any affected native Ready, inspect actual qualified Muse/ETA/OpenPlanner artifacts and full review/check/merge evidence; unknown or pending source refuses admission. Cross-repository task IDs here are explicit owner references, not fake local dependency edges. Use qualified native Rheos admission; unsupported enforcement remains an upstream gap and blocked readiness, never a repository-local gate. No continuation, omission or weakened review is authorized. The complete existing milestone remains unfulfilled.
 
 
 ## Protected prompt inspection and evidence audience
@@ -465,8 +463,7 @@ Mood state completes at deterministic transition/persistence/readback; appraisal
 and actual prompt consumption remain the separate consumer/successor proof.
 ABI d68344c4-f18b-4b96-8585-bd8f7ac7c6a2 already owns standalone build and actual
 selected source-rights/license/notices adoption before literal extraction.
-Contact ba078119-482c-49dc-bd18-c2dfcaad9024 now explicitly owns complete finite
-calibration and configured load/time/memory/rejection evidence, using force inputs.
+Contact ba078119-482c-49dc-bd18-c2dfcaad9024 owns finite kernel/inclusion/replay source fixtures. Separately estimated calibration 4f4c7cf6-9be8-47b9-b03a-be235c4dd519 consumes that completed kernel and reviewed force inputs, and owns complete finite calibration plus configured load/time/memory/rejection evidence before deployment. Contact/atomic source fixtures use explicit valid fixture inputs and do not wait for later production calibration.
 Deployment 885a4b34-74fb-4e4e-a42a-6dbb54d54829 independently verifies those artifacts
 and every current qualified Foresight/Eros-Eris/OpenPlanner/Knoxx source/consumer
 binding before serving. None remains an unassigned prose prerequisite.
@@ -518,3 +515,11 @@ and actual fixture storage/readback. They supply no live B1/B2/B3 completion.
 The served causal-proof successor independently observes the real selected
 outside encounter and actual graph/field/mood/prompt/outcome after deployment;
 source and fixture success cannot substitute for that accepted goal evidence.
+
+## Current causal/authority/failure refinements — 2026-10-15
+
+Feedback commits require an independently refreshed current Axxium decision and principal/grant/sharing/visibility/policy/scope versions through the qualified owning commit seam. Bind those versions and expected reinforcement revision to the transaction; revocation between final read and commit aborts with no reinforcement/effect mutation. Stale local/payload authority or an unsupported owner commit guarantee refuses. Exercise private/shared revocation before final read and between read/commit with zero mutation; audit/refusal provenance stays distinct.
+
+For the selected-encounter mood path, carry the independently read atomic field output's exact revision/checkpoint hash plus encounter/content/effect identity through typed transition trace, persisted/read-back mood and the actual consumer context. Require equality to that selected atomic field output at transition and before actual attention/recall; a correctly persisted mood from a stale or unrelated field cannot satisfy B2 or the combined B1/B2/B3 proof. Hold encounter/appraisal correct while substituting stale/unrelated field revisions to prove refusal before mutation/influence. Quiet decay remains its separately typed path.
+
+The atomic transaction has three durable components: graph projection, physical field and immutable effect receipt. Independently capture prior effect absence or exact existing bytes along with graph/field baselines. Every precommit fault/permutation leaves all three exactly unchanged; no orphan success receipt, dedup reservation or outward effect survives. Actual audit/refusal provenance may append separately without claiming a successful effect. After acknowledged/uncertain commit, independently verify all three or quarantine before retry; no sequential durable writes may masquerade as a transaction.

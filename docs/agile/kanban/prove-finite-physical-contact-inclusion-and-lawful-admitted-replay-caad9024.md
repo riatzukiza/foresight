@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2eebbcf3-875d-4b7e-aad8-50a1c46472d2"]
 category: "kanban"
-write-id: "1792034163429-0.j3t1gtoswvmhuhi111"
+write-id: "1792037562480-0.pp7iupobg5qko3j7xve"
 created_at: "2026-10-15T00:01:58.730Z"
 ---
 
@@ -54,7 +54,7 @@ License: GPL-3.0-or-later.
 
 Each contact step ID is the exact safe end-boundary kernel-time-us of its executed 10,000-microsecond quantum within the same admitted immutable history. Call partition, API count, wall UTC and event cursor do not define it. Split advance, catch-up and restored schedule reproduce identical ordered IDs/pair observations; zero-time/non-time operations cannot mint a step. Overflow refuses the whole unchanged transition. Existing owner/scope/effect identities provide the outward namespace and prevent replay effects.
 
-This packet also owns completion of the complete revisioned finite calibration artifact, consuming the forces packet's calibration and adding contact geometry/radius/restitution and every required bound/layer/static-threshold/speed/half-life/noise/prune/saturation value. Qualify the selected quantum and maximum substeps at declared entity/bond/particle/cell caps with finite high-density, quiet/catch-up workloads and recorded runtime/config/artifact hashes, time/memory observations and rejection boundaries. Fixture constants alone cannot satisfy complete calibration. This remains source/kernel qualification, without waiting for future storage or deployment.
+This5-point packet owns contact/inclusion/replay source qualification with explicit valid fixture calibration. Complete production calibration and configured high-density/quiet/catch-up workload/time/memory/rejection qualification are separated into independently reviewable proposed3-point task 4f4c7cf6-9be8-47b9-b03a-be235c4dd519, which depends on this kernel and must complete before deployment. This source packet and atomic fixture work do not require that successor's production artifact; no readiness cycle or hidden calibration workload remains inside this estimate. The separate artifact includes contact geometry/radius/restitution and every required bound/layer/threshold/speed/half-life/noise/prune/saturation value.
 
 ## Canonical authority and independent verification boundary — 2026-10-15
 
@@ -68,5 +68,7 @@ Incoming planning refinement separates this packet completion from its later suc
 Finite qualification refinement from owning field review5527243274: Each contact step ID is the exact safe end-boundary kernel-time-us of its executed 10,000-microsecond quantum within the same admitted immutable history. Call partition, API count, wall UTC and event cursor do not define it. Split advance, catch-up and restored schedule reproduce identical ordered IDs/pair observations; zero-time/non-time operations cannot mint a step. Overflow refuses the whole unchanged transition. Existing owner/scope/effect identities provide the outward namespace and prevent replay effects.  This packet also owns completion of the complete revisioned finite calibration artifact, consuming the forces packet's calibration and adding contact geometry/radius/restitution and every required bound/layer/static-threshold/speed/half-life/noise/prune/saturation value. Qualify the selected quantum and maximum substeps at declared entity/bond/particle/cell caps with finite high-density, quiet/catch-up workloads and recorded runtime/config/artifact hashes, time/memory observations and rejection boundaries. Fixture constants alone cannot satisfy complete calibration. This remains source/kernel qualification, without waiting for future storage or deployment.
 
 Verified current planning correction: The tuple of end-boundary step ID and canonical unordered pair is a deterministic contact/domain key within the admitted kernel history, not native event identity. Pure kernel observations are data. The outward adapter maps that key, immutable source/history and ownership to the qualified canonical Clio event envelope; Clio owns emitted event identity, causal stream and idempotency admission. Retain the actual admitted Clio event reference beside the domain key so replay recovers the same event/effect without reminting. Never deduplicate or authorize a downstream effect solely with the tuple or implement a local event-identity scheme; unsupported Clio admission refuses outward effects. Split/catch-up/restore fixtures verify the same domain observations and canonical admitted event/effect references.
+
+Finding4278629785: contact/inclusion/replay source packet remains5 with valid fixture inputs; full production calibration/workload qualification now separate proposed3 task 4f4c7cf6-9be8-47b9-b03a-be235c4dd519 after contact and before deployment. No source/successor readiness cycle or hidden calibration workload; no new behavior/Done/Ready. Owning Eros/Eris plan defines normalized unsignedUTF8 ID pair comparator, preserving particle/recipient roles and reversed-input multi-contact fixtures.
 
 ---

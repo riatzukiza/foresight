@@ -9,7 +9,7 @@ parent: "8bcaa0f3-37ec-44e2-8f20-4798dfc4b795"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2f4421ee-2e48-405e-96d2-fee1a5597ff2"]
 category: "kanban"
-write-id: "1792029492497-0.r2rrf3kwgxnp5uap82z"
+write-id: "1792037566954-0.n9s802vq198i5kllt9"
 created_at: "2026-10-15T01:54:46.944Z"
 labels: "cephalon, finite-slice, planning"
 ---
@@ -47,3 +47,14 @@ Planning qualification and full-graph native readiness precede RED/GREEN. Execut
 Stale/revoked authority, unknown dimensions or mapping, duplicate/conflicting state, incomplete readback and confusing source proof with served consumption remain explicit refusals.
 
 License: GPL-3.0-or-later.
+
+
+## Selected encounter to exact field to mood custody — 2026-10-15
+
+For the selected-encounter transition, independently read the selected atomic field output and bind its exact field revision/checkpoint hash, kernel-history and admitted encounter/content/effect identity into the typed transition input/trace and persisted/read-back mood. Validate against that independent selected output, not an arbitrary caller label. The actual mood consumer must load that exact resulting mood revision and require its trace field binding to equal both the selected atomic field output and the field snapshot used by this actual turn before attention/recall or prompt influence. Correct encounter/appraisal with stale or unrelated field input, or a later context loading a different field, refuses/refreshes through the qualified seam before persistence or causal use. Positive source fixtures and later natural proof retain the same equality chain; a valid mood assembled from another field history fails B2/combined proof. Quiet decay remains its separate typed path and is not relabeled as a selected-encounter transition.
+
+
+---
+Finding4278629793: selected-encounter transition binds independently read selected atomic field revision/checkpoint/history and encounter/content/effect identity through typed trace/persisted/read-back mood. Correct encounter/appraisal with stale/unrelated field refuses before persistence. Quiet decay is separately typed; source fixtures are not B2live proof.
+
+---

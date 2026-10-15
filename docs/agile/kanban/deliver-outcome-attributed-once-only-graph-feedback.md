@@ -10,7 +10,7 @@ parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b"]
 category: "kanban"
-write-id: "1792034166981-0.o2jgy0kpzfquqlo117"
+write-id: "1792037565163-0.endfu4w98ow76h2erbb"
 created_at: "2026-10-15T01:01:02.839Z"
 ---
 
@@ -57,6 +57,11 @@ Classify artifact and destination evidence audiences separately from the maker's
 
 This pre-deployment feedback packet qualifies its writer/readback logic using bounded isolated persistent-artifact and destination-read fixtures under explicit fixture authority/provenance, including positive matching and private-audience cases plus missing/mismatch/refusal/replay controls. Fixture records cannot count as live outcomes or enter production reinforcement. It completes without a natural maker action or successor deployment. After deployment, the separate served causal-proof packet must independently observe the actual natural configured artifact/destination outcome with the selected recall/turn/effect IDs; fixture success cannot replace it. Never replay publication to create proof.
 
+
+## Current authority through feedback commit — 2026-10-15
+
+Immediately before the feedback transaction, independently reload the actual stored principal and Axxium-owned current decision/policy-grant, sharing/visibility and scope versions for this outcome/action/item. Require authorization for both reinforcement and its immutable effect receipt. Bind the qualified owning decision/version protection and expected reinforcement revision into the commit condition; revoke/change between final read and commit must abort with no reinforcement/effect mutation. A matching reinforcement revision alone, payload authority or stale local policy is insufficient. Unsupported Axxium commit protection refuses before writing. Private/shared tests revoke/change authority before final read and between final read/commit, independently read back unchanged reinforcement and effect receipts, and retain separate truthful audit/refusal evidence.
+
 ---
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
 
@@ -65,5 +70,7 @@ Incoming outcome clarification for native4278174541: selected positive is indepe
 Verified planning correction from review5527377626: Classify artifact and destination evidence audiences separately from the maker's access. Private/restricted artifact bytes, paths/media identity, destination account/record IDs/URLs and their association may be inspected only through an authorized protected seam outside Git/public logs. Retain full restricted matching proof only in protected private storage or inspect transiently. Committed/reviewer/public evidence may retain only an explicitly audience-authorized digest/redacted binding to that protected proof; identifiers or hashes are not presumed safe merely because the maker may read them. No credentials, raw private artifact/message content or unapproved identifiers enter receipts/events/resources/logs. Positive private-destination/artifact fixtures must prove actual protected matching and no forbidden retained disclosure; public outcomes retain their authorized independent readback. If protected verification or safe evidence is unavailable, refuse outcome proof and reinforcement. No publication replay.
 
 Verified current planning correction: This pre-deployment feedback packet qualifies its writer/readback logic using bounded isolated persistent-artifact and destination-read fixtures under explicit fixture authority/provenance, including positive matching and private-audience cases plus missing/mismatch/refusal/replay controls. Fixture records cannot count as live outcomes or enter production reinforcement. It completes without a natural maker action or successor deployment. After deployment, the separate served causal-proof packet must independently observe the actual natural configured artifact/destination outcome with the selected recall/turn/effect IDs; fixture success cannot replace it. Never replay publication to create proof.
+
+Finding4278629789: feedback refreshes Axxium-owned current decision and actual stored principal/grant/sharing/visibility/policy/scope immediately before writing, binds qualified owner protection plus reinforcement revision through commit. Revocation before/between final read and commit leaves reinforcement/effect unchanged. Unsupported seam refuses; private/shared race tests and separate audit provenance required.
 
 ---
