@@ -1950,3 +1950,12 @@
   spore: none
   receipt-refs: e42ecb9c-320e-48a1-9f61-13b0f40b27c1
   note: Use actual current source and test failures to advance implementation; preserve exact published ledger facts. Native Bot withdrawal needs its own standalone live sentence and rationale, not a coordinator transcript. Distinguish physical blobs from gitlink leaves. Source/review progress supplies no CMS cutover credit; full deployment remains active. Portable record only; earlier native null-cwd failure not retried, no spore.
+- ts: 2026-10-15T20:00:05.502960753Z
+  session: /home/err/spaces/foresight
+  task: Persist actual publication, SDK causal RED and first cold-restore evidence without deployment overclaim
+  p-efficiency: 0.58
+  p-friction: 0.74
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 77036632-5134-4e65-855e-e4da3aa2f75f
+  note: Actual first cold SDK suite passes but independent source review exposes leader-close escalation and sibling-directory guards; retain first evidence and fix bounded controls before completion. Successful public pushes and native transitions are never replayed after stale readbacks. Hosted npm warnings remain contract failures. No spore, automatic promotion or deployment claim; production remains approved website plus old healthy CMS.
