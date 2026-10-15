@@ -1,6 +1,6 @@
 ---
 uuid: "1eb3aa1f-53d2-4a6a-828c-57ffe990e23b"
-title: "Deliver scoped graph recall and outcome-attributed once-only feedback"
+title: "Deliver qualified scoped graph recall interface"
 status: "incoming"
 type: "task"
 priority: "P1"
@@ -9,7 +9,7 @@ labels: "cephalon, finite-slice, planning"
 parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 category: "kanban"
-write-id: "1792025383434-0.q81aiigzdf322bdlb9"
+write-id: "1792026379546-0.13todwrb8zay5ts2dr"
 created_at: "2026-10-15T00:01:57.409Z"
 ---
 
@@ -23,7 +23,7 @@ Deliver scoped graph recall and outcome-attributed once-only feedback.
 
 ## Scope
 
-The named graph packet completion boundary in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` applies together with its original selected milestone/story criteria and shared resource/receipt/authority rules. Other packets retain their own outputs; an earlier packet need not execute its successor to complete. Katamorph/Axxium/Clio retain canonical authority.
+The named scoped graph read-interface packet completion boundary in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` applies together with its original selected milestone/story criteria and shared resource/receipt/authority rules. Other packets retain their own outputs; an earlier packet need not execute its successor to complete. Katamorph/Axxium/Clio retain canonical authority.
 
 ## Non-goals
 
@@ -36,7 +36,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 3. Apply scope before seeds/expansion/caps/ranking/paths/compacted nodes/trails/forces and feedback. Positive/negative public and explicitly shared candidates obey their actual stored admission policy; labels, claims and inferred roles cannot create exceptions. Varying hidden data under fixed seed cannot change permitted outcomes. Inspect every public diagnostic field, including serialized outputs, for denied IDs/text, path text, scores, metadata and persisted-trail content; ID-only redaction or unchanged selection cannot pass privacy fixtures.
 4. Include an authorized graph neighbor beyond the vector seed with actual node/path/reason/graph-field revision and bounded context custody. Empty/denied/indexing-pending/malformed/transport/timeout/exhaustion stay distinct.
 5. Count actual :hits, separating raw candidates, quality survivors, authorized hits and prompt inclusion. Keep legacy context/privacy behavior.
-6. Implement separate admitted outcome/inclusion-attributed feedback with stable recall/effect identity. Read-only recall does not reinforce; repeat/partial/failed/uncertain writes have actual storage tests and independent recovery/readback or quarantine. Live final proof observes the same once-only behavior.
+6. Complete the qualified scoped read interface independently of the later feedback writer. Read-only recall never reinforces. Hand the stable recall/inclusion evidence to separate feedback task `deliver-outcome-attributed-once-only-graph-feedback`; its implementation and uncertain-write recovery are not this graph interface completion prerequisites.
 
 ## Verification
 
@@ -57,5 +57,7 @@ Initial Incoming planning-body authoring corrected the relative plan reference t
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
 
 Incoming planning acceptance refinement for actual Codex20a findings: Positive/negative public/shared stored admission policy; inspect all public diagnostic fields for denied IDs/path/scores/metadata/trail content, not only IDs or selected outcome. Existing selected acceptance, no new prerequisite. Body authoring only; retain Incoming/points/parent/epic/dependencies and qualified readiness gates.
+
+Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
 
 ---

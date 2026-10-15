@@ -22,7 +22,7 @@ the prerequisite interface from completion of its larger containing story.
 
 ## Existing owners and proposed packets
 
-The packets below now have canonical UUIDs created in Incoming through qualified
+The packets below now have canonical task identities created in Incoming through qualified
 Rheos and read back with their proposed estimates and exact relationships.
 Creation is planning input, not Ready admission or implementation authority.
 Points and aggregation remain provisional for independent review; existing
@@ -33,50 +33,55 @@ to their allocated execution packets or derive remainders by subtraction.
 | Packet | Owner / existing story | Proposed points | Completed input and required output |
 | --- | --- | --- | --- |
 | Identified encounter admission | Knoxx intake `6eb77110-8cf4-44d5-a242-f495d25d6aaf` | 3 | Durable canonical identity/revision, attribution, deduplication, selection reason/seed and bound effect identity; distinct empty/malformed/failed/partial page outcomes, with no cursor advancement on failure. Graph/field projection is still pending |
-| Qualified scoped graph interface | OpenPlanner + Knoxx recall `a1e9d6af-0233-4dcb-9677-5c76fa9a2701` | 5 | Authorization before influence/caps, exact denied-leading-candidate refill regression, distinct quality/visibility/inclusion counts from `:hits`, traced traversal/context custody and outcome-attributed idempotent feedback with explicit write outcomes |
+| Qualified scoped graph read interface | OpenPlanner + Knoxx recall `a1e9d6af-0233-4dcb-9677-5c76fa9a2701` | 5 | Authorization before influence/caps, exact denied-leading-candidate refill regression, distinct quality/visibility/inclusion counts from `:hits`, traced traversal/context custody; completes without the later feedback writer |
+| Once-only outcome feedback | OpenPlanner + Knoxx recall | 3 | Completed scoped read interface; admitted outcome/inclusion attribution, stable effect identity, actual idempotent writer, partial/uncertain-write recovery/readback or quarantine |
 | Kernel ABI, numeric identity and time | Eros/Eris field `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 3 | Completed reviewed selection handoff and scoped graph input; standalone owning build, explicit distribution license, schemas, exact IDs/cells and split/zero/catch-up time laws |
 | Physical force, wind, bond and seed coupling | Eros/Eris field | 5 | Completed ABI/time packet; actual authorized sparse deposits, sample/decay, ordered forces, differing friction, immutable emitted ownership and exact RNG lineage |
 | Physical contact, inclusion and replay | Eros/Eris field | 5 | Finite contact changes the selected association; canonical memory/content embedding remain unchanged while salience is separately versioned. Attribution/frozen replay are required; unsupported absorption/exchange refuse and remain later obligations |
 | Atomic graph/field persistence | OpenPlanner field adapter | 5 | Once-only graph/field/effect transaction includes the encounter's author/topic/reply provenance relationships, visibility/source/UTC, revisions and independent readback; conflicts/failures/uncertain commits recover or quarantine |
 | Separate persisted mood and bounded consumer | Knoxx mood `4cac8ac8-1a9f-441d-ac87-aa09f874eb57` | 5 | Reviewed separate transition/state, independent persistence/load and causal bounded attention/recall. Appraisal cadence/tokens/queue/timeout/retries are bounded independently of the maker; missing/contradictory/malformed/late/provider failures have observable reviewed fallback without fabricated state |
-| Automatic character loop proof | Knoxx recall + verification `5ea872c3-1db4-47c5-a63d-d49f99f79497` | 5 | Actual served/principal/prompt/readback proof, plus separate fixed-input field and mood causal contrasts changing actual recall paths/included associations; replay, idempotent feedback and distinct hit accounting |
+| Qualified composition and deployment | Existing automatic integration parent | 3 | Reviewed source/consumer composition, supported idle/fenced deployment and rollback, independently verified actual served bindings |
+| Served automatic causal proof | Existing automatic integration parent | 5 | Completed deployment, actual native-clock B1/B2/B3 graph/field/mood/principal/provider-prompt evidence, isolated physical/mood contrasts, replay/privacy/failure and once-only feedback |
+| Terminal inventory and closeout | Existing automatic integration parent | 2 | Completed causal proof and all fixed-inventory gates; document later milestones, close native goal and retire heartbeat |
 
-These eight provisional execution estimates total36. The existing selection
-handoff is a separate3-point planning task, not another implementation packet.
-These numbers expose the substantial recovered work rather than force it into
-the original8-point field estimate. Independent review must assess each packet,
-reuse, splitting and the aggregation treatment before estimates are adopted.
-They are not a storage/runtime budget, completion claim or new prerequisite scope.
-The existing review/source prerequisites retain independent gates and estimates.
+These eleven provisional execution estimates total 44. The earlier eight-packet
+36-point proposal remains estimate history. Splitting feedback adds its separately
+reviewed 3-point allocation; deployment/proof/closeout allocate 3/5/2 instead of
+counting the original automatic 5-point parent as execution. That existing
+native Incoming parent retains its recorded 5 points until lawful aggregation
+adoption; do not add those points to its children. Selection is a separate
+3-point planning predecessor. This refines existing accepted obligations and
+exposes their work; it adds no new behavior or prerequisite scope. Independent
+review must assess estimates/reuse and lawful aggregation before Ready.
 
 ## Canonical Incoming packet identities
 
-Each row below is a native-created initial Incoming child of its original story,
-under character epic63a0e4ff. New estimates total36; historical aggregate estimates
-must not be counted again with these allocations. Fair aggregation/type/point
-adoption is an explicit pre-Ready gate; existing aggregate metadata stays intact
-during this planning PR. In particular, the original verification card's3-point
-estimate is historical; its new selected automatic-proof child is proposed5.
-The containing intake/recall/field/mood/verification cards are proposed aggregate
-roles for their allocated children and later work, while selection3 remains a
-separate planning task. Before any child becomes Ready, independently review
-and apply lawful aggregate/type/estimate treatment through Rheos: count each
-selected execution packet once, never both an original aggregate estimate and
-its child allocations. Later work retains independently reviewed estimates;
-no remainder is inferred by subtraction, and no unsupported native operation
-is simulated locally. This is no bypass of source qualification or native
-predecessors. Existing selection remains a separate3-point predecessor.
+The twelve native Incoming cards comprise eleven selected execution packets and
+the existing automatic integration parent. New cards are initial planning inputs;
+no Ready/Done or implementation claim follows. The actual native `uuid` field
+is canonical identity: feedback's native default is the explicit slug-valued
+identity shown below; other new children used standard generated UUID inputs.
+Do not replace native identity or infer a new one from a title. All cards retain
+character epic `63a0e4ff-353f-4c90-ab8a-7241d958d54c`; existing story parents
+and exact native relationships remain inspectable. Fair aggregate/type/estimate
+adoption through Rheos remains a pre-Ready gate. Count each selected execution
+packet once, preserve original aggregate estimates as history, and never infer
+later work by subtracting estimates.
 
-| Packet | Canonical UUID | Proposed points | Exact predecessor UUIDs |
+| Packet | Canonical task identity (`uuid`) | Proposed points | Exact predecessor identities |
 | --- | --- | --- | --- |
-| admission | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a` | 3 | None; owning source qualification still required |
-| graph | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` | 5 | None; owning source qualification still required |
+| admission | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a` | 3 | None; owning source qualification required |
+| graph | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` | 5 | None; owning source qualification required |
 | abi | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` | 3 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `b5f2ba9e-8d67-4c73-9919-e275983aca87` |
 | forces | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` | 5 | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` |
 | contact | `ba078119-482c-49dc-bd18-c2dfcaad9024` | 5 | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` |
 | atomic | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` | 5 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `ba078119-482c-49dc-bd18-c2dfcaad9024` |
 | mood | `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795` | 5 | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` |
-| automatic | `2df3d26b-394a-436d-9e02-fe18a55132dd` | 5 | `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` |
+| automatic | `2df3d26b-394a-436d-9e02-fe18a55132dd` | 5 (aggregate history; excluded) | `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `deliver-outcome-attributed-once-only-graph-feedback` |
+| feedback | `deliver-outcome-attributed-once-only-graph-feedback` | 3 | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` |
+| deployment | `885a4b34-74fb-4e4e-a42a-6dbb54d54829` | 3 | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `deliver-outcome-attributed-once-only-graph-feedback` |
+| causal | `f503ae5a-e414-4da8-a8d4-328a7218bcf3` | 5 | `885a4b34-74fb-4e4e-a42a-6dbb54d54829` |
+| closeout | `7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71` | 2 | `f503ae5a-e414-4da8-a8d4-328a7218bcf3` |
 
 ## Proposed dependency handoff
 
@@ -84,8 +89,11 @@ Encounter admission + qualified scoped graph interface + completed selection
 handoff feed finite physical delivery. ABI/time precedes force coupling, which
 precedes contact/inclusion/replay. Their completed physical contract plus the
 encounter and graph interface feed atomic persistence. Completed persisted
-finite field feeds the separate mood transition/consumer. The automatic proof
-consumes all completed finite outputs under the actual maker principal.
+finite field feeds the separate mood transition/consumer. Graph reads complete
+before the separately dependent feedback writer, so ABI/atomic work need not
+wait for that writer. Qualified deployment consumes graph, atomic, mood and
+feedback; served causal proof follows deployment, and terminal closeout follows
+that proof. The original automatic card is their integration parent.
 
 The encounter packet completes only the admitted envelope and prepared effect
 identity, not a graph projection or a successful B1 write. Physical computation
@@ -107,8 +115,8 @@ external revision before preparing physical work. Its selection reason and
 actual seed remain inspectable; a changed hash cannot silently become an
 unrelated encounter.
 
-The graph-interface packet also owns the separate deliberate feedback contract
-and its storage implementation/tests. Read-only traversal does not implicitly
+The separate feedback packet owns the deliberate feedback contract and its
+storage implementation/tests after the read interface completes. Read-only traversal does not implicitly
 reinforce. Feedback requires an admitted observed inclusion/outcome, the same
 current authority and a stable recall/outcome effect identity; retrieval count
 alone is not usefulness. Repeated recall/submission/replay cannot multiply it.
@@ -178,7 +186,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    Negative fixtures cover absent topic/reply and unknown attribution, retaining
    their evidence without fabricated edges. Graph/field projection remains
    uncommitted until the atomic packet.
-2. **Graph interface and feedback:** exact k=6/fetch18 denied-leading-six and
+2. **Scoped graph read interface:** exact k=6/fetch18 denied-leading-six and
    authorized-seventh refill, frozen principal/query/corpus/quality/order and
    matched real automatic/API boundaries. Missing/revoked/ambiguous/mismatched
    stored bindings and payload-selected authority deny. Scope precedes seeds,
@@ -192,11 +200,16 @@ B1/B2/B3 chain remains mandatory across their composition.
    bounded context custody. Empty/denied/indexing-pending/malformed/transport/
    timeout/exhaustion remain distinct. Count :hits separately as raw/quality/
    authorized/included; preserve legacy/privacy controls and no public private-ID
-   leak. Outcome-attributed stable recall/effect feedback has real storage
-   once-only, partial/failed/uncertain-write and independent recovery tests;
-   retrieval alone is nonreinforcing. No future live-maker proof is required to
-   complete these qualified owning interface fixtures.
-3. **ABI/time:** bind qualified owner/numeric selection and declaration, schemas,
+   leak. Read-only retrieval is nonreinforcing. No later feedback writer or
+   live-maker proof is required to complete these qualified read fixtures.
+3. **Outcome feedback:** consume the completed scoped read interface. Admit
+   observed inclusion/outcome under current stored authority and stable
+   recall/outcome/effect identity; retrieval count alone is not usefulness.
+   Implement actual once-only storage, independent readback and partial/failed/
+   uncertain/conflicting-write recovery or quarantine. Repeated recall/submission/
+   replay cannot multiply feedback. Complete bounded owning fixtures here;
+   later served proof must observe the same behavior.
+4. **ABI/time:** bind qualified owner/numeric selection and declaration, schemas,
    exact IDs/cell arithmetic, units/layer/configuration mapping, selected numeric
    primitives and reference runtime to standalone build/license evidence. Test
    elapsed microseconds, zero/quiet/repeated time, quantum/residual/backlog,
@@ -204,7 +217,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    inputs refuse unchanged state. It supplies tested representations/validation/
    time interfaces; implementing force, friction, contact, inclusion or storage
    is explicitly not required before this packet completes.
-4. **Force/wind/bond/seed coupling:** consume the completed ABI/time interfaces;
+5. **Force/wind/bond/seed coupling:** consume the completed ABI/time interfaces;
    implement authorized eight-layer sparse sampling/deposit/decay, exact weight/
    request ownership, canonical accumulation/norm/cap arithmetic, ordered forces,
    bonds, friction and seeded motion with immutable emitted lineage and real
@@ -212,7 +225,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    exceeded work/state limits and missing/ambiguous/stale/foreign bindings. This
    packet supplies physical state/trajectory; contact resolution/inclusion and
    persistence remain the later packets' outputs.
-5. **Contact/inclusion and kernel replay:** consume completed motion and prove
+6. **Contact/inclusion and kernel replay:** consume completed motion and prove
    finite contact changes the encountered association. Preserve canonical bytes/
    content embeddings, separately versioning salience. Unsupported absorption/
    exchange refuse. Kernel replay retains exact discrete identity/order/contact/
@@ -222,7 +235,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    their own consistent identities; it proves their kernel/contact/inclusion
    difference and unchanged per-arm kernel replay. It does not require the
    future atomic storage writer or claim persisted readback.
-6. **Atomic graph/field persistence:** consume admitted envelope, completed graph
+7. **Atomic graph/field persistence:** consume admitted envelope, completed graph
    interface and physical/contact outputs. Before the write, independently read
    the actual persisted graph/field baseline and record its scoped contents,
    hashes and revisions. Verify the candidate's frozen prior contents/hash
@@ -240,9 +253,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    persistence/readback and unchanged persisted-history replay here. No edited
    hash/cursor or non-admitted ablation buffer crosses this boundary. This
    packet completes the selected intake graph-write and B1 persistence proof.
-7. **Separate mood and bounded consumer:** reviewed dimensions/ranges/uncertainty,
+8. **Separate mood and bounded consumer:** reviewed dimensions/ranges/uncertainty,
    baseline/decay and prior/new state bind actual encounter/field/appraisal/time/
-   model/configuration/seed identity. Freeze the same prior state, validated
+   model/configuration/seed identity. A positive selected admitted encounter/
+   appraisal fixture must produce the reviewed expected mood-dimension change;
+   persist/read back and load that exact resulting revision before attention/
+   recall. A no-op encounter or two independently prepared contrast revisions
+   cannot supply this causal link. Freeze the same prior state, validated
    appraisal, elapsed time, configuration and seed; replay without clocks,
    provider calls or mutable external inputs to recover identical mood state and
    trace, without duplicate persistence. Missing/contradictory/malformed/late/
@@ -255,8 +272,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    apply decay again. Zero elapsed time retains its separate no-op requirement.
    Bound cadence/tokens/queue/timeout/retries independently of maker execution; never
    expand permissions. Load the selected revision at the real turn-context seam.
-8. **Automatic causal proof:** qualify deployment and actual served bindings
-   first, then observe a natural native-clock maker turn using actual stored
+9. **Qualified composition/deployment:** qualify exact owning source/consumer
+   merges, promotion and rollback. Establish the supported qualified idle/fenced
+   window and independently verify actual served artifact/configuration/schema/
+   kernel/consumer bindings. Preserve held maker/parent/delegate/effect identities,
+   one event owner and disabled cloud runtime. This packet supplies served
+   composition evidence before observations, without requiring its successor.
+10. **Served automatic causal proof:** consume qualified deployment, then observe a natural native-clock maker turn using actual stored
    principal and independent graph/field/effect/mood readbacks. In the same live
    run capture visibility-safe eligible/denied candidate IDs/reasons, seed IDs,
    exact authorized traversed edge/node path, traversal revision and actual
@@ -277,9 +299,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    for this served single-variable contrast. A separate mood contrast holds
    physical state and every other recall input fixed and varies only the
    persisted mood consumed by attention/recall/decision. Record actual appraisal cost/latency,
-   truthful counts/write outcomes and once-only feedback. After all selected
-   live proofs and fixed-inventory gates, document later links, close native goal
-   and retire heartbeat; larger stories remain truthful.
+   truthful counts/write outcomes and once-only feedback. This packet supplies
+   completed B1/B2/B3 evidence and its selected negative/replay gates.
+11. **Terminal inventory/closeout:** after the served causal proof, verify the
+   exact completed evidence and fixed-inventory gates. Document remaining design
+   links as later milestones, then close the native goal and retire the heartbeat
+   through supported lifecycle surfaces. Larger aggregate stories remain truthful;
+   incomplete evidence leaves the goal open.
 
 Eros/Eris owns physical computation, including the reviewed finite sampling and
 force declaration; OpenPlanner owns storage/query; Knoxx owns mood, attention,
@@ -342,7 +368,7 @@ Do not replay publication, restart a maker for maintenance or change consumer ow
 Native fifteen-minute clock, one event owner, disabled cloud event runtime and
 human-paused heartbeat remain during delivery. B1/B2/B3 completion requires
 those actual links. Once all three live proofs and every fixed-inventory gate
-pass, the automatic-proof packet owns terminal closeout: record remaining design
+pass, the separate terminal-closeout packet owns native closeout: record remaining design
 links as later milestones, verify the completion inventory and evidence, close
 the native goal as complete, and retire its heartbeat through the existing
 native lifecycle surfaces. This does not mark larger aggregate cards Done or

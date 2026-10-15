@@ -8,15 +8,20 @@ points: "5"
 labels: "cephalon, finite-slice, planning"
 parent: "5ea872c3-1db4-47c5-a63d-d49f99f79497"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
-dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "2f4421ee-2e48-405e-96d2-fee1a5597ff2", "8bcaa0f3-37ec-44e2-8f20-4798dfc4b795"]
+dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792024335129-0.01lqck16xitz0f91ldt1"
+write-id: "1792026381174-0.6apijoo1sw0lvadrzl"
 created_at: "2026-10-15T00:02:00.111Z"
 ---
 
 ## Context
 
-Initial Incoming planning input for the accepted finite B1/B2/B3 slice, split from existing story `5ea872c3-1db4-47c5-a63d-d49f99f79497`. This is not native readiness, implementation, or larger-story completion. Points are provisional for independent review; retain existing aggregate estimates as history and adopt fair aggregation before readiness.
+This native Incoming card is the integration parent for separately estimated
+existing obligations: deployment 3, served causal proof 5, and terminal closeout 2.
+Its recorded 5-point estimate remains provisional aggregate history and is not
+added to those execution allocations. Review and apply lawful aggregation/type/
+estimate treatment through Rheos before readiness; no implementation/adoption
+or larger-story completion is claimed by this split.
 
 ## Outcome
 
@@ -24,7 +29,17 @@ Verify one qualified automatic encounter field mood recall loop and close slice.
 
 ## Scope
 
-The named automatic packet completion boundary in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` applies together with its original selected milestone/story criteria and shared resource/receipt/authority rules. Other packets retain their own outputs; an earlier packet need not execute its successor to complete. Katamorph/Axxium/Clio retain canonical authority.
+Own the composed selected B1/B2/B3 acceptance below through these actual children:
+
+- Qualified deployment `885a4b34-74fb-4e4e-a42a-6dbb54d54829` (3 points).
+- Served causal proof `f503ae5a-e414-4da8-a8d4-328a7218bcf3` (5 points).
+- Terminal inventory/closeout `7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71` (2 points).
+
+Their exact predecessors and own completion boundaries are in
+../../notes/2026-10-14-cephalon-finite-delivery-plan.md. The separately estimated
+feedback task `deliver-outcome-attributed-once-only-graph-feedback` is a prerequisite. The parent supplies
+integration acceptance, not an extra execution estimate or a successor cycle.
+Katamorph/Axxium/Clio and native Rheos retain their authority.
 
 ## Non-goals
 
@@ -58,5 +73,7 @@ Initial Incoming planning-body authoring corrected the relative plan reference t
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
 
 Incoming planning review correction: served physical contrast varies exactly one admitted deposit/bond; all other recall inputs fixed, resulting physical states derived and independently read back. Distinct-encounter storage arms and pure ablation supply separate coverage. Body edited through supported initial Incoming Markdown authoring. No status, estimate, parent, epic or dependency change; qualified source review and lawful Ready admission remain required.
+
+Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
 
 ---
