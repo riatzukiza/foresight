@@ -1797,3 +1797,12 @@
   spore: none
   receipt-refs: root-status-record-current-serving-and-MiMo-protocol-canonical-RR-v1; PR354313350ac; K1c70; TRc0fe; livee866c017
   note: Real progress: two K test slices and provenance, PR390 planning publication/walkthrough/invitations, three canonical metadata writes/five records and clean TR source/provenance. MiMo route works through anonymous dynamic OpenCode; two actual attempts omitted required submission/assessment so gate correctly refused. No third inference, provider/account/key/prod effect. Use direct binary file capture for ZIPs, NUL paths and actual inner exits. Remaining CMS release/integration/DB-fenced migration/storage/locked staging/three images/live Spanish stay open. No spore or promotion.
+- ts: 2026-10-15T05:03:02.852399342Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Build the real combined CMS candidate and recover the actual Services admission path
+  p-efficiency: 0.70
+  p-friction: 0.43
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: f692bc18-36b0-4b7b-9d3d-e07809498e1d,9e6e9fe2,3c5c8bf3,16cd6066,ee6f82b1
+  note: Actual progress: protected PR354 merged after accepted free OpenCode MiMo submission; first combined19f build passes84Node+1943CLJS10741assertions and packages verified non-root backend/frontend images. Retain failed aux/TMP prerequisites and packaging warnings, source overlays and unmergedServices83 distinction. Frontend267pass41TODO8Routerwarnings/rawcoverage9.52%; isolatedKfive-refer cleanup improves full lint to7errors254warnings FAIL. Existing Servicesready3 owner and direct humanpersonal-fork/release-origin route recovered; no new policy or fabricated lost history. Planning closure is not universal runtime halt. Full source admission, migration/fence/crashstorage/genuineintegration/full1000mutation/lockedstaging3images/liveSpanish remain open. No production effects, rootpush, spore or promotion.

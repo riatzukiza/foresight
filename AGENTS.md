@@ -149,3 +149,7 @@ Cards live under `docs/agile/kanban`. Rheos events and receipts belong under
 Before troubleshooting OpenCode's free MiMo route, read the recovered
 [routing memory](docs/notes/opencode-free-mimo-routing.md). It links the earlier
 session and shared routing guidance; recorded model IDs are dated observations.
+
+Before resuming Website/CMS deployment, read the dated
+[deployment routing memory](docs/notes/openhax-website-cms-deployment-routing.md)
+for controller adoption, caller pins, planning-closure boundaries and evidence limits.
