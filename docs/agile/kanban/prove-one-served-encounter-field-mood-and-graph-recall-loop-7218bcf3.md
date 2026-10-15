@@ -10,7 +10,7 @@ parent: "2df3d26b-394a-436d-9e02-fe18a55132dd"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["885a4b34-74fb-4e4e-a42a-6dbb54d54829"]
 category: "kanban"
-write-id: "1792027336502-0.n6p4ua11zcqskpcfom7"
+write-id: "1792029435861-0.pt5et0ojklm0uowegok"
 created_at: "2026-10-15T01:03:01.313Z"
 ---
 
@@ -38,6 +38,8 @@ Complete larger stories, bypass Rheos/review/promotion gates, infer permission f
 4. Selected admitted encounter/appraisal must produce an expected nonbaseline mood-dimension change, persist/read back and load that exact resulting revision before attention/recall. A separate mood contrast varies only consumed persisted mood with physical/other recall inputs fixed.
 5. Replay valid histories, execute selected privacy/malformed/transport/budget negatives, inspect every public diagnostic field and verify a downstream observed outcome attributed to the recalled item before once-only feedback, with truthful counts/write outcomes/cost/latency. Never replay publication. Supply B1/B2/B3 evidence; terminal closure belongs to the successor.
 
+6. The selected positive outcome class is an artifact-plus-destination observation: independently read saved artifact bytes from actual persistent storage and validate its bound identity/hash/type; independently GET the actual configured destination post/message under its authorized read seam and verify account, immutable destination record ID and matching artifact/media identity or explicit artifact reference. Bind one concrete outcome ID to that destination record, artifact hash, action/effect and recalled item/turn IDs. Producer answers, internal choices, diagnostics, tool acknowledgements and inferred delivery are not accepted outcomes. Unavailable/missing/mismatched readback authorizes no reinforcement; retain actual failed/refused/unknown outcome receipts. Observe a natural action only, without replaying publication.
+
 ## Verification
 
 Native planning qualification/full-graph readiness precede implementation. Meaningful RED precedes owning domain/adapters GREEN and current source/consumer gates. After each finished job append exact source/configuration identities, commands, outcomes and evidence hashes to the existing owning receipt ledger; corrections append. Measure free space before full snapshots/installation; below20GiB allocate no extra full copy. At most3 expensive checkout/snapshot jobs across the goal; preserve unique source/refs/locks/evidence.
@@ -51,5 +53,7 @@ License: GPL-3.0-or-later.
 
 ---
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
+
+Incoming outcome correction for native4278174541: selected feedback positive requires an artifact-plus-destination observation with concrete outcome/destination/account/action/effect/recall identities, independent actual persistent artifact bytes/hash and authorized destination GET matching media/reference. Internal choices, diagnostics and producer acknowledgements cannot authorize reinforcement; no publication replay. No status/estimate/identity change.
 
 ---

@@ -1,6 +1,6 @@
 ---
 uuid: "8bcaa0f3-37ec-44e2-8f20-4798dfc4b795"
-title: "Persist and consume one separate bounded deterministic mood transition"
+title: "Integrate separate mood transition and runtime consumer outputs"
 status: "incoming"
 type: "task"
 priority: "P1"
@@ -8,9 +8,9 @@ points: "5"
 labels: "cephalon, finite-slice, planning"
 parent: "4cac8ac8-1a9f-441d-ac87-aa09f874eb57"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
-dependency: ["2f4421ee-2e48-405e-96d2-fee1a5597ff2"]
+dependency: ["5450c07d-1e90-4640-90e9-995f1e32d28a","7f7b6b5b-2df1-4e52-a167-8e631ca598e4"]
 category: "kanban"
-write-id: "1792026380414-0.37t6xbicazwkxrr181m"
+write-id: "1792029437240-0.758zyepz5bvhysaljrh"
 created_at: "2026-10-15T00:01:59.640Z"
 ---
 
@@ -20,7 +20,7 @@ Initial Incoming planning input for the accepted finite B1/B2/B3 slice, split fr
 
 ## Outcome
 
-Persist and consume one separate bounded deterministic mood transition.
+Integrate the independently qualified mood transition/persistence and runtime appraisal/consumer children; retain the recorded5 points as non-additive aggregate history pending lawful adoption.
 
 ## Scope
 
@@ -32,12 +32,9 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 ## Acceptance criteria
 
-1. Review separate schema/dimensions/ranges/uncertainty, baseline/decay, causal encounter/field/time inputs and transition/model/configuration/seed identity. Recovered diagnostic axes and keyword counts do not silently become the mood model.
-2. Prior/new state and causal IDs persist with revision checks and independent readback. A positive selected admitted encounter/appraisal fixture must produce the reviewed expected mood-dimension change; a no-op cannot satisfy it. Persist/read back and load that exact resulting revision at the actual attention/recall consumer; independently prepared contrast revisions do not substitute. Replay identical prior state, validated appraisal, elapsed time, config and seed without clocks/provider calls/external mutation and require identical mood state/trace with no duplicate persistence; duplicate/out-of-order/quiet time have explicit deterministic behavior. Selected conflict/failure tests cannot lose or duplicate changes.
-3. Missing/contradictory/malformed/late/provider-failed appraisal remains observable, with explicit validated fallback and no fabricated facts/state. Cadence/token/queue/timeout/retries are bounded independently of maker execution; permissions never expand.
-4. Load actual persisted revision at the owning turn-context/prepare! seam before character spec/hydration. A fixed non-mood-input contrast changes only persisted mood and its derived attention/read weights, changing bounded recall and recorded decision.
-5. Use the free existing route only when actually needed and report measured appraisal cost/latency; no new paid provider, runtime credentials or subjective-feeling claim.
-6. A finite quiet-time fixture starts from a nonbaseline persisted mood and positive elapsed time, with no message/appraisal/provider call. Produce the reviewed expected decayed state, persist it and independently read it back. Replay identical inputs identically; duplicate delivery cannot apply decay twice. Zero elapsed time retains its distinct no-op case.
+1. Child `7f7b6b5b-2df1-4e52-a167-8e631ca598e4` independently supplies the reviewed pure transition/schema, elapsed-time/quiet decay, revision/idempotence/replay and persistence/readback interface using validated appraisal data. It does not require runtime appraisal/provider handling or a production consumer to complete.
+2. Child `5450c07d-1e90-4640-90e9-995f1e32d28a` consumes that completed interface and the scoped graph interface, supplies bounded validated appraisal/failure handling and independently qualifies actual turn-context mood load/attention/recall composition. It completes before deployment and served observation.
+3. This parent integrates both qualified outputs without adding execution points. Original5 and earlier combined acceptance remain Git/native history; current child proposals3+3 require independent fair estimate/reuse/type/aggregation review through Rheos before Ready. It does not complete the larger original mood story or grant live B2 proof.
 
 ## Verification
 
@@ -60,5 +57,7 @@ Incoming planning refinement separates this packet completion from its later suc
 Incoming planning acceptance refinement for actual Codex20a findings: Finite no-message/no-appraisal positive-elapsed fixture from nonbaseline persisted mood must decay, persist/read back and replay identically without repeated decay or provider call; zero-time separate no-op. Existing selected acceptance, no new prerequisite. Body authoring only; retain Incoming/points/parent/epic/dependencies and qualified readiness gates.
 
 Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
+
+Incoming split for native4278174551: new transition/persistence child7f7b6b5b-2df1-4e52-a167-8e631ca598e4 proposed3 completes independently of appraisal/production consumer; new appraisal/actual-consumer child5450c07d-1e90-4640-90e9-995f1e32d28a proposed3 consumes it and scoped graph. This parent recorded5 is non-additive history; independently proposed45 execution total, not adopted increase/new behavior. Native title/dependencies updated, Incoming/points/identity/parent/epic preserved; fair aggregation/type/readiness review still required.
 
 ---

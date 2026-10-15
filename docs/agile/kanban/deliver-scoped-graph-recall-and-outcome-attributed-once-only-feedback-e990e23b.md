@@ -9,7 +9,7 @@ labels: "cephalon, finite-slice, planning"
 parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 category: "kanban"
-write-id: "1792028212760-0.5nctn57ss5fu4xaz37m"
+write-id: "1792029435464-0.o4eyfmt22bq2mzcxhl1"
 created_at: "2026-10-15T00:01:57.409Z"
 ---
 
@@ -33,7 +33,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 1. Qualify the owning OpenPlanner/Knoxx source and actual stored-principal resolver; missing/revoked/ambiguous/mismatched ownership denies, and payload-chosen role/org/credential/grant cannot supply authority.
 2. Reproduce k=6/fetch=18 with six denied leading candidates and an authorized seventh, using frozen query/corpus/order/quality/principal and bounded refill. Match actual automatic and API adapters without bypassing endpoint policy; retain a real positive stored-session fixture.
-3. Apply scope before seeds/expansion/caps/ranking/paths/compacted nodes/trails/forces and feedback. Positive/negative public and explicitly shared candidates obey their actual stored admission policy; labels, claims and inferred roles cannot create exceptions. Varying hidden data under fixed seed cannot change permitted outcomes. Inspect every public diagnostic field, including serialized outputs, for denied IDs/text, path text, scores, metadata and persisted-trail content; ID-only redaction or unchanged selection cannot pass privacy fixtures.
+3. Apply scope before seeds/expansion/caps/ranking/paths/compacted nodes/trails/forces and feedback. Positive/negative public and explicitly shared candidates obey their actual stored admission policy; labels, claims and inferred roles cannot create exceptions. In the paired hidden-data fixture vary only denied graph/node/trail/force inputs. Freeze every permitted input identically: actual stored principal/grants and policy/scope snapshot/revisions; authorized graph IDs/content/edges/embeddings/revisions and field/trails; mood/lens; query/corpus/index/order; seed, configuration and time/event schedule. Permitted output/trace equality must hold; fixed seed alone is insufficient, and a changed authorized input invalidates the isolation comparison. Inspect every public diagnostic field, including serialized outputs, for denied IDs/text, path text, scores, metadata and persisted-trail content; ID-only redaction or unchanged selection cannot pass privacy fixtures.
 4. Include an authorized graph neighbor beyond the vector seed with actual node/path/reason/graph-field revision and bounded context custody. Empty/denied/indexing-pending/malformed/transport/timeout/exhaustion stay distinct.
 5. Count actual :hits, separating raw candidates, quality survivors, authorized hits and prompt inclusion. Keep legacy context/privacy behavior.
 6. Complete the qualified scoped read interface independently of the later feedback writer. Read-only recall never reinforces. Hand the stable recall/inclusion evidence to separate feedback task `deliver-outcome-attributed-once-only-graph-feedback`; its implementation and uncertain-write recovery are not this graph interface completion prerequisites.
@@ -61,5 +61,7 @@ Incoming planning acceptance refinement for actual Codex20a findings: Positive/n
 Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
 
 Incoming planning correction for native Codex4278093864: Outcome now names only qualified scoped graph reads with authorized traversal, bounded context custody and truthful hit counts, matching the title and AC6. Separate outcome-feedback task retains its own completion; no graph-read successor prerequisite is introduced. Earlier native comment history is preserved. Status/points/parent/epic/dependencies unchanged; planning qualification and lawful readiness remain required.
+
+Incoming privacy correction for native4278174548: paired hidden-data fixtures freeze every permitted graph/content/embedding/revision/field/trail, stored principal/grants/policy/scope, mood/lens, query/corpus/index/order, seed/configuration/time/event input; vary only denied inputs. A fixed seed alone is insufficient. No status/estimate/identity change.
 
 ---

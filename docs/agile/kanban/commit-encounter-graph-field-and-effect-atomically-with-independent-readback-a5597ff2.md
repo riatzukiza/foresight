@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "a0176ec0-0616-4d7f-86e1-e6cf9a160a7a", "ba078119-482c-49dc-bd18-c2dfcaad9024"]
 category: "kanban"
-write-id: "1792025384187-0.uugpgyfltfdonvnj7m"
+write-id: "1792029434818-0.2832t6hbwlrbu8sarfz"
 created_at: "2026-10-15T00:01:59.171Z"
 ---
 
@@ -33,9 +33,9 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 ## Acceptance criteria
 
 1. Consume immutable authorized prior snapshot, admitted encounter and validated uncommitted candidate projection. Independently read and record actual persisted graph/field before-state contents, hashes and revisions before writing; require the candidate's frozen prior contents/hash to match, otherwise refuse. Expected revisions or an in-memory snapshot alone are not baseline proof. Atomically commit graph projection, physical field checkpoint and immutable unique effect receipt against those expected revisions; compare independently loaded after-state with the captured before-state to prove the attributable delta.
-2. Persist actual author/topic/reply relationships with visibility/source/UTC, canonical identity/content revisions and separate salience. Preserve absent/unknown relationships explicitly and commit only evidenced edges. Negative fixtures and independent readback verify no absent topic/reply/author edge was synthesized. Independently read relationships, graph/field pair and effect back; acknowledgement/HTTP200/map alone is insufficient.
+2. Persist actual author/topic/reply relationships with visibility/source/UTC, canonical identity/content revisions and separate salience. For existing unchanged memories, freeze actual canonical content bytes and canonical content-embedding bytes/revisions before writing; independently read them back afterward and require byte/embedding equality while only separately versioned salience/field state changes. Do not rewrite or regenerate embeddings of unchanged content. A newly admitted encounter may create its explicitly bound canonical record once under the admission contract; that does not permit rewriting existing unchanged memories. Preserve absent/unknown relationships explicitly and commit only evidenced edges. Negative fixtures and independent readback verify no absent topic/reply/author edge was synthesized. Independently read relationships, graph/field pair and effect back; acknowledgement/HTTP200/map alone is insufficient.
 3. Unsupported transactions refuse before either update. Precommit failure persists neither half; acknowledged/uncertain commits independently recover a complete matching transaction without redepositing.
-4. Absence permits same-identity retry under same expected revisions; identity/hash/scope/revision conflict refuses. Partial or inconsistent recovered components quarantine. Duplicate admission/replay cannot multiply graph, field or feedback.
+4. Absence permits same-identity retry under same expected revisions; identity/hash/scope/revision conflict refuses. Partial or inconsistent recovered components quarantine. Duplicate admission/replay cannot multiply graph, field or effect persistence. Feedback idempotence belongs to the independent feedback and served-proof cards; their implementation is not a completion prerequisite here.
 5. Execute each lawful comparison arm independently from the same frozen prior state with its own matching effect/history/readback; no invalid ablation buffer crosses production admission or restore.
 
 ## Verification
@@ -59,5 +59,7 @@ Incoming planning refinement separates this packet completion from its later suc
 Incoming planning review correction: source relationship evidence may be absent or unknown. Preserve that state explicitly; negative fixtures and independent projection/readback must forbid fabricated author/topic/reply edges. Body edited through supported initial Incoming Markdown authoring. No status, estimate, parent, epic or dependency change; qualified source review and lawful Ready admission remain required.
 
 Incoming planning acceptance refinement for actual Codex20a findings: Independently capture actual persisted graph/field before-state contents/hash/revision before write; require frozen candidate baseline match, refuse mismatch, then compare independent after-state delta. Existing selected acceptance, no new prerequisite. Body authoring only; retain Incoming/points/parent/epic/dependencies and qualified readiness gates.
+
+Incoming scope correction for native4278174537/4557: atomic completion/replay covers graph/field/effect persistence, not independent feedback idempotence. Actual before/after canonical content and content-embedding bytes/revisions of unchanged memories must match; only separate salience/field changes. New encounter creation stays admission-bound. No status/estimate/identity change.
 
 ---
