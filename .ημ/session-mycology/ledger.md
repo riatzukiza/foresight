@@ -1770,3 +1770,12 @@
   spore: none
   receipt-refs: be2ff7c3d3adea1b08b8a9aac1eb43f6ca833252
   note: Make authoritative progress through concrete source, exact terminal gates and native reply readbacks. Separate known source checkout HEAD from protected merge/base coordinates. Existing generic board setters being callable does not prove fresh unique/raw source custody; retain real operational prerequisites, and keep private source greens distinct from completed CMS rollout. No spore or promotion.
+- ts: 2026-10-15T02:22:37.254449993Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Website-CMS current serving and real pre-model CI blocker
+  p-efficiency: 0.62
+  p-friction: 0.79
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-deployment-status-and-real-premodel-failure-20261015T0220Z-v1/canonical-receipt-event.edn
+  note: Website live at21:20CDT; newCMS unshipped. Actual K4testpath localGREEN1918/9921; fullprimarylint7/280FAIL and Mongo testavailability limit. SixactualETA352planningFixed plusFaggregateP2; freshETA352 elevenunresolved. PR353 real scopedworkflow passedAppreadtoken+compiles thenmissingyaml beforeanymodel; tinycwdpatchprivate/exactownerbreakdown. AnonymousdynamicOpenCode memorypreserved. Keep separatequalifiedchanges distinctfromcombinedrelease, preservefailures/provenance, neverinfer keys/approval/deployment. No new spore/promotion orrootpush.
