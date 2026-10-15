@@ -9,7 +9,7 @@ labels: "cephalon, finite-slice, planning"
 parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 category: "kanban"
-write-id: "1792026379546-0.13todwrb8zay5ts2dr"
+write-id: "1792028212760-0.5nctn57ss5fu4xaz37m"
 created_at: "2026-10-15T00:01:57.409Z"
 ---
 
@@ -19,7 +19,7 @@ Initial Incoming planning input for the accepted finite B1/B2/B3 slice, split fr
 
 ## Outcome
 
-Deliver scoped graph recall and outcome-attributed once-only feedback.
+Deliver a qualified scoped graph read interface with authorized traversal, bounded context custody and truthful hit counts.
 
 ## Scope
 
@@ -59,5 +59,7 @@ Incoming planning refinement separates this packet completion from its later suc
 Incoming planning acceptance refinement for actual Codex20a findings: Positive/negative public/shared stored admission policy; inspect all public diagnostic fields for denied IDs/path/scores/metadata/trail content, not only IDs or selected outcome. Existing selected acceptance, no new prerequisite. Body authoring only; retain Incoming/points/parent/epic/dependencies and qualified readiness gates.
 
 Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
+
+Incoming planning correction for native Codex4278093864: Outcome now names only qualified scoped graph reads with authorized traversal, bounded context custody and truthful hit counts, matching the title and AC6. Separate outcome-feedback task retains its own completion; no graph-read successor prerequisite is introduced. Earlier native comment history is preserved. Status/points/parent/epic/dependencies unchanged; planning qualification and lawful readiness remain required.
 
 ---
