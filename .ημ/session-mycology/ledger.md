@@ -1842,3 +1842,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#59b66bb4-d636-4970-b383-a5c17b05ffe4
   note: Website deployed and oldKnoxx healthy at082304UTC; replacementCMS private. Real Spanish candidate retained with paragraph collapse and derived omitted sentence. Source Caddy filecap fix locally qualifies with caps0/nonroot/NNP/RO; preserve our0600 public-config prep failure and mode-bound correction. Normal UIlogin200/CMS screenshot real, translation step failed; independent review held an unexecuted diagnostic for actual timing/error-containment fixes. Four native planning findings fixed; scalar Rheos ANDfilter proved; two conversations and source implementation remain. Finite runner a973 independently reviewed/329tests/allassessment locally qualified and custody rehashed109paths; no publication/adoption. Keep anonymous dynamic OpenCode MiMo, exact native reviewer identities and genuine release/data/approval/publication checks. No production effect, spore or promotion.
+- ts: 2026-10-15T10:03:09.079221524Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Website and CMS deployment status: fresh live check and private Spanish review view
+  p-efficiency: 0.62
+  p-friction: 0.76
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#0bac8253-588e-4f59-881b-bdb5194cd836
+  note: Website healthy; replacementCMS private and incomplete. Preserve actual paragraph/content and locale failures; separate planning/source/tests from accepted rollout. Native MiMo failure is one oversized grep record, not credentials; dynamic anonymous OpenCode routing unchanged. Canonical policy laws pass but CLI120s timeout remains unavailable. Existing migration/fence/durablepublication/fullqualification/staging/publicSpanish requirements remain. No spore promotion.
