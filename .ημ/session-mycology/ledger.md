@@ -521,3 +521,12 @@
   spore: none
   receipt-refs: 641b62d1-9ebd-466b-b5b9-87adab3e9345
   note: Planning only at source 012cd01ab4c7f92731897738d7774e8831c78dcb. Preserve the incompatible F40 records and original failed gate; a valid new flat record cannot repair an invalid old suffix. Existing accepted Foresight envelope preflight and secure writer appended one provenance record, with no native Receipt River wrapper. Native Rheos owns the create, transitions and comment; its empty dependency serialization is retained as an upstream limitation. Read-only unsupported edit-help returned1 without dependent effects. Exact canonical validator pin/classpath qualification remains future implementation acceptance; no copied validator, pin advance or evidence credit. Portable candidate0 only; old native-SM null-cwd failure was not retried and no spore was created.
+- ts: 2026-10-15T18:58:38.925549800Z
+  session: /home/err/.codex/worktrees/native-observation-plan/foresight
+  task: Implement F41 native observation consumer with exact canonical source and zero evidence credit
+  p-efficiency: 0.82
+  p-friction: 0.34
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 7fb37402-299a-4c8c-9013-d1f74f8db77c,79d1010e265c3a72431c525f645e01664a7d6b4d
+  note: Preserve producer bytes and strict evidence law. Invoke actual source-bound validator before consumer constraints; require isolated loader identity and refuse duplicates. Keep true RED, syntax/fixture corrections and all captures. Current local14 gates qualified; hosted adoption and fresh code review remain pending. Native-SM old failure not retried; no spore or public/runtime effect.
