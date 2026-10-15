@@ -57,6 +57,11 @@ Canonical cell traversal/prune acceptance: traverse the union of prior and curre
 
 Require independently bound reviewed friction coefficients for presence, nexus and daimoi; none may inherit a shared/default coefficient. Positive isolated fixtures use three distinct reviewed gamma values, fixed elapsed schedule and initial velocity with other forces/contact/caps/threshold effects neutralized, checking each kind against its own elapsed exponential and mechanics/calibration revision. Include the moving daimoi case explicitly, a valid zero-friction case, repeated/quiet/split schedules and wrong/default/shared coefficient negatives. Retain the mechanics' required differences without inventing a new ordering from static thresholds. All operation-specific cap domains are validated before generic radial shortcuts: wind and cell caps are strictly positive; only kind speed caps permit zero. Zero invalid wind/cell calibration refuses unchanged state even for zero vectors; valid zero speed returns zero before norm arithmetic.
 
+## Existing mechanics and canonical ordering parity
+
+The owning field law enforces gamma-presence > gamma-nexus > gamma-daimoi >= 0 independently of static-threshold ordering. Equal/reversed/negative coefficients refuse unchanged state. Canonical ID/tuple ordering consumes the ABI and the field-owned finite-order-work/1 fixed trie/charging contract; host adaptive-sort comparison counts cannot make equivalent insertion orders pass different work limits. Source RED/GREEN and complete calibration remain separate future obligations, no production default is introduced.
+
+
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 

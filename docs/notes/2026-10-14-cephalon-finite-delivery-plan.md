@@ -57,7 +57,7 @@ aggregation/type adoption before Ready; these numbers grant no admission.
 
 ## Canonical Incoming packet identities
 
-The current seventeen described Incoming records comprise fourteen selected execution packets and the retained field, mood and automatic aggregate parents. The original fourteen-card creation remains history; calibration is newly authored initial Markdown and field is a pre-existing containing record. New cards are initial planning inputs;
+The current eighteen Incoming records comprise fourteen selected execution packets, the retained field, mood and automatic aggregate parents, and the separate three-point selection predecessor `b5f2ba9e-8d67-4c73-9919-e275983aca87`. Selection is outside the fourteen-packet execution total, and its native identity/relationships remain unchanged. The original fourteen-card creation remains history; calibration is newly authored initial Markdown and field is a pre-existing containing record. New cards are initial planning inputs;
 no Ready/Done or implementation claim follows. The actual native `uuid` field
 is canonical identity: feedback's native default is the explicit slug-valued
 identity shown below; other new children used standard generated UUID inputs.
@@ -76,7 +76,7 @@ later work by subtracting estimates.
 | source-rights | `5ce9c975-1d30-4679-b607-e2dcd76f8192` | 2 | `b5f2ba9e-8d67-4c73-9919-e275983aca87` |
 | abi | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` | 3 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `b5f2ba9e-8d67-4c73-9919-e275983aca87`, `5ce9c975-1d30-4679-b607-e2dcd76f8192` |
 | forces | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` | 5 | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` |
-| contact | `ba078119-482c-49dc-bd18-c2dfcaad9024` | 5 | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` |
+| contact | `ba078119-482c-49dc-bd18-c2dfcaad9024` | 8 | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` |
 | calibration | `4f4c7cf6-9be8-47b9-b03a-be235c4dd519` | 8 | `ba078119-482c-49dc-bd18-c2dfcaad9024` |
 | atomic | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` | 8 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `ba078119-482c-49dc-bd18-c2dfcaad9024` |
 | mood-state | `7f7b6b5b-2df1-4e52-a167-8e631ca598e4` | 3 | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` |
@@ -223,7 +223,15 @@ B1/B2/B3 chain remains mandatory across their composition.
 3. **Outcome feedback:** consume the completed scoped read interface. Require
    a verified observed downstream outcome and its attribution to the included
    recalled item under current stored authority and stable recall/outcome/effect
-   identity. Inclusion identifies the item and cannot authorize reinforcement;
+   identity. Require the owning `recalled-item-contribution/1` witness: an
+   independently captured actual consumed-input/choice-to-artifact path through
+   a qualified transformation, or its bounded matched causal intervention,
+   bound to the exact item/content/graph revision, turn, effect and actual
+   artifact/destination readback. Test unused recalled M with unrelated successful
+   A, forged M labels, ignored input metadata, wrong revisions/turn/effect and
+   valid contribution with failed destination readback: none may reinforce.
+   Model assertions, prompt presence and copied IDs cannot supply this witness.
+   Inclusion identifies the item and cannot authorize reinforcement;
    retrieval count alone is not usefulness. Inclusion with missing/unverified
    outcome must produce no reinforcement mutation; explicit refusal/audit receipts
    remain required.
@@ -240,6 +248,10 @@ B1/B2/B3 chain remains mandatory across their composition.
    inputs refuse unchanged state. It supplies tested representations/validation/
    time interfaces; implementing force, friction, contact, inclusion or storage
    is explicitly not required before this packet completes.
+   Bind the actual compiled-artifact SHA256, qualified build identity and launch-
+   profile digest into the producing-artifact/checkpoint contract. Independently
+   verify all three before restore/replay; missing, changed or byte-different
+   executables carrying copied revision labels must refuse unchanged state.
    The ABI also defines exact representations/comparison for the owning
    contact-eligibility-matrix-revision and eligible-ordered-contact-pairs fields.
    Shape/comparison fixtures belong here; actual enumeration and no-contact
@@ -267,6 +279,20 @@ B1/B2/B3 chain remains mandatory across their composition.
    no-contact pairs. Cover every matrix row and both eligible input orders.
    Altering only that revision or omitting/reordering a separated eligible pair
    must fail exact replay even when state and contact observations match.
+   Consume the field owner's revisioned `finite-contact-inclusion/1` fold;
+   deterministic bounded horizon, repeated-recipient deduplication, canonical
+   order, reasons and exact/one-over refusal fixtures are part of this packet.
+   The already allocated revocation-tail rebuild is mandatory for Done:
+   `finite-revocation-rebuild/2` limits 128 canonical Clio events, 1048576 tail
+   UTF8 bytes, 64 quanta and 67108864 whole-rebuild work units, with the owning
+   finite-character-load/2 state/input/ID/string/trace caps. Before every
+   operation charge preflight and the entire rebuild without resets. Exact and
+   one-over tests independently cover every limit, multibyte IDs and trace bytes.
+   Exhaustion returns refused/revocation-rebuild-budget-exceeded with identical
+   prior state; the outer 2000 ms timeout yields no accepted replacement.
+   Independently read quarantine/no-causal-use until a successful authorized
+   complete rebuild. Missing/ambiguous history is distinct; expiry, partial
+   replay or the earlier five-point contact evidence cannot satisfy this exit.
 8. **Complete finite calibration/workload qualification:** consume completed
    ABI/forces/contact kernel source and reviewed mechanics inputs in task
    `4f4c7cf6-9be8-47b9-b03a-be235c4dd519`. Independently inventory/bind every
@@ -351,7 +377,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    one event owner and disabled cloud runtime. This packet supplies served
    composition evidence before observations, without requiring its successor.
 13. **Served automatic causal proof:** consume qualified deployment, then observe a natural native-clock maker turn using actual stored
-   principal and independent graph/field/effect/mood readbacks. In the same live
+   principal and independent graph/field/effect/mood readbacks. Bind the mood
+   transition trace, persisted mood revision and actually consumed revision to
+   the selected atomic field revision/checkpoint, encounter and causal effect.
+   Independently follow that same field identity through transition, persistence
+   and the actual consumer; a valid mood from unrelated history B cannot be
+   combined with B1 field history A. Missing or mismatched links fail B2 and
+   terminal inventory even when each separate readback is valid. In the same live
    run capture visibility-safe eligible/denied candidate IDs/reasons, seed IDs,
    exact authorized traversed edge/node path, traversal revision and actual
    prompt-included neighbor ID beyond the semantic seed. The actual provider
@@ -594,3 +626,8 @@ The four Incoming re-estimations select the reviewer's explicit re-estimate opti
 ## Current contact and estimate correction — 2026-10-15
 
 Native Incoming contact ba078119-482c-49dc-bd18-c2dfcaad9024 now proposes 8 points: contact/inclusion/replay source qualification 5 plus the already required bounded revocation-tail rebuild 3. Each has a separate artifact and failure exit, and both are required for Done. Calibration remains 8 and its active 8sp label and contact handoff agree. The same fourteen execution packets now propose 65; earlier 62, 50 and 48 allocations remain historical, and containing field/mood/automatic estimates remain excluded. No new behavior or dependency is added. Portable .cljc mood schema/transition and normalized failure-precedence law precede outer adapters. Contact step identity consumes the revision-bound ABI quantum; no separately assumed contact constant overrides that selection. Historical native notes remain byte-identical; later readable native corrections explicitly supersede their stale allocations. No native Ready, aggregate adoption, executed kernel or live B1/B2/B3 is claimed.
+
+
+## Mandatory checklist parity after current native review — 2026-10-15
+
+The checklist above consumes the owning contracts in full: recalled-item contribution before feedback, exact selected-field-to-consumed-mood custody, actual producing-artifact/build/launch identity before restore, and the complete bounded revocation-tail rebuild before contact Done. The canonical contact row is 8; fourteen selected execution packets propose 65, containing parents remain excluded, and the separate selection predecessor makes the native roster 18. No estimate adoption, Ready, implementation or live proof follows. Earlier append-only receipts/comments remain historical; native parent deployment 5 and calibration 8sp were already corrected in 24d and are independently rechecked before settlement.

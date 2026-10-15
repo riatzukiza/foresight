@@ -68,6 +68,11 @@ The versioned finite revocation profile `finite-revocation-rebuild/2` admits at 
 
 The additional 3 points expose already required work, without changing scope or dependency identities: bounded typed-envelope decoding and pure replay under all four independent limits, exact/one-over and whole-rebuild work accounting, and the outer timeout/quarantine/no-causal-use adapter. Produce independently reviewable replay/boundary evidence and quarantine readback; all must pass together with the 5-point contact source qualification before this 8-point packet is Done. Neither earlier contact fixtures nor elapsed expiry qualifies a revocation rebuild. Split advance, catch-up and restored replay consume the same ABI-selected quantum and bind its revision; 10,000 microseconds remains only a qualified selection or explicitly labeled fixture value, never an independent contact-card constant.
 
+## Owning contact fold qualification
+
+Consume the field owner's full `finite-contact-inclusion/1` law and fixture matrix in `docs/plans/cephalon-finite-field-coupling.edn`: exact bound request/daimoi, principal/scope/authority, graph/field history and explicit start/end horizon; ABI-bounded whole-horizon quanta; canonical first-contact order and exact memory-ID deduplication with actual nexus/content binding and independently inspectable reasons. Missing/denied/conflicting memory bindings, overflow or mismatched horizon refuse the whole unchanged result. Presence-only/other-request contacts cannot include memory. Qualify multi-memory/repeated-recipient/split/catch-up/restored and exact/one-over cases. This is the existing 8-point contact/rebuild packet's source contract, without atomic-storage or served-proof predecessor cycles; actual solver/tests remain future work.
+
+
 
 
 ---
