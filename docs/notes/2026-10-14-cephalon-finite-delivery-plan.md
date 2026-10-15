@@ -210,8 +210,15 @@ B1/B2/B3 chain remains mandatory across their composition.
    An authorized edge reaches a neighbor beyond the seed with actual path and
    bounded context custody. Empty/denied/indexing-pending/malformed/transport/
    timeout/exhaustion remain distinct. Count :hits separately as raw/quality/
-   authorized/included; preserve legacy/privacy controls and no public private-ID
-   leak. Read-only retrieval is nonreinforcing. No later feedback writer or
+   authorized/included. Independently read the owning persisted hit/event records
+   for the exact recall/turn, stored principal/scope and revision; require the
+   reported completed memory-event count to equal the persisted hit count.
+   Payload categories, HTTP200, acknowledgement and planned operations do not
+   prove persistence. Dropped/double-applied/failed/partial/uncertain/unavailable
+   or mismatched readbacks cannot attest successful equality; zero differs from
+   unknown. Reuse the qualified owning stored-hit/event seam, legacy/privacy
+   controls and no public private-ID leak. Read-only retrieval is nonreinforcing.
+   No later feedback writer or
    live-maker proof is required to complete these qualified read fixtures.
 3. **Outcome feedback:** consume the completed scoped read interface. Require
    a verified observed downstream outcome and its attribution to the included

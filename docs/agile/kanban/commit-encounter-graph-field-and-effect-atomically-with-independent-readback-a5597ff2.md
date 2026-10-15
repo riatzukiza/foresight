@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "a0176ec0-0616-4d7f-86e1-e6cf9a160a7a", "ba078119-482c-49dc-bd18-c2dfcaad9024"]
 category: "kanban"
-write-id: "1792037566018-0.hcui5j7mlm9hk3wq5o"
+write-id: "1792042061888-0.54huhfx99hli6z7hm9c"
 created_at: "2026-10-15T00:01:59.171Z"
 ---
 
@@ -87,5 +87,7 @@ Verified planning correction from review5527377626: Immediately before entering 
 Verified current planning correction: Atomic authorization consumes an Axxium-owned current decision and its policy/grant version through the qualified Axxium interface, bound to actual stored principal, action, resource and permitted scope. Validate that Axxium decision/version through commit under its qualified admission/fencing seam, not just an OpenPlanner cached grants/policy snapshot or a locally minted version. Reload actual owner inputs and refuse revocation/mismatch/unsupported commit protection before any graph/field/effect component commits. Use the actual qualified Axxium shape/field names at the adapter; this declaration invents no competing authorization implementation. A fixture with stale local grants but current Axxium denial must write nothing.
 
 Finding4278703909: graph, physical field and immutable effect receipt are all transaction components. Capture prior receipt absence/exact bytes; test faults after each staged component in all orderings. All3 prior contents/revisions remain unchanged, with no orphan success receipt/dedup reservation/outward effect. Separate audit append has no success credit; uncertain commits need complete3component independent readback/quarantine.
+
+Owningfieldsource4279316004 refinement choosesexactunavailableembeddingoutcomes:missing/pendingrefused/distinctcode,productionfailedfailed/actualcause,bindingmismatchrefused. Allretainpriorgraph/field/effect/existingenvelope/cursor; no newincomplete/retrystate. Laterseparatelyauthorizedboundedattempt reusesadmittedcontent/effectidentity/freshauthority/validembedding; unchangedonce-onlyatomicboundary. Field4279315993adds exactmatrixrevision/eligibleorderedpairs toABIreplay,includingseparatednopcontactpairs. Parserdocs4279315990nowmatchisolatedjob/disabledprivatemirror. Planningonly,notimplementedtests/nativeReady.
 
 ---
