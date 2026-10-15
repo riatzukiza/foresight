@@ -10,7 +10,7 @@ parent: "4cac8ac8-1a9f-441d-ac87-aa09f874eb57"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["5450c07d-1e90-4640-90e9-995f1e32d28a","7f7b6b5b-2df1-4e52-a167-8e631ca598e4"]
 category: "kanban"
-write-id: "1792029437240-0.758zyepz5bvhysaljrh"
+write-id: "1792084976705-0.i58axn9fghdm3ytkk7"
 created_at: "2026-10-15T00:01:59.640Z"
 ---
 
@@ -34,7 +34,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 1. Child `7f7b6b5b-2df1-4e52-a167-8e631ca598e4` independently supplies the reviewed pure transition/schema, elapsed-time/quiet decay, revision/idempotence/replay and persistence/readback interface using validated appraisal data. It does not require runtime appraisal/provider handling or a production consumer to complete.
 2. Child `5450c07d-1e90-4640-90e9-995f1e32d28a` consumes that completed interface and the scoped graph interface, supplies bounded validated appraisal/failure handling and independently qualifies actual turn-context mood load/attention/recall composition. It completes before deployment and served observation.
-3. This parent integrates both qualified outputs without adding execution points. Original5 and earlier combined acceptance remain Git/native history; current child proposals3+3 require independent fair estimate/reuse/type/aggregation review through Rheos before Ready. It does not complete the larger original mood story or grant live B2 proof.
+3. This parent integrates both qualified outputs without adding execution points. Original5 and earlier combined acceptance remain Git/native history; current child proposals3+5=8 (transition3 and appraisal/actual-consumer5; earlier3+3 is history) require independent fair estimate/reuse/type/aggregation review through Rheos before Ready. It does not complete the larger original mood story or grant live B2 proof.
 
 ## Verification
 
@@ -59,5 +59,7 @@ Incoming planning acceptance refinement for actual Codex20a findings: Finite no-
 Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
 
 Incoming split for native4278174551: new transition/persistence child7f7b6b5b-2df1-4e52-a167-8e631ca598e4 proposed3 completes independently of appraisal/production consumer; new appraisal/actual-consumer child5450c07d-1e90-4640-90e9-995f1e32d28a proposed3 consumes it and scoped graph. This parent recorded5 is non-additive history; independently proposed45 execution total, not adopted increase/new behavior. Native title/dependencies updated, Incoming/points/identity/parent/epic preserved; fair aggregation/type/readiness review still required.
+
+Actual Codex4285944303 corrected the operative allocation to transition3 + appraisal/actual-consumer5 =8, matching unchanged native child points3/5 and current75 table. Parent recorded5 and original3+3 comments remain non-additive history. Shared current summary agrees; no point/type/status/identity/relationship/estimate adoption or new scope. All prior native sections/events retained.
 
 ---

@@ -9,7 +9,7 @@ parent: "8bcaa0f3-37ec-44e2-8f20-4798dfc4b795"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "7f7b6b5b-2df1-4e52-a167-8e631ca598e4"]
 category: "kanban"
-write-id: "1792077137045-0.3tz90y5n0j4sv4eykmk"
+write-id: "1792084977252-0.gz7fahf6iij5yr5x60u"
 created_at: "2026-10-15T01:54:47.744Z"
 labels: "cephalon, finite-slice, planning"
 ---
@@ -33,7 +33,7 @@ Connect the qualified mood transition/persistence interface to bounded appraisal
 ## Acceptance criteria
 
 1. Consume completed typed transition/persistence and scoped graph interfaces. Load actual stored authority, then independently load the accepted mood at the owning turn-context/prepare! seam before character spec/hydration. Refresh or refuse incompatible encounter/graph/field/mood bindings after authority awaits before any causal influence or prompt disclosure.
-2. Validate appraisal output as untrusted input. Missing/contradictory/malformed/late/provider-failed appraisal is observable, with explicit reviewed validated fallback and no fabricated facts/state. Independently bound cadence/tokens/queue/timeout/retries; permissions never expand. Use the existing free route only when needed and measure real cost/latency; no new paid provider or runtime credentials.
+2. Validate appraisal output as untrusted input. Missing/contradictory/malformed/late/provider-failed appraisal is observable, with explicit reviewed validated fallback and no fabricated facts/state. Use frozen candidate profile cephalon-appraisal-finite/2026-10-15-candidate-v1 at ../../notes/2026-10-14-cephalon-finite-delivery-plan.md#frozen-appraisal-profile-source-candidate-v1. Its numeric cadence, complete input/output token and byte, active/queue, deadline, attempt and zero-paid-cost limits must be materialized through the qualified owning configuration shape and pinned by source/profile hash before the first qualification execution. Refuse an unbound/missing/mismatched profile; never select limits after measurements. Permissions never expand. Use the existing free route only when needed and measure real cost/latency; no new paid provider or runtime credentials.
 3. Feed one positive admitted encounter/appraisal through the qualified state interface and load that exact persisted resulting revision at the actual attention/recall seam. An unrelated prepared contrast revision or printed adjective cannot substitute for encounter-to-consumption custody.
 4. A fixed non-mood-input contrast varies only valid persisted mood and its derived reviewed bounded attention/read weights. It changes bounded recall/recorded decision while all physical/graph/authority/query/order/time/configuration inputs remain fixed. No field-layer/circuit mapping is accepted merely by shared names.
 5. Source/adapter qualification and instrumented consumer fixtures complete this packet without live deployment, publication or the later served proof. Hand exact revision/mapping/trace and actual prompt consumer evidence to those successors; B2 live proof still requires their natural automatic observation.
@@ -45,6 +45,10 @@ The maker's permission to read private or explicitly shared memory is not permis
 ## Revised execution estimate and distinct exits
 
 For native finding 4284132939, re-estimate this existing packet from 3 to 5 provisional points before Ready: bounded provider appraisal validation/fallback/cadence/token/queue/timeout/retry qualification and measured cost/latency 2; actual consumer authority/revision loading, exact persisted mood custody, fixed-other-input mood contrast and protected prompt evidence 3. Each seam emits its own qualified artifact and failed/refused/unknown exit. The consumer consumes only a qualified appraisal/fallback contract and qualified persisted transition; provider success cannot substitute for actual consumer evidence. Both seams must pass before this card Done and later deployment; earlier 3-point comments are history. These price existing obligations and preserve exact identities/dependencies.
+
+## Frozen qualification limits
+
+The shared profile is the single proposed value set for this packet. Required exact/one-over, cadence-boundary, busy/queue/retry, unknown/nonzero pricing and late-result controls must prove provider admission refuses before a forbidden attempt and that only the already reviewed validated fallback may proceed with its actual cause. Record actual cost/latency and profile/model/tokenizer/pricing/source identities under the existing evidence-audience rules. Model queue limits do not drop admitted encounters or replace qualified Clio ordering/mood once-only commit. A timeout never releases uncertain active ownership; no obsolete provider candidate may rebase, persist, reinforce or publish. This is a prospective config/guard qualification, not installed limits or runtime/provider changes.
 
 ## Verification
 
@@ -70,5 +74,7 @@ Finding4278629793: actual consumed mood trace field binding must equal independe
 Finding4279880343: operative protected-evidence paragraph now exactly matches served-proof rule: separate audience classification of prompt/digest/trace/linkage, explicit derived-disclosure release, otherwise protected hash/matching proof and only separately authorized safe opaque attestation. Known-template confirmation-oracle negative; no publicdigest inferredsafe fromhashing/makeraccess. Earlier native comment remains history.
 
 Finding4284132939: choose the explicit re-estimate option: proposed 5 = provider appraisal/fallback/budget and measured cost/latency qualification 2 + actual consumer authority/revision loading, mood contrast and protected prompt evidence 3. Retain distinct artifacts and failed/refused/unknown exits; require both for Done. Existing Incoming identity/relationships unchanged, previous 3 historical; no new behavior or Ready.
+
+Actual Codex4285944320 concretized the already-required finite appraisal limits in single shared candidate profile cephalon-appraisal-finite/2026-10-15-candidate-v1, frozen by owning typed config/source/profile hash before qualification. Candidate minimum60000ms start cadence, completeinput4096tokens/16384bytes, output256tokens/8192bytes, active1/waiting0, attempt1/retry0, phase10000ms, additionalmodelcharge0USD/qualified existingfree route. Independent exact/over, unknown provenance/pricing, late response and uncertain ownership controls required; existing validated fallback/order/once-commit only, no new clock/provider/credential/paid/runtime/task or current implementation. Original Incoming5/relations/history preserved; parameters remain unadopted and no future tests claimed executed.
 
 ---

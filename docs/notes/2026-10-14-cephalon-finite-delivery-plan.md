@@ -49,9 +49,10 @@ to their allocated execution packets or derive remainders by subtraction.
 
 These fourteen provisional execution estimates now total 75 after the explicit Incoming re-estimations below; the previous 65, 62 and 50 remain history. The separately proposed2-point source-rights packet exposes existing required work formerly hidden in the earlier ABI3 allocation; it adds no new character behavior or prerequisite scope. The prior thirteen-packet48 estimate remains history. The earlier twelve-packet45, eleven-packet
 44-point and eight-packet36-point proposals remain estimate history. The newly
-separated existing mood work is independently proposed3+3 rather than one5-point
-execution packet; that is a provisional estimate refinement, not new behavior
-or an adopted increase. The initial separate3-point calibration estimate is history; the current8-point re-estimate accounts for source enforcement, workload qualification and complete calibration, and it adds no character behavior or prerequisite scope. The original field parent retains8, and mood/automatic parents each retain5, as non-additive aggregate history. Native Rheos classifies the Incoming field parent through category=aggregate-history and an explicit non-additive comment, preserving its8, type, relationships and broader obligations. Conditional epic-type promotion refused before mutation because current children bind the character epic; no graph/type or aggregate-points adoption is claimed. Never add these three containing estimates to the selected child execution total. Selection remains a separate3-point
+separated existing mood work is currently proposed3+5=8 (transition3 and
+appraisal/actual-consumer5), with earlier3+3 and one5-point allocations retained
+as history; this is a provisional estimate refinement, not new behavior or an
+adopted increase. The initial separate3-point calibration estimate is history; the current8-point re-estimate accounts for source enforcement, workload qualification and complete calibration, and it adds no character behavior or prerequisite scope. The original field parent retains8, and mood/automatic parents each retain5, as non-additive aggregate history. Native Rheos classifies the Incoming field parent through category=aggregate-history and an explicit non-additive comment, preserving its8, type, relationships and broader obligations. Conditional epic-type promotion refused before mutation because current children bind the character epic; no graph/type or aggregate-points adoption is claimed. Never add these three containing estimates to the selected child execution total. Selection remains a separate3-point
 predecessor. Independent review must assess fair estimates/reuse and native
 aggregation/type adoption before Ready; these numbers grant no admission.
 
@@ -387,7 +388,9 @@ alternate board validator or completion surface.
 11. **Bounded appraisal/actual consumer:** revised provisional 5 = appraisal/fallback/budget qualification 2 plus actual consumer/contrast/protected-evidence integration 3; retain separate artifacts/failure exits and require both before Done. Consume the completed typed mood and
    scoped graph interfaces. Validate untrusted appraisal, observable missing/
    contradictory/malformed/late/provider failures and reviewed validated fallback.
-   Bound cadence/tokens/queue/timeout/retries independently of maker execution,
+   Freeze and bind the numeric cephalon-appraisal-finite/2026-10-15-candidate-v1
+   profile below before qualification; its exact/one-over controls bound
+   cadence/tokens/queue/timeout/retries independently of maker execution,
    preserve permissions and use the existing free route only when needed with
    measured cost/latency. Load actual mood after stored authority resolution at
    real turn-context/prepare! before character projection/hydration. Carry one
@@ -682,7 +685,7 @@ The checklist above consumes the owning contracts in full: recalled-item contrib
 
 Contact packet ba078119-482c-49dc-bd18-c2dfcaad9024 consumes the independently owned `riatzukiza/eros-eris-field` repository paths `docs/plans/cephalon-finite-field-coupling.edn` and `docs/plans/cephalon-physical-kernel-abi.edn`. [Owning personal PR2](https://github.com/riatzukiza/eros-eris-field/pull/2/files) exposes the current proposal; readiness/source qualification binds its eventual actual qualified merge, exact Git blobs/SHA256 and revisions. A Foresight-relative missing-file search does not supply those bytes. The contact packet's existing source/rebuild scope also includes reauthorization/reconstruction or invalidation of active/restored inclusion folds after revocation, and persisted complete trace-byte accounting across split/restore under the same finite budgets. Required fixtures remain future source work, not implemented tests or native readiness.
 
-The shared calibration paragraph now agrees with the mandatory checklist/card: valid elapsed101 executes100 with successful-incomplete backlog1, then catch-up drains1 without invented elapsed time. Only distinct unsafe/resource inputs refuse. Deployment qualification must finish with a fenced, independently read-back qualified composition after its actual rollback test; rollback as the final served state cannot qualify the downstream character proof. These repair existing packet obligations with unchanged fourteen-packet provisional65-point inventory and selection3 separate.
+The shared calibration paragraph now agrees with the mandatory checklist/card: valid elapsed101 executes100 with successful-incomplete backlog1, then catch-up drains1 without invented elapsed time. Only distinct unsafe/resource inputs refuse. Deployment qualification must finish with a fenced, independently read-back qualified composition after its actual rollback test; rollback as the final served state cannot qualify the downstream character proof. These repaired the same fourteen-packet inventory at an earlier provisional65-point stage, superseded by the current75-point proposal below; selection3 stays separate.
 
 
 ## Current Incoming estimate and observation correction — 2026-10-15
@@ -690,3 +693,63 @@ The shared calibration paragraph now agrees with the mandatory checklist/card: v
 Native Codex 4284132913/2918/2929/2939 identified existing unpriced seams and an unbounded natural outcome wait. The explicit re-estimate option is selected: ABI 8 (build/producer 2 + numeric/time 3 + codec/restore 3), appraisal/consumer 5 (provider/fallback/budgets 2 + actual consumer/contrast/protected evidence 3), and served proof 8 (natural chain/prompt 3 + physical contrast 2 + mood contrast 1 + natural outcome/contribution/feedback/replay 2). All constituent artifacts and success/failure exits are independently retained, and every constituent must pass before its existing card Done. Fourteen execution packets now propose 75, with selection 3 separate and containing field 8/mood 5/automatic 5 still non-additive historical aggregates. Prior 65/62/50/48 allocations and native comments stay historical. This prices existing accepted obligations, adds no behavior/dependency/new task or native aggregate adoption and grants no Ready.
 
 One served proof attempt is finite: at most three natural maker opportunities or 60 minutes, whichever first, with the selected encounter/root lineage frozen and a readback subbudget of two authorized GETs per destination,5 seconds each/30 seconds total within the same deadline. No new scheduler, automatic retry loop, publication replay, forced maker stop or expiry-based ownership release. Failed/inconclusive proof records actual missing artifact/action/readback/prompt/contribution reason, gives no reinforcement, leaves card/goal incomplete and retains/quarantines uncertain ongoing ownership under actual termination/fencing law. Only a fresh bounded qualified observation record can begin another attempt. No operational observation/deployment is authorized by this plan correction.
+
+
+## Frozen appraisal profile source candidate v1
+
+For native finding4285944320 and existing appraisal packet5450c07d, propose
+profile **cephalon-appraisal-finite/2026-10-15-candidate-v1**. These concrete
+values fill the existing budget obligation inside its unchanged5-point scope;
+they add no provider, credentials, paid model, clock, behavior or task. This is
+a candidate, not installed or natively adopted configuration. Before any
+qualification run, materialize it through the owning qualified configuration
+shape, freeze the exact source/profile value hash and bind actual provider/model,
+tokenizer, pricing and adapter identities. Missing or mismatched custody refuses
+the provider path. A later change needs a new reviewed profile revision and new
+qualification; observed workload/cost/latency never chooses its own pass limits.
+
+| Bound | Frozen candidate value | Admission boundary |
+| --- | --- | --- |
+| Provider cadence | Minimum60000ms between actual attempt starts per character | Qualified recorded elapsed/start observations; equality permits only if prior ownership is terminal |
+| Complete effective input | At most4096 tokens AND16384 UTF8 bytes | Count all effective system/user/context input before a call with a qualified model-bound tokenizer; no silent cropping |
+| Output | Request at most256 generated tokens AND accept at most8192 complete UTF8 bytes | Validate actual complete native usage/response and owning appraisal shape; excess or unknown accounting is not an accepted candidate |
+| Active provider attempts | At most1 per character | Use the qualified native provider admission/ownership seam; no local second scheduler |
+| Waiting model requests | 0 | Busy or queue-required admission observes refusal; no hidden model queue |
+| Attempts per admitted encounter | At most1; retries0 | Canonical encounter/effect identity and existing once-only custody; no retry/generation/counter reset |
+| Complete provider phase | At most10000ms from admitted start through response EOF/validation | Outer qualified observations only; equality accepted, greater/unknown/late result refuses |
+| Additional model charge | Maximum0 USD | Existing authorized free route only with current qualified zero-price metadata; unknown/nonzero cost refuses before a provider attempt |
+
+Cadence/token/byte/active/queue/attempt/time/cost limits apply independently and
+conjunctively. Do not trade unused tokens for retries, widen the deadline after
+a provider delay, or use missing pricing as free. Record actual native attempts,
+usage, cause and measured cost/latency; an unknown observation remains unknown.
+A zero-attempt fallback or scripted case supplies no real provider-availability
+or charged-usage claim. Preserve the existing audience classification of every
+measurement/linkage as well as prompt/trace evidence; raw protected content,
+authorization data and unreleased derived evidence remain outside Git/public
+logs. Do not fix a future model slug: selected identity must bind the actual
+eligible existing free route at qualification, with no new family/provider.
+
+The zero queue governs model work, not immutable encounter admission. Never
+discard/renumber an admitted encounter, bypass qualified Clio causal ordering
+or reset the mood writer's expected revision/once-only identity. Provider
+unavailability, busy/cadence/size/budget refusal or late output may enter only
+the already reviewed validated fallback with its actual recorded cause and
+unchanged authority. Unsupported admission, ordering or fallback remains
+refused/unknown; no invented success. Timeout/elapsed cadence does not prove
+terminal ownership: retain the native attempt identity until independently
+verified termination or qualified fencing. A late/superseded provider candidate
+cannot rebase into another mood revision, persist an effect, reinforce or publish.
+No maker interruption, new timer or production retry is authorized.
+
+Qualification freezes this profile BEFORE executing controls. Test4096/4097
+input tokens,16384/16385 input bytes,256/257 output tokens,8192/8193 output bytes,
+59999/60000ms start separation, zero/one waiting request, one/two simultaneous
+attempts, first/second encounter attempt, and10000/10001ms completion with the
+other inputs fixed and their own bounds valid. Test zero/unknown/nonzero price,
+missing/mismatched profile/model/tokenizer/pricing provenance, late arrival after
+fallback, and uncertain active ownership beyond timeout. Token/byte overflow
+must not substitute truncation. Positive admitted appraisal or validated fallback
+still needs exact selected encounter/field/mood persistence and actual consumer
+readback under current authority; printed limits or a source fixture are not
+served B2. These are required future causal tests, not executed laws or Ready.
