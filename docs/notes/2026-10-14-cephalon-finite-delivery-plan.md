@@ -117,9 +117,12 @@ unrelated encounter.
 
 The separate feedback packet owns the deliberate feedback contract and its
 storage implementation/tests after the read interface completes. Read-only traversal does not implicitly
-reinforce. Feedback requires an admitted observed inclusion/outcome, the same
-current authority and a stable recall/outcome effect identity; retrieval count
-alone is not usefulness. Repeated recall/submission/replay cannot multiply it.
+reinforce. Feedback requires a verified observed downstream outcome attributed
+to the recalled item, current stored authority and a stable recall/outcome
+effect identity. Inclusion evidence identifies the item; inclusion alone or
+retrieval count cannot authorize reinforcement. Missing/unverified outcome
+refuses without reinforcement, including an inclusion-with-no-outcome fixture.
+Repeated recall/submission/replay cannot multiply feedback.
 Partial, failed or uncertain writes remain explicit and require actual recovery
 readback or quarantine before retry. Source qualification uses bounded owning
 storage fixtures and does not require the later live maker proof to complete;
@@ -202,9 +205,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    authorized/included; preserve legacy/privacy controls and no public private-ID
    leak. Read-only retrieval is nonreinforcing. No later feedback writer or
    live-maker proof is required to complete these qualified read fixtures.
-3. **Outcome feedback:** consume the completed scoped read interface. Admit
-   observed inclusion/outcome under current stored authority and stable
-   recall/outcome/effect identity; retrieval count alone is not usefulness.
+3. **Outcome feedback:** consume the completed scoped read interface. Require
+   a verified observed downstream outcome and its attribution to the included
+   recalled item under current stored authority and stable recall/outcome/effect
+   identity. Inclusion identifies the item and cannot authorize reinforcement;
+   retrieval count alone is not usefulness. Inclusion with missing/unverified
+   outcome must produce no reinforcement mutation; explicit refusal/audit receipts
+   remain required.
    Implement actual once-only storage, independent readback and partial/failed/
    uncertain/conflicting-write recovery or quarantine. Repeated recall/submission/
    replay cannot multiply feedback. Complete bounded owning fixtures here;
@@ -282,8 +289,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    principal and independent graph/field/effect/mood readbacks. In the same live
    run capture visibility-safe eligible/denied candidate IDs/reasons, seed IDs,
    exact authorized traversed edge/node path, traversal revision and actual
-   prompt-included neighbor ID beyond the semantic seed. Direct vector/seed-only
-   inclusion cannot satisfy B3. Inspect the actual provider prompt. Separate
+   prompt-included neighbor ID beyond the semantic seed. The actual provider
+   prompt must also contain the matching scope-safe authorized node/edge path
+   and traversal trace/revision as model-visible context, not only neighbor
+   content/ID or diagnostic metadata. Inspect that exact submitted prompt and
+   match its trace to the independently captured traversal. Trace-only-in-logs
+   and content-only prompt negatives fail B3. Direct vector/seed-only inclusion
+   cannot satisfy B3. Separate
    physical and mood contrasts. The served automatic physical contrast varies
    exactly one admitted physical deposit or bond input. Hold encounter identity/
    content/hash, principal/grants, semantic seeds, query, corpus/index, graph,

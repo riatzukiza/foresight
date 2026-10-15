@@ -10,7 +10,7 @@ parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b"]
 category: "kanban"
-write-id: "1792026062839-0.e95a117kch6j8gs0eue"
+write-id: "1792027335760-0.rmx5qu5v65g6srkp7f"
 created_at: "2026-10-15T01:01:02.839Z"
 ---
 
@@ -32,7 +32,7 @@ Complete larger character stories, bypass Rheos/review/promotion gates, infer pe
 
 ## Acceptance criteria
 
-1. Consume the qualified scoped read interface; read-only retrieval never reinforces. Admit observed inclusion/outcome under current stored authority with stable recall/outcome/effect identity. Retrieval counts alone are not usefulness.
+1. Consume the qualified scoped read interface; read-only retrieval never reinforces. A verified observed downstream outcome attributed to the recalled item is required under current stored authority and stable recall/outcome/effect identity. Inclusion identifies the item but cannot authorize reinforcement by itself. Missing/unverified outcome, including positive inclusion with no outcome, produces no reinforcement mutation; explicit refusal/audit receipts remain required. Retrieval counts alone are not usefulness.
 2. Implement the feedback writer with expected revisions and actual once-only persistence/readback. Repeat admission/recall/submission/replay cannot multiply reinforcement.
 3. Partial, failed, conflicting and uncertain writes remain explicit. Recover through independent complete matching readback or quarantine before same-identity retry; never call a partial write success.
 4. This card owns bounded owning-storage RED/GREEN and source qualification. It does not require the later live-maker proof to complete; that proof must observe the same once-only behavior.
@@ -46,3 +46,9 @@ Native planning qualification and full graph readiness precede implementation. P
 Stale bindings, missing authority, unsupported fencing/atomicity and incomplete readback remain blockers rather than success.
 
 License: GPL-3.0-or-later.
+
+
+---
+Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
+
+---

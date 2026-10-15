@@ -10,7 +10,7 @@ parent: "2df3d26b-394a-436d-9e02-fe18a55132dd"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["885a4b34-74fb-4e4e-a42a-6dbb54d54829"]
 category: "kanban"
-write-id: "1792026181313-0.hgxdjuvlg4twzyi9u9d"
+write-id: "1792027336502-0.n6p4ua11zcqskpcfom7"
 created_at: "2026-10-15T01:03:01.313Z"
 ---
 
@@ -33,10 +33,10 @@ Complete larger stories, bypass Rheos/review/promotion gates, infer permission f
 ## Acceptance criteria
 
 1. Observe one natural native-clock turn under actual stored principal after qualified deployment. Independently record actual persisted graph/field before-state, admitted outside identity/hash and graph/field/effect/mood after-state and attributable deltas.
-2. Same live run must capture scope-safe candidate reasons, seed IDs, authorized traversed edge/node path and actual prompt-included neighbor beyond the vector seed. Inspect actual provider prompt.
+2. Same live run must capture scope-safe candidate reasons, seed IDs, authorized traversed edge/node path and actual prompt-included neighbor beyond the vector seed. Inspect the exact actual submitted provider prompt and require matching authorized node/edge path, traversal trace and revision as scope-safe model-visible context. Content/ID-only prompts and trace retained only in diagnostics fail B3.
 3. A served physical contrast varies exactly one admitted deposit/bond, holding every other recall input fixed, and proves derived motion/contact/path/included association with state readback. Different-encounter storage arms and non-admitted ablation remain separate coverage.
 4. Selected admitted encounter/appraisal must produce an expected nonbaseline mood-dimension change, persist/read back and load that exact resulting revision before attention/recall. A separate mood contrast varies only consumed persisted mood with physical/other recall inputs fixed.
-5. Replay valid histories, execute selected privacy/malformed/transport/budget negatives, inspect every public diagnostic field and verify once-only outcome feedback with truthful counts/write outcomes/cost/latency. Never replay publication. Supply B1/B2/B3 evidence; terminal closure belongs to the successor.
+5. Replay valid histories, execute selected privacy/malformed/transport/budget negatives, inspect every public diagnostic field and verify a downstream observed outcome attributed to the recalled item before once-only feedback, with truthful counts/write outcomes/cost/latency. Never replay publication. Supply B1/B2/B3 evidence; terminal closure belongs to the successor.
 
 ## Verification
 
@@ -47,3 +47,9 @@ Native planning qualification/full-graph readiness precede implementation. Meani
 Missing authority, unsupported fencing/atomicity, stale bindings and incomplete readback remain explicit blockers.
 
 License: GPL-3.0-or-later.
+
+
+---
+Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
+
+---

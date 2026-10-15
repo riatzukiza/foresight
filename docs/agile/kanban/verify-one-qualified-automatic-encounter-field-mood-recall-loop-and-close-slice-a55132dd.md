@@ -10,7 +10,7 @@ parent: "5ea872c3-1db4-47c5-a63d-d49f99f79497"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792026381174-0.6apijoo1sw0lvadrzl"
+write-id: "1792027337250-0.nwuzjd5fq4oxc8a7hdv"
 created_at: "2026-10-15T00:02:00.111Z"
 ---
 
@@ -49,7 +49,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 1. Qualify all owning source/consumer merges, exact native predecessor readiness and required release/deployment/rollback before live changes. Establish a supported qualified idle/fenced window before served revision change; never abort/replace a held maker identity. Termination/fencing must cover both old artifact persistence and publication, not expiry/poll alone.
 2. Freshly verify served artifact/configuration/schema/kernel/consumer bindings and actual stored maker principal. Observe a natural native-clock turn, preserving one event owner and disabled cloud event runtime; never replay publication.
-3. Bind outside identity/hash, graph/field/effect and independent mood revisions, eligible/denied candidate IDs/reasons, semantic seed IDs, authorized traversed edge/node path, traversal revision and actual prompt-included neighbor ID beyond the seed from that same served automatic run. Direct vector/seed-only inclusion fails B3. A privileged API query, aggregate count or revision label alone cannot satisfy B1/B2/B3.
+3. Bind outside identity/hash, graph/field/effect and independent mood revisions, eligible/denied candidate IDs/reasons, semantic seed IDs, authorized traversed edge/node path, traversal revision and actual prompt-included neighbor ID beyond the seed from that same served automatic run. The inspected actual provider prompt must itself contain the matching scope-safe authorized node/edge path and traversal trace/revision as model-visible context; diagnostics-only trace and content-only prompts fail. Direct vector/seed-only inclusion fails B3. A privileged API query, aggregate count or revision label alone cannot satisfy B1/B2/B3.
 4. At the served automatic consumer seam vary exactly one admitted physical deposit or bond input. Hold encounter identity/content/hash, principal/grants, semantic seeds, query, corpus/index, graph, prior field/world, mood, configuration, time/event schedule and every other recall input fixed. Trace that sole input through derived motion/contact to changed graph path/prompt-included association, with independent resulting-state readback. No changed encounter, graph revision or unrelated field checkpoint may be selected as another recall input; resulting physical state/revisions must derive only from the selected deposit/bond. Distinct-encounter storage arms and pure ablation cannot substitute. Separately vary only persisted consumed mood while holding physical state and every other recall input fixed, proving changed bounded attention/recall/decision.
 5. Replay each valid frozen history; repeat admission/recall cannot multiply persistence or feedback. Execute privacy/malformed/transport/budget negatives and truthful count/write outcomes, distinguishing local fixtures from actual served proof.
 6. After actual B1/B2/B3 plus fixed-inventory gates pass, document remaining design links, verify evidence, complete the native goal and retire its heartbeat. Larger epic/stories remain truthfully unfinished; do not resume human-paused heartbeat before completion.
@@ -75,5 +75,7 @@ Incoming planning refinement separates this packet completion from its later suc
 Incoming planning review correction: served physical contrast varies exactly one admitted deposit/bond; all other recall inputs fixed, resulting physical states derived and independently read back. Distinct-encounter storage arms and pure ablation supply separate coverage. Body edited through supported initial Incoming Markdown authoring. No status, estimate, parent, epic or dependency change; qualified source review and lawful Ready admission remain required.
 
 Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
+
+Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
 
 ---
