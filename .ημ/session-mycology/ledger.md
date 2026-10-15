@@ -511,3 +511,13 @@
   spore: none
   receipt-refs: foresight-pr127-current-main-integration
   note: A cached pull base can lag the actual branch tip. Fetch the live ref and inspect mergeability even after review convergence passes; preserve full main ledger prefixes and exact branch-only bytes, then obtain fresh successor evidence. Use a pinned canonical main skill snapshot when the global checkout contains unrelated work.
+
+- ts: 2026-10-15T17:29:03.357040+00:00
+  session: /home/err/.codex/worktrees/native-observation-plan/foresight
+  task: Materialize separate five-point native observation consumer planning owner
+  p-efficiency: 0.88
+  p-friction: 0.28
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 641b62d1-9ebd-466b-b5b9-87adab3e9345
+  note: Planning only at source 012cd01ab4c7f92731897738d7774e8831c78dcb. Preserve the incompatible F40 records and original failed gate; a valid new flat record cannot repair an invalid old suffix. Existing accepted Foresight envelope preflight and secure writer appended one provenance record, with no native Receipt River wrapper. Native Rheos owns the create, transitions and comment; its empty dependency serialization is retained as an upstream limitation. Read-only unsupported edit-help returned1 without dependent effects. Exact canonical validator pin/classpath qualification remains future implementation acceptance; no copied validator, pin advance or evidence credit. Portable candidate0 only; old native-SM null-cwd failure was not retried and no spore was created.
