@@ -1977,3 +1977,12 @@
   spore: none
   receipt-refs: b857385e-1fcb-433c-8a07-1675e7ace38e
   note: SDK real cold4/4 passed; subsequent backend typecheck timed out in native full Git mirror clone before compilation. Verify exact declared cached Git source and owner custody for ordinary validation without repeating mandatory coldSDK proof or borrowing generated outputs. Native success/untruncated flags did not prove ref-record completeness; preserve malformed buffers and use independent complete inventories, with causeUNKNOWN. Keep latest native review negatives, exact scopes and quota timestamps; no effect replay, warning/billing workaround, approval transfer, spore or deployment overclaim.
+- ts: 2026-10-15T22:45:16.956438169Z
+  session: /home/err/spaces/foresight
+  task: Preserve actual OAuth backend recovery and deployment review/caller progress
+  p-efficiency: 0.64
+  p-friction: 0.56
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 8684fb96-b375-4cd0-b580-7d2f9e8d9a49
+  note: Genuine clock controls preceded exact fixture repair; retain separate successful owning/typecheck/explicit+normal+coverage/boundary results and real7error258warning full-lint blocker. Keep native review completion/stage chronology, request pending versus actual dispatch, quota cooldown and source/adoption boundaries. Native CLI syntax, terminal-LF/body serialization and target repository context are separate from payload semantics: use native help, NUL path readbacks and source-bound secure writer root context; retain pre-effect guard failures without repeating successful effects. Accepted finite runner exists; caller adoption is separately owned. Known nativeSM null-cwd failure remains unretried; portablecandidate0/no spore. No deployment or fullGREEN claim.
