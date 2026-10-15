@@ -1824,3 +1824,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#1cc4760c-aac3-47bb-9c5f-fe7ce5c0acb5
   note: Status-only previous turn no-progress revalidated; actual nextaction exactisolatedmodeldownloadlive. Services3nativeP2Fixed/published14suitePASS, Muse5gates/6rootcontrols sourcepublishedPR11 butadoptionpending; nativeMuseAppauthpasses whereasServicesfailsbeforeinference. Preserve exact source/model/DB/publication boundaries; recover original capturetailguard withminimalreviewedV2; no duplicatedeffects/same-sessionpromotion.
+- ts: 2026-10-15T07:47:55.078143750Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Advance actual CMS-to-local-Spanish path and preserve failed candidate structure
+  p-efficiency: 0.64
+  p-friction: 0.62
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#bcbdb393-8541-4c7b-b9da-30e6562c2e4a
+  note: One real CMS create/history/Spanish-only intent/admission produced a persisted unapproved agent candidate and actual SDK/Mongo/vector lineage. Preserve native quality failure: source3paragraphs became1 and semantic comparison identifies omitted sentence. Reference-first chunk rows intentionally redact inline text; derive vector/hash/span checks from retained native rows without DB rerun. Fix actual provider-boundary contract using this retained result, not model routing/credentials or weaker assertions. No candidate approval/publication/production effect; existing owner recovered, no spore or promotion.
