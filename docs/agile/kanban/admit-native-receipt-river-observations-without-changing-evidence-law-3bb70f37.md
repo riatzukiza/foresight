@@ -3,11 +3,11 @@ category: "kanban"
 labels: "receipt-river, compatibility, provenance, 5sp"
 dependency: []
 type: "task"
-write-id: "1792085180798-0.xrfzkf8i4qi24ohdpiz"
+write-id: "1792089652880-0.1cjfwxf37qe6asmdrnk"
 points: "5"
 title: "Admit native Receipt River observations without changing evidence law"
 priority: "P1"
-status: "breakdown"
+status: "in_progress"
 uuid: "3bf328fd-2f14-4fca-9d6b-9b4e3bb70f37"
 created_at: "2026-10-15T17:25:56.815Z"
 ---

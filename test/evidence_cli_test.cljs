@@ -3,6 +3,7 @@
   (:require [cljs.test :as test :refer [deftest is]]
             [clojure.string :as str]
             [evidence :as cli]
+            [eta-mu.receipt-river.law.receipt :as native-rr]
             [foresight.evidence :as law]
             [workspace :as workspace]
             ["child_process" :as child-process]
@@ -783,6 +784,63 @@
           (run! (assoc context
                        :current current :historical historical
                        :base-text base-text :base base :commit! commit!)))))))
+
+
+;; Immutable F40 producer bytes, not regenerated or imported into this ledger.
+;; Source7f02c7f3b987741eefebe6d35fdf064e5310b927, original lines198/199.
+(def original-f40-observations
+  [   {:line 198 :length 2553 :sha256 "198b312258607be9607a78c9e2ac67dce4eb634696dbc1bd8f334c393322a23a"
+    :base64 "ezpldmVudC9pZCAjdXVpZCAiYzg5ZTk1NmEtZTNjOC00YmVkLTkxZGItOWVhNTI3ZmZlMDAwIiwgOmV2ZW50L3R5cGUgOnJlY2VpcHQtcml2ZXIvcmVjZWlwdC1yZWNvcmRlZCwgOmV2ZW50L3JlY29yZGVkLWF0ICIyMDI2LTEwLTE1VDE1OjU1OjUxLjE3NloiLCA6ZXZlbnQvc2NoZW1hIHs6aWQgOmV0YS1tdS5yZWNlaXB0LXJpdmVyL3JlY2VpcHQtcmVjb3JkZWQsIDp2ZXJzaW9uIDF9LCA6ZXZlbnQvcHJvZHVjZXIgezpldGEtbXUvdmVyc2lvbiAiMS4xLjEiLCA6cGFja2FnZS9uYW1lICJAZXRhLW11L3JlY2VpcHQtcml2ZXIiLCA6cGFja2FnZS92ZXJzaW9uICIwLjEuMCIsIDpjb21tYW5kICJldGEtbXUgcmVjZWlwdCBhcHBlbmQifSwgOmV2ZW50L3N1YmplY3QgezpyZXBvc2l0b3J5L3BhdGggIi9ob21lL2Vyci8uY29kZXgvd29ya3RyZWVzL2tub3h4LWZvcmstcmVqZWN0aW9uLXBsYW4vZm9yZXNpZ2h0In0sIDpldmVudC9wYXlsb2FkIHs6cGkgImV0YS1tdSIsIDpyZWZzICJub25lIiwgOmRvZCAicmVjZWlwdC1yaXZlciIsIDptYW5pZmVzdCAibm9uZSIsIDpub3RlICJQbGFubmluZyBvbmx5OiBzb3VyY2UyN2QyMDdiYmQ0YTc5ODJmYmE1ZjMwNGU0MWEyNmI3ZTUzODNlNjUwIG92ZXIgYWNjZXB0ZWQgcGVyc29uYWwgRm9yZXNpZ2h0IG1haW40NWUzM2Y5M2E1NjgwZTRjNzVhM2I2ODNmOTg3MGNlZDgyYTlmMThjIGNyZWF0ZXMgc2VwYXJhdGUgcHJvdmlzaW9uYWwgUDEvMyByZWplY3Rpb24tdHJhbnNwb3J0IHNpYmxpbmcgYTFjZGVhNTUtMTVmZS00YjQ5LTk5MGEtNDZlZDdmMTlhMWE0IHVuZGVyIGZvcmstcmV2aWV3LXNldHVwLCBleHBsaWNpdGx5ICszIGRpc2NvdmVyeS4gRXhhY3QgcGFyZW50IGJ5dGVzIGFuZCBpbmNvbWluZy9QMS8zIG1ldGFkYXRhIHJlbWFpbiB1bmNoYW5nZWQuIEV4aXN0aW5nIGFjdGlvbmFiaWxpdHkgYWEzOTc3MGQgaW5fcHJvZ3Jlc3MvUDEvMyByZW1haW5zIGluIGl0cyBzZXBhcmF0ZSBzb3VyY2UgbGFuZTsgbm8gdW5hZG9wdGVkIGFjdGlvbmFiaWxpdHkgb3IgQ01TL0YzOSBjYXJkL2V2ZW50IHN1ZmZpeCBpbXBvcnRlZC4gRnJlc2ggY2Fub25pY2FsIHBhcmVudCBhbmQgYm90aCBhY2NlcHRlZC1zb3VyY2UvZmFtaWx5IHJlamVjdGlvbiBkZWR1cCByZWFkcyBwcmVjZWRlZCBuYXRpdmUgVVVJRHY0IGNyZWF0ZSwgb25lIGNvbW1lbnQgYW5kIGxhd2Z1bCBpbmNvbWluZy1hY2NlcHRlZC1icmVha2Rvd247IGZvdXIgZ2VudWluZSBuYXRpdmUgZXZlbnRzIHByZXNlcnZlIHRoZSBjb21wbGV0ZTE0NTM1Mi1ieXRlIGFjY2VwdGVkIGV2ZW50IHByZWZpeC4gU291cmNlIGNvbW1pdCBvd25zIG9ubHkgbmV3IGNhcmQgYW5kIG5hdGl2ZSBldmVudCBsZWRnZXIuIENvbXBsZXRlNTA4IGFjY2VwdGVkIG9yaWdpbmFsIGJsb2IgaW5wdXRzIGNoZWNrZWQsNTA3IHVuY2hhbmdlZCBhbmQgb25seSBvd25pbmcgZXZlbnQgZmlsZSBjaGFuZ2VkLiBFeGFjdDExNzM1LWJ5dGUgYm9keSBTSEE4ZDNlYzYzYTViOWM0NDRiNzMyZDgzMGM0YzMyNzMyMzgwYzRjODUzOWZiYzdkZTAxMmI0YWIwMTA0ZmFhNjI1IGNhcnJpZXMgZml2ZSBmdXR1cmUgRVRBIHBhdGhzLCBjYXVzYWwgYWN0dWFsIGd1YXJkL2hvc3QgUkVELUdSRUVOIGFuZCBpbmplY3RlZCBmdWxsIGNvbGxlY3Rvci9wdWJsaXNoZXIgY29udHJvbHM7IG5hdGl2ZSBzY29wZWQgcXVhbGlmaWNhdGlvbiByZW1haW5zIGxhdGVyIGFuZCBubyBwb3NpdGl2ZSBhbnN3ZXIgaXMgcHJvbWlzZWQuIFByZXNlcnZlIGNhbm9uaWNhbCByZWplY3Rpb24vYXBwcm92YWwvd2l0aGRyYXdhbC9wcmluY2lwYWwvcGlucywgYWN0dWFsIEFwcC9ncmFudC9lbnZpcm9ubWVudCB1bmtub3ducyBhbmQgdW5hbnN3ZXJlZCBzY29wZWQgQ29kZXggcmVxdWVzdHM7IG5vIGdlbmVyaWMgYXBwcm92YWwvcm91bmQvc2V0dGxlbWVudCBjcmVkaXQuIE5hdGl2ZSBkaWZmIGNoZWNrMCBhbmQgZXhhY3QyIHNvdXJjZSBwYXRocy9jbGVhbiBjb21taXQgcXVhbGlmaWVkOyBubyBhcHAvd29ya2Zsb3cgaW1wbGVtZW50YXRpb24gb3IgaW1wbGVtZW50YXRpb24gdGVzdHMsIHJlYWRpbmVzcywgUFIvcmV2aWV3ZXIvbW9kZWwvcHJvdmlkZXIvQ0kvQXBwL2FjY291bnQvc2VjcmV0L3NldHRpbmdzL3J1bnRpbWUvZGVwbG95bWVudCBlZmZlY3QuIENvcnJlY3RlZCBpbml0aWFsIEYzOSBhc3NvY2lhdGlvbiBhZnRlciBmdWxsIG5hdGl2ZSBHRVQ6IGFjdHVhbCBGMzkgaXMgc2VwYXJhdGUgQ01TIGN1dG92ZXIgcGxhbiwgbm90IHRoaXMgYWN0aW9uYWJpbGl0eSBmYW1pbHkuIFB1YmxpYyBwbGFubmluZyBwdWJsaWNhdGlvbiBIT0xEIGZvciByb290IGV4YWN0IHNvdXJjZS9wcm92ZW5hbmNlIHJlYWQuIENhbmRpZGF0ZTAsIG5vIHNwb3JlLiIsIDp0cyAiMjAyNi0xMC0xNVQxNTo1NTo1MS4xNzZaIiwgOmhvc3QgImxvY2FsIiwgOmtpbmQgOm9ic2VydmF0aW9uLCA6b3JpZ2luICJldGEtbXUiLCA6cmVwbyAiL2hvbWUvZXJyLy5jb2RleC93b3JrdHJlZXMva25veHgtZm9yay1yZWplY3Rpb24tcGxhbi9mb3Jlc2lnaHQiLCA6b3duZXIgInJlY2VpcHQtcml2ZXIifX0K"}
+   {:line 199 :length 2133 :sha256 "b6baedd2bc9b34a07f99c81195cfe4364ca8eed3ac61449d158ca3658c096dab"
+    :base64 "IzpldmVudHs6aWQgI3V1aWQgIjlhZmZjMjEwLTk2YWEtNGRlYi05NzY4LWYzNmFjMjA4ZTYxZiIsIDp0eXBlIDpyZWNlaXB0LXJpdmVyL3JlY2VpcHQtcmVjb3JkZWQsIDpyZWNvcmRlZC1hdCAiMjAyNi0xMC0xNVQxNjoxMjozNS4wODdaIiwgOnNjaGVtYSB7OmlkIDpldGEtbXUucmVjZWlwdC1yaXZlci9yZWNlaXB0LXJlY29yZGVkLCA6dmVyc2lvbiAxfSwgOnByb2R1Y2VyIHs6ZXRhLW11L3ZlcnNpb24gIjEuMS4xIiwgOnBhY2thZ2UvbmFtZSAiQGV0YS1tdS9yZWNlaXB0LXJpdmVyIiwgOnBhY2thZ2UvdmVyc2lvbiAiMC4xLjAiLCA6Y29tbWFuZCAiUmVjZWlwdCBSaXZlciBwYWNrYWdlIEFQSSAvIG93bmVkIHBsYW5uaW5nIGNsYXJpZmljYXRpb24iLCA6YWN0b3IgImNvZGV4L2Ntc19mcm9udGVuZF9jYXBfcHJvYmUifSwgOnN1YmplY3QgIzpyZXBvc2l0b3J5ezpwYXRoICIvaG9tZS9lcnIvLmNvZGV4L3dvcmt0cmVlcy9rbm94eC1mb3JrLXJlamVjdGlvbi1wbGFuL2ZvcmVzaWdodCJ9LCA6cGF5bG9hZCB7OnBpICJldGEtbXUiLCA6cmVmcyAibm9uZSIsIDpkb2QgInJlY2VpcHQtcml2ZXIiLCA6bWFuaWZlc3QgIm5vbmUiLCA6bm90ZSAiUGxhbm5pbmcgZmFjdHVhbCBjbGFyaWZpY2F0aW9uIG9ubHk6IHNvdXJjZTc3NTljYzcwOWJiMzgyOTllZTEwMzZlMmQxNGVmMzUzZGYyY2NkZjYgZm9sbG93cyBwcmVzZXJ2ZWQyN2QyMDdiYiBhbmQ1M2I1OGYxYiBoaXN0b3J5IG92ZXIgYWNjZXB0ZWQ0NWUzMy4gRXhhY3QgU0RLMTcgTm9uLWdvYWxzIHdvcmRpbmcgbm93IHByZXNlcnZlcyBhY3R1YWwgcGlubmVkIHdpdGhkcmF3YWwgcnVsZXMvbmF0aXZlIGlkZW50aXRpZXMgd2l0aG91dCBpbnZlbnRlZCBVc2VyIGV2aWRlbmNlLCBhY3RvciBzdWJzdGl0dXRpb24gb3IgY29waWVkIEJvdCB0ZXh0LiBObyBwb2xpY3kvcHJpbmNpcGFsL3BpbiBjaGFuZ2Ugb3IgU0RLMTcgYWRtaXNzaW9uIGlzIGNsYWltZWQuIEV4aXN0aW5nIHJlamVjdGlvbiBzdG9yeSBhMWNkZWE1NSByZW1haW5zIGJyZWFrZG93bi9QMS9wcm92aXNpb25hbDMgdW5kZXIgdW5jaGFuZ2VkIG9wZW4gZm9yay1yZXZpZXctc2V0dXA7IGZpdmUgZnV0dXJlIEVUQSBwYXRocyBhbmQgKzMgZGlzY292ZXJ5IHVuY2hhbmdlZC4gT25lIG5hdGl2ZSBvd25lciBjb21tZW50IGFuZCBldmVudCBwcmVzZXJ2ZSBvbGQgYm9keS9jb21tZW50IGNvbnRlbnQgZXhjZXB0IGV4YWN0IGFwcHJvdmVkIHNlbnRlbmNlIGFuZCBuYXRpdmUgd3JpdGUtaWQuIFByaXZhdGUgZ3VhcmQgZXhwZWN0ZWQgYSB0aGlyZCBuYXRpdmUgY29tbWVudCBzZWN0aW9uIGFuZCBmYWlsZWQgYmVmb3JlIHN0YWdlL2NvbW1pdC9wcm92ZW5hbmNlOyBhY3R1YWwgUmhlb3MgY29tYmluZXMgZXhhY3Qgb2xkIGNvbW1lbnQgcGx1cyBuZXcgbm90ZSBzZXBhcmF0ZWQgYnkgdHdvIG5ld2xpbmVzLCBpbmRlcGVuZGVudGx5IGNoZWNrZWQgYmVmb3JlIGNvbnRpbnVhdGlvbi4gT3JpZ2luYWwgZmFpbGVkIHByZWRpY2F0ZSByZXRhaW5lZCBhbmQgbm8gY29tbWVudCByZXBlYXRlZC4gRXhhY3QyIHNvdXJjZSBwYXRocywgc3RhZ2VkIGRpZmZjaGVjazAgYW5kIGNsZWFuIHNvdXJjZSBjb21taXQgcXVhbGlmaWVkLiBUaGlzIGdlbnVpbmUgcGFja2FnZS1BUEkgcmVjZWlwdCB1c2VzIGV4cGxpY2l0IGNhbm9uaWNhbCAuzrfOvC9yZWNlaXB0cy5lZG4gc3RvcmFnZSBiZWNhdXNlIHRoZSBlYXJsaWVyIG5hdGl2ZSBDTEkgaGFyZGNvZGVzIHJvb3Q7IHByZXNlcnZlIGFsbCBvbGQgcmVjZWlwdCBieXRlcyBhbmQgZXZlbnQgaWRlbnRpdGllcy4gUHVibGljIHBsYW5uaW5nIHB1YmxpY2F0aW9uIHJlbWFpbnMgSE9MRDsgbm8gaW1wbGVtZW50YXRpb24vcmVhZGluZXNzL1BSL3Jldmlld2VyL21vZGVsL0FwcC9jcmVkZW50aWFsL2FjY291bnQvcnVudGltZS9kZXBsb3ltZW50IGVmZmVjdHMuIENhbmRpZGF0ZTAsIG5vIHNwb3JlLiIsIDp0cyAiMjAyNi0xMC0xNVQxNjoxMjozNS4wODdaIiwgOmhvc3QgImxvY2FsIiwgOmtpbmQgOm9ic2VydmF0aW9uLCA6b3JpZ2luICJldGEtbXUiLCA6cmVwbyAiL2hvbWUvZXJyLy5jb2RleC93b3JrdHJlZXMva25veHgtZm9yay1yZWplY3Rpb24tcGxhbi9mb3Jlc2lnaHQiLCA6b3duZXIgInJlY2VpcHQtcml2ZXIifX0K"}])
+
+(defn original-observation-bytes []
+  (mapv (fn [{:keys [length sha256 base64]}]
+          (let [bytes (js/Buffer.from base64 "base64")]
+            (is (= length (.-length bytes)))
+            (is (= sha256 (cli/sha256 bytes)))
+            bytes))
+        original-f40-observations))
+
+(deftest original-native-observations-extend-the-real-historical-prefix
+  (let [ancestor "45e33f93a5680e4c75a3b683f9870ced82a9f18c"
+        base-bytes (cli/git-regular-blob-bytes!
+                    ancestor law/receipt-ledger-path "F40 accepted prefix")
+        original-bytes (original-observation-bytes)
+        original-records (mapv #(cli/read-single-edn!
+                                (cli/decode-utf8! % "original event")
+                                "original event") original-bytes)
+        history (cli/read-receipt-records! (.toString base-bytes "utf8"))
+        head-bytes (js/Buffer.concat (clj->js (into [base-bytes] original-bytes)))]
+    (is (= 308287 (.-length base-bytes)))
+    (is (= "bc8e88c3fd153e6342409bbe6e053747232ad8c101c7862008756d876ba0a185"
+           (cli/sha256 base-bytes)))
+    (is (= 197 (count history)))
+    (is (= 11 (count (remove law/receipt-envelope? history))))
+    (is (= "e83c483f6df4b49d0d9058acf7d52708265e50a0b7cb73277da1c16f68b5083c"
+           (cli/sha256 head-bytes)))
+    (doseq [record original-records]
+      (is (= [] (native-rr/record-errors record)))
+      (is (uuid? (:event/id record)))
+      (is (false? (law/receipt-envelope? record)))
+      (is (false? (law/evidence-receipt? record))))
+    (with-receipt-fixture
+      (fn [{:keys [fixture file]}]
+        (with-redefs [cli/root fixture cli/receipt-file file]
+          (cli/git-capture! ["init" "--quiet"])
+          (cli/git-capture! ["update-index" "--add" "--cacheinfo"
+                             "160000,7c7c62343fea0241ac545e37f14e57ab344bfa30,receipt-river"])
+          (let [commit! (fn [bytes]
+                          (fs/writeFileSync file bytes)
+                          (cli/git-capture! ["add" "--" law/receipt-ledger-path])
+                          (cli/git-capture! ["-c" "user.name=Receipt Test"
+                                             "-c" "user.email=receipt-test@example.invalid"
+                                             "-c" "commit.gpgsign=false" "commit" "--quiet"
+                                             "-m" "Original-byte observation fixture"])
+                          (str/trim (cli/git-capture! ["rev-parse" "HEAD"])))
+                base (commit! base-bytes)
+                head (commit! head-bytes)]
+            (is (= 0 (cli/verify-receipts! {:base base :at head})))))))))
 
 (deftest receipt-verification-trusts-exact-historical-prefix-only
   (doseq [terminal-newline? [true false]]
