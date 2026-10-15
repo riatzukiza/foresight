@@ -1959,3 +1959,12 @@
   spore: none
   receipt-refs: 77036632-5134-4e65-855e-e4da3aa2f75f
   note: Actual first cold SDK suite passes but independent source review exposes leader-close escalation and sibling-directory guards; retain first evidence and fix bounded controls before completion. Successful public pushes and native transitions are never replayed after stale readbacks. Hosted npm warnings remain contract failures. No spore, automatic promotion or deployment claim; production remains approved website plus old healthy CMS.
+- ts: 2026-10-15T20:45:39.011305641Z
+  session: /home/err/spaces/foresight
+  task: Retain actual CMS review settlements and Maven cold-build deadline without deployment overclaim
+  p-efficiency: 0.62
+  p-friction: 0.65
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 71571bd6-a224-4822-a3b6-9461116a58a0
+  note: The full isolated SDK gate failed at its authored15min preparation bound while Maven TLS stalled; sameJava21 bounded HEADs later200 do not erase that failure or prove all Maven health. Preserve genuine negative-control passes and distinguish standalone cold-build success from full integration. Name private versus native-trimmed hash artifacts. Reuse existing qualified lint repairs before creating more work; no effect replay, warning/cache/deadline workaround, spore or deployment credit.
