@@ -22,9 +22,11 @@ the prerequisite interface from completion of its larger containing story.
 
 ## Existing owners and proposed packets
 
-The packet names below are planning labels, not admitted task identities.
-Points are independent provisional sizing for review; no native point/status,
-relationship, aggregation role or dependency is changed by this PR. The original
+The packets below now have canonical UUIDs created in Incoming through qualified
+Rheos and read back with their proposed estimates and exact relationships.
+Creation is planning input, not Ready admission or implementation authority.
+Points and aggregation remain provisional for independent review; existing
+card status/points/relationships are preserved. The original
 3/5/3/8/5 card estimates remain historical inputs; do not add aggregate estimates
 to their allocated execution packets or derive remainders by subtraction.
 
@@ -46,6 +48,26 @@ the original8-point field estimate. Independent review must assess each packet,
 reuse, splitting and the aggregation treatment before estimates are adopted.
 They are not a storage/runtime budget, completion claim or new prerequisite scope.
 The existing review/source prerequisites retain independent gates and estimates.
+
+## Canonical Incoming packet identities
+
+Each row below is a native-created initial Incoming child of its original story,
+under character epic63a0e4ff. New estimates total36; historical aggregate estimates
+must not be counted again with these allocations. Fair aggregation/type/point
+adoption is an explicit pre-Ready gate; existing aggregate metadata stays intact
+during this planning PR. This is no bypass of source qualification or native
+predecessors. Existing selection remains a separate3-point predecessor.
+
+| Packet | Canonical UUID | Proposed points | Exact predecessor UUIDs |
+| --- | --- | --- | --- |
+| admission | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a` | 3 | None; owning source qualification still required |
+| graph | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` | 5 | None; owning source qualification still required |
+| abi | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` | 3 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `b5f2ba9e-8d67-4c73-9919-e275983aca87` |
+| forces | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` | 5 | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` |
+| contact | `ba078119-482c-49dc-bd18-c2dfcaad9024` | 5 | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` |
+| atomic | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` | 5 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `ba078119-482c-49dc-bd18-c2dfcaad9024` |
+| mood | `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795` | 5 | `2f4421ee-2e48-405e-96d2-fee1a5597ff2` |
+| automatic | `2df3d26b-394a-436d-9e02-fe18a55132dd` | 5 | `2f4421ee-2e48-405e-96d2-fee1a5597ff2`, `8bcaa0f3-37ec-44e2-8f20-4798dfc4b795`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` |
 
 ## Proposed dependency handoff
 
@@ -92,9 +114,9 @@ The larger recall story retains reserved-head work; the larger field retains
 its complete mechanics; the larger mood retains sustained appraisal/continuity.
 Their original aggregate completion edges remain meaningful for those later
 outcomes. Do not declare an aggregate Done or remove an existing edge merely
-because one selected packet passed. After planning qualification, author actual
-child inputs through supported Markdown/Rheos, adopt exact UUID edges and fair
-aggregation through Rheos, and require native full-graph readiness before RED.
+because one selected packet passed. The initial child inputs and exact UUID edges are now created through Rheos
+for planning review. After qualification, adopt fair aggregation and readiness
+through Rheos, requiring native full-graph readiness before RED.
 If that lawful adoption is unavailable, retain the owner gap explicitly.
 
 ## Original acceptance allocation
