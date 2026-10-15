@@ -95,14 +95,14 @@ metadata remained59. The current cycle correction splits the existing AFAC5 into
 actual durable adapter3 `8756362c-2362-4cb2-853a-7642e9c721eb` and final AFAC integration2 `afacb7b7-263a-48e6-a744-a9f4b450407b`.
 The resulting fourteen named children still total **70 points**. This preserves
 the original five-point allocation and all recovery8/storage3 guarantees; it is
-not an extra implementation allowance. The standalone ADA3 remains excluded.
+not an extra implementation allowance. The standalone ADA2 remains excluded.
 
 Native Rheos operations on2026-10-15 created the earlier three-point child under
 this epic, registered recovery→earlier, storage→recovery/earlier and final
 AFAC→earlier/recovery/storage dependencies, changed AFAC5 to2 and recorded epic70
 (write-ID `1792062890876-0.z09u5o4l2jg4eugxc9`). Fresh native read-task
 sources identify all fourteen actual children and their points sum70; standalone
-ADA3 is excluded. Historical ledger bytes and unrelated metadata remain preserved.
+ADA2 is excluded. Historical ledger bytes and unrelated metadata remain preserved.
 The new child is admitted only incoming→accepted→breakdown, and no accepted runtime,
 readiness, completed capability or rollout is inferred. The three owning durability
 qualifications and final same-candidate integration remain pending. A future changed
@@ -151,17 +151,18 @@ children retain separate tests and receipts; one combined journey cannot close
 both independent slices or expand the eight-point Services story.
 
 The separately estimated [Rheos metadata operations prerequisite](apply-adopted-rheos-metadata-repair-to-foresight-cutover-cards-217142ea.md)
-(`ada3bc51-1528-4ae3-aa46-095d217142ea`, three points outside the child total)
-remains incoming. The four original cards now have actual native forward
-incoming→accepted→breakdown admission, recorded in sourcefc90d920 and its eight
-real status-change events. No physical-absence initialization, retroactive
-creation or readiness is inferred. Their old missing-status guards no longer
-match. ADA's original six-effect definition is not thereby complete: the two
-explicit SDK/fence empty-dependency omission effects and their adopted owner/
-recovery qualification remain separate. Root must review the current applicability
-of that existing owner; do not repeat an inapplicable initial-status operation or
-use its old pending body as a universal halt on unrelated scoped work. Native
-finding settlement and cutover planning closure remain separate from these events.
+(`ada3bc51-1528-4ae3-aa46-095d217142ea`, two points outside the child total)
+remains incoming and now plans only the two residual SDK/fence empty-dependency
+omission effects, after their separate adopted owner/recovery qualification. The
+four original cards have actual native forward incoming→accepted→breakdown
+admission, recorded in sourcefc90d920 and its eight real status-change records.
+Those are separately completed planning admissions, not effects credited to ADA,
+physical-absence initialization, retroactive creation or readiness. Their old
+missing-status guards no longer match and are removed from ADA's future scope,
+verification and estimate. Preserve their actual current states and history;
+do not repeat inapplicable initialization. The two remaining omissions and their
+live-effect readbacks are still pending. Native finding settlement and cutover
+planning closure remain separate from this residual replan.
 
 Pinned SDK07085 has no standalone exported graph-input transform. Its complete
 owner `ingestEvents` operation appends base rows and emits additional derived
