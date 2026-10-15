@@ -511,3 +511,12 @@
   spore: none
   receipt-refs: foresight-pr127-current-main-integration
   note: A cached pull base can lag the actual branch tip. Fetch the live ref and inspect mergeability even after review convergence passes; preserve full main ledger prefixes and exact branch-only bytes, then obtain fresh successor evidence. Use a pinned canonical main skill snapshot when the global checkout contains unrelated work.
+- ts: 2026-10-15T15:59:11.492991068Z
+  session: /home/err/.codex/worktrees/knoxx-fork-rejection-plan/foresight
+  task: Plan exact personal Knoxx rejection transport independently
+  p-efficiency: 0.84
+  p-friction: 0.42
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#c89e956a-e3c8-4bed-91db-9ea527ffe000,.ημ/session-reflections.edn#6beef7c4-5964-4286-b715-d52ae50eece1
+  note: Keep accepted-main family ownership distinct from unadopted actionability/CMS branches; verify actual native receipt storage path before append. Retain wrong-path guard failure and root-reviewed identical-event relocation, complete canonical prefixes, actual package validation and one-event custody. Card/native admission and five future paths only; native independent judgment, setup/grants, readiness and deployment remain unproven. No skill spore or source/public/model/account/runtime effect.
