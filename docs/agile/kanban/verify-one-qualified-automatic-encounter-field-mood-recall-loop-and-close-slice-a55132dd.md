@@ -10,7 +10,7 @@ parent: "5ea872c3-1db4-47c5-a63d-d49f99f79497"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792043916002-0.8s3jz4yuxxnf7al7gyn"
+write-id: "1792054654598-0.yjmcify05qlsnzccqww"
 created_at: "2026-10-15T00:02:00.111Z"
 ---
 
@@ -47,7 +47,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 ## Acceptance criteria
 
-1. Qualify all owning source/consumer merges, exact native predecessor readiness and required release/deployment/rollback before live changes. Establish a supported qualified idle/fenced window before served revision change; never abort/replace a held maker identity. Termination/fencing must cover both old artifact persistence and publication, not expiry/poll alone.
+1. Qualify all owning source/consumer merges, exact native predecessor readiness and required release/deployment/rollback before live changes. Establish the qualified owner/epoch fence at BOTH persistence and publication before any served revision change, retain it through rollback and independently read it back. Preserve maker identities and wait for verified terminal parents/delegates before service replacement; never interrupt them to qualify. Idle polls/expiry are not admission. Unsupported fencing refuses deployment.
 2. Freshly verify served artifact/configuration/schema/kernel/consumer bindings and actual stored maker principal. Observe a natural native-clock turn, preserving one event owner and disabled cloud event runtime; never replay publication.
 3. Bind outside identity/hash, graph/field/effect and independent mood revisions, eligible/denied candidate IDs/reasons, semantic seed IDs, authorized traversed edge/node path, traversal revision and actual prompt-included neighbor ID beyond the seed from that same served automatic run. The inspected actual provider prompt must itself contain the matching scope-safe authorized node/edge path and traversal trace/revision as model-visible context; diagnostics-only trace and content-only prompts fail. Direct vector/seed-only inclusion fails B3. A privileged API query, aggregate count or revision label alone cannot satisfy B1/B2/B3.
 4. At the served automatic consumer seam vary exactly one admitted physical deposit or bond input. Hold encounter identity/content/hash, principal/grants, semantic seeds, query, corpus/index, graph, prior field/world, mood, configuration, time/event schedule and every other recall input fixed. Trace that sole input through derived motion/contact to changed graph path/prompt-included association, with independent resulting-state readback. No changed encounter, graph revision or unrelated field checkpoint may be selected as another recall input; resulting physical state/revisions must derive only from the selected deposit/bond. Distinct-encounter storage arms and pure ablation cannot substitute. Separately vary only persisted consumed mood while holding physical state and every other recall input fixed, proving changed bounded attention/recall/decision.
@@ -84,5 +84,7 @@ Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact 
 Finite qualification refinement from owning field review5527243274: The complete dependency list also requires terminal closeout 7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71, whose causal predecessor requires qualified deployment. The aggregate cannot complete ahead of any of these children. Children retain parent links without a dependency on this automatic aggregate, so the dependency relation remains one-way; native Rheos owns readiness/admission and must reject any actual cycle.
 
 Finding4279480464: aggregate AC6 now verifies the terminal-closeout child and its exact goal/thread/creation/objective/automation readbacks. The child owns lifecycle writes; parent never repeats them. Missing/failed/unknown/mismatched readbacks refuse completion. Larger stories stay unfinished and the human-paused heartbeat stays paused.
+
+Currentplanning parity for4280657780: operative aggregate consumes qualifiedboth-boundaryownerfence andterminalmakerprotection, no unsupportedidle/poll/expiry option. Parent remainsIncoming5non-additivehistory; no childwrite repetition or aggregatepoints adoption. Child re-estimates8/8/5/5 expose same14selected62; earlier50 remainshistory. No runtime/Ready/liveproof.
 
 ---
