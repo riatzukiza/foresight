@@ -3,8 +3,8 @@ category: "kanban"
 labels: "deployment, knoxx, embeddings, cms, source-preservation"
 dependency: ["ada3bc51-1528-4ae3-aa46-095d217142ea"]
 type: "epic"
-write-id: "1792062020744-0.syjbcgnw0olp1xetxr"
-points: "59"
+write-id: "1792062890876-0.z09u5o4l2jg4eugxc9"
+points: "70"
 title: "EPIC: Preserve retained sources while admitting the native Knoxx CMS embedding cutover"
 priority: "P1"
 status: "breakdown"
@@ -77,9 +77,10 @@ repository change or copied chunking/graph algorithm is included.
 | [Validate the shared embedding runtime](knoxx-validated-shared-embedding-runtime-d3277a3c.md) | `d3277a3c-6e30-42b1-8151-16c041612a6a` | 5 | None |
 | [Qualify the SDK staging/adoption boundary](select-and-qualify-the-genuine-sdk-staging-and-source-adoption-boundary-5a7ee0c0.md) | `6cc1e1ca-c8dd-4cf9-9cd1-24675a7ee0c0` | 5 | None; parallel to runtime |
 | [Materialize and verify retained sources](knoxx-retained-source-embedding-migration-11bc1411.md) | `11bc1411-154d-4db7-8c27-51506ab30508` | 8 | Runtime and SDK prerequisite |
-| [Qualify durable scoped publication receipts](knoxx-durable-scoped-publication-receipts-b450407b.md) | `afacb7b7-263a-48e6-a744-a9f4b450407b` | 5 | Attempt recovery and persistent storage qualification; adapter source can qualify in parallel |
-| [Qualify publication attempt custody/recovery](qualify-crash-surviving-publication-attempt-custody-and-receipt-recovery-4a1450f4.md) | `e945de08-58ec-4028-b8cb-5dbd4a1450f4` | 8 proposed | Qualified existing receipt/Clio source interface; no AFAC completion edge |
-| [Qualify persistent receipt storage/replacement](qualify-persistent-publication-receipt-storage-through-publisher-replacement-4996f2bc.md) | `a3ca141e-865e-4c35-8053-53084996f2bc` | 3 proposed | Accepted attempt recovery and existing scoped readback interface |
+| [Qualify the earlier native durable scoped adapter](qualify-the-native-scoped-publication-receipt-adapter-before-recovery-e9c721eb.md) | `8756362c-2362-4cb2-853a-7642e9c721eb` | 3 | None among AFAC/recovery/storage; actual runtime/source qualification |
+| [Integrate the complete durable publication capability](knoxx-durable-scoped-publication-receipts-b450407b.md) | `afacb7b7-263a-48e6-a744-a9f4b450407b` | 2 | Earlier adapter, attempt recovery and persistent storage qualification |
+| [Qualify publication attempt custody/recovery](qualify-crash-surviving-publication-attempt-custody-and-receipt-recovery-4a1450f4.md) | `e945de08-58ec-4028-b8cb-5dbd4a1450f4` | 8 | Accepted native adapter `8756362c-2362-4cb2-853a-7642e9c721eb`; no final AFAC edge |
+| [Qualify persistent receipt storage/replacement](qualify-persistent-publication-receipt-storage-through-publisher-replacement-4996f2bc.md) | `a3ca141e-865e-4c35-8053-53084996f2bc` | 3 | Accepted recovery and native adapter `8756362c-2362-4cb2-853a-7642e9c721eb` |
 | [Qualify native translation before deployment](qualify-selected-native-knoxx-translation-and-sme-decisions-before-deployment-5eae82d9.md) | `60e85d88-3960-449f-8376-10e75eae82d9` | 5 | Runtime; owning translation stores |
 | [Qualify native content/publication before deployment](qualify-selected-native-knoxx-content-and-publication-decisions-before-deployment-88af373d.md) | `a7402e9d-6538-4e38-9919-93fe88af373d` | 5 | Runtime, durable receipts and translation qualification |
 | [Qualify the database-enforced writer fence](qualify-a-database-enforced-cutover-writer-fence-before-deployment-2129f2bf.md) | `c002072c-2415-46a8-b533-6b502129f2bf` | 5 | None; fixture mechanism qualification |
@@ -88,43 +89,41 @@ repository change or copied chunking/graph algorithm is included.
 | [Prove live translation and its judgments](prove-native-cms-translation-and-persisted-independent-judgments-after-rollout-3938fca6.md) | `6890a3d4-f3d7-48f1-bd92-f6223938fca6` | 3 | Completed Services deployment |
 | [Prove content and public Spanish publication](prove-native-content-judgment-publication-and-public-rendering-after-rollout-986502d1.md) | `4a9f303e-63d1-48d7-a396-b93c986502d1` | 5 | Deployment, translation proof and qualified durable receipts |
 
-The existing eleven children total 59 points. Two newly authored proposed
-first-class source cards add separately estimated ownership: Knoxx publication
-attempt custody/recovery (8) and Services persistent receipt storage/replacement
-(3). Their proposed thirteen-child aggregate is **70 points**, not an additional
-implementation estimate. Current canonical epic metadata remains 59 until root
-uses Rheos to register the reviewed children/dependencies and update the aggregate.
-The exact canonical epic update from 59 to 70 for these thirteen named children
-is an explicit blocking operation before this added durability plan advances or
-cutover planning closes; the standalone three-point metadata operation is excluded.
-Fresh canonical readback and actual operation/source/completion custody must
-establish 70. A pending operation, retained 59 or body arithmetic cannot satisfy
-that gate. Root preserves unrelated metadata and historical ledger bytes and
-uses adopted Rheos recovery for any actual uncertain operation. This body
-proposal supplies no executed estimate or readiness credit. Four additional five-point prerequisites were created
-through canonical Rheos, with actual incoming metadata and task-created events.
-They qualify the two native product paths, the database fence and the isolated
-trusted gate before Services consumes their accepted interfaces. None depends
-backward on Services or a later live proof. Estimates remain subject to planning review. Rheos
-created the three additional children and recorded the migration dependency
-vector and aggregate estimate through its actual canonical operations. The new
-durability child is an initial first-class Markdown card; no creation event or
-readiness is claimed. Actual Rheos operations link its UUID into Services and
-content dependencies and update the aggregate to 39. Knoxx exclusively owns its
-application adapter/runtime implementation and qualification; Foresight owns this
-coordination. Its five-point emission/readback scope consumes the separately
-accepted attempt-recovery and deployment-storage qualifications. Those source
-proposals carry no invented creation event, write-ID, created_at or readiness.
-The attempt owner consumes the already qualified existing receipt interface as
-source input, without requiring AFAC completion. The storage owner consumes
-accepted attempt/readback source and can close without AFAC or EC1.03 completion.
-AFAC then consumes both completed capabilities before EC1.03 admission. This is
-acyclic: qualified source interface → attempt owner → storage owner → AFAC →
-Services deployment → later live proofs. AFAC additionally consumes the attempt
-owner directly. Root registers those actual local links canonically after planning
-review; an authored dependency description does not claim operational registration.
-Accepted fixture qualification precedes rollout and never waits on the later
-production Spanish receipt. The
+The prior eleven-child source allocation totaled59. Recovery8 and storage3
+produced the previously proposed thirteen-child total70 while canonical epic
+metadata remained59. The current cycle correction splits the existing AFAC5 into
+actual durable adapter3 `8756362c-2362-4cb2-853a-7642e9c721eb` and final AFAC integration2 `afacb7b7-263a-48e6-a744-a9f4b450407b`.
+The resulting fourteen named children still total **70 points**. This preserves
+the original five-point allocation and all recovery8/storage3 guarantees; it is
+not an extra implementation allowance. The standalone ADA3 remains excluded.
+
+Native Rheos operations on2026-10-15 created the earlier three-point child under
+this epic, registered recovery→earlier, storage→recovery/earlier and final
+AFAC→earlier/recovery/storage dependencies, changed AFAC5 to2 and recorded epic70
+(write-ID `1792062890876-0.z09u5o4l2jg4eugxc9`). Fresh native read-task
+sources identify all fourteen actual children and their points sum70; standalone
+ADA3 is excluded. Historical ledger bytes and unrelated metadata remain preserved.
+The new child is admitted only incoming→accepted→breakdown, and no accepted runtime,
+readiness, completed capability or rollout is inferred. The three owning durability
+qualifications and final same-candidate integration remain pending. A future changed
+estimate requires review and its matching canonical update; prose arithmetic or an
+uncertain operation cannot substitute for that custody.
+
+The lawful direction is earlier real adapter3 → recovery8 → storage3 → final
+AFAC2 → Services deployment → later live proofs. Storage additionally consumes
+the earlier adapter directly; final AFAC additionally consumes earlier adapter
+and recovery directly. The early adapter has no reverse edge to final AFAC,
+recovery or storage, and qualifies actual compiled Node/CLJS/Clio emission and
+fresh durable readback through publisher restart/rollover. A pure interface,
+private candidate776f or merely pinned dependency is not that accepted capability.
+Recovery retains genuine acknowledged intent before effect, exact observation/
+envelope custody, real interrupted-write and positive fresh-process recovery,
+and truthful unknown effect/callback states. Services storage retains actual
+mapping outside the image and publisher container/image replacement/remount.
+Final AFAC keeps all existing deployment/content UUID dependencies meaningful by
+admitting their complete same-candidate contract, never the early partial capability.
+Qualified fixture evidence precedes rollout and does not wait on later Spanish proof.
+The
 SDK prerequisite proves the supported
 source families, complete emitted output closure, identity-conflict and transfer
 rules, and the separate authorized append-delta decision before choosing a route.
@@ -152,17 +151,17 @@ children retain separate tests and receipts; one combined journey cannot close
 both independent slices or expand the eight-point Services story.
 
 The separately estimated [Rheos metadata operations prerequisite](apply-adopted-rheos-metadata-repair-to-foresight-cutover-cards-217142ea.md)
-(`ada3bc51-1528-4ae3-aa46-095d217142ea`, three points, standalone outside the eleven children)
-consumes accepted owner source `775ab0be-90fe-469f-89e3-e6ac07b031ce` and its
-qualified recovery prerequisite. It then persists the four missing initial
-statuses and explicitly omits the SDK and independent-fence empty dependency
-headers through canonical operations. This local prerequisite precedes cutover
-planning closure; external owner source remains an explicit body reference,
-not an unsupported cross-board executable edge. Those real operational effects,
-readiness and the remaining initial-status finding are still pending. No fake
-lifecycle round trip, manually edited established metadata or creation history
-stands in for them. Both the existing 59-point and proposed 70-point child aggregates exclude this
-standalone three-point operational prerequisite.
+(`ada3bc51-1528-4ae3-aa46-095d217142ea`, three points outside the child total)
+remains incoming. The four original cards now have actual native forward
+incoming→accepted→breakdown admission, recorded in sourcefc90d920 and its eight
+real status-change events. No physical-absence initialization, retroactive
+creation or readiness is inferred. Their old missing-status guards no longer
+match. ADA's original six-effect definition is not thereby complete: the two
+explicit SDK/fence empty-dependency omission effects and their adopted owner/
+recovery qualification remain separate. Root must review the current applicability
+of that existing owner; do not repeat an inapplicable initial-status operation or
+use its old pending body as a universal halt on unrelated scoped work. Native
+finding settlement and cutover planning closure remain separate from these events.
 
 Pinned SDK07085 has no standalone exported graph-input transform. Its complete
 owner `ingestEvents` operation appends base rows and emits additional derived
@@ -176,18 +175,18 @@ obligation. A small zero-obligation profile cannot satisfy the observed case.
 A fresh-store relabel, old-model completion path, manual target receipt,
 deployment-gate override, reset/deletion of retained data, re-insertion of
 historical events into the production canonical store, OpenPlanner companion deployment or repository changes,
-review-policy change, or board-engine implementation. This planning PR does not
-implement or execute migration, assign future accepted commits, or admit a
-board transition.
+review-policy change, or board-engine implementation. This planning source does not implement or execute migration or assign future
+accepted commits. The four original cards have actual native admission only
+through breakdown; readiness and all added capability qualification remain pending.
 
 ## Acceptance criteria
 
 - [ ] Before the added durability plan advances or cutover planning closes,
   qualified/adopted canonical Rheos records this epic's aggregate as 70 for the
-  thirteen named children, excluding standalone metadata prerequisite
+  fourteen named children, excluding standalone metadata prerequisite
   `ada3bc51-1528-4ae3-aa46-095d217142ea`. Retain fresh canonical readback and actual
   operation/source/completion custody; a still-pending update or literal 59 blocks
-  that advance. AFAC additionally requires its two actual local prerequisite
+  that advance. Final AFAC additionally requires its actual earlier-adapter, recovery and storage
   edges before readiness/completion, as specified in its owning card. If planning
   review changes a child estimate, first review the revised exact aggregate and
   perform its matching canonical update before advancing.

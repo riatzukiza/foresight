@@ -17,7 +17,8 @@ created_at: "2026-10-14T05:48:00.722Z"
 
 The named predeployment persistence owner is
 [qualify durable Knoxx publication receipts](knoxx-durable-scoped-publication-receipts-b450407b.md)
-(`afacb7b7-263a-48e6-a744-a9f4b450407b`, five points). Its source, configured
+(`afacb7b7-263a-48e6-a744-a9f4b450407b`, final integration two points, consuming the separate three-point
+native adapter `8756362c-2362-4cb2-853a-7642e9c721eb`). Its accepted source, configured
 emission adapter and storage readback are qualified before Services rollout;
 Rheos links this task to that actual UUID. This proof exercises the resulting
 deployed capability and cannot close the implementation prerequisite with a

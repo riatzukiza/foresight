@@ -1,15 +1,16 @@
 ---
 category: "kanban"
-type: "task"
-uuid: "a3ca141e-865e-4c35-8053-53084996f2bc"
-epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
+labels: "services, publication, receipts, storage, replacement, durability"
+dependency: ["e945de08-58ec-4028-b8cb-5dbd4a1450f4", "8756362c-2362-4cb2-853a-7642e9c721eb"]
 parent: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
-status: "incoming"
+type: "task"
+write-id: "1792062889287-0.ov8n2earkhnjgpi9qii"
+points: "3"
 title: "Qualify persistent publication receipt storage through publisher replacement"
 priority: "P1"
-points: "3"
-labels: "services, publication, receipts, storage, replacement, durability"
-dependency: ["e945de08-58ec-4028-b8cb-5dbd4a1450f4"]
+status: "incoming"
+epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
+uuid: "a3ca141e-865e-4c35-8053-53084996f2bc"
 ---
 
 # Qualify persistent publication receipt storage through publisher replacement
@@ -46,14 +47,17 @@ applicable pending custody without repeating publication or dropping history.
 
 ## Entry and dependencies
 
-Consumes the accepted source/build and qualified recovery/readback interface of
-Knoxx attempt-custody owner `e945de08-58ec-4028-b8cb-5dbd4a1450f4`, plus the
-existing qualified AFAC emission/readback interface. It does not depend on AFAC
-completion, EC1.03 or a live Spanish proof; AFAC consumes this card's completed
-storage qualification. The upstream Knoxx source card qualifies process recovery
-on an owned volume and can complete without this container/deployment proof.
-This keeps the plan acyclic. Actual canonical relationships and accepted source
-admission remain root-owned operations.
+Native Rheos readback on2026-10-15 records recovery `e945de08-58ec-4028-b8cb-5dbd4a1450f4` and
+earlier native adapter `8756362c-2362-4cb2-853a-7642e9c721eb` as this card's exact dependency vector,
+write-ID `1792062889287-0.ov8n2earkhnjgpi9qii`. This three-point card remains
+incoming; actual persistent replacement-storage qualification is pending. Consume their actually accepted source/build
+and qualified recovery/emission/fresh-readback interfaces. This card does not
+depend on final AFAC `afacb7b7-263a-48e6-a744-a9f4b450407b`, EC1.03 or a live Spanish proof; final AFAC
+consumes this completed storage qualification. Recovery qualifies process recovery
+on an owned volume without this container/deployment proof. The early adapter
+qualifies real compiled runtime persistence, not only a pure interface. A private
+candidate outside accepted source ancestry supplies no qualified input. Root
+retains actual native operation/readback custody for both local edges.
 
 ## Scope
 

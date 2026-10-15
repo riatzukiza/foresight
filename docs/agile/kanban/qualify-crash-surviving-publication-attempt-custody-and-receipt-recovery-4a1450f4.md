@@ -1,14 +1,16 @@
 ---
 category: "kanban"
-type: "task"
-uuid: "e945de08-58ec-4028-b8cb-5dbd4a1450f4"
-epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
+labels: "knoxx, publication, recovery, receipts, clio, crash-custody"
+dependency: ["8756362c-2362-4cb2-853a-7642e9c721eb"]
 parent: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
-status: "incoming"
+type: "task"
+write-id: "1792062888436-0.y64djcxictmk2erjskx"
+points: "8"
 title: "Qualify crash-surviving publication attempt custody and receipt recovery"
 priority: "P1"
-points: "8"
-labels: "knoxx, publication, recovery, receipts, clio, crash-custody"
+status: "incoming"
+epic: "82c55f16-a688-4ba5-983d-c44c618cdd5d"
+uuid: "e945de08-58ec-4028-b8cb-5dbd4a1450f4"
 ---
 
 # Qualify crash-surviving publication attempt custody and receipt recovery
@@ -18,8 +20,10 @@ labels: "knoxx, publication, recovery, receipts, clio, crash-custody"
 Foresight owns planning and evidence coordination. `open-hax/knoxx` owns this
 application implementation, its portable recovery law and its runtime gates.
 This source proposal addresses [native PR140 finding4277168537](https://github.com/open-hax/foresight/pull/140#discussion_r4277168537).
-It is separate from AFAC `afacb7b7-263a-48e6-a744-a9f4b450407b`'s five-point
-scoped receipt emission/readback boundary and Services' storage lifetime proof.
+It consumes the earlier three-point native scoped adapter `8756362c-2362-4cb2-853a-7642e9c721eb`.
+AFAC `afacb7b7-263a-48e6-a744-a9f4b450407b` retains the later two-point full-durability integration,
+while Services owns storage lifetime. The adapter3 plus AFAC2 preserves the
+original five-point scope; this eight-point recovery implementation is unchanged.
 
 The actual production composition uses `publication-effects/IIdempotencyStore`
 and `publication-target-static-site/static-site-store`: a reservation precedes
@@ -59,11 +63,17 @@ authorize an unsafe automatic repeat or invented successful receipt.
 
 ## Entry and ownership
 
-Consume the exact qualified existing AFAC emission/readback interface and the
-accepted pinned Clio capability as source inputs. This card does not depend on
-AFAC completion, Services rollout or a later live proof; AFAC consumes this
-card's accepted source and qualification. Source preparation, native owner
-review and lawful readiness are still required before implementation.
+Native Rheos readback on2026-10-15 records earlier adapter `8756362c-2362-4cb2-853a-7642e9c721eb`
+in this card's dependency vector, write-ID `1792062888436-0.y64djcxictmk2erjskx`.
+This eight-point card remains incoming; actual recovery qualification is pending.
+Consume that owner's actually qualified accepted emission/readback runtime and
+Clio dependency closure before this card's review/readiness and implementation.
+A pure interface or private candidate776f outside accepted Knoxx340 ancestry is
+not this input. This card does not depend on final AFAC `afacb7b7-263a-48e6-a744-a9f4b450407b`,
+Services storage/rollout or a later live proof; final AFAC consumes this card's
+accepted source and qualification. Keep the existing pre-effect intent, actual
+observation, exact-envelope, interrupted-write, positive recovery and truthful
+unknown guarantees below unchanged.
 
 The existing actual public channel is authenticated
 `POST /api/publications/reconcile`; its closed trigger contains trigger ID,
