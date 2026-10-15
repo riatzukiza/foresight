@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2eebbcf3-875d-4b7e-aad8-50a1c46472d2"]
 category: "kanban"
-write-id: "1792022594519-0.90cztutua3ba6j68qn8"
+write-id: "1792023337139-0.piwftyvul4lyjtq3wk"
 created_at: "2026-10-15T00:01:58.730Z"
 ---
 
@@ -24,7 +24,7 @@ Prove finite physical contact inclusion and lawful admitted replay.
 
 ## Scope
 
-The owning boundaries and mandatory packet completion checklist in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` apply together with the original accepted milestone and source story. Katamorph/Axxium/Clio retain canonical authority.
+The named contact packet completion boundary in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` applies together with its original selected milestone/story criteria and shared resource/receipt/authority rules. Other packets retain their own outputs; an earlier packet need not execute its successor to complete. Katamorph/Axxium/Clio retain canonical authority.
 
 ## Non-goals
 
@@ -36,7 +36,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 2. Unchanged canonical memory bytes and content embeddings coexist with separately versioned field/context salience; no re-embedding unchanged content.
 3. Replay identical admitted initial state/event order/time schedule/configuration/math/seed within declared continuous tolerance while exact discrete paths/contacts/ownership/IDs match; tampered restore refuses.
 4. Pure lower-level deposit/bond ablation freezes graph/query/principal/weights/mood/attention/seed and changes actual contact/inclusion, but is never submitted as a valid persisted history.
-5. A separate pair uses two independently valid outside encounter/effect histories, each with consistent hashes/cursors/revisions and unchanged replay, to require changed physical contact and recall association. No forged hashes or self-output disguised as outside input.
+5. A separate pure-kernel pair uses two independently admitted valid outside encounter/candidate inputs and consistent identity/hash/time data, proving changed contact/inclusion and unchanged kernel replay. The later atomic packet owns actual transaction/readback and persisted-history replay for those two arms; this packet does not depend on that future writer. No forged hashes or self-output disguised as outside input.
 
 ## Verification
 
@@ -53,5 +53,7 @@ License: GPL-3.0-or-later.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
+
+Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
 
 ---

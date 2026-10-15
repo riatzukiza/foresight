@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["d68344c4-f18b-4b96-8585-bd8f7ac7c6a2"]
 category: "kanban"
-write-id: "1792022593797-0.6011vkc8cq4a7e7iqav"
+write-id: "1792023336360-0.y1ts0domahlai7zkvc8"
 created_at: "2026-10-15T00:01:58.255Z"
 ---
 
@@ -24,7 +24,7 @@ Couple authorized physical winds bonds friction and seeded motion.
 
 ## Scope
 
-The owning boundaries and mandatory packet completion checklist in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` apply together with the original accepted milestone and source story. Katamorph/Axxium/Clio retain canonical authority.
+The named forces packet completion boundary in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` applies together with its original selected milestone/story criteria and shared resource/receipt/authority rules. Other packets retain their own outputs; an earlier packet need not execute its successor to complete. Katamorph/Axxium/Clio retain canonical authority.
 
 ## Non-goals
 
@@ -52,5 +52,7 @@ License: GPL-3.0-or-later.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
+
+Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
 
 ---

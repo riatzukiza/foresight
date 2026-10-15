@@ -27,7 +27,7 @@ Rheos and read back with their proposed estimates and exact relationships.
 Creation is planning input, not Ready admission or implementation authority.
 Points and aggregation remain provisional for independent review; existing
 card status/points/relationships are preserved. The original
-3/5/3/8/5 card estimates remain historical inputs; do not add aggregate estimates
+3/5/3/8/5/3 intake/recall/selection/field/mood/verification estimates remain historical inputs; do not add aggregate estimates
 to their allocated execution packets or derive remainders by subtraction.
 
 | Packet | Owner / existing story | Proposed points | Completed input and required output |
@@ -55,7 +55,16 @@ Each row below is a native-created initial Incoming child of its original story,
 under character epic63a0e4ff. New estimates total36; historical aggregate estimates
 must not be counted again with these allocations. Fair aggregation/type/point
 adoption is an explicit pre-Ready gate; existing aggregate metadata stays intact
-during this planning PR. This is no bypass of source qualification or native
+during this planning PR. In particular, the original verification card's3-point
+estimate is historical; its new selected automatic-proof child is proposed5.
+The containing intake/recall/field/mood/verification cards are proposed aggregate
+roles for their allocated children and later work, while selection3 remains a
+separate planning task. Before any child becomes Ready, independently review
+and apply lawful aggregate/type/estimate treatment through Rheos: count each
+selected execution packet once, never both an original aggregate estimate and
+its child allocations. Later work retains independently reviewed estimates;
+no remainder is inferred by subtraction, and no unsupported native operation
+is simulated locally. This is no bypass of source qualification or native
 predecessors. Existing selection remains a separate3-point predecessor.
 
 | Packet | Canonical UUID | Proposed points | Exact predecessor UUIDs |
@@ -149,90 +158,95 @@ criterion. Reuse is allowed only with exact source/consumer evidence covering
 the requirement. Every other original obligation remains in its named later
 delivery; an omitted or unsupported mechanic is not implicitly complete.
 
-1. **Admission:** freeze canonical external identity, actual payload hash and
-   attributed content revision/predecessor, author/source/visibility/UTC,
-   selection reason and actual seed. Classify self-output, outside authors,
-   replies and explicit operator input with separate provenance. The selected
-   B1 outside encounter must be evidenced as outside input; a maker's own post
-   or repeated own output cannot satisfy it merely by having a platform ID.
-   Include a self-output refusal fixture for that proof.
-   Duplicate external revision cannot mint a
-   fresh independent effect. Empty, malformed, failed and partial pages have
-   distinct recorded outcomes; failed admission/page cannot advance the cursor
-   or claim a graph write. Set and exercise actual queue, per-source request,
-   byte and retention caps, including exceeded-cap refusal. Preserve tool/account
-   permissions and source scope; adversarial encounter text cannot select model
-   routing, credentials, permissions or effect admission.
-   Prepare author/topic/reply relationship evidence for the atomic projection;
-   unknown or absent relationships stay explicit rather than invented.
-2. **Graph interface and feedback:** reproduce the exact `k=6`, `fetch=18`
-   case with six denied leading candidates and an authorized seventh, retaining
-   authorized recall after visibility/quality ordering and refill. Test actual
-   automatic trigger/bounded context behavior and current stored authority.
-   Missing, revoked, ambiguous or mismatched resolver bindings fail closed;
-   payload-selected role, organization, credentials or grants cannot supply
-   authority. Exercise actual automatic and tool/API adapter boundaries with
-   matched corpus/query/options/principal and positive stored session ownership;
-   retain endpoint-specific policy refusals. Test hidden node/path/field influence
-   before ranking/caps/traversal/feedback.
-   Empty, denied, indexing-pending, malformed, timeout/transport and exhausted
-   budgets remain distinct. Preserve legacy context/privacy regressions.
-   Correct/verify event counting from `:hits`, not `:results`; raw candidates,
-   quality survivors, authorized hits and prompt-included hits are distinct
-   measured quantities. Denied private content/IDs must not leak through public
-   diagnostics. The separate attributed feedback writer has actual persistent
-   once-only positive and duplicate/partial/failure/uncertain-write tests; mere
-   retrieval frequency never proves usefulness.
-3. **ABI/time and physical coupling:** bind the qualified owner/numeric decision
-   and owning finite declaration, calibrated config/layer mapping, units and
-   seeds to actual build/law/replay evidence. Require declared order, finite
-   refusal, exact IDs/cells, zero/quiet/split/catch-up and repeated-time behavior,
-   explicit particle/node/edge/field-cell/work limits and exceeded-limit refusals
-   preserving the prior state,
-   differing friction, passive nexus/presence, immutable emitted ownership and
-   contribution lineage. Source mapping and unsupported mechanics remain
-   explicit. Physical positions, winds, forces and contacts are actual state,
-   not presentation coordinates or counters.
-4. **Contact/replay and atomic persistence:** stable canonical memory bytes and
-   content embeddings are unchanged by a field update, with separately
-   versioned contextual salience and its attribution. Actual motion/contact
-   changes the encountered association. Persist author/topic/reply provenance
-   relationships together with the encounter graph projection, visibility,
-   source/UTC, field and unique effect against expected revisions; independently
-   read those relationships and the pair back. Duplicate/conflicting/failed/
-   uncertain commits cannot become partial success. Replay the original
-   admitted snapshot/history with declared continuous tolerance and exact
-   discrete paths/contacts/IDs/ownership; tampered restore refuses.
-5. **Mood:** review the separate schema/dimensions/ranges/uncertainty, baseline/
-   decay, causal encounter/field/time inputs, actual appraisal/model/config
-   identity and seed, prior/new revision and transition. Verify duplicate and
-   timestamp disorder, missing/contradictory/malformed/late/provider failure,
-   observable outcomes and explicitly validated fallback. Persist/read back the
-   selected revision and exercise conflict/failure handling without losing or
-   duplicating a change. Set and test actual cadence, token, queue, timeout and
-   retry caps, independent of maker execution; never expand permissions. The
-   retained broader facet/restart/sustained-appraisal program stays unfinished.
-6. **Automatic causal proof:** after qualified deployment and fresh served-
-   revision checks, bind actual stored maker principal, admitted encounter,
-   authorized graph/field/mood revisions, consumed attention, actual provider
-   prompt, persistent readbacks and accounting. Capture visibility-safe eligible
-   and denied candidate IDs with exclusion reasons, traversal revision and actual
-   prompt-included IDs from that same served automatic run. Lower-level fixtures
-   and aggregate counts cannot substitute for these live identity bindings.
-   Use separate controlled cases:
-   with seed, mood/lens/attention/read weights/authority fixed, changing only an
-   admitted deposit or bond must change actual physical motion/contact, recall
-   path and prompt-included association. In the separate mood contrast, hold
-   seed, actual principal/grants, query/corpus/index readiness, graph/field/world
-   revision, timestep schedule, consumer/configuration and non-mood read inputs
-   fixed; change only the independently persisted mood state/revision. Derived
-   mood attention/read weights may then change bounded attention/recall
-   and the recorded decision. A loaded revision label or disconnected simulation
-   fails. Lower-level physical intervention is separate from valid persisted
-   replay; never tamper saved hashes/cursors/history as an admitted control.
-   Repeated admission/recall/replay cannot multiply persistence or feedback.
-   Record actual selected appraisal cost/latency; HTTP200, an action map or an
-   administrative manual query cannot replace these automatic observations.
+Each numbered item owns only its named packet's completion. Shared resource,
+receipt, authority and qualification constraints apply to all; a later packet's
+output is not an earlier packet's completion prerequisite. The full selected
+B1/B2/B3 chain remains mandatory across their composition.
+
+1. **Admission:** freeze canonical external ID, payload hash, attributed content
+   revision/predecessor, author/source/account/visibility/UTC and selection seed/
+   reason. Distinguish outside authors, self-output, replies and operator input;
+   self-output cannot satisfy B1. Duplicate external revision cannot mint a new
+   effect. Empty/malformed/failed/partial page outcomes remain distinct, with no
+   failed-page cursor advancement. Set and test queue, per-source request, byte,
+   retention and model-invocation caps, including exceeded-model-budget refusal;
+   select a no-model path when interpretation is unnecessary. External text
+   cannot choose model routing, credentials, permissions or effect admission.
+   Persist only admitted envelope/prepared bound effect and relationship evidence;
+   graph/field projection remains uncommitted until the atomic packet.
+2. **Graph interface and feedback:** exact k=6/fetch18 denied-leading-six and
+   authorized-seventh refill, frozen principal/query/corpus/quality/order and
+   matched real automatic/API boundaries. Missing/revoked/ambiguous/mismatched
+   stored bindings and payload-selected authority deny. Scope precedes seeds,
+   expansion/caps/ranking/hidden nodes/edges/compaction/trails/fields/feedback.
+   An authorized edge reaches a neighbor beyond the seed with actual path and
+   bounded context custody. Empty/denied/indexing-pending/malformed/transport/
+   timeout/exhaustion remain distinct. Count :hits separately as raw/quality/
+   authorized/included; preserve legacy/privacy controls and no public private-ID
+   leak. Outcome-attributed stable recall/effect feedback has real storage
+   once-only, partial/failed/uncertain-write and independent recovery tests;
+   retrieval alone is nonreinforcing. No future live-maker proof is required to
+   complete these qualified owning interface fixtures.
+3. **ABI/time:** bind qualified owner/numeric selection and declaration, schemas,
+   exact IDs/cell arithmetic, units/layer/configuration mapping, selected numeric
+   primitives and reference runtime to standalone build/license evidence. Test
+   elapsed microseconds, zero/quiet/repeated time, quantum/residual/backlog,
+   split/catch-up and event schedule. Unsafe/nonfinite/time/owner/resource-limit
+   inputs refuse unchanged state. It supplies tested representations/validation/
+   time interfaces; implementing force, friction, contact, inclusion or storage
+   is explicitly not required before this packet completes.
+4. **Force/wind/bond/seed coupling:** consume the completed ABI/time interfaces;
+   implement authorized eight-layer sparse sampling/deposit/decay, exact weight/
+   request ownership, canonical accumulation/norm/cap arithmetic, ordered forces,
+   bonds, friction and seeded motion with immutable emitted lineage and real
+   positions/velocities. Cover boundaries, quiet/repeated time, finite checks,
+   exceeded work/state limits and missing/ambiguous/stale/foreign bindings. This
+   packet supplies physical state/trajectory; contact resolution/inclusion and
+   persistence remain the later packets' outputs.
+5. **Contact/inclusion and kernel replay:** consume completed motion and prove
+   finite contact changes the encountered association. Preserve canonical bytes/
+   content embeddings, separately versioning salience. Unsupported absorption/
+   exchange refuse. Kernel replay retains exact discrete identity/order/contact/
+   paths and declared continuous tolerance. Pure controlled ablation freezes
+   all other inputs and is never a valid persisted history. A second physical
+   fixture uses two independently admitted valid encounter/candidate inputs and
+   their own consistent identities; it proves their kernel/contact/inclusion
+   difference and unchanged per-arm kernel replay. It does not require the
+   future atomic storage writer or claim persisted readback.
+6. **Atomic graph/field persistence:** consume admitted envelope, completed graph
+   interface and physical/contact outputs. Commit actual author/topic/reply
+   provenance, visibility/source/UTC, graph projection, field and unique effect
+   against expected revisions in one transaction. Independently read all
+   relationships/components back. Unsupported transactions refuse before writes;
+   duplicate/conflicting/failed/uncertain/partial states recover or quarantine,
+   never partial success. Execute both lawful comparison arms' consistent atomic
+   persistence/readback and unchanged persisted-history replay here. No edited
+   hash/cursor or non-admitted ablation buffer crosses this boundary. This
+   packet completes the selected intake graph-write and B1 persistence proof.
+7. **Separate mood and bounded consumer:** reviewed dimensions/ranges/uncertainty,
+   baseline/decay and prior/new state bind actual encounter/field/appraisal/time/
+   model/configuration/seed identity. Freeze the same prior state, validated
+   appraisal, elapsed time, configuration and seed; replay without clocks,
+   provider calls or mutable external inputs to recover identical mood state and
+   trace, without duplicate persistence. Missing/contradictory/malformed/late/
+   provider failure, timestamp disorder, conflict/duplicate handling, actual
+   persistence/readback and explicit validated fallback remain required. Bound
+   cadence/tokens/queue/timeout/retries independently of maker execution; never
+   expand permissions. Load the selected revision at the real turn-context seam.
+8. **Automatic causal proof:** qualify deployment and actual served bindings
+   first, then observe a natural native-clock maker turn using actual stored
+   principal and independent graph/field/effect/mood readbacks. In the same live
+   run capture visibility-safe eligible/denied candidate IDs/reasons, seed IDs,
+   exact authorized traversed edge/node path, traversal revision and actual
+   prompt-included neighbor ID beyond the semantic seed. Direct vector/seed-only
+   inclusion cannot satisfy B3. Inspect the actual provider prompt. Separate
+   physical and mood contrasts freeze every nonintervened seed/principal/grant/
+   query/corpus/index/graph/field/world/time/config/read input; require changed
+   physical motion/contact/path/included association and, separately, changed
+   persisted mood/attention/recall/decision. Record actual appraisal cost/latency,
+   truthful counts/write outcomes and once-only feedback. After all selected
+   live proofs and fixed-inventory gates, document later links, close native goal
+   and retire heartbeat; larger stories remain truthful.
 
 Eros/Eris owns physical computation, including the reviewed finite sampling and
 force declaration; OpenPlanner owns storage/query; Knoxx owns mood, attention,

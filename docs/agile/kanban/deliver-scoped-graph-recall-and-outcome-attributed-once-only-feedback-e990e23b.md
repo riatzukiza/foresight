@@ -9,7 +9,7 @@ labels: "cephalon, finite-slice, planning"
 parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 category: "kanban"
-write-id: "1792022592155-0.ig33n8wbu8wshi4hxn"
+write-id: "1792023334796-0.eusez3wr8rj06f7z2uj"
 created_at: "2026-10-15T00:01:57.409Z"
 ---
 
@@ -23,7 +23,7 @@ Deliver scoped graph recall and outcome-attributed once-only feedback.
 
 ## Scope
 
-The owning boundaries and mandatory packet completion checklist in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` apply together with the original accepted milestone and source story. Katamorph/Axxium/Clio retain canonical authority.
+The named graph packet completion boundary in `../../notes/2026-10-14-cephalon-finite-delivery-plan.md` applies together with its original selected milestone/story criteria and shared resource/receipt/authority rules. Other packets retain their own outputs; an earlier packet need not execute its successor to complete. Katamorph/Axxium/Clio retain canonical authority.
 
 ## Non-goals
 
@@ -53,5 +53,7 @@ License: GPL-3.0-or-later.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
+
+Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
 
 ---
