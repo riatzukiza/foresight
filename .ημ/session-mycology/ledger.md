@@ -1923,3 +1923,12 @@
   spore: none
   receipt-refs: e431f5b4-6f74-4645-8680-5931d92d9bd0
   note: Give actual serving state first: website live, older production CMS, replacement private with real failed journey. Source/review infrastructure and planning progress do not imply implemented application repair or production cutover. Preserve valid anonymous dynamic OpenCode inference separately from malformed HOST tool errors and App publication custody. Native Rheos comments aggregate in one section; do not replay a successful comment after a private serializer assumption fails. Correct canonical Bot withdrawal predicate rather than preserving a mistaken User-only rule. Source/identity drift matters; unrelated concurrent branch advancement does not authorize reset or global freeze. Prior root native mycology nullcwd failure retained; portable reflection only, no new native event or spore promotion.
+- ts: 2026-10-15T17:10:31.087997786Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Record actual protected355 merge and fresh website/CMS deployment status
+  p-efficiency: 0.58
+  p-friction: 0.66
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 95efb8a8-9cdd-4ae6-9158-cd155462f318
+  note: Website and oldKnoxx healthy; CMS repairs still unimplemented. Distinguish source/review progress from rollout. Use existing accepted envelope preflight before future RR writes; preserve immutable incompatible historical events. Prior native reflection nullcwd remains retained; no native retry or spore.
