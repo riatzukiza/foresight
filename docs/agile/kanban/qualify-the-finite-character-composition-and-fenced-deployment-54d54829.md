@@ -10,7 +10,7 @@ parent: "2df3d26b-394a-436d-9e02-fe18a55132dd"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","4f4c7cf6-9be8-47b9-b03a-be235c4dd519","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792054651132-0.6ga7w2q9vop5x6gcxaz"
+write-id: "1792057106683-0.lb9zn0v5fe8jvml2um6"
 created_at: "2026-10-15T01:03:00.552Z"
 ---
 
@@ -49,11 +49,11 @@ License: GPL-3.0-or-later.
 
 ## Exact finite qualification refinement — 2026-10-15
 
-Before deployment independently verify ABI task d68344c4-f18b-4b96-8585-bd8f7ac7c6a2 completed standalone compiled build/facade/dependency evidence and completed source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 and its exact authorized bytes/license/author-notices decision; a new library license does not retroactively grant donor rights. Require contact task ba078119-482c-49dc-bd18-c2dfcaad9024 completed kernel/inclusion/replay source qualification and separate calibration task 4f4c7cf6-9be8-47b9-b03a-be235c4dd519 completed full revisioned calibration and finite configured workload/time/memory/rejection evidence. The latter is an explicit native predecessor, independently re-estimated at8; fixture constants do not satisfy it. Bind exact currently qualified Foresight, Eros/Eris, OpenPlanner and Knoxx source/consumer merges plus compiled configuration/schema/artifact hashes and applicable promotion/rollback gates. Missing or unqualified inputs refuse deployment. Earlier tests or source pins alone cannot adopt production calibration or prove served code.
+Before deployment independently verify ABI task d68344c4-f18b-4b96-8585-bd8f7ac7c6a2 completed standalone compiled build/facade/dependency evidence and completed source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 and its exact authorized bytes/license/author-notices decision; a new library license does not retroactively grant donor rights. Require contact task ba078119-482c-49dc-bd18-c2dfcaad9024 completed kernel/inclusion/replay source qualification and separate calibration task 4f4c7cf6-9be8-47b9-b03a-be235c4dd519 completed full revisioned calibration and finite configured workload/time/memory/rejection evidence. The latter is an explicit native predecessor, independently re-estimated at 8; fixture constants do not satisfy it. Bind exact currently qualified Foresight, Eros/Eris, OpenPlanner and Knoxx source/consumer merges plus compiled configuration/schema/artifact hashes and applicable promotion/rollback gates. Missing or unqualified inputs refuse deployment. Earlier tests or source pins alone cannot adopt production calibration or prove served code.
 
 ## Proposed re-estimation after current review
 
-Re-estimate this Incoming packet from the earlier provisional3 to5 before Ready:2 for independently qualified exact source/build/configuration/consumer composition and a tested rollback candidate;3 for the supported fenced rollout, rollback execution and independent served-state proof. Freeze and qualify the composition artifact before any operational deployment phase. Each phase has its own owner evidence, pass/refusal conditions and receipt; candidate qualification alone cannot mark deployment Done. The operational phase waits for terminal maker protection and the qualified two-boundary owner fence. This exposes existing delivery work without authorizing runtime maintenance now.
+Re-estimate this Incoming packet from the earlier provisional 3 to5 before Ready:2 for independently qualified exact source/build/configuration/consumer composition and a tested rollback candidate;3 for the supported fenced rollout, rollback execution and independent served-state proof. Freeze and qualify the composition artifact before any operational deployment phase. Each phase has its own owner evidence, pass/refusal conditions and receipt; candidate qualification alone cannot mark deployment Done. The operational phase waits for terminal maker protection and the qualified two-boundary owner fence. This exposes existing delivery work without authorizing runtime maintenance now.
 
 
 ---
@@ -64,5 +64,7 @@ Native predecessor now includes calibration 4f4c7cf6-9be8-47b9-b03a-be235c4dd519
 Finding4279513688: independent deploy verification consumes separately qualified source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 with actual authorized bytes/notices, ABI build/facade and complete measured calibration profile. Proposed14/50 packet decomposition is unadopted; no deployment/Ready/production performance claim.
 
 Findings4280657769/7780: qualifiedRheos Incoming re-estimate3->5, qualification2 then operationalfencedrollout3 with separate artifacts/owners/failure exits and no partialDone. Operative idle alternative removed: require independently verified owner/epochfence at BOTH oldartifactpersistence andpublication throughrollout/rollback. Preserveheldidentities, waitverifiedterminalmaker/parents/delegates before service stop; never interrupt toqualify. Unsupportedfence refusesdeployment, notexpiry/poll. Sourceplanonly/no actualruntime action.
+
+Native finding4281299149 correction: contact task owns kernel/inclusion/replay plus the bounded revocation rebuild at8; separate calibration task owns full measured calibration/workload at8. Earlier native note assigning full calibration to contact is superseded by this correction, not rewritten. Composition/deployment5 remains qualification2 plus fenced rollout3, both required; idle polls never replace both-effect owner fencing.
 
 ---

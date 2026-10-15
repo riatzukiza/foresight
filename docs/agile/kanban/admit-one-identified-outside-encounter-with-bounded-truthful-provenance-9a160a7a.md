@@ -9,7 +9,7 @@ labels: "cephalon, finite-slice, planning"
 parent: "6eb77110-8cf4-44d5-a242-f495d25d6aaf"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 category: "kanban"
-write-id: "1792054655781-0.ssc2k00skdbjep3cuw9"
+write-id: "1792057102958-0.thj9b405idhe9275zh"
 created_at: "2026-10-15T00:01:57.009Z"
 ---
 
@@ -50,7 +50,7 @@ License: GPL-3.0-or-later.
 
 ## Bound authority, causal identity and evidence audience — 2026-10-15
 
-Downstream atomic packet 2f4421ee-2e48-405e-96d2-fee1a5597ff2 must bind the new encounter content revision/hash, exact embedding bytes/hash, shape/dimensions and model/configuration revision across candidate projection, atomic commit and independent readback. Its exact physical-projection outcomes are missing=>refused/embedding-missing, indexing-pending=>refused/embedding-pending, production failure=>failed/embedding-failed with the qualified bounded audience-safe typed cause, and binding mismatch=>refused/embedding-binding-mismatch. Each preserves prior graph/field/effect-receipt state, the existing admitted envelope and cursor; no incomplete-admission or retry state is created. The intake envelope already durably admitted by this packet is not rolled back. Preserve unchanged existing-memory content/embeddings. Intake completes its own identity/provenance/handoff outputs without executing its downstream projection or resubmission; those exact outcome/embedding-custody and finite two-call availability fixtures remain explicitly owned by atomic8. Reuse the existing embedding seam without routing/credential changes; never claim a complete physical effect from unavailable or mismatched embedding.
+Downstream atomic packet 2f4421ee-2e48-405e-96d2-fee1a5597ff2 must bind the new encounter content revision/hash, exact embedding bytes/hash, shape/dimensions and model/configuration revision across candidate projection, atomic commit and independent readback. Its exact physical-projection outcomes are missing=>refused/embedding-missing, indexing-pending=>refused/embedding-pending, production failure=>failed/embedding-failed with the qualified bounded audience-safe typed cause, and binding mismatch=>refused/embedding-binding-mismatch. Each preserves prior graph/field/effect-receipt state, the existing admitted envelope and cursor; no incomplete-admission or retry state is created. The intake envelope already durably admitted by this packet is not rolled back. Preserve unchanged existing-memory content/embeddings. Intake completes its own identity/provenance/handoff outputs without executing its downstream projection or resubmission; those exact outcome/embedding-custody and finite two-call availability fixtures remain explicitly owned by atomic 8. Reuse the existing embedding seam without routing/credential changes; never claim a complete physical effect from unavailable or mismatched embedding.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
@@ -64,5 +64,7 @@ Verified planning correction from review5527377626: Before physical candidate pr
 Finding4279880329: operative body now retains only intake/provenance/handoff completion and assigns exact downstream missing/pending/failed/mismatched embedding outcomes to atomic5. Existing envelope/cursor and graph/field/effect prior state remain unchanged; no incomplete/retry state or physical success. Native historical alternative is preserved as history. Intake need not execute atomic successor to complete.
 
 Currentplanning estimate parity: downstream atomic packet is nowproposed8 afternativeRheos re-estimation; intake remainsIncoming3/intake-provenance-handoff only. No dependency or futureatomic-execution gate added tointake. Exactunavailableembedding outcomes stillowned byatomic; no newbehavior/Ready.
+
+Review refinement for native reviews5530925136/5530938777: current operative prose uses normal word boundaries. Earlier native history stays unchanged; this correction supplies the readable current statement. No status, dependency, parent or epic change; all source qualification and native Ready gates remain.
 
 ---

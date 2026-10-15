@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","5ce9c975-1d30-4679-b607-e2dcd76f8192","a0176ec0-0616-4d7f-86e1-e6cf9a160a7a","b5f2ba9e-8d67-4c73-9919-e275983aca87"]
 category: "kanban"
-write-id: "1792045720793-0.hl28cqiupruhmdhtgag"
+write-id: "1792057104344-0.yaujry7n3djrq0jtxg7"
 created_at: "2026-10-15T00:01:57.814Z"
 ---
 
@@ -32,7 +32,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 ## Acceptance criteria
 
-1. Bind current qualified selection020d/8c, owning Eros/Eris plan/ABI and exact configuration/layer mapping to build and replay evidence. Consume completed source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 and its exact authorized byte/notice decision, then implement the standalone owning build/facade/dependency contract. No donor permission decision is hidden in this3-point build packet.
+1. Bind current qualified selection020d/8c, owning Eros/Eris plan/ABI and exact configuration/layer mapping to build and replay evidence. Consume completed source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 and its exact authorized byte/notice decision, then implement the standalone owning build/facade/dependency contract. No donor permission decision is hidden in this 3-point build packet.
 2. Implement the declared portable shapes/laws and outward adapters; preserve exact IDs/scoped identity, signed-safe cell-floor semantics and binary64 representation without silent normalization.
 3. Implement exact elapsed microseconds, residual/backlog and fixed quantum/order; zero/quiet/repeated-time/split/catch-up and event scheduling have RED laws. Unknown selection, unsafe/nonfinite arithmetic, pathological times, conflicting owners and exceeded particle/node/edge/cell/work limits refuse preserving prior state.
 4. Bind selected transcendental primitives/runtime and continuous tolerance before numeric results; exact IDs/order/contact branches remain exact. No JVM/browser/Python parity is inferred from CLJS source.
@@ -64,5 +64,7 @@ Verified current planning correction: Checkpoint state includes the actual produ
 Finding4279480476: ABI/time AC5 now defines exact contact-eligibility-matrix-revision and eligible-ordered-contact-pairs representations and comparison. Shape fixtures do not require future contact computation. The contact successor owns actual complete kind/role enumeration, separated no-contact traces and exact replay negatives. Mandatory packets4/6 mirror these respective boundaries.
 
 Finding4279513688: ABI3 now consumes separately estimated source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 and retains only build/facade/dependency/numeric/time delivery. Actual native predecessor was added/read back; no Ready or donor-license inference. Earlier contact replay shape boundary stays operative.
+
+Review refinement for native reviews5530925136/5530938777: current operative prose uses normal word boundaries. Earlier native history stays unchanged; this correction supplies the readable current statement. No status, dependency, parent or epic change; all source qualification and native Ready gates remain.
 
 ---

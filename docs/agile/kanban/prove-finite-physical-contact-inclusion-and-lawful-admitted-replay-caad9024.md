@@ -4,13 +4,13 @@ title: "Prove finite physical contact inclusion and lawful admitted replay"
 status: "incoming"
 type: "task"
 priority: "P1"
-points: "5"
+points: "8"
 labels: "cephalon, finite-slice, planning"
 parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2eebbcf3-875d-4b7e-aad8-50a1c46472d2"]
 category: "kanban"
-write-id: "1792047563572-0.abc1e2b3yxopv4fiaw2"
+write-id: "1792057104858-0.4iylytbf4221l3o1ylc"
 created_at: "2026-10-15T00:01:58.730Z"
 ---
 
@@ -52,9 +52,9 @@ License: GPL-3.0-or-later.
 
 ## Exact finite qualification refinement — 2026-10-15
 
-Each contact step ID is the exact safe end-boundary kernel-time-us of its executed 10,000-microsecond quantum within the same admitted immutable history. Call partition, API count, wall UTC and event cursor do not define it. Split advance, catch-up and restored schedule reproduce identical ordered IDs/pair observations; zero-time/non-time operations cannot mint a step. Overflow refuses the whole unchanged transition. Existing owner/scope/effect identities provide the outward namespace and prevent replay effects.
+Each contact step ID is the exact safe end-boundary kernel-time-us of its executed quantum selected by the bound ABI revision within the same admitted immutable history. Call partition, API count, wall UTC and event cursor do not define it. Split advance, catch-up and restored schedule reproduce identical ordered IDs/pair observations; zero-time/non-time operations cannot mint a step. Overflow refuses the whole unchanged transition. Existing owner/scope/effect identities provide the outward namespace and prevent replay effects.
 
-This5-point packet owns contact/inclusion/replay source qualification with explicit valid fixture calibration. Complete production calibration and configured high-density/quiet/catch-up workload/time/memory/rejection qualification are separated into independently reviewable proposed3-point task 4f4c7cf6-9be8-47b9-b03a-be235c4dd519, which depends on this kernel and must complete before deployment. This source packet and atomic fixture work do not require that successor's production artifact; no readiness cycle or hidden calibration workload remains inside this estimate. The separate artifact includes contact geometry/radius/restitution and every required bound/layer/threshold/speed/half-life/noise/prune/saturation value.
+This 8-point packet allocates 5 points to contact/inclusion/replay source qualification and 3 points to the already required bounded revocation-tail rebuild with explicit valid fixture calibration. Complete production calibration and configured high-density/quiet/catch-up workload/time/memory/rejection qualification are separated into independently reviewable proposed 8-point task 4f4c7cf6-9be8-47b9-b03a-be235c4dd519, which depends on this kernel and must complete before deployment. This source packet and atomic fixture work do not require that successor's production artifact; no readiness cycle or hidden calibration workload remains inside this estimate. The separate artifact includes contact geometry/radius/restitution and every required bound/layer/threshold/speed/half-life/noise/prune/saturation value.
 
 ## Canonical authority and independent verification boundary — 2026-10-15
 
@@ -63,6 +63,11 @@ The tuple of end-boundary step ID and canonical unordered pair is a deterministi
 ## Finite retained-revocation rebuild boundary
 
 The versioned finite revocation profile `finite-revocation-rebuild/2` admits at most128 immutable contribution events after the trusted checkpoint,1048576 canonical Clio envelope UTF8 bytes for that tail,64 replayed quanta and67108864 total rebuild work units. It respects finite-character-load/2 state, variable-width input/ID/string and trace byte/record caps; selected codecs stay owned by ABI/Clio. Charge all visits and actual scalar/UTF8 validation, encoding, comparison, hashing and serialization before each operation across the ENTIRE private rebuild, including preflight. Preflight tail count/bytes with bounded readers before replay; no component commits until complete authorization and every budget pass. Test each exact/one-over bound independently, including multibyte/long-ID and trace-byte exhaustion. Pure rebuild count/byte/step/work exhaustion returns refused/revocation-rebuild-budget-exceeded with byte-identical prior state. The outer adapter separately quarantines/refuses the retained reference and permits no causal use until successful authorized rebuild. The outer rebuild call has2000ms wall budget; timeout yields no accepted replacement and the same quarantine, never a pure clock read/partial commit. Missing/ambiguous history retains its distinct refusal. No automatic budget increase, new scheduler or broad recovery program is included.
+
+## Revocation rebuild allocation
+
+The additional 3 points expose already required work, without changing scope or dependency identities: bounded typed-envelope decoding and pure replay under all four independent limits, exact/one-over and whole-rebuild work accounting, and the outer timeout/quarantine/no-causal-use adapter. Produce independently reviewable replay/boundary evidence and quarantine readback; all must pass together with the 5-point contact source qualification before this 8-point packet is Done. Neither earlier contact fixtures nor elapsed expiry qualifies a revocation rebuild. Split advance, catch-up and restored replay consume the same ABI-selected quantum and bind its revision; 10,000 microseconds remains only a qualified selection or explicitly labeled fixture value, never an independent contact-card constant.
+
 
 
 ---
@@ -81,5 +86,7 @@ Finding4279480476: operative contact AC3 and mandatory packet6 consume the ownin
 Finding4279513701: finite-revocation-rebuild/1 bounds tail128events/1048576canonicalClioUTF8bytes/64quanta/1000000workunits, finite statecaps and2000ms outerwall. Exact/oneover negatives, pure unchanged refused/revocation-rebuild-budget-exceeded and outer quarantine-before-causal-use are explicit. No pureclock, partialcommit or automaticbudgetincrease.
 
 Nativefield178 finding4279924901: finite-revocation-rebuild/2 consumes current finite-character-load/2 ID/input/trace bytecaps and67108864 total chargedwork includingpreflight, UTF8validation/encoding/comparison/hashing/serialization. Tail128/1048576bytes and64quanta/2000ms outerbound retained. Exact/oneover longUnicodeID/tracebyte cases and pure unchangedbudgetrefusal/outerquarantine required; no canonicalIDtruncation/normalization or partialtrace/state. Oldprofile1 comment preservedhistory; no actualsolver/performanceexecution.
+
+Native findings4281287776/4281287788/4281299133: calibration is 8 points and its active estimate label is 8sp. Native contact is re-estimated from5 to8: contact/inclusion/replay source qualification5 plus separately evidenced bounded revocation-tail rebuild3. The same14 execution packets propose65; previous62/50/48 remain history. Step IDs use the exact quantum of the revision-bound ABI; split/catch-up/restore bind that same selection. No new behavior, readiness or implementation claim.
 
 ---

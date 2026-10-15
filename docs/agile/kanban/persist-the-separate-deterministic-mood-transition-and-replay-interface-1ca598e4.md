@@ -9,7 +9,7 @@ parent: "8bcaa0f3-37ec-44e2-8f20-4798dfc4b795"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2f4421ee-2e48-405e-96d2-fee1a5597ff2"]
 category: "kanban"
-write-id: "1792037566954-0.n9s802vq198i5kllt9"
+write-id: "1792057106241-0.qcinl5eravn57mkekvy"
 created_at: "2026-10-15T01:54:46.944Z"
 labels: "cephalon, finite-slice, planning"
 ---
@@ -32,7 +32,7 @@ Deliver an independently qualified deterministic mood state/transition and persi
 
 ## Acceptance criteria
 
-1. Review the separate schema/dimensions/ranges/uncertainty, baseline/decay, causal encounter/field/time inputs, model/configuration/seed identity and typed output. Historical diagnostic axes/keyword counters are not accepted dimensions. Consume a validated appraisal as data, without provider calls or clocks in the pure transition.
+1. First define the named portable `.cljc` Malli schema and pure deterministic mood transition contract; qualify them before adding any runtime persistence/readback adapter. Review the separate schema/dimensions/ranges/uncertainty, baseline/decay, causal encounter/field/time inputs, model/configuration/seed identity and typed output. Historical diagnostic axes/keyword counters are not accepted dimensions. Consume a validated appraisal as data, without provider calls or clocks in the pure transition.
 2. A selected admitted encounter/appraisal causes the reviewed expected dimension change. Persist prior/next state and causal identities with actual stored scope/expected revisions, then independently read back that exact resulting revision. Model no-op cannot pass the positive; missing/invalid input explicitly refuses or follows the reviewed validated fallback.
 3. Freeze prior state, validated appraisal, elapsed time, configuration and seed. Replay identical state/trace without external mutation or duplicate persistence. Duplicate/out-of-order/conflict/failed/uncertain persistence has explicit outcomes and cannot lose or multiply changes; inspect reuse of the existing Clio application port before adding a storage authority.
 4. Quiet positive-elapsed input from a nonbaseline persisted mood, without message/appraisal/provider call, produces the reviewed expected decay, persists and independently reads back. Identical replay matches; duplicate delivery cannot decay twice. Zero elapsed has its distinct no-op case.
@@ -56,5 +56,7 @@ For the selected-encounter transition, independently read the selected atomic fi
 
 ---
 Finding4278629793: selected-encounter transition binds independently read selected atomic field revision/checkpoint/history and encounter/content/effect identity through typed trace/persisted/read-back mood. Correct encounter/appraisal with stale/unrelated field refuses before persistence. Quiet decay is separately typed; source fixtures are not B2live proof.
+
+Review refinement for native reviews5530925136/5530938777: current operative prose uses normal word boundaries. Earlier native history stays unchanged; this correction supplies the readable current statement. No status, dependency, parent or epic change; all source qualification and native Ready gates remain.
 
 ---
