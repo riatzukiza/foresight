@@ -1932,3 +1932,12 @@
   spore: none
   receipt-refs: 95efb8a8-9cdd-4ae6-9158-cd155462f318
   note: Website and oldKnoxx healthy; CMS repairs still unimplemented. Distinguish source/review progress from rollout. Use existing accepted envelope preflight before future RR writes; preserve immutable incompatible historical events. Prior native reflection nullcwd remains retained; no native retry or spore.
+- ts: 2026-10-15T18:09:29.034849177Z
+  session: /home/err/spaces/foresight
+  task: Record current CMS and SDK planning publications, F41 native observation plan, real review failure and fresh serving evidence
+  p-efficiency: 0.61
+  p-friction: 0.66
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 224e9f2d-fd23-4f73-b89a-c7bb336abfd3
+  note: Prior goal turn made actual public/stage/settlement and live-serving progress. Preserve successful effects after transport/timestamp/footer guards through native read-only recovery. Classify raw model HOST failure separately from credential-free OpenCode inference and GitHub publication. Exact literal source zero-WARN policy controls qualification; retain semantic passes and environment warnings separately until corrected. Generated metadata and unrelated concurrent refs are not source drift. Existing accepted flat-envelope secure writer is required for future Foresight status records; no past native wrapper rewrite, native-SM null-cwd retry, new spore or promotion.
