@@ -182,6 +182,13 @@ receipt, authority and qualification constraints apply to all; a later packet's
 output is not an earlier packet's completion prerequisite. The full selected
 B1/B2/B3 chain remains mandatory across their composition.
 
+Every item below is conjunctive with the complete acceptance and verification
+contract of its owning native card and qualified owning source. Bind the actual
+source revision, native UUID/write-id and complete card body at evaluation.
+These summaries are not a reduced allowlist: a missing obligation, disagreement
+or stale binding refuses readiness/closeout until reconciled. This creates no
+alternate board validator or completion surface.
+
 1. **Admission:** freeze canonical external ID, payload hash, attributed content
    revision/predecessor, author/source/account/visibility/UTC and selection seed/
    reason. Distinguish outside authors, self-output, replies and operator input;
@@ -223,7 +230,13 @@ B1/B2/B3 chain remains mandatory across their composition.
 3. **Outcome feedback:** consume the completed scoped read interface. Require
    a verified observed downstream outcome and its attribution to the included
    recalled item under current stored authority and stable recall/outcome/effect
-   identity. Require the owning `recalled-item-contribution/1` witness: an
+   identity. Immediately before feedback commit independently refresh the stored
+   principal and Axxium-owned decision/grant/sharing/visibility/policy/scope
+   versions. Bind their qualified protection and expected reinforcement revision
+   THROUGH commit. Revocation/change before or between final read and commit
+   must leave reinforcement and effect receipts unchanged. Unsupported owner
+   protection refuses; stale local policy cannot substitute.
+   Require the owning `recalled-item-contribution/1` witness: an
    independently captured actual consumed-input/choice-to-artifact path through
    a qualified transformation, or its bounded matched causal intervention,
    bound to the exact item/content/graph revision, turn, effect and actual
@@ -262,7 +275,10 @@ B1/B2/B3 chain remains mandatory across their composition.
    bonds, friction and seeded motion with immutable emitted lineage and real
    positions/velocities. Cover boundaries, quiet/repeated time, finite checks,
    exceeded work/state limits and missing/ambiguous/stale/foreign bindings. This
-   packet supplies physical state/trajectory; contact resolution/inclusion and
+   packet enforces `gamma-presence > gamma-nexus > gamma-daimoi >= 0`
+   independently of static thresholds. Shared/default, equal, reversed and
+   negative coefficients refuse unchanged state in their respective controls.
+   It supplies physical state/trajectory; contact resolution/inclusion and
    persistence remain the later packets' outputs.
 7. **Contact/inclusion and kernel replay:** consume completed motion and prove
    finite contact changes the encountered association. Preserve canonical bytes/
@@ -307,7 +323,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    unchanged-state refusals and quiet/split/catch-up positives. Failure remains
    failure. This independently estimated packet completes before deployment;
    earlier contact/atomic source fixtures do not depend on their successor's
-   production artifact.
+   production artifact. Require `finite-order-work/1` sorted/reversed/shuffled
+   identical-multiset tests with equal total work and canonical output: accept
+   at the exact bound and refuse identically one unit short. Adaptive-sort
+   comparison counts cannot alter admission. Preserve ABI time semantics:
+   otherwise valid elapsed 101 quanta processes 100 and returns one queued
+   quantum as successful incomplete; catch-up drains it without new elapsed
+   time. This valid backlog case is not an unchanged refusal.
 9. **Atomic graph/field persistence:** consume admitted envelope, completed graph
    interface and physical/contact outputs. Before the write, independently read
    the actual persisted graph/field baseline and record its scoped contents,
@@ -317,7 +339,14 @@ B1/B2/B3 chain remains mandatory across their composition.
    before-state evidence. After commit, independently read the persisted result
    and compare the attributable before/after delta with that baseline. Commit actual author/topic/reply
    provenance, visibility/source/UTC, graph projection, field and unique effect
-   against expected revisions in one transaction. Persist only evidenced edges
+   against expected revisions in one transaction. Immediately before entry,
+   independently reload the actual stored principal and Axxium-owned current
+   decision/policy-grant/sharing/visibility/scope versions. The qualified owner
+   seam protects those versions THROUGH commit alongside storage revisions.
+   Test revocation after baseline, during computation and between final read
+   and commit while graph/field revisions remain equal: no component writes.
+   Unsupported commit protection refuses before any graph/field/effect mutation.
+   Persist only evidenced edges
    and preserve explicit absent/unknown relationship states; independent readback
    and negative fixtures must verify no missing topic/reply/author edge was
    fabricated. Independently freeze canonical content and content-embedding
@@ -376,6 +405,12 @@ B1/B2/B3 chain remains mandatory across their composition.
    kernel/consumer bindings. Preserve held maker/parent/delegate/effect identities,
    one event owner and disabled cloud runtime. This packet supplies served
    composition evidence before observations, without requiring its successor.
+   Actually execute the qualified rollback under the same two-boundary fence
+   and independently verified terminal-maker protection, then independently
+   read back exact served rollback artifact/config/schema/kernel/consumer
+   bindings. Candidate qualification alone cannot complete this packet.
+   Unverified rollback execution/readback fails Done; this planning change
+   authorizes no operational rollout or interruption now.
 13. **Served automatic causal proof:** consume qualified deployment, then observe a natural native-clock maker turn using actual stored
    principal and independent graph/field/effect/mood readbacks. Bind the mood
    transition trace, persisted mood revision and actually consumed revision to
@@ -388,8 +423,10 @@ B1/B2/B3 chain remains mandatory across their composition.
    exact authorized traversed edge/node path, traversal revision and actual
    prompt-included neighbor ID beyond the semantic seed. The actual provider
    prompt must also contain the matching scope-safe authorized node/edge path
-   and traversal trace/revision as model-visible context, not only neighbor
-   content/ID or diagnostic metadata. Inspect that exact submitted prompt and
+   and traversal trace with BOTH graph/projection and physical-field revisions,
+   bound to the selected encounter/effect lineage, as model-visible context.
+   Omitted, stale or mixed-field revision negatives fail B3. Neighbor content/ID
+   or diagnostic metadata alone cannot substitute. Inspect that exact submitted prompt and
    match its trace to the independently captured traversal. Trace-only-in-logs
    and content-only prompt negatives fail B3. Direct vector/seed-only inclusion
    cannot satisfy B3. Separate
@@ -409,7 +446,15 @@ B1/B2/B3 chain remains mandatory across their composition.
 14. **Terminal inventory/closeout:** after the served causal proof, verify the
    exact completed evidence and fixed-inventory gates. Document remaining design
    links as later milestones, then close the native goal and retire the heartbeat
-   through supported lifecycle surfaces. Larger aggregate stories remain truthful;
+   through supported lifecycle surfaces. First freshly compare exact native
+   threadId `01a0fa39-15d0-7ab3-93a4-b4f4ce3c51e3`, goal createdAt `1791375063`
+   and exact native objective UTF8 SHA256 `28f3a71cf55511c97515fb55168feeb3c61765986446e1c88f483922cae1b26d`,
+   plus automationId `cephalon-runtime-follow-up` and its
+   originating thread. Replacement/mismatch/unknown identity refuses every
+   lifecycle write. After complete proof, write only those targets and read back
+   the same bindings with goal complete and heartbeat inactive/retired or
+   confirmed supported deletion. Preserve human pause before completion.
+   Larger aggregate stories remain truthful;
    incomplete evidence leaves the goal open.
 
 Eros/Eris owns physical computation, including the reviewed finite sampling and

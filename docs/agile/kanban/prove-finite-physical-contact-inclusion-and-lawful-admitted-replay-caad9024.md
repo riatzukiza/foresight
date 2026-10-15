@@ -72,6 +72,11 @@ The additional 3 points expose already required work, without changing scope or 
 
 Consume the field owner's full `finite-contact-inclusion/1` law and fixture matrix in `docs/plans/cephalon-finite-field-coupling.edn`: exact bound request/daimoi, principal/scope/authority, graph/field history and explicit start/end horizon; ABI-bounded whole-horizon quanta; canonical first-contact order and exact memory-ID deduplication with actual nexus/content binding and independently inspectable reasons. Missing/denied/conflicting memory bindings, overflow or mismatched horizon refuse the whole unchanged result. Presence-only/other-request contacts cannot include memory. Qualify multi-memory/repeated-recipient/split/catch-up/restored and exact/one-over cases. This is the existing 8-point contact/rebuild packet's source contract, without atomic-storage or served-proof predecessor cycles; actual solver/tests remain future work.
 
+## Restorable cross-call inclusion
+
+Consume the ABI's complete inclusion-fold-state checkpoint shape and finite-field-trace/1 codec. Persist/hash all request/authority/field/horizon/cursor/counter/ordered-first-witness/dedup bindings in the pure checkpoint interface before restore; a private scratch cache alone is insufficient. Qualify contact -> checkpoint -> restore -> repeat same memory versus unsplit input, with identical unique order/reasons/counters and missing/reordered/forged/reset-state refusal. Whole-call restore/codec work remains charged in addition to retained semantic horizon work. This is source/pure replay qualification before later atomic storage, no predecessor cycle or served claim.
+
+
 
 
 

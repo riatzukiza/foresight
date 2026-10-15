@@ -50,6 +50,11 @@ Missing authority, unsupported fencing/atomicity, stale bindings and incomplete 
 
 License: GPL-3.0-or-later.
 
+## Exact native objective custody
+
+The actual native goal objective at the bound thread/createdAt has exact UTF8 SHA256 `28f3a71cf55511c97515fb55168feeb3c61765986446e1c88f483922cae1b26d`, freshly observed while ACTIVE. Compare the fresh native objective bytes to this digest before any terminal write; the accepted finite milestone supplies the required finish evidence and cannot substitute a different native objective identity. An objective edit or mismatch refuses closeout until a separately reviewed target update. No goal or automation lifecycle write occurs during this planning correction.
+
+
 
 ---
 Incoming exact-target correction for native4278174545: only goal thread01a0fa39-15d0-7ab3-93a4-b4f4ce3c51e3 createdAt1791375063 and heartbeatcephalon-runtime-follow-up of that thread may be closed/retired after actual full proof. Fresh native identity checks and exact target readbacks required; preserve human pause, no other lifecycle target/runtime mutation.
