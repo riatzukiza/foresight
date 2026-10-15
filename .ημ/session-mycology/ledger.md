@@ -1887,3 +1887,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#a2ae89a9-33d3-4f19-9e57-9edea7527e21
   note: Preserve semantic boundaries: a qualified personal merge/source publication, native review, actual inert Docker custody and healthy application deployment are separate. Perform a finding's offered durable-source remedy and verify the real tag anonymously before settlement; generic passing Bot prose is not withdrawal. Missing required assessment notes invalidate the whole trace despite later correction and APPROVE, with no OpenRouter inference-key implication. Read actual evidence schemas before guards, stop dependent effects on failure, and retain corrected failures without replay. Controller marker-unlink plus failed recovery write is a documented operator-stop storage limitation, never durable-publication credit. Root native mycology adapter null-cwd failure remains retained from prior attempt; portable reflection only, no native event/spore/promotion.
+- ts: 2026-10-15T14:01:58.908202202Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Report fresh Website/CMS serving truth and admit the remaining Services condition bypass repair
+  p-efficiency: 0.72
+  p-friction: 0.36
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#9dc3f152-b5a5-4d54-9ed0-9c575550fd42
+  note: Answer deployment status from production identities and actual journey evidence. Healthy old CMS containers and passing controller tests do not establish replacement deployment. Preserve failed Spanish structure/content and locale behavior as product work, and distinguish anonymous model inference from GitHub App publication. A newly discovered condition-substring bypass needs one causal actual workflow mutation and an exact admitted expression; avoid broad runtime rebuilds. Portable reflection only; retained root native adapter null-cwd failure supplies no native event or spore credit.
