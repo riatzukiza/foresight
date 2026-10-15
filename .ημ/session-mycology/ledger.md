@@ -1436,3 +1436,13 @@ Origin: `cephalon-receipt-output-framing-correction-20261009`. Actual hosted twe
   spore: none
   receipt-refs: cephalon-pr37-receipt307-complete-manifest-and-protected-prompt-correction-20261015T0218
   note: Append-only correction lists every plan/card/ledger in the six-finding repair; tests summaries are not manifest coverage. Plan/causal/consumer/closeout explicitly forbid raw allowed-but-private/shared prompt contents, credentials/grants and unapproved identifiers/URLs in Git/.ημ/receipts/resources/events/public serialized logs. Authorized protected inspection outsideGit remains required for actual model-visible trace; public digest/redacted trace is linked proof, not substituteinspection. Selected positive private/shared evidence-audience fixtures and denied-source negatives remain required. Current source planning only, no Ready/runtime/deployment/paid/gatewaiver. Human separately included boundedbatching after307; that owning prerequisite will follow its own review/admission/RED/GREEN, no continuation/credentials/runtime changes. GoalACTIVE heartbeatPAUSED live0/3.
+
+- ts: 2026-10-15T02:38:19.814Z
+  session: /home/err/.codex/worktrees/cephalon-kernel-selection/foresight
+  task: cephalon-character-memory/finite-B1-B2-B3/physical-plan
+  p-efficiency: 0.8
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: cephalon-exact-packet-qualification-and-replay-plan-20261015
+  note: Verified current field review findings repaired: independent mood-state exit; automatic parent awaits terminal closeout; complete cell-key prune order; exact end-boundary kernel-time step identity across split/catch-up/restore; pure unchanged refusal versus outward quarantine; concrete ABI/contact/deployment ownership of build/license/calibration/current-source qualification; readable unchanged toolchain values. New allocations/statuses/implementation/live proofs not admitted. Proposed45 and excluded aggregate parents retained; preserve all history. No runtime, maker, heartbeat, model, paid usage, credentials or deployment change; no spore.

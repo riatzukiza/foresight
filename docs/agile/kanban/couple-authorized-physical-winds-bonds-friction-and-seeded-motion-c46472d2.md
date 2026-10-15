@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["d68344c4-f18b-4b96-8585-bd8f7ac7c6a2"]
 category: "kanban"
-write-id: "1792023336360-0.y1ts0domahlai7zkvc8"
+write-id: "1792031830722-0.0c0vfj0y8e5qnxr1n5vm"
 created_at: "2026-10-15T00:01:58.255Z"
 ---
 
@@ -49,10 +49,15 @@ Stale current-head evidence, implicit authority, incomplete changed inputs, cycl
 
 License: GPL-3.0-or-later.
 
+## Exact finite qualification refinement — 2026-10-15
+
+Canonical cell traversal/prune acceptance: traverse the union of prior and current-deposit complete cell keys by exact unsigned UTF8 scope revision, then numeric layer, signed cell x and signed cell y. Emit prune observations in that exact order. Reversed insertion/map-layout fixtures, negative cells and numeric 2 versus 10 retain the identical ordered trace; persistent-map/serialized-number ordering cannot define replay.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
+
+Finite qualification refinement from owning field review5527243274: Canonical cell traversal/prune acceptance: traverse the union of prior and current-deposit complete cell keys by exact unsigned UTF8 scope revision, then numeric layer, signed cell x and signed cell y. Emit prune observations in that exact order. Reversed insertion/map-layout fixtures, negative cells and numeric 2 versus 10 retain the identical ordered trace; persistent-map/serialized-number ordering cannot define replay.
 
 ---

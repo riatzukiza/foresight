@@ -8,9 +8,9 @@ points: "5"
 labels: "cephalon, finite-slice, planning"
 parent: "5ea872c3-1db4-47c5-a63d-d49f99f79497"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
-dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
+dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792027337250-0.nwuzjd5fq4oxc8a7hdv"
+write-id: "1792031834255-0.uh57by9utyyd027cjx"
 created_at: "2026-10-15T00:02:00.111Z"
 ---
 
@@ -66,6 +66,9 @@ Stale current-head evidence, implicit authority, incomplete changed inputs, cycl
 
 License: GPL-3.0-or-later.
 
+## Exact finite qualification refinement — 2026-10-15
+
+The complete dependency list also requires terminal closeout 7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71, whose causal predecessor requires qualified deployment. The aggregate cannot complete ahead of any of these children. Children retain parent links without a dependency on this automatic aggregate, so the dependency relation remains one-way; native Rheos owns readiness/admission and must reject any actual cycle.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
@@ -77,5 +80,7 @@ Incoming planning review correction: served physical contrast varies exactly one
 Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads complete before separate feedback; automatic integration now has independent deployment3, served causal5 and terminal2 children; admitted encounter must change mood and exact resulting revision is consumed. All selected behavior remains. Native descriptive/dependency changes use canonical frontmatter writer; points/status/parent/epic retained pending independent aggregation/readiness review.
 
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
+
+Finite qualification refinement from owning field review5527243274: The complete dependency list also requires terminal closeout 7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71, whose causal predecessor requires qualified deployment. The aggregate cannot complete ahead of any of these children. Children retain parent links without a dependency on this automatic aggregate, so the dependency relation remains one-way; native Rheos owns readiness/admission and must reject any actual cycle.
 
 ---

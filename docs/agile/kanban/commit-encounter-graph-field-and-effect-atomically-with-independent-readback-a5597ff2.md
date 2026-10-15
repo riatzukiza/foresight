@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "a0176ec0-0616-4d7f-86e1-e6cf9a160a7a", "ba078119-482c-49dc-bd18-c2dfcaad9024"]
 category: "kanban"
-write-id: "1792029434818-0.2832t6hbwlrbu8sarfz"
+write-id: "1792031832503-0.ejcoingttvszgjxry0"
 created_at: "2026-10-15T00:01:59.171Z"
 ---
 
@@ -50,6 +50,9 @@ Stale current-head evidence, implicit authority, incomplete changed inputs, cycl
 
 License: GPL-3.0-or-later.
 
+## Exact finite qualification refinement — 2026-10-15
+
+Missing or ambiguous revoke-rebuild inputs yield exactly the pure typed unchanged-prior-state refusal. Pure code cannot mutate an alternative quarantined state. The outer adapter separately quarantines the retained snapshot reference or refuses its load, preventing every sample/contact/inclusion until an authorized successful rebuild. Test unchanged bytes separately from actual adapter no-causal-use. Keep complete admissible-history successful rebuild and permitted-contributor retention controls.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
@@ -61,5 +64,7 @@ Incoming planning review correction: source relationship evidence may be absent 
 Incoming planning acceptance refinement for actual Codex20a findings: Independently capture actual persisted graph/field before-state contents/hash/revision before write; require frozen candidate baseline match, refuse mismatch, then compare independent after-state delta. Existing selected acceptance, no new prerequisite. Body authoring only; retain Incoming/points/parent/epic/dependencies and qualified readiness gates.
 
 Incoming scope correction for native4278174537/4557: atomic completion/replay covers graph/field/effect persistence, not independent feedback idempotence. Actual before/after canonical content and content-embedding bytes/revisions of unchanged memories must match; only separate salience/field changes. New encounter creation stays admission-bound. No status/estimate/identity change.
+
+Finite qualification refinement from owning field review5527243274: Missing or ambiguous revoke-rebuild inputs yield exactly the pure typed unchanged-prior-state refusal. Pure code cannot mutate an alternative quarantined state. The outer adapter separately quarantines the retained snapshot reference or refuses its load, preventing every sample/contact/inclusion until an authorized successful rebuild. Test unchanged bytes separately from actual adapter no-causal-use. Keep complete admissible-history successful rebuild and permitted-contributor retention controls.
 
 ---

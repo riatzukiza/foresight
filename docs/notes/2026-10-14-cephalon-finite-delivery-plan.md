@@ -454,3 +454,33 @@ complete. Retire only the named heartbeat through its supported lifecycle and
 read back that exact ID/thread inactive/retired, or confirmed absence if supported
 retirement deletes it. Preserve the human pause before completion, never
 reactivate it, and mutate no other goal, automation or maker runtime.
+
+
+## Packet qualification and exact replay refinement — 2026-10-15
+
+Owning field review 5527243274 identified stale mood acceptance, an unguarded
+integration-parent completion edge and missing exact replay/adoption assignments.
+Mood state completes at deterministic transition/persistence/readback; appraisal
+and actual prompt consumption remain the separate consumer/successor proof.
+ABI d68344c4-f18b-4b96-8585-bd8f7ac7c6a2 already owns standalone build and actual
+selected source-rights/license/notices adoption before literal extraction.
+Contact ba078119-482c-49dc-bd18-c2dfcaad9024 now explicitly owns complete finite
+calibration and configured load/time/memory/rejection evidence, using force inputs.
+Deployment 885a4b34-74fb-4e4e-a42a-6dbb54d54829 independently verifies those artifacts
+and every current qualified Foresight/Eros-Eris/OpenPlanner/Knoxx source/consumer
+binding before serving. None remains an unassigned prose prerequisite.
+
+Prune observations follow complete cell keys: exact unsigned UTF8 scope revision,
+then numeric layer, signed x and signed y. Contact step identity is the exact
+safe quantum end-boundary kernel-time-us within one admitted immutable history;
+split/catch-up/restore preserve it, and non-time/no-op calls do not mint it.
+Pure revoked-history rebuild refusal preserves exact prior bytes; the outer
+adapter separately quarantines/refuses causal loading until safe rebuild.
+The actual force/contact/atomic/deployment cards carry their independent tests.
+
+Automatic aggregate 2df3d26b-394a-436d-9e02-fe18a55132dd retains its four previous
+prerequisites plus exact terminal closeout 7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71;
+closeout depends on causal proof, which depends on deployment. Parent links are
+not reverse dependencies. Native Rheos applies/readbacks this additional edge;
+no manual status/points/type/parent/epic change or readiness is claimed. Existing
+points and proposed45/two excluded integration parents remain estimate history.

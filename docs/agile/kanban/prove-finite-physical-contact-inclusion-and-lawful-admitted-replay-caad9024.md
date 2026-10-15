@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2eebbcf3-875d-4b7e-aad8-50a1c46472d2"]
 category: "kanban"
-write-id: "1792023337139-0.piwftyvul4lyjtq3wk"
+write-id: "1792031831529-0.k9jacn77lrnu5h26nu"
 created_at: "2026-10-15T00:01:58.730Z"
 ---
 
@@ -50,10 +50,17 @@ Stale current-head evidence, implicit authority, incomplete changed inputs, cycl
 
 License: GPL-3.0-or-later.
 
+## Exact finite qualification refinement — 2026-10-15
+
+Each contact step ID is the exact safe end-boundary kernel-time-us of its executed 10,000-microsecond quantum within the same admitted immutable history. Call partition, API count, wall UTC and event cursor do not define it. Split advance, catch-up and restored schedule reproduce identical ordered IDs/pair observations; zero-time/non-time operations cannot mint a step. Overflow refuses the whole unchanged transition. Existing owner/scope/effect identities provide the outward namespace and prevent replay effects.
+
+This packet also owns completion of the complete revisioned finite calibration artifact, consuming the forces packet's calibration and adding contact geometry/radius/restitution and every required bound/layer/static-threshold/speed/half-life/noise/prune/saturation value. Qualify the selected quantum and maximum substeps at declared entity/bond/particle/cell caps with finite high-density, quiet/catch-up workloads and recorded runtime/config/artifact hashes, time/memory observations and rejection boundaries. Fixture constants alone cannot satisfy complete calibration. This remains source/kernel qualification, without waiting for future storage or deployment.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
+
+Finite qualification refinement from owning field review5527243274: Each contact step ID is the exact safe end-boundary kernel-time-us of its executed 10,000-microsecond quantum within the same admitted immutable history. Call partition, API count, wall UTC and event cursor do not define it. Split advance, catch-up and restored schedule reproduce identical ordered IDs/pair observations; zero-time/non-time operations cannot mint a step. Overflow refuses the whole unchanged transition. Existing owner/scope/effect identities provide the outward namespace and prevent replay effects.  This packet also owns completion of the complete revisioned finite calibration artifact, consuming the forces packet's calibration and adding contact geometry/radius/restitution and every required bound/layer/static-threshold/speed/half-life/noise/prune/saturation value. Qualify the selected quantum and maximum substeps at declared entity/bond/particle/cell caps with finite high-density, quiet/catch-up workloads and recorded runtime/config/artifact hashes, time/memory observations and rejection boundaries. Fixture constants alone cannot satisfy complete calibration. This remains source/kernel qualification, without waiting for future storage or deployment.
 
 ---
