@@ -10,7 +10,7 @@ parent: "2df3d26b-394a-436d-9e02-fe18a55132dd"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","4f4c7cf6-9be8-47b9-b03a-be235c4dd519","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792057106683-0.lb9zn0v5fe8jvml2um6"
+write-id: "1792066455103-0.5b3qynb4bxejttsjas8"
 created_at: "2026-10-15T01:03:00.552Z"
 ---
 
@@ -55,6 +55,11 @@ Before deployment independently verify ABI task d68344c4-f18b-4b96-8585-bd8f7ac7
 
 Re-estimate this Incoming packet from the earlier provisional 3 to5 before Ready:2 for independently qualified exact source/build/configuration/consumer composition and a tested rollback candidate;3 for the supported fenced rollout, rollback execution and independent served-state proof. Freeze and qualify the composition artifact before any operational deployment phase. Each phase has its own owner evidence, pass/refusal conditions and receipt; candidate qualification alone cannot mark deployment Done. The operational phase waits for terminal maker protection and the qualified two-boundary owner fence. This exposes existing delivery work without authorizing runtime maintenance now.
 
+## Required final served composition after rollback qualification
+
+The operational phase actually executes and independently reads back the qualified rollback under the existing two-effect owner/epoch fence and independently verified terminal-maker protection. After that rollback test, re-establish the qualified finite-character composition through a final fenced re-rollout and independently read back its exact served source/artifact/configuration/schema/kernel/consumer bindings. The final state must be that qualified composition before this packet is Done or the dependent served-causal proof starts. Retain separate rollback and final-rollout/readback evidence; a failed or unverified restoration leaves deployment incomplete. Preserve held parent/delegate/effect identities and one event owner throughout, wait for verified terminal makers, and never interrupt a maker to create eligibility. This clarifies the existing five-point deployment packet; it authorizes no operational action now.
+
+
 
 ---
 Finite qualification refinement from owning field review5527243274: Before deployment independently verify ABI task d68344c4-f18b-4b96-8585-bd8f7ac7c6a2 completed standalone compiled build/facade/dependency evidence and actual selected bytes' source-rights/license/author-notices decision; a new library license does not retroactively grant donor rights. Require contact task ba078119-482c-49dc-bd18-c2dfcaad9024 completed full revisioned calibration and finite configured workload/time/memory/rejection evidence. Bind exact currently qualified Foresight, Eros/Eris, OpenPlanner and Knoxx source/consumer merges plus compiled configuration/schema/artifact hashes and applicable promotion/rollback gates. Missing or unqualified inputs refuse deployment. Earlier tests or source pins alone cannot adopt production calibration or prove served code.
@@ -66,5 +71,7 @@ Finding4279513688: independent deploy verification consumes separately qualified
 Findings4280657769/7780: qualifiedRheos Incoming re-estimate3->5, qualification2 then operationalfencedrollout3 with separate artifacts/owners/failure exits and no partialDone. Operative idle alternative removed: require independently verified owner/epochfence at BOTH oldartifactpersistence andpublication throughrollout/rollback. Preserveheldidentities, waitverifiedterminalmaker/parents/delegates before service stop; never interrupt toqualify. Unsupportedfence refusesdeployment, notexpiry/poll. Sourceplanonly/no actualruntime action.
 
 Native finding4281299149 correction: contact task owns kernel/inclusion/replay plus the bounded revocation rebuild at8; separate calibration task owns full measured calibration/workload at8. Earlier native note assigning full calibration to contact is superseded by this correction, not rewritten. Composition/deployment5 remains qualification2 plus fenced rollout3, both required; idle polls never replace both-effect owner fencing.
+
+Native Codex5532470190/root4282461258 correction: actual qualified rollback execution/readback must be followed by final fenced re-rollout and independent exact served composition readback before Done/downstream causal proof. Both effect boundaries and verified terminal-maker protections remain throughout; no idle-poll shortcut or operational authorization. Existing deployment5/14execution65 unchanged; shared note also fixes operative101elapsed case to100executed+1successful-incomplete backlog and catch-up.
 
 ---

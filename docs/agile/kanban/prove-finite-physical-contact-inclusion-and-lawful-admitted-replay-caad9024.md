@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2eebbcf3-875d-4b7e-aad8-50a1c46472d2"]
 category: "kanban"
-write-id: "1792057104858-0.4iylytbf4221l3o1ylc"
+write-id: "1792066389431-0.48z710lb492gc69q0zy"
 created_at: "2026-10-15T00:01:58.730Z"
 ---
 
@@ -70,11 +70,16 @@ The additional 3 points expose already required work, without changing scope or 
 
 ## Owning contact fold qualification
 
-Consume the field owner's full `finite-contact-inclusion/1` law and fixture matrix in `docs/plans/cephalon-finite-field-coupling.edn`: exact bound request/daimoi, principal/scope/authority, graph/field history and explicit start/end horizon; ABI-bounded whole-horizon quanta; canonical first-contact order and exact memory-ID deduplication with actual nexus/content binding and independently inspectable reasons. Missing/denied/conflicting memory bindings, overflow or mismatched horizon refuse the whole unchanged result. Presence-only/other-request contacts cannot include memory. Qualify multi-memory/repeated-recipient/split/catch-up/restored and exact/one-over cases. This is the existing 8-point contact/rebuild packet's source contract, without atomic-storage or served-proof predecessor cycles; actual solver/tests remain future work.
+Consume the full `finite-contact-inclusion/1` law and fixture matrix owned by the independent personal repository `riatzukiza/eros-eris-field`, at its repository-relative `docs/plans/cephalon-finite-field-coupling.edn` and accompanying `docs/plans/cephalon-physical-kernel-abi.edn`. The proposed artifacts are inspectable in [owning source PR2](https://github.com/riatzukiza/eros-eris-field/pull/2/files); that unmerged proposal does not adopt the contract. Before readiness/completion, bind and read the actual qualified owning source merge, exact paths/Git blobs/SHA256 and revision. The Foresight checkout has no local copy of that independently owned contract. Its required matrix includes: exact bound request/daimoi, principal/scope/authority, graph/field history and explicit start/end horizon; ABI-bounded whole-horizon quanta; canonical first-contact order and exact memory-ID deduplication with actual nexus/content binding and independently inspectable reasons. Missing/denied/conflicting memory bindings, overflow or mismatched horizon refuse the whole unchanged result. Presence-only/other-request contacts cannot include memory. Qualify multi-memory/repeated-recipient/split/catch-up/restored and exact/one-over cases. This is the existing 8-point contact/rebuild packet's source contract, without atomic-storage or served-proof predecessor cycles; actual solver/tests remain future work.
 
 ## Restorable cross-call inclusion
 
 Consume the ABI's complete inclusion-fold-state checkpoint shape and finite-field-trace/1 codec. Persist/hash all request/authority/field/horizon/cursor/counter/ordered-first-witness/dedup bindings in the pure checkpoint interface before restore; a private scratch cache alone is insufficient. Qualify contact -> checkpoint -> restore -> repeat same memory versus unsplit input, with identical unique order/reasons/counters and missing/reordered/forged/reset-state refusal. Whole-call restore/codec work remains charged in addition to retained semantic horizon work. This is source/pure replay qualification before later atomic storage, no predecessor cycle or served claim.
+
+## Retained fold authority and complete trace bytes
+
+The source qualification includes the ABI's explicit accumulated finite-field-trace/1 UTF8 byte counter for the entire horizon, including complete-envelope overhead. Checkpoint/restore cannot reset the 8,388,608-byte bound; unsplit and split/restore exact-cap/one-more-byte fixtures must agree, with unchanged refusal on missing/forged/reset accounting. Revoke a memory after its first witness and before the next causal use: reauthorize/reconstruct all affected active/restored folds (ordered witnesses, dedup IDs, reasons, counters) under current authority and admissible history, or invalidate/refuse/quarantine them. Old witness/result influence cannot survive by retagging. All work remains within this existing bounded rebuild allocation, with no predecessor on later atomic persistence or live proof.
+
 
 
 
@@ -98,5 +103,7 @@ Finding4279513701: finite-revocation-rebuild/1 bounds tail128events/1048576canon
 Nativefield178 finding4279924901: finite-revocation-rebuild/2 consumes current finite-character-load/2 ID/input/trace bytecaps and67108864 total chargedwork includingpreflight, UTF8validation/encoding/comparison/hashing/serialization. Tail128/1048576bytes and64quanta/2000ms outerbound retained. Exact/oneover longUnicodeID/tracebyte cases and pure unchangedbudgetrefusal/outerquarantine required; no canonicalIDtruncation/normalization or partialtrace/state. Oldprofile1 comment preservedhistory; no actualsolver/performanceexecution.
 
 Native findings4281287776/4281287788/4281299133: calibration is 8 points and its active estimate label is 8sp. Native contact is re-estimated from5 to8: contact/inclusion/replay source qualification5 plus separately evidenced bounded revocation-tail rebuild3. The same14 execution packets propose65; previous62/50/48 remain history. Step IDs use the exact quantum of the revision-bound ABI; split/catch-up/restore bind that same selection. No new behavior, readiness or implementation claim.
+
+Native Codex5532470190/root4282461230 correction: explicit owning personal riatzukiza/eros-eris-field PR2 and repository-relative contract/ABI paths; bind actual qualified merge/blob/SHA before readiness/source completion. Existing contact/rebuild8 also consumes native Field5532461585 findings4282454294/4304: revoke active/restored witness/dedup/results before causal use, reconstruct or invalidate under bounded history, persist full canonical trace UTF8 byte count across horizon checkpoint/restore with exact/one-over fixtures. No new dependency/estimate/adoption/Ready/implementation/live proof.
 
 ---
