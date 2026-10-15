@@ -1779,3 +1779,12 @@
   spore: none
   receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-deployment-status-and-real-premodel-failure-20261015T0220Z-v1/canonical-receipt-event.edn
   note: Website live at21:20CDT; newCMS unshipped. Actual K4testpath localGREEN1918/9921; fullprimarylint7/280FAIL and Mongo testavailability limit. SixactualETA352planningFixed plusFaggregateP2; freshETA352 elevenunresolved. PR353 real scopedworkflow passedAppreadtoken+compiles thenmissingyaml beforeanymodel; tinycwdpatchprivate/exactownerbreakdown. AnonymousdynamicOpenCode memorypreserved. Keep separatequalifiedchanges distinctfromcombinedrelease, preservefailures/provenance, neverinfer keys/approval/deployment. No new spore/promotion orrootpush.
+- ts: 2026-10-15T02:59:22.653107729Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Publish admitted CI cwd repair and qualify exact CMS test-boundary lint delta
+  p-efficiency: 0.77
+  p-friction: 0.73
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-deployment-goal-owned-cwd-repair-and-K-next-slice-20261015T0237Z-v1/canonical-receipt-event.edn
+  note: Actualprogress: PR35474d qualified315reviews+sixassessments+6Musebuilds0warnings, causalRED5b thenGREEN86a, realacceptedmainowner; existingSSH routeafter2definitiverefusals,noauthchange. CanonicalCodex6183330198 effectGETverifieddespitecleanupdiagnostic; neverrepeated. PR3520592published4P1planfixes+4actualFixedresolved. Kc468/provenance2776394d owning0/6→0/0,full7/280→7/274,75Node+1918CLJS/9921pass; allremainingdiagnostics unchanged; MongoDNSlimit explicit. PreserveoperationalmemoryanonymousdynamicOpenCode/pre-model-vs-provider distinction, allhistoricalprefixes/unrelateddirt. Fullreleaseintegration/storage/DBfence/migration/Serviceslockedstaging/3images/liveSpanish stillunqualified,goalactive. No newspore/promotion,sourceadoption/approval orproductioncredit.
