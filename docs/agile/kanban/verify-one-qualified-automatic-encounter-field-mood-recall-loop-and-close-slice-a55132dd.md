@@ -37,7 +37,7 @@ Own the composed selected B1/B2/B3 acceptance below through these actual childre
 
 Their exact predecessors and own completion boundaries are in
 ../../notes/2026-10-14-cephalon-finite-delivery-plan.md. The separately estimated
-feedback task `deliver-outcome-attributed-once-only-graph-feedback` is a prerequisite. The three children allocate15 execution points (5+8+2), with every constituent exit required. The parent retains5 only as non-additive aggregate history and supplies integration acceptance, not five extra execution points or a successor cycle.
+feedback task `deliver-outcome-attributed-once-only-graph-feedback` is a prerequisite. The three children allocate 15 execution points (5+8+2), with every constituent exit required. The parent retains 5 only as non-additive aggregate history and supplies integration acceptance, not five extra execution points or a successor cycle.
 Katamorph/Axxium/Clio and native Rheos retain their authority.
 
 ## Non-goals
