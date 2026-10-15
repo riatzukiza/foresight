@@ -4,13 +4,13 @@ title: "Prove one served encounter field mood and graph recall loop"
 status: "incoming"
 type: "task"
 priority: "P1"
-points: "5"
+points: "8"
 labels: "cephalon, finite-slice, planning"
 parent: "2df3d26b-394a-436d-9e02-fe18a55132dd"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["885a4b34-74fb-4e4e-a42a-6dbb54d54829"]
 category: "kanban"
-write-id: "1792054653468-0.57pxslu4duo17dlp2lm"
+write-id: "1792077138314-0.cu0pa6vufok05nj45bc"
 created_at: "2026-10-15T01:03:01.313Z"
 ---
 
@@ -40,9 +40,19 @@ Complete larger stories, bypass Rheos/review/promotion gates, infer permission f
 
 6. The selected positive outcome class is an artifact-plus-destination observation: independently read saved artifact bytes from actual persistent storage and validate its bound identity/hash/type; independently GET the actual configured destination post/message under its authorized read seam and verify account, immutable destination record ID and matching artifact/media identity or explicit artifact reference. Bind one concrete outcome ID to that destination record, artifact hash, action/effect and recalled item/turn IDs. Require the independently established contribution witness below before reinforcement; binding an unused item ID to a successful unrelated artifact cannot pass. Producer answers, internal choices, diagnostics, tool acknowledgements and inferred delivery are not accepted outcomes. Unavailable/missing/mismatched readback authorizes no reinforcement; retain actual failed/refused/unknown outcome receipts. Observe a natural action only, without replaying publication.
 
+### Finite natural observation and terminal result
+
+For native finding 4284132913, one proof attempt begins at a recorded authorized observation start under a fully qualified served composition. Freeze the selected actual encounter/root-effect lineage before observing its maker consumption. Observe at most three naturally scheduled maker opportunities and at most 60 minutes elapsed from that start, whichever limit is reached first. Each turn retains its existing own execution cap; this observation window authorizes no new trigger, retry, replay, forced cancellation or maker interruption. Delayed/queued/skipped/failed opportunities consume the finite observation allowance; unrelated turns cannot replace the selected chain.
+
+Within that same window, artifact/destination readback has at most two authorized GET attempts per required destination, each at most 5 seconds, with at most 30 seconds total readback elapsed and no retry after the observation deadline. These are proof-reader bounds, not changes to the maker or destination writes. Record actual attempt counts, timeouts and unavailable/mismatched results. If the exact selected chain lacks an artifact/action, complete independent artifact/destination matching, protected prompt evidence or required contribution witness when a limit expires, terminate this proof attempt as failed or inconclusive with the actual reason. Perform no reinforcement and no publication replay; leave this card, causal proof and goal incomplete/open. Uncertain continuing maker/delegate/effect ownership is retained/quarantined under the existing termination/fencing law, never treated as terminated by this observation deadline. Another proof attempt requires a new explicitly bounded and qualified observation record; no automatic unbounded polling loop is introduced.
+
 ### Protected evidence requirement
 
 The maker's permission to read private or explicitly shared memory is not permission to expose it to repository reviewers or the public. Inspect the actual complete submitted provider prompt only through an authorized protected operator seam outside Git/public logs. If a full capture is necessary, keep it in protected private storage outside tracked artifacts; otherwise inspect transiently. Classify the complete prompt, any digest, redacted trace and linkage separately for the evidence audience. Commit a digest or redacted trace only with explicit authorization for that particular derived disclosure and its linkage; hashing alone grants no release. A deterministic digest of guessable private/shared content is an offline confirmation oracle. Without digest-release authorization keep the digest and matching proof protected, and expose only a separately audience-authorized opaque attestation/reference if one is safe; if none is safe, retain all evidence only in the protected seam. Never commit raw allowed-but-private/shared prompt content, credentials/tokens, unapproved source identifiers/URLs or grants in receipts, .ημ artifacts, resources/events or serialized logs. A redacted public trace is not a substitute for authorized inspection of the actual model-visible trace. Inside the protected seam, independently bind its authorized public attestation/reference to the exact inspected prompt bytes/hash and turn/graph/field/mood revisions; the public representation need not reveal that protected hash. Selected positive private/shared fixtures must prove permitted maker consumption while all committed/public evidence remains audience-authorized and redacted. Known-template/guessable private-content fixtures without a derived-evidence release grant must expose no matching unkeyed prompt digest or private linkage in Git/public logs; denied-source prompt/disclosure negatives remain distinct. If protected inspection or safe evidence cannot be established, refuse the proof instead of copying private content.
+
+## Revised execution estimate and distinct exits
+
+For native finding 4284132918, re-estimate this existing packet from 5 to 8 provisional points before Ready: natural served B1/B2/B3 chain plus protected actual-prompt inspection 3; isolated two-arm physical comparison 2; separate fixed-other-input mood comparison 1; actual natural artifact/destination contribution, once-only feedback and replay/failure negatives 2. Retain four separate evidence artifacts and result states. All four must pass and bind the same declared selected chain before this card Done; an isolated contrast is never a natural action or successful publication. A failed/inconclusive bounded natural attempt ends without feedback or goal closure even when some source/contrast artifacts pass. Historical 5-point comments remain history and no aggregate adoption is claimed.
 
 ## Verification
 
@@ -95,5 +105,7 @@ Finding4278629793: natural proof retains selected atomic field revision/hash/enc
 Finding4279480470: prompt digests, traces and linkage need their own explicit evidence-audience authorization. A hash alone does not authorize release and can confirm guessed private content. Without that grant keep digest/matching proof protected; only separately authorized safe public attestation/reference may leave. Protected inspection still independently binds actual prompt bytes/hash and turn/graph/field/mood. Positive/negative disclosure fixtures include a known-template private-value hash oracle. This supersedes earlier digest-only shorthand; preserve old native comments. No new key or crypto service is introduced.
 
 Findings4280657734/7786: selected-encounter-comparison/1 freezes naturalencounter/root and pre-effectbaseline, admits DISTINCT canonicalClio comparison-event/effect perisolated diagnosticarm, onevalidnonzerovalue changed. DomainIDs/order/randomseed/nonintervenedinputs equal; comparisonprovenance mustintroducenoextracausalinput. Derivedhistory/graph/field revisions tracedperarm, not incorrectlyfrozenequal. Rootunchanged/no remint/rewrite/unrelatedsource; canonicaladmissionunsupported refuses. Samequalifiedservedread/promptpath; min1changedcontact+1includedneighbor; no comparisonpublication/feedback/naturalproofcredit. Naturaloutcomealso needs independentcontributionwitness beforefeedback. ExistingIncoming5/status/relations preserved.
+
+Findings4284132913/4284132918: proposed 8 = natural served chain/protected prompt 3 + physical comparison 2 + mood comparison 1 + natural outcome/contribution/feedback/replay 2, four artifacts/results all required for Done. One proof attempt ends at three natural opportunities or 60 minutes, whichever first. Readback max two GETs per destination, 5 seconds each/30 seconds total within deadline. Failed/inconclusive actual missing artifact/readback/prompt/contribution exits give no reinforcement/replay and leave card/goal open; expiry never releases uncertain maker/delegate/effect ownership. Fresh bounded observation record only, no unbounded loop, trigger, maker interruption or operational action now. Incoming/identity/relationships retained; former 5 historical.
 
 ---
