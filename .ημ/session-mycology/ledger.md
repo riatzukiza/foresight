@@ -1968,3 +1968,12 @@
   spore: none
   receipt-refs: 71571bd6-a224-4822-a3b6-9461116a58a0
   note: The full isolated SDK gate failed at its authored15min preparation bound while Maven TLS stalled; sameJava21 bounded HEADs later200 do not erase that failure or prove all Maven health. Preserve genuine negative-control passes and distinguish standalone cold-build success from full integration. Name private versus native-trimmed hash artifacts. Reuse existing qualified lint repairs before creating more work; no effect replay, warning/cache/deadline workaround, spore or deployment credit.
+- ts: 2026-10-15T21:32:28.455630093Z
+  session: /home/err/spaces/foresight
+  task: Advance CMS deployment source while distinguishing cold SDK proof and ordinary dependency qualification
+  p-efficiency: 0.67
+  p-friction: 0.63
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: b857385e-1fcb-433c-8a07-1675e7ace38e
+  note: SDK real cold4/4 passed; subsequent backend typecheck timed out in native full Git mirror clone before compilation. Verify exact declared cached Git source and owner custody for ordinary validation without repeating mandatory coldSDK proof or borrowing generated outputs. Native success/untruncated flags did not prove ref-record completeness; preserve malformed buffers and use independent complete inventories, with causeUNKNOWN. Keep latest native review negatives, exact scopes and quota timestamps; no effect replay, warning/billing workaround, approval transfer, spore or deployment overclaim.
