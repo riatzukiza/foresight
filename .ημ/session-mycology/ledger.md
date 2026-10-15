@@ -1914,3 +1914,12 @@
   spore: none
   receipt-refs: cd29f143-5b5b-42dc-a845-bedb41402c01
   note: Keep website live, older production CMS and private failed candidate distinct. A merged personal prerequisite, pending upstream gates and planning corrections supply source progress without product repair or release credit. Preserve true native outcomes after cleanup-only faults; deduplicate actual success. Anonymous dynamic OpenCode MiMo and App publication capability remain separate. Native root adapter nullcwd failure retained; portable reflection only, no spore or policy promotion.
+- ts: 2026-10-15T16:22:27.701783317Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Website/CMS status: fresh serving proof, source qualification and remaining product repairs
+  p-efficiency: 0.62
+  p-friction: 0.48
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: e431f5b4-6f74-4645-8680-5931d92d9bd0
+  note: Give actual serving state first: website live, older production CMS, replacement private with real failed journey. Source/review infrastructure and planning progress do not imply implemented application repair or production cutover. Preserve valid anonymous dynamic OpenCode inference separately from malformed HOST tool errors and App publication custody. Native Rheos comments aggregate in one section; do not replay a successful comment after a private serializer assumption fails. Correct canonical Bot withdrawal predicate rather than preserving a mistaken User-only rule. Source/identity drift matters; unrelated concurrent branch advancement does not authorize reset or global freeze. Prior root native mycology nullcwd failure retained; portable reflection only, no new native event or spore promotion.
