@@ -1,14 +1,14 @@
 ---
-uuid: "cce5ffb1-b348-484f-bad9-155a56baeb5f"
-title: "Recognize native Codex review state without losing negative or scope guards"
-status: "incoming"
-type: "task"
-priority: "P1"
-points: "3"
+category: "kanban"
 labels: "review, codex, canonical-skills"
 dependency: []
-category: "kanban"
-write-id: "1792101387575-0.tjw3ox0rl08hohi8p7m"
+type: "task"
+write-id: "1792106318745-0.ynwvhpalxv9m9e26dd6"
+points: "3"
+title: "Recognize native Codex review state without losing negative or scope guards"
+priority: "P1"
+status: "incoming"
+uuid: "cce5ffb1-b348-484f-bad9-155a56baeb5f"
 created_at: "2026-10-15T21:56:27.575Z"
 ---
 
@@ -16,9 +16,10 @@ created_at: "2026-10-15T21:56:27.575Z"
 
 ## Context
 
-The canonical PR-flow collector does not recognize two observed native Codex
-formats. This prevents completed reviews from being assessed consistently while
-newer negative and pending states must continue to revoke older passing evidence.
+The canonical PR-flow collector does not recognize the observed structured
+native Codex panel. This story now owns that format only; the independent
+classic-receipt wrapper observation below is transferred to a separate proposed
+P1/1 slice. Completed, negative and pending facts retain their distinct meaning.
 The problem affects the Website/CMS deployment prerequisite review chain.
 
 Dated native observations from October 15, 2026 are retained as full inputs:
@@ -61,7 +62,21 @@ catalog adoption; this planning card supplies no review or deployment credit.
 
 ## Scope
 
-This is a standalone provisional P1/3 owner coordinated on the Foresight board.
+Keep this existing incoming P1/3 UUID `cce5ffb1-b348-484f-bad9-155a56baeb5f`
+for structured-state admission only. Native Rheos created separate incoming
+P1/1 classic-wrapper owner `431da19a-b0bf-43ed-a925-321bc9207a3a`: combined discovered cost4,
+not3. Both exact native owners and their dependency readbacks are retained;
+neither card is ready or implemented.
+
+Fresh native Rheos reads recover incoming broader admission owner
+`b0bb29f3-56d5-5c7c-9a1e-f4a1989e952f`, already under parent
+`4f5cb66d-4fd2-47cf-92cc-2185b057a889`. Its canonical gate/provider-verdict
+scope needs both slices. One native single-key operation recorded its actual
+dependency vector [`cce5ffb1-b348-484f-bad9-155a56baeb5f`,
+`431da19a-b0bf-43ed-a925-321bc9207a3a`]. Independent native readbacks retain
+its existing parent/history/open state and both leaf dependency vectors empty;
+there is no reverse edge or cycle through these dependencies. This relationship
+records required work and supplies no readiness or permission to close the lane.
 Implementation belongs to `riatzukiza/.agents`, on an isolated branch from its
 fresh accepted main. The recovered base is protected
 `8497afdd329c3dcaefb78eec36d8e629a59d9eb2`; recheck it before implementation.
@@ -73,8 +88,9 @@ Prospective canonical paths are:
 
 1. `skills/pr-flow/scripts/pr_flow/law.cljc`: a shared pure bounded decoder and
    decisive-head, completion, availability and deduplication integration.
-2. `skills/pr-flow/scripts/pr.cljs`: shared classic recognition for commit
-   hydration and complete native Bot/App/source custody; no new effect surface.
+2. `skills/pr-flow/scripts/pr.cljs`: structured native Bot/App/source custody
+   and shared-fact collection contracts; no new effect surface. Classic-wrapper
+   hydration belongs to the separate one-point proposal.
 3. `skills/pr-flow/scripts/test_policy.cljs`: complete relevant native positive,
    negative, temporal, scope and cohort fixtures and causal controls.
 4. `skills/pr-flow/scripts/test_cli.cljs`: collector/API contracts showing all
@@ -91,7 +107,8 @@ materially revised skill. Keep historical evidence and ledgers append-only.
 
 ## Non-goals
 
-A general JSON or Markdown parser, schema compatibility beyond observed forms,
+Classic-receipt wrapper hydration, a general JSON or Markdown parser,
+schema compatibility beyond observed forms,
 active security-review interpretation, generic multi-invocation reconciliation,
 new identities or configuration, quorum/round/settlement exceptions, synthetic
 GitHub APPROVED states, model/credential/App changes, paid reviews, a second
@@ -103,20 +120,35 @@ Website/CMS application or deployment work are outside this story.
 - [ ] Require the literal standalone marker pair at native body start, exactly
   one complete bounded v1 payload, exactly the observed two nested objects and
   known fields/types/order. Use a narrow whole-payload recognizer with explicit
-  bounds and whitespace support; do not build a general parser or rely on
-  `JSON.parse` after duplicate keys have been lost. Reject quoted/fenced examples,
+  bounds and whitespace support: complete body <=16,384 UTF-8 bytes, payload
+  <=1,024 UTF-8 bytes, each ASCII JSON-whitespace run <=64 bytes and total payload
+  whitespace <=768 bytes (SP/HT/LF/CR only). Names are exact registered literals;
+  SHA is exactly40 lowercase hex bytes and the currently observed completed-state
+  status is literal `completed`. Displayed Code Review row <=512 UTF-8 bytes,
+  short SHA7..40 exact prefix bytes, timestamp <=40 ASCII bytes. These are chosen
+  fail-closed compatibility bounds, not a provider maximum. Test variable limits
+  atN-1/N/N+1 with other constraints valid where reachable, plus exact/short/long
+  fixed-literal controls and unchanged native inputs. Do not build a general
+  parser or rely on `JSON.parse` after duplicate keys have been lost. Reject quoted/fenced examples,
   duplicate markers/keys, malformed/oversized/trailing payloads, unknown versions,
   unsupported ordering and non-null/unknown security state as passing evidence.
 - [ ] Preserve raw body, native comment ID, configured Bot login/type plus the
   observed numeric/node/App tuple, creation/edit times and full40hex code head.
   Require one matching native Code Review row, compatible short rendering and
-  actual completion timestamp bounded by native comment times. Disagreement or
-  missing custody refuses completion; an unrelated later edit cannot retime an
+  actual completion timestamp bounded by native comment times. Preserve their
+  precision: an API whole-second updated_at denotes that half-open second, so
+  native22:41:39.207415 is inside updated_at22:41:39, not an after-update violation.
+  Retain original strings without retiming. Disagreement or missing custody
+  refuses completion; an unrelated later edit cannot retime an
   old code review into a newer stage/request. New identity aliases are forbidden.
 - [ ] Completed false/false at the exact current head may supply a separately
   named native issue-state no-findings verdict, subject to unchanged actual
   incomplete/omitted-input and complete-corpus guards. Completed true/true or
-  true/false is nonpassing. Later current-head pending, negative, incomplete,
+  true/false is nonpassing. Explicitly classify false/true as inconsistent: fail
+  closed with no approval, completion or stage/request-dedup credit; preserve
+  raw input and conservatively block older positive evidence until fresh
+  consistent native evidence resolves it. Every consumer uses this same
+  exhaustive four-combination decision. Later current-head pending, negative, incomplete,
   formal CHANGES_REQUESTED or dismissal revokes older passing evidence under
   unchanged chronology rules. Finding-bearing completion may complete a full
   review without approving. Flags never remove roots, body findings or unsettled
@@ -124,8 +156,16 @@ Website/CMS application or deployment work are outside this story.
 - [ ] Status, completion, availability and request deduplication consume the
   same shared qualified facts. Actual completed automatic review can restore
   availability after older quota without approving or finishing a newer manual
-  request. Pending native work remains pending and deduplicated. Preserve native
-  source IDs and the existing available-agent and mandatory-reviewer semantics.
+  request. Stage/request dedup requires pending work created after that actual
+  boundary or explicitly associated with that exact request; an old panel cannot
+  invent a pending request for a new stage or keep it pending after terminal.
+  Separately preserve the existing no-duplicate-invocation guard for genuinely
+  live same-head work, even if pre-stage: do not start a second model just to
+  repair missing stage credit. Fresh terminal evidence clears that execution
+  guard; then assess the first eligible new-stage request normally. Unknown
+  native execution state stays UNKNOWN for recovery, not fake terminal or a
+  perpetual new-stage request. Preserve native source IDs and the existing
+  available-agent and mandatory-reviewer semantics.
 - [ ] Without a native invocation ID, count at most one automatic Codex
   completion per exact head and actual User stage, using the code completion time
   strictly after that stage boundary. Give no extra round if a qualifying
@@ -133,11 +173,6 @@ Website/CMS application or deployment work are outside this story.
   A genuinely preceding manual request uses its existing request key; a newer
   request is never completed by an older timestamp. Similar prose or nearby
   timestamps cannot identify independent invocations or multiply provider votes.
-- [ ] Classic hydration and the law use one recognizer for the optional exact
-  initial `codex-review-receipt:v1` comment plus whitespace before existing
-  accepted prose. Retain exactly one unambiguous Reviewed commit marker resolved
-  through GitHub to the full current SHA. Reject quoted/fenced/duplicate variants;
-  existing unwrapped classic fixtures and accepted sentence policy remain intact.
 - [ ] Preserve the existing five-round/unanimous convergence, native User
   stage boundaries, required checks, full-scope rules and every settlement law.
   A locally passing test, producer job, panel title, quota or unsupported format
@@ -147,24 +182,32 @@ Website/CMS application or deployment work are outside this story.
   complete outputs, real counters, cleanup and source custody. Obtain independent
   source review and protected canonical merge before separate catalog adoption.
   Recheck fresh native corpus/source/stage during adoption; preserve installed
-  device history and foreign dirty inputs. This card remains planning until
-  actual lawful Rheos readiness and subsequent implementation evidence.
+  device history and foreign dirty inputs. End the planning hold after settled
+  planning review and actual lawful Rheos ready admission; RED/GREEN begins
+  afterward. Implementation evidence gates later testing/review/merge/adoption,
+  and is not a prerequisite for the initial ready transition.
 
 ## Verification
 
 On unchanged canonical source, register tests using the retained complete ETA24
-positive, Knoxx18 negative plus five roots, and wrapped F41 classic inputs.
-Demonstrate the missing positive/completion/pending/availability and classic
-hydration behavior fail for the real source gap; merely asserting old rejection
+positive and Knoxx18 negative plus five roots. Also retain F42 panel6203473947
+and review5540804570: six finding-bearing P2 roots followed User planning
+request6203681254, so the later completed true/true state supplies no approval.
+Wrapped F41 classic inputs remain in the separate one-point proposal.
+Demonstrate the missing positive/completion/pending/availability
+behavior fail for the real source gap; merely asserting old rejection
 is not causal RED. Then implement the shared pure layer and outer collector.
 
 Controls cover edited positive to negative/pending; stale or conflicting heads;
 wrong native Bot/numeric/node/App; duplicate/quoted/fenced/malformed/unknown or
 oversized markers/payloads; unsupported security; bad timestamps; later formal
 negative; actual omitted-input prose; unresolved findings; old completion versus
-new request or stage; quota recovery without approval; and summary/classic/formal
-deduplication. The retained negative Knoxx18 remains nonpassing with all five
-findings visible. Include genuine unwrapped classic regressions.
+new request or stage; quota recovery without approval; false/true inconsistency; concrete byte limits;
+pre-stage pending -> native terminal -> first new-stage request, post-stage
+pending, explicit request association and unknown execution state; and
+summary/classic/formal deduplication. The retained negative Knoxx18 remains nonpassing with all five
+findings visible. Existing unwrapped classic behavior must remain unchanged;
+its new wrapper-specific regressions belong to the separate one-point slice.
 
 Run the existing `test_law.cljs`, `test_policy.cljs` and `test_cli.cljs` via the
 canonical documented NBB classpath and all other registered required checks.
@@ -180,8 +223,13 @@ adoption, service or deployment result has been produced by this plan.
 
 ## Risks and estimate
 
-Three points is provisional for one provider's two observed formats and the
-shared six-path adapter/tests/contract/documentation boundary. If implementation
+Three points now cover only structured admission: bounded decoder/native
+custody1, shared negative/time/request decisions1, causal policy/CLI controls
+and contract/docs1. The independent classic wrapper is a proposed additional
+one point; no hidden transfer into the broader owner or parent. Native creation
+and dependencies are recorded; both slices still require their own actual
+planning qualification/readiness and later implementation before that broader
+lane can be called complete. If implementation
 needs a general parser, new global identity/configuration mechanism, generic
 multi-invocation reconciliation or active security semantics, stop and propose
 a split through planning review. The observed private format is not a public
@@ -192,3 +240,8 @@ Review and catalog adoption remain separate from source preparation; do not use
 this candidate's decoder to authorize its own protected merge. Required checks,
 actual findings and incomplete inputs remain obligations. The existing F41 MiMo
 attempt and all application/deployment prerequisites keep their own ownership.
+
+---
+Planning refinement for Codex review5540804570 roots4289007290/7297/7302/7307/7312/7319. Existing structured owner stays incoming/P1/3; native Rheos created separate incoming/P1/1 classic owner 431da19a-b0bf-43ed-a925-321bc9207a3a (+1 discovery, combined4). One native dependency update/readback binds broader b0bb29f3-56d5-5c7c-9a1e-f4a1989e952f to both precise UUIDs, preserving parent/history and empty leaf dependencies. Reviewed BODY clarifies concrete bounds, exhaustive flags, stage-key versus live-work dedup and ready-before-implementation. No implementation, readiness, source adoption, public review/settlement or deployment credit.
+
+---
