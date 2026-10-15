@@ -1860,3 +1860,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#e8083626-6cdd-45bf-a9c4-dd08dc4ef7df
   note: Website live/healthy; replacementCMS private with real Spanish and browser evidence plus retained paragraph/content/locale failures. Services local27tests pass; source is unadopted. ETA17 actual accepted anonymous native review merged personally and released as origin355; ledger-route finding pending native correction. Full canonical policy CLI99/2681 now passes; earlier local deadlines were too short, preserve their outcomes. Keep protected adoption, migration/database fence, durable publication/recovery/storage, fullqualification/staging/threeimages/publicSpanish proof distinct. No production mutation or spore promotion.
+- ts: 2026-10-15T11:40:03.229525057Z
+  session: codex:01a12257-fc69-7720-888c-dd2595ff7dc7/cms_native_journey_binding
+  task: Record Website/CMS update34 with dated serving evidence and explicit private/source boundaries
+  p-efficiency: 0.55
+  p-friction: 0.55
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: f4591dae-63d9-42d0-94d6-aeb2e952643e,e909b4d369264274930c349eb0629d9160cc4f2115cb0d3d5bbb9791520649de
+  note: Keep production serving, private product failures, local source qualification, published review state and accepted caller adoption as separate dated facts. Freeze the memory cutoff rather than chase concurrent updates; retain later source observations in the receipt. Fresh Services qualification is distinct from partial diagnostic fixture disposal. Root native knoxx_session_mycology reflect was attempted once and failed isError true/INVALID_ARGUMENT because null cwd was read; this is the authorized portable file fallback, no native reflection, promotion, spore or ETA18 package-event repair credit. Preserve all prior updates/ledger bytes and unrelated root work. Anonymous credential-free OpenCode uses the dynamically discovered eligible fast/free/tool-capable MiMo catalog, not a future fixed model slug or OpenRouter workaround.
