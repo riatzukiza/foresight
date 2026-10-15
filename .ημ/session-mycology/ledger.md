@@ -1941,3 +1941,12 @@
   spore: none
   receipt-refs: 224e9f2d-fd23-4f73-b89a-c7bb336abfd3
   note: Prior goal turn made actual public/stage/settlement and live-serving progress. Preserve successful effects after transport/timestamp/footer guards through native read-only recovery. Classify raw model HOST failure separately from credential-free OpenCode inference and GitHub publication. Exact literal source zero-WARN policy controls qualification; retain semantic passes and environment warnings separately until corrected. Generated metadata and unrelated concurrent refs are not source drift. Existing accepted flat-envelope secure writer is required for future Foresight status records; no past native wrapper rewrite, native-SM null-cwd retry, new spore or promotion.
+- ts: 2026-10-15T19:10:57.990424792Z
+  session: /home/err/spaces/foresight
+  task: Advance Website CMS deployment source and implement native observation consumer
+  p-efficiency: 0.70
+  p-friction: 0.62
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: e42ecb9c-320e-48a1-9f61-13b0f40b27c1
+  note: Use actual current source and test failures to advance implementation; preserve exact published ledger facts. Native Bot withdrawal needs its own standalone live sentence and rationale, not a coordinator transcript. Distinguish physical blobs from gitlink leaves. Source/review progress supplies no CMS cutover credit; full deployment remains active. Portable record only; earlier native null-cwd failure not retried, no spore.
