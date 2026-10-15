@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2eebbcf3-875d-4b7e-aad8-50a1c46472d2"]
 category: "kanban"
-write-id: "1792037562480-0.pp7iupobg5qko3j7xve"
+write-id: "1792045722402-0.t8yw73lqt88drhtyksh"
 created_at: "2026-10-15T00:01:58.730Z"
 ---
 
@@ -34,7 +34,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 1. Actual motion/contact changes selected associative inclusion; finite supported deflection is explicit and unavailable absorption/exchange refuse rather than count as completed larger mechanics.
 2. Unchanged canonical memory bytes and content embeddings coexist with separately versioned field/context salience; no re-embedding unchanged content.
-3. Replay identical admitted initial state/event order/time schedule/configuration/math/seed within declared continuous tolerance while exact discrete paths/contacts/ownership/IDs match; tampered restore refuses.
+3. Replay identical admitted initial state/event order/time schedule/configuration/math/seed within declared continuous tolerance while exact discrete paths/contacts/ownership/IDs match; tampered restore refuses. Consume the owning complete kind/role eligibility matrix before pair enumeration. Include the exact matrix revision and full actual eligible ordered-pair sequence, even separated eligible pairs emitting no contact. Replay negatives alter only that revision or omit/reorder a separated eligible pair while state/contact observations remain equal; exact trace comparison must fail. Cover every matrix row at overlap/separation and both eligible input orders without swapping particle/recipient roles.
 4. Pure lower-level deposit/bond ablation freezes graph/query/principal/weights/mood/attention/seed and changes actual contact/inclusion, but is never submitted as a valid persisted history.
 5. A separate pure-kernel pair uses two independently admitted valid outside encounter/candidate inputs and consistent identity/hash/time data, proving changed contact/inclusion and unchanged kernel replay. The later atomic packet owns actual transaction/readback and persisted-history replay for those two arms; this packet does not depend on that future writer. No forged hashes or self-output disguised as outside input.
 
@@ -60,6 +60,11 @@ This5-point packet owns contact/inclusion/replay source qualification with expli
 
 The tuple of end-boundary step ID and canonical unordered pair is a deterministic contact/domain key within the admitted kernel history, not native event identity. Pure kernel observations are data. The outward adapter maps that key, immutable source/history and ownership to the qualified canonical Clio event envelope; Clio owns emitted event identity, causal stream and idempotency admission. Retain the actual admitted Clio event reference beside the domain key so replay recovers the same event/effect without reminting. Never deduplicate or authorize a downstream effect solely with the tuple or implement a local event-identity scheme; unsupported Clio admission refuses outward effects. Split/catch-up/restore fixtures verify the same domain observations and canonical admitted event/effect references.
 
+## Finite retained-revocation rebuild boundary
+
+The versioned finite revocation profile `finite-revocation-rebuild/1` admits at most128 immutable contribution events after the trusted checkpoint,1048576 total canonical Clio envelope UTF8 bytes for that tail (using the qualified owner codec),64 replayed kernel quanta and1000000 rebuild work units. It also respects the32-entity/64-bond/256-layer-cell finite state envelope. A rebuild work unit is one entity-update visit, layer-cell visit, eligible unordered-pair evaluation or contribution application, counted before the operation across the entire private rebuild. Preflight count/byte limits before replay; build privately and commit no component until all bounds and authorization pass. Test each exact-cap and one-over case separately. Pure count/byte/step/work exhaustion returns refused/revocation-rebuild-budget-exceeded with byte-identical prior state. The outer adapter separately quarantines/refuses the retained reference and permits no causal use until a successful authorized rebuild. A bounded outer rebuild call has2000ms wall budget; timeout produces no accepted replacement and the same quarantine, never a pure clock read or partial commit. Missing/ambiguous history retains its distinct unchanged-state refusal. No automatic budget increase, new scheduler or broad recovery program is included.
+
+
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 
@@ -70,5 +75,9 @@ Finite qualification refinement from owning field review5527243274: Each contact
 Verified current planning correction: The tuple of end-boundary step ID and canonical unordered pair is a deterministic contact/domain key within the admitted kernel history, not native event identity. Pure kernel observations are data. The outward adapter maps that key, immutable source/history and ownership to the qualified canonical Clio event envelope; Clio owns emitted event identity, causal stream and idempotency admission. Retain the actual admitted Clio event reference beside the domain key so replay recovers the same event/effect without reminting. Never deduplicate or authorize a downstream effect solely with the tuple or implement a local event-identity scheme; unsupported Clio admission refuses outward effects. Split/catch-up/restore fixtures verify the same domain observations and canonical admitted event/effect references.
 
 Finding4278629785: contact/inclusion/replay source packet remains5 with valid fixture inputs; full production calibration/workload qualification now separate proposed3 task 4f4c7cf6-9be8-47b9-b03a-be235c4dd519 after contact and before deployment. No source/successor readiness cycle or hidden calibration workload; no new behavior/Done/Ready. Owning Eros/Eris plan defines normalized unsignedUTF8 ID pair comparator, preserving particle/recipient roles and reversed-input multi-contact fixtures.
+
+Finding4279480476: operative contact AC3 and mandatory packet6 consume the owning full kind/role eligibility matrix; exact replay includes its revision and full ordered eligible pairs even when separated/no contact. Altered revision or omitted/reordered separated pair fails replay despite equal state/contact observations. Cover every matrix row and both eligible input orders without role swaps. ABI only supplies representations, so no predecessor cycle. Historical calibration comments stay unchanged.
+
+Finding4279513701: finite-revocation-rebuild/1 bounds tail128events/1048576canonicalClioUTF8bytes/64quanta/1000000workunits, finite statecaps and2000ms outerwall. Exact/oneover negatives, pure unchanged refused/revocation-rebuild-budget-exceeded and outer quarantine-before-causal-use are explicit. No pureclock, partialcommit or automaticbudgetincrease.
 
 ---

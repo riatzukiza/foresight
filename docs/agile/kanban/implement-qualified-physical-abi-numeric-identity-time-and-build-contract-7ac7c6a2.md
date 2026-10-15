@@ -8,9 +8,9 @@ points: "3"
 labels: "cephalon, finite-slice, planning"
 parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
-dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "a0176ec0-0616-4d7f-86e1-e6cf9a160a7a", "b5f2ba9e-8d67-4c73-9919-e275983aca87"]
+dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","5ce9c975-1d30-4679-b607-e2dcd76f8192","a0176ec0-0616-4d7f-86e1-e6cf9a160a7a","b5f2ba9e-8d67-4c73-9919-e275983aca87"]
 category: "kanban"
-write-id: "1792034162312-0.zj4x45zllr6z3duspg"
+write-id: "1792045720793-0.hl28cqiupruhmdhtgag"
 created_at: "2026-10-15T00:01:57.814Z"
 ---
 
@@ -32,10 +32,11 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 ## Acceptance criteria
 
-1. Bind current qualified selection020d/8c, owning Eros/Eris plan/ABI and exact configuration/layer mapping to build and replay evidence. Adopt explicit distribution license and standalone owning build.
+1. Bind current qualified selection020d/8c, owning Eros/Eris plan/ABI and exact configuration/layer mapping to build and replay evidence. Consume completed source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 and its exact authorized byte/notice decision, then implement the standalone owning build/facade/dependency contract. No donor permission decision is hidden in this3-point build packet.
 2. Implement the declared portable shapes/laws and outward adapters; preserve exact IDs/scoped identity, signed-safe cell-floor semantics and binary64 representation without silent normalization.
 3. Implement exact elapsed microseconds, residual/backlog and fixed quantum/order; zero/quiet/repeated-time/split/catch-up and event scheduling have RED laws. Unknown selection, unsafe/nonfinite arithmetic, pathological times, conflicting owners and exceeded particle/node/edge/cell/work limits refuse preserving prior state.
 4. Bind selected transcendental primitives/runtime and continuous tolerance before numeric results; exact IDs/order/contact branches remain exact. No JVM/browser/Python parity is inferred from CLJS source.
+5. Define the exact replay representations `contact-eligibility-matrix-revision` and `eligible-ordered-contact-pairs` from the owning ABI, with canonical entity/pair identity and order. Validate their shapes and exact comparison independently of continuous tolerance. The contact packet supplies actual eligibility enumeration and separated no-contact replay fixtures; producing contact results is not an ABI/time completion prerequisite.
 
 ## Verification
 
@@ -59,5 +60,9 @@ Initial Incoming planning-body authoring corrected the relative plan reference t
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
 
 Verified current planning correction: Checkpoint state includes the actual producing compiled-artifact SHA256, build-qualification identity and exact launch-profile identity/digest, alongside kernel/config/numeric revisions. Bind these to independently verified qualified producing source/build/runtime evidence and include them in the canonical checkpoint hash. Restore independently verifies the actual currently loaded artifact/build/launch qualification and requires equality with that producing identity before causal use; same revision labels alone cannot pass. Missing producer fields or a byte-different artifact/build/launch identity refuses unchanged state. No silent migration, copied producer label or new snapshot hash can qualify a different producing executable; a separate reviewed migration would be required outside this finite same-artifact replay proof.
+
+Finding4279480476: ABI/time AC5 now defines exact contact-eligibility-matrix-revision and eligible-ordered-contact-pairs representations and comparison. Shape fixtures do not require future contact computation. The contact successor owns actual complete kind/role enumeration, separated no-contact traces and exact replay negatives. Mandatory packets4/6 mirror these respective boundaries.
+
+Finding4279513688: ABI3 now consumes separately estimated source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 and retains only build/facade/dependency/numeric/time delivery. Actual native predecessor was added/read back; no Ready or donor-license inference. Earlier contact replay shape boundary stays operative.
 
 ---

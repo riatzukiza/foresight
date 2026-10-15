@@ -22,9 +22,7 @@ the prerequisite interface from completion of its larger containing story.
 
 ## Existing owners and proposed packets
 
-The packets below now have canonical task identities created in Incoming through qualified
-Rheos and read back with their proposed estimates and exact relationships.
-Creation is planning input, not Ready admission or implementation authority.
+The packets below have canonical task identities retained in Incoming and read back through qualified Rheos with their proposed estimates and exact relationships. Earlier native creation remains history; calibration and source-rights are first-class initial Markdown followed by native reads/comments, without fabricated creation events. Creation/readback is planning input, not Ready admission or implementation authority.
 Points and aggregation remain provisional for independent review; original
 containing-story status/points/relationships are preserved. Selected Incoming
 packet title/dependency refinements use the canonical native writer and are
@@ -37,7 +35,8 @@ to their allocated execution packets or derive remainders by subtraction.
 | Identified encounter admission | Knoxx intake `6eb77110-8cf4-44d5-a242-f495d25d6aaf` | 3 | Durable canonical identity/revision, attribution, deduplication, selection reason/seed and bound effect identity; distinct empty/malformed/failed/partial page outcomes, with no cursor advancement on failure. Graph/field projection is still pending |
 | Qualified scoped graph read interface | OpenPlanner + Knoxx recall `a1e9d6af-0233-4dcb-9677-5c76fa9a2701` | 5 | Authorization before influence/caps, exact denied-leading-candidate refill regression, distinct quality/visibility/inclusion counts from `:hits`, traced traversal/context custody; completes without the later feedback writer |
 | Once-only outcome feedback | OpenPlanner + Knoxx recall | 3 | Completed scoped read interface; admitted outcome/inclusion attribution, stable effect identity, actual idempotent writer, partial/uncertain-write recovery/readback or quarantine |
-| Kernel ABI, numeric identity and time | Eros/Eris field `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 3 | Completed reviewed selection handoff and scoped graph input; standalone owning build, explicit distribution license, schemas, exact IDs/cells and split/zero/catch-up time laws |
+| Selected source rights and notices | Eros/Eris field | 2 | Completed selection; independently qualified exact byte/permission/notices artifact before ABI extraction/distribution |
+| Kernel ABI, numeric identity and time | Eros/Eris field `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 3 | Completed reviewed selection handoff and scoped graph input; completed separately estimated rights decision, standalone owning build, schemas, exact IDs/cells and split/zero/catch-up time laws |
 | Physical force, wind, bond and seed coupling | Eros/Eris field | 5 | Completed ABI/time packet; actual authorized sparse deposits, sample/decay, ordered forces, differing friction, immutable emitted ownership and exact RNG lineage |
 | Physical contact, inclusion and replay | Eros/Eris field | 5 | Finite contact changes the selected association; canonical memory/content embedding remain unchanged while salience is separately versioned. Attribution/frozen replay are required; unsupported absorption/exchange refuse and remain later obligations |
 | Complete finite calibration and workload qualification | Eros/Eris field | 3 | Completed contact kernel plus reviewed force inputs; independently qualified full revisioned calibration and high-density/quiet/catch-up time/memory/rejection artifact before deployment; source fixtures do not require this successor |
@@ -48,7 +47,7 @@ to their allocated execution packets or derive remainders by subtraction.
 | Served automatic causal proof | Existing automatic integration parent | 5 | Completed deployment, actual native-clock B1/B2/B3 graph/field/mood/principal/provider-prompt evidence, isolated physical/mood contrasts, replay/privacy/failure and once-only feedback |
 | Terminal inventory and closeout | Existing automatic integration parent | 2 | Completed causal proof and all fixed-inventory gates; document later milestones, close native goal and retire heartbeat |
 
-These thirteen provisional execution estimates total48. The earlier twelve-packet45, eleven-packet
+These fourteen provisional execution estimates total50. The separately proposed2-point source-rights packet exposes existing required work formerly hidden in ABI3; it adds no new character behavior or prerequisite scope. The prior thirteen-packet48 estimate remains history. The earlier twelve-packet45, eleven-packet
 44-point and eight-packet36-point proposals remain estimate history. The newly
 separated existing mood work is independently proposed3+3 rather than one5-point
 execution packet; that is a provisional estimate refinement, not new behavior
@@ -58,7 +57,7 @@ aggregation/type adoption before Ready; these numbers grant no admission.
 
 ## Canonical Incoming packet identities
 
-The current sixteen described Incoming records comprise thirteen selected execution packets and the retained field, mood and automatic aggregate parents. The original fourteen-card creation remains history; calibration is newly authored initial Markdown and field is a pre-existing containing record. New cards are initial planning inputs;
+The current seventeen described Incoming records comprise fourteen selected execution packets and the retained field, mood and automatic aggregate parents. The original fourteen-card creation remains history; calibration is newly authored initial Markdown and field is a pre-existing containing record. New cards are initial planning inputs;
 no Ready/Done or implementation claim follows. The actual native `uuid` field
 is canonical identity: feedback's native default is the explicit slug-valued
 identity shown below; other new children used standard generated UUID inputs.
@@ -74,7 +73,8 @@ later work by subtracting estimates.
 | admission | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a` | 3 | None; owning source qualification required |
 | graph | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b` | 5 | None; owning source qualification required |
 | field-history | `ff3e628b-cd5c-4a89-a397-42cc88dbde70` | 8 (native aggregate-history category; excluded) | `a1e9d6af-0233-4dcb-9677-5c76fa9a2701`, `6eb77110-8cf4-44d5-a242-f495d25d6aaf`, `b5f2ba9e-8d67-4c73-9919-e275983aca87` (broader history; excluded) |
-| abi | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` | 3 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `b5f2ba9e-8d67-4c73-9919-e275983aca87` |
+| source-rights | `5ce9c975-1d30-4679-b607-e2dcd76f8192` | 2 | `b5f2ba9e-8d67-4c73-9919-e275983aca87` |
+| abi | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` | 3 | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `b5f2ba9e-8d67-4c73-9919-e275983aca87`, `5ce9c975-1d30-4679-b607-e2dcd76f8192` |
 | forces | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` | 5 | `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` |
 | contact | `ba078119-482c-49dc-bd18-c2dfcaad9024` | 5 | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` |
 | calibration | `4f4c7cf6-9be8-47b9-b03a-be235c4dd519` | 3 | `ba078119-482c-49dc-bd18-c2dfcaad9024` |
@@ -231,15 +231,20 @@ B1/B2/B3 chain remains mandatory across their composition.
    uncertain/conflicting-write recovery or quarantine. Repeated recall/submission/
    replay cannot multiply feedback. Complete bounded owning fixtures here;
    later served proof must observe the same behavior.
-4. **ABI/time:** bind qualified owner/numeric selection and declaration, schemas,
+4. **Selected source rights/notices:** task `5ce9c975-1d30-4679-b607-e2dcd76f8192` independently inventories exact selected bytes/provenance and actual permission/notices before extraction/distribution. Missing or ambiguous permission refuses; a new library license grants no donor rights. Its qualified artifact is an explicit native ABI predecessor, not hidden ABI3 work. No silent replacement/redesign.
+5. **ABI/time:** bind qualified owner/numeric selection and declaration, schemas,
    exact IDs/cell arithmetic, units/layer/configuration mapping, selected numeric
-   primitives and reference runtime to standalone build/license evidence. Test
+   primitives and reference runtime to standalone build/facade evidence consuming the completed rights artifact. Test
    elapsed microseconds, zero/quiet/repeated time, quantum/residual/backlog,
    split/catch-up and event schedule. Unsafe/nonfinite/time/owner/resource-limit
    inputs refuse unchanged state. It supplies tested representations/validation/
    time interfaces; implementing force, friction, contact, inclusion or storage
    is explicitly not required before this packet completes.
-5. **Force/wind/bond/seed coupling:** consume the completed ABI/time interfaces;
+   The ABI also defines exact representations/comparison for the owning
+   contact-eligibility-matrix-revision and eligible-ordered-contact-pairs fields.
+   Shape/comparison fixtures belong here; actual enumeration and no-contact
+   replay results remain the contact successor's responsibility.
+6. **Force/wind/bond/seed coupling:** consume the completed ABI/time interfaces;
    implement authorized eight-layer sparse sampling/deposit/decay, exact weight/
    request ownership, canonical accumulation/norm/cap arithmetic, ordered forces,
    bonds, friction and seeded motion with immutable emitted lineage and real
@@ -247,7 +252,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    exceeded work/state limits and missing/ambiguous/stale/foreign bindings. This
    packet supplies physical state/trajectory; contact resolution/inclusion and
    persistence remain the later packets' outputs.
-6. **Contact/inclusion and kernel replay:** consume completed motion and prove
+7. **Contact/inclusion and kernel replay:** consume completed motion and prove
    finite contact changes the encountered association. Preserve canonical bytes/
    content embeddings, separately versioning salience. Unsupported absorption/
    exchange refuse. Kernel replay retains exact discrete identity/order/contact/
@@ -257,7 +262,12 @@ B1/B2/B3 chain remains mandatory across their composition.
    their own consistent identities; it proves their kernel/contact/inclusion
    difference and unchanged per-arm kernel replay. It does not require the
    future atomic storage writer or claim persisted readback.
-7. **Complete finite calibration/workload qualification:** consume completed
+   Consume the owning complete kind/role eligibility matrix and retain its
+   exact revision and full actual eligible ordered pairs, including separated
+   no-contact pairs. Cover every matrix row and both eligible input orders.
+   Altering only that revision or omitting/reordering a separated eligible pair
+   must fail exact replay even when state and contact observations match.
+8. **Complete finite calibration/workload qualification:** consume completed
    ABI/forces/contact kernel source and reviewed mechanics inputs in task
    `4f4c7cf6-9be8-47b9-b03a-be235c4dd519`. Independently inventory/bind every
    force/contact/bounds/layer/threshold/radius/restitution/speed/half-life/noise/
@@ -272,7 +282,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    failure. This independently estimated packet completes before deployment;
    earlier contact/atomic source fixtures do not depend on their successor's
    production artifact.
-8. **Atomic graph/field persistence:** consume admitted envelope, completed graph
+9. **Atomic graph/field persistence:** consume admitted envelope, completed graph
    interface and physical/contact outputs. Before the write, independently read
    the actual persisted graph/field baseline and record its scoped contents,
    hashes and revisions. Verify the candidate's frozen prior contents/hash
@@ -289,6 +299,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    independently read them back and require equality. Only separately versioned
    salience/field state may change; no rewriting/re-embedding unchanged content.
    The admission-bound new encounter may create its exact canonical record once.
+   Before candidate projection, bind its exact content/hash, embedding bytes/hash,
+   dimensions and model/configuration revision. Missing/pending embeddings return
+   refused with embedding-missing/embedding-pending; production failure returns
+   failed/embedding-failed with the bounded typed safe cause; binding mismatch returns
+   refused/embedding-binding-mismatch. All preserve prior graph/field/effect,
+   existing admitted envelope and cursor, creating no incomplete or retry state.
+   The same atomic packet owns the finite two-call availability/resubmission fixture defined below; fresh authority and the same content/effect bind the sole possible atomic commit. No production retry trigger is promised. Test typed outcomes, protected diagnostics and unchanged prior state.
    Independently read all relationships/components back. Unsupported transactions refuse before writes;
    duplicate/conflicting/failed/uncertain/partial states recover or quarantine,
    never partial success. Execute both lawful comparison arms' consistent atomic
@@ -298,7 +315,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    of B1 persistence verification;
    its replay proof covers graph/field/effect persistence, while feedback
    idempotence remains the independent feedback/served-proof responsibility.
-9. **Mood transition/persistence interface:** review separate dimensions/ranges/
+10. **Mood transition/persistence interface:** review separate dimensions/ranges/
    uncertainty, baseline/decay and typed encounter/field/appraisal/time/model/
    configuration/seed identity. Accept validated appraisal as input data; pure
    transition reads no clock and calls no provider. A positive admitted encounter
@@ -312,7 +329,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    the existing Clio application port before adding persistence authority. This
    packet completes with pure/storage source qualification, without runtime
    appraisal/failure handling or production consumer integration.
-10. **Bounded appraisal/actual consumer:** consume the completed typed mood and
+11. **Bounded appraisal/actual consumer:** consume the completed typed mood and
    scoped graph interfaces. Validate untrusted appraisal, observable missing/
    contradictory/malformed/late/provider failures and reviewed validated fallback.
    Bound cadence/tokens/queue/timeout/retries independently of maker execution,
@@ -326,13 +343,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    Revalidate/refuse incompatible state across authority awaits. Adapter/source
    qualification completes before deployment and served B2 observation. The
    retained mood parent integrates both children as non-additive history.
-11. **Qualified composition/deployment:** qualify exact owning source/consumer
+12. **Qualified composition/deployment:** qualify exact owning source/consumer
    merges, promotion and rollback. Establish the supported qualified idle/fenced
    window and independently verify actual served artifact/configuration/schema/
    kernel/consumer bindings. Preserve held maker/parent/delegate/effect identities,
    one event owner and disabled cloud runtime. This packet supplies served
    composition evidence before observations, without requiring its successor.
-12. **Served automatic causal proof:** consume qualified deployment, then observe a natural native-clock maker turn using actual stored
+13. **Served automatic causal proof:** consume qualified deployment, then observe a natural native-clock maker turn using actual stored
    principal and independent graph/field/effect/mood readbacks. In the same live
    run capture visibility-safe eligible/denied candidate IDs/reasons, seed IDs,
    exact authorized traversed edge/node path, traversal revision and actual
@@ -360,7 +377,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    persisted mood consumed by attention/recall/decision. Record actual appraisal cost/latency,
    truthful counts/write outcomes and once-only feedback. This packet supplies
    completed B1/B2/B3 evidence and its selected negative/replay gates.
-13. **Terminal inventory/closeout:** after the served causal proof, verify the
+14. **Terminal inventory/closeout:** after the served causal proof, verify the
    exact completed evidence and fixed-inventory gates. Document remaining design
    links as later milestones, then close the native goal and retire the heartbeat
    through supported lifecycle surfaces. Larger aggregate stories remain truthful;
@@ -459,7 +476,7 @@ Affected readiness path: graph1eb3aa1f requires its exact owning OpenPlanner sou
 
 ## Protected prompt inspection and evidence audience
 
-The maker's permission to read private or explicitly shared memory is not permission to expose it to repository reviewers or the public. Inspect the actual complete submitted provider prompt only through an authorized protected operator seam outside Git/public logs. If a full capture is necessary, keep it in protected private storage outside tracked artifacts; otherwise inspect transiently. Commit only its digest and an explicitly redacted, evidence-audience-authorized trace, with protected source linkage sufficient for authorized verification. Never commit raw allowed-but-private/shared prompt content, credentials/tokens, unapproved source identifiers/URLs or grants in receipts, .ημ artifacts, resources/events or serialized logs. A redacted public trace is not a substitute for authorized inspection of the actual model-visible trace; bind it to that protected prompt's digest and exact turn/graph/field/mood revisions. Selected positive private/shared fixtures must prove permitted maker consumption while all committed/public evidence remains redacted; denied-source prompt/disclosure negatives remain distinct. If protected inspection or safe evidence cannot be established, refuse the proof instead of copying private content.
+The maker's permission to read private or explicitly shared memory is not permission to expose it to repository reviewers or the public. Inspect the actual complete submitted provider prompt only through an authorized protected operator seam outside Git/public logs. If a full capture is necessary, keep it in protected private storage outside tracked artifacts; otherwise inspect transiently. Classify the complete prompt, any digest, redacted trace and linkage separately for the evidence audience. Commit a digest or redacted trace only with explicit authorization for that particular derived disclosure and its linkage; hashing alone grants no release. A deterministic digest of guessable private/shared content is an offline confirmation oracle. Without digest-release authorization keep the digest and matching proof protected, and expose only a separately audience-authorized opaque attestation/reference if one is safe; if none is safe, retain all evidence only in the protected seam. Never commit raw allowed-but-private/shared prompt content, credentials/tokens, unapproved source identifiers/URLs or grants in receipts, .ημ artifacts, resources/events or serialized logs. A redacted public trace is not a substitute for authorized inspection of the actual model-visible trace. Inside the protected seam, independently bind its authorized public attestation/reference to the exact inspected prompt bytes/hash and turn/graph/field/mood revisions; the public representation need not reveal that protected hash. Selected positive private/shared fixtures must prove permitted maker consumption while all committed/public evidence remains audience-authorized and redacted. Known-template/guessable private-content fixtures without a derived-evidence release grant must expose no matching unkeyed prompt digest or private linkage in Git/public logs; denied-source prompt/disclosure negatives remain distinct. If protected inspection or safe evidence cannot be established, refuse the proof instead of copying private content.
 
 ## Exact terminal lifecycle targets
 
@@ -483,8 +500,7 @@ Owning field review 5527243274 identified stale mood acceptance, an unguarded
 integration-parent completion edge and missing exact replay/adoption assignments.
 Mood state completes at deterministic transition/persistence/readback; appraisal
 and actual prompt consumption remain the separate consumer/successor proof.
-ABI d68344c4-f18b-4b96-8585-bd8f7ac7c6a2 already owns standalone build and actual
-selected source-rights/license/notices adoption before literal extraction.
+Source-rights task 5ce9c975-1d30-4679-b607-e2dcd76f8192 owns the actual selected-byte permission/notices artifact before literal extraction; ABI d68344c4-f18b-4b96-8585-bd8f7ac7c6a2 consumes it and owns standalone build/facade/dependencies.
 Contact ba078119-482c-49dc-bd18-c2dfcaad9024 owns finite kernel/inclusion/replay source fixtures. Separately estimated calibration 4f4c7cf6-9be8-47b9-b03a-be235c4dd519 consumes that completed kernel and reviewed force inputs, and owns complete finite calibration plus configured load/time/memory/rejection evidence before deployment. Contact/atomic source fixtures use explicit valid fixture inputs and do not wait for later production calibration.
 Deployment 885a4b34-74fb-4e4e-a42a-6dbb54d54829 independently verifies those artifacts
 and every current qualified Foresight/Eros-Eris/OpenPlanner/Knoxx source/consumer
@@ -545,3 +561,18 @@ Feedback commits require an independently refreshed current Axxium decision and 
 For the selected-encounter mood path, carry the independently read atomic field output's exact revision/checkpoint hash plus encounter/content/effect identity through typed transition trace, persisted/read-back mood and the actual consumer context. Require equality to that selected atomic field output at transition and before actual attention/recall; a correctly persisted mood from a stale or unrelated field cannot satisfy B2 or the combined B1/B2/B3 proof. Hold encounter/appraisal correct while substituting stale/unrelated field revisions to prove refusal before mutation/influence. Quiet decay remains its separately typed path.
 
 The atomic transaction has three durable components: graph projection, physical field and immutable effect receipt. Independently capture prior effect absence or exact existing bytes along with graph/field baselines. Every precommit fault/permutation leaves all three exactly unchanged; no orphan success receipt, dedup reservation or outward effect survives. Actual audit/refusal provenance may append separately without claiming a successful effect. After acknowledged/uncertain commit, independently verify all three or quarantine before retry; no sequential durable writes may masquerade as a transaction.
+
+
+## Measurable calibration, bounded rebuild and safe failure ownership
+
+The proposed finite qualification profile `finite-character-load/1` fixes maximum32 entities (8 presence,8 nexus,16 daimoi),64 bonds,256 complete scoped layer-cell keys,4 substeps per call,32768 trace records per call and1000000 work units per call. A work unit is one entity-update visit, one layer-cell visit, one eligible unordered-pair evaluation or one contribution application; count before the operation, including attempted visits. Exact caps accept valid inputs; each one-over refuses unchanged. No omitted trace or silent load reduction can meet a cap.
+
+Before executing timing, freeze reviewed fixture bytes/layouts/seed42, all calibration values and actual source/build/runtime/host identities in the artifact. Execute high-density (all declared entity/bond/cell caps), quiet and four-step catch-up workloads, each64 quanta, both a zero-varied-field baseline and selected-contribution arm; five bounded warm-up calls are disclosed separately. The proposed acceptance budgets are at most1000ms wall time per measured call, at most512MiB process peak RSS and at most120000ms for the entire bounded qualification job including warm-up/controls. Record every result and baseline/arm delta; equality with a budget passes, exhaustion/failure does not qualify. Wall/RSS measurements are outer-adapter evidence, never clock or process reads inside the pure transition. These are proposed finite engineering targets, not observed performance or adopted production defaults. A failed target requires an explicitly reviewed changed artifact, not silent tuning or a larger host limit.
+
+A dedicated fixed causal fixture must produce at least one different eligible contact and at least one different actually included authorized memory beyond the vector seed between the permitted field-intervention arms, with every other declared input fixed. A finite nonzero vector alone or saturation hiding all downstream change fails calibration. Retain all complete force/contact/bounds/layer/threshold/radius/restitution/half-life/noise/prune/saturation values, domains, source/review and revisions. Missing values fail; no library default or source pin adopts calibration.
+
+The versioned finite revocation profile `finite-revocation-rebuild/1` admits at most128 immutable contribution events after the trusted checkpoint,1048576 total canonical Clio envelope UTF8 bytes for that tail (using the qualified owner codec),64 replayed kernel quanta and1000000 rebuild work units. It also respects the32-entity/64-bond/256-layer-cell finite state envelope. A rebuild work unit is one entity-update visit, layer-cell visit, eligible unordered-pair evaluation or contribution application, counted before the operation across the entire private rebuild. Preflight count/byte limits before replay; build privately and commit no component until all bounds and authorization pass. Test each exact-cap and one-over case separately. Pure count/byte/step/work exhaustion returns refused/revocation-rebuild-budget-exceeded with byte-identical prior state. The outer adapter separately quarantines/refuses the retained reference and permits no causal use until a successful authorized rebuild. A bounded outer rebuild call has2000ms wall budget; timeout produces no accepted replacement and the same quarantine, never a pure clock read or partial commit. Missing/ambiguous history retains its distinct unchanged-state refusal. No automatic budget increase, new scheduler or broad recovery program is included.
+
+Embedding production failure returns failed/embedding-failed with a bounded typed cause category from timeout,unavailable,rate-limited,invalid-output,internal-error,unclassified. Unknown provider errors map to unclassified. State/receipts/review artifacts contain no raw exception string, provider body/header, credential, private path or private source identifier. An optional at-most128UTF8-byte opaque diagnostic reference is retained only after independent audience authorization; otherwise omit it. Actual raw provider evidence may remain only in its authorized protected diagnostic store, never copied into the cause. RED injects a synthetic secret/header/private-ID marker and requires its absence from every public/retained output while preserving the typed failure.
+
+Atomic packet `2f4421ee-2e48-405e-96d2-fee1a5597ff2` owns the finite availability/resubmission source fixture and idempotent entry point. Its bounded caller fixture makes exactly one initial projection call with unavailable embedding and at most one explicitly authorized resubmission (two calls total,10000ms whole-fixture wall cap); it supplies availability through the existing embedding port, fresh actual owner authorization and the same admitted content/effect identity. The caller issues the second call only after controlled valid embedding availability; a permanently unavailable input ends without success. A third invocation is outside this finite driver budget and cannot be executed or counted as proof. Each call remains independently checked; only one graph/field/effect transaction may commit. Changed content needs its own admitted predecessor. The packet implements/tests no automatic retry trigger, sleep, queue, daemon, persistent attempt counter or new recovery state machine; production retry orchestration is not an exit of this finite source fixture. Fresh authorization, unavailable/permanent failure, conflicting revision, duplicate after success and one-commit readback controls belong to the same5-point atomic packet, not an unowned successor.

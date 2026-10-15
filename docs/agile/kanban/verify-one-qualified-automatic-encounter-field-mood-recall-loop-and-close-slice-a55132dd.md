@@ -10,7 +10,7 @@ parent: "5ea872c3-1db4-47c5-a63d-d49f99f79497"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792031834255-0.uh57by9utyyd027cjx"
+write-id: "1792043916002-0.8s3jz4yuxxnf7al7gyn"
 created_at: "2026-10-15T00:02:00.111Z"
 ---
 
@@ -52,7 +52,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 3. Bind outside identity/hash, graph/field/effect and independent mood revisions, eligible/denied candidate IDs/reasons, semantic seed IDs, authorized traversed edge/node path, traversal revision and actual prompt-included neighbor ID beyond the seed from that same served automatic run. The inspected actual provider prompt must itself contain the matching scope-safe authorized node/edge path and traversal trace/revision as model-visible context; diagnostics-only trace and content-only prompts fail. Direct vector/seed-only inclusion fails B3. A privileged API query, aggregate count or revision label alone cannot satisfy B1/B2/B3.
 4. At the served automatic consumer seam vary exactly one admitted physical deposit or bond input. Hold encounter identity/content/hash, principal/grants, semantic seeds, query, corpus/index, graph, prior field/world, mood, configuration, time/event schedule and every other recall input fixed. Trace that sole input through derived motion/contact to changed graph path/prompt-included association, with independent resulting-state readback. No changed encounter, graph revision or unrelated field checkpoint may be selected as another recall input; resulting physical state/revisions must derive only from the selected deposit/bond. Distinct-encounter storage arms and pure ablation cannot substitute. Separately vary only persisted consumed mood while holding physical state and every other recall input fixed, proving changed bounded attention/recall/decision.
 5. Replay each valid frozen history; repeat admission/recall cannot multiply persistence or feedback. Execute privacy/malformed/transport/budget negatives and truthful count/write outcomes, distinguishing local fixtures from actual served proof.
-6. After actual B1/B2/B3 plus fixed-inventory gates pass, document remaining design links, verify evidence, complete the native goal and retire its heartbeat. Larger epic/stories remain truthfully unfinished; do not resume human-paused heartbeat before completion.
+6. Verify terminal-closeout child `7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71` already completed its exact fixed-inventory evidence, remaining-design documentation and native goal/heartbeat readbacks for the named thread, goal creation/objective and automation identity. The child owns those lifecycle writes; this aggregate verifies their results and never repeats them. Missing, failed, unknown or mismatched readbacks refuse aggregate completion. Larger epic/stories remain truthfully unfinished; do not resume the human-paused heartbeat.
 
 ## Verification
 
@@ -82,5 +82,7 @@ Incoming planning refinement for Codex0a roots4277841113/1117/1122: graph reads 
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
 
 Finite qualification refinement from owning field review5527243274: The complete dependency list also requires terminal closeout 7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71, whose causal predecessor requires qualified deployment. The aggregate cannot complete ahead of any of these children. Children retain parent links without a dependency on this automatic aggregate, so the dependency relation remains one-way; native Rheos owns readiness/admission and must reject any actual cycle.
+
+Finding4279480464: aggregate AC6 now verifies the terminal-closeout child and its exact goal/thread/creation/objective/automation readbacks. The child owns lifecycle writes; parent never repeats them. Missing/failed/unknown/mismatched readbacks refuse completion. Larger stories stay unfinished and the human-paused heartbeat stays paused.
 
 ---
