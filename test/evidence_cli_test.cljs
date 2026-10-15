@@ -860,6 +860,7 @@
     (fn [{:keys [fixture file] :as context}]
       (with-redefs [cli/root fixture cli/receipt-file file]
         (cli/git-capture! ["init" "--quiet"])
+        (fs/mkdirSync (path/join fixture "receipt-river"))
         (cli/git-capture! ["update-index" "--add" "--cacheinfo"
                            (str "160000," cli/canonical-receipt-river-pin ",receipt-river")])
         (let [commit! (fn [records]
@@ -1022,6 +1023,7 @@
           (fs/mkdirSync directory)
           (fs/writeFileSync file catalog-bytes)
           (cli/git-capture! ["add" "--" "config/quality-gates.edn"])
+          (fs/mkdirSync (path/join fixture "repo"))
           (cli/git-capture! ["update-index" "--add" "--cacheinfo"
                              (str "160000," child-revision ",repo")])
           (let [head (commit! [event])
