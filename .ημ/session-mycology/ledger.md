@@ -646,3 +646,12 @@
   spore: none
   receipt-refs: c56c53f96d39607f691d940e3af1a758936bea3f7be74c701ab018438dd5969b
   note: Explicitly gate operational readiness and handoff on real engine dependency and aggregate readbacks. Source body references are reviewable requirements, not executed graph edges. Preserve prior six-effect scope and unknown source custody; no spore.
+- ts: 2026-10-15T11:03:24.178352642Z
+  session: codex:01a12257-fc69-7720-888c-dd2595ff7dc7/cms_native_journey_binding
+  task: Admit four Foresight cutover cards through lawful native planning states
+  p-efficiency: 0.78
+  p-friction: 0.28
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: e255f9d9-f534-4ace-92df-82732b7e8d96,fc90d920a042f0a5407c7935b44376cde0b535a5
+  note: Read native projection plus physical metadata before acting: missing status already projected incoming, so genuine forward admission writes status and engine history. Keep admission distinct from guarded physical-absence initialization and dependent ready qualification. Remaining cycle plan stays unexecuted.
