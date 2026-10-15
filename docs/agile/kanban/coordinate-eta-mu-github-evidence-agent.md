@@ -5,7 +5,8 @@ status: "in-progress"
 priority: "P1"
 labels: ["github", "eta-mu", "knoxx", "sol", "evidence", "workflow"]
 created_at: "2026-09-01T22:30:00.000Z"
-write-id: "github-evidence-agent-20260901"
+write-id: "1792107464669-0.riwv6b1ftfcaav400h1"
+dependency: ["7dea0fdb-0a1c-43d9-a35e-0cd2e76da554"]
 ---
 
 # Coordinate the eta-mu GitHub evidence agent
@@ -83,6 +84,10 @@ Detailed data, system, code, worker, state, and operator diagrams live in
 - Record exact commands, inputs, outputs, skips, failures, and artifact digests.
 - Require projection replay and stale-head publication rejection before the
   vertical slice can be called complete.
+
+## Finite caller-adoption coordination
+
+This coordination outcome explicitly includes the existing standalone P1/2 caller-adoption task `7dea0fdb-0a1c-43d9-a35e-0cd2e76da554` ([caller plan](adopt-the-accepted-finite-mimo-review-route-in-the-foresight-caller-e76da554.md)). Its native dependency is coordination `4f5cb66d-4fd2-47cf-92cc-2185b057a889` → caller `7dea0fdb-0a1c-43d9-a35e-0cd2e76da554`: this coordinating outcome waits for the caller's qualified completion. The Foresight lane coordinates the exact caller/dependency source composition and cross-repository integration evidence; the caller's two points cover its existing pin/interface/budget wiring and owning regression control. Worker/verifier semantics remain in ETA, F41 consumer source/qualification remains in its owner, and hosted qualification remains required before adoption. Preserve both cards' metadata, points and complete history. The caller stays incoming/P1/2, dependency[] and without a parent field; this explicit scope and completion dependency do not claim parent/epic rollup, implementation admission, elapsed-budget/overlap proof, readiness or completed adoption.
 
 ## Evidence worker set
 
