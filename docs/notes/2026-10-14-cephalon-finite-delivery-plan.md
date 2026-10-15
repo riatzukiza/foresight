@@ -300,13 +300,16 @@ alternate board validator or completion surface.
    deterministic bounded horizon, repeated-recipient deduplication, canonical
    order, reasons and exact/one-over refusal fixtures are part of this packet.
    The already allocated revocation-tail rebuild is mandatory for Done:
-   `finite-revocation-rebuild/2` limits 128 canonical Clio events, 1048576 tail
-   UTF8 bytes, 64 quanta and 67108864 whole-rebuild work units, with the owning
-   finite-character-load/2 state/input/ID/string/trace caps. Before every
-   operation charge preflight and the entire rebuild without resets. Exact and
-   one-over tests independently cover every limit, multibyte IDs and trace bytes.
-   Exhaustion returns refused/revocation-rebuild-budget-exceeded with identical
-   prior state; the outer 2000 ms timeout yields no accepted replacement.
+   Consume the owning `finite-revocation-rebuild/4`: 128 complete boundary
+   events through admitted cursor, including pending events; 1048576 canonical
+   Clio tail bytes, 64 consumed-prefix quanta and 67108864 whole-rebuild work
+   units. Verify both cursors and preserve pending identity/order/schedules.
+   Reconstruct or explicitly invalidate all completed/restored recall results
+   as well as active folds before causal use; no state-binding retag suffices.
+   Preserve shared input, trace, work and continuation refusal codes; the generic
+   rebuild reason applies only to its own tail/event/quanta/cardinality caps.
+   Exact/one-over controls hold other bounds valid and assert each actual reason
+   with unchanged state. The outer 2000 ms timeout yields no accepted replacement.
    Independently read quarantine/no-causal-use until a successful authorized
    complete rebuild. Missing/ambiguous history is distinct; expiry, partial
    replay or the earlier five-point contact evidence cannot satisfy this exit.
@@ -648,7 +651,7 @@ Before timing, freeze reviewed fixture bytes/layouts/seed42, calibration and sou
 
 A dedicated fixed causal fixture must produce at least one different eligible contact and at least one different actually included authorized memory beyond the vector seed between permitted field-intervention arms, with every other declared input fixed. A finite nonzero vector alone or saturation hiding every downstream change fails calibration. Retain complete force/contact/bounds/layer/threshold/radius/restitution/half-life/noise/prune/saturation values, domains, source/review and revisions. Missing values fail; no library default or source pin adopts calibration.
 
-The versioned finite revocation profile `finite-revocation-rebuild/2` admits at most128 immutable contribution events after the trusted checkpoint,1048576 canonical Clio envelope UTF8 bytes for that tail,64 replayed quanta and67108864 total rebuild work units. It respects finite-character-load/2 state, variable-width input/ID/string and trace byte/record caps; selected codecs stay owned by ABI/Clio. Charge all visits and actual scalar/UTF8 validation, encoding, comparison, hashing and serialization before each operation across the ENTIRE private rebuild, including preflight. Preflight tail count/bytes with bounded readers before replay; no component commits until complete authorization and every budget pass. Test each exact/one-over bound independently, including multibyte/long-ID and trace-byte exhaustion. Pure rebuild count/byte/step/work exhaustion returns refused/revocation-rebuild-budget-exceeded with byte-identical prior state. The outer adapter separately quarantines/refuses the retained reference and permits no causal use until successful authorized rebuild. The outer rebuild call has2000ms wall budget; timeout yields no accepted replacement and the same quarantine, never a pure clock read/partial commit. Missing/ambiguous history retains its distinct refusal. No automatic budget increase, new scheduler or broad recovery program is included.
+Consume the owning current `finite-revocation-rebuild/4` contract: at most128 complete immutable boundary events from an independently established clean checkpoint through the admitted cursor, including the pending queue,1048576 canonical Clio envelope UTF8 tail bytes,64 consumed-prefix replay quanta and67108864 whole-rebuild work units. Verify separate consumed/admitted cursors; replay only the original consumed schedule and reconstruct/reauthorize all pending events without early execution. Reconstruct or explicitly invalidate every retained completed/restored recall result as well as active folds, even when no active fold remains. A state-binding retag cannot qualify a completed result; invalidated reads return stale-recall-authority without payload, and unsafe invalidation refuses the rebuild unchanged with outer quarantine. Preserve original request/event history. Shared input/ID/string overflow keeps finite-input-byte-limit, trace records/bytes finite-trace-budget-exceeded, work finite-work-budget-exceeded and continuation finite-state-continuation-byte-limit. The generic revocation-rebuild-budget-exceeded applies only to its own tail/event/quanta/cardinality caps; never remap shared codes. Consume the owning strictly increasing unique encoded map-key contract before map construction/hashing/admission, including duplicate :operation/:arguments/nested-key refusal. Charge every actual preflight, validation, encoding, ordering, hashing and rebuild operation under the unchanged whole-call bounds. Independent exact/one-over tests hold other bounds valid and assert the specific reason/unchanged state. Complete a recall horizon, checkpoint/restore, revoke, rebuild and read: no revoked IDs, reasons or derived influence may escape or reinforce; retain an unrelated permitted-result positive control. The outer2000ms budget/quarantine and every source/readiness gate remain; no pure clock, partial commit, automatic budget increase or new scheduler.
 
 Embedding production failure returns failed/embedding-failed with a bounded typed category from timeout,unavailable,rate-limited,invalid-output,internal-error,unclassified. The existing qualified embedding-provider seam consumed by atomic8 owns versioned mapping `embedding-failure-category/1`; consumers retain that category/mapping revision verbatim rather than reinterpret errors. At that protected seam, shape validated actual HTTP status and explicit transport-timeout/unavailable, invalid-output and internal-failure indicators from the actual provider outcome. Do not parse or retain exception prose. If the bound indicator attestation is unavailable or malformed, return unclassified before evaluating rules1–5. Otherwise apply FIRST matching rule: (1) HTTP429 => rate-limited; (2) explicit timeout OR HTTP408/504 => timeout; (3) explicit transport-unavailable OR other HTTP500–599 => unavailable; (4) explicit validated invalid-output => invalid-output; (5) explicit validated internal-failure => internal-error; (6) no match, unavailable/malformed attestation or unknown => unclassified. A contradictory lower-priority flag cannot override the first match. Tests require timed-out429=>rate-limited,503+invalid-output=>unavailable,timeout+invalid-output=>timeout,invalid-output+internal=>invalid-output, and missing/unknown=>unclassified, with exact stable replay/category/revision and no raw-string heuristics. Atomic8 owns delivery/qualification at the actual existing provider seam as part of its failure handling, not a second classifier in Eros/Eris or another unowned prerequisite.
 
@@ -683,7 +686,7 @@ The checklist above consumes the owning contracts in full: recalled-item contrib
 
 ### Exact owning contract and final-state handoff
 
-Contact packet ba078119-482c-49dc-bd18-c2dfcaad9024 consumes the independently owned `riatzukiza/eros-eris-field` repository paths `docs/plans/cephalon-finite-field-coupling.edn` and `docs/plans/cephalon-physical-kernel-abi.edn`. [Owning personal PR2](https://github.com/riatzukiza/eros-eris-field/pull/2/files) exposes the current proposal; readiness/source qualification binds its eventual actual qualified merge, exact Git blobs/SHA256 and revisions. A Foresight-relative missing-file search does not supply those bytes. The contact packet's existing source/rebuild scope also includes reauthorization/reconstruction or invalidation of active/restored inclusion folds after revocation, and persisted complete trace-byte accounting across split/restore under the same finite budgets. Required fixtures remain future source work, not implemented tests or native readiness.
+Contact packet ba078119-482c-49dc-bd18-c2dfcaad9024 consumes the independently owned `riatzukiza/eros-eris-field` repository paths `docs/plans/cephalon-finite-field-coupling.edn` and `docs/plans/cephalon-physical-kernel-abi.edn`. [Owning personal PR2](https://github.com/riatzukiza/eros-eris-field/pull/2/files) exposes the current proposal; readiness/source qualification binds its eventual actual qualified merge, exact Git blobs/SHA256 and revisions. A Foresight-relative missing-file search does not supply those bytes. The contact packet's existing source/rebuild scope also includes reauthorization/reconstruction or explicit invalidation of active/restored inclusion folds AND every retained completed/restored recall result after revocation, including when active folds are empty, plus the owning strict unique-key input codec, specific shared rebuild refusal codes and persisted complete trace-byte accounting across split/restore under the same finite budgets. Required fixtures remain future source work, not implemented tests or native readiness.
 
 The shared calibration paragraph now agrees with the mandatory checklist/card: valid elapsed101 executes100 with successful-incomplete backlog1, then catch-up drains1 without invented elapsed time. Only distinct unsafe/resource inputs refuse. Deployment qualification must finish with a fenced, independently read-back qualified composition after its actual rollback test; rollback as the final served state cannot qualify the downstream character proof. These repaired the same fourteen-packet inventory at an earlier provisional65-point stage, superseded by the current75-point proposal below; selection3 stays separate.
 
@@ -760,3 +763,23 @@ must not substitute truncation. Positive admitted appraisal or validated fallbac
 still needs exact selected encounter/field/mood persistence and actual consumer
 readback under current authority; printed limits or a source fixture are not
 served B2. These are required future causal tests, not executed laws or Ready.
+
+
+## Current owning codec and completed-recall rebuild corrections
+
+Native Field PR2 review5537144039 roots4286093600/4286093613/4286093621 expose
+three real existing contract defects. Consume the owning corrected proposed
+EDN/ABI: strictly increasing unique encoded map keys before construction,
+hashing or admission; shared specific input/trace/work/continuation refusals
+without coercion into a generic rebuild code; and reconstruction or explicit
+invalidation of every retained completed/restored recall result, including
+when active folds are empty. Completed horizon/checkpoint/revoke/rebuild/read
+controls must expose no revoked IDs, reasons or derived influence and write no
+reinforcement; retain a clean permitted-result positive control.
+
+The operative contact8 contract and measurable exit above now consume current
+rebuild/4 with complete consumed/admitted/pending history. Historical native
+comments and earlier-version receipts are unchanged. The same owner sources,
+finite bounds,14 execution75 and native Incoming status remain; these are
+source qualification requirements, not an implemented codec/rebuild or live
+proof. No new points, dependencies, policy, provider, paid or runtime scope.
