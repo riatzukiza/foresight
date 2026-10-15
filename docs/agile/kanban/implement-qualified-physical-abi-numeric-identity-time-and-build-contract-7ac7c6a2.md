@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "a0176ec0-0616-4d7f-86e1-e6cf9a160a7a", "b5f2ba9e-8d67-4c73-9919-e275983aca87"]
 category: "kanban"
-write-id: "1792023335587-0.y1wxvz4it41oma2449"
+write-id: "1792034162312-0.zj4x45zllr6z3duspg"
 created_at: "2026-10-15T00:01:57.814Z"
 ---
 
@@ -49,10 +49,15 @@ Stale current-head evidence, implicit authority, incomplete changed inputs, cycl
 
 License: GPL-3.0-or-later.
 
+## Canonical authority and independent verification boundary — 2026-10-15
+
+Checkpoint state includes the actual producing compiled-artifact SHA256, build-qualification identity and exact launch-profile identity/digest, alongside kernel/config/numeric revisions. Bind these to independently verified qualified producing source/build/runtime evidence and include them in the canonical checkpoint hash. Restore independently verifies the actual currently loaded artifact/build/launch qualification and requires equality with that producing identity before causal use; same revision labels alone cannot pass. Missing producer fields or a byte-different artifact/build/launch identity refuses unchanged state. No silent migration, copied producer label or new snapshot hash can qualify a different producing executable; a separate reviewed migration would be required outside this finite same-artifact replay proof.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
+
+Verified current planning correction: Checkpoint state includes the actual producing compiled-artifact SHA256, build-qualification identity and exact launch-profile identity/digest, alongside kernel/config/numeric revisions. Bind these to independently verified qualified producing source/build/runtime evidence and include them in the canonical checkpoint hash. Restore independently verifies the actual currently loaded artifact/build/launch qualification and requires equality with that producing identity before causal use; same revision labels alone cannot pass. Missing producer fields or a byte-different artifact/build/launch identity refuses unchanged state. No silent migration, copied producer label or new snapshot hash can qualify a different producing executable; a separate reviewed migration would be required outside this finite same-artifact replay proof.
 
 ---
