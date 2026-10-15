@@ -1815,3 +1815,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#9daaacaf-0862-4a0c-abf8-ff51558b8e19
   note: Prior status-only turn was no progress; revalidated and committed exact reviewed14-test repair plus canonical Services/Knoxx provenance. Held native publication before effects on3fresh verified documentation findings. Separate anonymous inference, tool evidence root and GitHub App transport; preserve accepted-source and runtime/data qualification boundaries. No tests repeated for notes and no spore.
+- ts: 2026-10-15T06:44:04.305697728Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Advance exact CMS integration prerequisites and publish tested review-tool repair
+  p-efficiency: 0.77
+  p-friction: 0.57
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#1cc4760c-aac3-47bb-9c5f-fe7ce5c0acb5
+  note: Status-only previous turn no-progress revalidated; actual nextaction exactisolatedmodeldownloadlive. Services3nativeP2Fixed/published14suitePASS, Muse5gates/6rootcontrols sourcepublishedPR11 butadoptionpending; nativeMuseAppauthpasses whereasServicesfailsbeforeinference. Preserve exact source/model/DB/publication boundaries; recover original capturetailguard withminimalreviewedV2; no duplicatedeffects/same-sessionpromotion.
