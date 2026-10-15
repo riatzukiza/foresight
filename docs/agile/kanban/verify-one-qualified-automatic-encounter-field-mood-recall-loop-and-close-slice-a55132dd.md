@@ -10,14 +10,14 @@ parent: "5ea872c3-1db4-47c5-a63d-d49f99f79497"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b","2f4421ee-2e48-405e-96d2-fee1a5597ff2","7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71","8bcaa0f3-37ec-44e2-8f20-4798dfc4b795","deliver-outcome-attributed-once-only-graph-feedback"]
 category: "kanban"
-write-id: "1792057107062-0.qig1nn6l0lmbdcki71"
+write-id: "1792078265459-0.qdhndoct4d4mq91lxt"
 created_at: "2026-10-15T00:02:00.111Z"
 ---
 
 ## Context
 
 This native Incoming card is the integration parent for separately estimated
-existing obligations: deployment 5, served causal proof 5, and terminal closeout 2.
+existing obligations: deployment 5, served causal proof 8, and terminal closeout 2.
 Its recorded 5-point estimate remains provisional aggregate history and is not
 added to those execution allocations. Review and apply lawful aggregation/type/
 estimate treatment through Rheos before readiness; no implementation/adoption
@@ -32,13 +32,12 @@ Verify one qualified automatic encounter field mood recall loop and close slice.
 Own the composed selected B1/B2/B3 acceptance below through these actual children:
 
 - Qualified deployment `885a4b34-74fb-4e4e-a42a-6dbb54d54829` (5 points).
-- Served causal proof `f503ae5a-e414-4da8-a8d4-328a7218bcf3` (5 points).
+- Served causal proof `f503ae5a-e414-4da8-a8d4-328a7218bcf3` (8 points).
 - Terminal inventory/closeout `7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71` (2 points).
 
 Their exact predecessors and own completion boundaries are in
 ../../notes/2026-10-14-cephalon-finite-delivery-plan.md. The separately estimated
-feedback task `deliver-outcome-attributed-once-only-graph-feedback` is a prerequisite. The parent supplies
-integration acceptance, not an extra execution estimate or a successor cycle.
+feedback task `deliver-outcome-attributed-once-only-graph-feedback` is a prerequisite. The three children allocate15 execution points (5+8+2), with every constituent exit required. The parent retains5 only as non-additive aggregate history and supplies integration acceptance, not five extra execution points or a successor cycle.
 Katamorph/Axxium/Clio and native Rheos retain their authority.
 
 ## Non-goals
@@ -88,5 +87,7 @@ Finding4279480464: aggregate AC6 now verifies the terminal-closeout child and it
 Currentplanning parity for4280657780: operative aggregate consumes qualifiedboth-boundaryownerfence andterminalmakerprotection, no unsupportedidle/poll/expiry option. Parent remainsIncoming5non-additivehistory; no childwrite repetition or aggregatepoints adoption. Child re-estimates8/8/5/5 expose same14selected62; earlier50 remainshistory. No runtime/Ready/liveproof.
 
 Native finding4281299158: operative child handoff lists deployment5, served causal proof5 and terminal closeout2. Containing automatic5 remains excluded from selected execution arithmetic. Native contact re-estimate exposes revocation work3 within contact8; same14 selected packets propose65. Earlier 3-point deployment and aggregate62 notes are historical, with all identity/dependency and native readiness gates retained.
+
+Finding4284868028: corrected both operative parent references to served causal child8, so existing deployment5 + served8 + closeout2 allocates15, matching current provisional75-point execution inventory. Parent recorded5 remains non-additive aggregate history, not an extra execution estimate. Native Incoming/frontmatter/identity/dependencies and all old comments retained; no new scope, aggregate adoption, Ready or implementation.
 
 ---
