@@ -65,11 +65,6 @@ nbb scripts/workspace.clj build --only eta-mu
 nbb scripts/workspace.clj test --only eta-mu
 nbb scripts/workspace.clj lint --only eta-mu
 nbb scripts/workspace.clj jscpd --only muse
-nbb scripts/evidence.clj validate
-nbb scripts/evidence.clj list --only katamorph --kind unit,static
-nbb scripts/evidence.clj run --only katamorph --kind static
-nbb scripts/evidence.clj verify-receipts \
-  --base <full-trusted-base-commit> --at <full-reviewed-head-commit>
 ```
 
 `inventory` is read-only; `report` writes only root-generated artifacts.
@@ -168,7 +163,25 @@ paths, invoke NBB1.4.207 from that run directory, and explicitly provide the
 classpath `SOURCE/src/cljs:ROOT/src:ROOT/scripts:ROOT/test`. The adapter's
 `canonical-source --base FULL_BASE --at FULL_HEAD` checks both root gitlinks,
 canonical HEAD/blob/raw hash and the loaded validator's actual source path.
-It repeats source checks around canonical admission. The review workflow
+It repeats source checks around canonical admission. All commands in this
+adapter load the canonical namespace, so use the isolated invocation for
+`validate`, `list`, `run` and `verify-receipts` too. For example, after preparing
+the exact source and empty run directories described above:
+
+```sh
+rr_root="$(git rev-parse --show-toplevel)"
+rr_cp="$FORESIGHT_RECEIPT_RIVER_SOURCE/src/cljs:$rr_root/src:$rr_root/scripts:$rr_root/test"
+foresight_evidence() {
+  env -C "$FORESIGHT_RECEIPT_RIVER_RUN" npx --yes nbb@1.4.207 \
+    -cp "$rr_cp" "$rr_root/scripts/evidence.clj" "$@"
+}
+foresight_evidence validate
+foresight_evidence list --only katamorph --kind unit,static
+foresight_evidence run --only katamorph --kind static
+foresight_evidence verify-receipts --base FULL_BASE --at FULL_HEAD
+```
+
+The review workflow
 acquires only that public exact commit anonymously; it preserves its existing
 caller/tool pins, permissions, secrets and all twelve gates, adding the
 canonical source check. Missing source or namespace shadowing is a failure.
