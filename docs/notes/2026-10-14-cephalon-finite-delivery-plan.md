@@ -716,11 +716,18 @@ qualification; observed workload/cost/latency never chooses its own pass limits.
 | Active provider attempts | At most1 per character | Use the qualified native provider admission/ownership seam; no local second scheduler |
 | Waiting model requests | 0 | Busy or queue-required admission observes refusal; no hidden model queue |
 | Attempts per admitted encounter | At most1; retries0 | Canonical encounter/effect identity and existing once-only custody; no retry/generation/counter reset |
-| Complete provider phase | At most10000ms from admitted start through response EOF/validation | Outer qualified observations only; equality accepted, greater/unknown/late result refuses |
+| Complete provider phase | At most10000ms from provider-eligibility/preflight entry through response EOF/validation | Outer qualified observations only; equality accepted, greater/unknown/late result refuses |
 | Additional model charge | Maximum0 USD | Existing authorized free route only with current qualified zero-price metadata; unknown/nonzero cost refuses before a provider attempt |
 
 Cadence/token/byte/active/queue/attempt/time/cost limits apply independently and
-conjunctively. Do not trade unused tokens for retries, widen the deadline after
+conjunctively. The phase deadline includes route/catalog/pricing/tokenizer
+preflight and admission, not only network time after a request starts. A first
+start requires independently established known-empty prior-attempt history;
+missing history is not a zero timestamp. The single-attempt/zero-retry bound
+includes every caller/adapter/SDK-controlled transport retry and fallback hop;
+unsupported or unestablished control cannot qualify by counting only outer
+invocations. Native usage/tokenizer evidence, never model-written counts, binds
+the complete effective input/output. Do not trade unused tokens for retries, widen the deadline after
 a provider delay, or use missing pricing as free. Record actual native attempts,
 usage, cause and measured cost/latency; an unknown observation remains unknown.
 A zero-attempt fallback or scripted case supplies no real provider-availability
