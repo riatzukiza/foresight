@@ -22,17 +22,60 @@ jobs:
       opencode_version: 1.18.31
       setup_eta_mu_toolchain: false
       evidence_gates_script: |
+        rr_root="$GITHUB_WORKSPACE"
+        rr_area="$RUNNER_TEMP/foresight-receipt-river-7c-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+        export FORESIGHT_RECEIPT_RIVER_SOURCE="$rr_area/source"
+        export FORESIGHT_RECEIPT_RIVER_RUN="$rr_area/run"
+        rr_cp="$FORESIGHT_RECEIPT_RIVER_SOURCE/src/cljs:$rr_root/src:$rr_root/scripts:$rr_root/test"
+
         run_gate diff_stat git diff --stat "${PR_BASE_SHA}...HEAD"
+
+        run_gate canonical_source bash --noprofile --norc -euo pipefail -c '
+          root="$1"; area="$2"; base="$3"; head="$4"
+          pin=7c7c62343fea0241ac545e37f14e57ab344bfa30
+          law=src/cljs/eta_mu/receipt_river/law/receipt.cljs
+          expected="$(printf "160000 commit %s\treceipt-river" "$pin")"
+          test "$(git --no-replace-objects -C "$root" rev-parse HEAD)" = "$head"
+          test "$(git --no-replace-objects -C "$root" ls-tree "$base" -- receipt-river)" = "$expected"
+          test "$(git --no-replace-objects -C "$root" ls-tree "$head" -- receipt-river)" = "$expected"
+          test ! -e "$area"
+          mkdir -m 700 "$area"
+          mkdir -m 700 "$area/source" "$area/run"
+          export GIT_CONFIG_GLOBAL=/dev/null GIT_CONFIG_NOSYSTEM=1
+          export GIT_TERMINAL_PROMPT=0 GIT_ASKPASS=/bin/false SSH_ASKPASS=/bin/false
+          git -c init.defaultBranch=private-source init --quiet "$area/source"
+          git --no-replace-objects -C "$area/source" -c credential.helper= -c http.extraheader= \
+            -c protocol.file.allow=never -c core.hooksPath=/dev/null \
+            fetch --no-tags --depth=1 https://github.com/open-hax/receipt-river.git "$pin"
+          test "$(git --no-replace-objects -C "$area/source" rev-parse FETCH_HEAD)" = "$pin"
+          git --no-replace-objects -C "$area/source" -c core.hooksPath=/dev/null checkout --detach "$pin"
+          test "$(git --no-replace-objects -C "$area/source" rev-parse HEAD)" = "$pin"
+          test -z "$(git --no-replace-objects -C "$area/source" status --porcelain=v1 --untracked-files=all)"
+          test "$(git --no-replace-objects -C "$area/source" rev-parse "HEAD:$law")" = 99f480e1c3fc5be282b3d5bb64310eb052ace2b8
+          test "$(git -C "$area/source" hash-object "$area/source/$law")" = 99f480e1c3fc5be282b3d5bb64310eb052ace2b8
+          test "$(sha256sum "$area/source/$law" | cut -d " " -f 1)" = a40dd843cf298926dfbe229d5544470dbd51682fd538e841a0fad62d29bed320
+          # Exact source/classloader assertions live in the adapter, not a copied validator here.
+          env -C "$area/run" npx --yes nbb@1.4.207 \
+            -cp "$area/source/src/cljs:$root/src:$root/scripts:$root/test" \
+            "$root/scripts/evidence.clj" canonical-source --base "$base" --at "$head"
+        ' -- "$rr_root" "$rr_area" "$PR_BASE_SHA" "$PR_HEAD_SHA"
+
+        # Existing gates preserved with their original names/versions.
         run_gate workspace_laws npx --yes nbb@1.4.207 -cp scripts:test test/workspace_test.cljs
         run_gate project_laws npx --yes nbb@1.4.207 -cp src:scripts:test test/project_test.cljs
         run_gate lineage_laws npx --yes nbb@1.4.207 -cp src:test test/lineage_test.cljs
         run_gate evidence_laws npx --yes nbb@1.4.207 -cp src:test test/evidence_test.cljs
-        run_gate evidence_adapter npx --yes nbb@1.4.207 -cp src:scripts:test test/evidence_cli_test.cljs
+        run_gate evidence_adapter env -C "$FORESIGHT_RECEIPT_RIVER_RUN" npx --yes nbb@1.4.207 \
+          -cp "$rr_cp" "$rr_root/test/evidence_cli_test.cljs"
         run_gate project_contract npx --yes nbb@1.4.207 -cp src:scripts scripts/project.clj validate
-        run_gate catalog_contract npx --yes nbb@1.4.207 -cp src:scripts scripts/evidence.clj validate
+        run_gate catalog_contract env -C "$FORESIGHT_RECEIPT_RIVER_RUN" npx --yes nbb@1.4.207 \
+          -cp "$rr_cp" "$rr_root/scripts/evidence.clj" validate
         run_gate migration_pack_dependencies python3 -m pip install jsonschema==4.26.0 networkx==3.6.1
-        run_gate migration_pack env PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s docs/migrations/eta-mu-breakdown/checks -p check_pack.py
-        run_gate receipt_history npx --yes nbb@1.4.207 -cp src:scripts scripts/evidence.clj verify-receipts --base "${PR_BASE_SHA}" --at "${PR_HEAD_SHA}"
+        run_gate migration_pack env PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover \
+          -s docs/migrations/eta-mu-breakdown/checks -p check_pack.py
+        run_gate receipt_history env -C "$FORESIGHT_RECEIPT_RIVER_RUN" npx --yes nbb@1.4.207 \
+          -cp "$rr_cp" "$rr_root/scripts/evidence.clj" verify-receipts \
+          --base "$PR_BASE_SHA" --at "$PR_HEAD_SHA"
         run_gate diff_hygiene git diff --check "${PR_BASE_SHA}...HEAD"
     # Least privilege: forward only the secrets the review job consumes.
     secrets:

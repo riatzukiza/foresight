@@ -219,6 +219,71 @@
        (git-commit-id? (:ledger/revision value))
        (sha256? (:ledger/sha256 value))))
 
+(defn declared-native-event?
+  "Route declared events before flat compatibility; this is not validation."
+  [record]
+  (and (map? record)
+       (boolean (some #(and (keyword? %) (= "event" (namespace %)))
+                      (keys record)))))
+
+(defn provenance-reference? [value]
+  (or (nonblank-string? value)
+      (and (vector? value) (seq value) (every? nonblank-string? value))))
+
+(defn evidence-looking-fields? [record]
+  (and (map? record)
+       (or (= evidence-receipt-origin (:origin record))
+           (some #(and (keyword? %) (#{"evidence" "result"} (namespace %)))
+                 (keys record)))))
+
+(defn native-observation-errors
+  "Consumer constraints only. The outer adapter must run canonical validation
+  on the original record. No result here grants canonical or evidence credit."
+  [record]
+  (let [producer (:event/producer record)
+        subject (:event/subject record)
+        payload (:event/payload record)]
+    (cond-> []
+      (not (and (declared-native-event? record)
+                (contains? record :event/schema)))
+      (conj :native/event-declaration)
+      (not (uuid? (:event/id record))) (conj :native/typed-id)
+      (not (map? producer)) (conj :native/producer)
+      (not (every? nonblank-string?
+                   ((juxt :eta-mu/version :package/name :package/version :command)
+                    producer)))
+      (conj :native/producer-provenance)
+      (not (and (map? subject) (nonblank-string? (:repository/path subject))))
+      (conj :native/subject-provenance)
+      (not (map? payload)) (conj :native/payload)
+      (not= :observation (:kind payload)) (conj :native/observation-only)
+      (not (or (nonblank-string? (:ts payload)) (inst? (:ts payload))))
+      (conj :native/payload-timestamp-value)
+      (not (every? nonblank-string?
+                   ((juxt :repo :origin :owner :dod :pi :host) payload)))
+      (conj :native/payload-provenance)
+      (not (every? provenance-reference? ((juxt :manifest :refs) payload)))
+      (conj :native/provenance-references)
+      (or (evidence-looking-fields? record) (evidence-looking-fields? payload))
+      (conj :native/evidence-looking))))
+
+(defn native-identity-errors
+  "Check new native IDs against retained history without rewriting or
+  retroactively validating historical envelope law. Flat-only appends retain
+  their existing compatibility."
+  [history appended]
+  (let [native (filter declared-native-event? appended)
+        prior-native (filter declared-native-event? history)
+        prior-ids (set (keep :event/id history))
+        ids (map :event/id native)]
+    (cond-> []
+      (and (seq native) (some #(not (uuid? (:event/id %))) prior-native))
+      (conj :native/ambiguous-historical-id)
+      (some #(contains? prior-ids %) ids) (conj :native/historical-id-collision)
+      (and (seq native)
+           (some #(> % 1) (vals (frequencies (keep :event/id appended)))))
+      (conj :native/appended-id-collision))))
+
 (defn receipt-envelope? [receipt]
   (and (map? receipt)
        (keyword? (:kind receipt))

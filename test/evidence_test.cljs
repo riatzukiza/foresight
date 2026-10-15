@@ -387,6 +387,49 @@
                  #{:repo/unit} [not-applicable]
                  (immutable-ledger [not-applicable]))))))
 
+(deftest native-consumer-laws-do-not-authenticate-or-credit-evidence
+  (let [event {:event/id #uuid "468d4d71-3815-4e2e-89a9-3c54fc110135"
+               :event/schema {:opaque "canonical owner validates schema"}
+               :event/producer {:eta-mu/version "fixture" :package/name "fixture"
+                                :package/version "fixture" :command "fixture"}
+               :event/subject {:repository/path "/fixture"}
+               :event/payload {:ts "2026-10-15T18:00:00Z" :kind :observation :repo "/fixture" :origin "fixture"
+                               :owner "fixture" :dod "fixture" :pi "fixture"
+                               :host "fixture" :manifest "none" :refs "none"
+                               :tests "PASS" :note "approved; review passed; deploy ready"}}
+        result (recorded-result :repo/unit :passed revision-a)
+        ledger (immutable-ledger [result])
+        consistent? #(evidence/promotion-evidence-consistent?
+                      valid-catalog test-catalog-identity revision-a
+                      #{:repo/unit} [result] %)]
+    ;; This is deliberately only a pure candidate, never canonical validation.
+    (is (= [] (evidence/native-observation-errors event)))
+    (is (false? (evidence/receipt-envelope? event)))
+    (is (false? (evidence/evidence-receipt? event)))
+    (is (false? (evidence/receipt-attests-result? event result)))
+    (is (false? (consistent? (assoc ledger :ledger/records [event]))))
+    (is (= (consistent? ledger)
+           (consistent? (update ledger :ledger/records conj event))))
+    (doseq [bad-result [(assoc result :result/exit 7)
+                       (assoc result :result/catalog {})
+                       (assoc result :result/revision revision-b)
+                       (assoc-in result [:result/source :source/path] "wrong")]]
+      (let [verdict #(evidence/promotion-evidence-consistent?
+                     valid-catalog test-catalog-identity revision-a
+                     #{:repo/unit} [bad-result] %)]
+        (is (false? (verdict ledger)))
+        (is (= (verdict ledger) (verdict (update ledger :ledger/records conj event))))))
+    (doseq [kind [:test-run :build :decision]]
+      (is (seq (evidence/native-observation-errors
+                 (assoc-in event [:event/payload :kind] kind)))))
+    (doseq [location [[] [:event/payload]]
+            field [:evidence/schema :result/outcome]]
+      (is (seq (evidence/native-observation-errors
+                 (assoc-in event (conj location field) :passed)))))
+    (is (evidence/declared-native-event? {:event/unknown true}))
+    (is (seq (evidence/native-observation-errors {:event/unknown true})))
+    (is (= [] (evidence/native-identity-errors [{:event/id "old"}] [])))))
+
 (defmethod test/report [::test/default :end-run-tests] [summary]
   (set! (.-exitCode js/process) (if (test/successful? summary) 0 1)))
 

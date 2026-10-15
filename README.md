@@ -149,6 +149,39 @@ GitHub Check or DSSE/signing identity is a future strengthening if producer
 authentication becomes a requirement; its acceptance contract is tracked in
 [Foresight #57](https://github.com/open-hax/foresight/issues/57).
 
+Native Receipt River observations have a separate provenance route. A declared
+`:event/*` map never falls back to the flat envelope. The adapter invokes the
+actual declared Receipt River `7c7c62343fea0241ac545e37f14e57ab344bfa30`
+validator on the original strictly parsed map, then applies pure Foresight
+observation constraints. Typed UUIDs, complete nonblank attribution and opaque
+manifest/refs values are retained unchanged; scalar `"none"` remains a string.
+New duplicate or historical-colliding IDs, ambiguous historical event IDs,
+unknown/malformed schemas, evidence/result fields, evidence origins and
+non-observation kinds fail. Native observations provide **zero** gate, result,
+review, approval, promotion or deployment evidence. The strict flat/evidence
+predicates and result/catalog/revision/gitlink matching remain unchanged.
+
+The affected NBB commands require a clean, exact canonical source checkout and
+an empty invocation directory outside this workspace. Set
+`FORESIGHT_RECEIPT_RIVER_SOURCE` and `FORESIGHT_RECEIPT_RIVER_RUN` to their absolute
+paths, invoke NBB1.4.207 from that run directory, and explicitly provide the
+classpath `SOURCE/src/cljs:ROOT/src:ROOT/scripts:ROOT/test`. The adapter's
+`canonical-source --base FULL_BASE --at FULL_HEAD` checks both root gitlinks,
+canonical HEAD/blob/raw hash and the loaded validator's actual source path.
+It repeats source checks around canonical admission. The review workflow
+acquires only that public exact commit anonymously; it preserves its existing
+caller/tool pins, permissions, secrets and all twelve gates, adding the
+canonical source check. Missing source or namespace shadowing is a failure.
+These before/after checks detect ordinary source movement; they are not an
+adversarial immutable-mount guarantee.
+
+The causal tests retain both original F40 lines as lossless base64 fixtures,
+read the exact accepted197-record prefix from Git, and reconstruct the original
+199-record ledger in a temporary repository. No historical ledger is rewritten.
+The original F40 failed run/artifact and unresolved reviews remain independent:
+this implementation needs fresh hosted qualification and code review before
+adoption, followed by ordinary downstream integration and fresh F40 checks.
+
 The local adapter's before/after checkout snapshots detect ordinary drift; they
 do not prove safety against an adversary that swaps a pathname out and restores
 it between those observations. Adversarial execution requires a trusted CI
