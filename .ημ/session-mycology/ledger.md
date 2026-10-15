@@ -1869,3 +1869,12 @@
   spore: none
   receipt-refs: f4591dae-63d9-42d0-94d6-aeb2e952643e,e909b4d369264274930c349eb0629d9160cc4f2115cb0d3d5bbb9791520649de
   note: Keep production serving, private product failures, local source qualification, published review state and accepted caller adoption as separate dated facts. Freeze the memory cutoff rather than chase concurrent updates; retain later source observations in the receipt. Fresh Services qualification is distinct from partial diagnostic fixture disposal. Root native knoxx_session_mycology reflect was attempted once and failed isError true/INVALID_ARGUMENT because null cwd was read; this is the authorized portable file fallback, no native reflection, promotion, spore or ETA18 package-event repair credit. Preserve all prior updates/ledger bytes and unrelated root work. Anonymous credential-free OpenCode uses the dynamically discovered eligible fast/free/tool-capable MiMo catalog, not a future fixed model slug or OpenRouter workaround.
+- ts: 2026-10-15T12:41:28.354803802Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Record update35: live Website truth, protected fork policy merge, Services personal publication and unresolved private CMS defects
+  p-efficiency: 0.60
+  p-friction: 0.60
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#d0cb77ec-5f76-455b-9b0c-c868a8dabe2b
+  note: Public-source custody, native package reflection, accepted-source adoption, App publication capability and anonymous OpenCode inference are distinct evidence boundaries. Fresh public fetch disproved a missing-source premise; native reassessment remains open. Actual Services source publication is progress, not deployment. Preserve original content/UI failures, every historical prefix and all remaining migration/fence/durable publication/product/staging/public Spanish obligations. Root native mycology adapter null-cwd failure remains retained from the prior attempt; this is portable reflection only, no native event or spore credit.
