@@ -1905,3 +1905,12 @@
   spore: none
   receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/ROOT-memory-user-deployment-status-20261015T1457-v1/canonical-receipt-event.edn
   note: Answer serving and replacement CMS state first. Source audit should compare NUL Git paths and the same diff serialization; incidental representation differences are not source drift. Review infrastructure progress is separate from application repair and production cutover. Portable record only; prior native adapter limitation retained, no spore.
+- ts: 2026-10-15T15:40:26.901072192Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Website/CMS deployment: actual source merge and release progress with fresh serving boundary
+  p-efficiency: 0.62
+  p-friction: 0.45
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: cd29f143-5b5b-42dc-a845-bedb41402c01
+  note: Keep website live, older production CMS and private failed candidate distinct. A merged personal prerequisite, pending upstream gates and planning corrections supply source progress without product repair or release credit. Preserve true native outcomes after cleanup-only faults; deduplicate actual success. Anonymous dynamic OpenCode MiMo and App publication capability remain separate. Native root adapter nullcwd failure retained; portable reflection only, no spore or policy promotion.
