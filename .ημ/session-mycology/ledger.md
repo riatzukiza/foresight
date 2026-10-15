@@ -1636,3 +1636,13 @@ Origin: `cephalon-receipt-output-framing-correction-20261009`. Actual hosted twe
   spore: none
   receipt-refs: cephalon-root-owning-canonical-map-specific-refusals-completed-recall-mirror-20261015
   note: Mirror valid existing owner fixes: unique strictly increasing encoded map keys before construction/hash/admission; retain shared input/trace/work/continuation refusal codes instead of generic remapping; reconstruct or explicitly invalidate every completed/restored recall result even with no active folds, require result-specific current authority and refuse stale reads without revoked payload. Add future completed-horizon/checkpoint/revoke/rebuild/read and permitted-result controls under existing caps. Reconcile stale operative contribution-only/2 descriptions to current owner/4, preserving all historical native comments. Same contact8, fourteen execution75 provisional and all original source/readiness gates; no new estimate/edge/scope/runtime/paid/provider/credential or spore. Root outdated P1 still needs supported settlement or separately pending canonical extension; no policy workaround, fabricated agreement, approval transfer or Ready. GoalACTIVE/heartbeat humanPAUSED/live0of3.
+
+- ts: 2026-10-15T18:35:26.592Z
+  session: /home/err/.codex/worktrees/cephalon-kernel-selection/foresight
+  task: cephalon-character-memory/B1/source-rights
+  p-efficiency: 0.8
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: cephalon-root-source-rights-canonical-abi-handoff-wording-20261015
+  note: The operative acceptance criterion now refers to the canonical ABI packet without a mutable points suffix; context explicitly marks the earlier ABI3 allocation as historical. This avoids reconstructing an obsolete estimate while preserving the original decision history. Same source-rights2/ABI8/current75 provisional and source qualification, no new task/point/edge/Ready/scope. Current native MiMoAPPROVED5538035479 assessed all75pages but does not settle the real Codex finding or transfer approval after this change. Original outdated P1/canonical extension remain separate and pending, no generic agreement retry or policy workaround. GoalACTIVE/heartbeat humanPAUSED/live0of3; no runtime/provider/credential/paid/deployment/social or spore change.
