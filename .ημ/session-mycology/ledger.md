@@ -511,3 +511,12 @@
   spore: none
   receipt-refs: foresight-pr127-current-main-integration
   note: A cached pull base can lag the actual branch tip. Fetch the live ref and inspect mergeability even after review convergence passes; preserve full main ledger prefixes and exact branch-only bytes, then obtain fresh successor evidence. Use a pinned canonical main skill snapshot when the global checkout contains unrelated work.
+- ts: 2026-10-15T21:59:48.424075647Z
+  session: /home/err/.codex/worktrees/codex-native-review-state-plan/foresight
+  task: Create bounded canonical Codex native-format planning owner for deployment review path
+  p-efficiency: 0.83
+  p-friction: 0.28
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: b33880cb-bba5-4e07-b1ff-f127e61d326f,eb2b8eb4-017e-413e-a9b2-01ca0d6d25cc
+  note: Recover native format evidence and actual ownership before creating a bounded adapter story. Preserve latest negative/pending and real code-completion chronology; shared recognition does not grant new quorum or source-adoption authority. Include CONTRACT alignment for automated governance. Query actual creator vocabulary before mutation: generic help named story, configured vocabulary rejected it with zero effects, then native task creation succeeded once after absence/physical/event-prefix readback. Preserve native dependency[] limitation and distinguish approved body terminalLF from native section export hash. Existing canonical secure flat writer validates only new records; separate source and provenance commits. Portable candidate0/no spore, no source implementation/public/review/model/runtime/deployment effect.
