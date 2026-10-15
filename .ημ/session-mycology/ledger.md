@@ -1761,3 +1761,12 @@
   spore: none
   receipt-refs: d05d588752d5318bd1b592c09fd3e699ef27def09439a9d5688e40ccdfb42e81
   note: Verify live status and actual native merge promptly; keep private hermetic checks distinct from genuine integration, admission and rollout. Independent source review caught swallowed query refusal before commit. Preserve failed captures, source custody, report histories and existing publications; no spore or promotion.
+- ts: 2026-10-15T01:09:43.465160796Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Persist actual deployment source progress and canonical owner start
+  p-efficiency: 0.87
+  p-friction: 0.58
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: be2ff7c3d3adea1b08b8a9aac1eb43f6ca833252
+  note: Make authoritative progress through concrete source, exact terminal gates and native reply readbacks. Separate known source checkout HEAD from protected merge/base coordinates. Existing generic board setters being callable does not prove fresh unique/raw source custody; retain real operational prerequisites, and keep private source greens distinct from completed CMS rollout. No spore or promotion.
