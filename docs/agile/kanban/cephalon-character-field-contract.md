@@ -7,6 +7,7 @@ points: 3
 labels: "cephalon, graph, architecture, numeric, planning"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 parent: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
+write-id: "1792046838583-0.49gi4tqyivxob58tgvx"
 ---
 
 ## Context
@@ -68,7 +69,7 @@ board semantics locally, or treat a documentation link as native admission.
    tests are retained successor obligations rather than prerequisites for
    completing the decision handoff before implementation starts. A changed
    selection requires fresh review and cannot reuse incompatible replay evidence.
-   This card's completion does not certify an implemented or replaying solver.
+   This card's completion does not certify an implemented or replaying solver. The selected owner/numeric/mechanics decision and owning-plan acknowledgement are the handoff outputs. Executed contact/collision source qualification, complete production calibration task4f4c7cf6-9be8-47b9-b03a-be235c4dd519 and selected-byte rights/notices task5ce9c975-1d30-4679-b607-e2dcd76f8192 are explicit successor obligations, not selection completion gates; selection can hand off a candidate with those named blocking conditions still unfulfilled. No extraction/distribution or solver execution is authorized by that handoff alone.
 
 ## Verification
 
@@ -95,7 +96,10 @@ character adapters. It binds actual source revisions, binary64 Node authority,
 fixed-step/residual time, sparse velocity fields, immutable emitted ownership,
 physical contacts in recall and exact discrete replay outcomes.
 
-This is planning input. Owning-repository acknowledgement, reviewed calibration
-and collision/license decisions, native Rheos readiness and RED/GREEN remain
-required. Status, UUID, relationships and the provisional 3-point estimate are
-unchanged; no board event or accepted owner handoff is claimed.
+This is planning input. Selection completion requires the current owning-repository acknowledgement and reviewed owner/numeric/mechanics decision through native Rheos readiness/review. Actual contact implementation/qualification, complete calibration and exact selected-byte source-rights/notices qualification remain named successor outputs; none is a prerequisite for completing this selection handoff. Each successor must pass its own lawful readiness, RED/GREEN and qualification before its effects. Missing source permission still blocks extraction/distribution in the rights/ABI chain. Status, UUID, relationships and provisional3 points remain unchanged; no native transition, accepted handoff, executed solver or donor permission is claimed.
+
+
+---
+Finding4279880356: AC5 and concrete proposal now explicitly separate selected owner/numeric/mechanics decision/owning-plan acknowledgement from executed contact/calibration and selected-byte source-rights/notices successor outputs. Selection does not wait for those successors; no source permission or solverexecution is granted by its handoff. Actual native predecessor directions/points/status preserved, avoiding semantic readiness cycle.
+
+---

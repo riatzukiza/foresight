@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2eebbcf3-875d-4b7e-aad8-50a1c46472d2"]
 category: "kanban"
-write-id: "1792045722402-0.t8yw73lqt88drhtyksh"
+write-id: "1792047563572-0.abc1e2b3yxopv4fiaw2"
 created_at: "2026-10-15T00:01:58.730Z"
 ---
 
@@ -62,7 +62,7 @@ The tuple of end-boundary step ID and canonical unordered pair is a deterministi
 
 ## Finite retained-revocation rebuild boundary
 
-The versioned finite revocation profile `finite-revocation-rebuild/1` admits at most128 immutable contribution events after the trusted checkpoint,1048576 total canonical Clio envelope UTF8 bytes for that tail (using the qualified owner codec),64 replayed kernel quanta and1000000 rebuild work units. It also respects the32-entity/64-bond/256-layer-cell finite state envelope. A rebuild work unit is one entity-update visit, layer-cell visit, eligible unordered-pair evaluation or contribution application, counted before the operation across the entire private rebuild. Preflight count/byte limits before replay; build privately and commit no component until all bounds and authorization pass. Test each exact-cap and one-over case separately. Pure count/byte/step/work exhaustion returns refused/revocation-rebuild-budget-exceeded with byte-identical prior state. The outer adapter separately quarantines/refuses the retained reference and permits no causal use until a successful authorized rebuild. A bounded outer rebuild call has2000ms wall budget; timeout produces no accepted replacement and the same quarantine, never a pure clock read or partial commit. Missing/ambiguous history retains its distinct unchanged-state refusal. No automatic budget increase, new scheduler or broad recovery program is included.
+The versioned finite revocation profile `finite-revocation-rebuild/2` admits at most128 immutable contribution events after the trusted checkpoint,1048576 canonical Clio envelope UTF8 bytes for that tail,64 replayed quanta and67108864 total rebuild work units. It respects finite-character-load/2 state, variable-width input/ID/string and trace byte/record caps; selected codecs stay owned by ABI/Clio. Charge all visits and actual scalar/UTF8 validation, encoding, comparison, hashing and serialization before each operation across the ENTIRE private rebuild, including preflight. Preflight tail count/bytes with bounded readers before replay; no component commits until complete authorization and every budget pass. Test each exact/one-over bound independently, including multibyte/long-ID and trace-byte exhaustion. Pure rebuild count/byte/step/work exhaustion returns refused/revocation-rebuild-budget-exceeded with byte-identical prior state. The outer adapter separately quarantines/refuses the retained reference and permits no causal use until successful authorized rebuild. The outer rebuild call has2000ms wall budget; timeout yields no accepted replacement and the same quarantine, never a pure clock read/partial commit. Missing/ambiguous history retains its distinct refusal. No automatic budget increase, new scheduler or broad recovery program is included.
 
 
 ---
@@ -79,5 +79,7 @@ Finding4278629785: contact/inclusion/replay source packet remains5 with valid fi
 Finding4279480476: operative contact AC3 and mandatory packet6 consume the owning full kind/role eligibility matrix; exact replay includes its revision and full ordered eligible pairs even when separated/no contact. Altered revision or omitted/reordered separated pair fails replay despite equal state/contact observations. Cover every matrix row and both eligible input orders without role swaps. ABI only supplies representations, so no predecessor cycle. Historical calibration comments stay unchanged.
 
 Finding4279513701: finite-revocation-rebuild/1 bounds tail128events/1048576canonicalClioUTF8bytes/64quanta/1000000workunits, finite statecaps and2000ms outerwall. Exact/oneover negatives, pure unchanged refused/revocation-rebuild-budget-exceeded and outer quarantine-before-causal-use are explicit. No pureclock, partialcommit or automaticbudgetincrease.
+
+Nativefield178 finding4279924901: finite-revocation-rebuild/2 consumes current finite-character-load/2 ID/input/trace bytecaps and67108864 total chargedwork includingpreflight, UTF8validation/encoding/comparison/hashing/serialization. Tail128/1048576bytes and64quanta/2000ms outerbound retained. Exact/oneover longUnicodeID/tracebyte cases and pure unchangedbudgetrefusal/outerquarantine required; no canonicalIDtruncation/normalization or partialtrace/state. Oldprofile1 comment preservedhistory; no actualsolver/performanceexecution.
 
 ---
