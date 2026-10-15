@@ -403,8 +403,9 @@ Verify the actual served artifact revisions and loaded configuration, schema,
 kernel and consumer bindings against that tested qualified composition; a source
 pin or candidate build is not served-source proof. Stale or mixed revisions
 refuse the live proof. Retain the deployment/rollback evidence and fresh served
-identities together with the actual maker principal, prompt and independent
-persistent readbacks. Only then observe one real native-clock maker loop.
+identities together with the actual maker principal, protected prompt-inspection
+digest/redacted trace and independent persistent readbacks, following the
+evidence-audience rule below. Only then observe one real native-clock maker loop.
 Do not replay publication, restart a maker for maintenance or change consumer ownership.
 Native fifteen-minute clock, one event owner, disabled cloud event runtime and
 human-paused heartbeat remain during delivery. B1/B2/B3 completion requires
@@ -434,6 +435,10 @@ milestone; this decomposition grants no permission to implement it or waive
 complete-input review. Neither pending approval nor source selection supplies
 native readiness. The complete existing milestone remains unfulfilled.
 
+
+## Protected prompt inspection and evidence audience
+
+The maker's permission to read private or explicitly shared memory is not permission to expose it to repository reviewers or the public. Inspect the actual complete submitted provider prompt only through an authorized protected operator seam outside Git/public logs. If a full capture is necessary, keep it in protected private storage outside tracked artifacts; otherwise inspect transiently. Commit only its digest and an explicitly redacted, evidence-audience-authorized trace, with protected source linkage sufficient for authorized verification. Never commit raw allowed-but-private/shared prompt content, credentials/tokens, unapproved source identifiers/URLs or grants in receipts, .ημ artifacts, resources/events or serialized logs. A redacted public trace is not a substitute for authorized inspection of the actual model-visible trace; bind it to that protected prompt's digest and exact turn/graph/field/mood revisions. Selected positive private/shared fixtures must prove permitted maker consumption while all committed/public evidence remains redacted; denied-source prompt/disclosure negatives remain distinct. If protected inspection or safe evidence cannot be established, refuse the proof instead of copying private content.
 
 ## Exact terminal lifecycle targets
 

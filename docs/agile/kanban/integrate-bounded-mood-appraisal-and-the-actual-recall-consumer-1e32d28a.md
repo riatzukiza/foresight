@@ -9,7 +9,7 @@ parent: "8bcaa0f3-37ec-44e2-8f20-4798dfc4b795"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "7f7b6b5b-2df1-4e52-a167-8e631ca598e4"]
 category: "kanban"
-write-id: "1792029492967-0.9481f8uvv2bd5theug"
+write-id: "1792030640288-0.zfo2ezp58f4mo4qjqp"
 created_at: "2026-10-15T01:54:47.744Z"
 labels: "cephalon, finite-slice, planning"
 ---
@@ -38,6 +38,10 @@ Connect the qualified mood transition/persistence interface to bounded appraisal
 4. A fixed non-mood-input contrast varies only valid persisted mood and its derived reviewed bounded attention/read weights. It changes bounded recall/recorded decision while all physical/graph/authority/query/order/time/configuration inputs remain fixed. No field-layer/circuit mapping is accepted merely by shared names.
 5. Source/adapter qualification and instrumented consumer fixtures complete this packet without live deployment, publication or the later served proof. Hand exact revision/mapping/trace and actual prompt consumer evidence to those successors; B2 live proof still requires their natural automatic observation.
 
+### Protected evidence requirement
+
+The maker's permission to read private or explicitly shared memory is not permission to expose it to repository reviewers or the public. Inspect the actual complete submitted provider prompt only through an authorized protected operator seam outside Git/public logs. If a full capture is necessary, keep it in protected private storage outside tracked artifacts; otherwise inspect transiently. Commit only its digest and an explicitly redacted, evidence-audience-authorized trace, with protected source linkage sufficient for authorized verification. Never commit raw allowed-but-private/shared prompt content, credentials/tokens, unapproved source identifiers/URLs or grants in receipts, .ημ artifacts, resources/events or serialized logs. A redacted public trace is not a substitute for authorized inspection of the actual model-visible trace; bind it to that protected prompt's digest and exact turn/graph/field/mood revisions. Selected positive private/shared fixtures must prove permitted maker consumption while all committed/public evidence remains redacted; denied-source prompt/disclosure negatives remain distinct. If protected inspection or safe evidence cannot be established, refuse the proof instead of copying private content.
+
 ## Verification
 
 Planning qualification and full-graph native readiness precede RED/GREEN. Execute meaningful causal RED before portable domain and owning outer-adapter GREEN; no model calls/clocks in the pure transition. Append actual commands, source/configuration identities, results and evidence hashes after every finished job to the existing owning receipt ledger. Corrections append. Before full snapshots/installations measure free space; below20GiB allocate no extra full copy. At most3 expensive checkout/snapshot jobs across this goal. Preserve unique source/refs/locks/evidence and prior failures.
@@ -47,3 +51,9 @@ Planning qualification and full-graph native readiness precede RED/GREEN. Execut
 Stale/revoked authority, unknown dimensions or mapping, duplicate/conflicting state, incomplete readback and confusing source proof with served consumption remain explicit refusals.
 
 License: GPL-3.0-or-later.
+
+
+---
+Incoming privacy clarification for native4278317599: maker access to private/shared memory does not grant repository-reviewer/public access. Actual provider-prompt inspection must remain authorized/protected outside Git; commit only digest and explicitly redacted audience-safe trace bound to protected inspection and exact turn/state revisions. Raw private/shared content, credentials and unapproved IDs/URLs/grants cannot enter receipts/.ημ/resources/events/public logs. Retain positive allowed-private/shared evidence-audience fixtures separately from denied prompt negatives. No Ready/status/estimate/identity change.
+
+---

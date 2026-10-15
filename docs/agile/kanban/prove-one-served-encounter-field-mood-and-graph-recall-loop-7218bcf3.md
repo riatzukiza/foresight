@@ -10,7 +10,7 @@ parent: "2df3d26b-394a-436d-9e02-fe18a55132dd"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["885a4b34-74fb-4e4e-a42a-6dbb54d54829"]
 category: "kanban"
-write-id: "1792029435861-0.pt5et0ojklm0uowegok"
+write-id: "1792030639818-0.fmxzow4y1qbcudyozw9"
 created_at: "2026-10-15T01:03:01.313Z"
 ---
 
@@ -40,6 +40,10 @@ Complete larger stories, bypass Rheos/review/promotion gates, infer permission f
 
 6. The selected positive outcome class is an artifact-plus-destination observation: independently read saved artifact bytes from actual persistent storage and validate its bound identity/hash/type; independently GET the actual configured destination post/message under its authorized read seam and verify account, immutable destination record ID and matching artifact/media identity or explicit artifact reference. Bind one concrete outcome ID to that destination record, artifact hash, action/effect and recalled item/turn IDs. Producer answers, internal choices, diagnostics, tool acknowledgements and inferred delivery are not accepted outcomes. Unavailable/missing/mismatched readback authorizes no reinforcement; retain actual failed/refused/unknown outcome receipts. Observe a natural action only, without replaying publication.
 
+### Protected evidence requirement
+
+The maker's permission to read private or explicitly shared memory is not permission to expose it to repository reviewers or the public. Inspect the actual complete submitted provider prompt only through an authorized protected operator seam outside Git/public logs. If a full capture is necessary, keep it in protected private storage outside tracked artifacts; otherwise inspect transiently. Commit only its digest and an explicitly redacted, evidence-audience-authorized trace, with protected source linkage sufficient for authorized verification. Never commit raw allowed-but-private/shared prompt content, credentials/tokens, unapproved source identifiers/URLs or grants in receipts, .ημ artifacts, resources/events or serialized logs. A redacted public trace is not a substitute for authorized inspection of the actual model-visible trace; bind it to that protected prompt's digest and exact turn/graph/field/mood revisions. Selected positive private/shared fixtures must prove permitted maker consumption while all committed/public evidence remains redacted; denied-source prompt/disclosure negatives remain distinct. If protected inspection or safe evidence cannot be established, refuse the proof instead of copying private content.
+
 ## Verification
 
 Native planning qualification/full-graph readiness precede implementation. Meaningful RED precedes owning domain/adapters GREEN and current source/consumer gates. After each finished job append exact source/configuration identities, commands, outcomes and evidence hashes to the existing owning receipt ledger; corrections append. Measure free space before full snapshots/installation; below20GiB allocate no extra full copy. At most3 expensive checkout/snapshot jobs across the goal; preserve unique source/refs/locks/evidence.
@@ -55,5 +59,7 @@ License: GPL-3.0-or-later.
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
 
 Incoming outcome correction for native4278174541: selected feedback positive requires an artifact-plus-destination observation with concrete outcome/destination/account/action/effect/recall identities, independent actual persistent artifact bytes/hash and authorized destination GET matching media/reference. Internal choices, diagnostics and producer acknowledgements cannot authorize reinforcement; no publication replay. No status/estimate/identity change.
+
+Incoming privacy clarification for native4278317599: maker access to private/shared memory does not grant repository-reviewer/public access. Actual provider-prompt inspection must remain authorized/protected outside Git; commit only digest and explicitly redacted audience-safe trace bound to protected inspection and exact turn/state revisions. Raw private/shared content, credentials and unapproved IDs/URLs/grants cannot enter receipts/.ημ/resources/events/public logs. Retain positive allowed-private/shared evidence-audience fixtures separately from denied prompt negatives. No Ready/status/estimate/identity change.
 
 ---
