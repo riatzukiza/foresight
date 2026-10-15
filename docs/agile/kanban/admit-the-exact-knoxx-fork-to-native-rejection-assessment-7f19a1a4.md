@@ -4,7 +4,7 @@ labels: "ci, review, rejection, 3sp, has-parent"
 dependency: []
 parent: "fork-review-setup"
 type: "task"
-write-id: "1792079620867-0.oxqpemftebvgzmxktr"
+write-id: "1792080592766-0.8m99ep678v31ovqv9aq"
 points: "3"
 title: "Admit the exact Knoxx fork to native rejection assessment"
 priority: "P1"
@@ -105,8 +105,9 @@ not use actionability's separate repository-identity enrollment map.
 
 No change to rejection/approval/withdrawal law, no self-corroboration by the
 finding opener, and no substitution of generic approval for scoped agreement.
-The SDK17 opener Bot withdrawal remains outside this story; preserve the
-current User-only condition and never invent User evidence or Bot text.
+The SDK17 opener withdrawal remains outside this story; preserve the actual
+pinned withdrawal rules and native identities without inventing User evidence,
+substituting an actor, or copying Bot text.
 
 No App/token mint, secret read/copy, new App, installation/grant/account/settings
 change, caller pin change, model/provider rerun, direct candidate-ref dispatch,
@@ -205,5 +206,7 @@ visible even when they prevent the desired label-format disposition.
 
 ---
 Planning materialization only for exact personal Knoxx rejection transport: provisional P1/3 points, +3 newly discovered, under fork-review-setup. The existing actionability3 and broader incoming3 parent stay unchanged/open. Independent accepted personal main45e33f93a5680e4c75a3b683f9870ced82a9f18c base; no unadopted actionability/F39 source or event suffix imported. Five future ETA source/test/doc paths only, unchanged canonical rejection/withdrawal/principal/pins, full causal guards/collector/publisher qualification and later native scoped evidence required. Original unanswered scoped questions and effective-grant/environment unknowns remain. Body SHA2568d3ec63a5b9c444b732d830c4c32732380c4c8539fbc7de012b4ab0104faa625; root-reviewed source proposal SHA256fb702c1d2072c904a8da07f4012f6ebca01cebddd65360fafc279fe549ffeb64. Local planning admission only; no readiness, implementation, PR publication, reviewer/model/App/account/runtime/deployment effect.
+
+Root-verified factual planning clarification only: the actual pinned5cea rejection withdrawal rules do not impose a general User-only withdrawer condition; configured native Bot identities and writer/principal predicates must be evaluated as actually defined. Replace only the SDK17 Non-goals sentence with actual pinned-rule/native-identity wording, without inventing User evidence, substituting an actor or copying Bot text. SDK17 actual principal admission and every other predicate stay outside this story. Preserve exact personal target, five future paths, provisional3/P1/breakdown and unchanged open parent/actionability3, original body/comment/event history and both prior commits. No canonical policy, pin, principal, readiness, source implementation, public/model/App/account/runtime effect.
 
 ---
