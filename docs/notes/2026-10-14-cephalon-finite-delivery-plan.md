@@ -172,8 +172,12 @@ B1/B2/B3 chain remains mandatory across their composition.
    retention and model-invocation caps, including exceeded-model-budget refusal;
    select a no-model path when interpretation is unnecessary. External text
    cannot choose model routing, credentials, permissions or effect admission.
-   Persist only admitted envelope/prepared bound effect and relationship evidence;
-   graph/field projection remains uncommitted until the atomic packet.
+   Persist only admitted envelope/prepared bound effect and actual relationship
+   evidence. Represent absent and unknown author/topic/reply relationships
+   explicitly; never synthesize an edge to fill a missing source relationship.
+   Negative fixtures cover absent topic/reply and unknown attribution, retaining
+   their evidence without fabricated edges. Graph/field projection remains
+   uncommitted until the atomic packet.
 2. **Graph interface and feedback:** exact k=6/fetch18 denied-leading-six and
    authorized-seventh refill, frozen principal/query/corpus/quality/order and
    matched real automatic/API boundaries. Missing/revoked/ambiguous/mismatched
@@ -216,8 +220,10 @@ B1/B2/B3 chain remains mandatory across their composition.
 6. **Atomic graph/field persistence:** consume admitted envelope, completed graph
    interface and physical/contact outputs. Commit actual author/topic/reply
    provenance, visibility/source/UTC, graph projection, field and unique effect
-   against expected revisions in one transaction. Independently read all
-   relationships/components back. Unsupported transactions refuse before writes;
+   against expected revisions in one transaction. Persist only evidenced edges
+   and preserve explicit absent/unknown relationship states; independent readback
+   and negative fixtures must verify no missing topic/reply/author edge was
+   fabricated. Independently read all relationships/components back. Unsupported transactions refuse before writes;
    duplicate/conflicting/failed/uncertain/partial states recover or quarantine,
    never partial success. Execute both lawful comparison arms' consistent atomic
    persistence/readback and unchanged persisted-history replay here. No edited
@@ -240,10 +246,21 @@ B1/B2/B3 chain remains mandatory across their composition.
    exact authorized traversed edge/node path, traversal revision and actual
    prompt-included neighbor ID beyond the semantic seed. Direct vector/seed-only
    inclusion cannot satisfy B3. Inspect the actual provider prompt. Separate
-   physical and mood contrasts freeze every nonintervened seed/principal/grant/
-   query/corpus/index/graph/field/world/time/config/read input; require changed
-   physical motion/contact/path/included association and, separately, changed
-   persisted mood/attention/recall/decision. Record actual appraisal cost/latency,
+   physical and mood contrasts. The served automatic physical contrast varies
+   exactly one admitted physical deposit or bond input. Hold encounter identity/
+   content/hash, principal/grants, semantic seeds, query, corpus/index, graph,
+   prior field/world, mood, configuration, time/event schedule and every other
+   recall input fixed; no other input may be declared an intervention. Trace
+   only the selected deposit/bond through physical motion/contact to changed
+   graph path/prompt-included association at the actual automatic consumer seam.
+   Do not feed a changed encounter, graph revision or unrelated field checkpoint
+   as an alternate recall input. Resulting physical state/revision differences
+   must be derived from that sole admitted input and independently read back,
+   never independently selected or relabeled. The distinct-encounter lawful
+   storage arms and pure ablation remain separate coverage; neither substitutes
+   for this served single-variable contrast. A separate mood contrast holds
+   physical state and every other recall input fixed and varies only the
+   persisted mood consumed by attention/recall/decision. Record actual appraisal cost/latency,
    truthful counts/write outcomes and once-only feedback. After all selected
    live proofs and fixed-inventory gates, document later links, close native goal
    and retire heartbeat; larger stories remain truthful.
