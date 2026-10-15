@@ -9,7 +9,7 @@ labels: "cephalon, finite-slice, planning"
 parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 category: "kanban"
-write-id: "1792037564358-0.fj94ve0uq6vj96y2yf"
+write-id: "1792040637769-0.luicdy00wkpx54l5s5c"
 created_at: "2026-10-15T00:01:57.409Z"
 ---
 
@@ -35,7 +35,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 2. Reproduce k=6/fetch=18 with six denied leading candidates and an authorized seventh, using frozen query/corpus/order/quality/principal and bounded refill. Match actual automatic and API adapters without bypassing endpoint policy; retain a real positive stored-session fixture.
 3. Apply scope before seeds/expansion/caps/ranking/paths/compacted nodes/trails/forces and feedback. Positive/negative public and explicitly shared candidates obey their actual stored admission policy; labels, claims and inferred roles cannot create exceptions. In the paired hidden-data fixture vary only denied graph/node/trail/force inputs. Freeze every permitted input identically: actual stored principal/grants and policy/scope snapshot/revisions; authorized graph IDs/content/edges/embeddings/revisions and field/trails; mood/lens; query/corpus/index/order; seed, configuration and time/event schedule. Permitted output/trace equality must hold; fixed seed alone is insufficient, and a changed authorized input invalidates the isolation comparison. Inspect every public diagnostic field, including serialized outputs, for denied IDs/text, path text, scores, metadata and persisted-trail content; ID-only redaction or unchanged selection cannot pass privacy fixtures.
 4. Include an authorized graph neighbor beyond the vector seed with actual node/path/reason/graph-field revision and bounded context custody. Empty/denied/indexing-pending/malformed/transport/timeout/exhaustion stay distinct.
-5. Count actual :hits, separating raw candidates, quality survivors, authorized hits and prompt inclusion. Keep legacy context/privacy behavior.
+5. Count actual :hits, separating raw candidates, quality survivors, authorized hits and actual prompt inclusion. Independently read the owning persisted hit/event records for this exact recall/turn, stored principal/scope and revision, and require the reported completed memory-event count to equal their persisted hit count. Never infer persistence from the :hits payload, selected operations, acknowledgement or HTTP200. Dropped, duplicate/double-applied, failed, partial, uncertain and unavailable/mismatched readback fixtures must report actual outcomes and cannot attest successful equality; zero and unknown remain distinct. Keep inclusion lower than authorized hits when its budget requires, without equating raw/quality/authorized/included categories. Reuse the existing qualified stored-hit/event seam and privacy/legacy behavior; do not create another storage authority or turn retrieval telemetry into outcome reinforcement.
 6. Complete the qualified scoped read interface independently of the later feedback writer. Read-only recall never reinforces. Hand the stable recall/inclusion evidence to separate feedback task `deliver-outcome-attributed-once-only-graph-feedback`; its implementation and uncertain-write recovery are not this graph interface completion prerequisites.
 
 ## Verification
@@ -70,5 +70,7 @@ Incoming planning correction for native Codex4278093864: Outcome now names only 
 Incoming privacy correction for native4278174548: paired hidden-data fixtures freeze every permitted graph/content/embedding/revision/field/trail, stored principal/grants/policy/scope, mood/lens, query/corpus/index/order, seed/configuration/time/event input; vary only denied inputs. A fixed seed alone is insufficient. No status/estimate/identity change.
 
 Finding4278629780: human-included batching owns MusePR9 planning actualMERGEc914, then profile95efe284/jointd5bd4e91 and ETA/OpenPlanner consumers/full native review. Graph Ready requires exact qualified OpenPlanner source/consumer/full-input review/check/merge. External owner references are not fake local edges; unsupported native admission blocks and belongs upstreamRheos. Separate throughput points are excluded.
+
+Review4278968414 refinement: AC5 independently reads owning persisted hit/event records for exact recall/turn/principal/scope/revision and compares completed memory-event count with persisted hit count. Payload categories remain distinct; lost/doubled/failed/partial/uncertain/mismatched readbacks cannot attest successful equality,0 differs fromunknown. Reuse qualified owning seam/privacy, no newstorageauthority or retrieval reinforcement. Incoming planning source, no execution/readiness/live credit.
 
 ---

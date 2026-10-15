@@ -250,7 +250,22 @@ B1/B2/B3 chain remains mandatory across their composition.
    their own consistent identities; it proves their kernel/contact/inclusion
    difference and unchanged per-arm kernel replay. It does not require the
    future atomic storage writer or claim persisted readback.
-7. **Atomic graph/field persistence:** consume admitted envelope, completed graph
+7. **Complete finite calibration/workload qualification:** consume completed
+   ABI/forces/contact kernel source and reviewed mechanics inputs in task
+   `4f4c7cf6-9be8-47b9-b03a-be235c4dd519`. Independently inventory/bind every
+   force/contact/bounds/layer/threshold/radius/restitution/speed/half-life/noise/
+   prune/saturation value, units/domains, source/review and immutable revision.
+   Fixture constants or source labels are not production adoption. Freeze finite
+   elapsed-time/peak-memory/workload budgets before execution, then qualify
+   selected quantum/maximum substeps at entity/bond/particle/cell/work/trace caps
+   with bounded high-density, quiet and catch-up workloads and exact source,
+   build, numeric, configuration and artifact identities. Retain actual runtime/
+   memory observations, exact/over-limit and malformed/unsafe rejection cases,
+   unchanged-state refusals and quiet/split/catch-up positives. Failure remains
+   failure. This independently estimated packet completes before deployment;
+   earlier contact/atomic source fixtures do not depend on their successor's
+   production artifact.
+8. **Atomic graph/field persistence:** consume admitted envelope, completed graph
    interface and physical/contact outputs. Before the write, independently read
    the actual persisted graph/field baseline and record its scoped contents,
    hashes and revisions. Verify the candidate's frozen prior contents/hash
@@ -276,7 +291,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    of B1 persistence verification;
    its replay proof covers graph/field/effect persistence, while feedback
    idempotence remains the independent feedback/served-proof responsibility.
-8. **Mood transition/persistence interface:** review separate dimensions/ranges/
+9. **Mood transition/persistence interface:** review separate dimensions/ranges/
    uncertainty, baseline/decay and typed encounter/field/appraisal/time/model/
    configuration/seed identity. Accept validated appraisal as input data; pure
    transition reads no clock and calls no provider. A positive admitted encounter
@@ -290,7 +305,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    the existing Clio application port before adding persistence authority. This
    packet completes with pure/storage source qualification, without runtime
    appraisal/failure handling or production consumer integration.
-9. **Bounded appraisal/actual consumer:** consume the completed typed mood and
+10. **Bounded appraisal/actual consumer:** consume the completed typed mood and
    scoped graph interfaces. Validate untrusted appraisal, observable missing/
    contradictory/malformed/late/provider failures and reviewed validated fallback.
    Bound cadence/tokens/queue/timeout/retries independently of maker execution,
@@ -304,13 +319,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    Revalidate/refuse incompatible state across authority awaits. Adapter/source
    qualification completes before deployment and served B2 observation. The
    retained mood parent integrates both children as non-additive history.
-10. **Qualified composition/deployment:** qualify exact owning source/consumer
+11. **Qualified composition/deployment:** qualify exact owning source/consumer
    merges, promotion and rollback. Establish the supported qualified idle/fenced
    window and independently verify actual served artifact/configuration/schema/
    kernel/consumer bindings. Preserve held maker/parent/delegate/effect identities,
    one event owner and disabled cloud runtime. This packet supplies served
    composition evidence before observations, without requiring its successor.
-11. **Served automatic causal proof:** consume qualified deployment, then observe a natural native-clock maker turn using actual stored
+12. **Served automatic causal proof:** consume qualified deployment, then observe a natural native-clock maker turn using actual stored
    principal and independent graph/field/effect/mood readbacks. In the same live
    run capture visibility-safe eligible/denied candidate IDs/reasons, seed IDs,
    exact authorized traversed edge/node path, traversal revision and actual
@@ -338,7 +353,7 @@ B1/B2/B3 chain remains mandatory across their composition.
    persisted mood consumed by attention/recall/decision. Record actual appraisal cost/latency,
    truthful counts/write outcomes and once-only feedback. This packet supplies
    completed B1/B2/B3 evidence and its selected negative/replay gates.
-12. **Terminal inventory/closeout:** after the served causal proof, verify the
+13. **Terminal inventory/closeout:** after the served causal proof, verify the
    exact completed evidence and fixed-inventory gates. Document remaining design
    links as later milestones, then close the native goal and retire the heartbeat
    through supported lifecycle surfaces. Larger aggregate stories remain truthful;
