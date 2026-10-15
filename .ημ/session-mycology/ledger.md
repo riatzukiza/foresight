@@ -520,3 +520,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#c89e956a-e3c8-4bed-91db-9ea527ffe000,.ημ/session-reflections.edn#6beef7c4-5964-4286-b715-d52ae50eece1
   note: Keep accepted-main family ownership distinct from unadopted actionability/CMS branches; verify actual native receipt storage path before append. Retain wrong-path guard failure and root-reviewed identical-event relocation, complete canonical prefixes, actual package validation and one-event custody. Card/native admission and five future paths only; native independent judgment, setup/grants, readiness and deployment remain unproven. No skill spore or source/public/model/account/runtime effect.
+- ts: 2026-10-15T16:12:35.534384686Z
+  session: /home/err/.codex/worktrees/knoxx-fork-rejection-plan/foresight
+  task: Clarify actual pinned withdrawal rule in rejection transport plan
+  p-efficiency: 0.88
+  p-friction: 0.3
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#9affc210-96aa-4deb-9768-f36ac208e61f,.ημ/session-reflections.edn#60ec7082-8cb1-4c19-82d2-9eb5df1cd986
+  note: Preserve pinned-law/native-identity semantics without inferring a generic User-only withdrawer condition or SDK17 principal admission. Native comment preservation is exact content conservation, not section cardinality; retain failed private guard and once-only native comment. Source7759cc7 only owns approved sentence plus native note/event; separate genuine package RR and native/portable reflections, no policy/runtime/public effects.
