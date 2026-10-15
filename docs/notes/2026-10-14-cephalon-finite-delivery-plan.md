@@ -183,6 +183,11 @@ B1/B2/B3 chain remains mandatory across their composition.
    matched real automatic/API boundaries. Missing/revoked/ambiguous/mismatched
    stored bindings and payload-selected authority deny. Scope precedes seeds,
    expansion/caps/ranking/hidden nodes/edges/compaction/trails/fields/feedback.
+   Positive and negative public/shared fixtures bind the actual stored admission
+   policy; neither public labels, sharing claims nor inferred roles grant an
+   exception. Inspect every public diagnostic field for denied IDs, path text,
+   scores, metadata and persisted-trail content, including serialized outputs;
+   ID-only redaction or an unchanged selected result cannot pass privacy tests.
    An authorized edge reaches a neighbor beyond the seed with actual path and
    bounded context custody. Empty/denied/indexing-pending/malformed/transport/
    timeout/exhaustion remain distinct. Count :hits separately as raw/quality/
@@ -218,7 +223,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    difference and unchanged per-arm kernel replay. It does not require the
    future atomic storage writer or claim persisted readback.
 6. **Atomic graph/field persistence:** consume admitted envelope, completed graph
-   interface and physical/contact outputs. Commit actual author/topic/reply
+   interface and physical/contact outputs. Before the write, independently read
+   the actual persisted graph/field baseline and record its scoped contents,
+   hashes and revisions. Verify the candidate's frozen prior contents/hash
+   agree with that observed baseline; mismatch refuses. Bind expected-revision
+   checks to it; an in-memory candidate or revision label alone is not
+   before-state evidence. After commit, independently read the persisted result
+   and compare the attributable before/after delta with that baseline. Commit actual author/topic/reply
    provenance, visibility/source/UTC, graph projection, field and unique effect
    against expected revisions in one transaction. Persist only evidenced edges
    and preserve explicit absent/unknown relationship states; independent readback
@@ -236,8 +247,13 @@ B1/B2/B3 chain remains mandatory across their composition.
    provider calls or mutable external inputs to recover identical mood state and
    trace, without duplicate persistence. Missing/contradictory/malformed/late/
    provider failure, timestamp disorder, conflict/duplicate handling, actual
-   persistence/readback and explicit validated fallback remain required. Bound
-   cadence/tokens/queue/timeout/retries independently of maker execution; never
+   persistence/readback and explicit validated fallback remain required. Require
+   a finite no-message/no-appraisal elapsed-time case from a nonbaseline prior
+   mood: positive elapsed time must produce the reviewed expected decayed state,
+   persist it and independently read it back without a new message or provider
+   call. Replay the same quiet transition identically; duplicate delivery cannot
+   apply decay again. Zero elapsed time retains its separate no-op requirement.
+   Bound cadence/tokens/queue/timeout/retries independently of maker execution; never
    expand permissions. Load the selected revision at the real turn-context seam.
 8. **Automatic causal proof:** qualify deployment and actual served bindings
    first, then observe a natural native-clock maker turn using actual stored

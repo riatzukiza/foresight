@@ -9,7 +9,7 @@ labels: "cephalon, finite-slice, planning"
 parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 category: "kanban"
-write-id: "1792023334796-0.eusez3wr8rj06f7z2uj"
+write-id: "1792025383434-0.q81aiigzdf322bdlb9"
 created_at: "2026-10-15T00:01:57.409Z"
 ---
 
@@ -33,7 +33,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 1. Qualify the owning OpenPlanner/Knoxx source and actual stored-principal resolver; missing/revoked/ambiguous/mismatched ownership denies, and payload-chosen role/org/credential/grant cannot supply authority.
 2. Reproduce k=6/fetch=18 with six denied leading candidates and an authorized seventh, using frozen query/corpus/order/quality/principal and bounded refill. Match actual automatic and API adapters without bypassing endpoint policy; retain a real positive stored-session fixture.
-3. Apply scope before seeds/expansion/caps/ranking/paths/compacted nodes/trails/forces and feedback. Varying hidden data under fixed seed cannot change permitted outcomes or leak text/IDs in public diagnostics.
+3. Apply scope before seeds/expansion/caps/ranking/paths/compacted nodes/trails/forces and feedback. Positive/negative public and explicitly shared candidates obey their actual stored admission policy; labels, claims and inferred roles cannot create exceptions. Varying hidden data under fixed seed cannot change permitted outcomes. Inspect every public diagnostic field, including serialized outputs, for denied IDs/text, path text, scores, metadata and persisted-trail content; ID-only redaction or unchanged selection cannot pass privacy fixtures.
 4. Include an authorized graph neighbor beyond the vector seed with actual node/path/reason/graph-field revision and bounded context custody. Empty/denied/indexing-pending/malformed/transport/timeout/exhaustion stay distinct.
 5. Count actual :hits, separating raw candidates, quality survivors, authorized hits and prompt inclusion. Keep legacy context/privacy behavior.
 6. Implement separate admitted outcome/inclusion-attributed feedback with stable recall/effect identity. Read-only recall does not reinforce; repeat/partial/failed/uncertain writes have actual storage tests and independent recovery/readback or quarantine. Live final proof observes the same once-only behavior.
@@ -55,5 +55,7 @@ License: GPL-3.0-or-later.
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
+
+Incoming planning acceptance refinement for actual Codex20a findings: Positive/negative public/shared stored admission policy; inspect all public diagnostic fields for denied IDs/path/scores/metadata/trail content, not only IDs or selected outcome. Existing selected acceptance, no new prerequisite. Body authoring only; retain Incoming/points/parent/epic/dependencies and qualified readiness gates.
 
 ---

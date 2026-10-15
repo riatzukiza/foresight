@@ -10,7 +10,7 @@ parent: "4cac8ac8-1a9f-441d-ac87-aa09f874eb57"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["2f4421ee-2e48-405e-96d2-fee1a5597ff2"]
 category: "kanban"
-write-id: "1792023338633-0.7do9czp4tojn8lhodfq"
+write-id: "1792025384897-0.u14gk5sovqcm9f3s6fp"
 created_at: "2026-10-15T00:01:59.640Z"
 ---
 
@@ -37,6 +37,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 3. Missing/contradictory/malformed/late/provider-failed appraisal remains observable, with explicit validated fallback and no fabricated facts/state. Cadence/token/queue/timeout/retries are bounded independently of maker execution; permissions never expand.
 4. Load actual persisted revision at the owning turn-context/prepare! seam before character spec/hydration. A fixed non-mood-input contrast changes only persisted mood and its derived attention/read weights, changing bounded recall and recorded decision.
 5. Use the free existing route only when actually needed and report measured appraisal cost/latency; no new paid provider, runtime credentials or subjective-feeling claim.
+6. A finite quiet-time fixture starts from a nonbaseline persisted mood and positive elapsed time, with no message/appraisal/provider call. Produce the reviewed expected decayed state, persist it and independently read it back. Replay identical inputs identically; duplicate delivery cannot apply decay twice. Zero elapsed time retains its distinct no-op case.
 
 ## Verification
 
@@ -55,5 +56,7 @@ License: GPL-3.0-or-later.
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 
 Incoming planning refinement separates this packet completion from its later successors. Current plan names all eight boundaries, intake model-call caps, actual live beyond-seed edge proof, deterministic mood replay and original verification3 versus proposed automatic5 aggregation. No status/estimate/dependency change or Ready claim.
+
+Incoming planning acceptance refinement for actual Codex20a findings: Finite no-message/no-appraisal positive-elapsed fixture from nonbaseline persisted mood must decay, persist/read back and replay identically without repeated decay or provider call; zero-time separate no-op. Existing selected acceptance, no new prerequisite. Body authoring only; retain Incoming/points/parent/epic/dependencies and qualified readiness gates.
 
 ---
