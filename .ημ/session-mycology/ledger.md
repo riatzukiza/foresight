@@ -511,3 +511,12 @@
   spore: none
   receipt-refs: foresight-pr127-current-main-integration
   note: A cached pull base can lag the actual branch tip. Fetch the live ref and inspect mergeability even after review convergence passes; preserve full main ledger prefixes and exact branch-only bytes, then obtain fresh successor evidence. Use a pinned canonical main skill snapshot when the global checkout contains unrelated work.
+- ts: 2026-10-15T08:47:36.722371629Z
+  session: /home/err/.codex/worktrees/knoxx-fork-actionability-plan/foresight
+  task: Admit exact Knoxx fork actionability planning child under existing review setup
+  p-efficiency: 0.9
+  p-friction: 0.25
+  p-skill-candidate: 0.3
+  spore: none
+  receipt-refs: knoxx-fork-actionability-planning-admission-v1,knoxx-fork-actionability-exact-scope-v1,knoxx-fork-actionability-local-planning-checks-v1
+  note: Retain native principal and protocol authority separately from transport capability. Exact fork enrollment belongs in canonical policy and the existing protected central adapter; author-context evidence cannot settle a Bot finding. Fresh isolated main plus native Rheos preserves broad incoming parent boundaries. Known empty-dependency writer output stays visible; do not duplicate the engine or infer readiness. No spore or automatic promotion.
