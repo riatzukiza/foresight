@@ -1833,3 +1833,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#bcbdb393-8541-4c7b-b9da-30e6562c2e4a
   note: One real CMS create/history/Spanish-only intent/admission produced a persisted unapproved agent candidate and actual SDK/Mongo/vector lineage. Preserve native quality failure: source3paragraphs became1 and semantic comparison identifies omitted sentence. Reference-first chunk rows intentionally redact inline text; derive vector/hash/span checks from retained native rows without DB rerun. Fix actual provider-boundary contract using this retained result, not model routing/credentials or weaker assertions. No candidate approval/publication/production effect; existing owner recovered, no spore or promotion.
+- ts: 2026-10-15T09:16:10.040770580Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Record Website production status and actual private CMS recovery boundaries
+  p-efficiency: 0.69
+  p-friction: 0.66
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#59b66bb4-d636-4970-b383-a5c17b05ffe4
+  note: Website deployed and oldKnoxx healthy at082304UTC; replacementCMS private. Real Spanish candidate retained with paragraph collapse and derived omitted sentence. Source Caddy filecap fix locally qualifies with caps0/nonroot/NNP/RO; preserve our0600 public-config prep failure and mode-bound correction. Normal UIlogin200/CMS screenshot real, translation step failed; independent review held an unexecuted diagnostic for actual timing/error-containment fixes. Four native planning findings fixed; scalar Rheos ANDfilter proved; two conversations and source implementation remain. Finite runner a973 independently reviewed/329tests/allassessment locally qualified and custody rehashed109paths; no publication/adoption. Keep anonymous dynamic OpenCode MiMo, exact native reviewer identities and genuine release/data/approval/publication checks. No production effect, spore or promotion.
