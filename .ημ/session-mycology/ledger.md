@@ -655,3 +655,12 @@
   spore: none
   receipt-refs: e255f9d9-f534-4ace-92df-82732b7e8d96,fc90d920a042f0a5407c7935b44376cde0b535a5
   note: Read native projection plus physical metadata before acting: missing status already projected incoming, so genuine forward admission writes status and engine history. Keep admission distinct from guarded physical-absence initialization and dependent ready qualification. Remaining cycle plan stays unexecuted.
+- ts: 2026-10-15T11:20:48.858207574Z
+  session: codex:01a12257-fc69-7720-888c-dd2595ff7dc7/cms_native_journey_binding
+  task: Break the native Foresight cutover durable-interface readiness cycle
+  p-efficiency: 0.86
+  p-friction: 0.18
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 1217ad3f-bf5e-4fe9-b45e-71b9ecdfb1a5,c929bb023120ac34bacf556b6525a767ac84841f
+  note: Preserve the final rollout prerequisite UUID while splitting a real earlier durable adapter from final integration. Read actual native state/metadata and record once-only effects; distinguish registered planning edges from accepted runtime guarantees. Keep historical source gaps and empty dependency writer representation visible.
