@@ -1896,3 +1896,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#9dc3f152-b5a5-4d54-9ed0-9c575550fd42
   note: Answer deployment status from production identities and actual journey evidence. Healthy old CMS containers and passing controller tests do not establish replacement deployment. Preserve failed Spanish structure/content and locale behavior as product work, and distinguish anonymous model inference from GitHub App publication. A newly discovered condition-substring bypass needs one causal actual workflow mutation and an exact admitted expression; avoid broad runtime rebuilds. Portable reflection only; retained root native adapter null-cwd failure supplies no native event or spore credit.
+- ts: 2026-10-15T14:54:14.924896027Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Website/CMS live status and fixture source qualification checkpoint
+  p-efficiency: 0.65
+  p-friction: 0.43
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/ROOT-memory-user-deployment-status-20261015T1457-v1/canonical-receipt-event.edn
+  note: Answer serving and replacement CMS state first. Source audit should compare NUL Git paths and the same diff serialization; incidental representation differences are not source drift. Review infrastructure progress is separate from application repair and production cutover. Portable record only; prior native adapter limitation retained, no spore.
