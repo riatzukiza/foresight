@@ -10,7 +10,7 @@ parent: "ff3e628b-cd5c-4a89-a397-42cc88dbde70"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b", "a0176ec0-0616-4d7f-86e1-e6cf9a160a7a", "ba078119-482c-49dc-bd18-c2dfcaad9024"]
 category: "kanban"
-write-id: "1792031832503-0.ejcoingttvszgjxry0"
+write-id: "1792032166878-0.j7t08671aiednkx8x9n"
 created_at: "2026-10-15T00:01:59.171Z"
 ---
 
@@ -54,6 +54,12 @@ License: GPL-3.0-or-later.
 
 Missing or ambiguous revoke-rebuild inputs yield exactly the pure typed unchanged-prior-state refusal. Pure code cannot mutate an alternative quarantined state. The outer adapter separately quarantines the retained snapshot reference or refuses its load, preventing every sample/contact/inclusion until an authorized successful rebuild. Test unchanged bytes separately from actual adapter no-causal-use. Keep complete admissible-history successful rebuild and permitted-contributor retention controls.
 
+## Bound authority, causal identity and evidence audience — 2026-10-15
+
+Immediately before entering the atomic transaction, independently reload the actual stored principal, grants/sharing/visibility, admission policy and scope revision from their authoritative owner. Require equality with the admitted/current computation binding and authorization for every relationship/embedding/field/effect write. Bind the transaction's commit condition to those authority/policy versions as well as expected graph/field revisions; a revocation or version conflict during the transaction aborts before any component is committed. No payload authority or earlier snapshot can substitute. Fixtures revoke/change private/shared access after admission, during computation and between the final authority read and commit, requiring no graph/field/effect write or partial success.
+
+Before physical candidate projection, bind one new-encounter content embedding identity to the exact admitted content revision/hash: exact embedding bytes/hash, shape/dimensions and embedding model/configuration revision. Use those same bytes/revisions in semantic projection, atomic commit and independent after-state readback. Missing/indexing-pending/failed/mismatched embedding cannot count as a complete physical effect; refuse or retain explicit incomplete admission without graph/field/effect success. Reuse the existing bounded embedding route without changing model routing or credentials. Preserve unchanged existing-memory embeddings separately; test E1 candidate versus E2/missing persisted embedding and content/model/config drift as refusals.
+
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
 
@@ -66,5 +72,7 @@ Incoming planning acceptance refinement for actual Codex20a findings: Independen
 Incoming scope correction for native4278174537/4557: atomic completion/replay covers graph/field/effect persistence, not independent feedback idempotence. Actual before/after canonical content and content-embedding bytes/revisions of unchanged memories must match; only separate salience/field changes. New encounter creation stays admission-bound. No status/estimate/identity change.
 
 Finite qualification refinement from owning field review5527243274: Missing or ambiguous revoke-rebuild inputs yield exactly the pure typed unchanged-prior-state refusal. Pure code cannot mutate an alternative quarantined state. The outer adapter separately quarantines the retained snapshot reference or refuses its load, preventing every sample/contact/inclusion until an authorized successful rebuild. Test unchanged bytes separately from actual adapter no-causal-use. Keep complete admissible-history successful rebuild and permitted-contributor retention controls.
+
+Verified planning correction from review5527377626: Immediately before entering the atomic transaction, independently reload the actual stored principal, grants/sharing/visibility, admission policy and scope revision from their authoritative owner. Require equality with the admitted/current computation binding and authorization for every relationship/embedding/field/effect write. Bind the transaction's commit condition to those authority/policy versions as well as expected graph/field revisions; a revocation or version conflict during the transaction aborts before any component is committed. No payload authority or earlier snapshot can substitute. Fixtures revoke/change private/shared access after admission, during computation and between the final authority read and commit, requiring no graph/field/effect write or partial success.  Before physical candidate projection, bind one new-encounter content embedding identity to the exact admitted content revision/hash: exact embedding bytes/hash, shape/dimensions and embedding model/configuration revision. Use those same bytes/revisions in semantic projection, atomic commit and independent after-state readback. Missing/indexing-pending/failed/mismatched embedding cannot count as a complete physical effect; refuse or retain explicit incomplete admission without graph/field/effect success. Reuse the existing bounded embedding route without changing model routing or credentials. Preserve unchanged existing-memory embeddings separately; test E1 candidate versus E2/missing persisted embedding and content/model/config drift as refusals.
 
 ---

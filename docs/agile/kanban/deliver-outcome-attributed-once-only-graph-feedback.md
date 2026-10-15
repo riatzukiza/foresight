@@ -10,7 +10,7 @@ parent: "a1e9d6af-0233-4dcb-9677-5c76fa9a2701"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["1eb3aa1f-53d2-4a6a-828c-57ffe990e23b"]
 category: "kanban"
-write-id: "1792029436401-0.n0u49v68nkqvabhckeh"
+write-id: "1792032168112-0.cz2a1yrh2u7mljc8f7a"
 created_at: "2026-10-15T01:01:02.839Z"
 ---
 
@@ -49,10 +49,15 @@ Stale bindings, missing authority, unsupported fencing/atomicity and incomplete 
 
 License: GPL-3.0-or-later.
 
+## Bound authority, causal identity and evidence audience — 2026-10-15
+
+Classify artifact and destination evidence audiences separately from the maker's access. Private/restricted artifact bytes, paths/media identity, destination account/record IDs/URLs and their association may be inspected only through an authorized protected seam outside Git/public logs. Retain full restricted matching proof only in protected private storage or inspect transiently. Committed/reviewer/public evidence may retain only an explicitly audience-authorized digest/redacted binding to that protected proof; identifiers or hashes are not presumed safe merely because the maker may read them. No credentials, raw private artifact/message content or unapproved identifiers enter receipts/events/resources/logs. Positive private-destination/artifact fixtures must prove actual protected matching and no forbidden retained disclosure; public outcomes retain their authorized independent readback. If protected verification or safe evidence is unavailable, refuse outcome proof and reinforcement. No publication replay.
 
 ---
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.
 
 Incoming outcome clarification for native4278174541: selected positive is independently validated persistent artifact plus actual configured destination GET, bound concrete outcome ID/account/record/artifact hash/effect/recalled item. Missing/unknown/mismatched reads cause no reinforcement and explicit audit/refusal receipts. No earlier read-interface completion depends on feedback.
+
+Verified planning correction from review5527377626: Classify artifact and destination evidence audiences separately from the maker's access. Private/restricted artifact bytes, paths/media identity, destination account/record IDs/URLs and their association may be inspected only through an authorized protected seam outside Git/public logs. Retain full restricted matching proof only in protected private storage or inspect transiently. Committed/reviewer/public evidence may retain only an explicitly audience-authorized digest/redacted binding to that protected proof; identifiers or hashes are not presumed safe merely because the maker may read them. No credentials, raw private artifact/message content or unapproved identifiers enter receipts/events/resources/logs. Positive private-destination/artifact fixtures must prove actual protected matching and no forbidden retained disclosure; public outcomes retain their authorized independent readback. If protected verification or safe evidence is unavailable, refuse outcome proof and reinforcement. No publication replay.
 
 ---
