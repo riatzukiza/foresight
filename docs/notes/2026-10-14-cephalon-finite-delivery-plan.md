@@ -816,10 +816,15 @@ qualification remain required.
 Atomic8 already owns protected transaction, recovery and independent readback.
 Its adapter must bind complete current identity/application authority through
 computation and commit to the expected graph/field revisions, immutable effect
-identity and exact candidate. Denial, revocation or version conflict at an
-existing required boundary leaves all components at their independently read
-baselines. Result exposure remains protected and independently authorized.
-Feedback5 retains its own writer/receipt qualification under the same owner split.
+identity and exact candidate. Denial, revocation or version conflict before
+commit leaves all components at their independently read baselines. After an
+acknowledged commit, a later authority change or unestablished exposure
+protection blocks unauthorized result exposure while retaining the actual
+committed outcome. Use independently authorized complete matching readback or
+quarantine; an uncertain commit stays uncertain until the existing recovery
+establishes its outcome. No unproved rollback, unchanged-persistence assertion,
+new effect identity or write replay can substitute. Feedback5 retains its own
+writer/receipt qualification under the same owner split.
 
 Qualify the chosen transaction API's actual operations and callback/retry
 semantics against existing finite caller, time, work and idempotence bounds.
@@ -830,13 +835,25 @@ bounds; no new retry allowance or deadline is introduced. Unsupported control
 refuses rather than counting only an outer invocation.
 
 Required RED controls retain cached application allow/current owner denial;
-required identity/capability denial; authority changes during computation and
-between final read/commit while storage revisions match; change before result
-exposure; a nonparticipating authority writer; mismatched actual client/session;
-callback re-entry/conflict; and uncertain commit. Require unchanged state, no
-partial exposure, truthful cause and independent component readback. A qualified
-current-owner same-boundary transaction/exposure positive remains mandatory.
-These are future owning source tests, not executed proof.
+required identity/capability denial; a nonparticipating authority writer;
+mismatched actual client/session; callback re-entry/conflict; and uncertain
+commit. Separate the authority-change outcomes at their actual boundary:
+
+- Before commit, changes during computation or between final read/commit while
+  storage revisions match must leave every graph/field/effect component (or
+  reinforcement/effect for feedback) at its independently read baseline, with
+  no partial exposure and a truthful refusal cause.
+- After an acknowledged commit but before result exposure, an authority change
+  must block unauthorized exposure, retain the actual commit identity/outcome,
+  and perform independently authorized complete matching component readback or
+  quarantine. Persisted state is not asserted unchanged and no rollback is
+  claimed without proof.
+- An uncertain commit must retain uncertainty and use the existing independent
+  readback-or-quarantine path before retry; do not infer absence, replay a write
+  or remint an effect from exposure refusal.
+
+A qualified current-owner same-boundary transaction/exposure positive remains
+mandatory. These are future owning source tests, not executed proof.
 
 Existing source/interface/fixture planning and real upstream prerequisites
 precede lawful Ready. The packet's own implementation and executed qualification

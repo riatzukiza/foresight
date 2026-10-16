@@ -184,6 +184,16 @@
       "priorArtifactSHA256": "a1df6b174cc900873a21eb802aa4f817f7ce9c7e24c2daf2a1046ea5a7b579bf",
       "priorPlanSHA256": "71b37bb1d5fb5c311c200b775fbbdb7d1faf829c42a488326f6c0f272c37f672",
       "correction": "Replace the remaining active atomic clause assigning application policy/grant decisions and commit protection to Axxium. Preserve actual-owner through-commit decisions/versions and both application and identity/capability denial controls. Prior artifact bytes remain at the recorded Git revision."
+    },
+    {
+      "nativeReview": 5552400926,
+      "nativeRootComment": 4298257476,
+      "nativeItem": "cr-comment:v1:42cbecc8188bdd9b3e90906c",
+      "url": "https://github.com/riatzukiza/foresight/pull/44#discussion_r4298257476",
+      "priorReviewHead": "2d8ad9838b062e43ba186912ee0a828365848584",
+      "priorArtifactPath": ".ημ/review-evidence/cephalon-character/atomic-authority-routing-20261016.json",
+      "priorArtifactSHA256": "51c707046447a4652310219e1e5ac61908ca4d8531fd675006daeef8d24fce24",
+      "correction": "Split the existing authority-change acceptance controls at the actual commit boundary. Before commit require exact independently observed component baselines and no partial exposure. After acknowledged commit preserve the real committed outcome, block unauthorized result exposure, and use independently authorized complete matching readback or quarantine. Uncertain commit retains uncertainty until existing recovery establishes the outcome; no fabricated rollback, unchanged-persistence assertion, new effect identity or write replay. Preserve original owner decisions/versions/protection and every existing transaction, privacy, race and positive control. Earlier provenance remains historical at its original head; no executed behavior, Ready, approval or round is supplied."
     }
   ]
 }

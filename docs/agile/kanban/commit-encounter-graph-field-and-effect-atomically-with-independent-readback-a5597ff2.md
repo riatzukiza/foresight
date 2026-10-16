@@ -94,11 +94,19 @@ cannot copy remote application privileges into local roles. Preserve the actual
 trusted server-event authority route without fabricating a remote login.
 
 The complete binding must remain protected through causal computation, commit
-and authorized result exposure. Missing, denied, changed, stale or unsupported
-protection refuses unchanged with no partial exposure. A role map, updated_at,
-derived fingerprint, matching storage revision or await-boundary check cannot
-substitute for qualified protection. Retain every existing revocation/race,
-rollback, uncertain-commit, privacy and independent-readback control.
+and authorized result exposure. Before commit, missing, denied, changed, stale
+or unsupported protection refuses with graph, field and effect receipt at their
+independently read baselines and no partial exposure. After an acknowledged
+commit, a later authority change or unestablished exposure protection blocks
+unauthorized result exposure; preserve the actual committed outcome and use
+independently authorized complete matching readback or quarantine. An uncertain
+commit retains its uncertainty until that existing recovery establishes the
+outcome; neither branch claims a rollback or unchanged persistence without
+proof, remints the effect identity, or replays a write to manufacture success.
+A role map, updated_at, derived fingerprint, matching storage revision or
+await-boundary check cannot substitute for qualified protection. Retain every
+existing revocation/race, rollback, uncertain-commit, privacy and
+independent-readback control.
 
 The [finite plan's transaction coupling section](../../notes/2026-10-14-cephalon-finite-delivery-plan.md#current-authority-ownership-and-transaction-coupling--2026-10-16)
 names actual inspected seams and their remaining qualification. This repairs
