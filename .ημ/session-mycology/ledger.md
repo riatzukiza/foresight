@@ -2248,3 +2248,12 @@
 - Scores: efficiency0.78, friction0.64, surprise0.32, reuse0.72; candidate0; no spore.
 - Evidence: receipt bc0073a5-abf2-4e03-bc0a-7578c4d236d6; [bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-CMS57-first-case-CLI-and-ETA358-settled-20261016T192836Z-v1/EVIDENCE-bindings-v1.json). No secrets, retries, model, pause/resume, spending or production effect.
 - Next: inspect the failed first-case CLI boundary and prepare the smallest source-free observation that retains its original terminal result.
+
+
+## 2026-10-16T19:38:31.646564+00:00 — recover the assertion behind the process exit
+
+- Outcome: progress. Private exact-byte capture recovered the first-case order assertion with passing DOM checkpoints; the next correction is in observer semantics, pending causal controls. The isolated build preflight independently exposed an additional test cache entry before any build effects.
+- Learning: a failed CLI can faithfully report a test assertion. Preserve its original payload privately before classifying the tool, and distinguish physical DOM state from later observer delivery. Closed historical directory sets must account explicitly for every owned test output; never exempt a cache wholesale.
+- Scores: efficiency0.79, friction0.58, surprise0.41, reuse0.80; candidate0; no spore.
+- Evidence: receipt a905d036-6f27-4f16-b258-8b4d1be48a9f; [bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-CMS57-observer-order-cause-and-build-preflight-20261016T193831Z-v1/EVIDENCE-bindings-v1.json). No secret, model, account, spending or production action.
+- Next: qualify the minimal project-case order correction against the recovered real invariant.
