@@ -2287,3 +2287,13 @@
 - Friction: stopped private Atlas, an incorrect restoration-script gateway assumption, full disk, and unrelated missing historical worktree administration files. Preserve each failed result and distinguish those causes from product assertions.
 - Better path: inspect the actual prerequisite resource and compare immutable ownership before recovery; use a fresh bounded read-only qualification after a corrected check, never replay a start with uncertain effects. Keep current executable inputs distinct from foreign reference protection; explicitly record exact absence changes. An installation or resolution pass grants no full test, build or deployment credit.
 - One narrow private namespace temporary-directory harness repair and explicit full15 continuation are authorized; no retry has yet executed at this checkpoint. Goal remains active. Website is live; replacement CMS and complete public translation/publication proof remain unfinished.
+
+
+## 2026-10-16T23:08:00Z — actual completion counters and qualified full dependency tests
+
+- Receipt: 8ba94dce-e379-402e-ac32-edff52489aa8; previous and current goal turns: PROGRESS; goal active and incomplete.
+- p-efficiency:0.57; p-friction:0.81; p-skill-candidate:0.0; spores:0. Existing CDP spore remains incubating; no same-session promotion.
+- Evidence: root-completion-diagnostic-and-private-tmp-20261016T2245Z-v1/EVIDENCE-bindings-v1.json; actual CMS v8 56/57 failure with atomic failed=true/pending2/consumed7-of7; all15 registered dependency suites pass with independent actual-input and closure qualification.
+- Lesson: retain diagnostic state at the failing synchronous boundary, preserve the original error, and test both normal and catch-only reporting causally. Treat a legitimately mutable noninput foreign index as an explicit bounded observation instead of chasing a historical fingerprint; keep actual inputs exact and the earlier outer failure visible.
+- Better path: one reviewed full command after owned runtime closure, inspect original outcome and narrow causal evidence before any retry. Differentiate controller lineage and application lineage before adopting equivalence exclusions.
+- One dependency BUILD is live under agent-owned session50585 at this checkpoint; no LINT or full57 success is claimed. No model, globalPM2, account, public-review, publication or production mutation occurred.
