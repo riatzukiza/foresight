@@ -107,8 +107,8 @@
     {
       "path": "docs/notes/2026-10-14-cephalon-finite-delivery-plan.md",
       "beforeSHA256": "415d119240fc453fd0b74012952edcfdac924e045991296a76139cb0c3be7344",
-      "afterSHA256": "71b37bb1d5fb5c311c200b775fbbdb7d1faf829c42a488326f6c0f272c37f672",
-      "bytes": 100419
+      "afterSHA256": "e67ef8f395a6bfa22667edc196175026c51d8c44f315c5a7b6b4a61f3afa21cd",
+      "bytes": 100591
     }
   ],
   "nativeReader": {
@@ -173,5 +173,17 @@
     "No operational metadata, historical comment or provenance row was edited.",
     "No Field transition, storage transaction, model, provider, runtime, deployment or social behavior was executed.",
     "Local source review is not a native provider approval or review round."
+  ],
+  "correctionProvenance": [
+    {
+      "nativeReview": 5551656610,
+      "nativeRootComment": 4297672200,
+      "url": "https://github.com/riatzukiza/foresight/pull/44#discussion_r4297672200",
+      "priorReviewHead": "8f1574545c4c399e0c910c870429e0a423d05de6",
+      "priorArtifactPath": ".ημ/review-evidence/cephalon-character/atomic-authority-routing-20261016.json",
+      "priorArtifactSHA256": "a1df6b174cc900873a21eb802aa4f817f7ce9c7e24c2daf2a1046ea5a7b579bf",
+      "priorPlanSHA256": "71b37bb1d5fb5c311c200b775fbbdb7d1faf829c42a488326f6c0f272c37f672",
+      "correction": "Replace the remaining active atomic clause assigning application policy/grant decisions and commit protection to Axxium. Preserve actual-owner through-commit decisions/versions and both application and identity/capability denial controls. Prior artifact bytes remain at the recorded Git revision."
+    }
   ]
 }
