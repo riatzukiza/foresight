@@ -2257,3 +2257,13 @@
 - Scores: efficiency0.79, friction0.58, surprise0.41, reuse0.80; candidate0; no spore.
 - Evidence: receipt a905d036-6f27-4f16-b258-8b4d1be48a9f; [bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-CMS57-observer-order-cause-and-build-preflight-20261016T193831Z-v1/EVIDENCE-bindings-v1.json). No secret, model, account, spending or production action.
 - Next: qualify the minimal project-case order correction against the recovered real invariant.
+
+
+## 2026-10-16T20:03:02.155425+00:00 — actual CMS export failure and namespace ownership
+
+- receipt: 9a19869c-796b-418a-ae1d-eee6a621c521
+- p-efficiency:0.67; p-friction:0.82; p-skill-candidate:0.0; spores:0
+- Prior goal turn:PROGRESS; actual45case terminal failure replaced generic uncertainty with download-boundary evidence. No57PASS inferred.
+- Lesson: distinguish physical DOM commitment from observer delivery; distinguish native process cleanup from rejected browser artifact cleanup. A child namespace overflow owner needs exact map/path qualification and independent host-side metadata checks.
+- Better path: preserve exact original failures and bounded native outputs, apply smallest causal repair, run the actual registered command, qualify real terminal behavior without new broad collectors.
+- Build session58687 remains root-owned/live atthischeckpoint. No model/PM2/publication/production effect; fullgoal remains active.
