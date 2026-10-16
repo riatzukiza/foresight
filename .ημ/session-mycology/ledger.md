@@ -2170,3 +2170,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#5f81f112-079f-445d-98d2-cf61bb303e29
   note: Reuse already qualified source instead of duplicating a fix; requalify the current composition and exact warning delta. Keep successful free MiMo route evidence separate from the next source review and preserve model tool-order failures without inventing credential problems. Current GitHub documentation controls environment-secret behavior. Append readability corrections without rewriting historical provenance. Production CMS remains incomplete; no skill spore.
+- ts: 2026-10-16T14:16:39.497377059Z
+  session: /home/err/spaces/foresight
+  task: Commit qualified CMS reader progress and correct quota-footer interpretation
+  p-efficiency: 0.6
+  p-friction: 0.55
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 2f53df4c-3602-4838-a078-24a90a516b85
+  note: Use canonical request-verdict with actual native quota notices; allowance footer is not an invented indefinite cooldown. Preserve true UNKNOWN quota restrictions, failed review-tool traces and original-source RED. Reader80b/provenancebfc has owning passes and exact231-warning/35-boundary global failures; full deployment remains active. No spore or promotion.
