@@ -2152,3 +2152,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#f6b67b26-1e2b-4d33-a968-783cd033a483
   note: Keep serving health, model readiness, accepted dispatch, candidate receipt, released owner and production qualification distinct. Exact saved-turn recovery produced real Spanish without readmission or reseeding. Preserve six startup read-only connection refusals and SDK projection failures; no all-HTTP-clean or graph-completeness claim. Hosted lint exit0 with five npm warnings remains quality failure. Free MiMo stays anonymous through dynamically discovered OpenCode; no OpenRouter account/credentials change. Candidate0/no spore.
+- ts: 2026-10-16T12:56:29.379373115Z
+  session: /home/err/spaces/foresight
+  task: Record source-bound CMS QA and review-tool follow-up
+  p-efficiency: 0.8
+  p-friction: 0.45
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#c85aedd1-2f75-4d35-98af-ed88f2b737aa
+  note: Moving unchanged code can expose path-bound silent-catch exceptions. Preserve the primary false fallback and foreign thrown identity even when its observer throws; independent static CLEAR was withdrawn when that gap emerged. Keep actual owning passes separate from global quality failures. Bind claimed artifacts to reported paths instead of guessing filenames; retain zero-effect inspection failures. MiMo HOST errors and Codex quota are not credentials diagnoses. Candidate0/no spore.
