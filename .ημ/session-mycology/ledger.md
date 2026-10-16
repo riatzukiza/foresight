@@ -2277,3 +2277,13 @@
 - Build source fixes are locally composed, with no normal-install/build GREEN. Original16/3build failure, six test advisories and install warnings remain visible. Planning readiness is distinct from protected adoption and production.
 - Helper correction: native capture fixed its cwd to Services; the single newly created spore was moved to Foresight with exact bytes/inode, preserving that source-session provenance and without rerunning the helper.
 - Next: repair the settled-feedback request checkpoint with causal controls and qualify the owned normal install; full deployment remains active/incomplete.
+
+
+## 2026-10-16T22:15:48.319001+00:00 — CMS171, normal dependencies and explicit test-resource restoration
+
+- Context: deployment continuation; receipt `9569889d-3601-4b95-a070-40f53db2102e`; evidence `/home/err/.local/share/openhax-codex/20261010/review-state/root-current-CMS171-installed-ETA-and-live-status-20261016T2210Z-v1/EVIDENCE-bindings-v1.json`.
+- Scores: efficiency 0.46; friction 0.84; skill candidate 0.00. No new spore or promotion; the earlier CDP download spore stays incubating.
+- Observed progress: causal CMS RED/GREEN with 171 registered passes; normal installed dependency layout after bounded owned cache retirement; six genuine resolution contexts; one existing Atlas start and read-only health/ping; full browser completed 56 of 57 scenarios and stopped at the final experimental pre-first-render case; full dependency test has 13 suite passes and two temporary-directory failures, with complete cleanup.
+- Friction: stopped private Atlas, an incorrect restoration-script gateway assumption, full disk, and unrelated missing historical worktree administration files. Preserve each failed result and distinguish those causes from product assertions.
+- Better path: inspect the actual prerequisite resource and compare immutable ownership before recovery; use a fresh bounded read-only qualification after a corrected check, never replay a start with uncertain effects. Keep current executable inputs distinct from foreign reference protection; explicitly record exact absence changes. An installation or resolution pass grants no full test, build or deployment credit.
+- One narrow private namespace temporary-directory harness repair and explicit full15 continuation are authorized; no retry has yet executed at this checkpoint. Goal remains active. Website is live; replacement CMS and complete public translation/publication proof remain unfinished.
