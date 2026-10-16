@@ -538,3 +538,12 @@
   spore: none
   receipt-refs: cb6595f4-0798-4079-895a-fa86c633878a
   note: Source dda357f1fc7393be2f7c3e0acc93bc4caf558902 changes exactly one terminalLF in each of two existing cards for actual native MiMo root4289599049/review5541491782. Preserve all507other physical/Git inputs/modes,24unrecursedGitlinks and all historical prefixes. Formatting repair supplies no Rheos engine fix, board-state transition, implementation/readiness/review/deployment credit. Canonical flat receipt appended once through unchanged accepted secure writer; no nativeSM retry. Candidate0/noSpore.
+- ts: 2026-10-16T02:01:01.402306106Z
+  session: /home/err/.codex/worktrees/finite-review-caller-adoption/foresight
+  task: Refine persistent review caller prerequisites without hiding new runtime scope
+  p-efficiency: 0.91
+  p-friction: 0.14
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 1f7600be-e28a-439a-abf8-88a0c56142ff,6a470055ff94fe552c9d807b555ed6046d0f0566
+  note: A native dependency correction must update every operative relationship sentence across caller and coordination while retaining dated history. Keep runtime/publisher capability in its actual owner, expose an unestimated prerequisite, and preserve source-bound fresh base/head/tested-merge evidence. Planning-only3path source custody; no implementation, readiness, nativeSM retry, spore, public/model/runtime or deployment credit.
