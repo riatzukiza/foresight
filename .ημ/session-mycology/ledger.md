@@ -2043,3 +2043,13 @@
   spore: none
   receipt-refs: 482c72fd-c5ff-46c1-a566-f0bb25db741f
   note: Lead with the actual serving version and complete public checks, then name unfinished CMS behavior and failing full checks. Planning approval, readiness and local passing tests grant no authenticated publication proof. Retain terminal review attempts, distinguish fresh manual review from automatic recovery, and inspect first cause before suggesting credentials. NativeSM known null-cwd failure remains unretried; portablecandidate0/no spore.
+
+- ts: 2026-10-16T03:50:21.397771+00:00
+  session: /home/err/spaces/foresight
+  task: Record actual Website/CMS fixture progress and failed test/review boundaries
+  p-efficiency: 0.63
+  p-friction: 0.52
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: c5153956-91f9-4087-b70c-48dad63824ea
+  note: Distinguish compiler exit0 from test execution: a new-law import failure with no test counts is a failed gate. Keep synthetic checker/process passes separate from real adapter/auth/publication proof. Preserve each review attempt and actual protocol cause; no successful effect replay, blind retry or credentials inference. NativeSM known failure remains unretried.
