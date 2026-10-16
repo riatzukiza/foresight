@@ -138,5 +138,234 @@
     ],
     "ownershipClarification": "Knoxx and actual artifact/destination owners keep permission checks/adapters/credentials; graph owner verifies qualified matching/provenance via protected ports and owns graph persistence/readback/consuming projection",
     "nativeApprovalRoundSettlementCredit": 0
+  },
+  "priorRecallReferenceSelection": {
+    "tier": "Proposed outer layout plus observed immutable owner sources; not implemented, Ready, qualified or served proof",
+    "observedAt": "2026-10-16T20:58:10.442572+00:00",
+    "rootParent": "02ac5a4c62dd092a1519c323d86ab32fd98e6873",
+    "outerKeys": [
+      "version",
+      "original-scope",
+      "turn",
+      "field-admission",
+      "field-observation",
+      "selected-item",
+      "submission"
+    ],
+    "nestedOuterKeys": {
+      "turn": [
+        "run-id",
+        "session-id",
+        "conversation-id"
+      ],
+      "selected-item": [
+        "inclusion-index",
+        "memory-binding",
+        "content-hash"
+      ]
+    },
+    "fieldSource": {
+      "revision": "7a3aab76f84a7e23cd6cfd85e6d8ed7090b1ced4",
+      "path": "docs/plans/cephalon-physical-kernel-abi.edn",
+      "sha256": "c3b1370f06832b4ce9534dbae7d23fd59de63839479c75b63d7119823bd4d539",
+      "records": [
+        "recall-request-admission-state",
+        "recall-success-carrier",
+        "nexus-memory-binding",
+        "original-character-principal-association-carrier"
+      ],
+      "status": "Local committed owner proposal; unpublished, unimplemented and unqualified"
+    },
+    "knoxxSources": [
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/character/turn_context.cljs",
+        "bytes": 6701,
+        "sha256": "946b6f8d2ba29867893ea9c36613987284cb89d3e3fbcf04b9e5e9bddb7e2f44",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/agent/hydration.cljs",
+        "bytes": 18210,
+        "sha256": "a7632b6194e190c560e343c6148807bb9de3a0bfdf96fa96a48ccec83744769e",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/agent/turn_startup.cljs",
+        "bytes": 6820,
+        "sha256": "db1614b19a2bd5dd2871f7576fd8004b8ca82faaa8c95d8b3c936fee5ef980ca",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/agent/runner.cljs",
+        "bytes": 27362,
+        "sha256": "08e6f42a8ce89a9189f16d1bf2456a5718587fa657e291546a69a0b8ef96a3d1",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/agent/turn.cljs",
+        "bytes": 39768,
+        "sha256": "75322b45cd735762ab354e547c9c3ba68e94fa924a5482f83f5b237e5a97254c",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/domain/agent/content.cljs",
+        "bytes": 10406,
+        "sha256": "a2e79caa512e015d82576b89b28222354a6d226cc49ddc65f3a02d769edd71f9",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/domain/agent/run_admission.cljc",
+        "bytes": 3675,
+        "sha256": "324ffc3522c1fe2ef64125e9e1c6b3a4c19e9e0e9b9da0a260e0ad271985a8d6",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/auth/authz.cljs",
+        "bytes": 10571,
+        "sha256": "686e7a71c89d669e219f68cf2cd380cff8d80a7849c34668e668fae4122fcee4",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/shape/session_persistence.cljs",
+        "bytes": 3575,
+        "sha256": "4eb780d89e896b5f68204f23008b6e391ad1b7e2aba406eff3002519e80b4905",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/domain/run_store.cljs",
+        "bytes": 4497,
+        "sha256": "ff56e4ce388538897ec208284e0e4d7b6784566aaa711839c72f603e66f6dcc4",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/character/authority.cljs",
+        "bytes": 2311,
+        "sha256": "1180262275377df776b5866913e92ffeeeb93bf8eff2ddac0f4526b5f217ae39",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/character/encounter_runtime.cljs",
+        "bytes": 25098,
+        "sha256": "d7441acc7f1b2b2157cd1a6f6b80608d800ec07909a67585eff9344da7b5322f",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/domain/character/decision_input.cljc",
+        "bytes": 1400,
+        "sha256": "e01a56c1e9f284758b018eb809228b406984b1edc3b9ada7fbee4f1d44d8fe51",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/domain/character/encounter_context.cljc",
+        "bytes": 6130,
+        "sha256": "2f44fe16cf970b340d52b377ea18c0c00308c58c4ee78d0fd2e338137aaa9010",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/extern/agent_turn_prompt.cljs",
+        "bytes": 1797,
+        "sha256": "26efb28caa845ac1034ba67cdf3598e66799007067d4c8a64bfcce28c362a780",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/extern/openplanner_sdk.cljs",
+        "bytes": 20311,
+        "sha256": "c0d6359a9f679cc4ecf7c78dcf55b992dee407398f77cf6e098c0fcf25400172",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/run_event_payload.cljs",
+        "bytes": 862,
+        "sha256": "138a6b10a24bfd29ba058c9d0d0cb6d3dfe7fcf0d764eff1b902a401144e15c5",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/domain/agent/agent_context.cljs",
+        "bytes": 319,
+        "sha256": "edd88517efafeec9567991d97e856b37b720f2bd379fd429e10bd26066aa85f3",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/extern/eta_mu.cljs",
+        "bytes": 15914,
+        "sha256": "233df7e77b8a24fd1765eb4e7f627002fe431fcc9236f025b805c3613756772d",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/infra/agent/session.cljs",
+        "bytes": 20298,
+        "sha256": "4fdad595863b4f2b18aa4ad87fd71aafec01830ebca5a076e483e25e335aa4fe",
+        "committedBlobMatchesWorkingBytes": true
+      },
+      {
+        "repository": "riatzukiza/knoxx",
+        "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+        "path": "backend/src/cljs/knoxx/backend/domain/text.cljs",
+        "bytes": 21586,
+        "sha256": "ed1681d347d4fdd3d94ceafa075044b3247d13d52ef3a103f84a7e97cc2a05fa",
+        "committedBlobMatchesWorkingBytes": true
+      }
+    ],
+    "independentInventory": "Kepler read-only inventory of actual stored run coordinates, auth snapshot/identity comparison, hydration projections, prepared events and provider call. Main separately verified all21 working files equal b6 immutable Git blobs.",
+    "observedLimits": [
+      "Run identity compares run/session/conversation/org/user, not complete immutable actor/membership/policy custody; auth snapshot omits actor-binding.",
+      "Passive graph recall ID hashes conversation and query; not unique invocation or Field request identity.",
+      "Resources/events omit original recall/authority and actual prompt bodies; prepared/request-context event precedes final checks, assembly and provider dispatch.",
+      "Native runtime event ID is not a canonical Clio event identity.",
+      "Field original admission custody, full physical result and native graph source are retained separately from the normalized submission observation; no physical path fabricated from native graph paths."
+    ],
+    "remainingBeforeReady": [
+      "Complete Field owner source leaves and original/current physical scope mapping; qualified outer physical read/checkpoint source.",
+      "Normalized actual Knoxx submission observation schema/protected producer/interface/fixture plan, with distinct delivery states and original representation matching.",
+      "Owner content/payload encodings and canonical Clio payload/producer mapping; no inferred codec.",
+      "Complete outcome/witness, writer observation/receipt, reinforcement/read policy and source/build/full-fixture choices already retained in this same packet."
+    ],
+    "credit": {
+      "nativeReview": 0,
+      "ready": false,
+      "implementation": false,
+      "liveB1B2B3": 0
+    },
+    "scope": "Existing feedback5 outer layout and original source roles only; no new points/dependency/card/state or runtime mutation; own implementation after lawful Ready and qualified before consumption."
   }
 }

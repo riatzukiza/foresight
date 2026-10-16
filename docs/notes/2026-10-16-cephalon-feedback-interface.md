@@ -111,9 +111,12 @@ Full original normalized observations and their native source events are kept
 by value, not regenerated from current database lookups or replaced by ID/hash
 summaries. The native envelope is retained and validated by its actual owner.
 Native payloads must match the exact corresponding carrier, not arbitrary data.
-Raw artifact bytes, restricted message content, credentials and private proof
-paths do not become fields here. Full matching proof stays behind the qualified
-protected verification seam. The original normalized observation records its
+Raw artifact bytes, unrelated restricted messages, credentials and private proof
+paths do not become fields here. Required original query/memory/source values
+remain private data under their owning access rules; retaining them by value
+does not authorize public logging, a public event stream or wider disclosure.
+Full matching artifact/destination proof stays behind the qualified protected
+verification seam. The original normalized observation records its
 complete authorized matching facts and bound proof custody; it cannot be a
 wrapper substituted for a different producer's original payload.
 
@@ -130,18 +133,193 @@ wrapper substituted for a different producer's original payload.
   plus the matching witness/artifact/destination observation NativeEvents
   required by that selected outcome channel, in original qualified order.
 
-PriorRecallReference identifies the original recall, actual turn, selected
-item/source-event/content hash, original graph and physical-field revisions,
-actual authorized node and edge path, exact original scope and the independently
-qualified original Field scope revision. The latter is not the source policy
-revision/fingerprint: the consumed Field contract leaves that mapping to its
-qualified authority factory and prohibits automatic aliasing. Keep both values
-with their actual different provenance; select the mapping before Ready, never
-copy or retag one into the other. Node path is
-bounded by the existing64 and edge path by63, with the selected item at its
-actual position and source mapping. Prompt inclusion alone does not establish
-contribution. Its complete normalized record/source schema remains an explicit
-owner-leaf selection below; these required facts are not an arbitrary map.
+PriorRecallReference uses the retained-owner layout selected below. It binds
+the original recall, actual turn, selected item/source/content and original
+graph/physical provenance without reconstructing a physical result from a
+graph path or public run summary. Prompt inclusion alone does not establish
+contribution. The selected outer layout is not a claim that its remaining owner
+source leaves or their protected producers are already consumable.
+
+## PriorRecallReference: retained owner values and turn custody
+
+This is a proposed closed **seven-key outer layout**, not a new native Field
+record, a current Knoxx export or a qualified replacement for the owner types.
+Use the complete values of the selected Field ABI at7a3aab76; do not copy their
+validators or flatten them into a second physical trace implementation.
+
+| Key | Required original value |
+| --- | --- |
+| version | Literal `openplanner-prior-recall-reference/1`. |
+| original-scope | Complete OriginalScope, equal to payload.scope and the original qualified principal/project source. |
+| turn | Closed `run-id`, `session-id`, `conversation-id`: the exact three stored Knoxx coordinates for the actual call that disclosed this recall. Each must fit ID; no new UUID, trimming or fallback identity is introduced here. |
+| field-admission | Complete original Field AdmissionRecord at the qualified read: all five owner keys, the complete original inputs/custody/emitted entity, and the current four-key result-disposition containing the complete eight-key RecallSuccess. |
+| field-observation | Complete original qualified outer physical read/checkpoint source, including the actual owner, stored physical revision and snapshot binding, matching request/result, current-at-read authority and original source/history. This consumes the owner's source value; its complete leaf schema and protected producer remain pre-Ready selections, not an arbitrary map or an existing checkpoint-position export. |
+| selected-item | Closed `inclusion-index`, `memory-binding`, `content-hash`: the actual zero-based index into both retained inclusion vectors, complete memory-variant NexusMemoryBinding, and SHA256 of the exact original owner memory content bytes under its qualified encoding. The encoding/source mapping remains an explicit owner selection; do not hash a prompt excerpt. |
+| submission | Complete original qualified Knoxx submission observation binding these turn coordinates, the original recall/read and selected memory to the actual assembled provider input and the corresponding invocation occurrence. Its normalized leaf/schema and actual protected capture are selected in the existing composition plan before Ready; current prepared telemetry is not this value. |
+
+The remaining source leaves above are named obligations, not `any`, an opaque
+handle, a callback or permission to insert a verifier supplied by a caller.
+They require complete source/interface/fixture plans before Ready and actual
+producer/protection qualification before consumption. This layout does not
+close the entire Field ABI or add an implementation-before-Ready prerequisite.
+
+### Field record and selected-item agreements
+
+Retain the entire five-key AdmissionRecord (`request-id`, `original-inputs`,
+`original-custody`, `emitted-entity`, `result-disposition`). Its scoped request
+and emitted entity must name that same actual request. The exact original
+principal association is original-custody.principal-scope-source; preserve its
+complete native scope, actor/contract and explicit character context. Its native
+membership identity is the stored principal. Actor, contract and character
+presence identities retain their separate roles; identical strings do not
+establish an identity conversion. Project and graph authority retain their
+qualified original source in custody, with no grant inferred from a run row.
+
+Only the owner's `:current` disposition with a valid complete RecallSuccess
+can supply this reference. An invalidated disposition has no result and cannot
+be repaired by a prior result, current database refetch or public failure
+facade. Preserve all five native success status values (`admitted`,
+`no-contact`, `complete`, `incomplete`, `exhausted`) and their owner predicates.
+The selected index must actually exist in both inclusion vectors; an empty
+result cannot yield a selected item, regardless of its valid status. Do not
+invent a complete-only filter or promote an error/partial failed operation to
+success. Later current authorization is checked independently of the retained
+current-at-read disposition; the word `current` is not a reusable grant.
+
+At that same index, included-memory-ids equals memory-binding.memory-id, and
+the full matching ten-key InclusionReason identifies its actual memory/content
+revision, nexus, daimoi, step, pair, contact matrix revision, graph revision,
+field history and fold revision. The binding is the complete six-key
+`finite-nexus-memory-binding/2` memory variant, including its complete seven-key
+`finite-nexus-memory-source/1` source-binding. Match its actual memory resource,
+source event, owner/stored principals, original source revision and scope
+against the qualified visible record and original Clio source envelope. No
+non-memory variant, copied label or source-event-ID-only proof can substitute.
+
+Keep the complete original source evidence/history that resolves these
+bindings, including the exact authorized memory content and its owner-defined
+byte representation. Content revision is not automatically its content hash.
+The selected item's source memory need not have been one of the earlier native
+cost walk's returned hits: the actual physical inclusion and its qualified
+graph source establish selection. Do not silently restrict physical recall to
+that earlier graph walk's top-k subset.
+
+### Graph path, physical trace and revision roles
+
+The physical result is the complete RecallSuccess: motion, bonds, contacts,
+both inclusion vectors, kernel-horizon and budget-result as well as status.
+Retain every actual request motion sample and its causal/deposit references,
+every evaluated request bond entry and original contact evidence, without
+truncating them to a rendered prompt or the global trail window. Preserve the
+original physical budget, actual executed prefix, history/fold and all
+accumulated work/trace/byte counts. A read, retry or checkpoint adds no new
+motion, time, inclusion or budget allowance.
+
+Original native graph request/projection/authority/result values remain in the
+Field's qualified original source evidence/history where its contracts require
+them. When that source contains the native graph hit path, retain its real node
+path (at most64) and corresponding edge IDs (at most63), actual seed/neighbor
+reason, endpoint and full source mapping. Those are graph-source facts. They
+are not a replacement for physical motion/bonds/contacts, and physical contact
+does not mint a graph edge or a traversed graph path. A seed-only useful item
+does not need a fictitious traversed edge.
+
+Original request.graph-revision and projection-revision remain distinct. Match
+the inclusion reason and NexusMemoryBinding to their actual graph source; do
+not relabel a projection or native query digest as a graph or physical revision.
+Match field-observation to the retained horizon's selected-end-checkpoint and
+qualified physical snapshot. The owner's three-key CheckpointPosition
+(`kernel-time-us`, `event-cursor`, `admitted-event-cursor`) is a position; it is
+neither a stored physical revision nor an authenticated snapshot/hash. Its
+outer source must establish those facts. The generic native graph v1
+`field-status: not-loaded`/`field-revision: not-loaded` remains legitimate for
+that earlier read interface and supplies no physical proof here.
+
+The original scoped request's actual Field scope-revision is the value used by
+the feedback envelope. The complete native policy fingerprint remains original
+principal provenance; no automatic alias, retagging or fresh grant is inferred.
+The existing qualified authority factory must select the physical scope mapping
+before Ready. Current authorities and protection through commit/exposure remain
+separate obligations even when every original revision still matches.
+
+### Actual turn and submission boundary
+
+At selected Knoxxb6, initial run admission persists run_id, session_id and
+conversation_id, and a stored authorization snapshot. Its run-store identity
+comparison covers only those coordinates plus org_id/user_id. Membership,
+actor and policy are outside that comparison; actor-binding is not retained by
+auth-snapshot. A run document therefore supplies coordinates but cannot replace
+the original qualified character/principal association or a current grant.
+Keep native spellings in their original source values; this normalized turn
+map is an explicit checked projection, not a change to the native run schema.
+
+Knoxx's `passive-graph:` recall-id hashes conversation plus message and may
+repeat across turns. Preserve it as the actual native graph query identity.
+Field request ID, run ID, session/conversation coordinates, native provider
+currentTurn and invocation occurrence are separate values. Do not invent a
+turn ID from that hash, infer run=session, or copy Knoxx's runtime event_id into
+Clio's supplied UUID namespace. Where a qualified source maps these values,
+retain the complete actual source and verify its agreement; spelling alone is
+not proof. The submission source must distinguish two real invocations even
+when the conversation/query and therefore passive recall-id repeat.
+
+The inspected hydration projection discards original authority/candidate
+bindings and most original recall data. Encounter resources retain IDs,
+inclusion evidence and counts, while omitting the actual encounter/prompt
+contents. The hydration/inclusion event is emitted with status `prepared` at
+stage `request-context`. Subsequent disclosure checks, prompt assembly and
+the call to send-user-message! occur later. Neither those projections, the
+persisted pre-hydration request messages nor the redacted console prompt log
+can reconstruct or prove the complete reference or actual submission.
+
+The proposed submission capture belongs at the existing Knoxx caller that
+actually assembles and dispatches the provider input, with its original
+turn/principal/recall binding and unchanged current disclosure checks. Its
+normalized record and protected evidence must distinguish preparation,
+dispatch, accepted/definitely rejected/unknown delivery and any later execution
+observation. No prepared-only, rejected or unknown dispatch may impersonate a
+qualified actual submission. Full prompt/private message bodies remain behind
+their existing protected owner seam; the normalized observation preserves the
+complete authorized item/representation/call matching facts and original proof
+custody. It must bind the representation actually sent, including any excerpts
+or truncation; the original memory hash is not a claim that every original byte
+was sent. This does not require a second provider call or replay publication.
+The original read/submission sources exist before this feedback reference is
+formed. They bind the earlier request/result/item/call facts; neither their
+payloads nor their custody contain this enclosing PriorRecallReference,
+FeedbackProposal, feedback intent or a later outcome/acknowledgement. A native
+source event retains its actual accepted ID outside its own semantic payload.
+Do not close a missing binding by creating a self-containing event or hash.
+
+Submission and actual inclusion still do not establish causal contribution.
+The independently qualified outcome/witness channel must prove that the
+selected consumed input affected the actual permitted artifact/action. Keep
+that obligation in VerifiedOutcomeObservation; do not move it into a telemetry
+flag or award feedback when the reference is merely valid.
+
+### Retention, source qualification and negative fixtures
+
+The reference and all nested original values remain unchanged through intent
+admission, pending/confirmed feedback retry, checkpoint, restore and readback.
+No current lookup regenerates the original read, query, scope, content or prompt
+representation; fresh current authorization is independently required for use
+and exposure. All copies count under the existing finite input/state/checkpoint/
+history/trace/work caps. No JSON/pr-str fallback is a qualified binary64 codec,
+and this source selection proves no positive fit or enlarged cap.
+
+Within this same packet, fixture planning must cover valid selected inclusion
+under every applicable owner status, empty/invalidated/error results, mismatched
+index/reason/binding/content, seed-only and physical non-top-k inclusion, graph
+path versus physical trace, distinct revisions, stale/denied scope, repeated
+query across distinct invocations, prepared-only/rejected/unknown submission,
+excerpt-to-original matching, original custody through retry/restore, privacy,
+and exact/one-over owner budgets. Use isolated qualified source fixtures for
+writer implementation after Ready. Full physical producer composition and
+actual served proof retain their existing later qualification; neither a
+fixture nor this contract supplies that proof or becomes a new pre-Ready
+implementation dependency for the independent writer packet.
+
+## VerifiedOutcomeObservation and FeedbackProposal
 
 VerifiedOutcomeObservation identifies the actual outcome, turn, action/effect,
 item/content/recall binding, independently observed persistent artifact
@@ -275,7 +453,8 @@ feedback5. In this same packet's remaining plan, select:
    encoding/hash contract and canonical Clio
    event-root/leaf, producer and supplied-native-UUID admission/readback mapping;
    no existing payload-hash or ID-generation API is asserted. Complete closed
-   PriorRecallReference and VerifiedOutcomeObservation/witness variants, their actual normalized producer contracts and by-value original
+   PriorRecallReference owner leaves beneath the selected seven-key layout and
+   VerifiedOutcomeObservation/witness variants, their actual normalized producer contracts and by-value original
    source mappings, including protected private-artifact/destination proof.
 2. The exact reinforcement policy, owned stored target/projection and versioned
    read mapping. Updating an unconsumed counter is not acceptable. Cover both
