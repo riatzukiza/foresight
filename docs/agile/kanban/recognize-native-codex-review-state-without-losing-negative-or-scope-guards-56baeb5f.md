@@ -184,7 +184,7 @@ Website/CMS application or deployment work are outside this story.
   Recheck fresh native corpus/source/stage during adoption; preserve installed
   device history and foreign dirty inputs. End the planning hold after settled
   planning review and actual lawful Rheos ready admission; RED/GREEN begins
-  afterward. Implementation evidence gates later testing/review/merge/adoption,
+  afterward. Implementation evidence gates later review/merge/adoption,
   and is not a prerequisite for the initial ready transition.
 
 ## Verification
