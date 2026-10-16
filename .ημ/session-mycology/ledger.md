@@ -2004,3 +2004,12 @@
   spore: none
   receipt-refs: 7d60cad0-4f67-42c9-aae4-ea76bfe42684
   note: Existing credentials were present but unavailable to the target repository workflow: authenticate the exact existing App with bounded GETs, verify installed target/grants, configure only the two named repository secrets through stdin and prove each native metadata effect. Separately inspect the actual pinned model runner before rerun; Services d98 still hardcodes a dated MiMo slug despite correct global routing memory. Accepted dynamic source needs ordinary explicit caller-scope review. Preserve native field formats: symlink lstat/readlink, gitlink sha keys, commit/tree alias separation, creation/update precision and namespaced EDN. Recover known successful effects without replay. Memory characterization exposed and fixed sync-fetch pending poisoning and older publisher cleanup; extraction passes owning/tests/coverage but unrelated6/257lint and36error-boundary sites remain failures. NativeSMknownnullcwd unretried; portablecandidate0/noSpore. Deployment remains incomplete.
+- ts: 2026-10-16T00:44:30.125620738Z
+  session: /home/err/spaces/foresight
+  task: Persist actual Services caller publication and exact anonymous-review protocol failure
+  p-efficiency: 0.78
+  p-friction: 0.36
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 4543dd8d-b63b-47b6-ae36-171d66fe9351,89cad808992029bb5c9f100dcb64acdb180ddf57
+  note: The configured App guard and dynamic anonymous OpenCode route work; an unread-page assessment still invalidates the whole native review. Keep catalog discovery, actual inference, full trace, accepted invocation and publication separate, and never diagnose a provider key from a verifier refusal. Repair source-bound runtime prerequisites before rerunning failed gates; a changed YAML input requires requalification, while prior passes/failures stay dated. Preserve actual GitHub propagation and derived-ref behavior, native metadata gaps and Unicode paths without replaying successful effects. Root argv indexing failed before writer startup; exact prefix proof admitted one corrected append. NativeSM known null-cwd failure remains unretried; portable candidate0/no spore. Full deployment remains incomplete.
