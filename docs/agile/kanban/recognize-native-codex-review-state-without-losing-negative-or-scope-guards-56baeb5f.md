@@ -22,7 +22,10 @@ classic-receipt wrapper observation below is transferred to a separate proposed
 P1/1 slice. Completed, negative and pending facts retain their distinct meaning.
 The problem affects the Website/CMS deployment prerequisite review chain.
 
-Dated native observations from October 15, 2026 are retained as full inputs:
+The exact retained native bodies and source-custody descriptors are proposed as
+checked-in inputs in [the immutable snapshot manifest](../../notes/evidence/native-codex-review-state/native-snapshots.provenance.json).
+Preserve these source files before the lawful ready transition; mutable public
+links are navigation only. These October 15–16 observations are separate inputs:
 
 - [ETA24 panel6201584645](https://github.com/riatzukiza/eta-mu/pull/24#issuecomment-6201584645)
   at head `b3971e6e2844645863c699d605d5dbee69f2ccbb`: completed code
@@ -123,8 +126,13 @@ Website/CMS application or deployment work are outside this story.
   bounds and whitespace support: complete body <=16,384 UTF-8 bytes, payload
   <=1,024 UTF-8 bytes, each ASCII JSON-whitespace run <=64 bytes and total payload
   whitespace <=768 bytes (SP/HT/LF/CR only). Names are exact registered literals;
-  SHA is exactly40 lowercase hex bytes and the currently observed completed-state
-  status is literal `completed`. Displayed Code Review row <=512 UTF-8 bytes,
+  SHA is exactly40 lowercase hex bytes. Admit only the two observed code states:
+  literal `completed` with two boolean finding flags and one matching `Completed`
+  row/completion timestamp, or literal `running` with both finding flags null and
+  one matching `Running since` row/start timestamp. Running is not a completion
+  and its null flags are not false. Every other status/flag/row combination stays
+  unsupported or inconsistent under the existing fail-closed rules; do not add a
+  general status vocabulary. Displayed Code Review row <=512 UTF-8 bytes,
   short SHA7..40 exact prefix bytes, timestamp <=40 ASCII bytes. These are chosen
   fail-closed compatibility bounds, not a provider maximum. Test variable limits
   atN-1/N/N+1 with other constraints valid where reachable, plus exact/short/long
@@ -135,7 +143,14 @@ Website/CMS application or deployment work are outside this story.
 - [ ] Preserve raw body, native comment ID, configured Bot login/type plus the
   observed numeric/node/App tuple, creation/edit times and full40hex code head.
   Require one matching native Code Review row, compatible short rendering and
-  actual completion timestamp bounded by native comment times. Preserve their
+  the actual completion or start timestamp, as appropriate to its literal state,
+  bounded by native comment times. Only a qualified completed state can supply
+  completion/availability restoration; a qualified running state supplies no
+  passing/completion/round credit and retains the existing live-work versus
+  stage/request distinction. The retained faf running GQL observation lacks
+  updatedAt, native Bot node ID and App metadata: keep its collector custody and
+  liveness UNKNOWN, do not fill them from the later terminal observation, and
+  do not invent a new pending request or duplicate invocation. Preserve their
   precision: an API whole-second updated_at denotes that half-open second, so
   native22:41:39.207415 is inside updated_at22:41:39, not an after-update violation.
   Retain original strings without retiming. Disagreement or missing custody
@@ -189,10 +204,23 @@ Website/CMS application or deployment work are outside this story.
 
 ## Verification
 
-On unchanged canonical source, register tests using the retained complete ETA24
-positive and Knoxx18 negative plus five roots. Also retain F42 panel6203473947
+Before readiness, check in the exact snapshot body files, native custody/digest
+manifest and complete finding-body artifacts linked above, with this reviewed
+structured-card refinement. Preserve missing metadata explicitly. This is source
+retention, not implementation qualification or a readiness claim.
+
+On unchanged canonical source after lawful readiness, register tests using the
+retained ETA24 positive and Knoxx18 negative plus five roots. Use the real faf
+running/null-null body for the bounded grammar and its missing-custody UNKNOWN
+control; a later metadata record must not manufacture a qualified earlier
+pending sample. Independently source-bound native metadata remains required
+before claiming a qualified pending/live integration case. Also retain F42 panel6203473947
 and review5540804570: six finding-bearing P2 roots followed User planning
 request6203681254, so the later completed true/true state supplies no approval.
+Retain the distinct faf running snapshot followed by completed true/true at
+00:17:58.505760Z and review5541476240 roots4289584701/4289584710; terminal
+negative clears the observed running lifecycle without supplying approval or
+retiming an older completion into a newer request.
 Wrapped F41 classic inputs remain in the separate one-point proposal.
 Demonstrate the missing positive/completion/pending/availability
 behavior fail for the real source gap; merely asserting old rejection

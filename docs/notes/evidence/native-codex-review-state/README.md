@@ -1,0 +1,9 @@
+# Retained native Codex structured-review inputs
+
+These immutable planning inputs preserve exact UTF8 body values from native captures. The `.body.md` files have no added newline or text normalization. `native-snapshots.provenance.json` records their byte counts, SHA256, native source fields, source-carrier digests and missing custody; the three finding artifacts retain complete native finding body strings with their original source identities. These are fixture inputs and provenance descriptors, not a review policy implementation or an event ledger.
+
+ETA24 is the retained completed false/false example. Knoxx18 is the retained completed true/true example and its five roots. F42's b85 negative and six roots are distinct from the later faf running sample and subsequent faf negative with two roots. A single mutable comment ID does not merge these observations or transfer a verdict between heads/stages.
+
+The faf running body literally has `status:"running"`, null/null finding flags, and one `Running since` row at `2026-10-16T00:14:51.531056Z`. Its original GQL projection lacks edited time, Bot node ID and App metadata. Preserve those fields as unavailable; the later full REST terminal snapshot cannot fill them. The raw body grounds the bounded pending grammar; complete collector custody and liveness remain UNKNOWN for this particular input. It supplies no completion, approval, availability restoration or newer-request credit. An unknown live execution is recovered without inventing terminal state or starting duplicate work.
+
+Check these files in with the reviewed structured-card refinement before its lawful ready transition. Actual implementation RED/GREEN follows readiness in the canonical `.agents` owner. No parser, test, model request, operational board transition, review approval or deployment has been produced by preserving these observations. Keep the separate classic-wrapper P1/1 owner unchanged.

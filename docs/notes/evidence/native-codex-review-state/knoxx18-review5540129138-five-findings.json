@@ -1,0 +1,163 @@
+{
+  "representation": "Full native finding body strings and selected unchanged native custody fields; not a byte-identical REST envelope or diff-hunk archive.",
+  "review": {
+    "id": 5540129138,
+    "node_id": "PRR_kwDOU4VeEc8AAAABSjepcg",
+    "user": {
+      "login": "chatgpt-codex-connector[bot]",
+      "id": 199175422,
+      "node_id": "BOT_kgDOC98s_g",
+      "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+      "type": "Bot"
+    },
+    "body": "<!-- codex-review-receipt:v1 -->\n\n\n### 💡 Codex Review\n\nHere are some automated review suggestions for this pull request.\n\n**Reviewed commit:** `62a4017a4f`\n    \n\n<details> <summary>ℹ️ About Codex in GitHub</summary>\n<br/>\n\n[Your team has set up Codex to review pull requests in this repo](https://chatgpt.com/codex/cloud/settings/general). Reviews are triggered when you\n- Open a pull request for review\n- Mark a draft as ready\n- Comment \"@codex review\".\n\nIf Codex has suggestions, it will comment; otherwise it will react with 👍.\n\n\n\n\nCodex can also answer questions or update the PR. Try commenting \"@codex address that feedback\".\n            \n</details>",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/riatzukiza/knoxx/pull/18#pullrequestreview-5540129138",
+    "pull_request_url": "https://api.github.com/repos/riatzukiza/knoxx/pulls/18",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/riatzukiza/knoxx/pull/18#pullrequestreview-5540129138"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/riatzukiza/knoxx/pulls/18"
+      }
+    },
+    "submitted_at": "2026-10-15T21:24:58Z",
+    "commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1"
+  },
+  "sourceCarrier": {
+    "capturePhase": "agent-F42-native-snapshot-recovery-Knoxx18-historical-negative-five-full-root-records-v1",
+    "captureStartedAt": "2026-10-16T00:41:25.291762+00:00",
+    "carrierBytes": 54580,
+    "carrierSHA256": "b459fe9fc81a4c07bf3374d72fd77278a47bad45c868426f83313f4b7671c788",
+    "nativeCommand": [
+      "/usr/bin/env",
+      "-u",
+      "GH_TOKEN",
+      "-u",
+      "GITHUB_TOKEN",
+      "gh",
+      "api",
+      "repos/riatzukiza/knoxx/pulls/18/reviews/5540129138/comments?per_page=100"
+    ]
+  },
+  "reviewCarrier": {
+    "capturePhase": "agent-F42-native-snapshot-recovery-Knoxx18-historical-negative-review5540129138-v1",
+    "captureStartedAt": "2026-10-16T00:41:25.311478+00:00",
+    "carrierBytes": 2461,
+    "carrierSHA256": "17dc292184f51a81c42a798123288d60b2e24b8971cc5ddd1e6c2b2556e93e3a",
+    "nativeCommand": [
+      "/usr/bin/env",
+      "-u",
+      "GH_TOKEN",
+      "-u",
+      "GITHUB_TOKEN",
+      "gh",
+      "api",
+      "repos/riatzukiza/knoxx/pulls/18/reviews/5540129138"
+    ]
+  },
+  "findings": [
+    {
+      "id": 4288436904,
+      "node_id": "PRRC_kwDOU4VeEc7_nFqo",
+      "pull_request_review_id": 5540129138,
+      "path": "kanban/tasks/knoxx-backend-lint-zero-warning-gate.md",
+      "commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1",
+      "user": {
+        "login": "chatgpt-codex-connector[bot]",
+        "id": 199175422,
+        "node_id": "BOT_kgDOC98s_g",
+        "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+        "type": "Bot"
+      },
+      "body": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Enable the required linters before accepting zero warnings**\n\nIn the reviewed tree, `backend/.clj-kondo/config.edn` does not enable `:missing-docstring`, `:unused-value`, `:shadowed-var`, `:used-underscored-binding`, `:warn-on-reflection`, `:unsorted-required-namespaces`, or `:refer`. By placing lint-policy changes outside this card while accepting a clean run of the current configuration as qualification, the gate can complete without checking the warning classes mandated by repository policy. Require these linters to be enabled by this integration or by an explicit prerequisite before treating zero diagnostics as completion.\n\nAGENTS.md reference: [AGENTS.md:L18-L20](https://github.com/riatzukiza/knoxx/blob/62a4017a4f341921f749a4b8f1c2a283cac539f1/AGENTS.md#L18-L20)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "created_at": "2026-10-15T21:24:58Z",
+      "updated_at": "2026-10-15T21:24:59Z",
+      "html_url": "https://github.com/riatzukiza/knoxx/pull/18#discussion_r4288436904",
+      "author_association": "NONE",
+      "original_commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1"
+    },
+    {
+      "id": 4288436908,
+      "node_id": "PRRC_kwDOU4VeEc7_nFqs",
+      "pull_request_review_id": 5540129138,
+      "path": "kanban/tasks/knoxx-backend-lint-zero-warning-gate.md",
+      "commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1",
+      "user": {
+        "login": "chatgpt-codex-connector[bot]",
+        "id": 199175422,
+        "node_id": "BOT_kgDOC98s_g",
+        "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+        "type": "Bot"
+      },
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Add the mandated backend test build to acceptance**\n\nThe only backend test gate named here is `pnpm -C backend test:coverage`, whose runner compiles the distinct `test-ci` Shadow build; it does not execute the required `pnpm -C backend exec shadow-cljs compile test` command. Consequently, an integration can satisfy this checklist without running the repository-mandated backend CLJS test build. Add that exact command as a blocking acceptance gate rather than limiting further gates to those required by individual repairs.\n\nAGENTS.md reference: [AGENTS.md:L61-L65](https://github.com/riatzukiza/knoxx/blob/62a4017a4f341921f749a4b8f1c2a283cac539f1/AGENTS.md#L61-L65)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "created_at": "2026-10-15T21:24:58Z",
+      "updated_at": "2026-10-15T21:24:59Z",
+      "html_url": "https://github.com/riatzukiza/knoxx/pull/18#discussion_r4288436908",
+      "author_association": "NONE",
+      "original_commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1"
+    },
+    {
+      "id": 4288436913,
+      "node_id": "PRRC_kwDOU4VeEc7_nFqx",
+      "pull_request_review_id": 5540129138,
+      "path": "kanban/tasks/knoxx-backend-lint-zero-warning-gate.md",
+      "commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1",
+      "user": {
+        "login": "chatgpt-codex-connector[bot]",
+        "id": 199175422,
+        "node_id": "BOT_kgDOC98s_g",
+        "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+        "type": "Bot"
+      },
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Make test warnings block qualification**\n\nThis criterion requires `test:coverage` to pass but does not require that run to emit zero warnings. The inspected `backend/scripts/run-shadow-tests-coverage-ci.mjs` fails on a nonzero compile exit or failed/missing test counters, so a Shadow compiler warning can still leave the command successful; a repair that warns only in the test build can therefore satisfy this checklist. Require zero warnings in the retained test output, not merely a passing exit and counters.\n\nAGENTS.md reference: [AGENTS.md:L17-L19](https://github.com/riatzukiza/knoxx/blob/62a4017a4f341921f749a4b8f1c2a283cac539f1/AGENTS.md#L17-L19)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "created_at": "2026-10-15T21:24:58Z",
+      "updated_at": "2026-10-15T21:24:59Z",
+      "html_url": "https://github.com/riatzukiza/knoxx/pull/18#discussion_r4288436913",
+      "author_association": "NONE",
+      "original_commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1"
+    },
+    {
+      "id": 4288436921,
+      "node_id": "PRRC_kwDOU4VeEc7_nFq5",
+      "pull_request_review_id": 5540129138,
+      "path": "kanban/tasks/knoxx-backend-lint-zero-warning-gate.md",
+      "commit_id": "8f0e58db49bafec4a25c5eac161f72076d3ab263",
+      "user": {
+        "login": "chatgpt-codex-connector[bot]",
+        "id": 199175422,
+        "node_id": "BOT_kgDOC98s_g",
+        "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+        "type": "Bot"
+      },
+      "body": "**<sub><sub>![P1 Badge](https://img.shields.io/badge/P1-orange?style=flat)</sub></sub>  Install the backend lint gate in CI**\n\nA captured one-off lint run is insufficient for this gate because the inspected `.github/workflows/ci.yml:134-135` runs only `lint:shared-markup`; it never invokes the backend's registered `lint` script. The card can therefore complete with zero diagnostics while later changes—and the eventual SDK candidate—receive no full-backend warning enforcement in CI. Require the existing `pnpm -C backend lint` command to run as a blocking CI step as part of qualification.\n\nAGENTS.md reference: [AGENTS.md:L17-L19](https://github.com/riatzukiza/knoxx/blob/62a4017a4f341921f749a4b8f1c2a283cac539f1/AGENTS.md#L17-L19)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "created_at": "2026-10-15T21:24:59Z",
+      "updated_at": "2026-10-15T21:24:59Z",
+      "html_url": "https://github.com/riatzukiza/knoxx/pull/18#discussion_r4288436921",
+      "author_association": "NONE",
+      "original_commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1"
+    },
+    {
+      "id": 4288436930,
+      "node_id": "PRRC_kwDOU4VeEc7_nFrC",
+      "pull_request_review_id": 5540129138,
+      "path": "kanban/tasks/knoxx-backend-lint-zero-warning-gate.md",
+      "commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1",
+      "user": {
+        "login": "chatgpt-codex-connector[bot]",
+        "id": 199175422,
+        "node_id": "BOT_kgDOC98s_g",
+        "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+        "type": "Bot"
+      },
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Run the registered extern-boundary gate**\n\nThis criterion claims that included repairs retain the raw-JavaScript extern boundary, but none of the required commands runs the repository's existing `pnpm -C backend boundary:check` gate from `backend/package.json:28`. A lint cleanup can move or add a generic extern import in an ordinary domain/infra namespace while still passing clj-kondo, typecheck, and coverage, so the checklist can qualify a boundary regression. Add `boundary:check` as a blocking integration command and retain its result with the other evidence.\n\nAGENTS.md reference: [AGENTS.md:L28-L33](https://github.com/riatzukiza/knoxx/blob/62a4017a4f341921f749a4b8f1c2a283cac539f1/AGENTS.md#L28-L33)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "created_at": "2026-10-15T21:24:59Z",
+      "updated_at": "2026-10-15T21:24:59Z",
+      "html_url": "https://github.com/riatzukiza/knoxx/pull/18#discussion_r4288436930",
+      "author_association": "NONE",
+      "original_commit_id": "62a4017a4f341921f749a4b8f1c2a283cac539f1"
+    }
+  ]
+}

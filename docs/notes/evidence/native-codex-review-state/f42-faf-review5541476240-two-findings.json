@@ -1,0 +1,81 @@
+{
+  "representation": "Full actual native finding bodies and selected native custody fields on faf; root4701 pending contract and4710 retained snapshots.",
+  "findings": [
+    {
+      "native": {
+        "pull_request_review_id": 5541476240,
+        "id": 4289584701,
+        "node_id": "PRRC_kwDOU4VJMM7_rd49",
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "commit_id": "faf1cc383e8082f386c5bf441eff5034d5b850b6",
+        "original_commit_id": "faf1cc383e8082f386c5bf441eff5034d5b850b6",
+        "user": {
+          "login": "chatgpt-codex-connector[bot]",
+          "id": 199175422,
+          "node_id": "BOT_kgDOC98s_g",
+          "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+          "type": "Bot"
+        },
+        "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Define how the decoder recognizes pending status**\n\nWhen a native panel is still running, this decoder contract permits only the literal `completed`, yet the later acceptance criteria require shared qualified facts to represent pending/live work for request deduplication. An implementation following this parser criterion would classify a pending status as unsupported or unknown, so it cannot reliably satisfy the specified pending-state path. Define the accepted pending representation and its fixtures, or explicitly identify the separate qualified source that supplies this state.\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+        "created_at": "2026-10-16T00:17:55Z",
+        "updated_at": "2026-10-16T00:17:55Z",
+        "html_url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289584701",
+        "author_association": "NONE"
+      },
+      "sourceCarrier": {
+        "capturePhase": "agent-F42-native-pending-snapshot-source-recovery-finding4289584701-v1",
+        "captureStartedAt": "2026-10-16T00:39:23.516518+00:00",
+        "carrierBytes": 10839,
+        "carrierSHA256": "74972e79704c874ba9a15c194d5282f7d5cb844bccc405f63e147d7564ffde5b",
+        "nativeCommand": [
+          "/usr/bin/env",
+          "-u",
+          "GH_TOKEN",
+          "-u",
+          "GITHUB_TOKEN",
+          "gh",
+          "api",
+          "repos/riatzukiza/foresight/pulls/comments/4289584701"
+        ]
+      }
+    },
+    {
+      "native": {
+        "pull_request_review_id": 5541476240,
+        "id": 4289584710,
+        "node_id": "PRRC_kwDOU4VJMM7_rd5G",
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "commit_id": "faf1cc383e8082f386c5bf441eff5034d5b850b6",
+        "original_commit_id": "faf1cc383e8082f386c5bf441eff5034d5b850b6",
+        "user": {
+          "login": "chatgpt-codex-connector[bot]",
+          "id": 199175422,
+          "node_id": "BOT_kgDOC98s_g",
+          "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+          "type": "Bot"
+        },
+        "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Check in the native snapshots before implementation**\n\nThis claims the full observations are retained, but a repo-wide search for both panel IDs and `codex-review-state:v1` finds only this prose and its duplicated task-creation event, not the raw bodies, payloads, or immutable fixture files. Because the card explicitly acknowledges that the public panel is mutable while the parser contract later depends on exact objects, field order, timestamps, and byte limits, implementation cannot reproduce or validate the observed format after the comment changes. Check in byte-exact snapshots with provenance or digests before readiness instead of treating the mutable provider response as the retained input.\n\nAGENTS.md reference: [AGENTS.md:L89-L91](https://github.com/riatzukiza/foresight/blob/faf1cc383e8082f386c5bf441eff5034d5b850b6/AGENTS.md#L89-L91)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+        "created_at": "2026-10-16T00:17:55Z",
+        "updated_at": "2026-10-16T00:17:55Z",
+        "html_url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289584710",
+        "author_association": "NONE"
+      },
+      "sourceCarrier": {
+        "capturePhase": "agent-F42-native-pending-snapshot-source-recovery-finding4289584710-v1",
+        "captureStartedAt": "2026-10-16T00:39:23.509523+00:00",
+        "carrierBytes": 4577,
+        "carrierSHA256": "b17bcb7ef84ae1720bd9da99f3879da2cc5c57f5c21ac3517d559c2564660cd7",
+        "nativeCommand": [
+          "/usr/bin/env",
+          "-u",
+          "GH_TOKEN",
+          "-u",
+          "GITHUB_TOKEN",
+          "gh",
+          "api",
+          "repos/riatzukiza/foresight/pulls/comments/4289584710"
+        ]
+      }
+    }
+  ]
+}
