@@ -297,6 +297,168 @@ selected consumed input affected the actual permitted artifact/action. Keep
 that obligation in VerifiedOutcomeObservation; do not move it into a telemetry
 flag or award feedback when the reference is merely valid.
 
+### SubmissionObservation: exact original input and delivery state
+
+The selected submission value is the proposed closed SubmissionObservation
+below. Knoxx owns capture and source protection; OpenPlanner validates the
+qualified normalized observation. This is the existing packet's source/interface
+plan, not an exported function or installed observer. At selectedb6,
+IAgentSession promises only a Promise from send-user-message! and an opaque
+current-turn; its wrapper forwards to sendUserMessage. Promise resolution and
+persisted run status do not define provider acceptance or successful work.
+
+SubmissionObservation has exactly eleven keys:
+
+| Key | Required value |
+| --- | --- |
+| version | Literal `knoxx-recall-submission-observation/1`. |
+| observation-id | Actual accepted Clio event ID for this observation under the selected supplied-UUID admission/readback contract. |
+| runtime-occurrence-id | Original occurrence from the existing Knoxx event producer for this particular planned call; distinct from the canonical observation ID, session/currentTurn and query hash. |
+| turn | Exact three-key original turn projection selected above. |
+| original-scope | Complete OriginalScope, matching actual original principal/actor/project and disclosure sources. |
+| recall-binding | Complete seven-key RecallSubmissionBinding below. |
+| caller-input | Complete InputObservation for the captured assembled caller content. Prepared records establish only that candidate; dispatched records must establish these exact bytes were actually passed. Boundary is `caller-content`. |
+| provider-input | Exactly `{:status :not-observed}` or `{:status :observed :input InputObservation}`. Observed input has boundary `provider-request`. |
+| delivery | Exactly one DeliveryObservation variant below. |
+| execution | Exactly `{:status :not-established}` or `{:status :observed :source-events [...]}` with complete independently qualified native execution observations for this occurrence/input. |
+| original-sources | Complete typed NativeEvents in actual qualified causal order: original read/disclosure, caller/input/delivery sources and this observation event. No IDs-only substitute or caller-supplied trusted flag. |
+
+The observation event's semantic payload is its version plus the eight matching
+runtime-occurrence/turn/scope/recall/caller/provider/delivery/execution facts.
+It excludes observation-id and original-sources. Its accepted envelope supplies
+observation-id and can appear in original-sources without containing this
+record. Earlier read/input/delivery events do not contain this later observation,
+reference or outcome. Nested source events must precede their consumer; no
+self-reference, forward-reference or hash cycle repairs missing provenance.
+The canonical typed payload/producer mapping and actual source protection stay
+in the already required native catalog selection before Ready. This introduces
+no new ID generator or event-admission implementation.
+
+RecallSubmissionBinding has exactly `field-request-id`, `native-graph-recall-id`,
+`graph-revision`, `projection-revision`, `field-scope-revision`, `field-revision`
+and `field-snapshot-hash`. These retain their actual distinct qualified native
+roles and agree with the original Field read, admission and outer snapshot.
+Complete original read/custody remains in the source events and retained
+reference, not replaced by this projection. Every item below must resolve to
+its actual included memory and source at that same read.
+
+InputObservation has exactly `boundary`, `encoding-revision`, `byte-count`,
+`sha256` and `recalled-items`. Boundary is `caller-content` or `provider-request`;
+byte-count is the actual finite Count and sha256 hashes those exact original
+input bytes. The source owner supplies the qualified encoding and original bytes
+behind its protected seam. Plain text caller input uses scalar UTF-8 without
+trimming or normalization. Multipart caller encoding must be explicitly
+selected from its owner representation. Provider input binds the actual
+outbound body under its transport owner's byte representation, never a later
+reserialization. There is no JSON/pr-str, media-URL fetch or binary64 fallback.
+Owner encoding, decoding/path semantics and native transport source mapping are
+part of this same packet's codec/catalog selections before Ready.
+
+Recalled-items is the complete ordered vector of actual recalled text
+occurrences in that input. Retain repeats when a memory was actually rendered
+twice; the occurrence identity includes its actual input path and byte range.
+Each entry has exactly `memory-binding`, `content-hash`, `content-path`,
+`start-byte`, `end-byte`, `representation-hash` and `derivation`:
+
+- Memory-binding is the complete original memory variant; content-hash is its
+  independently bound original memory byte hash, not the prompt excerpt hash.
+- Content-path is a finite vector of exact string keys/nonnegative Count
+  indices locating an actual text value under the qualified owner decoding.
+  It is data, never an executable accessor. The half-open byte range must be
+  nonempty, in bounds and aligned to scalar UTF-8 boundaries in that value.
+  Representation-hash hashes exactly that range.
+- Check the path/range against protected original input bytes, never a console
+  log, regenerated prompt or current memory lookup. Preserve the actual owner's
+  content order then offsets, without inventing a map-key traversal order.
+  Reject ambiguous overlaps or unsupported native representations; these are
+  text coordinates, not graph paths or physical motion coordinates.
+- Derivation is exactly `{:kind :verbatim}`, requiring equality to the entire
+  original memory bytes; or `{:kind :excerpt :source-start-byte N
+  :source-end-byte M}`, requiring equality to that exact original scalar UTF-8
+  slice; or `{:kind :transformed :source-event NativeEvent}`. The transformed
+  branch retains the full original qualified renderer observation binding
+  actual original memory, complete source/configuration/inputs and output
+  bytes. Its exact source-specific payload belongs to the native catalog
+  selection and independent qualification. A producer assertion or matching
+  hash alone is insufficient; a transformation is not relabeled an excerpt.
+
+The protected checker follows the transport owner's actual adaptation between
+caller and provider inputs, retaining splitting, transformation, truncation or
+omission. Whole-input hashes may legitimately differ. A caller item dropped
+from the provider input proves no provider inclusion; an unrelated equal string
+or copied item label supplies no source binding. Before a reference can supply
+feedback evidence, its selected item must have at least one independently
+verified occurrence in the actual observed provider input. An excerpt retains
+its complete original memory binding without claiming all original bytes were
+sent. No original/private prompt body is copied into this normalized record.
+
+DeliveryObservation is a closed tagged union:
+
+| status | Exact additional keys and obligation |
+| --- | --- |
+| prepared | None. Assembly/capture only; actual send is not established. |
+| host-dispatched | `source-events`: complete actual caller-dispatch NativeEvents for this occurrence and caller input. This establishes no provider acceptance. |
+| accepted | `source-events`: complete actual qualified transport/provider-owner acceptance NativeEvents bound to this occurrence, original request and exact observed provider input, with independently matching caller-to-provider custody. |
+| rejected | `source-events`: complete actual owner refusal observations proving this request was definitely rejected before acceptance/execution. Generic exceptions, timeouts or missing output do not suffice. |
+| unknown | `reason`, exactly `transport`, `timeout`, `crash-gap`, `missing-proof` or `unsupported-proof`; and `source-events`, the complete available matching NativeEvents, possibly empty. Neither acceptance, rejection nor termination is inferred. |
+
+Prepared requires provider-input not-observed and execution not-established.
+Execution observed is permitted only with accepted delivery and the matching
+actual provider input; every nonaccepted delivery keeps execution
+not-established. Host-dispatched, rejected and unknown may retain an actually
+observed outbound body without implying acceptance. Reject contradictory
+combinations rather than silently upgrading a weaker record.
+
+Accepted requires provider-input observed. A fulfilled SDK Promise, stream-open,
+HTTP200, echoed request or success label alone cannot supply acceptance. Qualify
+actual owner request/response or accepted-execution hooks and their input
+correspondence; no custom vendor API, model route or credential is implied.
+Execution observed retains source-specific owner evidence and exact matching;
+it asserts no successful artifact/destination outcome by itself. Otherwise
+execution stays not-established, including when delivery is accepted. The
+independent contribution/outcome witness still proves actual consumed input
+and successful permitted artifact/destination matching. Status alone earns no
+feedback.
+
+Each observation is immutable. A later delivery/execution observation has a
+new actual observation event for the same original runtime occurrence, turn,
+read and caller input, retaining the earlier complete sources. Input changes or
+another real call require a distinct occurrence even when query/session repeat.
+Never patch an earlier event, upgrade a prepared record by projection, or
+rewrite a retained proposal/reference with a later observation. Before using
+an accepted observation, independently examine complete current owner history
+for conflicting/revoked/mismatched proof, and require current authority for all
+retained items and the whole input/evidence audience. Chronology alone cannot
+resolve contradictory source facts.
+
+Use the existing runtime occurrence producer once for an actual planned call;
+retain its original returned map on durable-write retries. Qualify its linkage
+to actual canonical Clio admission without equating the IDs. Intent persistence
+does not prove dispatch. A crash between actual send and durable observation
+leaves uncertain delivery; never replay the provider call, publication or maker
+turn to manufacture evidence. Capture preserves existing disclosure checks and
+active-turn/terminal ownership, adds no second send and implements no scheduler
+or provider policy. Missing qualified observation refuses feedback evidence;
+it does not silently change ordinary maker lifecycle/failure behavior.
+
+All original input/proof bytes remain behind their qualified owner seam. Facts,
+identifiers, digests and every NativeEvent retain their actual audience rules.
+No full prompt, credential, raw auth-context, SDK session/currentTurn object,
+callback or private proof path enters this Field-retained normalized record.
+Every copy counts under existing input/state/history/work limits; this plan
+proves no positive fit or cap increase.
+
+The same packet's after-Ready implementation/fixture plan exercises the actual
+caller and isolated deterministic transport owner: exact captured bytes passed
+once; repeated equal queries in distinct occurrences; prepared-only/dispatch;
+actual acceptance; definite refusal versus transport/timeout/crash uncertainty;
+Promise completion without acceptance; transformed or dropped provider context;
+verbatim/excerpt/qualified transformed mapping; stale/denied/mixed scope and
+whole-evidence audience; conflicting later history; durable observation retry
+without a second send; exact/one-over bounds; and contribution proof unchanged.
+It requires neither another natural maker turn nor custom live vendor calls.
+Full physical composition and served B3 remain their existing later proof.
+
 ### Retention, source qualification and negative fixtures
 
 The reference and all nested original values remain unchanged through intent

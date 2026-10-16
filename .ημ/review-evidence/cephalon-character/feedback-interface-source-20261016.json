@@ -367,5 +367,89 @@
       "liveB1B2B3": 0
     },
     "scope": "Existing feedback5 outer layout and original source roles only; no new points/dependency/card/state or runtime mutation; own implementation after lawful Ready and qualified before consumption."
+  },
+  "submissionObservationSelection": {
+    "tier": "Proposed normalized source contracts and fixture plan; not actual capture/export, Ready or execution proof",
+    "observedAt": "2026-10-16T21:14:49.360837+00:00",
+    "rootParent": "e7c5d945ab8a172dacec0ca5b066689fb0b3b4ce",
+    "version": "knoxx-recall-submission-observation/1",
+    "exactKeys": [
+      "version",
+      "observation-id",
+      "runtime-occurrence-id",
+      "turn",
+      "original-scope",
+      "recall-binding",
+      "caller-input",
+      "provider-input",
+      "delivery",
+      "execution",
+      "original-sources"
+    ],
+    "nestedKeys": {
+      "recall-binding": [
+        "field-request-id",
+        "native-graph-recall-id",
+        "graph-revision",
+        "projection-revision",
+        "field-scope-revision",
+        "field-revision",
+        "field-snapshot-hash"
+      ],
+      "input": [
+        "boundary",
+        "encoding-revision",
+        "byte-count",
+        "sha256",
+        "recalled-items"
+      ],
+      "item": [
+        "memory-binding",
+        "content-hash",
+        "content-path",
+        "start-byte",
+        "end-byte",
+        "representation-hash",
+        "derivation"
+      ]
+    },
+    "deliveryVariants": [
+      "prepared",
+      "host-dispatched",
+      "accepted",
+      "rejected",
+      "unknown"
+    ],
+    "executionVariants": [
+      "not-established",
+      "observed"
+    ],
+    "additionalKnoxxSource": {
+      "repository": "riatzukiza/knoxx",
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/shape/agent.cljs",
+      "bytes": 4229,
+      "sha256": "bfe86670b5984d60d7b11fe9f11737611336a7ddc4a70107a64e397bf51ca86f",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    "priorSourceUse": [
+      "Already retained b6 turn/extern/eta_mu/prompt/runtime-occurrence producer sources; no new API inferred",
+      "Actual IAgentSession promises only a Promise; current-turn is opaque; wrapper forwards raw sendUserMessage",
+      "Prepared telemetry and Promise completion cannot establish original provider input, acceptance or successful creative outcome"
+    ],
+    "sourceOrdering": "Canonical observation payload contains version plus eight matching fact fields, excluding own observation-id and original-sources; earlier sources cannot contain later consumers; runtime occurrence and canonical Clio identity remain distinct.",
+    "sourceProtection": "Original body/caller adaptation and full renderer source-specific payload qualify behind current protected owner seams; caller bindings, hashes or generic successful status do not authenticate observations.",
+    "remainingBeforeReady": [
+      "Native typed payload/producer catalog and source-specific renderer/transport mapping",
+      "Exact qualified multipart/provider encoding, decoder/path semantics and original/current owner protection source/interface/fixture selections",
+      "Other owner leaves, payload codec, complete outcome/witness/storage receipt, reinforcement/read policy and source/build plan already retained in this same packet"
+    ],
+    "scope": "Existing feedback5 original submission evidence only; no custom vendor API/model route/credential, new retry/scheduler/lifecycle behavior, points/dependency/card/state or runtime operation.",
+    "credit": {
+      "nativeApprovalRound": 0,
+      "ready": false,
+      "implementedCapture": false,
+      "servedB1B2B3": 0
+    }
   }
 }
