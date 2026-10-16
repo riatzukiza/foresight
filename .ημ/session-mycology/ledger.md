@@ -2023,3 +2023,13 @@
   spore: none
   receipt-refs: a7325910-e1ec-4dcd-921d-562550d7b910,9f1c7e24f6d5e058e07d2f46ed7c0fb4994ea002
   note: Answer deployment status from fresh serving identities first. Local backend tests and planning settlements are real progress but grant no CMS rollout or publishing-journey proof. A generic native review does not answer a scoped rejection question; preserve the unresolved finding and stop repeating the unsupported route. Keep native approval, full artifact custody, source-specific invocation contracts and protected adoption distinct. Preserve checksummed subsets and ZIP extras separately; do not invent coverage or transfer newer discovery/time-budget semantics to an older reusable source. NativeSM known null-cwd failure remains unretried; portablecandidate0/no spore.
+
+- ts: 2026-10-16T02:14:29.834998+00:00
+  session: /home/err/spaces/foresight
+  task: Answer current Website/CMS deployment status from fresh production identities
+  p-efficiency: 0.68
+  p-friction: 0.45
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: c92acd99-6fba-45d7-be92-bea4a238266a
+  note: Lead with shipped Website versus incomplete replacement CMS, then distinguish local tests, source review, staging qualification and verified publishing behavior. Preserve the full CMS release requirements and dated anonymous OpenCode route; avoid implying that passing health checks demonstrate authenticated editing or translation. NativeSM known null-cwd failure remains unretried; portablecandidate0/no spore.
