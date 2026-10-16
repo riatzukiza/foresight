@@ -1,0 +1,177 @@
+{
+  "version": "atomic-authority-routing-source-inspection/1",
+  "epistemicTier": "observed-source-bindings-and-native-readback; derived-routing-correction",
+  "baseRepository": "riatzukiza/foresight",
+  "baseBranch": "codex/cephalon-personal-review",
+  "baseSHA": "535636ab6ca626c16537837872e06379e28b9cfb",
+  "sourceBindings": [
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/domain/auth/axxium.cljs",
+      "blob": "f4df80cfd75a0712448adc6f9b13a29762e09f8a",
+      "bytes": 864,
+      "sha256": "bdb1eee788cb3962f6b701c555663c4353b5471329f0870b70b115a26d3a9f3c",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/infra/auth/axxium.cljs",
+      "blob": "27f93b19140a923419d4658331a67aea367339d5",
+      "bytes": 3918,
+      "sha256": "e68074225ab3cacbb8b0e0000b4ba3a99b6907fbfb8da3a74aa988508f6c51a0",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/infra/character/authority.cljs",
+      "blob": "b16fe412c115e5008589dae118a6c11baba76f2e",
+      "bytes": 2311,
+      "sha256": "1180262275377df776b5866913e92ffeeeb93bf8eff2ddac0f4526b5f217ae39",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/infra/db/policy.cljs",
+      "blob": "dc595a90032b53d7cda082a7e82283c34fff9d88",
+      "bytes": 72282,
+      "sha256": "744809fbbe1ab6010a617c1aa07e299aec06faf11195c5ea6abfaafa35637b66",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/extern/mongo.cljs",
+      "blob": "1c5eb618187c70f320755421ec6825023ab75496",
+      "bytes": 16999,
+      "sha256": "66b4aa148a3cd0583f0f37eeb28c0ce4f3e6fe8ab614240c7ef9f795beeb6476",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/infra/stores/mongo_policy_actor_credentials.cljs",
+      "blob": "237a57def00079692460adfc849ad87d978a2ce2",
+      "bytes": 23402,
+      "sha256": "defa0fd82d2a97f3c7a13279e774f652d29c6f2c0906995b09987214b2265d1e",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/infra/stores/mongo_policy_roles.cljs",
+      "blob": "41d222b572b6adbdae35fe95992c42f1eb9a9a96",
+      "bytes": 17640,
+      "sha256": "5913726a3c569966295027da79862304fd97b58897922986a92ec5f57b5ab544",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "b6f4dfbb4a006934a191c8fb3f26f270579e7e62",
+      "path": "backend/src/cljs/knoxx/backend/infra/stores/mongo_policy_tools.cljs",
+      "blob": "f66d39371da6bf9e69230901625dbc63d5603b3b",
+      "bytes": 14052,
+      "sha256": "3ba9ea4ff73481335ab332c91b601ad2cff8861ff4f93aba700a33351ce444f9",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/knoxx"
+    },
+    {
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/openplanner-sdk/src/mongodb.ts",
+      "blob": "e48b21c872f03d5f48552eacf43a5ea7e2594db7",
+      "bytes": 59499,
+      "sha256": "7f1cd8ce4d5f5e9fc824ebf55a4fc41ac4519d903d76b2578aeb665e56c57e00",
+      "committedAndWorkingBytesEqual": true,
+      "repository": "riatzukiza/openplanner"
+    }
+  ],
+  "sourceChangeBindings": [
+    {
+      "path": "docs/agile/kanban/commit-encounter-graph-field-and-effect-atomically-with-independent-readback-a5597ff2.md",
+      "beforeSHA256": "eed0776b50506586cb4ceef58fa5a1df4389ce0f9682e93b3dacaf481ae9bd3e",
+      "afterSHA256": "a57e3775b8586d572459f6b5fcf2798c851026a452f640365722999a6c9ea040",
+      "bytes": 24548,
+      "frontmatterBytesExact": true,
+      "historicalCommentSuffixBytesExact": true
+    },
+    {
+      "path": "docs/agile/kanban/deliver-outcome-attributed-once-only-graph-feedback.md",
+      "beforeSHA256": "b05fc6a3e03d45d678a2f6739d2411e0a7ea510dfb97dafffa149ac504181a84",
+      "afterSHA256": "37a85d39daacefb45a562d248f179709ffbe75a3c156cdb13ba9a08e06950a66",
+      "bytes": 15316,
+      "frontmatterBytesExact": true,
+      "historicalCommentSuffixBytesExact": true
+    },
+    {
+      "path": "docs/notes/2026-10-14-cephalon-finite-delivery-plan.md",
+      "beforeSHA256": "415d119240fc453fd0b74012952edcfdac924e045991296a76139cb0c3be7344",
+      "afterSHA256": "71b37bb1d5fb5c311c200b775fbbdb7d1faf829c42a488326f6c0f272c37f672",
+      "bytes": 100419
+    }
+  ],
+  "nativeReader": {
+    "bundleSHA256": "85369213440634989365f75929045d36eb69b6c6b1e7679f68d483374a0d526b",
+    "readsChangedTrackedDiff": false,
+    "tasks": [
+      {
+        "id": "2f4421ee-2e48-405e-96d2-fee1a5597ff2",
+        "exit": 0,
+        "stderrBytes": 0,
+        "rawReadbackSHA256": "f7e20bb80cf25e51e3310f7d0d6703aae0b844d5cc2c63d0ae5d6fcba73619b0",
+        "frontmatter": {
+          "category": "kanban",
+          "labels": "cephalon, finite-slice, planning",
+          "dependency": [
+            "1eb3aa1f-53d2-4a6a-828c-57ffe990e23b",
+            "a0176ec0-0616-4d7f-86e1-e6cf9a160a7a",
+            "ba078119-482c-49dc-bd18-c2dfcaad9024"
+          ],
+          "parent": "ff3e628b-cd5c-4a89-a397-42cc88dbde70",
+          "type": "task",
+          "write-id": "1792057105833-0.mfkni7hkcvolvuzyi",
+          "points": "8",
+          "title": "Commit encounter graph field and effect atomically with independent readback",
+          "priority": "P1",
+          "status": "incoming",
+          "epic": "63a0e4ff-353f-4c90-ab8a-7241d958d54c",
+          "uuid": "2f4421ee-2e48-405e-96d2-fee1a5597ff2",
+          "created_at": "2026-10-15T00:01:59.171Z"
+        }
+      },
+      {
+        "id": "deliver-outcome-attributed-once-only-graph-feedback",
+        "exit": 0,
+        "stderrBytes": 0,
+        "rawReadbackSHA256": "73e27a8478d8ffa5fa7282ab59877a97d3e5dad60f7ea8ef5a880673d1fd4b3a",
+        "frontmatter": {
+          "category": "kanban",
+          "labels": "cephalon, finite-slice, planning",
+          "dependency": [
+            "1eb3aa1f-53d2-4a6a-828c-57ffe990e23b"
+          ],
+          "parent": "a1e9d6af-0233-4dcb-9677-5c76fa9a2701",
+          "type": "task",
+          "write-id": "1792057103386-0.db6w8umg8velvo7cz5j",
+          "points": "5",
+          "title": "Deliver outcome-attributed once-only graph feedback",
+          "priority": "P1",
+          "status": "incoming",
+          "epic": "63a0e4ff-353f-4c90-ab8a-7241d958d54c",
+          "uuid": "deliver-outcome-attributed-once-only-graph-feedback",
+          "created_at": "2026-10-15T01:01:02.839Z"
+        }
+      }
+    ]
+  },
+  "scope": "Existing atomic8 and feedback5 current body ownership correction; preserve complete owner-native decisions/versions and protection through computation/commit/exposure",
+  "qualificationLimits": [
+    "No native grant/version/fence is supplied by this document or metadata.",
+    "Source/shape selection and existing upstream prerequisites precede Ready; owning implementation and executed qualification follow Ready before consumption/Done.",
+    "Actual transaction/client/session/authority coupling remains unresolved; existing planned adapter work alone does not create a new prerequisite.",
+    "No operational metadata, historical comment or provenance row was edited.",
+    "No Field transition, storage transaction, model, provider, runtime, deployment or social behavior was executed.",
+    "Local source review is not a native provider approval or review round."
+  ]
+}

@@ -232,8 +232,8 @@ alternate board validator or completion surface.
    a verified observed downstream outcome and its attribution to the included
    recalled item under current stored authority and stable recall/outcome/effect
    identity. Immediately before feedback commit independently refresh the stored
-   principal and Axxium-owned decision/grant/sharing/visibility/policy/scope
-   versions. Bind their qualified protection and expected reinforcement revision
+   principal and actual identity/application owner decision/grant/sharing/visibility/policy/scope
+   versions under the ownership contract below. Bind their qualified protection and expected reinforcement revision
    THROUGH commit. Revocation/change before or between final read and commit
    must leave reinforcement and effect receipts unchanged. Unsupported owner
    protection refuses; stale local policy cannot substitute.
@@ -344,8 +344,8 @@ alternate board validator or completion surface.
    and compare the attributable before/after delta with that baseline. Commit actual author/topic/reply
    provenance, visibility/source/UTC, graph projection, field and unique effect
    against expected revisions in one transaction. Immediately before entry,
-   independently reload the actual stored principal and Axxium-owned current
-   decision/policy-grant/sharing/visibility/scope versions. The qualified owner
+   independently reload the actual stored principal and qualified current identity/application
+   owner decision/policy-grant/sharing/visibility/scope versions under the ownership contract below. The qualified owner
    seam protects those versions THROUGH commit alongside storage revisions.
    Test revocation after baseline, during computation and between final read
    and commit while graph/field revisions remain equal: no component writes.
@@ -634,7 +634,7 @@ source and fixture success cannot substitute for that accepted goal evidence.
 
 ## Current causal/authority/failure refinements — 2026-10-15
 
-Feedback commits require an independently refreshed current Axxium decision and principal/grant/sharing/visibility/policy/scope versions through the qualified owning commit seam. Bind those versions and expected reinforcement revision to the transaction; revocation between final read and commit aborts with no reinforcement/effect mutation. Stale local/payload authority or an unsupported owner commit guarantee refuses. Exercise private/shared revocation before final read and between read/commit with zero mutation; audit/refusal provenance stays distinct.
+Feedback commits require independently refreshed current qualified identity/application owner decisions and principal/grant/sharing/visibility/policy/scope versions through the qualified owning commit seam under the ownership contract below. Bind those versions and expected reinforcement revision to the transaction; revocation between final read and commit aborts with no reinforcement/effect mutation. Stale local/payload authority or an unsupported owner commit guarantee refuses. Exercise private/shared revocation before final read and between read/commit with zero mutation; audit/refusal provenance stays distinct.
 
 For the selected-encounter mood path, carry the independently read atomic field output's exact revision/checkpoint hash plus encounter/content/effect identity through typed transition trace, persisted/read-back mood and the actual consumer context. Require equality to that selected atomic field output at transition and before actual attention/recall; a correctly persisted mood from a stale or unrelated field cannot satisfy B2 or the combined B1/B2/B3 proof. Hold encounter/appraisal correct while substituting stale/unrelated field revisions to prove refusal before mutation/influence. Quiet decay remains its separately typed path.
 
@@ -783,3 +783,69 @@ comments and earlier-version receipts are unchanged. The same owner sources,
 finite bounds,14 execution75 and native Incoming status remain; these are
 source qualification requirements, not an implemented codec/rebuild or live
 proof. No new points, dependencies, policy, provider, paid or runtime scope.
+
+
+## Current authority ownership and transaction coupling — 2026-10-16
+
+This corrects the active atomic8 and feedback5 ownership wording. Axxium owns
+canonical identity/authentication and applicable capabilities through the
+existing Knoxx facade. Knoxx owns stored membership, roles and application
+source/resource policy. Preserve its actual trusted server-event route; do not
+invent a remote login. Each actual owner must still supply its complete current
+decision and native version binding for the real principal, action, resource,
+scope and retained causal influences. No Field policy evaluator, replacement
+grant version or new authority service is selected.
+
+This agrees with the inspected routing in Field's proposed
+`authority-owner-routing-port`; a local proposal is not a qualified runtime
+dependency or transferred approval. Actual owner-source and loaded-code
+qualification remain required.
+
+### Inspected seams and required coupling
+
+| Selected immutable source | Existing interface | Remaining qualification |
+| --- | --- | --- |
+| Knoxx `b6f4dfbb4a006934a191c8fb3f26f270579e7e62`, `infra.character.authority/resolve-current!` and `infra.db.policy/resolve-agent-actor-context!` | Stored actor/membership and current application context | Complete decisions/native versions for every actual action/resource; context or its fingerprint alone is insufficient |
+| Same Knoxx, `extern.mongo/with-transaction!` | Session-owned callback with `:update-one!` and `:update-many!`, snapshot/majority concerns and transient-conflict retries | Actual graph/field/effect operations and authority protection in the same qualified commit boundary; this map supplies neither Field reads nor the complete authority fence |
+| Same Knoxx, `infra.stores.mongo-policy-actor-credentials/reconcile-bootstrap-local-password!` | Credential reconciliation writes its bootstrap lock in its transaction | That lock belongs to its named credential workflow; it is not Field permission/version protection |
+| Same Knoxx, `infra.stores.mongo-policy-roles` and `mongo-policy-tools` replace-set writers | Separate delete/insert membership/role permission and tool-policy writes | Actual cooperation of every authority change capable of invalidating this transaction; a pre-read or snapshot concern does not prove it |
+| OpenPlanner `3ab5ffbb6e34a2ee3607a74bf421785d47d5391d`, SDK `mongodb.ts/openMongoDB` and `MongoConnection` | Own Mongo client/database/graph collection handles | Actual shared client/session/authority binding for all components; shared URI or collection names do not establish a shared transaction |
+
+### Existing packet implementation and future controls
+
+Atomic8 already owns protected transaction, recovery and independent readback.
+Its adapter must bind complete current identity/application authority through
+computation and commit to the expected graph/field revisions, immutable effect
+identity and exact candidate. Denial, revocation or version conflict at an
+existing required boundary leaves all components at their independently read
+baselines. Result exposure remains protected and independently authorized.
+Feedback5 retains its own writer/receipt qualification under the same owner split.
+
+Qualify the chosen transaction API's actual operations and callback/retry
+semantics against existing finite caller, time, work and idempotence bounds.
+Do not put provider/model calls, publication, irreversible persistence or
+non-idempotent effect counting into a callback merely because its driver may
+retry it. Every actual callback/retry must stay within applicable existing
+bounds; no new retry allowance or deadline is introduced. Unsupported control
+refuses rather than counting only an outer invocation.
+
+Required RED controls retain cached application allow/current owner denial;
+required identity/capability denial; authority changes during computation and
+between final read/commit while storage revisions match; change before result
+exposure; a nonparticipating authority writer; mismatched actual client/session;
+callback re-entry/conflict; and uncertain commit. Require unchanged state, no
+partial exposure, truthful cause and independent component readback. A qualified
+current-owner same-boundary transaction/exposure positive remains mandatory.
+These are future owning source tests, not executed proof.
+
+Existing source/interface/fixture planning and real upstream prerequisites
+precede lawful Ready. The packet's own implementation and executed qualification
+follow Ready before consumption/Done. Unfinished assigned adapter work alone
+creates no external prerequisite. Whether existing owner primitives suffice
+without an owner-side extension remains unresolved; a genuinely new prerequisite
+outside the accepted milestone still needs its explicit scope decision.
+
+Historical native comments and ledger entries remain verbatim. Both tasks keep
+their UUIDs, frontmatter, estimates, dependencies, statuses and guarantees. This
+correction supplies no Ready, approval, runtime protection, release permission
+or live B1/B2/B3 completion.
