@@ -2297,3 +2297,14 @@
 - Lesson: retain diagnostic state at the failing synchronous boundary, preserve the original error, and test both normal and catch-only reporting causally. Treat a legitimately mutable noninput foreign index as an explicit bounded observation instead of chasing a historical fingerprint; keep actual inputs exact and the earlier outer failure visible.
 - Better path: one reviewed full command after owned runtime closure, inspect original outcome and narrow causal evidence before any retry. Differentiate controller lineage and application lineage before adopting equivalence exclusions.
 - One dependency BUILD is live under agent-owned session50585 at this checkpoint; no LINT or full57 success is claimed. No model, globalPM2, account, public-review, publication or production mutation occurred.
+
+
+### 2026-10-16 — production deployment progress: precise browser cause and composed controller
+
+- Outcome: PROGRESS. Website serving verified; replacement CMS undeployed; full goal active. Actual dependency TEST15/BUILD19/LINT15 passes qualified, CMS diagnostic registered175 pass, and private ordinary CMS/controller merge completed.
+- Observed friction: 3/5. Multiple tooling boundary mistakes (quoted Git path display, an overescaped inline hunk reader, a NUL metadata split, and cross-agent process-handle custody) could have obscured actual source/runtime outcomes. Retained each failed attempt; used Git NUL reads, actual private-copy git apply, separately captured read-only corrections and same-agent handle custody. None became a product/test pass or an automatic runtime replay.
+- Learning: Native terminal status and owned cleanup are distinct from observation/tool-handle availability. The exact v9 first-failure snapshot now establishes B-request-before-observer ordering; it does not establish stale DOM or decide product versus harness repair. Keep the original scenario contract while investigating.
+- Reuse: The existing draft5 source/test/fixture artifacts match current integration inputs, so preserve original RED/GREEN intent and apply only reviewed ABI/import hygiene derivatives. A prepared normal frozen install is distinct from its future actual result; preserve historical warning counts.
+- Evidence: /home/err/.local/share/openhax-codex/20261010/review-state/root-CMS-controller-composition-and-final-browser-cause-20261016T2310Z-v1/EVIDENCE-bindings-v1.json
+- Spore: 0 new candidates; no promotion. Existing incubating records remain unchanged.
+- Next: Resolve the final browser scenario's intended request/commit ordering before another browser run or deployment.
