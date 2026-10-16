@@ -60,7 +60,7 @@ This pre-deployment feedback packet qualifies its writer/readback logic using bo
 
 ## Current authority through feedback commit — 2026-10-15
 
-Immediately before the feedback transaction, independently reload the actual stored principal and Axxium-owned current decision/policy-grant, sharing/visibility and scope versions for this outcome/action/item. Require authorization for both reinforcement and its immutable effect receipt. Bind the qualified owning decision/version protection and expected reinforcement revision into the commit condition; revoke/change between final read and commit must abort with no reinforcement/effect mutation. A matching reinforcement revision alone, payload authority or stale local policy is insufficient. Unsupported Axxium commit protection refuses before writing. Private/shared tests revoke/change authority before final read and between final read/commit, independently read back unchanged reinforcement and effect receipts, and retain separate truthful audit/refusal evidence.
+Immediately before the feedback transaction, independently reload the actual stored principal and qualified current identity/application owner decisions, native policy/grant, sharing/visibility and scope versions for this outcome/action/item under the ownership contract below. Require authorization for both reinforcement and its immutable effect receipt. Bind the qualified owning decision/version protection and expected reinforcement revision into the commit condition; revoke/change between final read and commit must abort with no reinforcement/effect mutation. A matching reinforcement revision alone, payload authority or stale local policy is insufficient. Unsupported owning-authority commit protection refuses before writing. Private/shared tests revoke/change authority before final read and between final read/commit, independently read back unchanged reinforcement and effect receipts, and retain separate truthful audit/refusal evidence.
 
 ## Independent recalled-item contribution
 
@@ -71,6 +71,37 @@ The pre-deployment writer qualifies the witness shape, source/identity/authority
 ## Proposed re-estimation after current review
 
 Re-estimate this Incoming packet from the earlier provisional 3 to5 before Ready:2 for bounded independent recalled-item contribution witness admission and its positive/unused-item/forgery negatives;3 for the actual once-only feedback writer, current authorization-through-commit, outcome matching and independent recovery/readback. Both separately evidenced work packages must pass. This accounts for the existing usefulness/attribution requirement; it adds no social behavior, generic quality judge or model route.
+
+
+## Current authority ownership and transaction coupling — 2026-10-16
+
+For this selected Knoxx composition, Axxium owns canonical identity,
+authentication and applicable capabilities through the existing Knoxx facade.
+Knoxx owns its stored membership, roles and application source/resource policy.
+Consume each actual owner's current decisions and native policy/grant versions
+for the real stored principal, action, resource and scope. Identity success
+cannot copy remote application privileges into local roles. Preserve the actual
+trusted server-event authority route without fabricating a remote login.
+
+The complete binding must remain protected through causal computation, commit
+and authorized result exposure. Before commit, missing, denied, changed, stale
+or unsupported protection refuses with reinforcement and effect receipt at their
+independently read baselines and no partial exposure. After an acknowledged
+commit, a later authority change or unestablished exposure protection blocks
+unauthorized result exposure; preserve the actual committed outcome and use
+independently authorized complete matching readback or quarantine. An uncertain
+commit retains its uncertainty until that existing recovery establishes the
+outcome; neither branch claims a rollback or unchanged persistence without
+proof, remints the effect identity, or replays a write to manufacture success.
+A role map, updated_at, derived fingerprint, matching storage revision or
+await-boundary check cannot substitute for qualified protection. Retain every
+existing revocation/race, rollback, uncertain-commit, privacy and
+independent-readback control.
+
+The [finite plan's transaction coupling section](../../notes/2026-10-14-cephalon-finite-delivery-plan.md#current-authority-ownership-and-transaction-coupling--2026-10-16)
+names actual inspected seams and their remaining qualification. This repairs
+existing source/interface planning; no frontmatter, estimate, dependency, status
+or readiness approval changes. Historical native comments below remain verbatim.
 
 ---
 Incoming retained acceptance correction for Codex7f roots4277980876/0879: exact actual provider prompt must contain matching authorized node/edge path and traversal trace/revision as model-visible scope-safe context; logs/content-only cannot satisfy B3. Reinforcement requires a verified observed downstream outcome attributed to the recalled item; inclusion only identifies it and no-outcome inclusion must write nothing. No new prerequisite scope; retain native status/points/relationships.

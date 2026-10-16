@@ -32,7 +32,7 @@ Complete the larger original story, bypass native predecessor/review gates, infe
 
 ## Acceptance criteria
 
-1. Consume immutable authorized prior snapshot, admitted encounter and validated uncommitted candidate projection. Independently refresh the Axxium-owned current authorization decision/policy-grant version for the actual stored principal/action/resource/scope and validate that version through commit; stale local policy or unsupported Axxium commit protection refuses before any component write. Independently read and record actual persisted graph/field before-state contents, hashes and revisions before writing; require the candidate's frozen prior contents/hash to match, otherwise refuse. Expected revisions or an in-memory snapshot alone are not baseline proof. Atomically commit graph projection, physical field checkpoint and immutable unique effect receipt against those expected revisions; compare independently loaded after-state with the captured before-state to prove the attributable delta.
+1. Consume immutable authorized prior snapshot, admitted encounter and validated uncommitted candidate projection. Independently refresh the qualified current identity and application authorization decisions/native policy-grant versions from their actual owners for the stored principal/action/resource/scope, under the ownership contract below. Validate the complete binding through commit; stale local policy or unsupported owner commit protection refuses before any component write. Independently read and record actual persisted graph/field before-state contents, hashes and revisions before writing; require the candidate's frozen prior contents/hash to match, otherwise refuse. Expected revisions or an in-memory snapshot alone are not baseline proof. Atomically commit graph projection, physical field checkpoint and immutable unique effect receipt against those expected revisions; compare independently loaded after-state with the captured before-state to prove the attributable delta.
 2. Persist actual author/topic/reply relationships with visibility/source/UTC, canonical identity/content revisions and separate salience. For existing unchanged memories, freeze actual canonical content bytes and canonical content-embedding bytes/revisions before writing; independently read them back afterward and require byte/embedding equality while only separately versioned salience/field state changes. Do not rewrite or regenerate embeddings of unchanged content. A newly admitted encounter may create its explicitly bound canonical record once under the admission contract; that does not permit rewriting existing unchanged memories. Preserve absent/unknown relationships explicitly and commit only evidenced edges. Negative fixtures and independent readback verify no absent topic/reply/author edge was synthesized. Independently read relationships, graph/field pair and effect back; acknowledgement/HTTP200/map alone is insufficient.
 3. Unsupported transactions refuse before any graph, physical-field or immutable effect-receipt write. Independently capture prior effect absence or exact existing receipt bytes as well as graph/field baselines. Inject precommit failure after each staged component in every ordering of the three components; graph, field and effect receipt must all remain exactly at their prior contents/revisions. No orphan success receipt or dedup reservation can survive a failed transaction. Separate append-only audit/refusal provenance may record failure without success/effect credit. Acknowledged/uncertain commits independently recover all three complete matching components without redepositing; partial/missing receipt state quarantines before retry. Sequential durable writes do not qualify as atomic.
 4. Absence permits same-identity retry under same expected revisions; identity/hash/scope/revision conflict refuses. Partial or inconsistent recovered components quarantine. Duplicate admission/replay cannot multiply graph, field or effect persistence. Feedback idempotence belongs to the independent feedback and served-proof cards; their implementation is not a completion prerequisite here.
@@ -62,7 +62,7 @@ Before physical candidate projection, bind one new-encounter content embedding i
 
 ## Canonical authority and independent verification boundary — 2026-10-15
 
-Atomic authorization consumes an Axxium-owned current decision and its policy/grant version through the qualified Axxium interface, bound to actual stored principal, action, resource and permitted scope. Validate that Axxium decision/version through commit under its qualified admission/fencing seam, not just an OpenPlanner cached grants/policy snapshot or a locally minted version. Reload actual owner inputs and refuse revocation/mismatch/unsupported commit protection before any graph/field/effect component commits. Use the actual qualified Axxium shape/field names at the adapter; this declaration invents no competing authorization implementation. A fixture with stale local grants but current Axxium denial must write nothing.
+Atomic authorization consumes the complete current identity/application owner decisions and native policy/grant versions specified below, bound to the actual stored principal, action, resource and permitted scope. Validate the binding through commit under qualified owner admission/protection; an OpenPlanner cached grants/policy snapshot or locally minted version is insufficient. Reload actual owner inputs and refuse revocation, mismatch or unsupported protection before any graph/field/effect component commits. Use actual qualified owner shapes without a second policy evaluator. Cached application allow with current Knoxx application denial, or required Axxium identity/capability denial, must write nothing.
 
 Source completion here uses bounded isolated actual-storage fixture transactions
 and independent readback. It completes the source/fixture portion of B1; actual
@@ -81,6 +81,37 @@ Atomic packet `2f4421ee-2e48-405e-96d2-fee1a5597ff2` owns the finite availabilit
 
 Re-estimate this Incoming packet from the earlier provisional5 to8 before Ready:2 for the qualified versioned provider-failure classifier and disclosure controls at the existing provider seam;1 for the finite two-call/10000ms availability and authorized resubmission caller fixture;5 for the graph/field/effect atomic transaction, authority-through-commit, failure recovery and complete independent readback. Record separate source/test artifacts and refusal exits for each work package. Classifier and caller qualification precede transaction integration; neither alone completes this packet. Preserve all existing category precedence, unavailable-state and once-only transaction obligations, with no automatic retry engine or new provider route.
 
+
+
+## Current authority ownership and transaction coupling — 2026-10-16
+
+For this selected Knoxx composition, Axxium owns canonical identity,
+authentication and applicable capabilities through the existing Knoxx facade.
+Knoxx owns its stored membership, roles and application source/resource policy.
+Consume each actual owner's current decisions and native policy/grant versions
+for the real stored principal, action, resource and scope. Identity success
+cannot copy remote application privileges into local roles. Preserve the actual
+trusted server-event authority route without fabricating a remote login.
+
+The complete binding must remain protected through causal computation, commit
+and authorized result exposure. Before commit, missing, denied, changed, stale
+or unsupported protection refuses with graph, field and effect receipt at their
+independently read baselines and no partial exposure. After an acknowledged
+commit, a later authority change or unestablished exposure protection blocks
+unauthorized result exposure; preserve the actual committed outcome and use
+independently authorized complete matching readback or quarantine. An uncertain
+commit retains its uncertainty until that existing recovery establishes the
+outcome; neither branch claims a rollback or unchanged persistence without
+proof, remints the effect identity, or replays a write to manufacture success.
+A role map, updated_at, derived fingerprint, matching storage revision or
+await-boundary check cannot substitute for qualified protection. Retain every
+existing revocation/race, rollback, uncertain-commit, privacy and
+independent-readback control.
+
+The [finite plan's transaction coupling section](../../notes/2026-10-14-cephalon-finite-delivery-plan.md#current-authority-ownership-and-transaction-coupling--2026-10-16)
+names actual inspected seams and their remaining qualification. This repairs
+existing source/interface planning; no frontmatter, estimate, dependency, status
+or readiness approval changes. Historical native comments below remain verbatim.
 
 ---
 Initial Incoming planning-body authoring corrected the relative plan reference to ../../notes/2026-10-14-cephalon-finite-delivery-plan.md before first commit. Canonical UUID/parent/epic/dependencies/estimate unchanged; independent planning review and lawful readiness remain required.
