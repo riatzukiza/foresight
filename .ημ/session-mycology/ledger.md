@@ -2219,3 +2219,13 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#cb5bea3a-c649-4464-b574-5a0433aec9ed
   note: Bind source tests and frontend artifacts to the same revision; a successful library build does not create a serving document. Qualify actual native merge parents/tree after gate application. Preserve failed review protocol traces separately from anonymous model-route health and host memory pressure. Whole append histories survive integration; no stale approval or process ownership inference. No spore or production completion claim.
+
+- ts: 2026-10-16T18:26:35.188302+00:00
+  session: /home/err/spaces/foresight
+  task: Merge reviewed Services prerequisite, repair native browser URL boundary and restore owned workflow test dependencies
+  p-efficiency: 0.79
+  p-friction: 0.68
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#6a867651-a5a2-457e-96c7-fa7bfa64cf5d
+  note: Complete workspace dependency availability requires a fully owned frozen install; four shared links were insufficient and allowed a cache write. Preserve raw owned additions before exact cleanup. Validate native tool response shapes at the boundary, restore mandatory process selectors from canonical argv, and inspect semantic test counters despite process success. Capture actual commit/effect before assertions and use NUL Git paths for Unicode ledgers. The model test cleanup must complete before declaring success. Global watcher interruption remains a separate explicit choice. Existing skills cover these mechanics; no spore promotion or production completion claim.
