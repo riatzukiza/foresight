@@ -2062,3 +2062,12 @@
   spore: none
   receipt-refs: receipts.edn#447721b0-6f8e-46ea-9ce1-126f9541d18f
   note: Preserve dated source-specific evidence: e5d real local auth/Mongo 60 PASS plus one direct-seeded boundary; d2 Services fixes settled and checks passed while latest-head review remains pending; 05:14 production still serves approved Website and older Knoxx. Discover the current anonymous OpenCode free MiMo route dynamically; no inference credentials or OpenRouter account changes. Portable candidate0, no spore.
+- ts: 2026-10-16T05:51:06.780586456Z
+  session: /home/err/spaces/foresight
+  task: Verified Services preparatory merge, upstream PR98 adoption and isolated CMS source composition
+  p-efficiency: 0.8
+  p-friction: 0.3
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#33a330f6-b91a-42de-a864-107d11916cfb
+  note: Keep actual exact-head review and merge separate from upstream adoption and rollout. PR4 merged63b; exactd2 source upstreamPR98 OPEN with independent CI/reviews live. Gateway/authba48 composition preserves histories but needs combined qualification. Anonymous dynamic OpenCode MiMo route, no account/key/provider changes. Retained REST404 and normal SSH recovery, no replay. Full product/lint/staging/translation-publication journey remains. Portable candidate0, no spore.
