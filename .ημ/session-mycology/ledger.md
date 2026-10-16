@@ -2229,3 +2229,13 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#6a867651-a5a2-457e-96c7-fa7bfa64cf5d
   note: Complete workspace dependency availability requires a fully owned frozen install; four shared links were insufficient and allowed a cache write. Preserve raw owned additions before exact cleanup. Validate native tool response shapes at the boundary, restore mandatory process selectors from canonical argv, and inspect semantic test counters despite process success. Capture actual commit/effect before assertions and use NUL Git paths for Unicode ledgers. The model test cleanup must complete before declaring success. Global watcher interruption remains a separate explicit choice. Existing skills cover these mechanics; no spore promotion or production completion claim.
+
+- ts: 2026-10-16T19:05:44.804032+00:00
+  session: codex:website-cms-production-deploy
+  task: Current-source CMS auth qualification and retained browser failure; ETA358 planning publication
+  p-efficiency: 0.78
+  p-friction: 0.67
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#843452d9-7fec-4bd4-a607-cbe03f8f9fbd
+  note: Source custody must hash Git120000 link bytes without following directory targets. Corrected read-only guard passed before one explicit runtime continuation. Real auth and exact cleanup passed, but the generic browser failure discarded case/operation evidence; keep the cause UNKNOWN and add bounded redacted diagnostics before another runtime. Do not infer passing cases from absent results. The previous status-only turn was no progress; this turn produced new runtime evidence and an actual planning commit/PR. Keep unrelated quality prerequisites explicit and preserve all native quotas, failed captures, original source/build identities and foreign work.
