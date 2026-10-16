@@ -2134,3 +2134,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#ac19d6f4-3391-4988-b45d-dbdcfa185526
   note: Production Website healthy and replacementCMS unpromoted. Preserve terminal model factory and review-path failures without credentials inference or blind retries. Docker created endpoints attach only after start; local max-file1 requires explicit compressfalse. Frozen extracted Python functions need free-name review: http.client module name can be shadowed by def http before any request. Anonymous dynamically discovered OpenCodeMiMo needs no OpenRouter key/account/provider change. Keep source-specific tests separate from full release and genuine translated publication proof. Portablecandidate0/no spore.
+- ts: 2026-10-16T11:32:23.392472494Z
+  session: /home/err/spaces/foresight
+  task: Record fresh serving, accepted Spanish job, current quality and anonymous review routing
+  p-efficiency: 0.8
+  p-friction: 0.5
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#19441b26-93df-4e31-b7b4-5f6893de5281
+  note: Keep serving health, local provider readiness, accepted admission, execution history and release qualification distinct. Qualified dual-model Qwen1024 now completes13.873s; same-document admission accepted1/dispatched1 with considered2. A verifier predicate failure consumed its cap; never readmit because evidence is incomplete. A queued persisted head alone is not proof of never-started; inspect authoritative history. Preserve globalquality and currentreview BLOCKED failures; local pathrepair and6suitePASS do not transfer hosted approvals. Use explicit named note destinations and retain prefixes/inodes/modes plus unrelated root state. Anonymous dynamic OpenCodeMiMo needs noOpenRouterkey/account/provider change. Candidate0; no spore.
