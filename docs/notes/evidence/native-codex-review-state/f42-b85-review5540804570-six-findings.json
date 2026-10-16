@@ -1,0 +1,255 @@
+{
+  "representation": "Full original GQL finding body values and selected native identity/head/review/time fields. Duplicate source diff hunks omitted from this projection; complete carrier retained by its digest.",
+  "sourceCarrier": {
+    "bytes": 89233,
+    "sha256": "a3753e0094ba9fe3f0c5f64d89e4beab7dd76b4257f10e3dcd41addd9c18d5d1"
+  },
+  "review": {
+    "id": "PRR_kwDOU4VJMM8AAAABSkH32g",
+    "databaseId": 5540804570,
+    "state": "COMMENTED",
+    "body": "<!-- codex-review-receipt:v1 -->\n\n\n### 💡 Codex Review\n\nHere are some automated review suggestions for this pull request.\n\n**Reviewed commit:** `b85d6bb0f5`\n    \n\n<details> <summary>ℹ️ About Codex in GitHub</summary>\n<br/>\n\n[Your team has set up Codex to review pull requests in this repo](https://chatgpt.com/codex/cloud/settings/general). Reviews are triggered when you\n- Open a pull request for review\n- Mark a draft as ready\n- Comment \"@codex review\".\n\nIf Codex has suggestions, it will comment; otherwise it will react with 👍.\n\n\n\n\nCodex can also answer questions or update the PR. Try commenting \"@codex address that feedback\".\n            \n</details>",
+    "submittedAt": "2026-10-15T22:41:35Z",
+    "createdAt": "2026-10-15T22:41:35Z",
+    "updatedAt": "2026-10-15T22:41:36Z",
+    "url": "https://github.com/riatzukiza/foresight/pull/42#pullrequestreview-5540804570",
+    "author": {
+      "login": "chatgpt-codex-connector",
+      "__typename": "Bot"
+    },
+    "authorAssociation": "NONE",
+    "commit": {
+      "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+    }
+  },
+  "findings": [
+    {
+      "threadID": "PRRT_kwDOU4VJMM6s_lNq",
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Prevent pre-stage pending state from deduplicating the request**\n\nWhen a native automatic run is already pending before the User stage begins, this criterion allows that old state to suppress the first request for the new stage indefinitely. The next criterion chronology-binds completions, but no equivalent boundary is specified for pending-state deduplication; require and test that only pending work created after, or explicitly associated with, the current stage/request can suppress an invitation.\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "nativeComment": {
+        "id": "PRRC_kwDOU4VJMM7_pQ66",
+        "databaseId": 4289007290,
+        "createdAt": "2026-10-15T22:41:35Z",
+        "updatedAt": "2026-10-15T22:41:36Z",
+        "url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289007290",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot"
+        },
+        "authorAssociation": "NONE",
+        "commit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "originalCommit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "pullRequestReview": {
+          "id": "PRR_kwDOU4VJMM8AAAABSkH32g",
+          "databaseId": 5540804570,
+          "state": "COMMENTED",
+          "commit": {
+            "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+          }
+        }
+      },
+      "nativeThread": {
+        "id": "PRRT_kwDOU4VJMM6s_lNq",
+        "isResolved": false,
+        "isOutdated": false,
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "line": 128,
+        "originalLine": 128
+      }
+    },
+    {
+      "threadID": "PRRT_kwDOU4VJMM6s_lNt",
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Link the adapter to the existing reviewer-admission lane**\n\nLeaving this card without a formal relationship makes the board treat it as an orphan even though `b0bb29f3-56d5-5c7c-9a1e-f4a1989e952f.md` already owns the canonical `.agents` gate and exact-head completed no-issues verdicts under parent `4f5cb66d-4fd2-47cf-92cc-2185b057a889`. Add the appropriate parent/dependency relationship through Rheos so the broader admission card cannot be completed independently while this required Codex-format slice remains unfinished.\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "nativeComment": {
+        "id": "PRRC_kwDOU4VJMM7_pQ7B",
+        "databaseId": 4289007297,
+        "createdAt": "2026-10-15T22:41:35Z",
+        "updatedAt": "2026-10-15T22:41:36Z",
+        "url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289007297",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot"
+        },
+        "authorAssociation": "NONE",
+        "commit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "originalCommit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "pullRequestReview": {
+          "id": "PRR_kwDOU4VJMM8AAAABSkH32g",
+          "databaseId": 5540804570,
+          "state": "COMMENTED",
+          "commit": {
+            "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+          }
+        }
+      },
+      "nativeThread": {
+        "id": "PRRT_kwDOU4VJMM6s_lNt",
+        "isResolved": false,
+        "isOutdated": false,
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "line": 70,
+        "originalLine": 70
+      }
+    },
+    {
+      "threadID": "PRRT_kwDOU4VJMM6s_lNx",
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Specify the parser bounds in the acceptance contract**\n\nThe criterion requires explicit bounds and rejection of oversized payloads but never states the maximum body, payload, field, or whitespace sizes. Consequently, incompatible implementations with materially different resource and compatibility behavior could all claim acceptance, and the oversized fixtures have no predetermined expected boundary. Record concrete byte/length limits in the card and contract before readiness.\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "nativeComment": {
+        "id": "PRRC_kwDOU4VJMM7_pQ7G",
+        "databaseId": 4289007302,
+        "createdAt": "2026-10-15T22:41:35Z",
+        "updatedAt": "2026-10-15T22:41:36Z",
+        "url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289007302",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot"
+        },
+        "authorAssociation": "NONE",
+        "commit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "originalCommit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "pullRequestReview": {
+          "id": "PRR_kwDOU4VJMM8AAAABSkH32g",
+          "databaseId": 5540804570,
+          "state": "COMMENTED",
+          "commit": {
+            "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+          }
+        }
+      },
+      "nativeThread": {
+        "id": "PRRT_kwDOU4VJMM6s_lNx",
+        "isResolved": false,
+        "isOutdated": false,
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "line": 109,
+        "originalLine": 109
+      }
+    },
+    {
+      "threadID": "PRRT_kwDOU4VJMM6s_lN1",
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Split the two format adapters before committing to three points**\n\nThe three-point estimate bundles two independently deliverable changes: the structured panel decoder integrated into status, completion, availability, and request state, and the unrelated classic-receipt wrapper hydration path. Each also carries separate law/policy/CLI fixtures plus contract and documentation work, so the current stop condition discovers an oversized story only after implementation starts. Split the classic wrapper from structured-state admission, or re-estimate the combined card during planning.\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "nativeComment": {
+        "id": "PRRC_kwDOU4VJMM7_pQ7L",
+        "databaseId": 4289007307,
+        "createdAt": "2026-10-15T22:41:35Z",
+        "updatedAt": "2026-10-15T22:41:36Z",
+        "url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289007307",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot"
+        },
+        "authorAssociation": "NONE",
+        "commit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "originalCommit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "pullRequestReview": {
+          "id": "PRR_kwDOU4VJMM8AAAABSkH32g",
+          "databaseId": 5540804570,
+          "state": "COMMENTED",
+          "commit": {
+            "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+          }
+        }
+      },
+      "nativeThread": {
+        "id": "PRRT_kwDOU4VJMM6s_lN1",
+        "isResolved": false,
+        "isOutdated": false,
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "line": 186,
+        "originalLine": 186
+      }
+    },
+    {
+      "threadID": "PRRT_kwDOU4VJMM6s_lN4",
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Define the missing false/true verdict**\n\nThe acceptance contract classifies `false/false`, `true/true`, and `true/false` but leaves the fourth boolean combination, `false/true`, undefined. If that combination is malformed or impossible it must be rejected explicitly; otherwise the decoder or one of its consumers can fall through to a different default, and there is no deterministic expected result for a fixture covering it.\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "nativeComment": {
+        "id": "PRRC_kwDOU4VJMM7_pQ7Q",
+        "databaseId": 4289007312,
+        "createdAt": "2026-10-15T22:41:35Z",
+        "updatedAt": "2026-10-15T22:41:36Z",
+        "url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289007312",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot"
+        },
+        "authorAssociation": "NONE",
+        "commit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "originalCommit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "pullRequestReview": {
+          "id": "PRR_kwDOU4VJMM8AAAABSkH32g",
+          "databaseId": 5540804570,
+          "state": "COMMENTED",
+          "commit": {
+            "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+          }
+        }
+      },
+      "nativeThread": {
+        "id": "PRRT_kwDOU4VJMM6s_lN4",
+        "isResolved": false,
+        "isOutdated": false,
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "line": 120,
+        "originalLine": 120
+      }
+    },
+    {
+      "threadID": "PRRT_kwDOU4VJMM6s_lN9",
+      "body": "**<sub><sub>![P2 Badge](https://img.shields.io/badge/P2-yellow?style=flat)</sub></sub>  Move implementation evidence after the ready transition**\n\nRequiring the card to remain in planning until both Rheos readiness and subsequent implementation evidence creates a sequencing deadlock: the repository process requires the lawful ready transition before RED/GREEN implementation begins. End the planning hold once the reviewed card is lawfully ready, then make implementation evidence gate the later testing/review transitions instead.\n\nAGENTS.md reference: [AGENTS.md:L164-L166](https://github.com/riatzukiza/foresight/blob/b85d6bb0f5b43183b05b68e603e899f09235a645/AGENTS.md#L164-L166)\n\nUseful? React with 👍 / 👎.\n\n<!-- codex-code-review-finding:v1 -->",
+      "nativeComment": {
+        "id": "PRRC_kwDOU4VJMM7_pQ7X",
+        "databaseId": 4289007319,
+        "createdAt": "2026-10-15T22:41:35Z",
+        "updatedAt": "2026-10-15T22:41:36Z",
+        "url": "https://github.com/riatzukiza/foresight/pull/42#discussion_r4289007319",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot"
+        },
+        "authorAssociation": "NONE",
+        "commit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "originalCommit": {
+          "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+        },
+        "pullRequestReview": {
+          "id": "PRR_kwDOU4VJMM8AAAABSkH32g",
+          "databaseId": 5540804570,
+          "state": "COMMENTED",
+          "commit": {
+            "oid": "b85d6bb0f5b43183b05b68e603e899f09235a645"
+          }
+        }
+      },
+      "nativeThread": {
+        "id": "PRRT_kwDOU4VJMM6s_lN9",
+        "isResolved": false,
+        "isOutdated": false,
+        "path": "docs/agile/kanban/recognize-native-codex-review-state-without-losing-negative-or-scope-guards-56baeb5f.md",
+        "line": 151,
+        "originalLine": 151
+      }
+    }
+  ]
+}

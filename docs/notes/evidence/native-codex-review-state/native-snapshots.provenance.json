@@ -1,0 +1,244 @@
+{
+  "artifactType": "immutable retained native structured-review input snapshots, not an event ledger or parser implementation",
+  "sourcePlanningHead": "faf1cc383e8082f386c5bf441eff5034d5b850b6",
+  "snapshots": [
+    {
+      "artifact": "docs/notes/evidence/native-codex-review-state/eta24-completed-no-findings-6201584645.body.md",
+      "bodyUTF8Bytes": 1162,
+      "bodySHA256": "9b9587105c921cee77b3852d57fd25c29e7596b5c5dcd40a973d386cbb52c9d2",
+      "representation": "Exact native JSON body value re-encoded as UTF8; no normalization or added newline",
+      "nativeMetadataProjection": {
+        "url": "https://api.github.com/repos/riatzukiza/eta-mu/issues/comments/6201584645",
+        "html_url": "https://github.com/riatzukiza/eta-mu/pull/24#issuecomment-6201584645",
+        "issue_url": "https://api.github.com/repos/riatzukiza/eta-mu/issues/24",
+        "id": 6201584645,
+        "node_id": "IC_kwDOU4VdxM8AAAABcaSsBQ",
+        "user": {
+          "login": "chatgpt-codex-connector[bot]",
+          "id": 199175422,
+          "node_id": "BOT_kgDOC98s_g",
+          "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+          "type": "Bot"
+        },
+        "created_at": "2026-10-15T20:26:44Z",
+        "updated_at": "2026-10-15T20:46:35Z",
+        "author_association": "NONE",
+        "performed_via_github_app": {
+          "id": 1144995,
+          "slug": "chatgpt-codex-connector",
+          "node_id": "A_kwHOAOQ6Gs4AEXij",
+          "owner": {
+            "login": "openai",
+            "id": 14957082,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+            "url": "https://api.github.com/users/openai",
+            "type": "Organization"
+          },
+          "name": "ChatGPT Codex Connector"
+        }
+      },
+      "carrier": {
+        "capturePhase": "agent-native-Codex-summary-actual-ETA24-panel6201584645-readonly-v1",
+        "captureStartedAt": "2026-10-15T21:27:05.389463+00:00",
+        "carrierBytes": 4770,
+        "carrierSHA256": "a7cd7e3a54378cf43bca8caa69f89b8349e66da8814198eea79472266fb9e615",
+        "nativeCommand": [
+          "/usr/bin/env",
+          "-u",
+          "GH_TOKEN",
+          "-u",
+          "GITHUB_TOKEN",
+          "gh",
+          "api",
+          "repos/riatzukiza/eta-mu/issues/comments/6201584645"
+        ]
+      },
+      "observation": "REST full native comment at retained original observation",
+      "missingCustody": [],
+      "credit": "No review/approval/completed-round/readiness credit from a retained fixture. Missing custody remains UNKNOWN; later metadata does not fill earlier gaps."
+    },
+    {
+      "artifact": "docs/notes/evidence/native-codex-review-state/knoxx18-completed-findings-6202516315.body.md",
+      "bodyUTF8Bytes": 1158,
+      "bodySHA256": "8b414fd3b61fd453bb90d5771dd9c41d6c1e3d15d7107e13c98d6e260bde0d65",
+      "representation": "Exact native JSON body value re-encoded as UTF8; no normalization or added newline",
+      "nativeMetadataProjection": {
+        "url": "https://api.github.com/repos/riatzukiza/knoxx/issues/comments/6202516315",
+        "html_url": "https://github.com/riatzukiza/knoxx/pull/18#issuecomment-6202516315",
+        "issue_url": "https://api.github.com/repos/riatzukiza/knoxx/issues/18",
+        "id": 6202516315,
+        "node_id": "IC_kwDOU4VeEc8AAAABcbLjWw",
+        "user": {
+          "login": "chatgpt-codex-connector[bot]",
+          "id": 199175422,
+          "node_id": "BOT_kgDOC98s_g",
+          "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+          "type": "Bot"
+        },
+        "created_at": "2026-10-15T21:19:52Z",
+        "updated_at": "2026-10-15T21:25:05Z",
+        "author_association": "NONE",
+        "performed_via_github_app": {
+          "id": 1144995,
+          "slug": "chatgpt-codex-connector",
+          "node_id": "A_kwHOAOQ6Gs4AEXij",
+          "owner": {
+            "login": "openai",
+            "id": 14957082,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+            "url": "https://api.github.com/users/openai",
+            "type": "Organization"
+          },
+          "name": "ChatGPT Codex Connector"
+        }
+      },
+      "carrier": {
+        "capturePhase": "agent-native-Codex-summary-actual-Knoxx18-complete-comments-readonly-v1",
+        "captureStartedAt": "2026-10-15T21:27:05.354980+00:00",
+        "carrierBytes": 30691,
+        "carrierSHA256": "73f835d86871541cc9d6be8f1e8193708a6bbeec147d6b57c200f741412e514b",
+        "nativeCommand": [
+          "/usr/bin/env",
+          "-u",
+          "GH_TOKEN",
+          "-u",
+          "GITHUB_TOKEN",
+          "gh",
+          "api",
+          "--paginate",
+          "repos/riatzukiza/knoxx/issues/18/comments?per_page=100"
+        ]
+      },
+      "observation": "REST selected original native comment from retained complete-comments carrier",
+      "missingCustody": [],
+      "credit": "No review/approval/completed-round/readiness credit from a retained fixture. Missing custody remains UNKNOWN; later metadata does not fill earlier gaps."
+    },
+    {
+      "artifact": "docs/notes/evidence/native-codex-review-state/f42-b85-completed-findings-6203473947.body.md",
+      "bodyUTF8Bytes": 1163,
+      "bodySHA256": "edc237c7f0942bba82a9e33b5d79b9facbd4d0545b32414c245be35e15b0e131",
+      "representation": "Exact native JSON body value re-encoded as UTF8; no normalization or added newline",
+      "nativeMetadataProjection": {
+        "id": "IC_kwDOU4VJMM8AAAABccGAGw",
+        "databaseId": 6203473947,
+        "createdAt": "2026-10-15T22:20:56Z",
+        "updatedAt": "2026-10-15T22:41:39Z",
+        "url": "https://github.com/riatzukiza/foresight/pull/42#issuecomment-6203473947",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot"
+        },
+        "authorAssociation": "NONE"
+      },
+      "carrier": {
+        "carrierBytes": 89233,
+        "carrierSHA256": "a3753e0094ba9fe3f0c5f64d89e4beab7dd76b4257f10e3dcd41addd9c18d5d1",
+        "source": "Retained complete native PR42 GQL corpus at b85; acquisition timestamp not copied into this artifact"
+      },
+      "observation": "GQL selected original comment; preserve absent numeric/node Bot and App metadata",
+      "missingCustody": [
+        "native numeric Bot ID",
+        "native Bot node ID",
+        "performed-via App tuple"
+      ],
+      "credit": "No review/approval/completed-round/readiness credit from a retained fixture. Missing custody remains UNKNOWN; later metadata does not fill earlier gaps."
+    },
+    {
+      "artifact": "docs/notes/evidence/native-codex-review-state/f42-faf-running-6203473947.body.md",
+      "bodyUTF8Bytes": 1163,
+      "bodySHA256": "12d42e83a961f44da191ea6d0e0862afaaca748d52d9349b3fb7d3ca398b5e65",
+      "representation": "Exact native JSON body value re-encoded as UTF8; no normalization or added newline",
+      "nativeMetadataProjection": {
+        "databaseId": 6203473947,
+        "createdAt": "2026-10-15T22:20:56Z",
+        "author": {
+          "login": "chatgpt-codex-connector",
+          "__typename": "Bot",
+          "databaseId": 199175422
+        }
+      },
+      "carrier": {
+        "capturePhase": "agent-F42-faf-authorized-public-independent-stage-GQL-currenthead-readback-v1",
+        "captureStartedAt": "2026-10-16T00:14:53.040807+00:00",
+        "carrierBytes": 15243,
+        "carrierSHA256": "56e937e7374f4532a71404507b8c67db92c8ef74eea2d7968411561e0ca54698"
+      },
+      "observation": "GQL selected actual running comment, no metadata backfill",
+      "missingCustody": [
+        "native updatedAt",
+        "native Bot node ID",
+        "performed-via App tuple"
+      ],
+      "credit": "No review/approval/completed-round/readiness credit from a retained fixture. Missing custody remains UNKNOWN; later metadata does not fill earlier gaps."
+    },
+    {
+      "artifact": "docs/notes/evidence/native-codex-review-state/f42-faf-completed-findings-6203473947.body.md",
+      "bodyUTF8Bytes": 1160,
+      "bodySHA256": "62e7b61388a6ef24b1a1ef901e7ce0f0f4f4d8a2e202c0f4c520781010c8c1c2",
+      "representation": "Exact native JSON body value re-encoded as UTF8; no normalization or added newline",
+      "nativeMetadataProjection": {
+        "url": "https://api.github.com/repos/riatzukiza/foresight/issues/comments/6203473947",
+        "html_url": "https://github.com/riatzukiza/foresight/pull/42#issuecomment-6203473947",
+        "issue_url": "https://api.github.com/repos/riatzukiza/foresight/issues/42",
+        "id": 6203473947,
+        "node_id": "IC_kwDOU4VJMM8AAAABccGAGw",
+        "user": {
+          "login": "chatgpt-codex-connector[bot]",
+          "id": 199175422,
+          "node_id": "BOT_kgDOC98s_g",
+          "url": "https://api.github.com/users/chatgpt-codex-connector%5Bbot%5D",
+          "type": "Bot"
+        },
+        "created_at": "2026-10-15T22:20:56Z",
+        "updated_at": "2026-10-16T00:17:59Z",
+        "author_association": "NONE",
+        "performed_via_github_app": {
+          "id": 1144995,
+          "slug": "chatgpt-codex-connector",
+          "node_id": "A_kwHOAOQ6Gs4AEXij",
+          "owner": {
+            "login": "openai",
+            "id": 14957082,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+            "url": "https://api.github.com/users/openai",
+            "type": "Organization"
+          },
+          "name": "ChatGPT Codex Connector"
+        }
+      },
+      "carrier": {
+        "carrierBytes": 32087,
+        "carrierSHA256": "c2d40b125c9eaffe59a52b2b493af2867d57fd03ac04d3cc21646069c827947d",
+        "source": "Retained later complete native REST PR42 issue-comments carrier"
+      },
+      "observation": "REST later terminal comment; distinct observation, no backfill into running",
+      "missingCustody": [],
+      "credit": "No review/approval/completed-round/readiness credit from a retained fixture. Missing custody remains UNKNOWN; later metadata does not fill earlier gaps."
+    }
+  ],
+  "findingArtifacts": [
+    {
+      "path": "docs/notes/evidence/native-codex-review-state/knoxx18-review5540129138-five-findings.json",
+      "bytes": 11108,
+      "sha256": "4f64469df1362eac3b2cf89a82bb174c28a0a531496c502f0602dc859da591f4"
+    },
+    {
+      "path": "docs/notes/evidence/native-codex-review-state/f42-b85-review5540804570-six-findings.json",
+      "bytes": 13215,
+      "sha256": "9d59bc0eb93eab455b2bd1b415b6123ef93866c03c696329b6ffd404e1cb17ef"
+    },
+    {
+      "path": "docs/notes/evidence/native-codex-review-state/f42-faf-review5541476240-two-findings.json",
+      "bytes": 4898,
+      "sha256": "fdf8baecbe2ee41cb1453c4e08b962b309ffa6ff86915d11822de8a41bf4d5cf"
+    }
+  ],
+  "rules": [
+    "Payload field order/spacing/row/timestamps/Unicode stay in exact raw body files. Metadata projections explicitly distinguish REST/GQL and missing fields.",
+    "Original acquired carriers remain privately retained by SHA256 and source query; public links are navigation, not immutable evidence.",
+    "The five Knoxx roots were freshly recovered read-only from immutable review5540129138 at preparation time; panel body remains the original retained62a4 observation, not the now-mutable public panel.",
+    "Later terminal metadata never authenticates an earlier incomplete running observation. Retained running is a real raw shape and incomplete-custody UNKNOWN control, not qualified pending/completion/approval evidence.",
+    "Add a separately named source-retained observation for later captures; never overwrite these inputs to follow a mutable comment."
+  ],
+  "projectionRule": "All body bytes/strings are lossless. Metadata is an explicit selected-field projection with no invented fields; native complete carriers remain bound by digest, not claimed as checked-in raw wire JSON."
+}
