@@ -2053,3 +2053,12 @@
   spore: none
   receipt-refs: c5153956-91f9-4087-b70c-48dad63824ea
   note: Distinguish compiler exit0 from test execution: a new-law import failure with no test counts is a failed gate. Keep synthetic checker/process passes separate from real adapter/auth/publication proof. Preserve each review attempt and actual protocol cause; no successful effect replay, blind retry or credentials inference. NativeSM known failure remains unretried.
+- ts: 2026-10-16T05:19:00.636558010Z
+  session: /home/err/spaces/foresight
+  task: Website/CMS and anonymous OpenCode MiMo source-specific operational checkpoint
+  p-efficiency: 0.86
+  p-friction: 0.24
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: receipts.edn#447721b0-6f8e-46ea-9ce1-126f9541d18f
+  note: Preserve dated source-specific evidence: e5d real local auth/Mongo 60 PASS plus one direct-seeded boundary; d2 Services fixes settled and checks passed while latest-head review remains pending; 05:14 production still serves approved Website and older Knoxx. Discover the current anonymous OpenCode free MiMo route dynamically; no inference credentials or OpenRouter account changes. Portable candidate0, no spore.
