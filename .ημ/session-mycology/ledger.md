@@ -2267,3 +2267,13 @@
 - Lesson: distinguish physical DOM commitment from observer delivery; distinguish native process cleanup from rejected browser artifact cleanup. A child namespace overflow owner needs exact map/path qualification and independent host-side metadata checks.
 - Better path: preserve exact original failures and bounded native outputs, apply smallest causal repair, run the actual registered command, qualify real terminal behavior without new broad collectors.
 - Build session58687 remains root-owned/live atthischeckpoint. No model/PM2/publication/production effect; fullgoal remains active.
+
+## 2026-10-16T20:46:14.812473+00:00 — real export repair; 53 browser cases; live production unchanged
+
+- p-efficiency:0.38; p-friction:0.82; p-skill-candidate:0.79.
+- Receipt: 1a3ddfd5-d476-4b5c-814a-4a1143503e01. Evidence: /home/err/.local/share/openhax-codex/20261010/review-state/root-live-status-CMS53-download-and-build-source-20261016T2046-v1/EVIDENCE-bindings-v1.json.
+- Actual progress: five causal controls RED/GREEN;45focused+168registered PASS; all8real export scenarios pass,53of57 complete; remaining case54 event-order failure does not establish stale DOM. Complete cleanup tiers retained.
+- Lesson: two CDP clients can disagree over browser-global download behavior; reclaim one explicit owned path after verified attachment and preserve byte/digest/refusal checks. Spore: .ημ/session-mycology/spores/20261016-154435-shared-cdp-download-directory-custody.md; incubating only, no same-session promotion.
+- Build source fixes are locally composed, with no normal-install/build GREEN. Original16/3build failure, six test advisories and install warnings remain visible. Planning readiness is distinct from protected adoption and production.
+- Helper correction: native capture fixed its cwd to Services; the single newly created spore was moved to Foresight with exact bytes/inode, preserving that source-session provenance and without rerunning the helper.
+- Next: repair the settled-feedback request checkpoint with causal controls and qualify the owned normal install; full deployment remains active/incomplete.
