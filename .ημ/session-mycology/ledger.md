@@ -2125,3 +2125,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#d79999d2-0a0d-4197-bb19-b3f0f0f1a65c
   note: Keep functional passes separate from four strict global quality failures. Services9d9 is published in readyPR99 but unmerged; root Servicesbc4 remains adopted. Same-sourceb21 functional tests and both builds pass. Original9c70 Qwen1024 valid30.8558s exceeds30s SDK/app deadlines. Retained partialDB requires source-preserving recovery, not reseeding. Local original provider recipe fixes MAX_LOADED_MODELS1 and KEEP_ALIVE0; memory-only diagnosis is insufficient. Both-resident precondition failed, no same-document replay. Preserve all evidence/prefixes and four leases; anonymous dynamically discovered OpenCodeMiMo needs no OpenRouter account/key/provider change. Portablecandidate0; no spore.
+- ts: 2026-10-16T10:45:08.858282093Z
+  session: /home/err/spaces/foresight
+  task: Record fresh deployment status and concrete isolated-provider/review path failures
+  p-efficiency: 0.75
+  p-friction: 0.55
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#ac19d6f4-3391-4988-b45d-dbdcfa185526
+  note: Production Website healthy and replacementCMS unpromoted. Preserve terminal model factory and review-path failures without credentials inference or blind retries. Docker created endpoints attach only after start; local max-file1 requires explicit compressfalse. Frozen extracted Python functions need free-name review: http.client module name can be shadowed by def http before any request. Anonymous dynamically discovered OpenCodeMiMo needs no OpenRouter key/account/provider change. Keep source-specific tests separate from full release and genuine translated publication proof. Portablecandidate0/no spore.

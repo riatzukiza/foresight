@@ -314,3 +314,12 @@ bash:
 (汝, p=1) Preserve the recovered route: free fast/tool-capable MiMo through anonymous OpenCode, with the currently eligible model selected from the live catalog. Dated model names are observations; no fixed future slug or OpenRouter key/account/provider restriction change or purchase follows from a failure. GitHub review-publication authentication is separate.
 
 (世, p=1) Services99 is actually open on9d9, with hosted MiMo run38883501492 in_progress at09:54; no current accepted approval or completed cohort is inferred. Services98/bc4 earlier qualified approval stays source-specific. The separate CMS application uses its existing Gemma/Ollama translator and realQwen embeddings. Its valid30.8558second Qwen response exceeds30second client deadlines; local both-model residency failed, and the original local test recipe explicitly restricts one loaded model and zero idle retention. Those runtime facts do not diagnose MiMo credentials or require an OpenCode translator bridge. Combinedb21 functional tests/builds pass while full quality gates still fail. [Current deployment memory](openhax-website-cms-deployment-routing.md).
+
+
+## October 16, 10:41 UTC: actual rejection path failure stays separate from anonymous inference
+
+(汝, p=1) The remembered free MiMo route remains anonymous OpenCode with IP rate limits and invocation-time discovery of the currently eligible free fast/tool-capable model. Dated model IDs are not permanent slugs. Do not request OpenRouter keys or change account/provider restrictions for that route. GitHub review-publication identity is separate.
+
+(世, p=1) Current Services99/9d9 has observed native MiMo approval5546188209 from its full review. That approval predates the later native rejection proposal and supplies no scoped rejection agreement. The one actual scoped rejection run38886883057 failed at its first review_begin on ENOENT /.opencode/review-evidence/input-manifest.json; no pages/submission/accepted invocation or judgment followed. Preserve staged-input/path-binding evidence and repair the owning source before deciding on another run. No authentication/provider/timeout cause is established.
+
+(世, p=1) The separate application translation route remains Knoxx's existing Gemma/Ollama translator and Qwen embeddings. Its created v5 private provider did not start because of a bounded Docker logging configuration error; no new model call was made. CMS promotion and genuine translated publication/browser proof remain pending. [Fresh deployment checkpoint](openhax-website-cms-deployment-routing.md).
