@@ -538,3 +538,12 @@
   spore: none
   receipt-refs: 6005561d-b0e7-4846-94f1-f297f6fd4e50,79285e3d2f2ca58e9ca1683b5ead93a3130b7dbe
   note: When a sequence says testing has completed, its resulting implementation evidence gates later review, merge and adoption. Remove only the circular testing/ word; preserve initial ready-before-RED/GREEN and all native ownership/history. Docs-only native readbacks/diff custody suffice; no application tests, readiness, public effects, model rerun, native-SM retry or spore.
+- ts: 2026-10-16T01:02:16.218214911Z
+  session: /home/err/.codex/worktrees/codex-native-review-state-plan/foresight
+  task: Retain exact native Codex inputs and distinguish running from completed planning facts
+  p-efficiency: 0.92
+  p-friction: 0.16
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 1c1da139-3802-451a-b8ef-e4f04fde86ad,ec23701236a0e8476680e345063c92b83890ac6b
+  note: Mutable native panel IDs do not preserve old observations: retain exact body bytes plus source custody, distinct heads/states and explicit metadata gaps before readiness. Running null flags do not imply false or completion; later terminal metadata cannot backfill earlier custody. Preserve raw no-final-LF bodies and existing physical modes. Planning-only source custody and diff hygiene; no parser/app tests, readiness, native-SM retry, spore, public/model/runtime or deployment effect.
