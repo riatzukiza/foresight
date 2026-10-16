@@ -2239,3 +2239,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#843452d9-7fec-4bd4-a607-cbe03f8f9fbd
   note: Source custody must hash Git120000 link bytes without following directory targets. Corrected read-only guard passed before one explicit runtime continuation. Real auth and exact cleanup passed, but the generic browser failure discarded case/operation evidence; keep the cause UNKNOWN and add bounded redacted diagnostics before another runtime. Do not infer passing cases from absent results. The previous status-only turn was no progress; this turn produced new runtime evidence and an actual planning commit/PR. Keep unrelated quality prerequisites explicit and preserve all native quotas, failed captures, original source/build identities and foreign work.
+
+
+## 2026-10-16T19:28:36.599843+00:00 — CMS failure localization and native prerequisite settlement
+
+- Outcome: progress; Website remains live, upgraded CMS not deployed. Real source RED500d80/GREENb8caa/provenancee48 and160smokePASS; one actual e48browserFAIL now narrows firstscenario CLI failure with complete cleanup. Native ETA358finding settled on ded3703; no planning readiness or build credit.
+- Friction: child stderr was discarded, so bounded stage/case metadata narrows the failure but cannot recover the original CLI cause. Preserve actual failed artifacts; observe original bytes privately before propagation rather than weakening predicates or guessing a selector.
+- Scores: efficiency0.78, friction0.64, surprise0.32, reuse0.72; candidate0; no spore.
+- Evidence: receipt bc0073a5-abf2-4e03-bc0a-7578c4d236d6; [bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-CMS57-first-case-CLI-and-ETA358-settled-20261016T192836Z-v1/EVIDENCE-bindings-v1.json). No secrets, retries, model, pause/resume, spending or production effect.
+- Next: inspect the failed first-case CLI boundary and prepare the smallest source-free observation that retains its original terminal result.
