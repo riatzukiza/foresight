@@ -1995,3 +1995,12 @@
   spore: none
   receipt-refs: f30345f2-6f7e-43d5-a630-c1b301dd522f
   note: Publish the concrete caller plan once and distinguish hosted producer/compiler passes from an in-progress model and unsettled native findings. Characterize existing APIs before movement; two independent source reviews identify potential synchronous-throw pending poisoning, but only the actual baseline proves RED. Preserve original fallbacks if a warning sink fails, including nil throws. Current native search [] failed a positive control; use native inventory rather than fabricate semantic dedup. Use bounded status/private NUL capture and actual accepted filenames; retain cleanup/setup failures without repeating successful effects. Known nativeSM null-cwd failure is not retried; portablecandidate0/no spore. Full deployment remains incomplete.
+- ts: 2026-10-16T00:04:10.181567363Z
+  session: /home/err/spaces/foresight
+  task: Persist qualified memory extraction and actual Services publisher prerequisite repair
+  p-efficiency: 0.76
+  p-friction: 0.43
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 7d60cad0-4f67-42c9-aae4-ea76bfe42684
+  note: Existing credentials were present but unavailable to the target repository workflow: authenticate the exact existing App with bounded GETs, verify installed target/grants, configure only the two named repository secrets through stdin and prove each native metadata effect. Separately inspect the actual pinned model runner before rerun; Services d98 still hardcodes a dated MiMo slug despite correct global routing memory. Accepted dynamic source needs ordinary explicit caller-scope review. Preserve native field formats: symlink lstat/readlink, gitlink sha keys, commit/tree alias separation, creation/update precision and namespaced EDN. Recover known successful effects without replay. Memory characterization exposed and fixed sync-fetch pending poisoning and older publisher cleanup; extraction passes owning/tests/coverage but unrelated6/257lint and36error-boundary sites remain failures. NativeSMknownnullcwd unretried; portablecandidate0/noSpore. Deployment remains incomplete.
