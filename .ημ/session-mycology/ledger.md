@@ -2013,3 +2013,13 @@
   spore: none
   receipt-refs: 4543dd8d-b63b-47b6-ae36-171d66fe9351,89cad808992029bb5c9f100dcb64acdb180ddf57
   note: The configured App guard and dynamic anonymous OpenCode route work; an unread-page assessment still invalidates the whole native review. Keep catalog discovery, actual inference, full trace, accepted invocation and publication separate, and never diagnose a provider key from a verifier refusal. Repair source-bound runtime prerequisites before rerunning failed gates; a changed YAML input requires requalification, while prior passes/failures stay dated. Preserve actual GitHub propagation and derived-ref behavior, native metadata gaps and Unicode paths without replaying successful effects. Root argv indexing failed before writer startup; exact prefix proof admitted one corrected append. NativeSM known null-cwd failure remains unretried; portable candidate0/no spore. Full deployment remains incomplete.
+
+- ts: 2026-10-16T01:36:43.420556+00:00
+  session: /home/err/spaces/foresight
+  task: Record actual backend repair and fresh Website/CMS serving status
+  p-efficiency: 0.58
+  p-friction: 0.71
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: a7325910-e1ec-4dcd-921d-562550d7b910,9f1c7e24f6d5e058e07d2f46ed7c0fb4994ea002
+  note: Answer deployment status from fresh serving identities first. Local backend tests and planning settlements are real progress but grant no CMS rollout or publishing-journey proof. A generic native review does not answer a scoped rejection question; preserve the unresolved finding and stop repeating the unsupported route. Keep native approval, full artifact custody, source-specific invocation contracts and protected adoption distinct. Preserve checksummed subsets and ZIP extras separately; do not invent coverage or transfer newer discovery/time-budget semantics to an older reusable source. NativeSM known null-cwd failure remains unretried; portablecandidate0/no spore.
