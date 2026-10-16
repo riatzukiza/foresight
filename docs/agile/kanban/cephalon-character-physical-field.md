@@ -8,6 +8,8 @@ labels: "cephalon, graph, nooi, daimoi, portable, laws"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 parent: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 dependency: ["a1e9d6af-0233-4dcb-9677-5c76fa9a2701", "6eb77110-8cf4-44d5-a242-f495d25d6aaf", "b5f2ba9e-8d67-4c73-9919-e275983aca87"]
+category: "aggregate-history"
+write-id: "1792037560375-0.s41l3cv18rfkaq48xfs"
 ---
 
 ## Context
@@ -94,3 +96,9 @@ ownership. Eight points is provisional and must split if recovery reveals more
 than one independently reviewable kernel change.
 
 License: GPL-3.0-or-later.
+
+
+---
+Native Incoming category=aggregate-history explicitly classifies recorded8 as non-additive containing history for the selected finite inventory, preserving8/status/title/parent/epic/old predecessor relationships and broader unsupported-mechanics obligations. Conditional type=epic correctly refused before mutation because existing children use the character epic; no graph/type bypass or adopted points rule is claimed. Selected13execution48 excludes this field8 and mood5/automatic5 plus all containing estimates; current review/aggregation/readiness remain required.
+
+---
