@@ -529,3 +529,12 @@
   spore: none
   receipt-refs: 1d529978-58c5-40c4-92dd-0cd6a244b040,02aaf8513c1132e38deb7b8247545e7304e43991
   note: Require a known-positive inventory control: empty cross-project title search cannot establish no owner. Native scoped board and related body reads recover actual broader admission ownership; native dependencies bind two empty-dependency leaves. Separate independently deliverable classic1 from structured3 before readiness, record explicit extra1point, preserve creation and current BODY hashes as distinct observations. No adapter/parser implementation, readiness, public settlement, model rerun, native-SM retry, spore or deployment credit.
+- ts: 2026-10-16T00:09:30.546925747Z
+  session: /home/err/.codex/worktrees/codex-native-review-state-plan/foresight
+  task: Clarify only the later evidence gates after completed testing
+  p-efficiency: 0.94
+  p-friction: 0.08
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 6005561d-b0e7-4846-94f1-f297f6fd4e50,79285e3d2f2ca58e9ca1683b5ead93a3130b7dbe
+  note: When a sequence says testing has completed, its resulting implementation evidence gates later review, merge and adoption. Remove only the circular testing/ word; preserve initial ready-before-RED/GREEN and all native ownership/history. Docs-only native readbacks/diff custody suffice; no application tests, readiness, public effects, model rerun, native-SM retry or spore.
