@@ -2107,3 +2107,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#e2c5277b-3e69-414e-a208-1999a154c18a
   note: Keep source publication, native review settlement, component QA, whole-release qualification and serving identity distinct. Route free MiMo reviews through anonymous OpenCode with live model discovery, while preserving the application-owned Gemma/Ollama translator and real embeddings. Bind both auth and SDK projections to the same fresh explicit DB. Exact document admission already dispatches; do not duplicate dispatch. Preserve full deployment objective and note prefixes. Portable candidate0, no spore.
+- ts: 2026-10-16T09:20:33.592102547Z
+  session: /home/err/spaces/foresight
+  task: Record actual Services merge, submodule adoption and bounded CMS502
+  p-efficiency: 0.75
+  p-friction: 0.55
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#0c27bb0b-5759-4d7e-a2a6-5470f3e6bcc7
+  note: Actual protected Services merge and local pointer adoption are complete; real CMS create/draft passed but admit502 precedes translation. Preserve partial ownedDB/diagnostics and recover causal SDK embedding error read-only before any retry. Keep component tests/builds, genuine model output and full staging/publication proof distinct. Anonymous dynamically discovered OpenCodeMiMo reviews need no OpenRouter account change. Preserve all note/receipt prefixes and heldleases. Portable candidate0; no spore.
