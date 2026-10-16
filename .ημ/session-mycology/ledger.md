@@ -2033,3 +2033,13 @@
   spore: none
   receipt-refs: c92acd99-6fba-45d7-be92-bea4a238266a
   note: Lead with shipped Website versus incomplete replacement CMS, then distinguish local tests, source review, staging qualification and verified publishing behavior. Preserve the full CMS release requirements and dated anonymous OpenCode route; avoid implying that passing health checks demonstrate authenticated editing or translation. NativeSM known null-cwd failure remains unretried; portablecandidate0/no spore.
+
+- ts: 2026-10-16T03:01:57.974346+00:00
+  session: /home/err/spaces/foresight
+  task: Preserve fresh Website/CMS status and distinguish implementation progress from deployment
+  p-efficiency: 0.64
+  p-friction: 0.48
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 482c72fd-c5ff-46c1-a566-f0bb25db741f
+  note: Lead with the actual serving version and complete public checks, then name unfinished CMS behavior and failing full checks. Planning approval, readiness and local passing tests grant no authenticated publication proof. Retain terminal review attempts, distinguish fresh manual review from automatic recovery, and inspect first cause before suggesting credentials. NativeSM known null-cwd failure remains unretried; portablecandidate0/no spore.
