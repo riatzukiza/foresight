@@ -2143,3 +2143,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#19441b26-93df-4e31-b7b4-5f6893de5281
   note: Keep serving health, local provider readiness, accepted admission, execution history and release qualification distinct. Qualified dual-model Qwen1024 now completes13.873s; same-document admission accepted1/dispatched1 with considered2. A verifier predicate failure consumed its cap; never readmit because evidence is incomplete. A queued persisted head alone is not proof of never-started; inspect authoritative history. Preserve globalquality and currentreview BLOCKED failures; local pathrepair and6suitePASS do not transfer hosted approvals. Use explicit named note destinations and retain prefixes/inodes/modes plus unrelated root state. Anonymous dynamic OpenCodeMiMo needs noOpenRouterkey/account/provider change. Candidate0; no spore.
+- ts: 2026-10-16T12:11:01.475102223Z
+  session: /home/err/spaces/foresight
+  task: Record completed local Spanish translation and current production limits
+  p-efficiency: 0.8
+  p-friction: 0.45
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#f6b67b26-1e2b-4d33-a968-783cd033a483
+  note: Keep serving health, model readiness, accepted dispatch, candidate receipt, released owner and production qualification distinct. Exact saved-turn recovery produced real Spanish without readmission or reseeding. Preserve six startup read-only connection refusals and SDK projection failures; no all-HTTP-clean or graph-completeness claim. Hosted lint exit0 with five npm warnings remains quality failure. Free MiMo stays anonymous through dynamically discovered OpenCode; no OpenRouter account/credentials change. Candidate0/no spore.
