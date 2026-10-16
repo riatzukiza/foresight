@@ -119,3 +119,21 @@ Finding4280657786: feedbackpositive nowrequires independently sourced recalled-i
 Review refinement for native reviews5530925136/5530938777: current operative prose uses normal word boundaries. Earlier native history stays unchanged; this correction supplies the readable current statement. No status, dependency, parent or epic change; all source qualification and native Ready gates remain.
 
 ---
+
+## Proposed proposal/acknowledgement boundary — 2026-10-16
+
+The interface portion is specified in
+[the feedback envelope proposal](../../notes/2026-10-16-cephalon-feedback-interface.md).
+OpenPlanner owns preparation/atomic writer/readback and the consuming read
+projection; the pure Field receives a complete admitted OutcomeHandoff through
+its existing argument and returns the retained original FeedbackProposal. Its
+actual writer observation supplies the matching FeedbackAcknowledgement; an
+echoed request, row count, generic transaction or unconsumed semantic counter
+supplies none of these guarantees. Original data/admission is separate from
+current stored authority. The note keeps full leaf schemas, reinforcement/read
+policy, storage receipt/session/finite bounds and producer protection explicit
+as unfinished choices within this existing5-point packet before Ready. It
+adds no task, dependency, point increase, native transition or implementation.
+The packet's qualified positives include useful seed-only and graph-neighbor
+items with an actual consumed-read/selection change, and all existing outcome,
+privacy, once-only, malformed, race and quarantine negatives remain mandatory.

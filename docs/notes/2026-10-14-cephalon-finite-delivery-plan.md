@@ -866,3 +866,22 @@ Historical native comments and ledger entries remain verbatim. Both tasks keep
 their UUIDs, frontmatter, estimates, dependencies, statuses and guarantees. This
 correction supplies no Ready, approval, runtime protection, release permission
 or live B1/B2/B3 completion.
+
+
+## Feedback envelope and actual consuming-read boundary — 2026-10-16
+
+The existing feedback5 packet now references
+[its proposed envelopes and writer observations](2026-10-16-cephalon-feedback-interface.md).
+This selects the proposed seven-field FeedbackProposal, complete five-field
+OutcomeHandoff and ten-field actual FeedbackAcknowledgement wrapper and their
+acyclic native Clio custody/data flow. It changes no native frontmatter, points,
+dependencies or Ready/Done state. Actual normalized outcome/recall/witness and
+persisted/failed readback leaf schemas, reinforcement policy and causal read
+projection, storage cooperation/finite limits and producer qualification remain
+unfinished work of the same packet. They are not invented existing SDK APIs.
+Source3ab scoped recall reads graphEdges.data.scoped_recall.cost; legacy semantic
+counters and row-count upserts cannot stand in for this writer or read effect.
+The new versioned consuming profile must preserve read-only retrieval and
+qualify both seed-only and graph-neighbor useful outcomes with actual frozen-
+input selection/path change. The selected physical kernel and served proof
+retain their separate full obligations; no static cost walk substitutes for them.

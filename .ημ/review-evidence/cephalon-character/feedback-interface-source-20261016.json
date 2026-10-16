@@ -1,0 +1,142 @@
+{
+  "tier": "Observed local immutable selected source, not native review/runtime qualification",
+  "sources": [
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/graph/graph-claim-core/src/openplanner/graph/recall/contract.cljc",
+      "bytes": 4878,
+      "sha256": "350499515a80c71c6c9afc9ca463e9a4813e5d637da257049ec35eb8eb3f9d94",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/graph/graph-claim-core/src/openplanner/graph/recall/mongo_contract.cljc",
+      "bytes": 3558,
+      "sha256": "54d7ea1ac1ee05dde96deb45ea54f52e02dbd3ec45f72066bce1b90ed9adfad0",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/graph/graph-claim-core/src/openplanner/graph/recall/mongo.cljs",
+      "bytes": 12613,
+      "sha256": "6f87640e0c0f4bb43078d2a1776de248a081c02309aa5b7730252d5c8a8ca917",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/graph/graph-claim-core/src/openplanner/graph/recall/core.cljc",
+      "bytes": 7955,
+      "sha256": "63756f955e12a8583f82bd6e33ccf1ade137f2942b98b23c521d2e41067c5202",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/graph/graph-claim-core/index.d.ts",
+      "bytes": 4119,
+      "sha256": "538e6213359a987c9069decb47ad40c279667c3a849a6189024ed6d5d9b3220c",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/openplanner-sdk/src/mongodb.ts",
+      "bytes": 59499,
+      "sha256": "7f1cd8ce4d5f5e9fc824ebf55a4fc41ac4519d903d76b2578aeb665e56c57e00",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/openplanner-sdk/src/ingest.ts",
+      "bytes": 41283,
+      "sha256": "8ff1768b89e9d0e1a8f1dbd7e6541ba9f2afeb26626401a68a674f2f95dfc3c6",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/openplanner-sdk/src/protocol-adapters.ts",
+      "bytes": 14686,
+      "sha256": "8a768df763d10a08e87c04821660136f165d46a9a7ee3be53902f4a31f487e34",
+      "committedBlobMatchesWorkingBytes": true
+    },
+    {
+      "repository": "riatzukiza/openplanner",
+      "revision": "3ab5ffbb6e34a2ee3607a74bf421785d47d5391d",
+      "path": "packages/openplanner-sdk/src/mongo-vectors.ts",
+      "bytes": 68270,
+      "sha256": "b4aef0daf40cf079ab98dd3bb2c9e24bea482f67bac021a431cc0aaa843f569f",
+      "committedBlobMatchesWorkingBytes": true
+    }
+  ],
+  "independentInventory": "Kepler confirms read-side graphEdges/cost, row-count SDK upserts, mutable event upsert and unrelated transaction examples; no qualified outcome writer/receipt found in inspected graph/core/SDK/routes.",
+  "observedAt": "2026-10-16T20:23:36.169002+00:00",
+  "purpose": "Existing feedback5 interface planning source inventory; no selected existing writer, producer/fence or reinforcement algorithm inferred",
+  "rootBase": "61106290db25e17be5ea0bc99b932cd91bec544f",
+  "fieldPendingLayoutSource": "7a3aab76f84a7e23cd6cfd85e6d8ed7090b1ced4",
+  "actualReadBoundary": "mongo.graphEdges -> data.scoped_recall.cost; semantic counters alone are outside this reader",
+  "scope": "Complete proposed envelopes only; listed normalized leaf/policy/storage producer choices remain unfinished in existing packet. Not implementation, nativeReady, wholeFieldclosure or liveproof.",
+  "clioSources": [
+    {
+      "repository": "open-hax/clio",
+      "revision": "788cdd3434615a7932b924e68520dbf7f88408c2",
+      "path": "src/clio/domain/canonicalize.cljc",
+      "bytes": 5893,
+      "sha256": "6b150544d545a3871bf2f9d10ea49dcfbb1c18b9755f47181073550088c976b9",
+      "retainedNativeRESTContentExact": true
+    },
+    {
+      "repository": "open-hax/clio",
+      "revision": "788cdd3434615a7932b924e68520dbf7f88408c2",
+      "path": "src/clio/infra/ledger.cljs",
+      "bytes": 3698,
+      "sha256": "6246f04bf53ac43d3505ebdeba42801ef344f9d93b829d08de9d834753cf3d2f",
+      "retainedNativeRESTContentExact": true
+    },
+    {
+      "repository": "open-hax/clio",
+      "revision": "788cdd3434615a7932b924e68520dbf7f88408c2",
+      "path": "src/clio/law/event.cljc",
+      "bytes": 831,
+      "sha256": "f2d355a0aa99771c36c7638e0aa44eace8df645c14848ee211185875cd521143",
+      "retainedNativeRESTContentExact": true
+    }
+  ],
+  "clioObservedBoundary": "Caller supplied event UUID is validated; append returns admissionstatus, not ID/hash. Canonicalize unions/validates history, not payload encoding. Native payload root/leaf mapping and graph-owned exact payload codec/hash remain preReady source selections.",
+  "fieldScopeBoundary": {
+    "repository": "riatzukiza/eros-eris-field",
+    "revision": "7a3aab76f84a7e23cd6cfd85e6d8ed7090b1ced4",
+    "path": "docs/plans/cephalon-physical-kernel-abi.edn",
+    "sha256": "c3b1370f06832b4ce9534dbae7d23fd59de63839479c75b63d7119823bd4d539",
+    "sourceStatus": "Observed local committed proposal; unpublished, unimplemented and unqualified",
+    "sourceClauses": [
+      "authority/physical scope revision mapping remains unselected",
+      "native policy fingerprint is not automatically the physical scope revision",
+      "confirm-feedback matches pending/original/current Field scope revision"
+    ],
+    "consequence": "Proposal and acknowledgement retain actual original Field scope binding separately from original policy/source revision; no alias or retagging, no invented mapping or qualification."
+  },
+  "localIndependentAuditCorrection": {
+    "tier": "Main-authored transcription of independent Pasteur output, not native provider approval",
+    "initialFrozenManifest": "Private frozen-proposal-source.json plus exact initial-audit-source-0..3 retained",
+    "findings": [
+      {
+        "priority": "P2",
+        "finding": "Original draft aliased Field scope revision to source policy revision",
+        "disposition": "Corrected proposed scope-revision binding to actual independently qualified original Field scope; mapping still explicit before Ready"
+      },
+      {
+        "priority": "P2",
+        "finding": "Original draft overstated native Clio payload-hash/ID-generation output",
+        "disposition": "Corrected supplied UUID/native admission status/readback/history and explicit graph-owner codec/hash/catalog/producer selection"
+      }
+    ],
+    "ownershipClarification": "Knoxx and actual artifact/destination owners keep permission checks/adapters/credentials; graph owner verifies qualified matching/provenance via protected ports and owns graph persistence/readback/consuming projection",
+    "nativeApprovalRoundSettlementCredit": 0
+  }
+}
