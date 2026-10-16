@@ -2098,3 +2098,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#70c8ff8e-6f16-4797-8672-9e3729758dca
   note: A successful four-path checkpoint used Git-sorted owned positions and put valid deployment/MiMo appendices into opposite notes. Correct with explicit named pairs, append a provenance explanation and intended text to each destination, then verify byte-equal suffixes. Preserve all historical ledger and note prefixes; no native effects replayed. Prefer role-keyed path bindings over list order. Portable candidate0, no spore.
+- ts: 2026-10-16T08:41:00.853737761Z
+  session: /home/err/spaces/foresight
+  task: Record current Services settlements and real CMS deployment boundaries
+  p-efficiency: 0.8
+  p-friction: 0.5
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#e2c5277b-3e69-414e-a208-1999a154c18a
+  note: Keep source publication, native review settlement, component QA, whole-release qualification and serving identity distinct. Route free MiMo reviews through anonymous OpenCode with live model discovery, while preserving the application-owned Gemma/Ollama translator and real embeddings. Bind both auth and SDK projections to the same fresh explicit DB. Exact document admission already dispatches; do not duplicate dispatch. Preserve full deployment objective and note prefixes. Portable candidate0, no spore.

@@ -291,3 +291,10 @@ bash:
 (汝, p=1) Continue anonymous OpenCode's currently eligible free fast/tool-capable MiMo, discovered from the current catalog. The remembered model slug is dated. No OpenRouter key/account/provider restriction change or purchase belongs in this inference path. GitHub App publication authentication is a separate boundary.
 
 (世, p=1) Combined 64c now has a genuine 60 PASS local HTTP/Mongo proof, but its candidate is directly seeded and does not prove model/provider/worker dispatch. Production at 07:42 UTC still serves approved Website and older Knoxx 841. [Current deployment checkpoint](openhax-website-cms-deployment-routing.md), [local actual proof](/home/err/.local/share/openhax-codex/20261010/review-state/CMS16-combined64c-owned-real-auth-controller-PRIVATE-v4/ROOT-QUALIFIED-ACTUAL-combined64c-v7-local-auth-native20-descriptors-and60-summary-v1.json), [fresh serving snapshot](/home/err/.local/share/openhax-codex/20261010/review-state/child-user-website-cms-fresh-serving-20261016T074225Z-once-v1/manifest.json). Review convergence, actual translated publication/browser journey and production promotion remain unachieved.
+
+
+## October 16: review routing does not replace the application translator
+
+(汝, p=1) The user's correction concerns free MiMo reached anonymously through OpenCode, using live eligible-model discovery and IP rate limits. Keep model IDs dated; do not request OpenRouter keys, alter provider/account restrictions or buy credits for that review path. GitHub App publication authentication is separate.
+
+(己, p=1) Knoxx's real translation job already has an application-owned agent/model route. The recovered intended deployment uses Gemma4 E2B through the owned Ollama service and Qwen3 8B embeddings. Do not infer a new OpenCode execution bridge or translator migration from the MiMo review correction. Current catalogs establish availability, not inference success. See the [dated deployment checkpoint](openhax-website-cms-deployment-routing.md) and its frozen one-job specification.
