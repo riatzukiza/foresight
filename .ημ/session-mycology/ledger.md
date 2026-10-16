@@ -529,3 +529,12 @@
   spore: none
   receipt-refs: 2133b5c0-419f-498b-9c17-8a1cd817df61
   note: Source c05f4fbe567053228289d2c1cc28c6e70f757f6e and receipt 2133b5c0-419f-498b-9c17-8a1cd817df61: preserve native capability refusals with zero-effects proof. Read mutable keys rather than inferring permission from a planning-key set. When the reviewer explicitly permits a scope alternative, use the supported native coordination dependency and the exact reviewed Markdown scope; preserve the standalone owner and history without claiming a parent hierarchy. Root reviewed the finite alternative before effect. Distinguish nominal budget headroom from required elapsed/overlap/adoption proof. Three-path planning source and secure flat receipt remain separate from this portable reflection. Candidate0/no spore; no engine copy, test/model/public/runtime/deployment effect.
+- ts: 2026-10-16T00:57:44.220066961Z
+  session: /home/err/.codex/worktrees/finite-review-caller-adoption/foresight
+  task: Restore terminal LF in existing finite MiMo caller planning cards
+  p-efficiency: 0.91
+  p-friction: 0.14
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: cb6595f4-0798-4079-895a-fa86c633878a
+  note: Source dda357f1fc7393be2f7c3e0acc93bc4caf558902 changes exactly one terminalLF in each of two existing cards for actual native MiMo root4289599049/review5541491782. Preserve all507other physical/Git inputs/modes,24unrecursedGitlinks and all historical prefixes. Formatting repair supplies no Rheos engine fix, board-state transition, implementation/readiness/review/deployment credit. Canonical flat receipt appended once through unchanged accepted secure writer; no nativeSM retry. Candidate0/noSpore.
