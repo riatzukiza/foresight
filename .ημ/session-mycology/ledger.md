@@ -2071,3 +2071,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#33a330f6-b91a-42de-a864-107d11916cfb
   note: Keep actual exact-head review and merge separate from upstream adoption and rollout. PR4 merged63b; exactd2 source upstreamPR98 OPEN with independent CI/reviews live. Gateway/authba48 composition preserves histories but needs combined qualification. Anonymous dynamic OpenCode MiMo route, no account/key/provider changes. Retained REST404 and normal SSH recovery, no replay. Full product/lint/staging/translation-publication journey remains. Portable candidate0, no spore.
+- ts: 2026-10-16T06:45:28.180425752Z
+  session: /home/err/spaces/foresight
+  task: Verified Services seven-finding repair publication and combined CMS qualification
+  p-efficiency: 0.8
+  p-friction: 0.3
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#16a0d3af-3014-497f-bd07-7e3bc2126f06
+  note: All seven findings are fixed and the qualified 112-test tree is published as 9be. Exact native settlements are verified; new MiMo is running and Codex follow-up is requested, with no approval transfer or trusted main adoption. Combined 64c Node 123 passes, but the copied Gitlibs subset cannot resolve a local dependency before ClojureScript tests. Preserve partial setup, failure and guarded continuation without replaying successful effects. Complete the actual dependency topology before requalification. Keep anonymous OpenCode dynamic free MiMo, with no account, key or provider changes. Full application, quality, staging and translated publication/browser journey remains. Portable candidate probability 0, no spore.
