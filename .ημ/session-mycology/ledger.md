@@ -2080,3 +2080,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#16a0d3af-3014-497f-bd07-7e3bc2126f06
   note: All seven findings are fixed and the qualified 112-test tree is published as 9be. Exact native settlements are verified; new MiMo is running and Codex follow-up is requested, with no approval transfer or trusted main adoption. Combined 64c Node 123 passes, but the copied Gitlibs subset cannot resolve a local dependency before ClojureScript tests. Preserve partial setup, failure and guarded continuation without replaying successful effects. Complete the actual dependency topology before requalification. Keep anonymous OpenCode dynamic free MiMo, with no account, key or provider changes. Full application, quality, staging and translated publication/browser journey remains. Portable candidate probability 0, no spore.
+- ts: 2026-10-16T07:50:21.745546937Z
+  session: /home/err/spaces/foresight
+  task: Published Services follow-up and verified combined CMS local authentication
+  p-efficiency: 0.8
+  p-friction: 0.3
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#ea49d361-3782-4995-b97d-452de7625a02
+  note: Preserve source-specific evidence: current Services367c fixes and128 tests pass; native MiMo approval observed with artifact qualification pending, CodeRabbit requested after cooldown and Codex native quota retained. Combined64c local auth/Mongo60PASS is directly seeded and supplies no model/browser/publication proof. Preserve earlier failures and avoid replay of successful effects. Production still uses approved Website and older Knoxx841. Keep anonymous OpenCode current free MiMo discovery; no model credentials or OpenRouter account/provider changes. Full deployment remains. Portable candidate0, no spore.
