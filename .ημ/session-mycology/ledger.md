@@ -2116,3 +2116,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#0c27bb0b-5759-4d7e-a2a6-5470f3e6bcc7
   note: Actual protected Services merge and local pointer adoption are complete; real CMS create/draft passed but admit502 precedes translation. Preserve partial ownedDB/diagnostics and recover causal SDK embedding error read-only before any retry. Keep component tests/builds, genuine model output and full staging/publication proof distinct. Anonymous dynamically discovered OpenCodeMiMo reviews need no OpenRouter account change. Preserve all note/receipt prefixes and heldleases. Portable candidate0; no spore.
+- ts: 2026-10-16T10:00:35.447795632Z
+  session: /home/err/spaces/foresight
+  task: Record Services99 publication, integrated CMS qualification and model residency failure
+  p-efficiency: 0.8
+  p-friction: 0.5
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#d79999d2-0a0d-4197-bb19-b3f0f0f1a65c
+  note: Keep functional passes separate from four strict global quality failures. Services9d9 is published in readyPR99 but unmerged; root Servicesbc4 remains adopted. Same-sourceb21 functional tests and both builds pass. Original9c70 Qwen1024 valid30.8558s exceeds30s SDK/app deadlines. Retained partialDB requires source-preserving recovery, not reseeding. Local original provider recipe fixes MAX_LOADED_MODELS1 and KEEP_ALIVE0; memory-only diagnosis is insufficient. Both-resident precondition failed, no same-document replay. Preserve all evidence/prefixes and four leases; anonymous dynamically discovered OpenCodeMiMo needs no OpenRouter account/key/provider change. Portablecandidate0; no spore.
