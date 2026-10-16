@@ -2189,3 +2189,13 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#ccfc3bc2-9601-49e6-8653-4ca90fb9f3a3
   note: Distinguish real translation from approved public publication, scoped lint exit0 from strictzero-warning acceptance, and old-head native approval from new source review. Separate inherited userconfig warnings from product defects; preserve the config and missing-token evidence without suppression or dummy credentials. Fix source-proven fixture liveness and retain cancelled-run limits. Anonymous OpenCode free MiMo is working; dynamic catalog selection remains mandatory. Candidate0/no spore.
+
+- ts: 2026-10-16T15:37:50.548512+00:00
+  session: /home/err/spaces/foresight
+  task: Advance zero-warning deployment tooling and preserve async return semantics
+  p-efficiency: 0.75
+  p-friction: 0.55
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#09451457-e7db-4ff2-bbb8-22476b14e805
+  note: Recover configured environment loading before changing authentication policy. Preserve both ordered rejection selection and immediate native rejection observation when replacing Promesa async bodies. Meaningful characterization caught the unobserved later rejection; retain the failure and repair the boundary without weakening tests. Reuse the already implemented checked embedding route, and bind live qualification to exact runtime and model digests. Actual later per-developer quota notices supersede older countdowns. No spore or production-completion claim.
