@@ -2089,3 +2089,12 @@
   spore: none
   receipt-refs: .ημ/receipts.edn#ea49d361-3782-4995-b97d-452de7625a02
   note: Preserve source-specific evidence: current Services367c fixes and128 tests pass; native MiMo approval observed with artifact qualification pending, CodeRabbit requested after cooldown and Codex native quota retained. Combined64c local auth/Mongo60PASS is directly seeded and supplies no model/browser/publication proof. Preserve earlier failures and avoid replay of successful effects. Production still uses approved Website and older Knoxx841. Keep anonymous OpenCode current free MiMo discovery; no model credentials or OpenRouter account/provider changes. Full deployment remains. Portable candidate0, no spore.
+- ts: 2026-10-16T07:52:23.009154434Z
+  session: /home/err/spaces/foresight
+  task: Correct routing memory appendix placement using explicit paths
+  p-efficiency: 0.8
+  p-friction: 0.5
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: .ημ/receipts.edn#70c8ff8e-6f16-4797-8672-9e3729758dca
+  note: A successful four-path checkpoint used Git-sorted owned positions and put valid deployment/MiMo appendices into opposite notes. Correct with explicit named pairs, append a provenance explanation and intended text to each destination, then verify byte-equal suffixes. Preserve all historical ledger and note prefixes; no native effects replayed. Prefer role-keyed path bindings over list order. Portable candidate0, no spore.
