@@ -2504,3 +2504,12 @@
   spore: none
   receipt-refs: d3eb2004-bc1d-4dd4-86cf-669f07150e05
   note: An accepted source update can advance the requested direct submodule independently of later final-controller review. Fresh protectedmain/parents/tree bind exactcommit; fetch exact objects without refs/FETCH_HEAD and preserve foreigncache/otherworktrees, then commit only rootgitlink and ownedmemory. CanonicalRheos comment preserves status/estimate/dependencies/history and supplies operational evidence, not rollout or finding approval. Keep existing Services runbooks/AGENTS pointers rather than duplicating a deployment authority. DetachedHEAD is normal; initial symbolic-ref read refusal retained and corrected without mutation. Prior pause consumed, capacity pending, no model/paid/runtime action. No new spore or native connector retry.
+- ts: 2026-10-17T09:03:51.667530123Z
+  session: /home/err/spaces/foresight
+  task: Record deployed Atlas metadata limits, real Services source adoption and distinct review failure boundaries
+  p-efficiency: 0.83
+  p-friction: 0.35
+  p-skill-candidate: 0.24
+  spore: none
+  receipt-refs: 394439d1-7f77-4a94-a9e2-a8bd58c1a2c2,870756b4-6fa6-492b-89bd-85da7bcb8c25
+  note: Keep action-resource binding when interpreting database privileges; flattening action names cannot prove cluster authorization. Membership is not health and command presence is not supported execution. Preserve v1 and additive corrected v2 after independent peer, ask only for missing existing read-only control-plane session. Genuine malformed rg and denied supporting reads are trace failures, not OpenRouter credential evidence; retain full failed invocation and use ordinary fresh reviews. Exact accepted personal source and protected source adoption remain distinct. Current PSI HOLD prevents model effects despite closed owned heavy work. No spore or native mycology connector retry.
