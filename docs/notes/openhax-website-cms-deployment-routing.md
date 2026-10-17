@@ -7,6 +7,14 @@ Read the [append-only deployment report](../reports/inventory/2026-10-14-openhax
 for the observation history. Use the global `pr-flow` pointer in AGENTS.md for
 review policy; this note does not duplicate that policy.
 
+## Latest verified result — 2026-10-17 11:13 UTC
+
+(世, p=1) **The Website remains live; the replacement CMS is still undeployed.** Fresh selected serving checks at11:13:48UTC retain all four healthy production containers, exact images/users and all three publicHTTP200/content hashes. Older Knoxx841 still serves beside approved Website6fd/ef3f.
+
+(世, p=1) Exact candidatef19 now has complete [normal application CI39025704357](https://github.com/riatzukiza/knoxx/actions/runs/39025704357) SUCCESS at11:06:40: backend2179tests/12656assertions, real-server e2e23/118 and frontend492/2724, all0failures/0errors. Typecheck, production backend/frontend compilation, ESM registration, unchanged browser tour, coverage, changed-frontend lint and migration gates pass. Both root observers are closed with native0/completecleanup. The [draft19](https://github.com/riatzukiza/knoxx/pull/19) body now records this actual result; head/base/draft/autooff remain exact. Canonical status still has0approvals/0coderounds.
+
+(己, p=1) Release admission remains unfinished: full backend lint still has205warnings; no four250mutation campaign, model/SDK compatibility, complete source-preserving migration/writer fence or durable recovery has qualified. Native source review/protected controller adoption, locked staging and the real Spanish human-approval/publication journey remain required. The shared Unicode guard has actual340/340GREEN; protected adoption and the isolated checker prerequisite are continuing. Body-item adapter202/5201GREEN remains private/unadopted. Recovered owner identities are not new Ready grants. No further PM2 pause, model load, production mutation or spending occurred. [Current bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-full-application-CI-PASS-deployment-checkpoint-20261017T1114Z-v1/EVIDENCE-bindings.json), receipt `612221e7-46d6-4602-89ef-ec2c9e268a47`.
+
 ## Current verified checkpoint — 2026-10-17 11:02 UTC
 
 (世, p=1) **Website is live; the replacement CMS is not deployed.** The selected production check at10:47:13UTC retains approved Website6fd/ef3f and older Knoxx841, four healthy containers and three unchanged publicHTTP200 response hashes. [Homepage](https://open-hax.promethean.rest/) and [Garden](https://open-hax.promethean.rest/garden/) remain the serving publication surfaces.
