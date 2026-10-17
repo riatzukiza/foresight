@@ -2603,3 +2603,12 @@
   spore: none
   receipt-refs: b51fddf0-bcaa-4aba-bf4b-7aa5c5a38ae4
   note: Actual full model PASS includes both genuine SDK tiers and exact native wire/source/cleanup proof. Cgroupcap and zeroOOM are component evidence, not wholehost headroom. Smaller6GiB diagnostic preserves strict requests/deadlines. Recover publication ancestry before assuming a public branch. Existing memory suffices; no spore/promotion.
+- ts: 2026-10-17T16:25:14.792122418Z
+  session: /home/err/spaces/foresight
+  task: Record actual genuine pilot PASS and six-GiB OOM constraint
+  p-efficiency: 0.82
+  p-friction: 0.36
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: f7ce8420-715d-4eff-b680-72cddab7f906
+  note: Actual3pilot assertionkills qualify prior survivor repair; measured full-test runtime must precede campaign design. SixGiB realOOM refuses fit despite one successful vector. Probe native0/JSONfalse and wrapper0/native1 remain explicit. Preserve exact source/CAS/history; no successor approval transfer or fullhost inference. Existing memory suffices; no spore/promotion.
