@@ -2468,3 +2468,12 @@
   spore: none
   receipt-refs: 54055843-7d6f-457e-95eb-ca2bbff04fb2
   note: Use selected owner-specific runtime reads and current invoice before proposing paid capacity. Three PM2 dev entries own five heavy descendants; no safe-retirement or model-fit inference. Preserve EACCES read failures, genuine review-stage chronology, pending capacity choice and the consumed local pause. Native reflect returned INVALID_ARGUMENT/null cwd; persistence unconfirmed, no retry. No spore or promotion.
+- ts: 2026-10-17T07:41:47.566285984Z
+  session: /home/err/spaces/foresight
+  task: Complete-input review refusal and observed installed-model metadata
+  p-efficiency: 0.85
+  p-friction: 0.50
+  p-skill-candidate: 0.30
+  spore: none
+  receipt-refs: 103bf523-2303-41a6-9787-63eca05b0557
+  note: Complete input and a process exit0 do not establish a valid review after a duplicated completed stage and STOP violation. Preserve actual chronology and use an ordinary fresh configured attempt without widening an exception. Catalog model slugs are dated observations; CMS provider metadata and tool labels are not measured SDK, latency or memory proof. Pending paid maintenance remains unapproved. Portable log only after prior native nullcwd failure; no spore or promotion.
