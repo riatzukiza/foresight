@@ -2666,3 +2666,12 @@
   spore: none
   receipt-refs: b36b1cf0-859d-40c4-96b8-4456348d9c14
   note: The recorded native tool profile admits an actual zero-cost anonymous OpenCode generation; configured thinking.disabled does not prove zero reasoning. Keep actual206reasoning/exacttextFAIL/enabledunrun and steps1 MAX_STEPS confound. Currente1f7 Sandbox/artifact/source/23closure qualified; independent raw rows include exactly2SGR-only color projections, never rewritten logs. Full applicationCI/realhuman/provider/release remain separate. CRplanning approved but actualMiMogate cycles beforeReady: prepare exacthumanplanningdecision rather than fake availability/readiness. Update existing routing memory, no duplicate spore/promotion.
+- ts: 2026-10-17T20:36:28.772950086Z
+  session: /home/err/spaces/foresight
+  task: Record qualified CMS CI and actual draft source publication
+  p-efficiency: 0.87
+  p-friction: 0.38
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: aa2007a7-be63-42c5-9725-8e8be4f880ce
+  note: Distinguish native author-thread assessment from review-body transport before declaring cross-repo blockers. Exact current-source application CI and actual draft source/body writes are qualified; full static160FAIL and release obligations remain. Base-branch movement changes prospective merge context despite unchanged3dot diff; compare exact PR fields rather than nested repository push timestamps. Preserve complete input/history and actual once-only outcomes; never infer a pending human planning answer. No spore/promotion.
