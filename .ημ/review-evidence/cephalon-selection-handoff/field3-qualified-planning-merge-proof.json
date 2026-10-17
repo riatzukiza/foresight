@@ -1,0 +1,37 @@
+{
+  "observedAt": "2026-10-17T10:03:57.664022+00:00",
+  "repo": "riatzukiza/eros-eris-field",
+  "PR": 3,
+  "head": "2e70522b3b1f373e33623ef9e9a551ef63cf9397",
+  "base": "a2c64bee9878fef3abd2b38481b972e6aa29cd37",
+  "merge": "b4cb390287c902ced2d383eb60b91a5bbb9da7d2",
+  "mergedAt": "2026-10-17T10:02:31Z",
+  "parents": [
+    "a2c64bee9878fef3abd2b38481b972e6aa29cd37",
+    "2e70522b3b1f373e33623ef9e9a551ef63cf9397"
+  ],
+  "tree": "df5ebb5c428ab63e3104e1d8fc66a5e1a8d93860",
+  "reviewedTreeIdentical": true,
+  "nativeMiMo": 5557149969,
+  "codeRabbitRequest": 6232489968,
+  "codeRabbitReply": 6232490878,
+  "codeRabbitSummary": 6231393179,
+  "codeRabbitRun": "3d0f43d3-91f4-42d5-897e-c38aa590131d",
+  "canonicalGate": "PASS:5checks,4settled threads,CodeRabbit+MiMo current-head unanimity,1completedplanningcohort;Codex native account quota preserves0credit",
+  "mergeMethod": "merge",
+  "rawEvidence": [
+    {
+      "path": "/home/err/.local/share/codex/cephalon-field-restore-work-20261017/field3-qualified-merged-pull-bbbf85479ff1.json",
+      "sha256": "bbbf85479ff17428f1f55dd1c565d626b8ae6e291b15ff0afba0d6753c3325ec"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-field-restore-work-20261017/field3-qualified-merge-commit-304f002997a4.json",
+      "sha256": "304f002997a4530cd9bfc0b439fa7cbd84a9a5fd49b1ef8bad7634a9d4c08eb0"
+    },
+    {
+      "path": "/home/err/.local/share/codex/cephalon-field-restore-work-20261017/field3-qualified-reviewed-commit-b5000dd70f59.json",
+      "sha256": "b5000dd70f596c80943c9dbdceb44456f4baa75ce279ec027fc96c37a84be86c"
+    }
+  ],
+  "limits": "Selection acknowledgement only; no solver implementation, runtime/deployment, replay/calibration/source-rights qualification, Field2 physical finding settlement or new batch API adoption"
+}

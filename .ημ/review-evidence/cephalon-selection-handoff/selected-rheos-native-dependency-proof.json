@@ -1,0 +1,47 @@
+{
+  "observedAt": "2026-10-17T10:03:56.418202+00:00",
+  "selectedBundle": "/home/err/.local/share/codex/cephalon-review-artifacts/receipt-river-fixture-20261009/rheos-event-epic-20261011/rheos-event-id-checker-implementation-20261012/qualified-rheos-85369213.cjs",
+  "SHA256": "85369213440634989365f75929045d36eb69b6c6b1e7679f68d483374a0d526b",
+  "reviewedSource": "8ef43eb2cb590f465552f462c8743a04282603fd",
+  "qualifiedMerge": "ae5cebca6124dae5fdd47707647b07daf10a8a4a",
+  "checks": [
+    {
+      "case": "missing",
+      "pass": true,
+      "nativeExit": 3,
+      "dependencyRetained": true,
+      "bodyAndCommentsRetained": true,
+      "allBytesUnchangedOnRefusal": true,
+      "nativeSuccessEventAppended": false
+    },
+    {
+      "case": "unfinished",
+      "pass": true,
+      "nativeExit": 3,
+      "dependencyRetained": true,
+      "bodyAndCommentsRetained": true,
+      "allBytesUnchangedOnRefusal": true,
+      "nativeSuccessEventAppended": false
+    },
+    {
+      "case": "cyclic",
+      "pass": true,
+      "nativeExit": 3,
+      "dependencyRetained": true,
+      "bodyAndCommentsRetained": true,
+      "allBytesUnchangedOnRefusal": true,
+      "nativeSuccessEventAppended": false
+    },
+    {
+      "case": "completed",
+      "pass": true,
+      "nativeExit": 0,
+      "dependencyRetained": true,
+      "bodyAndCommentsRetained": true,
+      "allBytesUnchangedOnRefusal": null,
+      "nativeSuccessEventAppended": true
+    }
+  ],
+  "rawObservations": "/home/err/.local/share/codex/cephalon-field-restore-work-20261017/rheos-selected-native-dependency-proof-20261017T1007/native-observations.json",
+  "limits": "Isolated public CLI fixtures; initial Markdown inputs, native comment/event seed; no production board or source implementation; no future owner fencing or runtime guarantees"
+}
