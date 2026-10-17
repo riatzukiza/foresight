@@ -2585,3 +2585,12 @@
   spore: none
   receipt-refs: f31d01b9-a341-4d7b-b6a3-b262879e5772
   note: Preserve original8GB and12GiB whole failures and2kill1invalid pilot; test source-preserving JS literal repair and new explicit single-resident regime separately. Strict native cleanup/source/response/OOM boundaries stay enforced. Current outcomes remain pending at seal; no release or wholehostfit inference. Existing routing memory suffices; no new spore or promotion.
+- ts: 2026-10-17T15:45:52.078780559Z
+  session: /home/err/spaces/foresight
+  task: Record real HMR survivor, SDK interop and descriptor closure, Atlas policy boundary and current reviews
+  p-efficiency: 0.78
+  p-friction: 0.42
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: b625e2f5-b76c-4253-8a1e-4c6f1301c8c7
+  note: Preserve actual two-kill one-survivor pilot and SDK pre-call TypeError. Treat single-resident canary/no-OOM interval as partial. Verify all nested portable/composition/source descriptor pins before dispatch; preserve pre-acquisition failures. Existing MiMo routing memory suffices; no extra spore or promotion. New refs use portable review-state identifiers. No production fit or deployment completion inferred.
