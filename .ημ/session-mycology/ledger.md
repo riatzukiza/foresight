@@ -2522,3 +2522,12 @@
   spore: none
   receipt-refs: 0e49e440-a473-4aa7-b115-8b9b20f9cba5
   note: Recover complete actual failed job logs and test source before diagnosing infrastructure. Provision real NBB/FFmpeg dependencies and preserve the strict browser source guard. Manual full-product QA requires immutable ancestor scope and explicit product mode. Trace a model default through actual runner spawn before claiming fixed selection; model-omitted accepted discovery and a genuine native full-input review demonstrate the intended credential-free route. Keep static checks, actual full CI, native review, source adoption and production/model/publication proof distinct; historical baseline warnings remain blockers after a current measured failure. Preserve evidence on setup failure before reporting final nonzero. No spore or native connector retry.
+- ts: 2026-10-17T10:20:46.373886882Z
+  session: /home/err/spaces/foresight
+  task: Record actual CMS Sandbox success, causal test-only candidate and genuine bounded MiMo timeout
+  p-efficiency: 0.85
+  p-friction: 0.36
+  p-skill-candidate: 0.30
+  spore: none
+  receipt-refs: 53ea7c1d-a573-430a-96d5-fcb4e56697ec
+  note: Bind each test result to its source and exact executed suite. Existing Vitest coverage does not run the frontend CLJS suite; add the registered command to existing retained-evidence workflow. A same-candidate derived output revision is different from editor authority. Put focused regression interactions in the existing modern fixture rather than expanding an unchanged legacy file with unrelated warnings. Read actual deadline, paging and tool chronology before diagnosing credential failures. Keep incomplete input, accepted invocation, review/adoption, runtime and production proof separate. No spore or connector retry.
