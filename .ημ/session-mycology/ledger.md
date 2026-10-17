@@ -2445,3 +2445,12 @@
   spore: none
   receipt-refs: 2c2751e8-0525-4579-82e7-28fa7ad2a1e8
   note: Bind actual installed bytes to adopted main rather than a stale local checkout HEAD; distinguish native checker gaps from source defects using current primary documentation. Keep callee workflow identity, actual diagnostic exits, meaningful guard RED and setup failures separate. Publish the narrow optional-interface prerequisite without confusing it with rollout, and keep one consumed pause closed. No spore promotion.
+
+
+### 2026-10-17T06:40:24.628424+00:00 — source-role reuse and honest malformed-review disposition
+
+- Context: (己, p=1) Website/CMS deployment remains active; source repairs and the personal optional-interface bridge advanced while production stayed unchanged.
+- Scores: p-efficiency0.80, p-friction0.57, p-skill-candidate0.40. No spore or promotion.
+- Evidence: Receipt `01c821f5-e597-43f9-9d00-3b6347aa22c2`; [bounded native/source bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-review-failure-and-personal-compatibility-adoption-memory-20261017T064024Z-v1/EVIDENCE-bindings-v1.json).
+- Lesson: A process exiting0 after malformed tool arguments is still an incomplete refused review. Preserve all earlier successful pages without promoting them to a verdict; use only the actual canonical retry policy. Dated component reuse requires exact relevant source correspondence and explicit unqualified broader inputs.
+- Better path: Stabilize/adopt controller and target source before a fresh long independent assessment; progress unrelated publication/reviews in parallel. Keep global service pauses consumed after restoration; inspect existing peer reachability without inventing runtime capacity. Root's full-index/default-index observation mismatch was corrected by the exact same rendering, without test replay or another approval cycle.
