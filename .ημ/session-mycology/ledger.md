@@ -2513,3 +2513,12 @@
   spore: none
   receipt-refs: 394439d1-7f77-4a94-a9e2-a8bd58c1a2c2,870756b4-6fa6-492b-89bd-85da7bcb8c25
   note: Keep action-resource binding when interpreting database privileges; flattening action names cannot prove cluster authorization. Membership is not health and command presence is not supported execution. Preserve v1 and additive corrected v2 after independent peer, ask only for missing existing read-only control-plane session. Genuine malformed rg and denied supporting reads are trace failures, not OpenRouter credential evidence; retain full failed invocation and use ordinary fresh reviews. Exact accepted personal source and protected source adoption remain distinct. Current PSI HOLD prevents model effects despite closed owned heavy work. No spore or native mycology connector retry.
+- ts: 2026-10-17T09:54:21.889143172Z
+  session: /home/err/spaces/foresight
+  task: Record genuine CMS CI prerequisite repairs, current source publication and remaining release gates
+  p-efficiency: 0.84
+  p-friction: 0.33
+  p-skill-candidate: 0.29
+  spore: none
+  receipt-refs: 0e49e440-a473-4aa7-b115-8b9b20f9cba5
+  note: Recover complete actual failed job logs and test source before diagnosing infrastructure. Provision real NBB/FFmpeg dependencies and preserve the strict browser source guard. Manual full-product QA requires immutable ancestor scope and explicit product mode. Trace a model default through actual runner spawn before claiming fixed selection; model-omitted accepted discovery and a genuine native full-input review demonstrate the intended credential-free route. Keep static checks, actual full CI, native review, source adoption and production/model/publication proof distinct; historical baseline warnings remain blockers after a current measured failure. Preserve evidence on setup failure before reporting final nonzero. No spore or native connector retry.
