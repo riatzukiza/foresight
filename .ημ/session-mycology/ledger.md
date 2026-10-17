@@ -2416,3 +2416,12 @@
 - Outcome: fresh live website/oldCMS confirmed, actual personalETA28 merge qualified, current native publication owners recovered, and local model experiment constraints separated from production declarations. Full deployment remains incomplete.
 - Lesson: catalog reconciliation is not resident loading; a local safety floor, swap-enabled6CPU dualwarm experiment and normal4CPU/no-swap observed production path cannot substitute for one another. Preserve exact runtime/model/probe deadlines and actual starting residency in future capacity evidence.
 - Ownership lesson: implemented scoped after-effect receipt storage and same-process retry do not prove crash-surviving pre-effect attempt custody. Reuse the adapter already present, close its actual planning/qualification/adoption prerequisites, then implement the existing dependent recovery owner. A stale PR API snapshot after an observed Git push is a reconciliation problem, not permission to repeat the push.
+
+
+## 2026-10-17T05:38:34.670811+00:00 — repaired receipt identities and owned child cleanup before publication
+
+- Receipt:`8bf1d602-eb32-46df-9ff1-00441a6245ec`; evidence:`/home/err/.local/share/openhax-codex/20261010/review-state/root-PR35-repaired-published-and-live-deployment-checkpoint-20261017T0540Z-v1/EVIDENCE-bindings-v1.json`.
+- Scores:efficiency0.76/friction0.72/skill-candidate0.40; no new spore or promotion.
+- Outcome: existing PR35 now520 with three genuine P1 repairs,172 distinct CLJS tests/1100 assertions plus27migration tests, qualified canonical provenance and an ordinary verified public FF. Website remainslive; CMS replacement undeployed; central hosted MiMo success still requires actual verdict/input qualification.
+- Lesson: reject malformed scalar text before content hashing or UTF8 encoding. Cleanup must retain actual descendant and parent-signal custody, including intermediate helpers; synchronize readiness/release in tests without weakening the strict observer. Preserve initial failing runs and rerun only affected checks after concrete corrections. A successful job or local test is not native review approval or deployment.
+- Transport lesson: OAuth workflow-scope refusal before mutation does not justify account-scope changes. Existing authorized SSH can perform the same ordinary fast-forward after fresh unchanged-head checks; read failures after success require reconciliation rather than repeated pushes.
