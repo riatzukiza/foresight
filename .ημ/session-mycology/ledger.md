@@ -2549,3 +2549,12 @@
   spore: none
   receipt-refs: cfb2eecb-1edc-4029-b9ed-078b5b754018
   note: Bind every CI claim to the actual candidate checkout and native counters; keep global lint failure visible after normal CI passes. Correct metadata interface errors at source, retain first HOLD and require fresh same-job admission for real models. SDK bootstrap emits logs and stdout separately; a combined supervisor capture cannot be treated as stdout. Reuse routing memory; no spore or promotion.
+- ts: 2026-10-17T12:46:26.597628149Z
+  session: /home/err/spaces/foresight
+  task: Genuine SDK and checked embedding entry hosted build-only PASS
+  p-efficiency: 0.88
+  p-friction: 0.29
+  p-skill-candidate: 0.22
+  spore: none
+  receipt-refs: 70e35f0f-d7ce-460a-8b4e-72cb4ff34ae9
+  note: Keep normal build, complete source/output custody and actual provider execution separate. Record safe dangling filtered-workspace links truthfully rather than treating unused package targets as required imports. Preserve the original failed inventory and require new same-job resource and ownership admission for the model test. Existing deployment memory suffices; no spore or promotion.

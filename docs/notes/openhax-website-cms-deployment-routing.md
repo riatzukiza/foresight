@@ -7,6 +7,16 @@ Read the [append-only deployment report](../reports/inventory/2026-10-14-openhax
 for the observation history. Use the global `pr-flow` pointer in AGENTS.md for
 review policy; this note does not duplicate that policy.
 
+## Latest verified result — 2026-10-17 12:45 UTC
+
+(世, p=1) **The Website remains live and healthy; the replacement CMS is still undeployed.** Fresh12:45:25UTC selected serving metadata retains the same four healthy containers/images/users and three public HTTP200/content hashes. Approved Website6fd/ef3f and older Knoxx841 still serve. Candidate612 full application CI and Sandbox have passed; global backend lint remains185warnings/0errors and FAIL.
+
+(世, p=1) The isolated [genuine SDK and checked entry build39033101704](https://github.com/riatzukiza/knoxx/actions/runs/39033101704) succeeds on QA9ff4ac6e, actual product612 and SDK07085. The normal SDK build completes; the actual checked-provider QA entry compiles66files/19compiled/0warnings. Both source HEAD/tree/clean postchecks and outer process cleanup pass. The finite20930row inventory retains three unused dangling workspace links accurately; normal config and embedding-runtime output files are hashed. The artifact's69safe ZIP members and CRC/digest are independently verified. This proves build/output custody, with **no actual module import, provider call, model download/load or runtime compatibility credit**.
+
+(世, p=1) The [first build-only run39032624004](https://github.com/riatzukiza/knoxx/actions/runs/39032624004) remains FAIL. Its normal SDK and QA compilation succeeded, then dependency inventory refused an absent gardens workspace target. The successor changes only that inventory to record safe in-root raw link/normalized destination/actual target-existence, plus its source descriptor. No deletion, hidden import fallback, source guard waiver or retagging of the original failure occurred.
+
+(己, p=1) One exact isolated hosted Ollama0.33.2/Gemma4:e2b/Qwen3-embedding:8b compatibility job is being composed with fresh same-job admission and unchanged original90/90/15second probe plus two added15second checked-tier child limits. It has not run. The old PM2 pause remains consumed/restored; no renewed pause, spending, account, database or production mutation occurred. Release still needs lint cleanup, genuine mutation pilot/four250batches, runtime/model proof, complete migration/writer fence/durable recovery, native review/protected adoption, locked three-image staging and the real Spanish independent-review/human whole-revision approval/publication journey. [Exact evidence](/home/err/.local/share/openhax-codex/20261010/review-state/root-genuine-SDK-build-only-native-PASS-checkpoint-20261017T1245Z-v1/EVIDENCE-bindings.json). Receipt:`70e35f0f-d7ce-460a-8b4e-72cb4ff34ae9`.
+
 ## Latest verified result — 2026-10-17 12:11 UTC
 
 (世, p=1) **The Website remains deployed and healthy; the replacement CMS is still undeployed.** Fresh selected production checks at12:07:52UTC retain all four healthy containers with the same identities, images and users. The homepage, Garden and German Garden returnHTTP200 with unchanged response hashes; approvedWebsite6fd/ef3f and olderKnoxx841 still serve.
