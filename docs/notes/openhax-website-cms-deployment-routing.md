@@ -7,6 +7,16 @@ Read the [append-only deployment report](../reports/inventory/2026-10-14-openhax
 for the observation history. Use the global `pr-flow` pointer in AGENTS.md for
 review policy; this note does not duplicate that policy.
 
+## Current verified checkpoint — 2026-10-17 11:02 UTC
+
+(世, p=1) **Website is live; the replacement CMS is not deployed.** The selected production check at10:47:13UTC retains approved Website6fd/ef3f and older Knoxx841, four healthy containers and three unchanged publicHTTP200 response hashes. [Homepage](https://open-hax.promethean.rest/) and [Garden](https://open-hax.promethean.rest/garden/) remain the serving publication surfaces.
+
+(世, p=1) Candidate `f19a6a90f95cb6cc872a1650f1ce76c740adf0ce`, tree7f8, has genuine [Sandbox39025576082](https://github.com/riatzukiza/knoxx/actions/runs/39025576082) GREEN: frontend492tests/2724assertions, backend2179/12656 and ingestion83/325, each0failures/0errors. Its actual synthetic checkout9c has parents[2ba3,f19] and the exact candidate tree; keep9c as its artifact revision. Vitest267passed/41todo and hosted deprecation advisories remain visible. The real browser screenshot now shows “All splits approved.” and3/3; the strict tour is unchanged. [Full source-f19 CI39025704357](https://github.com/riatzukiza/knoxx/actions/runs/39025704357) is still running backend coverage in this snapshot. Sandbox, browser success and full release qualification remain separate.
+
+(世, p=1) The requested Services checkout/gitlink is adopted48c9. Updated controller99 still has its original inlineP1 and three historical body obligations. Shared catalog repair39 is adopted7ab; its consumer exposed a separate premodel Git-path bug: accepted4eaa's line guard rejects quoted Unicode files in its own generated review context. A finite NUL-framed repair is independently peered and in registered RED/GREEN qualification. No provider credentials, fixed model slug or account change repairs that guard. Model/SDK qualification, complete migration/writer fence, durable publication recovery, mutation campaign, locked staging/promotion and the real Spanish human-approval/publication journey remain unfinished.
+
+(己, p=1) The earlier one-window PM2 pause was consumed and both stored services restored. Local memory pressure26.26/24.19 at10:52 exceeds unchanged10/5 admission limits; no renewed pause, model load, production mutation or spending occurred. Finish the current full CI and shared controller review/adoption next. The dated sections below preserve the earlier route and failure history; their frozen source coordinates are not current deployment authority.
+
 ## Keep planning closure, application work and rollout distinct
 
 (世, p=1) The [October 15 source audit](/home/err/.local/share/openhax-codex/20261010/review-state/deployment-critical-path-audit-20261015T040839Z-v1/AUDIT.md)

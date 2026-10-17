@@ -2531,3 +2531,12 @@
   spore: none
   receipt-refs: 53ea7c1d-a573-430a-96d5-fcb4e56697ec
   note: Bind each test result to its source and exact executed suite. Existing Vitest coverage does not run the frontend CLJS suite; add the registered command to existing retained-evidence workflow. A same-candidate derived output revision is different from editor authority. Put focused regression interactions in the existing modern fixture rather than expanding an unchanged legacy file with unrelated warnings. Read actual deadline, paging and tool chronology before diagnosing credential failures. Keep incomplete input, accepted invocation, review/adoption, runtime and production proof separate. No spore or connector retry.
+- ts: 2026-10-17T11:03:48.340995210Z
+  session: /home/err/spaces/foresight
+  task: Qualify real CMS frontend GREEN and preserve the premodel Unicode Git-path failure
+  p-efficiency: 0.86
+  p-friction: 0.39
+  p-skill-candidate: 0.31
+  spore: none
+  receipt-refs: 4f12b2f7-d17a-4ed6-94a2-5f6cd31c5ef4
+  note: Use machine-framed Git paths rather than quoted display lines; bind PR synthetic checkout to immutable candidate tree before test credit. Preserve original REDs, unknown provider version, incomplete full CI and held capacity. Reuse existing routing memory; no spore or promotion.
