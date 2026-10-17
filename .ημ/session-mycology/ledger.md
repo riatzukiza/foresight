@@ -2308,3 +2308,15 @@
 - Evidence: /home/err/.local/share/openhax-codex/20261010/review-state/root-CMS-controller-composition-and-final-browser-cause-20261016T2310Z-v1/EVIDENCE-bindings-v1.json
 - Spore: 0 new candidates; no promotion. Existing incubating records remain unchanged.
 - Next: Resolve the final browser scenario's intended request/commit ordering before another browser run or deployment.
+
+
+### 2026-10-17T00:03:32.658905+00:00 — private controller qualification, causal draft controls and current serving status
+
+- Receipt: 096af3ec-bb26-40fa-8a12-8a6ec2032859; outcome PROGRESS, full deployment goal active; replacement CMS undeployed.
+- p-efficiency:0.62; p-friction:0.76; p-skill-candidate:0.0; new spores0, no promotion.
+- Actual progress: 54 verifier + checkout4 + SDK-helper1; normal frozen relink6; actual compiled resolution6; fresh frontend baseline474; causal RED477/15 intended assertion failures. First candidate487 has FAIL1/ERROR1, retained with normal owned cleanup.
+- Friction: a generic root descriptor walk treated a symlink descriptor as a regular file, then a released historical lease as current. Both read-only refusals are retained; explicit typed immutable versus current roles corrected qualification without replaying runtime. Source lint caught a shadowed local; the first full candidate then exposed reader compatibility and a two-read observation mismatch.
+- Better path: qualify descriptor type and temporal role before reading; preserve failures; inspect source-reader context and control each actual async completion instead of introducing sleeps, suppressing assertions or weakening freshness.
+- Evidence: /home/err/.local/share/openhax-codex/20261010/review-state/root-final57-observation-contract-and-controller-qualification-20261016T2337Z-v1/EVIDENCE-bindings-v1.json.
+- No whole-release, core57, model, public review/adoption or production credit is inferred from local passes.
+- Next: complete the narrowly diagnosed reader/test corrections before the distinct registered frontend continuation.
