@@ -2425,3 +2425,13 @@
 - Outcome: existing PR35 now520 with three genuine P1 repairs,172 distinct CLJS tests/1100 assertions plus27migration tests, qualified canonical provenance and an ordinary verified public FF. Website remainslive; CMS replacement undeployed; central hosted MiMo success still requires actual verdict/input qualification.
 - Lesson: reject malformed scalar text before content hashing or UTF8 encoding. Cleanup must retain actual descendant and parent-signal custody, including intermediate helpers; synchronize readiness/release in tests without weakening the strict observer. Preserve initial failing runs and rerun only affected checks after concrete corrections. A successful job or local test is not native review approval or deployment.
 - Transport lesson: OAuth workflow-scope refusal before mutation does not justify account-scope changes. Existing authorized SSH can perform the same ordinary fast-forward after fresh unchanged-head checks; read failures after success require reconciliation rather than repeated pushes.
+
+
+## 2026-10-17T06:01:54.052674+00:00 — distinguish workflow-specific root bugs and real interface ordering
+
+- Receipt:`ff9f2d96-0636-4a19-9d50-87dc02b94596`; evidence:`/home/err/.local/share/openhax-codex/20261010/review-state/root-protected-ETA-adoption-and-first-CMS-assessment-cause-memory-20261017T0600Z-v1/EVIDENCE-bindings-v1.json`.
+- Scores:efficiency0.74/friction0.78/skill-candidate0.55; no new spore or promotion.
+- Outcome: protectedETA356 adopteddef461; existingPR35all3settlements/current12hostedgates/native42pageMiMo qualified, CRpending. Servicesactualassessmentlive; firstCMSinformationalassessmentfailedbeforeinputconsumption onactionabilitytool-rootbinding. No production rollout or new local service interruption.
+- Lesson: a shared symptom in two workflows requires source-specific adapter proof. The adopted rejection wrapper fixes its own8tool contexts; an actionability bare export still selectedroot. Successful anonymous catalog and modeltool execution separate this from credentials. Preserve nullacceptedinvocation and no publication.
+- Sequencing lesson: an acyclic source plan can still have a review-gate cycle. A caller cannot pass a named key to an old callee that declares none. Prepare a reviewed optional-interface bridge, then caller migration, then the mandatory/fail-closed contract; do not call a future promise Fixed. Draft status alone does not suppress pull_request_target jobs.
+- Custody lesson: actual merge success survives a later branch404. Preserve the original failure, inspect nativeauto-delete policy, restore only the exact owned absentref create-only, and retain other ref attribution asunknown.
