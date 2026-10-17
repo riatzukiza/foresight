@@ -2320,3 +2320,13 @@
 - Evidence: /home/err/.local/share/openhax-codex/20261010/review-state/root-final57-observation-contract-and-controller-qualification-20261016T2337Z-v1/EVIDENCE-bindings-v1.json.
 - No whole-release, core57, model, public review/adoption or production credit is inferred from local passes.
 - Next: complete the narrowly diagnosed reader/test corrections before the distinct registered frontend continuation.
+
+
+### 2026-10-17T00:30:20.549600+00:00 — current website serving and CMS release qualification
+
+- Receipt: `7fa74e39-85d7-4788-8b79-0c9880172271`; root parent `478a63418582f82d5bd6f474424a8215c9513135`; deployment remains active and incomplete.
+- Friction 3/5; efficiency 0.65; candidate score 0; new spores 0; promotions 0. Existing spores unchanged.
+- Outcome: website and old Knoxx freshly healthy; local CMS draft corrections GREEN487, actual-view manifest control causal RED4/GREEN488, registered production frontend build PASS. Global frontend lint FAIL7E785W and browser56/57FAIL retained. Personal ETA25 published; review capacity/full-input scope remain unresolved.
+- Learning: bind exact Git diff serialization flags before comparing hashes; distinguish immutable history from current source and released leases. An instruction summarized from another repository is not local authority. Actual-view omission controls establish wiring causality that a manual cancellation test does not. Fresh-install warnings and a provider's omitted lockfile remain separate gaps after local success.
+- Preserved failures: first487 candidate, initial lint shadow warning, read-only default diff-format refusal, inert environment guard and Vite-entry preflight refusals. No repeated runtime or deleted historical evidence.
+- Evidence: `/home/err/.local/share/openhax-codex/20261010/review-state/root-draft487-GREEN-and-personal-delivery-recovery-20261017T0008Z-v1/EVIDENCE-bindings-v1.json`. No secrets recorded.
