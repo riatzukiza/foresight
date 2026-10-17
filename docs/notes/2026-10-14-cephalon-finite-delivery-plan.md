@@ -89,13 +89,85 @@ later work by subtracting estimates.
 | causal | `f503ae5a-e414-4da8-a8d4-328a7218bcf3` | 8 | `885a4b34-74fb-4e4e-a42a-6dbb54d54829` |
 | closeout | `7bdedd43-30a2-41b6-8f5c-e5c3aa5e9f71` | 2 | `f503ae5a-e414-4da8-a8d4-328a7218bcf3` |
 
+## Proposed checkpoint and restore handoff correction
+
+The owning Field proposal at
+[`52bb64808e4fee19820663bfab691a580b40e91c`](https://github.com/riatzukiza/eros-eris-field/blob/52bb64808e4fee19820663bfab691a580b40e91c/docs/plans/2026-10-14-cephalon-finite-physical-coupling.md)
+contains a replacement for the older relationships in the native snapshot above.
+It is an unmerged source proposal, not a qualified contract or board adoption.
+The three native packets were freshly read through qualified Rheos on
+October17: ABI8, contact8 and atomic8 remain Incoming, and atomic still depends
+on contact. Retain that observed table and history. Before affected Ready/RED,
+review the following complete replacement with the owning cards and apply any
+accepted change through Rheos:
+
+| Existing packet | Complete proposed dependency identities | Required handoff |
+| --- | --- | --- |
+| atomic8 `2f4421ee-2e48-405e-96d2-fee1a5597ff2` | `a0176ec0-0616-4d7f-86e1-e6cf9a160a7a`, `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `2eebbcf3-875d-4b7e-aad8-50a1c46472d2` | Replace the contact predecessor with completed forces. Qualify the actual transaction/checkpoint evidence interface using complete ABI/forces-produced snapshots. No contact-driven paired persistence or inclusion result is required for this packet Done. |
+| contact8 `ba078119-482c-49dc-bd18-c2dfcaad9024` | `2eebbcf3-875d-4b7e-aad8-50a1c46472d2`, `2f4421ee-2e48-405e-96d2-fee1a5597ff2` | Add the completed atomic checkpoint-evidence port before positive authenticated restore/rebuild controls. Retain pure candidate contact/inclusion sensitivity and the complete bounded rebuild integration/fixture obligations. |
+| feedback5 `deliver-outcome-attributed-once-only-graph-feedback` | `1eb3aa1f-53d2-4a6a-828c-57ffe990e23b`, `d68344c4-f18b-4b96-8585-bd8f7ac7c6a2` | Add the finalized ABI owning recall references, pending effects and writer acknowledgements before RED. Its own writer/protection implementation remains after lawful Ready. |
+
+The proposed physical order is ABI → forces → atomic → contact → calibration.
+Atomic source qualification must produce, persist and independently authenticate
+its complete canonical snapshots; handwritten state or a supplied trusted flag
+cannot establish checkpoint evidence. Request/fold collections may be empty
+only when the actual ABI/forces producer created no such values. Each later
+contact artifact still needs its own actual build/loading qualification. The
+existing causal8 packet, after deployment, retains the complete contact-driven
+paired graph/field/effect commits, independent readbacks, unchanged persisted
+history replay and actual served prompt causality. These outputs are relocated
+within the existing allocation, not omitted or supplied by the earlier atomic
+fixture. Its deployment predecessor stays unchanged.
+
+### Conditional restore integration allocation
+
+ABI8's existing codec/restore3 allocation owns closed signatures/carriers,
+codec/private decoding, producing-identity/mechanics guards, public boundary
+wiring and independently executable interface/refusal qualification. ABI Done
+does not claim successful checkpoint-to-tip reconciliation using an unfinished
+successor engine. Contact8's existing shared-rebuild3 allocation owns both the
+shared reconstruction engine and the public restore/rebuild integration matrix:
+authenticated nonempty history, nested replacements, once-only fact recovery,
+exact/one-over limits and the outer quarantine. Code location cannot transfer
+that integration work to ABI8 or leave it unpriced. Atomic8 supplies the actual
+qualified checkpoint-evidence port; causal8 retains the later paired persistence
+and served proof. No component completes by waiting for its own successor.
+
+Fourteen selected execution packets still propose75 points, physical source21
+still comprises ABI8/forces5/contact8, and selection3 remains separate. This is
+conditional allocation, not an independently accepted estimate or a claim that
+reuse makes integration free. Owning planning review must price all engine,
+public integration and fixture work exactly once before Ready. If the work does
+not fit, re-estimate or decompose the existing work through reviewed planning
+and lawful native Rheos adoption; a new prerequisite still needs the milestone's
+explicit inclusion decision. This source mirror changes no native point,
+relationship, primary card body, status or admission.
+
+### Complete-state selection exit
+
+The same Field source declares result-union revision2 and a complete owned
+physical observation packet/root grammar. Those selected layouts do not close
+its remaining owner/history leaves. Before consuming whole-state contracts,
+select closed revisions and actual producers for authority binding, original
+boundary-event/admission custody, contribution provenance, original recall
+inputs/history, outcome/witness payloads and writer acknowledgements. Retain
+complete original values and current authority as their distinct roles require;
+a generic canonical blob, ID/digest or version label does not establish their
+shape or authority. Existing canonical Axxium, Clio and application/graph owners
+retain their semantics. Their packet's own new producer/protection implementation
+follows lawful Ready; source planning and existing input selection precede it,
+and executed qualification precedes consumption or Done. P1 state/history and
+P2 allocation/adoption remain open until their complete actual obligations pass.
+No solver, profile-fit or B1/B2/B3 served proof follows from these declarations.
+
 ## Proposed dependency handoff
 
 Encounter admission + qualified scoped graph interface + completed selection
-handoff feed finite physical delivery. ABI/time precedes force coupling, which
-precedes contact/inclusion/replay. Their completed physical contract plus the
-encounter and graph interface feed atomic persistence. Completed persisted
-finite field feeds the independent mood transition/persistence interface. Its
+handoff feed finite physical delivery. Under the unapplied replacement below,
+ABI/time precedes force coupling; completed forces, encounter admission and
+the graph interface feed atomic persistence. Contact/inclusion/replay then
+consumes completed forces and the atomic checkpoint-evidence port. Completed
+persisted finite field feeds the independent mood transition/persistence interface. Its
 completed typed readback feeds the separately qualified appraisal/actual-consumer
 packet; the retained mood parent integrates both without extra execution points. Graph reads complete
 before the separately dependent feedback writer, so ABI/atomic work need not
@@ -866,3 +938,22 @@ Historical native comments and ledger entries remain verbatim. Both tasks keep
 their UUIDs, frontmatter, estimates, dependencies, statuses and guarantees. This
 correction supplies no Ready, approval, runtime protection, release permission
 or live B1/B2/B3 completion.
+
+
+## Feedback envelope and actual consuming-read boundary — 2026-10-16
+
+The existing feedback5 packet now references
+[its proposed envelopes and writer observations](2026-10-16-cephalon-feedback-interface.md).
+This selects the proposed seven-field FeedbackProposal, complete five-field
+OutcomeHandoff and ten-field actual FeedbackAcknowledgement wrapper and their
+acyclic native Clio custody/data flow. It changes no native frontmatter, points,
+dependencies or Ready/Done state. Actual normalized outcome/recall/witness and
+persisted/failed readback leaf schemas, reinforcement policy and causal read
+projection, storage cooperation/finite limits and producer qualification remain
+unfinished work of the same packet. They are not invented existing SDK APIs.
+Source3ab scoped recall reads graphEdges.data.scoped_recall.cost; legacy semantic
+counters and row-count upserts cannot stand in for this writer or read effect.
+The new versioned consuming profile must preserve read-only retrieval and
+qualify both seed-only and graph-neighbor useful outcomes with actual frozen-
+input selection/path change. The selected physical kernel and served proof
+retain their separate full obligations; no static cost walk substitutes for them.
