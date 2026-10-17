@@ -2486,3 +2486,12 @@
   spore: none
   receipt-refs: 036bc886-2c5e-4e06-a2fc-05fe145d171b
   note: Qualified actual protected Services interface merge and personal ETA controller merge without transferring reviews; prepared full-scope existing134/145 history split from complete259native inventory. No source/runtime/model/paid effect, no intermediateQA claim. Preserved incompatible gh flags and branch-shaped native read refusal before repository effects; corrected narrowly. Existing native mycology nullcwd outcome remains unconfirmed and is not retried. Capacity pending; previouspause consumed/restored; CMS deployment incomplete.
+- ts: 2026-10-17T08:25:33.207018487Z
+  session: /home/err/spaces/foresight
+  task: Actual Knoxx caller compatibility repair and source-bound Services/Foresight verification
+  p-efficiency: 0.78
+  p-friction: 0.48
+  p-skill-candidate: 0.32
+  spore: none
+  receipt-refs: 86077cbd-1bab-459c-84b0-2c6f2dd9bbe6
+  note: Keep real public source correction separate from readiness/native finding settlement/adoption. Exact two mappings/four accepted pins passed actual callee-interface lint and nonactivation postflight. Use NUL Git paths for Unicode names; preserve caught pre-stage guard refusal without replaying source or append effects. Source composition conservation is distinct from canonical protected-base receipt-prefix acceptance, newly raised in PR7. Existing dynamic anonymous OpenCode review routing remains valid. PSI hold blocks normal model admission; prior local pause consumed/restored; no new runtime/spend. No native mycology retry or spore.
