@@ -2407,3 +2407,12 @@
 - Outcome: currentCMS draft19 updated to733 with truthful functional/e2e scopes and original wrapper failures; local two-service pause consumed301.099s and both same entries resumed. Model attempt remainedHOLD before creation/load/inference because unchangedPSIguard failed despite sufficientRAM.
 - Lesson: one approved pause is a bounded effect, not blanket permission to retry or interrupt production. Dynamic daemon PID and generated-cache snapshots may be refreshed only after concrete source/settings/registration correspondence; preserve every pre-effect refusal and actual old outcome. Functional native0, custody-wrapper1 and later verified closure remain separate. Prefer built-in literalJSON Docker templates with optional map access; harmless observation corrections stay inside authorized custody.
 - Capacity lesson: memory availability, globalPSI, per-cgrouppressure and actualmodelworking-set are distinct measurements. Existingknoxx alias isproduction, not spareQA capacity; USER/UID differences are not host drift. Identify actual reservations through bounded owner metadata before proposing disruption or spending.
+
+
+## 2026-10-17T04:46:01.538893+00:00 — keep model experiment and production contract distinct
+
+- Receipt:`29f12e69-d0bd-4c9e-b55f-66e9b2172bfb`; evidence:`/home/err/.local/share/openhax-codex/20261010/review-state/root-live-status-and-current-review-followthrough-20261017T0439Z-v1/EVIDENCE-bindings-v2-with-independent-adapter-handoff.json`.
+- Scores:efficiency0.70/friction0.75/skill-candidate0.40; no new spore or promotion.
+- Outcome: fresh live website/oldCMS confirmed, actual personalETA28 merge qualified, current native publication owners recovered, and local model experiment constraints separated from production declarations. Full deployment remains incomplete.
+- Lesson: catalog reconciliation is not resident loading; a local safety floor, swap-enabled6CPU dualwarm experiment and normal4CPU/no-swap observed production path cannot substitute for one another. Preserve exact runtime/model/probe deadlines and actual starting residency in future capacity evidence.
+- Ownership lesson: implemented scoped after-effect receipt storage and same-process retry do not prove crash-surviving pre-effect attempt custody. Reuse the adapter already present, close its actual planning/qualification/adoption prerequisites, then implement the existing dependent recovery owner. A stale PR API snapshot after an observed Git push is a reconciliation problem, not permission to repeat the push.
