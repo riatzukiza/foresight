@@ -2540,3 +2540,12 @@
   spore: none
   receipt-refs: 4f12b2f7-d17a-4ed6-94a2-5f6cd31c5ef4
   note: Use machine-framed Git paths rather than quoted display lines; bind PR synthetic checkout to immutable candidate tree before test credit. Preserve original REDs, unknown provider version, incomplete full CI and held capacity. Reuse existing routing memory; no spore or promotion.
+- ts: 2026-10-17T12:21:47.295335140Z
+  session: /home/err/spaces/foresight
+  task: Current612 CMS full CI and independent worker metadata qualification
+  p-efficiency: 0.86
+  p-friction: 0.34
+  p-skill-candidate: 0.26
+  spore: none
+  receipt-refs: cfb2eecb-1edc-4029-b9ed-078b5b754018
+  note: Bind every CI claim to the actual candidate checkout and native counters; keep global lint failure visible after normal CI passes. Correct metadata interface errors at source, retain first HOLD and require fresh same-job admission for real models. SDK bootstrap emits logs and stdout separately; a combined supervisor capture cannot be treated as stdout. Reuse routing memory; no spore or promotion.
