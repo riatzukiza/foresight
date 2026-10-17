@@ -2594,3 +2594,12 @@
   spore: none
   receipt-refs: b625e2f5-b76c-4253-8a1e-4c6f1301c8c7
   note: Preserve actual two-kill one-survivor pilot and SDK pre-call TypeError. Treat single-resident canary/no-OOM interval as partial. Verify all nested portable/composition/source descriptor pins before dispatch; preserve pre-acquisition failures. Existing MiMo routing memory suffices; no extra spore or promotion. New refs use portable review-state identifiers. No production fit or deployment completion inferred.
+- ts: 2026-10-17T16:00:19.633314931Z
+  session: /home/err/spaces/foresight
+  task: Qualify exact hosted full model PASS and stricter component budget
+  p-efficiency: 0.86
+  p-friction: 0.22
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: b51fddf0-bcaa-4aba-bf4b-7aa5c5a38ae4
+  note: Actual full model PASS includes both genuine SDK tiers and exact native wire/source/cleanup proof. Cgroupcap and zeroOOM are component evidence, not wholehost headroom. Smaller6GiB diagnostic preserves strict requests/deadlines. Recover publication ancestry before assuming a public branch. Existing memory suffices; no spore/promotion.
