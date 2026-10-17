@@ -2576,3 +2576,12 @@
   spore: none
   receipt-refs: 7833afbd-f16f-4e43-9230-f8529da9ed7d
   note: Preserve whole failures and exact source identities; corrected canary passes but live OOM blocks compatibility. Measure twelve GiB separately; never transfer unit, probe or historical review credit to deployment. Existing routing memory suffices; no new spore or promotion.
+- ts: 2026-10-17T15:06:04.056920820Z
+  session: /home/err/spaces/foresight
+  task: Qualify JS-literal mutation repair and one-resident model diagnostic with actual native source custody
+  p-efficiency: 0.80
+  p-friction: 0.36
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: f31d01b9-a341-4d7b-b6a3-b262879e5772
+  note: Preserve original8GB and12GiB whole failures and2kill1invalid pilot; test source-preserving JS literal repair and new explicit single-resident regime separately. Strict native cleanup/source/response/OOM boundaries stay enforced. Current outcomes remain pending at seal; no release or wholehostfit inference. Existing routing memory suffices; no new spore or promotion.
