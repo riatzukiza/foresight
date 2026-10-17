@@ -2693,3 +2693,12 @@
   spore: none
   receipt-refs: 1501296c-787e-4495-aa3e-6e1e44072ca2
   note: Validate structured command data as well as process exit. Preserve failed runs; distinguish numeric dispatch inputs from model tool argument errors. Reuse successful source work without replay. Stage only this checkpoint own additions when shared ledgers contain foreign appends. No spore or promotion.
+- ts: 2026-10-17T21:55:48.207313786Z
+  session: /home/err/spaces/foresight
+  task: Record current CMS Sandbox and historical full baseline timing
+  p-efficiency: 0.83
+  p-friction: 0.35
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: faa29c4c-b58a-48c9-a157-676c5dd6d483
+  note: A full immutable baseline can localize observed wall-time spans without reducing test scope. Namespace marker arrival intervals are not CPU attribution; UI last-rendered text is not an execution stack. Keep exact source and terminal numerics, successful setup and failed readers distinct. Preserve shared ledger appends. No spore or promotion.
