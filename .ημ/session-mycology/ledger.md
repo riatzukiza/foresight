@@ -2435,3 +2435,13 @@
 - Lesson: a shared symptom in two workflows requires source-specific adapter proof. The adopted rejection wrapper fixes its own8tool contexts; an actionability bare export still selectedroot. Successful anonymous catalog and modeltool execution separate this from credentials. Preserve nullacceptedinvocation and no publication.
 - Sequencing lesson: an acyclic source plan can still have a review-gate cycle. A caller cannot pass a named key to an old callee that declares none. Prepare a reviewed optional-interface bridge, then caller migration, then the mandatory/fail-closed contract; do not call a future promise Fixed. Draft status alone does not suppress pull_request_target jobs.
 - Custody lesson: actual merge success survives a later branch404. Preserve the original failure, inspect nativeauto-delete policy, restore only the exact owned absentref create-only, and retain other ref attribution asunknown.
+
+- ts: 2026-10-17T06:22:52.664397+00:00
+  session: /home/err/spaces/foresight
+  task: Advance minimal deployment compatibility and recover installed canonical source provenance
+  p-efficiency: 0.82
+  p-friction: 0.66
+  p-skill-candidate: 0.42
+  spore: none
+  receipt-refs: 2c2751e8-0525-4579-82e7-28fa7ad2a1e8
+  note: Bind actual installed bytes to adopted main rather than a stale local checkout HEAD; distinguish native checker gaps from source defects using current primary documentation. Keep callee workflow identity, actual diagnostic exits, meaningful guard RED and setup failures separate. Publish the narrow optional-interface prerequisite without confusing it with rollout, and keep one consumed pause closed. No spore promotion.
