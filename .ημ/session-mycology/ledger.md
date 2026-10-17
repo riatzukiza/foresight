@@ -2558,3 +2558,12 @@
   spore: none
   receipt-refs: 70e35f0f-d7ce-460a-8b4e-72cb4ff34ae9
   note: Keep normal build, complete source/output custody and actual provider execution separate. Record safe dangling filtered-workspace links truthfully rather than treating unused package targets as required imports. Preserve the original failed inventory and require new same-job resource and ownership admission for the model test. Existing deployment memory suffices; no spore or promotion.
+- ts: 2026-10-17T13:29:45.279725379Z
+  session: /home/err/spaces/foresight
+  task: Qualify exact model acquisition and preserve genuine mutation reader failure
+  p-efficiency: 0.79
+  p-friction: 0.44
+  p-skill-candidate: 0.30
+  spore: none
+  receipt-refs: 5e535a0e-1318-4c05-ad9a-2c11ccad037a
+  note: Keep immutable carrier identity separate from daemon-reported size accounting; retain the same conservative disk ceiling. Run genuine harness discovery before expensive baseline work and preserve parser failures without kill credit. Bind static warning reduction to its changed private source. Existing deployment/routing memory suffices; no spore or promotion.
