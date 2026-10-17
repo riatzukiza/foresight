@@ -7,7 +7,7 @@ points: 3
 labels: "cephalon, graph, architecture, numeric, planning"
 epic: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
 parent: "63a0e4ff-353f-4c90-ab8a-7241d958d54c"
-write-id: "1792057102543-0.xaervxh55v3r5c3jvo"
+write-id: "1792222799281-0.3fyjdh1qm7bhepcct0x"
 ---
 
 ## Context
@@ -103,5 +103,7 @@ This is planning input. Selection completion requires the current owning-reposit
 Finding4279880356: AC5 and concrete proposal now explicitly separate selected owner/numeric/mechanics decision/owning-plan acknowledgement from executed contact/calibration and selected-byte source-rights/notices successor outputs. Selection does not wait for those successors; no source permission or solverexecution is granted by its handoff. Actual native predecessor directions/points/status preserved, avoiding semantic readiness cycle.
 
 Review refinement for native reviews5530925136/5530938777: current operative prose uses normal word boundaries. Earlier native history stays unchanged; this correction supplies the readable current statement. No status, dependency, parent or epic change; all source qualification and native Ready gates remain.
+
+Existing3point selection-handoff plan: immutable coordinator decision020d97fecae4a8d0d277b9b2695d9482620b4a76 and actual ForesightPR36 MERGE8c649fee2e95e5ec6b5304a3351a0e16fca60533 have identical trees and current decision bytes. Field personalmaina2c64bee still acknowledges original6a443 only. Prepare the owning acknowledgement as a small independent planning amendment on that actual personalmain: retain original selection provenance, name current decision/merge, add only the explicit signed safe field-cell-index exception while retaining nonnegative counts/wallets/time/RNG and all other ABI values. This is the existing required acknowledgement output, not new behavior/points or solver implementation. No full Field2 contract adoption, P1/P2 settlement, donorpermission, calibration/collision/replay execution, runtime/physical profile or liveproof claim. Keep this card Incoming until its actual reviewed owning acknowledgement, upstream native admission prerequisite and own lawful readiness/review qualify. All named successor obligations remain. Preserve Field2's8c branch and exact held149 journals in a named owned stash/private byte copies while reusing its workingtree for the small acknowledgement; never apply those Field2-only appends to the new main-based plan. No historyrewrite/force/mainreset/extra fullcopy/paid/credential/clock/deploy/heartbeat change.
 
 ---
