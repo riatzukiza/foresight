@@ -2648,3 +2648,12 @@
   spore: none
   receipt-refs: 79696236-a5b5-43ec-acd7-c1ee1d0cfef2
   note: Source-specific proof matters: exact6e48 fullCI/all20closures/97boundfiles/two actual fixturePNG views PASS; later6cf165warningsFAIL and9da4T live need own runtime. Currentd999 Muse fullGREEN/CRapproval does not finish pendingMiMo/adoption. Current20 failed with length31999reasoning1output/noassessment, not credentials or deadline; inspect actual serialized controls before another attempt. Decode JSON source escapes before making a framing judgment; false suspicion retracted before effects. Preserve all old records/no spore or promotion.
+- ts: 2026-10-17T19:39:13.834153181Z
+  session: /home/err/spaces/foresight
+  task: Persist current combined CMS source and actual dynamic review failures
+  p-efficiency: 0.69
+  p-friction: 0.64
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 0c895f57-7bbd-4ad8-a85e-17d2de23c647
+  note: Read the recorded anonymous OpenCode native-registration prerequisite before another probe: the all-tools-denied403 was already known. Preserve failed diagnostic/no-enabled-case/no-usage and use source-only legitimate native profile correction, not OpenRouter credentials. Dynamic review string-id refusal and generic adapter schema gap have distinct evidence. Current CMS160warningsFAIL and e1f7runtime pending retain source-specific roles; old approvals/CI do not transfer. One root checkpoint, no duplicate spore/promotion.
