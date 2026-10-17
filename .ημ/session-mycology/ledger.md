@@ -2621,3 +2621,12 @@
   spore: none
   receipt-refs: 8c4f15f2-947d-4190-89f4-27ecac82b1fb
   note: Native checker exit3 can contain genuine errors and warnings; retain complete evidence before interpreting codes. Distinguish current DB privilege resources from Atlas tier or all-account coverage. Canonical source adoption and exact source integration do not grant downstream native review or deployment. Preserve actual timeouts and small-profile OOM; use existing source owners and runbooks. No spore or promotion.
+- ts: 2026-10-17T17:58:22.915175929Z
+  session: /home/err/spaces/foresight
+  task: Record coherent CMS numerical results and actual Foresight merge
+  p-efficiency: 0.84
+  p-friction: 0.22
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: cd4eea81-c461-4170-891a-1867def2e37e
+  note: Bind source, native job outcomes and complete artifact custody separately. Full gh logs include job/step columns; compare the exact retained timestamp/text after explicit framing. An owned branch advancement and concurrently authorized peer branch are expected ref changes, not corruption. Preserve all failed private qualifiers and native cleanup-error outcomes; no spore/promotion.
