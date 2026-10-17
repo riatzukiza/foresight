@@ -153,3 +153,8 @@ session and shared routing guidance; recorded model IDs are dated observations.
 Before resuming Website/CMS deployment, read the dated
 [deployment routing memory](docs/notes/openhax-website-cms-deployment-routing.md)
 for controller adoption, caller pins, planning-closure boundaries and evidence limits.
+
+Use the [Services production contract](services/README.md) for executable
+deployment entry points, runtime ownership and the linked Website, CMS, shared
+published-content and Ollama runbooks. Use the dated routing memory above for
+candidate, review and verification evidence.

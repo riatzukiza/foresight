@@ -2340,3 +2340,14 @@
 - Learned: successful Git/API mutation can precede cached PR visibility; qualify exact native readbacks before considering a retry. A successful review POST followed by omitted REST fields requires read-only GraphQL recovery, not reposting.
 - Limits: browser56/57FAIL, frontend7E785W, incomplete quality/release/model/staging/publication remain. Three author review threads are unresolved and independent native acceptance is pending. No source/runtime/account/spend/promotion waiver follows from a planning publication.
 - Candidate spores: 0. New spores: 0. Promotions: 0. Existing recovered OpenCode free-MiMo routing memory retained.
+
+
+### 2026-10-17T01:32:46.990183+00:00 — review convergence, causal backend repair and measured host limits
+
+- Receipt `86764ad2-603e-4e33-9cf5-d83c147df215`; outcome PROGRESS; full deployment goal active; replacement CMS undeployed.
+- Friction 3/5; efficiency 0.75; candidate score 0; new spores 0; promotions 0.
+- Actual progress: personal ETA25 merged the reviewed tree; two CMS queue boundaries repaired with causal RED/GREEN and production typecheck; three CMS16 reviewer findings corrected/read back/resolved; private ETA373e ordinary composition independently qualified.
+- Learning: inspect exact reviewed postimages before applying a repair already included. Preserve both ordered ledger tails and shared lines without heuristic deduplication. A successful remote effect followed by a local summary failure needs read-only recovery, not replay. Isolate a new QA worktree's dependencies and outputs from other candidates.
+- Evidence `/home/err/.local/share/openhax-codex/20261010/review-state/root-review-convergence-and-model-host-capacity-20261017T0102Z-v1/EVIDENCE-bindings-v1.json`. All 100 indexed backend/publication captures rehashed; failed RED/global gates and post-push summary failure retained. Initial checkpoint preparation had a quote SyntaxError before writes; corrected literal quoting only. No secrets recorded.
+- Limits: backend 210 warnings / 31 boundaries, frontend 7E785W, browser 56/57 FAIL, pending author assessment/protected adoption and model capacity. No model, account, host-process or deployment effect.
+- Next: finish isolated combined ETA BUILD, TEST and LINT before fresh review and protected transport adoption.
