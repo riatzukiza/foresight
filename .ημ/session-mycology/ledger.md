@@ -2675,3 +2675,12 @@
   spore: none
   receipt-refs: aa2007a7-be63-42c5-9725-8e8be4f880ce
   note: Distinguish native author-thread assessment from review-body transport before declaring cross-repo blockers. Exact current-source application CI and actual draft source/body writes are qualified; full static160FAIL and release obligations remain. Base-branch movement changes prospective merge context despite unchanged3dot diff; compare exact PR fields rather than nested repository push timestamps. Preserve complete input/history and actual once-only outcomes; never infer a pending human planning answer. No spore/promotion.
+- ts: 2026-10-17T20:48:07.140410032Z
+  session: /home/err/spaces/foresight
+  task: Record exact CMS QA source validation dispatch
+  p-efficiency: 0.88
+  p-friction: 0.28
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: c1817cc2-d5ea-4015-b52a-28a2b5a2584d
+  note: A normal QA reference can advance without changing the public candidate. Bind exact immutable source and typed inputs, preserve actual once-only effects, and distinguish GitHub ref concurrency groups before another verification dispatch. Successful scheduling supplies no compiled/runtime PASS; retain159FAIL and pending human/review/release obligations. No spore/promotion.
