@@ -2351,3 +2351,12 @@
 - Evidence `/home/err/.local/share/openhax-codex/20261010/review-state/root-review-convergence-and-model-host-capacity-20261017T0102Z-v1/EVIDENCE-bindings-v1.json`. All 100 indexed backend/publication captures rehashed; failed RED/global gates and post-push summary failure retained. Initial checkpoint preparation had a quote SyntaxError before writes; corrected literal quoting only. No secrets recorded.
 - Limits: backend 210 warnings / 31 boundaries, frontend 7E785W, browser 56/57 FAIL, pending author assessment/protected adoption and model capacity. No model, account, host-process or deployment effect.
 - Next: finish isolated combined ETA BUILD, TEST and LINT before fresh review and protected transport adoption.
+
+
+## 2026-10-17T02:02:41.662884+00:00 — actual release followthrough and source-role correction
+
+(己, p=1.00) Progress: actual Services99 branch/title/body promotion; combined ETA local 19/15/15 gates qualified; exact personal ETA23 publication admitted; one owned retired model runtime stopped normally with caches preserved; fresh selected production serving remains healthy. Full CMS deployment is incomplete. Receipt `68ff3f34-0303-4d73-a6db-325ef9bf0be8`; [evidence bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-combined-review-and-next-CMS-boundary-followthrough-20261017T0134Z-v1/EVIDENCE-bindings-v1.json).
+
+(己, p=1.00) Friction 3/5; estimated efficiency 0.75. Source-role recovery caught a wrong expected main before mutation: protected main340 versus stacked CMS2ba. Canonical additive correction preserves the mistake and actual lint against both bases. Actual workflow commands control release gating; full historical quality findings must not be silently promoted into required CI. Tested backend fixture bytes later triggered a lint error at literal nil throw; the proposed helper reuse preserves the actual throw and requires a bounded source-bound continuation.
+
+(己, p=1.00) Learning retained in the existing deployment note and canonical scope comments. Root independently rehashed 52 ETA and 64 Services capture files and 12 owned-shutdown captures. Passing local gates do not prove hosted review, protected adoption, target model capacity, staging or production. New spores 0; promotions 0. Next finite release boundary: finish admitted existing-carrier publication/qualification and close the small actual frontend CI warnings before model-capacity recheck.
