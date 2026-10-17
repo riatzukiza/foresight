@@ -2330,3 +2330,13 @@
 - Learning: bind exact Git diff serialization flags before comparing hashes; distinguish immutable history from current source and released leases. An instruction summarized from another repository is not local authority. Actual-view omission controls establish wiring causality that a manual cancellation test does not. Fresh-install warnings and a provider's omitted lockfile remain separate gaps after local success.
 - Preserved failures: first487 candidate, initial lint shadow warning, read-only default diff-format refusal, inert environment guard and Vite-entry preflight refusals. No repeated runtime or deleted historical evidence.
 - Evidence: `/home/err/.local/share/openhax-codex/20261010/review-state/root-draft487-GREEN-and-personal-delivery-recovery-20261017T0008Z-v1/EVIDENCE-bindings-v1.json`. No secrets recorded.
+
+
+### 2026-10-17T00:59:45.020157+00:00 — actual inventory causality and personal planning publication
+
+- Friction: 3/5; efficiency: 0.65. Goal progress: PROGRESS; full deployment remains active and incomplete.
+- Evidence: receipt `6d38a923-48ff-4c17-96bd-b22286adfa7a` and [/home/err/.local/share/openhax-codex/20261010/review-state/root-actual-inventory-boundary-and-core-evidence-followthrough-20261017T0033Z-v1/EVIDENCE-bindings-v1.json](/home/err/.local/share/openhax-codex/20261010/review-state/root-actual-inventory-boundary-and-core-evidence-followthrough-20261017T0033Z-v1/EVIDENCE-bindings-v1.json). Actual inventory489 RED/GREEN, source/provenance, 72 publication captures and current serving health were qualified.
+- Learned: a held native Promise passed to a higher-order async call can be adopted by a compiler-generated argument IIFE; hoist pure argument expressions before the direct call and inspect the actual pinned output. Distinguish historical mutable-cache observations from a separately sealed current artifact.
+- Learned: successful Git/API mutation can precede cached PR visibility; qualify exact native readbacks before considering a retry. A successful review POST followed by omitted REST fields requires read-only GraphQL recovery, not reposting.
+- Limits: browser56/57FAIL, frontend7E785W, incomplete quality/release/model/staging/publication remain. Three author review threads are unresolved and independent native acceptance is pending. No source/runtime/account/spend/promotion waiver follows from a planning publication.
+- Candidate spores: 0. New spores: 0. Promotions: 0. Existing recovered OpenCode free-MiMo routing memory retained.
