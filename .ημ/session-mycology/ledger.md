@@ -2567,3 +2567,12 @@
   spore: none
   receipt-refs: 5e535a0e-1318-4c05-ad9a-2c11ccad037a
   note: Keep immutable carrier identity separate from daemon-reported size accounting; retain the same conservative disk ceiling. Run genuine harness discovery before expensive baseline work and preserve parser failures without kill credit. Bind static warning reduction to its changed private source. Existing deployment/routing memory suffices; no spore or promotion.
+- ts: 2026-10-17T14:28:09.835483570Z
+  session: /home/err/spaces/foresight
+  task: Qualify actual CMS reader RED/GREEN and governed model canary with measured OOM; preserve two live diagnostic owners
+  p-efficiency: 0.80
+  p-friction: 0.36
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 7833afbd-f16f-4e43-9230-f8529da9ed7d
+  note: Preserve whole failures and exact source identities; corrected canary passes but live OOM blocks compatibility. Measure twelve GiB separately; never transfer unit, probe or historical review credit to deployment. Existing routing memory suffices; no new spore or promotion.
