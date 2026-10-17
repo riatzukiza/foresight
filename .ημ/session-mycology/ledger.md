@@ -2495,3 +2495,12 @@
   spore: none
   receipt-refs: 86077cbd-1bab-459c-84b0-2c6f2dd9bbe6
   note: Keep real public source correction separate from readiness/native finding settlement/adoption. Exact two mappings/four accepted pins passed actual callee-interface lint and nonactivation postflight. Use NUL Git paths for Unicode names; preserve caught pre-stage guard refusal without replaying source or append effects. Source composition conservation is distinct from canonical protected-base receipt-prefix acceptance, newly raised in PR7. Existing dynamic anonymous OpenCode review routing remains valid. PSI hold blocks normal model admission; prior local pause consumed/restored; no new runtime/spend. No native mycology retry or spore.
+- ts: 2026-10-17T08:39:24.792395647Z
+  session: /home/err/spaces/foresight
+  task: Advance requested Services submodule to protected source and persist canonical deployment-owner handoff
+  p-efficiency: 0.86
+  p-friction: 0.30
+  p-skill-candidate: 0.16
+  spore: none
+  receipt-refs: d3eb2004-bc1d-4dd4-86cf-669f07150e05
+  note: An accepted source update can advance the requested direct submodule independently of later final-controller review. Fresh protectedmain/parents/tree bind exactcommit; fetch exact objects without refs/FETCH_HEAD and preserve foreigncache/otherworktrees, then commit only rootgitlink and ownedmemory. CanonicalRheos comment preserves status/estimate/dependencies/history and supplies operational evidence, not rollout or finding approval. Keep existing Services runbooks/AGENTS pointers rather than duplicating a deployment authority. DetachedHEAD is normal; initial symbolic-ref read refusal retained and corrected without mutation. Prior pause consumed, capacity pending, no model/paid/runtime action. No new spore or native connector retry.
