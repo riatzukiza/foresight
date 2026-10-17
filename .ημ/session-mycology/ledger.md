@@ -2612,3 +2612,12 @@
   spore: none
   receipt-refs: f7ce8420-715d-4eff-b680-72cddab7f906
   note: Actual3pilot assertionkills qualify prior survivor repair; measured full-test runtime must precede campaign design. SixGiB realOOM refuses fit despite one successful vector. Probe native0/JSONfalse and wrapper0/native1 remain explicit. Preserve exact source/CAS/history; no successor approval transfer or fullhost inference. Existing memory suffices; no spore/promotion.
+- ts: 2026-10-17T17:11:05.645005456Z
+  session: /home/err/spaces/foresight
+  task: Record integrated CMS, actual seven-GiB OOM and native review boundaries
+  p-efficiency: 0.78
+  p-friction: 0.44
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 8c4f15f2-947d-4190-89f4-27ecac82b1fb
+  note: Native checker exit3 can contain genuine errors and warnings; retain complete evidence before interpreting codes. Distinguish current DB privilege resources from Atlas tier or all-account coverage. Canonical source adoption and exact source integration do not grant downstream native review or deployment. Preserve actual timeouts and small-profile OOM; use existing source owners and runbooks. No spore or promotion.
