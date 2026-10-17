@@ -2459,3 +2459,12 @@
 ### 2026-10-17T06:56:02.039964+00:00 — preserve review validity and use the existing qualification surface
 
 (己, p=1) p-efficiency0.82/p-friction0.62/p-skill-candidate0.35; no spore/promotion. Receipt `42726982-707b-4a17-9fa7-e1c62a18bc07` and [source/native bindings](/home/err/.local/share/openhax-codex/20261010/review-state/root-protected-review-carrier-and-production-qualification-memory-20261017T065602Z-v1/EVIDENCE-bindings-v1.json). The review file, process exit, eventual page count and accepted invocation are distinct facts: a later APPROVE cannot erase a failed stage. Correct a fork-skipped review carrier through ordinary same-repository source after personal adoption; preserve the guard and historical failed/skipped outcomes. Recover existing campaign commands and effective nested permissions before adding another harness. Initial root rawGit audit used a Services clone without d8; the existing private clone supplied all10exact blobs without fetching or changing source. No QA replay or extra approval cycle.
+- ts: 2026-10-17T07:28:38.270884993Z
+  session: /home/err/spaces/foresight
+  task: Current deployment source repair and exact production capacity choice
+  p-efficiency: 0.74
+  p-friction: 0.62
+  p-skill-candidate: 0.40
+  spore: none
+  receipt-refs: 54055843-7d6f-457e-95eb-ca2bbff04fb2
+  note: Use selected owner-specific runtime reads and current invoice before proposing paid capacity. Three PM2 dev entries own five heavy descendants; no safe-retirement or model-fit inference. Preserve EACCES read failures, genuine review-stage chronology, pending capacity choice and the consumed local pause. Native reflect returned INVALID_ARGUMENT/null cwd; persistence unconfirmed, no retry. No spore or promotion.
