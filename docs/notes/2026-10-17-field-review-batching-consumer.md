@@ -22,6 +22,17 @@ missing[], one actual attempt and exact submission/native-body readback. The
 earlier7f5 attempt's45-minute timeout remains a separate failed revision. The
 new authorization is prospective; it does not relabel either result.
 
+The append-only source record
+`cephalon-field-ed7-complete-result-source-record-20261017` in
+`.ημ/receipts.edn` records that exact personal head/base, the complete161-page
+coverage with `missing[]`, one actual attempt and exact submission/native-body
+readback. It binds the retained39901-byte attempt artifact12088693157 (SHA256
+`3bb0e6345cc125e92431bfd7379ee06d79eea44bb96e8ffa4a0c331bd7f36ebc`),
+the [actual native review5555947589](https://github.com/riatzukiza/eros-eris-field/pull/2#pullrequestreview-5555947589)
+and [successful job117299268609](https://github.com/riatzukiza/eros-eris-field/actions/runs/38999441758/job/117299268609).
+The record is an observed verification transcription; the linked native review
+is the provider's approval. It supplies no approval for this new consumer.
+
 Independent planning and lawful native Ready precede the Field patch. Adapt
 the prepared patch's context while preserving the current `always()` line; use
 ordinary history and explicit owned paths. Existing P1 canonical carriers and
