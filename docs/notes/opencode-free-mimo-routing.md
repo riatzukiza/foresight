@@ -2,6 +2,16 @@
 
 Recorded from the user's routing history and saved observations on 2026-10-12. This is a project memory note, not a replacement for the canonical review, identity, retry or merge contracts.
 
+## Current operational guard — 2026-10-17
+
+(己, p=1) Read the recorded three-profile matrix before creating another free-route probe. Removing every tool can trigger the “only from within OpenCode” refusal even when the genuine CLI is used. Native read/glob/grep plus Bash registered with only exact `true` permitted is a dated working profile; `list` is a permission key in that historical profile, while OpenCode1.18.31 uses `read` for directory listing. Preserve anonymous stores and legitimate native client behavior; never treat this error as an OpenRouter-key requirement. Discover the current eligible fast/free/tool-capable MiMo through the accepted selector; model IDs remain dated observations.
+
+(世, p=1) The first hosted diagnostic [39062713491](https://github.com/riatzukiza/knoxx/actions/runs/39062713491) reproduced the all-tools-denied403 and stopped before its enabled case. The corrected native profile in [39063827737](https://github.com/riatzukiza/knoxx/actions/runs/39063827737), source55983/pinnedOpenCode1.18.31, passed native build registration, dynamically selected model/config metadata and one anonymous generation. The actual generation exited0 with one stop step, no tool/error events and reported cost0. Root independently read that capture and rehashed19 physical bindings. This establishes this request's route access, not a completed review.
+
+(世, p=1) The corrected diagnostic **still failed**: configured `thinking.type: disabled` produced206 reported reasoning tokens and93 visible-output tokens, with extra text instead of exact542. The enabled case did not run, so there is no passing control pair or evidence of zero-reasoning mode. Native `steps:1` injects MAX_STEPS instructions at the first step and is a concrete exact-text confound; it is not proven the sole cause and does not explain away reasoning206. Source supports the matching `opencode` namespace and top-level thinking-field serialization, but actual request bytes and opaque hosted forwarding remain unobserved. A distribution-patch identity mismatch remains retained; no source-to-binary equivalence is asserted. No further experiment is authorized by this note.
+
+(己, p=1) Bind offline native registration to the same dynamically selected model: an ordinary `debug agent build` inspection (without `--tool` or `--params`) otherwise uses the configured/default model. Configuration and source projections are not wire captures or remote acceptance. Exact diagnostic, SDK-source and independent peer evidence is in [the current checkpoint bindings](/home/err/.local/share/openhax-codex/20261010/review-state/ROOT-CMS-P-sandbox-qualified-and-native-free-MiMo-generation-checkpoint-v1/EVIDENCE-bindings-v1.json).
+
 ## Signal
 
 (汝, p=1.00) The user reports that this was previously solved: **use MiMo through OpenCode's free public-provider route, without supplying credentials**. The user remembers free limits as IP-based and the latest fast MiMo model slug as changing over time. Preserve that intended route; a failed request is not permission to switch to a paid provider, buy credits, change accounts or request a key.
