@@ -2388,3 +2388,13 @@
 
 
 - 2026-10-17T03:36:58.233815+00:00 — Website/CMS deployment continuation. Actual origin356c4 publication and terminal current-browser42/57FAIL qualified; concrete old-completion/current-filter trailing-read source diagnosis prepared as strict fixture repair, not product weakening or unobserved request attribution. SelectedYoga offline/two documentedroute timeouts; exact profile retained. Source/runtime custody complete before serial coverage. Evidence: `/home/err/.local/share/openhax-codex/20261010/review-state/root-browser43-diagnosis-and-release-followthrough-20261017T0337Z-v1/ROOT-QUALIFIED-three-terminal-progress-proof-roots-and-referenced-descriptors-v1.json`; receipt `b659c188-bfb2-4100-b966-13ee4e6f2d62`. Efficiency0.8,friction3/5,skill-candidate0.4; no new spore or promotion. Full production goal incomplete.
+
+
+## 2026-10-17T04:10:36.473538+00:00 — Website/CMS actual result and capacity boundary
+
+- Receipt: `e2818df1-cb74-4a77-8562-4c93ba398119`; source CMSd695688e; rootbefore33b969d6.
+- Evidence: `/home/err/.local/share/openhax-codex/20261010/review-state/root-current-website-CMS-status-and-e2e-followthrough-20261017T0400Z-v1/EVIDENCE-bindings-v1.json`; production provider native captures in the deployment routing entry.
+- Scores: efficiency0.70, friction0.75, skill-candidate0.60; no new spore/promotion.
+- Lesson: preserve functional test outcome, original cleanup-barrier failure and later actual owned closure as separate facts. Do not rebuild or rerun product behavior solely to rewrite a retained wrapper result. Generated caches are operational outputs; reconcile their concrete byte/classpath delta without promoting mutable cache state to source authority. Routine harmless observation-template corrections stay within authorized execution custody and do not need repeated internal permission cycles.
+- Capacity lesson: local admission safety limits are not production resource contracts. Historical0.32.5/b370 evidence cannot stand for required0.33.2/7fb. Production currently has the exact daemon/Gemma but lacks requiredQwen catalog entry and has no residentmodels; lowheadroom cause remains separate. Never substitute legacy nomic or infer a resize from weight bytes.
+- Outcome: website remains healthy; replacementCMS/fullSpanishpublication incomplete; coverage/owningNode/browsedriver scopes qualified, originalnative1 retained with full delayedclosure. RequiredDockere2e not yet invoked after two preserved pre-effect custody defects.
