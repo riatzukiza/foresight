@@ -2711,3 +2711,12 @@
   spore: none
   receipt-refs: 17280373-0884-43ec-92ae-2b6db149f6d9
   note: Distinguish actual default main from named integration and comparison refs. Use command-local no-auto-GC for supervised commits; reconcile a successful commit before remaining-only continuation. Bind exact canonical comment ACK and native final-LF framing; never replay an accepted write. Preserve static FAIL, browser FAIL and separate ingestion PASS scopes. Keep foreign physical ledger appends unstaged by staging HEAD plus only own append. No spore or promotion.
+- ts: 2026-10-18T00:37:36.826467385Z
+  session: /home/err/spaces/foresight
+  task: Record source130 and qualified24c2 full-product CI with remaining gates
+  p-efficiency: 0.75
+  p-friction: 0.5
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 8fdeb6a0-6f6b-4b20-b0b6-7d36e9f2009e
+  note: Keep default main distinct from named integration and comparison refs. Use command-local no-auto-GC and reconcile completed effects before remaining-only work. Use NUL for every Git path list and exact canonical comment ACK/final-LF framing; retain repeated Unicode guard refusals without effect replay. Stage pinned HEAD ledgers plus exact own append, preserving foreign physical tails. Exact24c2 fullCI39080545125 is qualified SUCCESS with19preconditionsOK; original709a cause remainsUNKNOWN. Backend130FAIL,sharedmarkup1W and earlieringestion20W stay separate. ExistingEN+DE rendering is not new publication. Planning/review/migration/deployment obligations remain. No spore or promotion.
