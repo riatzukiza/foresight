@@ -2738,3 +2738,12 @@
   spore: none
   receipt-refs: 77ded3f9-9e4e-4558-be23-6e89083c73e6
   note: Distinguish extracted browser status from numeric HTTP status; ab-eval jq-in-printf may lose projected values. Source96b/dafd diagnostics preserve original failure semantics; currentCI39088084894 pending. Explicit dispatch number60 rejected422; omit optional input to use verified native default60. Atlas login works but visible empty account does not establish production tier/deletion; match existing owner. Keep dynamic native OpenCode freeMiMo/no OpenRouter keys, own-appends-only staging, foreign history and pending evidence limits. No spore/promotion.
+- ts: 2026-10-18T02:44:17.587959199Z
+  session: /home/err/spaces/foresight
+  task: Record qualified CMS candidate, public draft source and production freshness
+  p-efficiency: 0.8
+  p-friction: 0.5
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 9a678402-8e48-40cf-8289-2f936a59ca9c
+  note: Distinguish exact-source fullCI PASS/public draft source publication from deployment and fullbackend121W/native2 FAIL. Preserve accepted effects before guard assertions: PR metadata may lag named refs; reconcile read-only, never replay push/PATCH. Fresh GET-user cleanup-error remains failed; replacement guard normal. Atlas account mismatch and component MAX1 capacity limits remain unresolved. Later ordinary review is separate from a pending readiness/implementation exception. Own-appends-only staging preserves foreign physical ledger tails. Efficiency0.8/friction0.5/candidate0; no spore/promotion.
