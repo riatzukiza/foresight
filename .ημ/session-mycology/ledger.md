@@ -2729,3 +2729,12 @@
   spore: none
   receipt-refs: 0ccf915d-d4d4-4c3c-8b4d-a5aa4227c0a8
   note: Existing touched-warning ratchet clears introduced causes without inventing global historical cleanup as a release prerequisite. Actual130→121/native2FAIL and owning1 remain failures; current18d1 runtime39086023709 failed browser and skipped later suites, prior24c2 success stays source-bound. Use immutable source and NUL paths, preserve historical refusals, reconcile completed effects before remaining-only work. Stage pinned HEAD ledger plus exact own append; preserve foreign physical tails. Native OpenCode freeMiMo uses dynamic discovery and needs no OpenRouter credentials. Atlas organization-policy and all real deployment gates remain. No spore/promotion.
+- ts: 2026-10-18T01:54:42.864666100Z
+  session: /home/err/spaces/foresight
+  task: Record browser-status correction, authenticated Atlas account and diagnostic CI successor
+  p-efficiency: 0.8
+  p-friction: 0.5
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 77ded3f9-9e4e-4558-be23-6e89083c73e6
+  note: Distinguish extracted browser status from numeric HTTP status; ab-eval jq-in-printf may lose projected values. Source96b/dafd diagnostics preserve original failure semantics; currentCI39088084894 pending. Explicit dispatch number60 rejected422; omit optional input to use verified native default60. Atlas login works but visible empty account does not establish production tier/deletion; match existing owner. Keep dynamic native OpenCode freeMiMo/no OpenRouter keys, own-appends-only staging, foreign history and pending evidence limits. No spore/promotion.
