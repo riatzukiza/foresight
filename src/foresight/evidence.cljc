@@ -12,6 +12,10 @@
 
 (def receipt-ledger-path ".ημ/receipts.edn")
 
+;; New receipts are immutable segment files in this directory. The legacy
+;; `receipt-ledger-path` file is the first, frozen segment.
+(def receipt-segment-directory ".ημ/receipts")
+
 (def evidence-receipt-origin "revision-bound-evidence")
 
 (def outcome-precedence
@@ -219,15 +223,217 @@
        (git-commit-id? (:ledger/revision value))
        (sha256? (:ledger/sha256 value))))
 
+(def ^:private receipt-ts-pattern
+  ;; RFC 3339 §5.6 permits lowercase t/z as well as uppercase T/Z.
+  #"(\d{4})-(\d{2})-(\d{2})[Tt](\d{2}):(\d{2}):(\d{2})(?:\.(\d+))?(?:([Zz])|([+-])(\d{2}):(\d{2}))")
+
+(defn- parse-decimal [digits]
+  #?(:clj (Long/parseLong digits)
+     :cljs (js/parseInt digits 10)))
+
+(defn leap-year? [year]
+  (or (and (zero? (mod year 4)) (pos? (mod year 100)))
+      (zero? (mod year 400))))
+
+(defn days-in-month [year month]
+  (case month
+    2 (if (leap-year? year) 29 28)
+    (4 6 9 11) 30
+    31))
+
+(defn- days-from-civil
+  "Days since 1970-01-01 for a proleptic Gregorian date (Hinnant's algorithm)."
+  [year month day]
+  (let [year (if (<= month 2) (dec year) year)
+        era (quot (if (neg? year) (- year 399) year) 400)
+        year-of-era (- year (* era 400))
+        shifted-month (mod (+ month 9) 12)
+        day-of-year (+ (quot (+ (* 153 shifted-month) 2) 5) (dec day))
+        day-of-era (+ (* 365 year-of-era)
+                      (quot year-of-era 4)
+                      (- (quot year-of-era 100))
+                      day-of-year)]
+    (+ (* era 146097) day-of-era -719468)))
+
+(def ^:private leap-second-days
+  "UTC dates whose last minute had an inserted leap second (23:59:60), as
+  announced by IERS Bulletin C. No leap second has been inserted since
+  2016-12-31; extend this table if IERS announces another."
+  (into #{}
+        (map (fn [[year month day]] (days-from-civil year month day)))
+        [[1972 6 30] [1972 12 31] [1973 12 31] [1974 12 31] [1975 12 31]
+         [1976 12 31] [1977 12 31] [1978 12 31] [1979 12 31] [1981 6 30]
+         [1982 6 30] [1983 6 30] [1985 6 30] [1987 12 31] [1989 12 31]
+         [1990 12 31] [1992 6 30] [1993 6 30] [1994 6 30] [1995 12 31]
+         [1997 6 30] [1998 12 31] [2005 12 31] [2008 12 31] [2012 6 30]
+         [2015 6 30] [2016 12 31]]))
+
+(defn- leap-second-at? [utc-seconds]
+  (and (= 86399 (mod utc-seconds 86400))
+       (contains? leap-second-days (quot (- utc-seconds 86399) 86400))))
+
+(defn receipt-ts-instant
+  "Parses an RFC 3339 timestamp into `[utc-epoch-seconds leap fraction-digits]`,
+  or nil unless it names a real calendar date, clock time, and known UTC
+  offset. Rejects `-00:00` (RFC 3339 unknown-offset). Second 60 is accepted
+  only at an actual inserted leap second (23:59:60 UTC, in any offset); it
+  reads as the preceding second with `leap` 1, so it orders after 23:59:59
+  and before the next day. Fraction digits drop trailing zeros, so equal
+  instants compare equal and fractions of any precision order correctly as
+  strings."
+  [ts]
+  (when (string? ts)
+    (when-let [[_ year month day hour minute second fraction zulu sign
+                offset-hour offset-minute]
+               (re-matches receipt-ts-pattern ts)]
+      (let [[year month day hour minute second]
+            (map parse-decimal [year month day hour minute second])
+            offset-hour (if zulu 0 (parse-decimal offset-hour))
+            offset-minute (if zulu 0 (parse-decimal offset-minute))]
+        (when (and (<= 1 month 12)
+                   (<= 1 day (days-in-month year month))
+                   (< hour 24) (< minute 60) (<= second 60)
+                   (< offset-hour 24) (< offset-minute 60)
+                   ;; RFC 3339: -00:00 means the local offset is unknown, so the
+                   ;; timestamp does not name a known UTC instant.
+                   (not (and (= "-" sign)
+                             (zero? offset-hour)
+                             (zero? offset-minute))))
+          (let [offset-seconds (* (if (= "-" sign) -1 1)
+                                  (+ (* 3600 offset-hour) (* 60 offset-minute)))
+                leap (if (= 60 second) 1 0)
+                utc-seconds (- (+ (* 86400 (days-from-civil year month day))
+                                  (* 3600 hour) (* 60 minute) (- second leap))
+                               offset-seconds)]
+            (when (or (zero? leap) (leap-second-at? utc-seconds))
+              [utc-seconds leap (str/replace (or fraction "") #"0+$" "")])))))))
+
+(defn canonical-receipt-ts?
+  "True when `ts` is an RFC 3339 string naming a real instant: a valid
+  calendar date, clock time (second 60 only at an actual leap second), and
+  UTC offset."
+  [ts]
+  (some? (receipt-ts-instant ts)))
+
 (defn receipt-envelope? [receipt]
   (and (map? receipt)
        (keyword? (:kind receipt))
+       (canonical-receipt-ts? (:ts receipt))
        (every? nonblank-string?
-               ((juxt :ts :origin :owner :dod :pi :host) receipt))
+               ((juxt :origin :owner :dod :pi :host) receipt))
        (vector? (:manifest receipt))
        (every? nonblank-string? (:manifest receipt))
        (vector? (:refs receipt))
        (every? nonblank-string? (:refs receipt))))
+
+(def canonical-observation-contract
+  "Foresight's supported external observation shape, not the producer registry.
+  Producer provenance: open-hax/eta-mu d98ab446d56ddfd24542df49b102b851f2a767fa,
+  packages/receipt-river/src/cljs/eta_mu/receipt_river/law/receipt.cljs,
+  SHA256 a40dd843cf298926dfbe229d5544470dbd51682fd538e841a0fad62d29bed320.
+  The actual producer law separately validated both retained regression events.
+  Other producer kinds, representations and versions require explicit admission;
+  none of this grants revision-bound gate-result or promotion evidence credit."
+  {:event/type :receipt-river/receipt-recorded
+   :event/schema {:id :eta-mu.receipt-river/receipt-recorded :version 1}
+   :producer/package "@eta-mu/receipt-river"
+   :producer/admitted-versions #{"0.1.0"}
+   :payload/kind :observation
+   :payload/string-fields [:repo :origin :owner :dod :pi :host :manifest :refs]
+   :event/keys #{:event/id :event/type :event/recorded-at :event/schema
+                 :event/producer :event/subject :event/payload
+                 :event/caused-by :event/causes :event/refs}})
+
+(defn utc-receipt-timestamp?
+  "Validate the consumer's UTC string representation, including fractional
+  seconds, without converting or normalizing the immutable receipt."
+  [value]
+  (boolean
+   (when (string? value)
+     (when-let [[_ year month day hour minute second]
+                (re-matches
+                 #"(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.\d+)?Z"
+                 value)]
+       (let [[year month day hour minute second]
+             (mapv parse-long [year month day hour minute second])
+             leap? (or (zero? (mod year 400))
+                       (and (zero? (mod year 4))
+                            (not (zero? (mod year 100)))))
+             last-day (case month
+                        2 (if leap? 29 28)
+                        (4 6 9 11) 30
+                        31)]
+         (and (<= 1 month 12)
+              (<= 1 day last-day)
+              (<= 0 hour 23)
+              (<= 0 minute 59)
+              (<= 0 second 59)))))))
+
+(defn canonical-observation-receipt? [receipt]
+  (let [producer (:event/producer receipt)
+        subject (:event/subject receipt)
+        payload (:event/payload receipt)]
+    (boolean
+     (and (map? receipt)
+          (every? (:event/keys canonical-observation-contract) (keys receipt))
+          (nonblank-string? (:event/id receipt))
+          (re-matches
+           #"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+           (:event/id receipt))
+          (= (:event/type canonical-observation-contract) (:event/type receipt))
+          (= (:event/schema canonical-observation-contract)
+             (:event/schema receipt))
+          (utc-receipt-timestamp? (:event/recorded-at receipt))
+          (map? producer)
+          (= (:producer/package canonical-observation-contract)
+             (:package/name producer))
+          (contains? (:producer/admitted-versions canonical-observation-contract)
+                     (:package/version producer))
+          (nonblank-string? (:actor producer))
+          (nonblank-string? (:command producer))
+          (nonblank-string? (:eta-mu/version producer))
+          (git-commit-id? (:source/commit producer))
+          (map? subject)
+          (nonblank-string? (:repo subject))
+          (map? payload)
+          (every? #(and (keyword? %) (nil? (namespace %))) (keys payload))
+          (= (:payload/kind canonical-observation-contract) (:kind payload))
+          (utc-receipt-timestamp? (:ts payload))
+          (every? #(nonblank-string? (get payload %))
+                  (:payload/string-fields canonical-observation-contract))
+          (= (:repo subject) (:repo payload))
+          (not= evidence-receipt-origin (:origin payload))
+          (every? (fn [key]
+                    (or (not (contains? receipt key))
+                        (and (vector? (get receipt key))
+                             (every? nonblank-string? (get receipt key)))))
+                  [:event/caused-by :event/causes :event/refs])))))
+
+(defn receipt-record?
+  "Admit supported records without flattening envelopes or changing their bytes.
+  Any event key selects the external contract, so a partial or mixed envelope
+  cannot fall back to the legacy receipt contract."
+  [receipt]
+  (boolean
+   (and (map? receipt)
+        (if (some #(and (keyword? %) (= "event" (namespace %))) (keys receipt))
+          (canonical-observation-receipt? receipt)
+          (receipt-envelope? receipt)))))
+
+(defn duplicate-appended-event-ids
+  "Report exact event identities repeated by newly admitted records.
+  Trusted history seeds identity reservations without revalidating, rewriting
+  or deduplicating historical records. Legacy records without IDs add nothing.
+  Record-shape admission remains the caller's separate obligation."
+  [trusted-records appended-records]
+  (let [event-ids (fn [records]
+                    (keep #(when (map? %) (:event/id %)) records))
+        counts (frequencies (concat (set (event-ids trusted-records))
+                                    (event-ids appended-records)))]
+    (->> (event-ids appended-records)
+         (filter #(> (get counts % 0) 1))
+         distinct
+         vec)))
 
 (defn evidence-receipt? [receipt]
   (let [schema (:evidence/schema receipt)]
@@ -364,3 +570,73 @@
                               result
                               (get trusted-gates gate-id)))))
                     required-gate-ids))))))
+
+;; ---------------------------------------------------------------------------
+;; Segmented Receipt River ledger law (pure). Adapters supply bytes and a
+;; content-hash function; ordering and duplicate rules live here.
+
+(defn- persistent-queue?
+  "True for a cljs/JVM persistent queue (#queue ...), which is sequential
+  and equal to a list or vector of the same elements but is a distinct EDN
+  tagged collection."
+  [value]
+  #?(:clj (instance? clojure.lang.PersistentQueue value)
+     :cljs (instance? PersistentQueue value)))
+
+(defn unicode-scalar-text?
+  "True for text with paired UTF-16 surrogates and no unpaired code units.
+  No normalization or replacement is allowed before content identity."
+  [value]
+  (and (string? value)
+       (nil? (re-find #"[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]"
+                      value))))
+
+(defn canonical-form
+  "An order-independent representation of an EDN value: map entries and set
+  members are sorted, and vectors, lists and queues stay distinct, so equal
+  values always print identically and unequal values never collide."
+  [value]
+  (cond
+    (map? value)
+    [:map (vec (sort-by pr-str
+                        (map (fn [[k v]] [(canonical-form k) (canonical-form v)])
+                             value)))]
+    (set? value) [:set (vec (sort-by pr-str (map canonical-form value)))]
+    (vector? value) [:vector (mapv canonical-form value)]
+    (persistent-queue? value) [:queue (mapv canonical-form value)]
+    (sequential? value) [:list (mapv canonical-form value)]
+    :else value))
+
+(defn repeated-ledger-records
+  "Groups of segment paths that hold the same record ID."
+  [id-fn segments]
+  (->> (for [{:segment/keys [path records]} segments
+             record records]
+         {:path path :id (id-fn record)})
+       (group-by :id)
+       vals
+       (filter #(< 1 (count %)))
+       (mapv #(mapv :path %))))
+
+(defn receipt-ts-sort-key
+  "Total sort key for a record timestamp. Real instants compare by UTC time;
+  anything else (historical free-form values, or no :ts) sorts first by its
+  canonical printed form. Every key has the same shape and element types."
+  [ts]
+  (if-let [[seconds leap fraction] (receipt-ts-instant ts)]
+    [1 seconds leap fraction ""]
+    [0 0 0 "" (pr-str (canonical-form ts))]))
+
+(defn merge-ledger-records
+  "Merges segment records into one ledger ordered by the instant named by
+  `:ts`, then record ID. Historical records whose `:ts` predates the
+  canonical-instant rule still merge; new records are held to that rule by
+  `receipt-envelope?` once the extension check identifies them."
+  [id-fn segments]
+  (->> (for [{:segment/keys [records]} segments
+             record records]
+         {:record record :id (id-fn record)})
+       (sort-by (fn [{:keys [record id]}]
+                  (conj (receipt-ts-sort-key (when (map? record) (:ts record)))
+                        id)))
+       (mapv :record)))

@@ -511,3 +511,264 @@
   spore: none
   receipt-refs: foresight-pr127-current-main-integration
   note: A cached pull base can lag the actual branch tip. Fetch the live ref and inspect mergeability even after review convergence passes; preserve full main ledger prefixes and exact branch-only bytes, then obtain fresh successor evidence. Use a pinned canonical main skill snapshot when the global checkout contains unrelated work.
+- ts: 2026-10-14T05:17:36.828654416Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Correct native cutover planning findings without inventing readiness
+  p-efficiency: 0.72
+  p-friction: 0.68
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: ce2baeb1ee35c314546eeb68b1d8253f35e5625f4915afa908d2a94166875c5a
+  note: Complete native review intake yields nine actual unresolved roots. Four body corrections remove the migration/controller cycle, separate exact-delta acceptance, require a database-enforced writer fence, bind tested source identities and order authorization before mutation and final proof before activation. A separate local review finds no new defect, while SDK prerequisite and actual product proof dependency/entry work remain pending. Actual canonical Rheos interprets absent literal status as incoming and no-ops the same target with unchanged ledger bytes. Preserve the discrepancy and all existing frontmatter; no hand-written state, native settlement, current-head approval or readiness credit. Website remains live; CMS rollout and Spanish journey remain incomplete. No spore.
+- ts: 2026-10-14T06:12:33.431539620Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Author complete retained-source cutover and distinct live CMS proof dependencies through Rheos
+  p-efficiency: 0.69
+  p-friction: 0.76
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 0c31d03bcc0be3450955f00119eae4add947880201d79ab252ea2efc5c0f33eb
+  note: Built actual canonical planning CLI from stable2d and passed four targets,206tests1105assertions and zero-warning lint; did not adopt its separate production review transport. Three child tasks and actual runtime/SDK prerequisite edges plus34point aggregate now have engine provenance and readback. Corrected hidden deployment/live-proof completion cycle and retained independent composed-plan review. First story-type creation refused before writes; supported task creation preserved scope. Engine still emits empty dependency arrays and lacks literal initial-status materialization; preserve those actual gaps for upstream correction, without hand-written state or fake edges. Source successor remains planning, with native findings and normal review pending. No source-model call, migration, deployment, readiness, settlement or approval credit; no spore.
+- ts: 2026-10-14T07:16:56.813456707Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Repair canonical observation receipt admission and complete scoped CMS cutover review corrections
+  p-efficiency: 0.55
+  p-friction: 0.74
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 6d7ed9d2164e177ad10b5dc1075b241cf791c911f0d963a50fb6090e6f399cf5
+  note: Actual hosted receipt_history failure exposed a producer/consumer shape mismatch. Preserve original ledger bytes, admit the supported observation envelope explicitly, reject mixed fallback/evidence claims and retain legacy attestations. Causal RED is committed separately; exact hosted-equivalent local suites, full lint, real receipt history and pinned migration-pack suite pass with independent bounded review. CMS planning now binds tenant/project/current exact-output accepted translation and durable receipt readback. A named five-point Knoxx durability prerequisite feeds Services and content through actual Rheos edges; no later-proof dependency cycle. Remaining default-incoming metadata and empty-dependency engine gaps stay explicit. Native current-head reviews, shared complete-support adoption, implementation, qualification and actual CMS Spanish publication remain required. No production mutation or spore.
+- ts: 2026-10-14T07:48:51.796223822Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Close canonical receipt identity collisions exposed by fresh native review
+  p-efficiency: 0.64
+  p-friction: 0.63
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 3a2f2c8e034ed72ddcd7f4e8ed90168d8c12ea6a0a0fdf68af662685dd835baa
+  note: Per-record shape admission does not establish identity uniqueness across immutable history and a new suffix. Native Codex found the missing boundary on the actual published f09 source. Commit causal replay/conflict tests before the pure aggregate fix, reserve exact historical IDs without changing historical bytes and wire all verification/secure append/promotion callers to authoritative base records. Exact hosted suites and full lint pass; preserve runtime-specific assertion counts rather than conflating direct and hosted captures. Current review run is genuinely live; fresh source will need fresh qualification and native settlement. Source migration, durable adapter, CMS rollout and Spanish public proof remain unfinished; no production mutation or spore.
+- ts: 2026-10-14T10:20:42.409945824Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Apply verified owning planning corrections for F140
+  p-efficiency: 0.70
+  p-friction: 0.85
+  p-skill-candidate: 0.10
+  spore: none
+  receipt-refs: bd7cdb59a4581225078fafef7d861a77e2f4feeadb67681df355bcb5da65523f
+  note: Source-only corrections and genuine metadata custody advanced. Keep first-class initial authoring distinct from creation events; preserve protected relationships and shared identity-law ownership. All implementation, native review, qualification and deployment obligations remain; no new spore.
+- ts: 2026-10-14T14:12:54.617156411Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: correct-existing-durable-receipt-card-from-real-retention-gap
+  p-efficiency: 0.83
+  p-friction: 0.31
+  p-skill-candidate: 0.00
+  spore: none
+  receipt-refs: b4cdfa1e495fbb2739c9f83d2a920b0210bc8570f9a2e0dd869883e8065eb5f9
+  note: Immutable event identity differs from operation correlation: multiple lawful emissions can share correlation and receipt bodies. Reuse the canonical admission authority and require selected actual writer/readback qualification. A failed bare loader probe from missing classpath is not proof that a CLJC writer is JVM-only, and source pinning is not runtime qualification. Correct the existing scope from actual CMS loss after rollover, preserving metadata and immutable history rather than creating another plan. No new spore or promotion.
+- ts: 2026-10-14T15:14:50.009709863Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: F140-version-admission-causal-repair
+  p-efficiency: 0.88
+  p-friction: 0.24
+  p-skill-candidate: 0.00
+  spore: none
+  receipt-refs: 39b703b1-085e-484f-8658-5b00943d5512,67bd38c06f0ce26c3b1f30120c2b1f3255c5b61f,7d3f3c81401b7be7a3e481ef1d3435133c63da1f
+  note: A declared external version-admission contract needs explicit consumer data and membership, rather than a nonblank version check. Use coherent invalid-version neighbors through pure admission, secure append and immutable suffix verification; preserve trusted history without revalidation and reserve historical event IDs independently. Commit actual RED before the smallest GREEN, keep every original assertion and retain inherited wrapper warnings. Exact final receipt verification follows provenance commit. No new spore or promotion; CMS deployment remains active.
+- ts: 2026-10-14T16:08:12.423228598Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Consume adopted anonymous latest-free OpenCode MiMo routing
+  p-efficiency: 0.82
+  p-friction: 0.44
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 48396bc7b83b90cb49b7970ccfd60749729b08f1df9b1b4371d4c63f89e202f4
+  note: Check fresh upstream merge state before retaining old adoption holds. Imported runtime defaults are explicit qualification limits. Catalog selection and an unexplained server error are separate evidence; no credentials inferred. No spore or promotion.
+- ts: 2026-10-14T22:47:23.111666152Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Reconcile existing durable publication-receipt prerequisite
+  p-efficiency: 0.85
+  p-friction: 0.2
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-F140-durable-receipt-body-contract-successor-v1/canonical-receipt-event.edn
+  note: An accepted planning contract must follow the actual named owning storage seam. Selected fresh durable reads and explicit same-event retry need acknowledged storage proof, while private qualification stays distinct from hosted/source/image admission. Preserve board metadata and append-only provenance. No new spore.
+- ts: 2026-10-14T23:52:10.732438106Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Correct CMS receipt GET and pending crash/storage obligations in planning
+  p-efficiency: 0.83
+  p-friction: 0.59
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: fca8a009ea6501fe6f472de5c671111f561563f6b0f1b6cbe31a5d4169060175
+  note: Separate fresh selected Clio readback from legacy journal behavior; same-process retry and same-volume restart cannot establish failed-attempt crash recovery or container-replacement lifetime. Preserve explicit unknown effect windows and stop/split broader ownership work instead of inflating a five-point seam silently. No spore or promotion.
+- ts: 2026-10-15T00:27:59.942820963Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Author concrete Knoxx crash recovery and Services persistent storage owners
+  p-efficiency: 0.85
+  p-friction: 0.52
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: /home/err/.local/share/openhax-codex/20261010/review-state/root-F140-f07-concrete-publication-recovery-storage-split-v1/canonical-receipt-event.edn
+  note: A recovered outcome must remain distinct from an acknowledged pre-effect intent and an actual prepared receipt envelope. Split broader application crash custody and deployment storage lifetime into concrete owners; preserve canonical board state and truthfully pending readiness rather than overloading the emission adapter. No spore or promotion.
+- ts: 2026-10-15T00:38:46.815470752Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Preserve in-write crash windows in publication recovery planning
+  p-efficiency: 0.86
+  p-friction: 0.49
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: f2f3a7b04ffc14e97014b758abe13504fcfe32bd736ecbabefd0536fe0e4f872
+  note: Post-append lost acknowledgment and process restart do not cover interruption inside actual persistence. Keep exact partial bytes and unknown outcomes, require named owning recovery primitives where necessary, and retain healthy legitimate recovery. No spore.
+- ts: 2026-10-15T00:42:37.427727306Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Preserve causal missing producer custody receipt regression
+  p-efficiency: 0.9
+  p-friction: 0.37
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 86ea9e19687cbfab77df0fab1f9897a5e7a4995bd3720086b6d89ccb4270000f
+  note: A supported package identity and version do not establish actor, command, component version or source provenance. Test new suffix admission and real append byte preservation while grandfathering exact trusted history. Do not misattribute scoped consumer policy to upstream producer law; no transient lock absence claim. No spore.
+- ts: 2026-10-15T00:46:46.051454748Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Qualify canonical producer provenance consumer repair
+  p-efficiency: 0.92
+  p-friction: 0.31
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: b4c8cae0f6c09099fb15bde0b31d6965eae1679d588283d200b8c6c99dcf5b52
+  note: Four exact consumer checks repair genuine provenance acceptance while preserving registered legacy/history controls. Qualified full registered source tests and owning lint on the actual pinned runtime. Keep inherited npm config warnings separate, retain incorrect abbreviated-base invocation, and require final committed receipt-history verification. No spore.
+- ts: 2026-10-15T01:14:53.523448325Z
+  session: 01a12257-fc69-7720-888c-dd2595ff7dc7
+  task: Require actual canonical deployment prerequisite edges and exact aggregate update
+  p-efficiency: 0.9
+  p-friction: 0.44
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: c56c53f96d39607f691d940e3af1a758936bea3f7be74c701ab018438dd5969b
+  note: Explicitly gate operational readiness and handoff on real engine dependency and aggregate readbacks. Source body references are reviewable requirements, not executed graph edges. Preserve prior six-effect scope and unknown source custody; no spore.
+- ts: 2026-10-15T11:03:24.178352642Z
+  session: codex:01a12257-fc69-7720-888c-dd2595ff7dc7/cms_native_journey_binding
+  task: Admit four Foresight cutover cards through lawful native planning states
+  p-efficiency: 0.78
+  p-friction: 0.28
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: e255f9d9-f534-4ace-92df-82732b7e8d96,fc90d920a042f0a5407c7935b44376cde0b535a5
+  note: Read native projection plus physical metadata before acting: missing status already projected incoming, so genuine forward admission writes status and engine history. Keep admission distinct from guarded physical-absence initialization and dependent ready qualification. Remaining cycle plan stays unexecuted.
+- ts: 2026-10-15T11:20:48.858207574Z
+  session: codex:01a12257-fc69-7720-888c-dd2595ff7dc7/cms_native_journey_binding
+  task: Break the native Foresight cutover durable-interface readiness cycle
+  p-efficiency: 0.86
+  p-friction: 0.18
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 1217ad3f-bf5e-4fe9-b45e-71b9ecdfb1a5,c929bb023120ac34bacf556b6525a767ac84841f
+  note: Preserve the final rollout prerequisite UUID while splitting a real earlier durable adapter from final integration. Read actual native state/metadata and record once-only effects; distinguish registered planning edges from accepted runtime guarantees. Keep historical source gaps and empty dependency writer representation visible.
+- ts: 2026-10-15T12:35:06.517515257Z
+  session: /home/err/.codex/worktrees/openhax-embedding-cutover/foresight
+  task: Narrow obsolete ADA initialization plan to two genuine remaining operations
+  p-efficiency: 0.82
+  p-friction: 0.32
+  p-skill-candidate: 0
+  spore: none
+  receipt-refs: 7d0988c8-8ad9-42da-a1c7-32872f538bc4,e0f536cbe98752b6d0f48db60f6f1d26373fb348
+  note: Re-read actual native state before preserving an older operation plan: remove inapplicable future effects rather than fabricate their completion. Keep immutable historical collision evidence and current observations distinct; same-value writes cannot reidentify history or fix the producer. Source-owned event-ID repair belongs to current canonical Rheos and its existing legacy owner. Portable file reflection only; no native mycology or spore credit.
+- ts: 2026-10-17T05:25:20.279205783Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Repair PR35 detached process custody, parent interruption and Unicode record identity
+  p-efficiency: 0.67
+  p-friction: 0.74
+  p-skill-candidate: 0.40
+  spore: none
+  receipt-refs: sha256:d4797e6266c855050201b2e148e65d78f6c183230650ee750fd9c88f412d3061
+  note: Wait every captured owned intermediate through exit; quarantine unknown post-start spawn errors; preserve malformed-Unicode causal controls and immutable history. Actual172CLJS tests/1100assertions plus27migration tests pass; native review and deployment remain separate.
+- ts: 2026-10-17T06:13:33.507181590Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Fix PR35 active-instant prevalidation after tagged discards
+  p-efficiency: 0.85
+  p-friction: 0.35
+  p-skill-candidate: 0.30
+  spore: none
+  receipt-refs: 7a121bd181d56237fcd34677f902aaf8ff44740edcb9bf0b74a8499da3df20e5
+  note: Reused the exact suggested regex correction after four causal owning assertions failed; 102 tests and 586 assertions now pass, with zero lint warnings. Preserve the isolated nested-reader rejection and do not infer an accepted ID collision from two nil diagnostic IDs. Existing receipts remain immutable; new-head hosted review remains required.
+- ts: 2026-10-17T07:05:25.596215338Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Fix PR35 late adopted-child cleanup after leader reaping and clarify append adapter documentation
+  p-efficiency: 0.90
+  p-friction: 0.30
+  p-skill-candidate: 0.25
+  spore: none
+  receipt-refs: 921d2fb02c2c9260c3c678291f1b7f814696393e49f7c2d05777333922d7aea9
+  note: Use Popen.returncode to avoid waitid after a leader is reaped while continuing strict late-descendant drain. Deterministic actual cleanup control mocks all process/signal effects and produces three causal failures before the guard; full owning suite then passes103tests593assertions with zero errors/failures, registered lint zero warnings. Keep real detached and INT/TERM controls, old failed traces and current-head review obligations; no spore or policy change.
+- ts: 2026-10-17T08:15:54.302787076Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Repair PR35 missing proc children evidence before custody setup in both adapters
+  p-efficiency: 0.90
+  p-friction: 0.30
+  p-skill-candidate: 0.25
+  spore: none
+  receipt-refs: b853e735eb5ca8b70f52328462893e76e46c9f011124ee13ee73419e1bfd66f8
+  note: Read the current process task children file before any pidfd or prctl setup; unavailable child evidence must fail closed rather than fold to an empty descendant set. The actual two enable_subreaper/direct_children functions are exercised with controlled missing, empty, occupied and denied proc cases; all path and kernel effects are intercepted. Six genuine missing-evidence failures became full owning GREEN104tests611assertions0fail0error, registered lint0errors0warnings. Preserve original traces, canonical legacy/segments and all prior reflection bytes. Prior78 model attempt and live retry remain dated; no new-head hosted approval or merge/deployment claimed. No spore or policy change.
+- ts: 2026-10-17T09:12:32.451204803Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Remove PR35 unused Node gate custody helpers and obsolete test wrapper
+  p-efficiency: 0.94
+  p-friction: 0.15
+  p-skill-candidate: 0.10
+  spore: none
+  receipt-refs: 696c667f3f3aa8fd981c975b5eb05f977cd9dae57998159f62dac14b807fbbc9
+  note: Native current6871 CodeRabbit full20 review5557141989 identified body item ddd43f7e2b9fb7def1778d81. Remove exactly two unused Node helpers and one obsolete test with-redefs wrapper; preserve complete live spawn-result/Python custody path, both Python adapters and every existing assertion. Independent root source peer verified committed preimages and exact mechanical deletion. Same complete owning suite passes104tests611assertions0fail0error with normal subreaper cleanup; registered lint errors0warnings0 and diffcheck0. Dead-code deletion warrants no artificial causalRED or duplicated test. Preserve all old receipts and reflection prefix; write one new canonical receipt segment. Current6871 hosted first grep failure and ongoing second review remain dated and supply no new-head approval. No merge/deployment claim and no new spore.
+- ts: 2026-10-17T10:29:35.101944654Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Repair PR35 adjacent-discard precision admission and segment migration wording
+  p-efficiency: 0.92
+  p-friction: 0.24
+  p-skill-candidate: 0.15
+  spore: none
+  receipt-refs: a17d96ba286b20dc08f82a21b70a1da49a6d70c7e5a1d4fe74b69bb16026b975
+  note: Actual current2391 CodeRabbit review5557330045 two findings verified: adjacent #_x fused by scanner and legacy migration prose overgeneralized immutability. Actual pure NBB diagnostics establish reader-to-ID precision collision for distinct0001/0002 instants, without claiming valid envelope append/promotion. Ordinary test-only351e95b2 produced105tests617assertions5causalFAIL0errors; exact source85243450 passed same105/617/0/0, full registered staticlint0errors0warnings and diffcheck0, all native cleanup qualified. Dedicated reader-prefix branch preserves corpus; two prose phrases match one-record segment law; existing accepted4eaa caller180 yields75min per invocation with full coverage and canonical recovery limits unchanged. Prior2391 partial33of44 deadline/acceptednull remains immutable. agents7fd retained until canonical39 actual adoption. Append one current canonical receipt segment and preserve every old receipt and SM prefix. No new spore, hosted current-head approval, merge or deployment claim.
+- ts: 2026-10-17T10:44:09.437793950Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Consume protected canonical .agents39 through the existing PR35 caller pin
+  p-efficiency: 0.95
+  p-friction: 0.12
+  p-skill-candidate: 0.10
+  spore: none
+  receipt-refs: b54b9b4e3d1eb4a5e1e19e88140211096060088134def5e13b1cd905229d5c51
+  note: Native .agents39 MERGED7ab at10:40:51, independent parents e391+157/treea552 verified before changing only agents_revision7fd→7ab in existing accepted ETA4eaa Foresightcaller. Source919ddd17 preserves180minute job budget/Muse/OpenCode version/anonymousdynamicmodeldiscovery/allgates/permissions. Product/test/CLI source stays exact previously qualified105/617GREEN; no duplicatepuretest or new-head hostedcredit. Old5166 automaticreview39025420560 remains sourcebound and may be superseded after ordinarypublication. Keep all receipts and SM prefix; one new canonicalsegment, no new spore, no approval/merge/deploy claim. Actual newheadcatalog/fullinput/consumer/publication qualification remains required.
+- ts: 2026-10-17T12:01:33.738074280Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: PR35 consume actually adopted machine-safe review-context workflow
+  p-efficiency: 0.86
+  p-friction: 0.32
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: 2026-10-17T120052571Z-ffc9fcdf6de0,14ece6e64d410c0b9386562e0f8601cad6434808bae84f8dd13c82d548686d97
+  note: Bind actual protected ETA7112/defaultref and its NUL-framed owned-context guard before advancing caller. Preserve e2a premodel refusal and all105/617 historical product evidence; new owning workspace24/122 and caller lint pass without replaying unchanged process corpus. Fresh whole-input hosted review remains required; no source/fullcandidate approval or deployment transfer. No spore created.
+- ts: 2026-10-17T12:28:19.695792164Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: PR35 correct two verified receipt specification statements
+  p-efficiency: 0.95
+  p-friction: 0.15
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 6d5bafedba1cbb99cff836ff2ed6b1319e7dc4070017a2da55feeb8915a53148
+  note: Verified CR roots4302631973/4302631982 against actual post-write quarantine and duplicate-law source; two prose corrections only, no artificial tests or approval transfer. Historical receipts preserved; fresh new-head review remains required.
+- ts: 2026-10-17T13:39:53.147956177Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: PR35 preserve dispatch exactness and actual operational lock paths
+  p-efficiency: 0.94
+  p-friction: 0.18
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: 0aeb5f369765438fada94b75f32e7b3f552b18d6928134d6b7e0322034e1aa9b
+  note: Verified current CR5557922511 roots4302786624/4302786630 with actual reader and complete-envelope controls: full owning RED106/635/12FAIL thenGREEN0/0, lint0E0W. Added actual segment lock diagnostic while retaining legacy paths and generic rejection; corrected historical timestamp ordering prose. Failed7cd review/stage-refusal remains unaccepted; new-head hosted gates/review still required. No automatic retry, provider/policy change, or deployment credit.
+- ts: 2026-10-17T14:28:59.962730272Z
+  session: /home/err/.local/share/openhax-codex/20261010/review-state/ACTUAL-existing-PR35-three-P1-repair-v1/source
+  task: Repair PR35 first-cleanup adopted-zombie classification without accepting live descendants
+  p-efficiency: 0.94
+  p-friction: 0.22
+  p-skill-candidate: 0.15
+  spore: none
+  receipt-refs: cd68361b501359465642af6b87d7b48095c614b3cfc0b6af5b3805db823e0621
+  note: Verified current9d native CodeRabbit5558192907 Minor4302997749: an adopted child can become a zombie after main-loop reaping but before first cleanup. Add exactly three fixture lines to reap exited adopted children with WNOHANG before classifying remaining children. The new real supervisor/reaper deterministic control intercepts every process/kernel effect, gives exactly three causal RED assertions, and preserves genuinely live late-child refusal/signalling/cleanup. Full owning107tests653assertions3FAIL0ERROR became0FAIL0ERROR, registeredlint0errors0warnings, all nativecaptures closed/normal. Test-only cb5dd249 and source91fb0726 remain separate. Preserve current9d genuinely accepted full47 MiMo APPROVED5558163234 as dated evidence only: successor needs fresh gates/review. Keep old receipts and all SM prefix, no spore, approval transfer, merge or deployment claim.
