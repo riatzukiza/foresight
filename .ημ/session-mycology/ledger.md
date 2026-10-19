@@ -2684,6 +2684,15 @@
   spore: none
   receipt-refs: c1817cc2-d5ea-4015-b52a-28a2b5a2584d
   note: A normal QA reference can advance without changing the public candidate. Bind exact immutable source and typed inputs, preserve actual once-only effects, and distinguish GitHub ref concurrency groups before another verification dispatch. Successful scheduling supplies no compiled/runtime PASS; retain159FAIL and pending human/review/release obligations. No spore/promotion.
+- ts: 2026-10-17T21:06:09.644308873Z
+  session: /home/err/spaces/foresight
+  task: Prepare remote-verified scratch cleanup
+  p-efficiency: 0.55
+  p-friction: 0.7
+  p-skill-candidate: 0.5
+  spore: none
+  receipt-refs: agent-scratch-cleanup
+  note: Drive backup blocked by OAuth and unavailable browser surface; cleanup must fail closed on inaccessible processes. Local archive restore and corrupt-readback refusal validated; no spore promoted.
 - ts: 2026-10-17T21:23:12.505859622Z
   session: /home/err/spaces/foresight
   task: Record CMS runtime pass and exact remaining deployment failures
