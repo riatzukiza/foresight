@@ -2765,3 +2765,22 @@
   spore: none
   receipt-refs: e0cab5f5-1362-47f6-806d-afc83654bbe5
   note: Distinguish source-bound fullCI PASS, Ready review activity and no deployment. Preserve failed Services/F39/Muse invocations without settlement or product-defect claims. Source controller sequencing is not user authority: M1 is not an explicit global prerequisite; existing-host capability is not a qualified placement. Current Stealth version/model gaps and Atlas ownership remain explicit. CR availability does not establish included325path coverage. Own-appends-only staging preserves foreign physical tails. Efficiency0.8/friction0.5/candidate0; no spore/promotion.
+- ts: 2026-10-02T22:08:23.055660338Z
+  session: /home/err/spaces/review-repair/foresight
+  task: Restore shared evidence reviewer caller
+  p-efficiency: 0.8
+  p-friction: 0.2
+  p-skill-candidate: 0.1
+  spore: none
+  receipt-refs: none
+  note: Reusable workflow callers require explicit immutable PR head and reviewed pin.
+
+- ts: 2026-10-02T22:48:00Z
+  session: /home/err/spaces/review-repair/foresight
+  receipt-refs: 2026-10-02T22:48:00Z
+  task: Prevent deterministic test bytecode artifacts
+  p-efficiency: 0.9
+  p-friction: 0.3
+  p-skill-candidate: 0.2
+  spore: none
+  note: Python unittest discovery generated __pycache__ and correctly failed clean checkout binding; prevent artifact creation while preserving the gate.
