@@ -610,3 +610,12 @@
   spore: none
   receipt-refs: cd68361b501359465642af6b87d7b48095c614b3cfc0b6af5b3805db823e0621
   note: Verified current9d native CodeRabbit5558192907 Minor4302997749: an adopted child can become a zombie after main-loop reaping but before first cleanup. Add exactly three fixture lines to reap exited adopted children with WNOHANG before classifying remaining children. The new real supervisor/reaper deterministic control intercepts every process/kernel effect, gives exactly three causal RED assertions, and preserves genuinely live late-child refusal/signalling/cleanup. Full owning107tests653assertions3FAIL0ERROR became0FAIL0ERROR, registeredlint0errors0warnings, all nativecaptures closed/normal. Test-only cb5dd249 and source91fb0726 remain separate. Preserve current9d genuinely accepted full47 MiMo APPROVED5558163234 as dated evidence only: successor needs fresh gates/review. Keep old receipts and all SM prefix, no spore, approval transfer, merge or deployment claim.
+
+- timestamp: 2026-10-23T01:04:36.673882+00:00
+  task: foresight-mimo-waiver
+  p-efficiency: 0.8
+  p-friction: 0.3
+  p-skill-candidate: 0.2
+  spore: none
+  receipt-refs: .ημ/receipts/2026-10-23T010310Z-foresight-mimo-waiver.edn
+  note: Keep the canonical review cohort exception distinct from the deterministic aggregate; pin candidate upstream source and require reviewed adoption. Preserve historical failed checks and the caller evidence script byte-for-byte.

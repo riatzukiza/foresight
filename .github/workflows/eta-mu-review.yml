@@ -13,14 +13,17 @@ permissions:
 jobs:
   review:
     name: Evidence-first review (eta-mu)
-    # The reviewed paging contract avoids OpenCode Read's per-line truncation.
-    uses: open-hax/eta-mu/.github/workflows/opencode-code-review.yml@7112c36440d180ca183d6a3f89661cee161fdae5
+    # Candidate waiver dependency: qualify the upstream source before adoption.
+    uses: open-hax/eta-mu/.github/workflows/opencode-code-review.yml@ee3d5b62a56ced4fcb597266a968db2e880f37da
     with:
       pr_head_sha: ${{ github.event.pull_request.head.sha }}
       muse_revision: c1369c223cf3c57e3e31934a6d746bfcdfe73f5a
       agents_revision: 7ab2f99e048e370f5f943acc2321b8294402e786
       opencode_version: 1.18.31
       review_timeout_minutes: 180
+      # Err's scoped MiMo waiver: native CodeRabbit AND Codex remain mandatory
+      # in canonical pr-flow. Deterministic evidence and compilation still gate.
+      require_model_review: false
       setup_eta_mu_toolchain: false
       evidence_gates_script: |
         run_gate diff_stat git diff --stat "${PR_BASE_SHA}...HEAD"
