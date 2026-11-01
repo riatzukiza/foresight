@@ -62,7 +62,7 @@
 [submodule "clio"]
 	path = clio
 	url = git@github.com:open-hax/clio.git
-	branch = device/yoga
+	branch = main
 [submodule "chat-ui"]
 	path = chat-ui
 	url = git@github.com:open-hax/chat-ui.git
