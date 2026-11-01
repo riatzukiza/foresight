@@ -40,4 +40,4 @@ No hosted review-worker activation, deployment, service restart, Clio kernel cop
 
 ## Verification
 
-Use the existing Node 22 runtime gates plus real filesystem-backed Sol-adapter tests. The standalone Clio probe uses exact Git 788cdd3 (original probe; pin since moved to clio main 9b14cda67), npm ci with Node 22.20.0/npm 10.9.3, native fs-ext-extra-prebuilt 2.2.9, two compiled targets and 1 test/13 assertions with zero warnings. Probe success does not replace the actual Sol integration suite.
+Use the existing Node 22 runtime gates plus real filesystem-backed Sol-adapter tests. The standalone Clio probe uses exact Git 788cdd3434615a7932b924e68520dbf7f88408c2 (original probe; pin since moved to clio main 9b14cda67), npm ci with Node 22.20.0/npm 10.9.3, native fs-ext-extra-prebuilt 2.2.9, two compiled targets and 1 test/13 assertions with zero warnings. Probe success does not replace the actual Sol integration suite.
