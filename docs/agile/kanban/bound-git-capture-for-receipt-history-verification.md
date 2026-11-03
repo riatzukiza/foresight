@@ -3,11 +3,11 @@ category: "kanban"
 labels: "evidence, regression, security"
 dependency: []
 type: "task"
-write-id: "1793729830130-0.kl0s43w15iiqmshfsv1"
+write-id: "1793731241611-0.vesqcgprlzrhgim76xc"
 points: "3"
 title: "Bound Git capture for receipt-history verification"
 priority: "P1"
-status: "in_progress"
+status: "done"
 uuid: "bound-git-capture-for-receipt-history-verification"
 created_at: "2026-11-03T17:17:48.098Z"
 ---
@@ -33,18 +33,43 @@ No implementation in this planning phase. No unlimited/dynamic capture, retries 
 
 ## Acceptance criteria
 
-- [ ] Both wrappers pass the same named finite maxBuffer of 16,777,216 bytes to Git spawnSync with unchanged encoding, `--no-replace-objects`, argv and `shell:false`; every transport error, missing status and nonzero exit still throws.
-- [ ] Real >1 MiB fixtures exercise binary immutable-ledger reads and text/metadata capture without ENOBUFS below the bound; returned bytes, multibyte text and SHA-256 are exact. Base-to-itself yields zero appended receipts, a valid append yields one, and secure append preserves every historical byte.
-- [ ] Exact-bound fixtures succeed and over-bound stdout/stderr fail closed for both wrappers, including multibyte byte-count cases. No partial result, PASS, receipt append or gate execution may follow capture failure; ledger and lock state remain unchanged. Include a real production-bound overflow test plus cheap reduced-bound edge tests.
-- [ ] A red failure-injection test throws from committed capture after target open and asserts target fd closed exactly once, no partial reservation, no append/gate execution, ledger bytes unchanged, lock cleanup and parent fd closed. Repeated failures in the same process produce no fd growth. A separate target-open failure closes no unowned target fd. Existing held-ledger validation failure, cleanup-error propagation and unverified-write quarantine behavior remain unchanged. Buffer growth alone must not stand in for this ownership repair.
-- [ ] Prefix rewrites/truncation, malformed/invalid receipt suffixes, missing suffix newlines, invalid UTF-8, wrong blob modes/paths, revision/catalog mismatches, lock/symlink/hardlink and race protections remain rejected by existing tests. Never weaken or delete tests to obtain a pass.
-- [ ] New large-success tests first fail with ENOBUFS on unchanged code; after an authorized implementation, all root NBB suites, lint, catalog/project validation and actual receipt-history checks pass for unchanged trusted base and trusted-base-to-committed-candidate. Record real results; no gate waiver.
+- [x] Both wrappers pass the same named finite maxBuffer of 16,777,216 bytes to Git spawnSync with unchanged encoding, `--no-replace-objects`, argv and `shell:false`; every transport error, missing status and nonzero exit still throws.
+- [x] Real >1 MiB fixtures exercise binary immutable-ledger reads and text/metadata capture without ENOBUFS below the bound; returned bytes, multibyte text and SHA-256 are exact. Base-to-itself yields zero appended receipts, a valid append yields one, and secure append preserves every historical byte.
+- [x] Exact-bound fixtures succeed and over-bound stdout/stderr fail closed for both wrappers, including multibyte byte-count cases. No partial result, PASS, receipt append or gate execution may follow capture failure; ledger and lock state remain unchanged. Include a real production-bound overflow test plus cheap reduced-bound edge tests.
+- [x] A red failure-injection test throws from committed capture after target open and asserts target fd closed exactly once, no partial reservation, no append/gate execution, ledger bytes unchanged, lock cleanup and parent fd closed. Repeated failures in the same process produce no fd growth. A separate target-open failure closes no unowned target fd. Existing held-ledger validation failure, cleanup-error propagation and unverified-write quarantine behavior remain unchanged. Buffer growth alone must not stand in for this ownership repair.
+- [x] Prefix rewrites/truncation, malformed/invalid receipt suffixes, missing suffix newlines, invalid UTF-8, wrong blob modes/paths, revision/catalog mismatches, lock/symlink/hardlink and race protections remain rejected by existing tests. Never weaken or delete tests to obtain a pass.
+- [x] New large-success tests first fail with ENOBUFS on unchanged code; after an authorized implementation, all root NBB suites, lint, catalog/project validation and actual receipt-history checks pass for unchanged trusted base and trusted-base-to-committed-candidate. Record real results; no gate waiver.
 
 ## Verification
 
 Run `nbb -cp src:scripts:test test/{workspace,project,lineage,evidence,evidence_cli}_test.cljs` separately for each suite; `clj-kondo --lint scripts test`; `nbb -cp src:scripts scripts/project.clj validate`; `nbb -cp src:scripts scripts/evidence.clj validate`; `git diff --check`. Run `nbb -cp src:scripts scripts/evidence.clj verify-receipts --base e31b43a57765a394521d6c49aafd068f5c4d5ad5 --at e31b43a57765a394521d6c49aafd068f5c4d5ad5`, then repeat with the committed implementation SHA as `--at`.
 
 Planning baseline: workspace 24/122, project 12/171, lineage 11/58, evidence 17/89, evidence CLI 51/258; all zero failures/errors. Lint zero errors/warnings. Real immutable base-to-itself and starting-HEAD-to-itself checks each exit 2 with ENOBUFS. Expected unavailable-process fixture logs are not actual submodule lint results. See specification and appended local receipt for diagnosis and exact commands.
+
+### Completed qualification: source promotion, not original-ledger admission
+
+The coordinator reports independent exact-blob code approval with no findings,
+123 tests/833 assertions and 52 adversarial checks, plus separate clean
+integration approval at `88b2b184ac1f8a73350e087e3f8e5eb796c2dbf2`.
+[Source-only promotion PR #53](https://github.com/riatzukiza/foresight/pull/53)
+merged at 2026-11-03T18:38:08Z as
+`542ec7b12bc275661ce1a6c2dda009d621e5706f` (M), with parents
+`d25d4e7a926eddddafeaaf227ce1c592581110fe` and `88b2b184…`.
+Local Git inspection confirms M's tree equals the integration tree and both
+source blobs equal the frozen GREEN originals:
+`cddfd35d9257d74a36bd632728a53605fda1ecc3` (adapter) and
+`f83bc889260886120f4f82850ed0257b842e807f` (tests).
+Actual strict `verify-receipts --base e31b43a… --at M` passes with 557 receipts
+and 10 appended receipts. This clean promoted candidate satisfies the final AC.
+
+The original repair history at `036cfd03a58314b2672632057820f3bd42214729`
+still fails the same strict base-to-head check on three malformed receipt
+envelopes. They remain byte-for-byte unchanged; no original-history pass,
+validator exception, ledger rewrite or native review approval is claimed.
+The coordinator reports the original archived remotely at
+`evidence/receipt-git-buffer-20261103@036cfd03`, with its full 1,289,238-byte
+ledger independently byte-matched. Completion here tracks the qualified runtime
+source promotion only and completes no Oikos epic.
 
 ## Risks
 
@@ -56,5 +81,7 @@ Planning-only response to native CodeRabbit PR52 P2 thread PRRT_kwDOU4VJMM6zQFST
 User now authorizes local implementation using completed independent planning reviews, including reviewed P2 ownership correction; no waiting for stale hosted planning cohorts and no fabricated native approvals. This is user direction/local review evidence, not hosted approval or merge permission. Direct incoming-to-todo attempt refused by installed Promethean FSM (exit3: No transition from incoming to todo). Inspected installed FSM; walking its lawful accepted -> breakdown -> ready -> todo -> in_progress path without force/status edits. Implementation remains restricted to approved capture/fd cleanup plus regressions; no commit/push/merge/PR publication authorized.
 
 Local implementation ready for independent adversarial code review; remains in_progress and uncommitted. RED on unchanged adapter:57tests312assertions17failures4errors, including four ENOBUFS errors and eight leaked targetfds (22->30); test reclaimed only owned leakedfds after assertion. GREEN:59tests393assertions0failures0errors. Shared finite16MiB maxBuffer added to both wrappers; committed capture moved into existing target-owned try via held-ledger validation argument, preserving cleanup handlers. Coverage:large historical ledger both newline cases, secure append/exacthash/prefix, mutation/truncation/invalidsuffix rejection, real16MiB boundary/overflow, binaryoctets/largeUTF8metadata, stdout/stderr/combined/multibyte limits, missingstatus/nonzero/ENOENT, no effects on overflow, ownedtargetclosedonce/unownednever/eightfailuresnofdgrowth. Other suites workspace24/122 project12/171 lineage11/58 evidence17/89 pass;lint0/0;project/catalogvalidatePASS;diffcheckPASS. Actual e31b-to-itself and ownHEAD4deeab6-to-itself eachPASS. Additional e31b-to-ownHEAD fails closed on two prior committed planning receipts with string manifest/refs; rr-append helper also emitted the same malformed shape for this turn RED receipt. No historical/uncommitted ledger bytes rewritten and no validator weakened; coordinator must retain this separate provenance blocker. No commits, merge, push or sourcePR publication performed; no nativeapproval claimed.
+
+Completion scope is qualified exact-source promotion, not original repair-history admission. Coordinator reports independent exact-blob code approval/no findings (123tests833assertions plus52adversarialchecks), separate clean integration approval88b2b184, and PR53 https://github.com/riatzukiza/foresight/pull/53 merged2026-11-03T18:38:08Z as542ec7b12bc275661ce1a6c2dda009d621e5706f. Locally verified M parents d25d4e7a926eddddafeaaf227ce1c592581110fe +88b2b184ac1f8a73350e087e3f8e5eb796c2dbf2, M tree exactly88 tree, frozen adapter/test blobs unchanged, actual e31b-to-M strictPASS557receipts10appended. Completion rerun full123tests833assertions0failures0errors;lint0/0;project/catalogvalidatePASS. Original e31b-to-036 still actually fails3malformedreceipts; preserved unchanged, no waiver/rewrite/claimed pass. Coordinator reports remote archive evidence/receipt-git-buffer-20261103@036cfd03 with byteequal1289238byte ledger. AC boxes checked only against actual tests and qualified clean promotedcandidate; prior metadata/comment history retained. Walking officialFSM testing->review->document->done under user completed-local-review admission; no fake nativeapprovals/hostedqueuewait. No sourcechanges, merge/rebase/branchswitch/push and no Oikos completion.
 
 ---
