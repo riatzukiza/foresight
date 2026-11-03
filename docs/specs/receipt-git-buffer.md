@@ -43,14 +43,37 @@ ceiling, not permanent accommodation of arbitrary history growth. Above it,
 verification remains blocked for a separately reviewed decision; never migrate
 or truncate history to obtain a pass.
 
-Resource boundary: `maxBuffer` bounds captured stdout/stderr in bytes, not total
-process RSS, Git object expansion cost, or parsed EDN heap. Conservatively budget
-two 16 MiB captured streams per invocation, plus Node chunk overshoot and
-decoding/copies. Verification retains two ledger Buffers (up to 32 MiB) and
+Resource boundary: Node 24 synchronous capture counts **combined stdout plus
+stderr bytes** against `maxBuffer`; these are not two independent 16 MiB
+allowances. This is not a bound on total process RSS, Git object expansion cost,
+or parsed EDN heap. Retain a conservative 32 MiB per-invocation RSS planning
+allowance for captured data/copies, plus Node chunk overshoot, decoding and
+other overhead; that allowance is not an enforced memory limit. Verification
+retains two ledger Buffers (up to 32 MiB) and
 their parsed records. Text-mode UTF-16 strings and parsing add further bounded
 input-derived allocations. This is not a whole-process memory hard limit or a
 new bound on reading the working ledger. No unbounded input-derived cap is
 permitted. Existing receipt-line limits remain separate and unchanged.
+
+## Target descriptor ownership repair (planning finding P2)
+
+Native CodeRabbit PR #52 thread `PRRT_kwDOU4VJMM6zQFST`, comment `4458230282`,
+identifies a related error-path leak. Source inspection confirms that
+`open-append-reservation!` opens `target` at lines 817–818, then calls
+`current-committed-receipt-bytes!` at lines 819–821 **before** entering the
+target-owned `try` at line 822. If committed capture throws (including ENOBUFS),
+the outer catches release the lock and close the parent, but never close the
+already-owned target descriptor.
+
+After admission, make the narrow cleanup repair: move committed-ledger capture
+inside the target-owned `try`, or an equivalent ownership scope, so every
+post-open error before a reservation is returned closes the owned target
+exactly once. Target-open failure must never close a descriptor the caller did
+not acquire. Preserve existing `close-after-open-error!` error handling, outer
+lock release/parent close, successful reservation ownership transfer, and
+write-started/unverified-write lock quarantine. Do not broaden this into an
+append lifecycle refactor or weaken failure propagation. The buffer increase
+does not repair this leak: other committed-capture failures must remain safe.
 
 ## Regression design (write only after ready)
 
@@ -84,10 +107,23 @@ changing contents or create giant individual receipt lines.
    narrow spawn seam; assert both option maps carry the same finite cap and
    every error precedes success handling. No shell execution in production.
 5. Use a small temporary cap via `with-redefs` for additional exact-bound,
-   bound-plus-one, multibyte-byte-count and stderr cases to keep tests cheap;
+   bound-plus-one, multibyte-byte-count and stderr cases to keep tests cheap.
+   Include combined-stream overflow where each stream is below the cap but
+   their sum exceeds it, for both wrappers;
    retain a real production-bound overflow integration case. Instrument
    append/gate entry points to prove capture failure causes no receipt write
    or gate execution, and leaves ledger/lock state unchanged.
+6. Add a red failure-injection regression: after a real target open, make
+   `current-committed-receipt-bytes!` throw. Assert the target fd is closed
+   exactly once, no partial reservation escapes, no append or gate runs,
+   ledger bytes are unchanged, the lock is cleaned up and the parent fd is
+   closed. Repeat the failure in one process and compare open-fd counts on the
+   supported Linux host to prove no fd growth. Separately inject target-open
+   failure and assert no unowned target fd is closed. Keep existing held-ledger
+   validation-failure cleanup and cleanup-error behavior, including original
+   error propagation and quarantine after an unverified write, unchanged.
+   This leak test must fail red on unchanged code independently of the buffer
+   regressions; do not rely solely on ENOBUFS disappearing after a larger cap.
 
 New large-success tests must fail red with ENOBUFS on the unmodified adapter.
 Overflow tests must pass by rejecting output, not by marking unavailable as
@@ -122,7 +158,8 @@ No separate root typecheck command is defined in the root NBB configuration.
 
 ## Security scope and non-goals
 
-Only the bounded Git capture adapter and its regression tests are proposed.
+Only the bounded Git capture adapter, the narrow pre-reservation target-fd
+ownership repair above, and their regression tests are proposed.
 Keep `--no-replace-objects`, argv invocation with `:shell false`, immutable full
 commit IDs, exact regular-blob mode/path checks, strict UTF-8, byte hashes,
 append-only history and all receipt validation/secure-append checks unchanged.

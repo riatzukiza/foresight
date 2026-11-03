@@ -1,14 +1,14 @@
 ---
-uuid: "bound-git-capture-for-receipt-history-verification"
-title: "Bound Git capture for receipt-history verification"
-status: "incoming"
-type: "task"
-priority: "P1"
-points: "3"
+category: "kanban"
 labels: "evidence, regression, security"
 dependency: []
-category: "kanban"
-write-id: "1793726268098-0.jwyfhddiphfbk4zkk27"
+type: "task"
+write-id: "1793728221608-0.p1ufnmiz67c5mtlmb4"
+points: "3"
+title: "Bound Git capture for receipt-history verification"
+priority: "P1"
+status: "incoming"
+uuid: "bound-git-capture-for-receipt-history-verification"
 created_at: "2026-11-03T17:17:48.098Z"
 ---
 
@@ -24,6 +24,7 @@ Restore bounded, exact receipt-history verification for supported ledger sizes w
 
 - Follow `docs/specs/receipt-git-buffer.md`: one shared finite 16 MiB maxBuffer in both Git capture option maps, keeping text and Buffer behavior distinct.
 - Add red/green regressions using existing evidence CLI temporary Git fixtures, including >1 MiB ledgers, text metadata and bounded overflow.
+- After admission, move committed-ledger capture into the target-owned try in `open-append-reservation!` (or an equivalent narrow ownership scope) so every post-open/pre-reservation error closes the owned target exactly once. Preserve outer lock/parent cleanup, cleanup-error behavior, successful ownership transfer and unverified-write quarantine. Native CodeRabbit PR #52 P2 thread `PRRT_kwDOU4VJMM6zQFST`, comment `4458230282`, identifies capture at lines 819–821 outside the target cleanup try after target open at 817–818.
 - Explicitly retain failure above the finite capture bound; document resource costs and the eventual growth ceiling.
 
 ## Non-goals
@@ -35,6 +36,7 @@ No implementation in this planning phase. No unlimited/dynamic capture, retries 
 - [ ] Both wrappers pass the same named finite maxBuffer of 16,777,216 bytes to Git spawnSync with unchanged encoding, `--no-replace-objects`, argv and `shell:false`; every transport error, missing status and nonzero exit still throws.
 - [ ] Real >1 MiB fixtures exercise binary immutable-ledger reads and text/metadata capture without ENOBUFS below the bound; returned bytes, multibyte text and SHA-256 are exact. Base-to-itself yields zero appended receipts, a valid append yields one, and secure append preserves every historical byte.
 - [ ] Exact-bound fixtures succeed and over-bound stdout/stderr fail closed for both wrappers, including multibyte byte-count cases. No partial result, PASS, receipt append or gate execution may follow capture failure; ledger and lock state remain unchanged. Include a real production-bound overflow test plus cheap reduced-bound edge tests.
+- [ ] A red failure-injection test throws from committed capture after target open and asserts target fd closed exactly once, no partial reservation, no append/gate execution, ledger bytes unchanged, lock cleanup and parent fd closed. Repeated failures in the same process produce no fd growth. A separate target-open failure closes no unowned target fd. Existing held-ledger validation failure, cleanup-error propagation and unverified-write quarantine behavior remain unchanged. Buffer growth alone must not stand in for this ownership repair.
 - [ ] Prefix rewrites/truncation, malformed/invalid receipt suffixes, missing suffix newlines, invalid UTF-8, wrong blob modes/paths, revision/catalog mismatches, lock/symlink/hardlink and race protections remain rejected by existing tests. Never weaken or delete tests to obtain a pass.
 - [ ] New large-success tests first fail with ENOBUFS on unchanged code; after an authorized implementation, all root NBB suites, lint, catalog/project validation and actual receipt-history checks pass for unchanged trusted base and trusted-base-to-committed-candidate. Record real results; no gate waiver.
 
@@ -46,4 +48,9 @@ Planning baseline: workspace 24/122, project 12/171, lineage 11/58, evidence 17/
 
 ## Risks
 
-16 MiB capture admits larger synchronous memory use; budget both captured streams, chunk overshoot, decoding/copies and two retained ledger Buffers plus parsed EDN. This is not a whole-process memory cap. Output above the bound remains an explicit operational blocker, never grounds to truncate history. Exact byte rather than character limits and stderr failures require dedicated tests. Scope is the Git transport adapter only; existing trust, provenance, byte/hash and secure-append authority remains unchanged.
+Node 24 synchronous maxBuffer counts combined stdout plus stderr bytes against one 16 MiB ceiling, not two independent allowances. Retain a conservative 32 MiB per-invocation RSS planning allowance for capture/copies, plus chunk overshoot, decoding and other overhead; this is not an enforced whole-process memory cap. Two retained ledger Buffers plus parsed EDN add memory separately. Output above the bound remains an explicit operational blocker, never grounds to truncate history. Exact byte rather than character limits, combined-stream overflow and stderr failures require dedicated tests. Scope includes only the Git transport adapter and narrow pre-reservation target-fd ownership repair; existing trust, provenance, byte/hash, lock/parent cleanup and secure-append quarantine authority remains unchanged.
+
+---
+Planning-only response to native CodeRabbit PR52 P2 thread PRRT_kwDOU4VJMM6zQFST/comment4458230282: inspected open-append-reservation! lines801-844 and confirmed target opens817-818 before committed capture819-821, outside target-owned try822. Spec and incoming card now commit to a narrow future ownership repair placing capture inside that try (or equivalent): close owned target exactly once on every post-open/pre-reservation failure; preserve outer lock/parent cleanup, existing cleanup-error handling and unverified-write quarantine. Require independent red capture-throw test asserting no partial reservation/append/gate, unchanged ledger, target closed once, lock cleaned and parent closed; repeated same-process failures show no fd growth. Target-open failure must not close unowned fd; existing validation-failure and cleanup behavior retained. Corrected resource model: Node24 synchronous maxBuffer counts combined stdout+stderr against one16MiB cap, not two independent allowances; conservative32MiB RSS planning allowance plus overhead is not a hard limit. Combined-stream overflow tests required. No scripts/test edits, implementation, status transition or gate waiver; card remains incoming pending coordinator admission.
+
+---
