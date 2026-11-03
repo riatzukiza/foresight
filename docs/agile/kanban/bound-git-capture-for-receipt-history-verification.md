@@ -3,11 +3,11 @@ category: "kanban"
 labels: "evidence, regression, security"
 dependency: []
 type: "task"
-write-id: "1793728221608-0.p1ufnmiz67c5mtlmb4"
+write-id: "1793729830130-0.kl0s43w15iiqmshfsv1"
 points: "3"
 title: "Bound Git capture for receipt-history verification"
 priority: "P1"
-status: "incoming"
+status: "in_progress"
 uuid: "bound-git-capture-for-receipt-history-verification"
 created_at: "2026-11-03T17:17:48.098Z"
 ---
@@ -52,5 +52,9 @@ Node 24 synchronous maxBuffer counts combined stdout plus stderr bytes against o
 
 ---
 Planning-only response to native CodeRabbit PR52 P2 thread PRRT_kwDOU4VJMM6zQFST/comment4458230282: inspected open-append-reservation! lines801-844 and confirmed target opens817-818 before committed capture819-821, outside target-owned try822. Spec and incoming card now commit to a narrow future ownership repair placing capture inside that try (or equivalent): close owned target exactly once on every post-open/pre-reservation failure; preserve outer lock/parent cleanup, existing cleanup-error handling and unverified-write quarantine. Require independent red capture-throw test asserting no partial reservation/append/gate, unchanged ledger, target closed once, lock cleaned and parent closed; repeated same-process failures show no fd growth. Target-open failure must not close unowned fd; existing validation-failure and cleanup behavior retained. Corrected resource model: Node24 synchronous maxBuffer counts combined stdout+stderr against one16MiB cap, not two independent allowances; conservative32MiB RSS planning allowance plus overhead is not a hard limit. Combined-stream overflow tests required. No scripts/test edits, implementation, status transition or gate waiver; card remains incoming pending coordinator admission.
+
+User now authorizes local implementation using completed independent planning reviews, including reviewed P2 ownership correction; no waiting for stale hosted planning cohorts and no fabricated native approvals. This is user direction/local review evidence, not hosted approval or merge permission. Direct incoming-to-todo attempt refused by installed Promethean FSM (exit3: No transition from incoming to todo). Inspected installed FSM; walking its lawful accepted -> breakdown -> ready -> todo -> in_progress path without force/status edits. Implementation remains restricted to approved capture/fd cleanup plus regressions; no commit/push/merge/PR publication authorized.
+
+Local implementation ready for independent adversarial code review; remains in_progress and uncommitted. RED on unchanged adapter:57tests312assertions17failures4errors, including four ENOBUFS errors and eight leaked targetfds (22->30); test reclaimed only owned leakedfds after assertion. GREEN:59tests393assertions0failures0errors. Shared finite16MiB maxBuffer added to both wrappers; committed capture moved into existing target-owned try via held-ledger validation argument, preserving cleanup handlers. Coverage:large historical ledger both newline cases, secure append/exacthash/prefix, mutation/truncation/invalidsuffix rejection, real16MiB boundary/overflow, binaryoctets/largeUTF8metadata, stdout/stderr/combined/multibyte limits, missingstatus/nonzero/ENOENT, no effects on overflow, ownedtargetclosedonce/unownednever/eightfailuresnofdgrowth. Other suites workspace24/122 project12/171 lineage11/58 evidence17/89 pass;lint0/0;project/catalogvalidatePASS;diffcheckPASS. Actual e31b-to-itself and ownHEAD4deeab6-to-itself eachPASS. Additional e31b-to-ownHEAD fails closed on two prior committed planning receipts with string manifest/refs; rr-append helper also emitted the same malformed shape for this turn RED receipt. No historical/uncommitted ledger bytes rewritten and no validator weakened; coordinator must retain this separate provenance blocker. No commits, merge, push or sourcePR publication performed; no nativeapproval claimed.
 
 ---
