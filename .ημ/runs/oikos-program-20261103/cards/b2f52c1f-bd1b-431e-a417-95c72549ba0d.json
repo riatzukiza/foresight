@@ -1,0 +1,26 @@
+{
+  "uuid": "b2f52c1f-bd1b-431e-a417-95c72549ba0d",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, task",
+    "dependency": [
+      "3b9279b5-aafd-431a-90a9-128ce4415de0"
+    ],
+    "parent": "ff5998a4-2cd6-482c-a43e-94522eb908b4",
+    "type": "task",
+    "write-id": "1793718667755-0.5f202tpc0l8100fuheh",
+    "points": "5",
+    "title": "Oikos: Implement logical memberships and speculative EDN projection branches",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "b2f52c1f-bd1b-431e-a417-95c72549ba0d",
+    "created_at": "2026-11-03T15:11:07.755Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: Implement logical memberships and speculative EDN projection branches\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending. This focused slice belongs to Oikos: named collaborative projection spaces with deliberate joining.\n\n## Outcome\n\nImplement logical memberships and speculative EDN projection branches.\n\n## Scope\n\nCreate pure CLJC named-space/membership/branch operations referencing the same journal window identity.\n\n## Non-goals\n\nNo native i3 duplicate-window illusion, hidden-workspace security isolation guarantee, autonomous visible-workspace takeover or live movement.\n\n## Acceptance criteria\n\n- [ ] One physical window can belong to multiple logical spaces without native duplication.\n- [ ] Create/edit/compare speculative branches performs no physical window movement; stale observed revisions surface conflicts.\n\n## Verification\n\nProperty tests preserve one physical identity across memberships; zero-effect adapter spy and stale-branch fixtures. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nHidden workspaces are organizational, not isolation; human or external i3 changes may invalidate a return plan.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- /home/err/docs/notes/design/epic-task-centric.md\n- /home/err/docs/notes/design/epic-layout-hygiene.md\n- /home/err/docs/notes/design/epic-agent-sandbox.md\n\n## Dependencies\n\n- 3b9279b5-aafd-431a-90a9-128ce4415de0 (E2)"
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/docs/agile/kanban/oikos-implement-logical-memberships-and-speculative-edn-projection-branches-2549ba0d.md"
+}

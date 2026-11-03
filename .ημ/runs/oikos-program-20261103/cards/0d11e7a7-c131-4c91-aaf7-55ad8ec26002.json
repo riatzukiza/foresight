@@ -1,0 +1,26 @@
+{
+  "uuid": "0d11e7a7-c131-4c91-aaf7-55ad8ec26002",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, task",
+    "dependency": [
+      "c703893f-aea4-41c2-9eab-c3bd37b28c9b"
+    ],
+    "parent": "e616187d-ba13-42b1-addd-aa4d6244a5be",
+    "type": "task",
+    "write-id": "1793718671559-0.fpzfrvez7w4kd3puex",
+    "points": "5",
+    "title": "Oikos: Expose scoped Knoxx Lens policy evidence and complete gateway history",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "0d11e7a7-c131-4c91-aaf7-55ad8ec26002",
+    "created_at": "2026-11-03T15:11:11.559Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: Expose scoped Knoxx Lens policy evidence and complete gateway history\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending. This focused slice belongs to Oikos: GovOne egress admission and Knoxx Lens evidence.\n\n## Outcome\n\nExpose scoped Knoxx Lens policy evidence and complete gateway history.\n\n## Scope\n\nIntegrate Lens audit evidence separate from raw data with nonstreaming complete-history gateway requests and untrusted-response validation.\n\n## Non-goals\n\nNo alternate policy evaluator, direct provider retry, implicit approval from a free route, raw data in Lens evidence, or live cloud calls.\n\n## Acceptance criteria\n\n- [ ] Auth scopes and deletion propagate through gateway/Lens without retaining raw private content as evidence.\n- [ ] Complete history is bounded and nonstreaming; hostile cloud output is not authority; free proxx route still requires policy approval.\n\n## Verification\n\nContract tests cover cross-scope denial, deletion readback, incomplete histories, gateway failure and prompt-injection output using synthetic responses only. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nA background exporter or derived label can bypass prompt-only policy; complete histories increase privacy impact.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- https://github.com/mojomast/govone\n- /home/err/spaces/foresight/AGENTS.md\n- /home/err/docs/notes/design/epic-emacs-mcp.md\n- https://github.com/mojomast/govone is operator-specified integration identity; API compatibility requires inspection during implementation.\n\n## Dependencies\n\n- c703893f-aea4-41c2-9eab-c3bd37b28c9b (S6A)"
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/docs/agile/kanban/oikos-expose-scoped-knoxx-lens-policy-evidence-and-complete-gateway-history-8ec26002.md"
+}

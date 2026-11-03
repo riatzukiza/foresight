@@ -1,0 +1,26 @@
+{
+  "uuid": "3d14e0a5-2790-42b8-9a55-54d686925c3c",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, task",
+    "dependency": [
+      "07452a65-4a6a-4704-bf81-50408927dcc8"
+    ],
+    "parent": "722906b7-77d7-4414-a976-23996f7533de",
+    "type": "task",
+    "write-id": "1793718666166-0.jfol2bg2vycy9fgh5wi",
+    "points": "8",
+    "title": "Oikos: Implement preview check apply rollback through Services-owned generations",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "3d14e0a5-2790-42b8-9a55-54d686925c3c",
+    "created_at": "2026-11-03T15:11:06.166Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: Implement preview check apply rollback through Services-owned generations\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending. This focused slice belongs to Oikos: isolated generations and shx/Muse configuration boundaries.\n\n## Outcome\n\nImplement preview check apply rollback through Services-owned generations.\n\n## Scope\n\nAdd outer generation adapter with staged preview/check/apply/rollback and Services deployment handoff.\n\n## Non-goals\n\nNo blanket config migration, generic supervisor replacement, secret material in manifests, or live deployment.\n\n## Acceptance criteria\n\n- [ ] Preview/check are effect-free; apply requires explicit generation approval and refuses local modifications.\n- [ ] Injected partial write restores the exact previous owned generation; no migration of unrelated config or shared Services ownership.\n\n## Verification\n\nIsolated filesystem/process fixtures compare before/after hashes, secret-free plans and rollback on every interrupted stage. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nShared paths or a non-shell renderer masquerading as shell IR could silently change the installed workstation.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- /home/err/spaces/foresight/AGENTS.md\n- /home/err/spaces/foresight/docs/agile/kanban/federated-workstation-distribution.md\n- /home/err/docs/notes/design/epics-and-tasks.md\n\n## Dependencies\n\n- 07452a65-4a6a-4704-bf81-50408927dcc8 (S1A)\n- Related existing program (not replaced; not a blocking implementation edge): federated-workstation-distribution."
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/docs/agile/kanban/oikos-implement-preview-check-apply-rollback-through-services-owned-generations-86925c3c.md"
+}

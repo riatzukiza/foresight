@@ -1,0 +1,22 @@
+{
+  "uuid": "722906b7-77d7-4414-a976-23996f7533de",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, epic",
+    "dependency": [],
+    "type": "epic",
+    "write-id": "1793718486164-0.eqka0uqll26zzaonbct",
+    "title": "Oikos: isolated generations and shx/Muse configuration boundaries",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "722906b7-77d7-4414-a976-23996f7533de",
+    "created_at": "2026-11-03T15:08:06.164Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: isolated generations and shx/Muse configuration boundaries\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending.\n\n## Outcome\n\nDevelop and install independently identifiable Oikos generations without disturbing the working desktop.\n\n## Scope\n\nServices owns deployment. Separate development/installed binaries, build artifacts, state, sockets and ports. Reuse shx/envm shell/environment IR; non-shell targets use explicit target-specific render adapters. Muse owns tool compatibility only. Version preview/check/apply/rollback with secret environment references and local-change holds. Link, do not replace, the federated workstation program.\n\n## Non-goals\n\nNo blanket config migration, generic supervisor replacement, secret material in manifests, or live deployment.\n\n## Acceptance criteria\n\n- [ ] A generation manifest identifies each owned binary/artifact/state/socket/port and rejects collisions before effects.\n- [ ] Target adapters declare preview/check/apply/rollback and compatibility; rendered payloads contain only secret env references.\n- [ ] Failure recovery and local-change holds are proven in an isolated fixture; federated-workstation-distribution remains separately owned.\n\n## Verification\n\nPortable CLJC manifest laws plus adapter fixtures cover collision, missing secret reference, dirty target, partial apply and exact rollback; Services reviews deployment seam. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nShared paths or a non-shell renderer masquerading as shell IR could silently change the installed workstation.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- /home/err/spaces/foresight/AGENTS.md\n- /home/err/spaces/foresight/docs/agile/kanban/federated-workstation-distribution.md\n- /home/err/docs/notes/design/epics-and-tasks.md\n\n## Dependencies\n\n- Related existing program (not replaced; not a blocking implementation edge): federated-workstation-distribution."
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/docs/agile/kanban/oikos-isolated-generations-and-shx-muse-configuration-boundaries-6f7533de.md"
+}

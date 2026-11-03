@@ -1,0 +1,30 @@
+{
+  "uuid": "59774be2-cc61-4708-9030-8b7b42935ec3",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, task",
+    "dependency": [
+      "93a76dad-678a-4980-86fb-ba0fbb5e8203"
+    ],
+    "parent": "3b9279b5-aafd-431a-90a9-128ce4415de0",
+    "type": "task",
+    "write-id": "1793724129248-0.iivv97mnivlzpzapb1",
+    "points": "8",
+    "title": "Oikos: Reconcile i3 subscribe snapshot races and reconnect revisions",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "59774be2-cc61-4708-9030-8b7b42935ec3",
+    "created_at": "2026-11-03T15:11:07.122Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: Reconcile i3 subscribe snapshot races and reconnect revisions\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending. This focused slice belongs to Oikos: Clio desktop journal and causal EDN projections.\n\n## Outcome\n\nReconcile i3 subscribe snapshot races and reconnect revisions.\n\n## Scope\n\nImplement outer i3 collector using subscribe-before-snapshot, race reconciliation and explicit disconnect/resync state.\n\n## Non-goals\n\nNo parallel journal kernel, invented complete deltas, guaranteed reopening of closed applications, or live collector activation.\n\n## Acceptance criteria\n\n- [ ] IPC events are not treated as complete tree deltas; events during snapshot cause reconciliation with an explicit observed revision.\n- [ ] Disconnect/epoch change invalidates currentness and stale targets; resync yields admitted observations rather than invented continuity. Same-epoch XID close/reuse creates a new open/incarnation identity. If a reconnect gap cannot establish lifetime continuity, invalidate the old lifetime and fail closed for targeting; never infer continuity from equal XIDs or content.\n\n## Verification\n\nFake IPC harness interleaves subscription/snapshot/events, drops connections and reuses XIDs both within one epoch and across epochs; uncertain reconnect denies old-lifetime targets and memberships cannot migrate to the new incarnation. Sandbox integration verifies projection against a fresh tree. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nSnapshot/event races and reused identities can turn a historical observation into a destructive command target.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- /home/err/spaces/foresight/AGENTS.md\n- /home/err/docs/notes/design/epic-workspace-go.md\n- /home/err/docs/notes/design/epic-i3-mcp.md\n\n## Dependencies\n\n- 93a76dad-678a-4980-86fb-ba0fbb5e8203 (S2A)"
+    },
+    {
+      "type": "comment",
+      "content": "Propagates native lifetime findings 4456846184/4456856398 into subscribe/snapshot/reconnect acceptance: same-epoch close/reuse creates a new incarnation; a reconnect gap cannot establish continuity merely from equal XIDs. Deny stale/uncertain targets and retain historical memberships without reassignment. Current native child prerequisites synchronized to the user-approved precise plan: 93a76dad-678a-4980-86fb-ba0fbb5e8203 (S2A). Parent relationship is preserved and is not an implicit gating edge. All checks stated here are future acceptance requirements, not executed implementation results. Earlier dependency prose in historical comments is superseded by this correction for current execution edges; historical event/comment bytes remain unchanged. Policy correction — sandbox/dev and synthetic data only; no personal capture. Default raw retention is 24h images and 7d text; propagate deletion to derived/retrieval payloads, with explicit consent for accepted knowledge. Automatic actions are agent-owned-resources-only; operator resources need explicit approval. Existing models only; 12B download/load/restart is held. Any cloud experiment is synthetic, GovOne-authorized, verified free and 0 spend only; no allocation or inherited pilot budget. Remote publication remains held. Qualified program merges are authorized only after their required gates; this is not a readiness override, implementation permission or native review approval."
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/.worktrees/plan/oikos-execution-20261103/docs/agile/kanban/oikos-reconcile-i3-subscribe-snapshot-races-and-reconnect-revisions-42935ec3.md"
+}

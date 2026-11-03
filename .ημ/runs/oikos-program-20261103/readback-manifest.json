@@ -1,0 +1,284 @@
+{
+  "kind": "immutable-review-readback-custody",
+  "sourceBase": "b9ac3141a9799a06abb2bd0d2c8320e8b8b9ec02",
+  "owningTask": "oikos-program-20261103",
+  "authority": "Dated official Rheos responses and review input evidence only; not board authority, validation, readiness or approval.",
+  "reason": "Separate generated duplicate JSON readbacks from canonical planning PR scope; retain exact evidence without paid review overages.",
+  "files": [
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/07452a65-4a6a-4704-bf81-50408927dcc8.json",
+      "bytes": 3669,
+      "sha256": "ff1ba3e747493f5b6fb5b0b6b63cf32358b42fab79e5d8311f058887fa52920a"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/0d11e7a7-c131-4c91-aaf7-55ad8ec26002.json",
+      "bytes": 2932,
+      "sha256": "9611265839d1536c5aa25d4c2a90a75d30f1156fc129546cc5e383e8dfb0d99e"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/0db50b53-6c7a-489a-bff9-048d57ce4cbb.json",
+      "bytes": 4743,
+      "sha256": "fde4fae35ec42edd5f9c1a6c9bfbd21f1ffca3505ecd140f88d65d9d30420712"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/0e124c65-694e-44f1-9959-ee83e81ca22b.json",
+      "bytes": 5678,
+      "sha256": "dc704f3860b0aaa9a076c8325e23aad14718a4f8d56641ec5240ef060adfffac"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/18ef840f-23cb-4dd5-bc19-a2a5aeb279c3.json",
+      "bytes": 4587,
+      "sha256": "9bc306e7efe3d8cc621469ff11ff50f4ae812796a825d9f60b47c3ec1ae10c19"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/27ff00af-536d-4d7d-a9ad-a09b5ec2aaf3.json",
+      "bytes": 3708,
+      "sha256": "a0e6896af59ef36d7fb5b6d12a968c35b043d7e32891e29323e1002c63901281"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/29caa8e3-289a-416c-9850-8ef9cc769e88.json",
+      "bytes": 2884,
+      "sha256": "22b64a5d5e936e21b8452b5f76ec3d2f1950f377c2591fd5de42c26693d89b93"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/2a08e0cb-e029-46ae-b217-399d0d3ebf42.json",
+      "bytes": 3394,
+      "sha256": "814e8cc0d220d8625b4f58992e2dc5f345a09ededb8fadff87142722834cb479"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/3b9279b5-aafd-431a-90a9-128ce4415de0.json",
+      "bytes": 2991,
+      "sha256": "7f0a9d3412b89573b409965dabfb010af0375ab65c11e6ed2daaff13ba5fb534"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/3cd09bfd-f214-4e16-817d-c36cffe21376.json",
+      "bytes": 3410,
+      "sha256": "f4ed20008a30e75ef9926236af142806d0e7dacad68ffc866017ada84d494715"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/3d14e0a5-2790-42b8-9a55-54d686925c3c.json",
+      "bytes": 2880,
+      "sha256": "5b2f2f0f34ea8c930cd96c10dd28b6c3847943a0f0cba6f6eb201dad3870c810"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/3de19b00-adae-43e6-a6c4-da339faa6482.json",
+      "bytes": 3845,
+      "sha256": "5efc8c27bd2f8c97d08c4c8370e5180c149a4892153aef916560876d06b05a4b"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/456b2c69-cb5d-417d-9aeb-ac05e0a3251a.json",
+      "bytes": 4038,
+      "sha256": "2643cfb08f1dd1f9005c4523f62ca9db9036bcfc6179898319f3eb5320b7e127"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/59774be2-cc61-4708-9030-8b7b42935ec3.json",
+      "bytes": 2761,
+      "sha256": "4dae67c5d7124125fade6d2a52ea976f0c718783996023501df686d23ca0b30e"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/722906b7-77d7-4414-a976-23996f7533de.json",
+      "bytes": 3091,
+      "sha256": "654d19accadb45355c13b690b0fac5fcbbd6c005a5d0e9491335eb4be9b062e8"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/7d0235f1-ab69-4095-b404-bcc1ca60db91.json",
+      "bytes": 2916,
+      "sha256": "9456ad57a6a286010772e2bf7248170f2a0b9dadb346473ffd1ca37b3563050c"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/912b707f-2275-45c9-b4a9-aac143e11d9a.json",
+      "bytes": 2938,
+      "sha256": "3ea95916e1f999cdc890424fcc1a66f02ebb739426fd334fa6ab0b959d03cc00"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/92b529b9-256d-4654-8aa6-5f1884a8adaa.json",
+      "bytes": 4759,
+      "sha256": "e76c270ae08c1c8f6e99b4243310ada3802a1353dfc037d3485f13e2f7a1c5fb"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/93a76dad-678a-4980-86fb-ba0fbb5e8203.json",
+      "bytes": 2738,
+      "sha256": "a1af54564a8106d974489ee1832d15508ff97094956c989b65b4b124c3cc6842"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/b2f52c1f-bd1b-431e-a417-95c72549ba0d.json",
+      "bytes": 2728,
+      "sha256": "a61f54c15ce8bdfbdb1cb943f318aada6e884cbd27711f7c340d21f23a567410"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/c703893f-aea4-41c2-9eab-c3bd37b28c9b.json",
+      "bytes": 4416,
+      "sha256": "96f55a30bdb6952a4b77764617519b27e704ef91852a8672f34b811e4cf89df6"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/e616187d-ba13-42b1-addd-aa4d6244a5be.json",
+      "bytes": 4128,
+      "sha256": "0c5ed8963e0172ee971ff82ac220e974e997288754cb72c5496e4433c126457c"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/e842e6d9-dd41-4ca2-b229-dc2466198864.json",
+      "bytes": 5118,
+      "sha256": "f48c3c6a18bf4e2f3b94e681c7067efb152dafaccb7a53027dcb1e442d65ce7a"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards/ff5998a4-2cd6-482c-a43e-94522eb908b4.json",
+      "bytes": 2978,
+      "sha256": "3029d7392d3a6917af8b567ef2868e39c66a6fd81e0b14a9a491a5526bfe678f"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/07452a65-4a6a-4704-bf81-50408927dcc8.json",
+      "bytes": 5061,
+      "sha256": "855f91b675ef7370a873a221f48ddc258086829e91b9d8e7cd7f74c881878ea1"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/0d11e7a7-c131-4c91-aaf7-55ad8ec26002.json",
+      "bytes": 4457,
+      "sha256": "a50571a0dd25345c63736b5fb57456b623f967f1944aa83b6e5cc02b5015723d"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/0db50b53-6c7a-489a-bff9-048d57ce4cbb.json",
+      "bytes": 6497,
+      "sha256": "722aac45b305b4de67faeffb387a6b166c5ee05042e3f55d700604ecd826bb5b"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/0e124c65-694e-44f1-9959-ee83e81ca22b.json",
+      "bytes": 9969,
+      "sha256": "cdfb36013f6eee1b787a5b4e00314ad7ec60f3a8fdb24f0d26c0e0edff2b7216"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/18ef840f-23cb-4dd5-bc19-a2a5aeb279c3.json",
+      "bytes": 6275,
+      "sha256": "7248b4d5e14c171f35c92f78b18c85eb8ea08b8685cb064c5c0c65ec48c199a6"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/27ff00af-536d-4d7d-a9ad-a09b5ec2aaf3.json",
+      "bytes": 5343,
+      "sha256": "7c60f6aaaa6fa749229d9dd3c4daee19c69c6db5faeaecb5f26e81d71ae6cd8e"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/29caa8e3-289a-416c-9850-8ef9cc769e88.json",
+      "bytes": 4546,
+      "sha256": "fa47425d0217271783d0b9487065deb9b77c6863a3a8ed7c52d3537529c10c18"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/2a08e0cb-e029-46ae-b217-399d0d3ebf42.json",
+      "bytes": 6284,
+      "sha256": "457b2a93a052fc8d037a929c0e4585a137a626b0b67fa064b5f8142b2195e83e"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/3b9279b5-aafd-431a-90a9-128ce4415de0.json",
+      "bytes": 4860,
+      "sha256": "adabb4eee2725ff9e40ebab20c9a6193b3882a1fda5a56a7f8187f12defd255f"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/3cd09bfd-f214-4e16-817d-c36cffe21376.json",
+      "bytes": 5192,
+      "sha256": "f5421d1790bac7f0b8ec8c431b57052a1155b15a6fefab0ff67c94a494f11655"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/3d14e0a5-2790-42b8-9a55-54d686925c3c.json",
+      "bytes": 6127,
+      "sha256": "dfe1e148701d1e04525c4534b2ee89555041d5da1b947ef3cfdde57ec656bbbe"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/3de19b00-adae-43e6-a6c4-da339faa6482.json",
+      "bytes": 5688,
+      "sha256": "62da80084daa1e5dac0c9baff885a4b85777c8b2640b3b0a5f5682f9b1df84c5"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/456b2c69-cb5d-417d-9aeb-ac05e0a3251a.json",
+      "bytes": 5265,
+      "sha256": "26cf39cbdfc38f3dbaf0495fad1095d7b9ef0a9f74be000b924dc36ec95e1bd4"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/59774be2-cc61-4708-9030-8b7b42935ec3.json",
+      "bytes": 4690,
+      "sha256": "a202ca1f0970ae982f6b4f5be7743b0474135cc9cee5d0c36e547e9451999597"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/722906b7-77d7-4414-a976-23996f7533de.json",
+      "bytes": 4849,
+      "sha256": "d80d07e9becd19ce68613bc49eb68029e171789fefeb8d6565ab2bb6b51fc8ac"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/7d0235f1-ab69-4095-b404-bcc1ca60db91.json",
+      "bytes": 4439,
+      "sha256": "530b5c6ac9fc635ce65775a1eeee2e15e0024ac57fc806678f58de87f9c10db3"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/912b707f-2275-45c9-b4a9-aac143e11d9a.json",
+      "bytes": 5165,
+      "sha256": "986df9bf9fccac4678f9ccdc12726288cc994f13ceef286c198c3092c3c9458c"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/92b529b9-256d-4654-8aa6-5f1884a8adaa.json",
+      "bytes": 6216,
+      "sha256": "2753f7cf40cda316a3036df19d7b4cd065b92f5454c39faf30ed6c38b929859c"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/93a76dad-678a-4980-86fb-ba0fbb5e8203.json",
+      "bytes": 5017,
+      "sha256": "5ea333b4fa1ac75d3d43ce77ac2853c262d01807fba617d149d51f16c4c62a01"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/b2f52c1f-bd1b-431e-a417-95c72549ba0d.json",
+      "bytes": 5037,
+      "sha256": "50ec3c00c84194c5b704989562892d4a9254568cf2ccc18ad11698c2b14c3699"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/c703893f-aea4-41c2-9eab-c3bd37b28c9b.json",
+      "bytes": 6460,
+      "sha256": "dd877e5a30bfa41868e9694b012b7bd1a58d4d29753d24d884cb4ce3b38a4f58"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/e616187d-ba13-42b1-addd-aa4d6244a5be.json",
+      "bytes": 6003,
+      "sha256": "d8e62987831c67260d8f0038dd64ee95d6ec4bda57e11c0d3f0b126106a51a05"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/e842e6d9-dd41-4ca2-b229-dc2466198864.json",
+      "bytes": 6574,
+      "sha256": "e17c9298b600dd0602fde92c9f8dd11ed84a31bb57087b0a95acce4f3e49dd61"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/ff5998a4-2cd6-482c-a43e-94522eb908b4.json",
+      "bytes": 4536,
+      "sha256": "06079441915f4ff8f125c51efe3fec28b082f028016cd3bdcbbda5cd68cbb982"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/cards-after-native-corrections/readback-summary.json",
+      "bytes": 2971,
+      "sha256": "bcf3ac93beda3f5f53c650aa825595620cba77c11e2762bddf851af15902f1d1"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/s1a-native-scope/07452a65-4a6a-4704-bf81-50408927dcc8.json",
+      "bytes": 7722,
+      "sha256": "496bc2d435d2484276ddbf29f1376c22f4f57fb363c87a4ecf020f83e5744845"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/s1a-native-scope/3d14e0a5-2790-42b8-9a55-54d686925c3c.json",
+      "bytes": 7052,
+      "sha256": "0958276f5f22f5feb05cff250dd57bbaf741954fe450baa46cce61e93d4b24fc"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/s1a-native-scope/722906b7-77d7-4414-a976-23996f7533de.json",
+      "bytes": 6361,
+      "sha256": "031abfeca7489429d698f9ef8c6480e9cb0c9efc4cbbcc2e3d3892b4b1621576"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/adjudicated-clarifications/0d11e7a7-c131-4c91-aaf7-55ad8ec26002.json",
+      "bytes": 7337,
+      "sha256": "06131ec30f368cd56c0602dbdd58d8ce1473cd7009af5a60e3dec2d9d995eb55"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/adjudicated-clarifications/0e124c65-694e-44f1-9959-ee83e81ca22b.json",
+      "bytes": 14961,
+      "sha256": "9c6b86616f231ff5cae79f6e4cfb8877a2a900c6748cbfb79562edfb3a65db6f"
+    },
+    {
+      "path": ".ημ/runs/oikos-program-20261103/adjudicated-clarifications/b2f52c1f-bd1b-431e-a417-95c72549ba0d.json",
+      "bytes": 6772,
+      "sha256": "1137b83a67a033a5f2dc21d3cb8a12a3f941ed77526aeb5177ceb5272ff4ce72"
+    }
+  ]
+}

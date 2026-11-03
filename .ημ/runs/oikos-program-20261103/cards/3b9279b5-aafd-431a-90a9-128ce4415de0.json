@@ -1,0 +1,24 @@
+{
+  "uuid": "3b9279b5-aafd-431a-90a9-128ce4415de0",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, epic",
+    "dependency": [
+      "722906b7-77d7-4414-a976-23996f7533de"
+    ],
+    "type": "epic",
+    "write-id": "1793718666490-0.spuiw5upnv94ihq0j2h",
+    "title": "Oikos: Clio desktop journal and causal EDN projections",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "3b9279b5-aafd-431a-90a9-128ce4415de0",
+    "created_at": "2026-11-03T15:11:06.490Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: Clio desktop journal and causal EDN projections\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending.\n\n## Outcome\n\nReplay a causally honest desktop projection from admitted immutable observations, intentions and outcomes.\n\n## Scope\n\nReuse Clio schema, admission, locking and canonical causal streams. i3 subscriptions are notifications, not complete tree deltas: subscribe before snapshot, reconcile races and resync on disconnect with explicit observed revisions. Window identity is server epoch plus id because XIDs are reused. Pure CLJC replay separates observation from intent/outcome. Undo is compensating action only.\n\n## Non-goals\n\nNo parallel journal kernel, invented complete deltas, guaranteed reopening of closed applications, or live collector activation.\n\n## Acceptance criteria\n\n- [ ] Clio admits distinct observation/intention/outcome schemas with causal references and immutable revision evidence.\n- [ ] Subscribe-before-snapshot, concurrent events, disconnect/resync and epoch rollover cannot silently produce current-state claims.\n- [ ] Deterministic replay rejects stale identities; compensation records attempted and observed outcomes without claiming resurrection.\n\n## Verification\n\nCLJC replay/property tests and a fake i3 IPC race harness, including reused XID, interrupted snapshot, duplicate delivery, reconnect and failed compensation. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nSnapshot/event races and reused identities can turn a historical observation into a destructive command target.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- /home/err/spaces/foresight/AGENTS.md\n- /home/err/docs/notes/design/epic-workspace-go.md\n- /home/err/docs/notes/design/epic-i3-mcp.md\n\n## Dependencies\n\n- 722906b7-77d7-4414-a976-23996f7533de (E1)"
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/docs/agile/kanban/oikos-clio-desktop-journal-and-causal-edn-projections-e4415de0.md"
+}

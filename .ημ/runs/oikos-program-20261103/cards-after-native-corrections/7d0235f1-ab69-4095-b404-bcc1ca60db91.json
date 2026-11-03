@@ -1,0 +1,30 @@
+{
+  "uuid": "7d0235f1-ab69-4095-b404-bcc1ca60db91",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, task",
+    "dependency": [
+      "0e124c65-694e-44f1-9959-ee83e81ca22b"
+    ],
+    "parent": "92b529b9-256d-4654-8aa6-5f1884a8adaa",
+    "type": "task",
+    "write-id": "1793724130042-0.rj8ywrqpjg9fmn2d4c7",
+    "points": "5",
+    "title": "Oikos: Project epistemic knowledge with retention forgetting and stop controls",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "7d0235f1-ab69-4095-b404-bcc1ca60db91",
+    "created_at": "2026-11-03T15:11:10.648Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: Project epistemic knowledge with retention forgetting and stop controls\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending. This focused slice belongs to Oikos: continuous local perception and event-backed knowledge.\n\n## Outcome\n\nProject epistemic knowledge with retention forgetting and stop controls.\n\n## Scope\n\nImplement event-backed observed/derived/accepted memory and retrieval projections with retention/pause/delete controls.\n\n## Non-goals\n\nNo cloud egress, automatic model training, duplicate desktop index, local-trust-is-absolute claim or uncontrolled resident process launch.\n\n## Acceptance criteria\n\n- [ ] Acceptance is explicit and provenance-preserving; accumulated knowledge does not imply instant model weight training.\n- [ ] Forgetting removes eligible raw/retrieval payloads with lineage/tombstones while preserving lawful immutable history; local data remains sensitive.\n\n## Verification\n\nReplay tests prove epistemic promotion rules, retention expiry, deletion propagation and pause/resume/stop; fixtures confirm no training or duplicate index writes. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nLocal screenshots and derived labels remain sensitive; deletion from projections must not rewrite immutable history or retain forbidden raw payloads.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- /home/err/docs/notes/design/epic-workspace-go.md\n- /home/err/spaces/foresight/docs/agile/kanban/qualify-the-bounded-colab-gemma-retrieval-research-pilot-and-retain-production-holdback.md\n\n## Dependencies\n\n- 0e124c65-694e-44f1-9959-ee83e81ca22b (S5A)"
+    },
+    {
+      "type": "comment",
+      "content": "S5A supplies attributed perception observations. Retention/forgetting propagates payload deletion through derived/retrieval projections without rewriting immutable provenance; explicit accepted-knowledge consent remains distinct from raw retention. Accumulation is not training. Current native child prerequisites synchronized to the user-approved precise plan: 0e124c65-694e-44f1-9959-ee83e81ca22b (S5A). Parent relationship is preserved and is not an implicit gating edge. All checks stated here are future acceptance requirements, not executed implementation results. Earlier dependency prose in historical comments is superseded by this correction for current execution edges; historical event/comment bytes remain unchanged. Policy correction — sandbox/dev and synthetic data only; no personal capture. Default raw retention is 24h images and 7d text; propagate deletion to derived/retrieval payloads, with explicit consent for accepted knowledge. Automatic actions are agent-owned-resources-only; operator resources need explicit approval. Existing models only; 12B download/load/restart is held. Any cloud experiment is synthetic, GovOne-authorized, verified free and 0 spend only; no allocation or inherited pilot budget. Remote publication remains held. Qualified program merges are authorized only after their required gates; this is not a readiness override, implementation permission or native review approval."
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/.worktrees/plan/oikos-execution-20261103/docs/agile/kanban/oikos-project-epistemic-knowledge-with-retention-forgetting-and-stop-controls-ca60db91.md"
+}

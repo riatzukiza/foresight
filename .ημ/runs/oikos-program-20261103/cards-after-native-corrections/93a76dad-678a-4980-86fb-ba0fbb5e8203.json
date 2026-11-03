@@ -1,0 +1,30 @@
+{
+  "uuid": "93a76dad-678a-4980-86fb-ba0fbb5e8203",
+  "frontmatter": {
+    "category": "kanban",
+    "labels": "oikos, planning, local-first, task",
+    "dependency": [
+      "07452a65-4a6a-4704-bf81-50408927dcc8"
+    ],
+    "parent": "3b9279b5-aafd-431a-90a9-128ce4415de0",
+    "type": "task",
+    "write-id": "1793724131194-0.3ugkdyi2bg78qprxpzj",
+    "points": "5",
+    "title": "Oikos: Admit desktop causal events through Clio and replay EDN projections",
+    "priority": "P1",
+    "status": "incoming",
+    "uuid": "93a76dad-678a-4980-86fb-ba0fbb5e8203",
+    "created_at": "2026-11-03T15:11:06.816Z"
+  },
+  "sections": [
+    {
+      "type": "body",
+      "content": "# Oikos: Admit desktop causal events through Clio and replay EDN projections\n\n## Context\n\nPlanning only for private open-hax/oikos at /home/err/spaces/foresight/oikos. Desktop is a local-first shared workbench. Initial incoming proposal; planning review is not complete. Creation authorizes no implementation, live configuration, deployment, inference, upload or spending. This focused slice belongs to Oikos: Clio desktop journal and causal EDN projections.\n\n## Outcome\n\nAdmit desktop causal events through Clio and replay EDN projections.\n\n## Scope\n\nReuse Clio admission/schema/locking and canonical causal streams; implement pure CLJC desktop replay.\n\n## Non-goals\n\nNo parallel journal kernel, invented complete deltas, guaranteed reopening of closed applications, or live collector activation.\n\n## Acceptance criteria\n\n- [ ] Observation, intention and outcome have distinct portable .cljc shapes and causal links; observed revision and window lifetime identity (server epoch, XID, open/incarnation identity or creation revision) are mandatory. Epoch plus XID alone is insufficient; uncertain reconnect continuity invalidates targeting.\n- [ ] Replay is deterministic; stale identity and conflicting admission fail; undo is compensation and cannot guarantee reopening apps.\n\n## Verification\n\nCLJC fixtures replay exact-event duplicates, out-of-order causal references, same-epoch close/reuse and unsuccessful compensation; use actual Clio admission tests. Old memberships/history must not attach to the reused XID, and targeting the old lifetime is denied even with a current revision. Clio runtime append generates a fresh UUID per invocation; retry the exact admitted event through ledger append for event-ID idempotency, not another runtime append call. These are future acceptance checks, not executed implementation evidence.\n\n## Risks\n\nSnapshot/event races and reused identities can turn a historical observation into a destructive command target.\n\n## Source anchors\n\nDated planning evidence: 2026-11-03. Operator requirements are reported intent, not live runtime proof. Cross-repository absolute paths identify source ownership, not a promotion of domain authority.\n- /home/err/spaces/foresight/AGENTS.md\n- /home/err/docs/notes/design/epic-workspace-go.md\n- /home/err/docs/notes/design/epic-i3-mcp.md\n\n## Dependencies\n\n- 07452a65-4a6a-4704-bf81-50408927dcc8 (S1A): generation/source manifest and isolated fixture identity."
+    },
+    {
+      "type": "comment",
+      "content": "Native findings 4456846184 and 4456856398: epoch plus XID is not a lifetime key. Require open/incarnation identity or creation revision; replay/history/membership/action targeting tests cover close/reuse within one epoch and fail-closed uncertain reconnect. Oikos owns portable lifetime laws; Clio event admission/replay is reused. Runtime append assigns a fresh UUID per call; exact-event ledger retry preserves event ID rather than calling runtime append again. Current native child prerequisites synchronized to the user-approved precise plan: 07452a65-4a6a-4704-bf81-50408927dcc8 (S1A). Parent relationship is preserved and is not an implicit gating edge. All checks stated here are future acceptance requirements, not executed implementation results. Earlier dependency prose in historical comments is superseded by this correction for current execution edges; historical event/comment bytes remain unchanged. Policy correction — sandbox/dev and synthetic data only; no personal capture. Default raw retention is 24h images and 7d text; propagate deletion to derived/retrieval payloads, with explicit consent for accepted knowledge. Automatic actions are agent-owned-resources-only; operator resources need explicit approval. Existing models only; 12B download/load/restart is held. Any cloud experiment is synthetic, GovOne-authorized, verified free and 0 spend only; no allocation or inherited pilot budget. Remote publication remains held. Qualified program merges are authorized only after their required gates; this is not a readiness override, implementation permission or native review approval."
+    }
+  ],
+  "source-path": "/home/err/spaces/foresight/.worktrees/plan/oikos-execution-20261103/docs/agile/kanban/oikos-admit-desktop-causal-events-through-clio-and-replay-edn-projections-bb5e8203.md"
+}
