@@ -61,7 +61,7 @@ At the earlier migration reconciliation, the Foresight review caller consumed of
 [eta-mu PR #304](https://github.com/open-hax/eta-mu/pull/304) at
 `e8eea02d31030215984375980b765803fc72d80d`, preserving prerequisite artifact
 names on failed-job reruns. Its 36 executable workflow tests passed locally.
-OpenCode is pinned to official release `1.18.31`; a direct free-model probe
+At that reconciliation, OpenCode was pinned to official release `1.18.31`; a direct free-model probe
 succeeded after `1.18.18` was rejected by the provider. The actual PR review
 still requires a successful exact-head hosted run; a probe is not that review.
 
@@ -74,6 +74,24 @@ clean checkout. Foresight [PR #121's run](https://github.com/open-hax/foresight/
 passed all twelve deterministic gates and completed a real MiMo review on
 `12104524e9b96d432116ffddc72aa5f93503043b`; this is evidence for that revision,
 not advance approval of a later documentation head or standalone child acceptance.
+
+### Later caller revisions
+
+The subsequent canonical caller at Foresight
+`cb73d35b0945e9961745e119dd0c1d9c8dc7dee2` pins
+`open-hax/eta-mu/.github/workflows/opencode-code-review.yml` to
+`45ec644c2d15ed511e9bc1e797d1b4073b63dbfc`. The synchronization parent
+`cf57e8988f32ea3a8adc2dfaab5993dd5875c622` also carries that pin. These are
+later source observations, not extensions of PR #121's execution evidence.
+
+The November 6 reconciliation additionally consumes personal `main` at
+`a8dff342cd69d27d621fe8d2c0b02ba3da624927`. Its caller pins the reusable
+workflow to `7112c36440d180ca183d6a3f89661cee161fdae5`; this is the pin
+retained in the reconciled caller. Personal
+[PR #49](https://github.com/riatzukiza/foresight/pull/49) removed the caller's
+`opencode_version: 1.18.31` override. The earlier provider probe and twelve
+deterministic gates remain evidence only for their recorded revisions. An
+exact-head hosted run is still needed to establish the behavior of this caller.
 
 ## Lifecycle reconciliation
 
