@@ -2696,10 +2696,15 @@
         counts (require-valid-receipt-records! (mapv :receipt/record fresh))]
     (doseq [item historical]
       (let [record (:receipt/record item)]
-        (when-not (and (law/historical-receipt-envelope? record)
-                       (or (not= law/evidence-receipt-origin (:origin record))
-                           (law/historical-evidence-receipt? record)))
-          (throw (js/Error. "Immutable ledger contains invalid receipt envelopes or evidence")))))
+        (when-not (law/historical-receipt-envelope? record)
+          (throw (js/Error.
+                  (str "Immutable ledger contains invalid receipt envelopes: "
+                       (pr-str [record])))))
+        (when (and (= law/evidence-receipt-origin (:origin record))
+                   (not (law/historical-evidence-receipt? record)))
+          (throw (js/Error.
+                  (str "Immutable ledger contains invalid evidence receipts: "
+                       (pr-str [(law/result-errors (:evidence/result record))])))))))
     (-> counts
         (update :receipt/total + (count historical))
         (update :receipt/evidence + (count (filter #(= law/evidence-receipt-origin (:origin (:receipt/record %))) historical)))
@@ -2754,14 +2759,8 @@
                   (str "Receipt correction admission refused: "
                        (pr-str (:receipt/errors result))))))
         (let [views (:receipt/views result)
-              _ (doseq [[item view] (map vector selected views)]
-                  (let [historical? (contains? historical-lines (:receipt/line item))
-                        envelope? (if historical? law/historical-receipt-envelope? law/receipt-envelope?)
-                        evidence? (if historical? law/historical-evidence-receipt? law/evidence-receipt?)]
-                    (when-not (and (envelope? view)
-                                   (or (not= law/evidence-receipt-origin (:origin view))
-                                       (evidence? view)))
-                      (throw (js/Error. "Immutable ledger contains invalid receipt envelopes or evidence")))))
+              _ (require-valid-receipt-items!
+                 (mapv #(assoc %1 :receipt/record %2) selected views) historical-lines)
               by-line (zipmap (map :receipt/line selected) views)
               counts (require-valid-receipt-items!
                       (mapv #(assoc % :receipt/record (get by-line (:receipt/line %))) suffix-items) historical-lines)]

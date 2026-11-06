@@ -14,6 +14,10 @@
 (def network-roots
   (edn/read-string (fs/readFileSync "config/dev-origin-network-roots.edn" "utf8")))
 
+(def declared-dev-origin-repos
+  (into {} (map (juxt :source/path :dev/origin))
+        (edn/read-string (fs/readFileSync "config/dev-origins.edn" "utf8"))))
+
 (deftest extracted-children-have-routing-and-gate-entries
   (let [agents (fs/readFileSync "AGENTS.md" "utf8")
         catalog (edn/read-string (fs/readFileSync "config/quality-gates.edn" "utf8"))]
@@ -29,8 +33,7 @@
         declared-submodules (project/submodule-sources)]
     (is (= (set (map :path actual-submodules))
            (set (map :source/path declared-submodules))))
-    (is (= (set (map :url actual-submodules))
-           (set (map :source/url declared-submodules))))
+    ;; URL policy is checked by path below, including declared dev origins.
     (is (= #{".agents" "clobber" "eta"}
            (set (map :source/path (project/consolidation-inputs)))))
     (is (= #{:alpha :archaeology :eta}
@@ -176,7 +179,8 @@
     (is (= blob (git-blob-id (.subarray ledger 0 bytes))))))
 
 (deftest checked-in-gitmodules-match-project-law
-  (let [result (law/validate-project project/project (workspace/current-submodules))]
+  (let [result (law/validate-project project/project (workspace/current-submodules)
+                                    declared-dev-origin-repos)]
     (is (:valid? result) (pr-str (:errors result)))))
 
 (deftest gitmodule-drift-is-visible

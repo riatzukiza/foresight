@@ -60,3 +60,21 @@ project mapping or these thread dispositions. The complete local CLI run had
 unavailable Linux process-custody access. That result is not a full CLI pass.
 The subsequent repair and its independently frozen review are recorded as new
 attempts; they do not replace the original findings or test receipts.
+
+The second frozen candidate, `6839f314d4f6652c4e6397df8c09a928fef72154`,
+completed receipt review and skepticism without a new demonstrated receipt
+finding. Integration review and its skeptic confirmed R2-INTEGRATION-001: the
+project command allowed declared personal dev-origin URLs, while two assertions
+in the actual-checkout project suite still required canonical URLs. This mismatch
+was inherited from personal main. A disposable checkout with the declared
+`riatzukiza/shx` URL reproduced both failed assertions while `project validate`
+passed. The repair delegates checkout URL policy to the same project law and
+validated dev-origin map, retaining path coverage and unrelated-URL refusals.
+
+The second round's focused CLI run completed 148 tests and 913 assertions with
+three failures and zero errors. R2-GATE-001 records that historical semantic
+evidence was correctly refused with a newly generic diagnostic rather than the
+existing evidence-error diagnostic expected by two tests. The repair preserves
+distinct envelope and semantic-evidence diagnostics without changing the
+validation predicates. The five process-custody cases remain outside that local
+subset; the complete unmodified hosted suite is still required.
