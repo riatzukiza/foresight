@@ -41,3 +41,22 @@ An executable extraction needs explicit contracts and failing behavioral tests f
 The accepted personal store freezes `.ημ/receipts.edn` and writes one-record segments. The original PR authenticates a canonical stream, an imported stream, and documentary corrections by immutable Git revision, exact bytes and original physical line. The reconciliation preserves the frozen file and migrates PR-only rows byte-identically, reusing an already identical segment. An explicit source anchor retains the original stream’s authenticated coordinates; it does not turn new invalid receipts into historical exceptions. Newly introduced canonical records must pass current validation after any authenticated documentary projection. The same admitted view is required for verification, promotion and working append.
 
 The original PR’s plain prefix verifier fails against the shared `fcfc2d17` base because its fork-origin row was inserted within that stream. The original source remains unchanged in Git; the new segment layout addresses storage reconciliation without reserializing those receipts. Full validation and independent candidate review are recorded separately in the execution run.
+
+## Candidate review findings
+
+The first frozen repair candidate, `39748164665e36f0a720ebd926571dee7fbbd2a0`,
+preserves all three input heads. Its independent receipt review and skeptic
+identified two compatibility regressions in the integration adapter:
+
+| Finding | Reproduced behavior | Required repair |
+| --- | --- | --- |
+| R1-RECEIPT-001 | The reader rejected verification of the unchanged original PR head because its historical declarations predate the new binding file. | Reauthenticate unchanged committed historical snapshots without allowing new unbound declarations or working writes. |
+| R1-RECEIPT-002 | Source replay applied the new timestamp rule to historical documentary corrections that the original reader accepted. | Retain literal authenticated historical timestamps while validating every genuinely new canonical and imported occurrence under current rules. |
+
+The first round remains a failed result. Its separate integration review and
+skeptic found no additional demonstrated defects in ancestry, byte preservation,
+project mapping or these thread dispositions. The complete local CLI run had
+153 tests and 918 assertions, with zero failures and five errors caused by
+unavailable Linux process-custody access. That result is not a full CLI pass.
+The subsequent repair and its independently frozen review are recorded as new
+attempts; they do not replace the original findings or test receipts.

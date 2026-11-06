@@ -302,6 +302,134 @@
                                         (cli/verify-receipts! {:base accepted :at overlap}))))))))
         (finally (fs/rmSync dir #js {:recursive true :force true}))))))
 
+(deftest historical-correction-and-unbound-read-replay
+  (let [dir (fs/mkdtempSync (path/join (os/tmpdir) "foresight-history-"))
+        ledger (path/join dir ".ημ" "receipts.edn")]
+    (fs/mkdirSync (path/dirname ledger) #js {:recursive true})
+    (with-redefs [cli/root dir cli/receipt-file ledger]
+      (try
+        (cli/git-capture! ["init" "--quiet"])
+        (let [target (assoc ordinary-record :origin "history-target" :dod ["a"] :ts "yesterday")
+              line (str (pr-str target) "\n")
+              _ (fs/writeFileSync ledger line)
+              source (git-commit!)
+              correction (assoc ordinary-record :kind :correction :origin "history-correction"
+                                :ts "yesterday" :correction/entries
+                                [{:receipt/line 1 :receipt/origin "history-target"
+                                  :receipt/source-revision source :receipt/source-sha256 (cli/sha256 (text-bytes line))
+                                  :envelope/corrected-fields {:dod "a"}}])
+              bytes (text-bytes (str line (pr-str correction) "\n"))
+              _ (fs/writeFileSync ledger bytes)
+              anchor (git-commit!)]
+          (is (= "yesterday" (:ts (first (:ledger/views (cli/admit-receipt-extension! bytes bytes anchor))))))
+          (is (zero? (cli/verify-receipts! {:base anchor :at anchor})))
+          (let [called (atom false)]
+            (with-redefs [cli/current-root-state! (fn [] {})
+                          cli/require-current-clean-root! (fn [& _] {})
+                          cli/read-immutable-catalog-bundle! (fn [& _] {:catalog {} :catalog-identity {}})
+                          cli/validate-catalog! identity
+                          law/promotion-evidence-consistent? (fn [& _] (reset! called true) false)]
+              (is (false? (cli/promotion-ready-at! source #{} [] anchor anchor)))
+              (is @called)))
+          (is (thrown? js/Error (cli/admit-receipt-extension! (text-bytes "") bytes anchor)))
+          (let [bad (assoc-in correction [:correction/entries 0 :receipt/source-sha256] (apply str (repeat 64 "0")))
+                bad-bytes (text-bytes (str line (pr-str bad) "\n"))]
+            (fs/writeFileSync ledger bad-bytes)
+            (let [bad-anchor (git-commit!)]
+              (is (thrown? js/Error (cli/verify-receipts! {:base bad-anchor :at bad-anchor}))))))
+        (finally (fs/rmSync dir #js {:recursive true :force true}))))))
+
+(deftest imported-history-requires-declaration-in-comparison-base
+  (let [dir (fs/mkdtempSync (path/join (os/tmpdir) "foresight-import-history-"))
+        ledger (path/join dir ".ημ" "receipts.edn")]
+    (fs/mkdirSync (path/dirname ledger) #js {:recursive true})
+    (with-redefs [cli/root dir cli/receipt-file ledger]
+      (try
+        (cli/git-capture! ["init" "--quiet"])
+        (let [common (str (pr-str ordinary-record) "\n")
+              _ (fs/writeFileSync ledger common)
+              base (git-commit!)
+              imported (assoc ordinary-record :origin "historic-import" :ts "yesterday")
+              delta (str (pr-str imported) "\n")
+              _ (fs/writeFileSync ledger (str common delta))
+              source (git-commit!)
+              full (text-bytes (str common delta))
+              delta-bytes (text-bytes delta)
+              descriptor {:source/base base :source/head source :source/path ".ημ/receipts.edn"
+                          :source/ledger-sha256 (cli/sha256 full) :source/ledger-bytes (.-length full)
+                          :source/ledger-records 2 :source/delta-sha256 (cli/sha256 delta-bytes)
+                          :source/delta-bytes (.-length delta-bytes) :source/delta-records 1}
+              declaration (assoc ordinary-record :origin "historical-import-declaration"
+                                 :kind :receipt-stream-import :receipt/stream descriptor)
+              candidate (text-bytes (str common (pr-str declaration) "\n"))
+              _ (fs/writeFileSync ledger candidate)
+              anchor (git-commit!)]
+          (is (thrown? js/Error (cli/admit-receipt-extension! (text-bytes common) candidate anchor)))
+          (is (= "yesterday" (:ts (last (:ledger/views (cli/admit-receipt-extension! candidate candidate anchor))))))
+          (is (zero? (cli/verify-receipts! {:base anchor :at anchor})))
+          (is (thrown? js/Error (cli/validate-working-receipt-ledger! nil anchor)))
+          (let [old-declaration (assoc declaration :ts "yesterday")
+                old-bytes (text-bytes (str common (pr-str old-declaration) "\n"))
+                _ (fs/writeFileSync ledger old-bytes)
+                old-anchor (git-commit!)
+                replay (cli/admit-receipt-extension! old-bytes old-bytes old-anchor)]
+            (is (= "yesterday" (:ts (second (:ledger/views replay)))))
+            (is (= "yesterday" (:ts (last (:ledger/views replay)))))
+            (is (thrown? js/Error (cli/admit-receipt-extension! (text-bytes common) old-bytes old-anchor))))
+          ;; Selecting a newer source in a binding does not make its import
+          ;; historical relative to the earlier comparison base.
+          (let [config-dir (path/join dir "config")
+                segments (path/join dir ".ημ" "receipts")]
+            (fs/mkdirSync config-dir)
+            (fs/mkdirSync segments)
+            (fs/writeFileSync (path/join config-dir "receipt-legacy-source.edn")
+                              (pr-str {:receipt-legacy-source/revision anchor
+                                       :receipt-legacy-source/sha256 (cli/sha256 candidate)}))
+            (fs/writeFileSync ledger common)
+            (fs/writeFileSync (path/join segments "2026-10-08T012001000Z-import.edn")
+                              (str (pr-str declaration) "\n"))
+            (let [bound (git-commit!)]
+              (is (thrown? js/Error (cli/verify-receipts! {:base base :at bound})))))
+          (let [invalid-new (assoc ordinary-record :origin "new" :ts "yesterday")
+                extended (text-bytes (str (.toString candidate "utf8") (pr-str invalid-new) "\n"))]
+            (is (thrown? js/Error (cli/admit-receipt-extension! candidate extended anchor)))))
+        (finally (fs/rmSync dir #js {:recursive true :force true}))))))
+
+(deftest new-import-corrections-can-interpret-trusted-common-timestamp
+  (let [dir (fs/mkdtempSync (path/join (os/tmpdir) "foresight-common-history-"))
+        ledger (path/join dir ".ημ" "receipts.edn")]
+    (fs/mkdirSync (path/dirname ledger) #js {:recursive true})
+    (with-redefs [cli/root dir cli/receipt-file ledger]
+      (try
+        (cli/git-capture! ["init" "--quiet"])
+        (let [target (assoc ordinary-record :origin "old-common" :ts "yesterday" :dod ["a"])
+              common (str (pr-str target) "\n")
+              _ (fs/writeFileSync ledger common)
+              base (git-commit!)
+              entry {:receipt/line 1 :receipt/origin "old-common" :receipt/source-revision base
+                     :receipt/source-sha256 (cli/sha256 (text-bytes common))
+                     :envelope/corrected-fields {:dod "a"}}
+              source-correction (assoc ordinary-record :kind :correction :origin "source-correction"
+                                       :correction/entries [entry])
+              source-delta (str (pr-str source-correction) "\n")
+              source-bytes (text-bytes (str common source-delta))
+              _ (fs/writeFileSync ledger source-bytes)
+              source (git-commit!)
+              descriptor {:source/base base :source/head source :source/path ".ημ/receipts.edn"
+                          :source/ledger-sha256 (cli/sha256 source-bytes) :source/ledger-bytes (.-length source-bytes)
+                          :source/ledger-records 2 :source/delta-sha256 (cli/sha256 (text-bytes source-delta))
+                          :source/delta-bytes (.-length (text-bytes source-delta)) :source/delta-records 1}
+              declaration (assoc ordinary-record :origin "new-declaration" :kind :receipt-stream-import :receipt/stream descriptor)
+              canonical-correction (assoc source-correction :origin "canonical-correction")
+              head-bytes (text-bytes (str common (pr-str canonical-correction) "\n" (pr-str declaration) "\n"))
+              _ (fs/writeFileSync ledger head-bytes)
+              anchor (git-commit!)
+              admission (cli/admit-receipt-extension! (text-bytes common) head-bytes anchor)]
+          (is (= "yesterday" (:ts (first (:ledger/views admission)))))
+          (is (= "a" (:dod (first (:ledger/views admission)))))
+          (is (= 1 (:ledger/imported-receipts admission))))
+        (finally (fs/rmSync dir #js {:recursive true :force true}))))))
+
 (defmethod test/report [::test/default :end-run-tests] [summary]
   (set! (.-exitCode js/process) (if (test/successful? summary) 0 1)))
 

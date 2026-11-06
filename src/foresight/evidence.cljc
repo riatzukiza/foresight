@@ -315,16 +315,22 @@
   [ts]
   (some? (receipt-ts-instant ts)))
 
-(defn receipt-envelope? [receipt]
+(defn receipt-envelope-with-timestamp? [timestamp? receipt]
   (and (map? receipt)
        (keyword? (:kind receipt))
-       (canonical-receipt-ts? (:ts receipt))
+       (timestamp? (:ts receipt))
        (every? nonblank-string?
                ((juxt :origin :owner :dod :pi :host) receipt))
        (vector? (:manifest receipt))
        (every? nonblank-string? (:manifest receipt))
        (vector? (:refs receipt))
        (every? nonblank-string? (:refs receipt))))
+
+(defn receipt-envelope? [receipt]
+  (receipt-envelope-with-timestamp? canonical-receipt-ts? receipt))
+
+(defn historical-receipt-envelope? [receipt]
+  (receipt-envelope-with-timestamp? nonblank-string? receipt))
 
 (def ^:private receipt-stream-descriptor-keys
   #{:source/base :source/head :source/path
@@ -357,6 +363,11 @@
   "Strict envelope and source descriptor shape; this predicate grants no admission."
   [receipt]
   (and (receipt-envelope? receipt)
+       (= :receipt-stream-import (:kind receipt))
+       (receipt-stream-descriptor? (:receipt/stream receipt))))
+
+(defn historical-receipt-stream-import? [receipt]
+  (and (historical-receipt-envelope? receipt)
        (= :receipt-stream-import (:kind receipt))
        (receipt-stream-descriptor? (:receipt/stream receipt))))
 
@@ -487,11 +498,11 @@
        set))
 
 (defn- apply-correction-document
-  [state {:keys [index line record]} target-index duplicates verified-targets]
+  [state {:keys [index line record]} target-index duplicates verified-targets historical-lines]
   (let [entries (:correction/entries record)
         code (cond
                (not= :correction (:kind record)) :receipt-correction/kind
-               (not (receipt-envelope? record)) :receipt/invalid-envelope
+               (not ((if (contains? historical-lines line) historical-receipt-envelope? receipt-envelope?) record)) :receipt/invalid-envelope
                (not (and (vector? entries) (seq entries)))
                :receipt-correction/entries)]
     (if code
@@ -521,7 +532,8 @@
   verification. Originals and evidence payloads are retained unchanged.
   Errors refuse ledger admission, including remaining malformed partial views.
   Successful provenance is the documentary entry plus :correction/line."
-  [items verified-targets]
+  ([items verified-targets] (receipt-correction-view items verified-targets #{}))
+  ([items verified-targets historical-lines]
   (let [selected (if (vector? items) items [])
         originals (mapv :receipt/record selected)
         item-lines (mapv :receipt/line selected)
@@ -554,17 +566,18 @@
                                                {:index index :item item}]))
                                            selected)]
                     (reduce #(apply-correction-document
-                              %1 %2 target-index duplicates verified-targets)
+                              %1 %2 target-index duplicates verified-targets historical-lines)
                             initial documents)))]
     ;; Check envelopes after derivation, without duplicating evidence/result
     ;; validation. A partial permitted interpretation is never an implicit pass.
     (update derived :receipt/errors into
             (keep-indexed
              (fn [index view]
-               (when-not (receipt-envelope? view)
+               (when-not ((if (contains? historical-lines (:receipt/line (get selected index)))
+                            historical-receipt-envelope? receipt-envelope?) view)
                  {:error :receipt/invalid-envelope
                   :receipt/line (:receipt/line (get selected index))}))
-             (:receipt/views derived)))))
+             (:receipt/views derived))))))
 
 (def ^:private receipt-stream-input-keys
   #{:canonical/items :source/items :common/records :canonical/identity
@@ -630,7 +643,7 @@
      (if common-valid? [] [{:error :receipt-stream/common-records}])
      streams)))
 
-(defn- receipt-stream-composition-errors [streams common-records]
+(defn- receipt-stream-composition-errors [streams common-records historical-lines]
   (let [canonical (:items (first streams))
         source (:items (second streams))
         empty-composition? (every? #(and (empty? (:items %))
@@ -644,8 +657,8 @@
        (conj {:error :receipt-stream/import-limit})
 
        (and (= 1 (count triggers))
-            (not (and (receipt-stream-import? (:receipt/record (first triggers)))
-                      (receipt-stream-import? (:receipt/view (first triggers))))))
+            (not (and ((if (contains? historical-lines (:receipt/line (first triggers))) historical-receipt-stream-import? receipt-stream-import?) (:receipt/record (first triggers)))
+                      ((if (contains? historical-lines (:receipt/line (first triggers))) historical-receipt-stream-import? receipt-stream-import?) (:receipt/view (first triggers))))))
        (conj {:error :receipt-stream/import}))
      (concat
       (mapcat
@@ -684,7 +697,8 @@
   remain with the existing adapter. Imported identity retains original stream
   coordinates and has no combined position, so a canonical append leaves it stable.
   Empty item/correction vectors compose without an import; all fact shapes still apply."
-  [facts]
+  ([facts] (receipt-stream-view facts #{}))
+  ([facts historical-lines]
   (let [input-valid? (and (map? facts) (= receipt-stream-input-keys (set (keys facts))))
         streams (when input-valid?
                   [{:role :canonical :items (:canonical/items facts)
@@ -697,7 +711,7 @@
                       [{:error :receipt-stream/input}])
         errors (if (seq fact-errors)
                  fact-errors
-                 (receipt-stream-composition-errors streams common-records))]
+                 (receipt-stream-composition-errors streams common-records historical-lines))]
     (if (seq errors)
       {:receipt/errors errors :ledger/occurrences [] :ledger/originals []
        :ledger/views [] :receipt/corrections []}
@@ -715,17 +729,23 @@
          :ledger/combined-receipts (count items)
          :receipt/corrections
          (into [] (mapcat (fn [{:keys [identity corrections]}]
-                           (map #(assoc % :receipt/stream identity) corrections))) streams)}))))
+                           (map #(assoc % :receipt/stream identity) corrections))) streams)})))))
 
-(defn evidence-receipt? [receipt]
+(defn evidence-receipt-with-envelope? [envelope? receipt]
   (let [schema (:evidence/schema receipt)]
-    (and (receipt-envelope? receipt)
+    (and (envelope? receipt)
          (= :test-run (:kind receipt))
          (= evidence-receipt-origin (:origin receipt))
          (or (nil? schema)
              (and (= 2 schema)
                   (nonblank-string? (:evidence/adapter receipt))))
          (valid-result? (:evidence/result receipt)))))
+
+(defn evidence-receipt? [receipt]
+  (evidence-receipt-with-envelope? receipt-envelope? receipt))
+
+(defn historical-evidence-receipt? [receipt]
+  (evidence-receipt-with-envelope? historical-receipt-envelope? receipt))
 
 (defn immutable-receipt-ledger? [ledger]
   (and (map? ledger)

@@ -45,12 +45,34 @@ reviewer approval, signature, or permission to modify semantic evidence.
    records. Validate every newly introduced canonical record against the actual
    trusted base after this projection. The source replay alone is insufficient
    to admit a new record.
-5. Retain the admitted imported occurrences. Refuse raw overlap between imported
+5. Apply current admission rules to genuinely new imported occurrences as well.
+   A source replay does not establish that an import was already admitted by the
+   actual comparison base. Reauthenticate its declaration and source proof.
+6. Retain the admitted imported occurrences. Refuse raw overlap between imported
    occurrences and current canonical rows, including already committed segments.
 
 Verification and promotion consume this same admitted ledger. Its storage
 identity and canonical originals remain those of the current segmented store;
 its documentary provenance points to the unchanged original source.
+
+## Historical reads and timestamps
+
+An unchanged historical ledger can be verified without a configuration that did
+not yet exist. This compatibility path is limited to committed, unsegmented
+snapshots with identical legacy bytes and no source binding. It reauthenticates
+the original source imports and documentary corrections; missing or forged
+source proofs still fail. It does not permit new legacy rows, new unbound
+declarations, or working writes through the historical path.
+
+Historical records retain their original timestamp values, including nonblank
+values accepted before strict instant validation was introduced. Authentication
+of their documentary views uses that historical envelope rule only for records
+already present in the actual trusted comparison base. An imported stream is
+historical only when its authenticated declaration already belongs to that base.
+All genuinely new canonical and imported records must satisfy the current
+timestamp, envelope and evidence rules after documentary projection. Neither an
+anchor replay nor a correction can turn a newly introduced invalid timestamp
+into trusted history.
 
 ## Boundaries and refusal behavior
 
